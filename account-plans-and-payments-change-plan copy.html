@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc." />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+
+  <!-- Map CSS -->
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+  <link rel="stylesheet" href="style-custom.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">
+
+  <!-- Title -->
+  <title>Proxycurl - Dashboard</title>
+</head>
+
+<body>
+
+  <!--MODAL UPGRADE-->
+  <div class="modal fade" id="modalUpgrade" tabindex="-1" aria-labelledby="modalUpgradeLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <a type="button" class="btn-close h1 ps-4 pt-4 mb-0" data-dismiss="modal" aria-label="Close">
+        </a>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center">
+
+            <div class="col-12">
+
+              <div class="list-group-item rounded alert-danger-subtle mb-4">
+                <div class="row align-items-center">
+
+                  <div class="col-auto">
+
+                    <img class="img-fluid mb-2" src="assets/img/payment-methods/link-logo.svg" alt="link.com logo"
+                      style="max-width: 38px;">
+
+                  </div>
+
+                  <div class="col ms-n2">
+
+                    <h4 class="fw-normal mb-1">
+                      Please check your email address and confirm your email address with Link.com before proceeding
+                      with your payment. <a class="text-primary" target="_blank"
+                        href="https://support.link.com/questions/what-do-i-need-to-do-to-verify-my-account">Read
+                        more</a>.
+                    </h4>
+
+                  </div>
+
+                </div>
+              </div>
+
+              <h1 class="fw-bold mb-3">
+                Order confirmation
+              </h1>
+
+              <p class="mb-4 lead">
+                Would you like to subscribe a plan for <span class="fw-bold font-monospace">$49</span>/month (<span
+                  class="fw-bold font-monospace badge bg-light text-black">2500</span> credits)?
+              </p>
+
+              <div class="row border-bottom pb-2 mb-4">
+                <div class="col-12 col-md-8">
+                  <h2 class="h2 fw-bold">
+                    Credits
+                  </h2>
+                  <p class="lead">
+                    <span class="fw-bold font-monospace badge bg-light text-black">2500</span> credits
+                  </p>
+                  <p class="small text-muted mb-4">
+                    Credits will expire at the end of every billing period
+                  </p>
+                </div>
+
+                <div class="col-12 col-md-4 text-md-end">
+                  <h2 class="h2 fw-bold">
+                    Total
+                  </h2>
+                  <p class="lead">
+                    <span class="fw-bold font-monospace">$49</span>/month
+                  </p>
+                </div>
+              </div>
+
+              <div class="row border-bottom pb-2 mb-4">
+                <div class="col-6">
+                  <p class="lead">
+                    Payment method
+                  </p>
+                </div>
+
+                <div class="col-6 text-end">
+                  <p class="lead">
+                    Visa ending in <span class="fw-bold font-monospace badge bg-light text-black">1234</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-12 text-end">
+                  <p class="text-muted mb-0 small">
+                    All prices include VAT where applicable
+                  </p>
+                </div>
+              </div>
+
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label small text-muted" for="flexCheckChecked">
+                  By ticking this checkbox, I agree to a 12-month service contract with Proxycurl as detailed in the <a
+                    class="text-primary" href="#!" target="_blank">sales agreement</a>. I understand that this contract
+                  will automatically renew every 12 months unless I cancel it before the renewal date. If I cancel early
+                  before the end of the 12-month period, I acknowledge my obligation to pay the remaining balance of the
+                  contract term, and I agree that Proxycurl may bill me for this amount. I have read and understood
+                  these terms.
+                </label>
+              </div>
+
+              <div class="text-danger small mb-4" role="alert" id="checkboxAlert" style="display: none;">
+                <i class="neu-warning-circle"></i> Please tick the box to continue with the payment
+              </div>
+
+              <a class="btn btn-lg btn-primary mt-3 w-100" href="account-buy-credits-after-stripe-prompt.html" disabled>
+                Buy credits and enable credit auto-topup
+              </a>
+
+              <a class="btn btn-lg btn-outline-primary w-100 mt-3" href="account-buy-credits-after-stripe-prompt.html"
+                disabled>
+                Buy credits only
+              </a>
+
+              <button class="btn btn-lg btn-outline-primary w-100 mt-3" data-dismiss="modal">
+                Cancel
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--MODAL CANCEL-->
+  <div class="modal fade" id="modalCancel" aria-labelledby="modalCancelLabel" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <a type="button" class="btn-close h1 ps-4 pt-4" data-bs-dismiss="modal" aria-label="Close">
+        </a>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center">
+
+            <div class="col-12 col-md-9 text-center pb-5">
+
+              <div class="text-center mb-5">
+                <div class="mb-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="64" height="auto" viewBox="0 0 24 24">
+                    <g fill="#e63757">
+                      <path
+                        d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 9h2c1.654 0 3 1.346 3 3s-1.346 3-3 3v1a1 1 0 1 1-2 0v-1H9a1 1 0 1 1 0-2h4a1.001 1.001 0 0 0 0-2h-2c-1.654 0-3-1.346-3-3s1.346-3 3-3V6a1 1 0 1 1 2 0v1h2a1 1 0 1 1 0 2h-4a1.001 1.001 0 0 0 0 2z">
+                      </path>
+                    </g>
+                  </svg>
+                </div>
+
+                <h1 class="fw-bold">
+                  You are liable for <span class="text-danger">$392</span> in cancellation fees
+                </h1>
+              </div>
+
+              <div class="mb-5">
+                <p class="text-gray-700">
+                  We’re sorry to see you go, would you tell us why?
+                </p>
+              </div>
+
+              <div class="mb-5">
+                <select class="form-control form-select">
+                  <option>Please select</option>
+                  <option>Only needed Proxycurl for a one-time use</option>
+                  <option>We do not need Proxycurl anymore</option>
+                  <option>My company has shut down</option>
+                  <option>We found an alternative vendor that is cheaper</option>
+                  <option>We found an alternative vendor that works better</option>
+                  <option>Proxycurl did not work for my use-case</option>
+                  <option>Others</option>
+                </select>
+              </div>
+
+              <div class="row justify-content-center align-items-center">
+
+                <div class="col-12 col-lg-6 mb-4 mb-md-0">
+                  <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">
+                    Don't cancel
+                  </button>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                  <button class="btn btn-link w-100" data-bs-target="#modalCancelNext" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
+                    Next
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--MODAL CANCEL 2-->
+  <div class="modal fade" id="modalCancelNext" aria-labelledby="modalCancelNextLabel" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <a type="button" class="btn-close h1 ps-4 pt-4" data-dismiss="modal" aria-label="Close"></a>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center">
+
+            <div class="col-12 col-md-10 pb-4">
+
+              <div class="text-center mb-5">
+                <div class="mb-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="64" height="auto" viewBox="0 0 24 24">
+                    <g fill="#e63757">
+                      <path
+                        d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 9h2c1.654 0 3 1.346 3 3s-1.346 3-3 3v1a1 1 0 1 1-2 0v-1H9a1 1 0 1 1 0-2h4a1.001 1.001 0 0 0 0-2h-2c-1.654 0-3-1.346-3-3s1.346-3 3-3V6a1 1 0 1 1 2 0v1h2a1 1 0 1 1 0 2h-4a1.001 1.001 0 0 0 0 2z">
+                      </path>
+                    </g>
+                  </svg>
+                </div>
+
+                <h1 class="fw-bold">
+                  You are liable for <span class="text-danger">$392</span><br>
+                  in cancellation fees
+                </h1>
+              </div>
+
+              <div class="mb-5">
+                <small class="small text-gray-700">
+                  This cancellation fee follows the terms in the
+                  <a class="text-primary" href="https://nubela.co/proxycurl/12-month-sales-agreement"
+                    target="_blank">Sales Agreement</a>
+                  that was agreed upon at the time of purchase.
+                </small>
+              </div>
+
+              <div class="mb-5">
+                <div class="list-group-item bg-lighter border rounded">
+                  <div class="row align-items-center">
+  
+                    <div class="col">
+  
+                      <p class="lead mb-0">
+                        After cancelation, your plan will stay active until <span class="fw-bold">31 December 2024</span>.
+                        <span class="text-danger">You will NOT get extra credits for unused months</span>.
+                      </p>
+  
+                    </div>
+  
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center align-items-center">
+
+                <div class="col-12 col-md-6 mb-4 mb-md-0">
+                  <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">
+                    No, Keep My Plan
+                  </button>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <button class="btn btn-link border border-danger text-danger w-100" href="account-plans-and-payments-cancel-success.html">
+                    Pay $392 and Cancel Plan
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 col-xl-8">
+
+          <!-- Header -->
+          <div class="header mt-md-5">
+            <div class="header-body">
+
+              <div class="row align-items-center">
+                <div class="col">
+
+                  <!-- Title -->
+                  <h1 class="header-title">
+                    <a class="text-black me-3" href="account-plans-and-payments.html"><i
+                        class="fe fe-arrow-left"></i></a> Change plan
+                  </h1>
+
+                </div>
+              </div> <!-- / .row -->
+
+            </div>
+          </div>
+
+          <!-- Plan -->
+          <div class="card">
+
+            <div class="card-body">
+
+              <div class="row align-items-top">
+
+                <div class="col-12">
+
+                  <!-- Tabs -->
+                  <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <li class="nav-item ms-3">
+                      <div class="h3 nav-link active fw-bold" id="nav-month-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-month" type="button" role="tab" aria-controls="nav-month"
+                        aria-selected="true">
+                        Monthly plan
+                        <div class="small fw-normal mt-3 mb-3 active">
+                          Credits expire monthly
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <!-- Tabs content -->
+                  <div class="tab-content" id="nav-tabContent">
+
+                    <div class="tab-pane fade show active table-responsive" id="nav-month" role="tabpanel"
+                      aria-labelledby="nav-month-tab">
+
+                      <table class="table table-sm table-nowrap card-table table-hover">
+
+                        <tbody class="fs-base">
+                          <tr>
+                            <td>
+                              <span class="fw-bold">1000</span> credits
+                            </td>
+                            <td>
+                              <span class="fw-bold">$0.049</span>/credit
+                            </td>
+                            <td>
+                              $49
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="fw-bold">7500</span> credits
+                            </td>
+                            <td>
+                              <span class="fw-bold">$0.04</span>/credit
+                            </td>
+                            <td>
+                              $299
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr class="bg-primary-soft">
+                            <td>
+                              <span class="fw-bold">29966</span> credits
+                            </td>
+                            <td>
+                              <span class="fw-bold">$0.03</span>/credit
+                            </td>
+                            <td>
+                              $899
+                            </td>
+                            <td>
+                              <button class="btn btn-primary" type="submit" data-bs-toggle="modal"
+                                data-bs-target="#modalUpgrade">
+                                Upgrade plan
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span class="fw-bold">95000</span> credits
+                            </td>
+                            <td>
+                              <span class="fw-bold">$0.02</span>/credit
+                            </td>
+                            <td>
+                              $1899
+                            </td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="row align-items-center mt-4">
+                <div class="col-12 col-md-6">
+                  <a class="btn btn-outline-secondary" type="submit" data-bs-toggle="modal"
+                    data-bs-target="#modalCancel">
+                    Cancel plan
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <br>
+
+        </div>
+      </div> <!-- / .row -->
+    </div>
+
+  </div> <!-- / .main-content -->
+
+  <!-- JAVASCRIPT -->
+  <!-- Map JS -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+  <!-- Vendor JS -->
+  <script src="./assets/js/vendor.bundle.js"></script>
+
+  <!-- Theme JS -->
+  <script src="./assets/js/theme.bundle.js"></script>
+
+  <!-- Custom JS-->
+  <script src="script.js"></script>
+
+</body>
+
+</html>

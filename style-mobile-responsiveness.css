@@ -1,0 +1,241 @@
+.alert-success-subtle-bg-only{
+    background-color: #dcfce7;
+    border-color: #22c55e;
+}
+.alert-success-subtle{
+    background-color: #dcfce7;
+    border-color: #22c55e;
+    color: #22c55e;
+}
+.alert-danger-subtle{
+    background-color: #fee2e2;
+    border-color: #ef4444;
+    color: #ef4444;
+}
+.div-inline{
+    display:inline-block;
+}
+.blur{
+    filter: blur(4px);
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+.dropdown-center{
+    top: 120% !important;
+    left: 50% !important;
+    right: auto !important;
+    text-align: center !important;
+    transform: translate(-50%, 0) !important;
+}
+
+@media (min-width: 1500px) {
+    .main-content-dashboard {
+        flex: 0 0 auto;
+        width: 73.33333%;
+    }   
+}
+
+@media screen and (min-width: 964px) and (max-width: 1110px) {
+    .main-content-dashboard {
+        transition: margin-left 0.3s ease, width 0.3s ease; /* Add transition for smooth animation */
+        margin-left: 380px; /* Set initial margin-left when sidebar is expanded */
+        padding-right: 40px;
+        width: 80%;
+    }
+    
+    #sidebarCustom.collapsed ~ #mainContent .main-content-dashboard {
+        margin-left: 200px; /* Adjust margin-left when sidebar is collapsed */
+        width: 150%;
+    }
+    
+}
+
+/* Hide the navigation bar by default */
+.nav-custom-show {
+    display: none !important;
+}
+
+/* SHOW CUSTOM NAV WHEN 900-1024 */
+@media screen and (min-width: 964px) and (max-width: 1110px) {
+    .nav-custom-show {
+        display: block !important;
+    }
+
+    .btn-custom-hide {
+        display: none !important;
+    }
+}
+
+/* NORMAL NAV */
+@media screen and (max-width: 963px),
+(min-width: 1111px) {
+    .nav-custom-show {
+        display: none !important;
+    }
+}
+
+/* Hide the navigation bar by default */
+.nav-normal-show {
+    display: none !important;
+}
+
+/* SHOW CUSTOM NAV WHEN 900-1024 */
+@media screen and (min-width: 964px) and (max-width: 1110px) {
+    .nav-normal-show {
+      display: none !important;
+    }
+}
+
+/* HIDE CUSTOM NAV WHEN 900-1024 */
+@media screen and (max-width: 963px), (min-width: 1111px) {
+    .nav-normal-show {
+      display: block !important;
+    }
+}
+
+
+.dropdown-menu-center{
+    right: auto !important;
+    left: 50% !important;
+    -webkit-transform: translate(-50%, 0) !important;
+    -o-transform: translate(-50%, 0) !important;
+    transform: translate(-50%, 0) !important;
+}
+  .mt-minus{
+    margin-top: -12rem !important;
+}
+
+
+/* FOR CHANGE PLAN MOBILE RESPONSIVENESS */
+@media screen and (max-width: 963px) {
+    td {
+      display: block;
+      border-width: 0cm !important;
+      padding-bottom: 0.2rem !important;
+    }
+
+    .card-table tbody td:first-child, .card-table thead th:first-child {
+        padding-left: 1rem!important;
+        padding-top: 2rem !important;
+    }
+
+    .card-table tbody td:last-child, .card-table thead th:last-child {
+        padding-bottom: 1rem !important;
+        padding-top: 1rem !important;
+    }
+
+    tr {
+        border: 0;
+        display: block;
+        margin-top: 2rem;
+        border-radius: 6px !important;
+    }
+
+    .solid {
+        border: 1px #EDF2F9 solid;
+        border-radius: 6px;
+    }
+
+    .bg-primary-soft {
+    /* Remove or adjust styles for mobile view */
+    background-color: transparent !important;
+    /* Add any other styles for mobile view as needed */
+
+    }
+
+    .btn-block-mobile { 
+    width: 100% !important; 
+    display:block !important;
+    }
+
+    .mobile-tier {
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
+    padding-bottom: 2.3rem !important;
+    }    
+
+    .mobile-price {
+    font-size: 2rem !important;
+    font-weight: 600 !important;
+    }
+
+    .mobile-percredit {
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    }
+
+    .mobile-credit {
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    }
+
+    .mobile-credit-desc {
+    font-size: 1rem !important;
+    }
+    
+    .mobile-bold-text {
+    font-weight: 600 !important;
+    padding-bottom: 1.2rem !important;
+    }
+
+ 
+  }
+
+td.small-padding {
+  padding-right: 0.5rem !important;
+}
+
+/*
+@media (min-width: 900px) and (max-width: 1024px) {
+    #sidebar.navbar-expand-md .navbar-collapse {
+      display: none !important;
+    }
+    #sidebar.navbar-expand-md .navbar-toggler {
+      display: block !important;
+    }
+    #sidebar.navbar-expand-md .navbar-toggler-icon {
+      display: inline-block !important;
+    }
+  }
+  @media (min-width: 1025px) {
+    #sidebar.navbar-expand-lg .navbar-collapse {
+      display: block !important;
+    }
+    #sidebar.navbar-expand-lg .navbar-toggler {
+      display: none !important;
+    }
+    #sidebar.navbar-expand-lg .navbar-toggler-icon {
+      display: none !important;
+    }
+  }
+  */
+  
+#sidebarCustom {
+    width: 280px; /* Set the width of the sidebar */
+    transition: width 0.3s ease; /* Add a transition for smooth animation */
+}
+
+#sidebarCustom.collapsed {
+    width: 100px; /* Hide the sidebar by setting width to 0 */
+}
+
+#navbarContent {
+    display: block; /* Ensure navbar content is visible by default */
+}
+
+#sidebarCustom.collapsed #navbarContent {
+    display: none; /* Hide the navbar content when sidebar is collapsed */
+}
+
+#navbarShowCollapsed {
+    display: none;
+}
+
+#sidebarCustom.collapsed #navbarShowCollapsed {
+    display: block; /* Show the navbar content when sidebar is collapsed */
+}
+
+#toggleSidebarCustom.collapsed {
+    left: 280px; /* Move the button when the sidebar is collapsed */
+}

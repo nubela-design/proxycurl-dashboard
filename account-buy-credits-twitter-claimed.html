@@ -1,0 +1,1335 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc." />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+
+  <!-- Map CSS -->
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+  <link rel="stylesheet" href="style-custom.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">
+
+  <!-- Title -->
+  <title>Proxycurl - Dashboard</title>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-vertical fixed-start navbar-expand-md navbar-light" id="sidebar">
+    <div class="container-fluid">
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarCollapse"
+        aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="./index.html">
+        <img src="./assets/img/logo.svg" class="navbar-brand-img mx-auto" alt="...">
+      </a>
+
+      <!-- User (xs) -->
+      <div class="navbar-user d-md-none">
+
+        <div class="btn-group dropdown">
+
+          <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            example@nubela.co <i class="fe fe-chevron-down ms-3"></i>
+          </button>
+
+          <div class="dropdown-menu dropdown-menu-end shadow-lg" aria-labelledby="dropdownMenuButton">
+
+            <h6 class="header-pretitle border-bottom text-black px-4 py-4 mb-0">
+              Switch team <span class="badge fw-bold px-2 py-2 ms-1 bg-warning">Coming soon</span>
+            </h6>
+
+            <div class="pt-3 pb-3 px-4 border-bottom">
+              <a class="btn btn-light w-100 pt-3 pb-1"
+                href="https://nubela.co/proxycurl/affiliate?utm_campaign=affiliate_marketing&utm_source=affiliate_link&utm_medium=affiliate&utm_content=internal_navigator_menu"
+                target="_blank">
+                <h5 class="text-primary"> <i class="fe fe-gift pe-1"></i> Earn 30% for 2 years <i class="fe fe-arrow-up-right"></i>
+                </h5>
+              </a>
+            </div>
+
+            <div class="pt-3 pb-3 px-4 border-bottom">
+
+              <form>
+                <div class="form-floating form-group mb-3">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Dragon Team">
+                  <label for="floatingInput">Team name</label>
+                </div>
+
+                <button class="btn btn-outline-primary w-100" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="We are fleshing out this new dashboard iteratively. We are intending to include a Teams feature and it is coming soon!">
+                  Create new team
+                </button>
+              </form>
+
+            </div>
+
+            <div class="border py-3 px-4 bg-lighter">
+
+              <a href="#!" type="button">
+
+                <div class="row align-items-center g-0">
+
+                  <div class="col-2">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <div class="col-10">
+                    <span class="text-primary small">
+                      example@nubela.co
+                    </span>
+
+                    <p class="text-black mb-0">
+                      Nubela
+                    </p>
+                  </div>
+
+                </div>
+
+              </a>
+
+            </div>
+
+            <div class="pt-3 px-4">
+
+              <a href="#!" type="button">
+
+                <span class="text-primary small">
+                  yowassap@thenounproject.com
+                </span>
+
+                <p class="text-black">
+                  Black Ireng
+                </p>
+
+              </a>
+
+            </div>
+
+            <div class="pt-3 px-4">
+
+              <a href="#!" type="button">
+
+                <span class="text-primary small">
+                  john@welut.com
+                </span>
+
+                <p class="text-black">
+                  Welut
+                </p>
+
+              </a>
+
+            </div>
+
+            <div class="row align-items-center border-top">
+              <a class="text-center text-secondary nav-link mt-3 mb-1" href="index.html">
+                <i class="fe fe-log-out"></i> Log out
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Credits (md)-->
+      <div class="navbar-user d-none d-md-flex border-bottom pb-4 mb-4">
+
+        <div class="row">
+
+          <div class="col-12">
+            <label class="text-gray-700">
+              Credits
+              <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;">
+                <span class="h4">
+                  1000
+                </span>
+              </code>
+            </label>
+
+            <label class="small text-muted mt-2">
+              Auto-topup <span class="badge bg-white text-muted border border-secondary fw-bold">Disabled</span>
+            </label>
+
+          </div>
+
+          <div class="col-12">
+
+            <a class="btn btn-outline-primary w-100 mt-3" href="account-buy-credits.html">
+              Buy credits
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="sidebarCollapse">
+
+        <!-- Credits (xs)-->
+        <div class="navbar-user d-md-none mb-4">
+
+          <div class="row text-center text-md-left">
+
+            <div class="col-12">
+              <label class="mb-2 text-gray-700">
+                Credits
+                <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;">
+                  <span class="h4">
+                    1000
+                  </span>
+                </code>
+              </label>
+
+              <label class="small text-muted mt-2">
+                Auto-topup <span class="badge bg-white text-muted border border-secondary fw-bold">Enabled</span>
+              </label>
+
+            </div>
+
+            <div class="col-12">
+
+              <a class="btn btn-outline-primary w-100 mt-3" href="account-buy-credits.html">
+                Buy credits
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#sidebarPages" data-bs-toggle="collapse" role="button" aria-expanded="true"
+              aria-controls="sidebarPages">
+              <i class="fe fe-file"></i> Proxycurl API
+            </a>
+            <div class="collapse show" id="sidebarPages">
+              <ul class="nav nav-sm flex-column">
+                <li class="nav-item ">
+                  <a href="./account-api.html" class="nav-link">
+                    <span class="border-start border-2 ps-3">API Key</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./account-work.html" class="nav-link">
+                    <span class="border-start border-2 ps-3">Work Email Lookup Logs</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#!" class="nav-link">
+                    <span class="border-start border-2 ps-3">Docs</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sidebarPages" data-bs-toggle="collapse" role="button" aria-expanded="true"
+              aria-controls="sidebarPages">
+              <i class="fe fe-box"></i> Addons
+            </a>
+            <div class="collapse" id="sidebarPages">
+              <ul class="nav nav-sm flex-column">
+                <li class="nav-item">
+                  <a href="https://sapiengraph.com" target="_blank" class="nav-link">
+                    <span class="border-start border-2 ps-3 text-info border-info">Sapiengraph - B2B Enrichment in Google Sheets ↗</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="account-request-log.html" role="button">
+              <i class="fe fe-activity"></i> Request Log
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sidebarBilling" data-bs-toggle="collapse" role="button" aria-expanded="true"
+              aria-controls="sidebarBilling">
+              <i class="fe fe-dollar-sign"></i> Billing
+            </a>
+            <div class="collapse show" id="sidebarBilling">
+              <ul class="nav nav-sm flex-column">
+                <li class="nav-item">
+                  <a href="./account-plans-and-payments.html" class="nav-link">
+                    <span class="border-start border-2 ps-3">Plan and payments</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./account-buy-credits.html" class="nav-link fw-bold">
+                    <span class="border-start border-2 ps-3 text-primary border-primary">Buy credits</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./account-invoices.html" class="nav-link">
+                    <span class="border-start border-2 ps-3">Invoices</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sidebarAccount" data-bs-toggle="collapse" role="button" aria-expanded="true"
+              aria-controls="sidebarAccount">
+              <i class="fe fe-user"></i> Account
+            </a>
+            <div class="collapse show" id="sidebarAccount">
+              <ul class="nav nav-sm flex-column">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">
+                    <span class="border-start border-2 ps-3">Change email</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="account-change-password.html" class="nav-link">
+                    <span class="border-start border-2 ps-3">Change password</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="account-2fa.html" class="nav-link">
+                    <span class="border-start border-2 ps-3">Two factor security</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item mb-4">
+            <a class="nav-link" href="account-team.html">
+              <i class="fe fe-users"></i> Team
+            </a>
+          </li>
+
+          <!-- old-logout
+            <hr class="my-4">
+
+            <li class="nav-item">
+              <a class="nav-link mb-3" href="index.html">
+                <i class="fe fe-log-out"></i> Log out 
+              </a>
+            </li>
+            -->
+
+        </ul>
+
+        <div class="mt-md-auto"></div>
+
+        <!-- User (md) -->
+        <div class="navbar-user d-none d-md-flex border-bottom pb-4 mb-4" id="sidebarUser">
+
+          <div class="btn-group dropup">
+
+            <button type="button" class="btn btn-outline-primary dropdown-toggle w-100" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              example@nubela.co <i class="fe fe-chevron-up ms-3"></i>
+            </button>
+
+            <div class="dropdown-menu dropdown-menu-center shadow-lg" aria-labelledby="dropdownMenuButton">
+
+              <h6 class="header-pretitle border-bottom text-black px-4 py-4 mb-0">
+                Switch team <span class="badge fw-bold px-2 py-2 ms-1 bg-warning">Coming soon</span>
+              </h6>
+
+              <div class="pt-3 pb-3 px-4 border-bottom">
+                <a class="btn btn-light w-100 pt-3 pb-1"
+                  href="https://nubela.co/proxycurl/affiliate?utm_campaign=affiliate_marketing&utm_source=affiliate_link&utm_medium=affiliate&utm_content=internal_navigator_menu"
+                  target="_blank">
+                  <h5 class="text-primary"> <i class="fe fe-gift pe-1"></i> Earn 30% for 2 years <i class="fe fe-arrow-up-right"></i>
+                  </h5>
+                </a>
+              </div>
+
+              <div class="pt-3 pb-3 px-4 border-bottom">
+
+                <form>
+                  <div class="form-floating form-group mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Dragon Team">
+                    <label for="floatingInput">Team name</label>
+                  </div>
+
+                  <button class="btn btn-outline-primary w-100" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="We are fleshing out this new dashboard iteratively. We are intending to include a Teams feature and it is coming soon!">
+                    Create new team
+                  </button>
+                </form>
+
+              </div>
+
+              <div class="border pt-3 px-4 bg-lighter">
+
+                <a href="#!" type="button">
+
+                  <div class="row align-items-center g-0">
+
+                    <div class="col-2">
+                      <i class="fe fe-check"></i>
+                    </div>
+
+                    <div class="col-10">
+                      <span class="text-primary small">
+                        example@nubela.co
+                      </span>
+
+                      <p class="text-black">
+                        Nubela
+                      </p>
+                    </div>
+
+                  </div>
+
+                </a>
+
+              </div>
+
+              <div class="pt-3 px-4">
+
+                <a href="#!" type="button">
+
+                  <span class="text-primary small">
+                    yowassap@blackireng666.com
+                  </span>
+
+                  <p class="text-black">
+                    Black Ireng
+                  </p>
+
+                </a>
+
+              </div>
+
+              <div class="pt-3 px-4">
+
+                <a href="#!" type="button">
+
+                  <span class="text-primary small">
+                    john@welut.com
+                  </span>
+
+                  <p class="text-black">
+                    Welut
+                  </p>
+
+                </a>
+
+              </div>
+
+              <div class="row align-items-center border-top">
+                <a class="text-center text-secondary nav-link mt-3 mb-1" href="index.html">
+                  <i class="fe fe-log-out"></i> Log out
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+        <!-- Dashboard toggle-->
+        <div class="justify-content-between d-flex mb-3">
+          <div class="col-8">
+          <label class="h3 fw-normal mb-md-1 mb-0 ms-1 text-gray-700" for="dashboardSwitch">
+            Back to old dashboard
+          </label>
+          </div>
+          <div class="col-auto form-switch form-check mt-0 mt-md-2">
+            <input type="checkbox" class="form-check-input" id="dashboardSwitch">
+          </div>
+
+        </div>
+
+        <!---
+        <div class="form-check form-switch mt-2 mb-2">
+          <input class="form-check-input mt-md-2" type="checkbox" role="switch" id="dashboardSwitch">
+          <label class="h3 fw-normal mb-1" for="dashboardSwitch">
+            Back to old dashboard
+          </label>
+        </div>
+      -->
+
+      </div> <!-- / .navbar-collapse -->
+
+    </div>
+  </nav>
+
+  <!--MODAL TOPUP-->
+  <div class="modal fade" id="modalNext" tabindex="-1" aria-labelledby="modalNextLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <a type="button" class="btn-close h1 ps-4 pt-4" data-dismiss="modal" aria-label="Close">
+        </a>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center">
+
+            <div class="col-12">
+
+              <h1 class="fw-bold mb-3">
+                Order confirmation
+              </h1>
+
+              <p class="mb-6 lead">
+                Confirm of a one-time purchase of <span class="fw-bold">600</span> credits for <span
+                  class="fw-bold">$49</span>?
+              </p>
+
+              <div class="row border-bottom pb-2 mb-4">
+                <div class="col-6">
+                  <h2 class="h2 fw-bold">
+                    Credits
+                  </h2>
+                  <p class="lead">
+                    <span class="fw-bold">600</span> credits
+                  </p>
+                </div>
+
+                <div class="col-6 text-end">
+                  <h2 class="h2 fw-bold">
+                    Total
+                  </h2>
+                  <p class="lead fw-bold">
+                    $49
+                  </p>
+                </div>
+              </div>
+
+              <div class="row border-bottom pb-2 mb-4">
+                <div class="col-6">
+                  <p class="lead">
+                    Payment method
+                  </p>
+                </div>
+
+                <div class="col-6 text-end">
+                  <p class="lead">
+                    Visa ending in <span class="fw-bold me-2">1234</span>
+                    <a class="fw-bold border-bottom border-primary" href="account-plans-and-payments.html">
+                      Change
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="row mb-6">
+                <div class="col-12 text-end">
+                  <p class="text-muted small">
+                    All prices include VAT where applicable
+                  </p>
+                </div>
+              </div>
+
+              <a class="btn btn-lg btn-primary w-100" href="account-buy-credits-after-stripe-prompt.html">
+                Buy credits and enable credit auto-topup
+              </a>
+
+              <a class="btn btn-lg btn-outline-primary w-100 mt-3" href="account-buy-credits-after-stripe-prompt.html">
+                Buy credits only
+              </a>
+
+              <button class="btn btn-lg btn-outline-primary w-100 mt-3" data-dismiss="modal">
+                Cancel
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--MODAL TWITTER VERIF-->
+  <div class="modal fade" id="modalTwitterVerif" tabindex="-1" aria-labelledby="modalTwitterVerifLabel" aria-hidden="true">
+    
+    <div class="modal-dialog modal-dialog-centered">
+
+      <div class="modal-content">
+
+        <div class="modal-body pt-5 pb-4">
+
+          <div class="row justify-content-center">
+
+            <div class="col-12">
+
+              <div class="border-bottom pb-4 mb-4">
+
+                <h2 class="h2 fw-bold mb-3">
+                  <i class="neu-so-tick-circle text-success"></i> Tweet is verified
+                </h2>
+
+                <p class="fw-normal mb-0 lead">
+                  Your <a class="text-primary" href="linktotweet">tweet</a> from <a class="text-primary" href="linktoprofile" target="_blank">@elonmusk</a> is verified.<br>
+                  You have 
+                  <code class="badge bg-light text-black"
+                  style="font-family: Cerebri Sans,sans-serif;">
+                  <span class="h4 fw-bold">
+                    1200
+                  </span>
+                  </code>
+                  followers in total.
+                </p>
+
+              </div>
+
+              <div class="row border-bottom pb-2 mb-4">
+
+                <div class="col-7">
+                  <h3 class="h2 fw-bold">
+                    Credits
+                  </h3>
+                  <p class="lead">
+                    <span class="fw-bold">1 credit</span> /5 Twitter followers
+                  </p>
+                </div>
+
+                <div class="col-5 text-end">
+                  <h3 class="h2 fw-bold">
+                    Total
+                  </h3>
+                  <span class="lead">
+                    <code class="badge bg-light text-black"
+                    style="font-family: Cerebri Sans,sans-serif;">
+                    <span class="h4 fw-bold">
+                      240
+                    </span>
+                  </code>
+                  credits
+                  </span>
+                </div>
+
+              </div>
+
+              <div class="col-12 mb-4">
+
+                <h3 class="h2 fw-bold mb-3">
+                  Credits distribution
+                </h3>
+
+                <p class="lead">
+                  You get <code class="badge bg-light text-black"
+                  style="font-family: Cerebri Sans,sans-serif;">
+                  <span class="h4 fw-bold">
+                    240
+                  </span>
+                  </code> total credits, calculated from <code class="badge bg-light text-black"
+                  style="font-family: Cerebri Sans,sans-serif;">
+                  <span class="h4 fw-bold">
+                    1200
+                  </span>
+                  </code> total followers. It will be given out separated overtime credits over 3 days:
+                </p>
+
+                <p class="lead">
+                  Day 1 -
+                  <code class="badge bg-light text-black"
+                    style="font-family: Cerebri Sans,sans-serif;">
+                    <span class="h4 fw-bold">
+                      24
+                    </span>
+                  </code>
+                  credits.
+                </p>
+
+                <p class="lead">
+                  Day 2 -
+                  <code class="badge bg-light text-black"
+                    style="font-family: Cerebri Sans,sans-serif;">
+                    <span class="h4 fw-bold">
+                      72
+                    </span>
+                  </code>
+                  credits.
+                </p>
+
+                <p class="lead">
+                  Day 3 -
+                  <code class="badge bg-light text-black"
+                    style="font-family: Cerebri Sans,sans-serif;">
+                    <span class="h4 fw-bold">
+                      144
+                    </span>
+                  </code>
+                  credits.
+                </p>
+
+              </div>
+
+              <button type="button" class="btn btn-lg btn-primary w-100" data-bs-dismiss="modal">
+                Close
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12 main-content-dashboard">
+
+            <!--News Alert-->
+            <div class="card bg-dark mt-5">
+
+              <div class="card-body">
+
+                <div class="row align-items-top">
+
+                  <div class="col-12 col-md-8">
+    
+                    <p class="lead text-white mb-0">
+                      <span class="me-2">
+                        <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m15.6968,12.4905l-2.8295,1.4148c-.8491.4245-1.5375,1.113-1.962,1.962l-1.4148,2.8295c-.2021.4042-.7789.4042-.981,0l-1.4148-2.8295c-.4245-.8491-1.113-1.5375-1.962-1.962l-2.8295-1.4148c-.4042-.2021-.4042-.7789,0-.981l2.8295-1.4148c.8491-.4246,1.5375-1.113,1.962-1.9621l1.4148-2.8295c.2021-.4042.7789-.4042.981,0l1.4148,2.8295c.4245.8491,1.113,1.5375,1.962,1.9621l2.8295,1.4148c.4042.2021.4042.7789,0,.981Zm6.1732,6.2993l-1.2127-.6063c-.3639-.182-.6589-.477-.8409-.8409l-.6063-1.2126c-.0866-.1732-.3338-.1732-.4204,0l-.6063,1.2126c-.1819.3639-.477.6589-.8409.8409l-1.2127.6063c-.1732.0866-.1732.3338,0,.4204l1.2127.6063c.3639.1819.6589.477.8409.8409l.6063,1.2126c.0866.1732.3338.1732.4204,0l.6063-1.2126c.1819-.3639.477-.6589.8409-.8409l1.2127-.6063c.1732-.0866.1732-.3338,0-.4204Zm0-14l-1.2127-.6063c-.3639-.182-.6589-.477-.8409-.8409l-.6063-1.2126c-.0866-.1732-.3338-.1732-.4204,0l-.6063,1.2126c-.1819.3639-.477.6589-.8409.8409l-1.2127.6063c-.1732.0866-.1732.3338,0,.4204l1.2127.6063c.3639.1819.6589.477.8409.8409l.6063,1.2126c.0866.1732.3338.1732.4204,0l.6063-1.2126c.1819-.3639.477-.6589.8409-.8409l1.2127-.6063c.1732-.0866.1732-.3338,0-.4204Z" fill="#fff"/></svg>
+                      </span>
+                      We are currenting experiencing issues with our Person Profile Endpoint.
+                    </p>
+
+                  </div>
+
+                  <div class="col-12 col-md-4 text-end">
+
+                    <a href="#!" class="btn btn-white lift">
+                      Learn more <i class="fe fe-arrow-right ms-1"></i>
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          <!-- Header -->
+          <div class="header mt-md-5">
+            <div class="header-body">
+
+              <div class="row align-items-center">
+                <div class="col">
+
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle">
+                    Overview
+                  </h6>
+
+                  <!-- Title -->
+                  <h1 class="header-title">
+                    Billing
+                  </h1>
+
+                </div>
+              </div> <!-- / .row -->
+
+              <div class="row align-items-center">
+                <div class="col">
+
+                  <!-- Nav -->
+                  <ul class="nav nav-tabs nav-overflow header-tabs">
+                    <li class="nav-item">
+                      <a href="account-plans-and-payments.html" class="nav-link">
+                        Plan and payments
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="account-buy-credits.html" class="nav-link active">
+                        Buy Credits
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="account-invoices.html" class="nav-link">
+                        Invoices
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+
+            <div class="card-header">
+              <div class="row align-items-center">
+
+                <div class="col">
+
+                  <!-- Title -->
+                  <h4 class="card-header-title">
+                    Credits info
+                  </h4>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+
+              <div class="row">
+
+                <div class="col-12">
+
+                  <div class="row mb-3">
+
+                    <div class="col">
+                      <label>
+                        <i class="neu-wallet h3"></i> Credits
+                      </label>
+                    </div>
+
+                    <div class="col-auto">
+                      <label class="text-end">
+                        Auto-topup <span class="badge bg-white text-muted border border-secondary fw-bold">Disabled</span>
+                      </label>
+                    </div>
+
+                  </div>
+
+                  <div class="row">
+
+                    <div class="col mb-4">
+                      <div class="border bg-lighter" style="border-radius: 8px; height: 56px;">
+                        <div class="pt-3 ps-3 text-gray-700">
+                          <code class="h1 text-black" style="font-family: Cerebri Sans,sans-serif;"> 480</code><code
+                            class="h4 fw-normal text-gray-700"
+                            style="font-family: Cerebri Sans,sans-serif;">/1000</code>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!---
+                    <div class="col mb-4">
+                      <input id="name" type="text" value="100"  readonly="" class="form-control h1 bg-lighter">
+                    </div>
+                  -->
+
+                  </div>
+
+                  <div class="progress" style="height: 24px;">
+                    <div class="progress-bar bg-secondary" role="progressbar" aria-label="Example with label" style="width: 48%;" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100">
+                      480/1000
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-12">
+                  <div class="form-check mt-3 mb-0 mb-md-2">
+                    <label class="form-check-label" for="autoTopup">
+                      Automatically top up 
+                      <span class="mx-2">
+                        <div class="dropdown div-inline">
+                          <button class="btn btn-outline-primary btn-sm dropdown-toggle" type="button" id="topupDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            $100
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="topupDropdown">
+                            <li><a class="dropdown-item" href="#">$100</a></li>
+                            <li><a class="dropdown-item" href="#">$500</a></li>
+                            <li><a class="dropdown-item" href="#">$1000</a></li>
+                          </ul>
+                        </div>
+                      </span> worth of credits when credits fall below 10 credits.
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="autoTopup">
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Buy credtis -->
+          <div class="card">
+
+            <div class="card-header">
+              <div class="row align-items-center">
+                <div class="col">
+
+                  <!-- Title -->
+                  <h4 class="card-header-title">
+                    Buy credits
+                  </h4>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+
+              <div class="row align-items-top">
+
+                <div class="col-12">
+
+                  <!-- Tabs -->
+                  <ul class="nav nav-fill nav-tabs" id="nav-tab" role="tablist">
+
+                    <li class="nav-item text-center">
+                      <div class="h3 nav-link active fw-bold" id="nav-subs-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-subs" type="button" role="tab" aria-controls="nav-subs" aria-selected="true">
+                        Subscription
+                        <div class="small fw-normal mt-3 mb-3">
+                          Credits expire every billing period
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="nav-item text-center">
+                      <div class="h3 nav-link fw-bold" id="nav-payg-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-payg" type="button" role="tab" aria-controls="nav-payg" aria-selected="false">
+                        Pay-as-you-go
+                        <div class="small fw-normal mt-3 mb-3">
+                          Credits do not expire
+                        </div>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                  <!-- Tabs content -->
+                  <div class="tab-content" id="nav-tabContent">
+
+                    <div class="tab-pane fade show active" id="nav-subs" role="tabpanel" aria-labelledby="nav-subs-tab">
+
+                      <div class="mb-4 mt-4">
+
+                        <form class="d-flex align-items-center justify-content-center">
+
+                          <!-- Label -->
+                          <span class="text-opacity-80">
+                            Annual
+                          </span>
+            
+                          <!-- Switch -->
+                          <div class="form-check form-check-dark form-switch mx-3">
+                            <input class="form-check-input" type="checkbox" id="billingSwitch" data-toggle="price" data-target=".price">
+                          </div>
+            
+                          <!-- Label -->
+                          <span class="text-opacity-80">
+                            Monthly
+                          </span>
+            
+                        </form>
+
+                      </div>
+
+                      <table class="table table-sm table-nowrap card-table table-hover">
+
+                        <tbody class="fs-base">
+
+                          <tr>
+                            <td>
+                              <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;"><span class="h4 fw-normal">30000</span></code>
+                              +
+                              <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">5000</span></code>
+                              credits
+                            </td>
+                            <td>
+                              <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $0.020</code>/credit
+                            </td>
+                            <td>
+                              <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $490</code>/year
+                            </td>
+                            <td></td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;"><span class="h4 fw-normal">300000</span></code>
+                              +
+                              <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">50000</span></code>
+                              credits
+                            </td>
+                            <td>
+                              <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                              $0.012</code>/credit
+                            </td>
+                            <td>
+                              <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $2990</code>/year
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;"><span class="h4 fw-normal">1078800</span></code>
+                              +
+                              <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">179800</span></code>
+                              credits
+                            </td>
+                            <td>
+                              <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $0.010</code>/credit
+                            </td>
+                            <td>
+                              <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $8990</code>/year
+                            </td>
+                            <td></td>
+                          </tr>
+
+                          <tr class="table-primary">
+                            <td>
+                              <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;"><span class="h4 fw-normal">2532000</span></code>
+                              +
+                              <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">422000</span></code>
+                              credits
+                            </td>
+                            <td>
+                              <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $0.009</code>/credit
+                            </td>
+                            <td>
+                              <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $18990</code>/year
+                            </td>
+                            <td>
+                              <button type="submit" class="btn btn-primary w-100 mb-3" data-bs-toggle="modal"
+                                data-bs-target="#modalNext">
+                                Buy
+                              </button>
+                              <button class="btn btn-white w-100 d-block">
+                                Pay by Wire/ACH
+                              </button>
+                            </td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+
+                    </div>
+                    
+                    <div class="tab-pane fade" id="nav-payg" role="tabpanel" aria-labelledby="nav-payg-tab">
+
+                      <div class="table-responsive">
+
+                        <table class="table table-sm table-nowrap card-table table-hover">
+
+                          <tbody class="fs-base">
+
+                            <tr>
+                              <td>
+                                <code class="badge bg-light text-black"
+                                  style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">100 </span></code>
+                                credits
+                              </td>
+                              <td>
+                                <code class="h4 fw-normal text-black"
+                                  style="font-family: Cerebri Sans,sans-serif;">$0.10</code>/credit
+                              </td>
+                              <td>
+                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $10</code>
+                              </td>
+                              <td></td>
+                            </tr>
+
+                            <tr class="table-primary">
+                              <td>
+                                <code class="badge bg-light text-black"
+                                  style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">1000 </span></code>
+                                credits
+                              </td>
+                              <td>
+                                <span class="">$0.05</span>/credit
+                              </td>
+                              <td>
+                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $50
+                              </code>
+                              </td>
+                              <td>
+                                <button type="submit" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                  data-bs-target="#modalNext"> Buy
+                                </button>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <code class="badge bg-light text-black"
+                                  style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">4546 </span></code>
+                                credits
+                              </td>
+                              <td>
+                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $0.022</code>/credit
+                              </td>
+                              <td>
+                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $100
+                              </code>
+                              </td>
+                              <td></td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
+                                  25000</span></code> credits
+                              </td>
+                              <td>
+                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $0.02</code>/credit
+                              </td>
+                              <td>
+                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $500</code>
+                              </td>
+                              <td></td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <code class="badge bg-light text-black"
+                                  style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">55556</span></code>
+                                credits
+                              </td>
+                              <td>
+                                <code class="h4 fw-normal text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                $0.0018</code>/credit
+                              </td>
+                              <td class="">
+                                $1000
+                              </td>
+                              <td></td>
+                            </tr>
+
+                            <tr class="text-muted">
+                              <td>
+                                <code class="badge bg-light text-black"
+                                  style="font-family: Cerebri Sans,sans-serif;">
+                                  <span class="h4 fw-normal">
+                                    240
+                                  </span>
+                                </code>
+                                credits claimed
+                              </td>
+                              <td>
+                                <code class="h4 fw-normal text-muted" style="font-family: Cerebri Sans,sans-serif;">
+                                1 credit</code>/5 Twitter followers
+                              </td>
+                              <td>
+                                <p class="mb-0">
+                                  Tweet a review about Proxycurl and get credits
+                                </p>
+                              </td>
+                              <td>
+                                <button type="submit" class="btn btn-outline-secondary w-100" data-bs-toggle="modal" data-bs-target="#modalTwitterVerif">
+                                  Credits info
+                                </button>
+                              </td>
+                            </tr>
+
+                          </tbody>
+                        </table>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>            
+
+          </div>
+
+          <div class="card">
+
+            <div class="card-header">
+              <div class="row align-items-center">
+                <div class="col">
+
+                  <!-- Title -->
+                  <h4 class="card-header-title">
+                    FAQ
+                  </h4>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+
+              <div class="accordion" id="helpAccordionOne">
+
+                <div class="accordion-item">
+  
+                  <!-- Button -->
+                  <div class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#helpOne" aria-expanded="false" aria-controls="helpOne">
+  
+                    <!-- Title -->
+                    <span class="me-4" id="helpOneHeading">
+                      Why doesn't my account stay logged in?
+                    </span>
+  
+                  </div>
+  
+                  <!-- Collapse -->
+                  <div class="accordion-collapse collapse" id="helpOne" aria-labelledby="helpOneHeading" data-bs-parent="#helpAccordionOne">
+                    <div class="accordion-body">
+  
+                      <!-- Text -->
+                      <p class="text-gray-700 mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!
+                      </p>
+  
+                    </div>
+                  </div>
+  
+                </div>
+
+                <div class="accordion-item">
+  
+                  <!-- Button -->
+                  <div class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#helpTwo" aria-expanded="false" aria-controls="helpTwo">
+  
+                    <!-- Title -->
+                    <span class="me-4" id="helpTwoHeading">
+                      I'd like to renew but I am getting a 404 error
+                    </span>
+  
+                  </div>
+  
+                  <!-- Collapse -->
+                  <div class="accordion-collapse collapse" id="helpTwo" aria-labelledby="helpTwoHeading" data-bs-parent="#helpAccordionOne">
+                    <div class="accordion-body">
+  
+                      <!-- Text -->
+                      <p class="text-gray-700 mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!
+                      </p>
+
+                    </div>
+                  </div>
+  
+                </div>
+
+                <div class="accordion-item">
+  
+                  <!-- Button -->
+                  <div class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#helpThree" aria-expanded="false" aria-controls="helpThree">
+  
+                    <!-- Title -->
+                    <span class="me-4" id="helpThreeHeading">
+                      Why can't I upgrade for free?
+                    </span>
+  
+                  </div>
+  
+                  <!-- Collapse -->
+                  <div class="accordion-collapse collapse" id="helpThree" aria-labelledby="helpThreeHeading" data-bs-parent="#helpAccordionOne">
+                    <div class="accordion-body">
+  
+                      <!-- Text -->
+                      <p class="text-gray-700 mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!
+                      </p>
+  
+                    </div>
+                  </div>
+  
+                </div>
+
+                <div class="accordion-item">
+  
+                  <!-- Button -->
+                  <div class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#helpFour" aria-expanded="false" aria-controls="helpFour">
+  
+                    <!-- Title -->
+                    <span class="me-4" id="helpFourHeading">
+                      Why doesn't my account stay logged in?
+                    </span>
+  
+                  </div>
+  
+                  <!-- Collapse -->
+                  <div class="accordion-collapse collapse" id="helpFour" aria-labelledby="helpFourHeading" data-bs-parent="#helpAccordionOne">
+                    <div class="accordion-body">
+  
+                      <!-- Text -->
+                      <p class="text-gray-700 mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!
+                      </p>
+  
+                    </div>
+                  </div>
+  
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div> <!-- / .row -->
+    </div>
+
+  </div> <!-- / .main-content -->
+
+  <!-- JAVASCRIPT -->
+  <!-- Map JS -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+  <!-- Vendor JS -->
+  <script src="./assets/js/vendor.bundle.js"></script>
+
+  <!-- Theme JS -->
+  <script src="./assets/js/theme.bundle.js"></script>
+
+</body>
+
+</html>

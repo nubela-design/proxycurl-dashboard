@@ -1,2 +1,2 @@
 # proxycurl-dashboard
-Proxycurl dashboard
+dashboard for proxycurl
