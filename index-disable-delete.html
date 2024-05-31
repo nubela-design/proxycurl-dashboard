@@ -480,143 +480,6 @@
   </div>
 </nav>
 
-<!-- MODAL
------------------->
-<!--MODAL DELETE-->
-<div class="modal fade" id="modalDelete" aria-labelledby="modalDeleteLabel" aria-hidden="true" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-
-      <a type="button" class="btn-close h1 ps-4 pt-4" data-bs-dismiss="modal" aria-label="Close">
-      </a>
-
-      <div class="modal-body">
-
-        <div class="row justify-content-center pb-md-5">
-
-          <div class="col-12 col-md-9 text-center mb-3">
-            <i class="neu-so-minus-circle text-danger display-1"></i>
-
-            <h1 class="fw-bold mb-3 mt-4">
-              Delete your account?
-            </h1>
-
-            <p class="text-gray-700 fs-lg">
-              Saying goodbye to you is not easy for us. Would you tell us why?
-            </p>
-          </div>
-
-          <div class="col-12 col-md-8">
-
-            <!--Radio button-->
-            <div class="mb-5">
-              <div class="form-check mb-3">
-                <input class="form-check-input" type="radio" name="radioCancel" id="radioCancel1">
-                <label class="form-check-label" for="radioCancel1">
-                  Too many bugs or technical issue
-                </label>
-              </div>
-              <div class="form-check mb-3">
-                <input class="form-check-input" type="radio" name="radioCancel" id="radioCancel2">
-                <label class="form-check-label" for="radioCancel2">
-                  Don't need the tool
-                </label>
-              </div>
-              <div class="form-check mb-3">
-                <input class="form-check-input" type="radio" name="radioCancel" id="radioCancel3">
-                <label class="form-check-label" for="radioCancel3">
-                  Financial issue
-                </label>
-              </div>
-              <div class="form-check mb-3">
-                <input class="form-check-input" type="radio" name="radioCancel" id="radioCancel4">
-                <label class="form-check-label" for="radioCancel4">
-                  Other
-                </label>
-                <textarea class="form-control mt-2" placeholder="Tell us why" id="floatingTextarea2"
-                  style="height: 100px"></textarea>
-              </div>
-            </div>
-
-            <div class="row align-items-center justify-content-center mt-5">
-
-              <div class="col-12 col-md-6 text-center">
-                <div class="btn btn-primary w-100 lift" data-bs-dismiss="modal">
-                  Don't delete
-                </div>
-              </div>
-
-              <div class="col-12 col-md-auto">
-                <button class="btn btn-link text-secondary" data-bs-target="#modalDeleteNext" data-bs-toggle="modal"
-                  data-bs-dismiss="modal">
-                  Next
-                </button>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!--MODAL DELETE NEXT-->
-<div class="modal fade" id="modalDeleteNext" aria-labelledby="modalDeleteNextLabel" aria-hidden="true" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-
-      <a type="button" class="btn-close h1 ps-4 pt-4" data-bs-dismiss="modal" aria-label="Close">
-      </a>
-
-      <div class="modal-body">
-
-        <div class="row justify-content-center pb-md-5">
-
-          <div class="col-12 col-md-9 text-center mb-4">
-            <i class="neu-so-minus-circle text-danger display-1"></i>
-          </div>
-
-          <div class="col-12 col-md-9 text-center">
-
-            <h1 class="fw-bold">
-              Delete your account?
-            </h1>
-
-            <p class="mb-5 lead">
-              Pressing the "Yes, delete account" button will permanently delete your account. Are you sure want to delete your Proxycurl account?<br>
-            </p>
-
-            <div class="row justify-content-center">
-
-              <div class="col-12 col-md-6 mt-10">
-                <div class="btn btn-primary w-100 lift" data-bs-dismiss="modal">
-                  Don't delete
-                </div>
-              </div>
-
-              <div class="col-12 col-md-auto">
-                <a class="btn btn-link text-danger mt-10" href="account-delete-success.html">
-                  Yes, delete account
-                </a>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</div>
-
 <!-- MAIN CONTENT -->
 <div class="main-content">
 
@@ -730,9 +593,12 @@
           <div class="col-12 col-lg-auto">
 
             <!-- Button -->
-            <button class="btn btn-outline-secondary" type="submit" data-bs-toggle="modal" data-bs-target="#modalDelete">
-              Delete account
-            </button>
+            <div class="position-relative d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Your account is a team owner and can't be deleted. Please transfer ownership or contact us at hello@nubela.co for assistance.">
+              <button class="btn btn-outline-secondary" type="button" disabled>
+                Delete account
+              </button>
+            </div>
 
           </div>
         </div> <!-- / .row -->
