@@ -32,6 +32,9 @@
       href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css"
     />
 
+    <!-- Import Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <!-- Title -->
     <title>Proxycurl - Dashboard</title>
   </head>
@@ -1198,9 +1201,10 @@
                   >
                     By ticking this checkbox, I agree to a 12-month service
                     contract with Proxycurl as detailed in the
-                    <a class="text-primary" href="#!" target="_blank"
-                      >sales agreement</a
-                    >. I understand that this contract will automatically renew
+                    <a class="text-primary" href="#!" target="_blank">
+                      sales agreement
+                    </a>
+                    . I understand that this contract will automatically renew
                     every 12 months unless I cancel it before the renewal date.
                     If I cancel early before the end of the 12-month period, I
                     acknowledge my obligation to pay the remaining balance of
@@ -1419,9 +1423,10 @@
                   >
                     By ticking this checkbox, I agree to a 12-month service
                     contract with Proxycurl as detailed in the
-                    <a class="text-primary" href="#!" target="_blank"
-                      >sales agreement</a
-                    >. I understand that this contract will automatically renew
+                    <a class="text-primary" href="#!" target="_blank">
+                      sales agreement
+                    </a>
+                    . I understand that this contract will automatically renew
                     every 12 months unless I cancel it before the renewal date.
                     If I cancel early before the end of the 12-month period, I
                     acknowledge my obligation to pay the remaining balance of
@@ -1906,7 +1911,7 @@
                     >
                       <li class="nav-item text-center">
                         <div
-                          class="h3 nav-link active fw-bold"
+                          class="h3 nav-link fw-bold"
                           id="nav-subs-tab"
                           data-bs-toggle="tab"
                           data-bs-target="#nav-subs"
@@ -1918,6 +1923,35 @@
                           Subscription
                           <div class="small fw-normal mt-3 mb-3">
                             Credits expire every month/year
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="nav-item text-center">
+                        <div
+                          class="h3 nav-link active fw-bold"
+                          id="nav-subs-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#nav-subs-2"
+                          type="button"
+                          role="tab"
+                          aria-controls="nav-subs-2"
+                          aria-selected="true"
+                        >
+                          Monthly Subscription
+                          <div class="small fw-normal mt-3 mb-3">
+                            Monthly payment plan without 12 month contract
+                            <code
+                              class="badge bg-warning text-black"
+                              style="font-family: Cerebri Sans, sans-serif"
+                            >
+                              <span
+                                class="fw-bold fs-6"
+                                style="margin-top: -5px"
+                              >
+                                New
+                              </span>
+                            </code>
                           </div>
                         </div>
                       </li>
@@ -1944,7 +1978,7 @@
                     <!-- Tabs content -->
                     <div class="tab-content" id="nav-tabContent">
                       <div
-                        class="tab-pane fade show active"
+                        class="tab-pane fade"
                         id="nav-subs"
                         role="tabpanel"
                         aria-labelledby="nav-subs-tab"
@@ -1984,16 +2018,17 @@
                                 title="All 12+2 months credits issued at one go upon subscription of an Annual Plan"
                               >
                                 <i class="neu neu-info"></i> + 2 months free
-                                credits</span
-                              >
+                                credits
+                              </span>
                             </span>
                           </div>
 
                           <div class="text-md-center ms-md-n6">
                             <span
                               class="badge bg-info py-2 ps-3 pe-3 rounded-pill"
-                              >12-month contract, paid annually</span
                             >
+                              12-month contract, paid annually
+                            </span>
                           </div>
                         </div>
 
@@ -2012,10 +2047,10 @@
                                       font-family: Cerebri Sans, sans-serif;
                                     "
                                   >
-                                    <span class="mobile-credit h4 fw-bold"
-                                      >35,000</span
-                                    ></code
-                                  >
+                                    <span class="mobile-credit h4 fw-bold">
+                                      35,000
+                                    </span>
+                                  </code>
                                   credits
                                   <div class="mt-1 mobile-credit-desc">
                                     <code
@@ -2512,6 +2547,213 @@
                       </div>
 
                       <div
+                        class="tab-pane fade show active"
+                        id="nav-subs-2"
+                        role="tabpanel"
+                        aria-labelledby="nav-subs-2-tab"
+                      >
+
+                        <div class="table-responsive">
+                          <table
+                            id="pricingTable"
+                            class="card-table table table-sm table-nowrap table-hover"
+                          >
+                            <tbody class="fs-base">
+                              <!-- Starter -->
+                              <tr class="solid">
+                                <td class="mobile-tier fw-bold">Starter</td>
+                                <td class="mobile-credit">
+                                  <code
+                                    class="badge bg-light text-black"
+                                    style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    "
+                                  >
+                                    <span class="mobile-credit h4 fw-bold">
+                                      2,130
+                                    </span>
+                                  </code>
+                                  credits
+                                </td>
+                                <td class="mobile-percredit">
+                                  <code
+                                    class="mobile-percredit h4 fw-bold text-black"
+                                    style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    "
+                                  >
+                                    $0.023
+                                  </code>
+                                  /credit
+                                </td>
+                                <td class="mobile-bold-text">
+                                  <code
+                                    class="mobile-price h4 fw-bold text-black"
+                                    style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    "
+                                  >
+                                    $49
+                                  </code>
+                                  /mo
+                                </td>
+                                <td>
+                                  <button
+                                    class="btn btn-primary w-100 btn-block-mobile mb-2 d-block d-lg-none"
+                                  >
+                                    Subscribe
+                                  </button>
+                                </td>
+                              </tr>
+
+                              <!-- Growth -->
+                              <tr class="solid">
+                                <td class="mobile-tier fw-bold">Growth</td>
+                                <td class="mobile-credit">
+                                  <code
+                                    class="badge bg-light text-black"
+                                    style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    "
+                                  >
+                                    <span class="mobile-credit h4 fw-bold">
+                                      25,000
+                                    </span>
+                                  </code>
+                                  credits
+                                </td>
+                                <td class="mobile-percredit">
+                                  <code
+                                    class="mobile-percredit h4 fw-bold text-black"
+                                    style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    "
+                                  >
+                                    $0.0138
+                                  </code>
+                                  /credit
+                                </td>
+                                <td class="mobile-bold-text">
+                                  <code
+                                    class="mobile-price h4 fw-bold text-black"
+                                    style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    "
+                                  >
+                                    $299
+                                  </code>
+                                  /mo
+                                </td>
+                                <td>
+                                  <button
+                                    class="btn btn-primary w-100 btn-block-mobile mb-2 d-block d-lg-none"
+                                  >
+                                    Subscribe
+                                  </button>
+                                </td>
+                              </tr>
+
+                              <!-- Pro -->
+                              <tr class="solid">
+                                <td class="mobile-tier fw-bold">Pro</td>
+                                <td class="mobile-credit">
+                                  <code
+                                    class="badge bg-light text-black"
+                                    style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    "
+                                  >
+                                    <span class="mobile-credit h4 fw-bold">
+                                      89,900
+                                    </span>
+                                  </code>
+                                  credits
+                                </td>
+                                <td class="mobile-percredit">
+                                  <code
+                                    class="mobile-percredit h4 fw-bold text-black"
+                                    style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    "
+                                  >
+                                    $0.0115
+                                  </code>
+                                  /credit
+                                </td>
+                                <td class="mobile-bold-text">
+                                  <code
+                                    class="mobile-price h4 fw-bold text-black"
+                                    style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    "
+                                  >
+                                    $899
+                                  </code>
+                                  /mo
+                                </td>
+                                <td>
+                                  <button
+                                    class="btn btn-primary w-100 btn-block-mobile mb-2 d-block d-lg-none"
+                                  >
+                                    Subscribe
+                                  </button>
+                                </td>
+                              </tr>
+
+                              <!-- Ultra -->
+                              <tr class="bg-primary-soft solid">
+                                <td class="mobile-tier fw-bold">Ultra</td>
+                                <td class="mobile-credit">
+                                  <code
+                                    class="badge bg-light text-black"
+                                    style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    "
+                                  >
+                                    <span class="h4 fw-bold"> 211,000 </span>
+                                  </code>
+                                  credits
+                                </td>
+                                <td class="mobile-percredit">
+                                  <code
+                                    class="h4 fw-bold text-black"
+                                    style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    "
+                                  >
+                                    $0.01035
+                                  </code>
+                                  /credit
+                                </td>
+                                <td class="mobile-bold-text">
+                                  <code
+                                    class="mobile-price h4 fw-bold text-black"
+                                    style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    "
+                                  >
+                                    $1,899
+                                  </code>
+                                  /mo
+                                </td>
+                                <td>
+                                  <button
+                                    class="btn btn-primary w-100 btn-block-mobile mb-2"
+                                  >
+                                    Subscribe
+                                  </button>
+                                  <button class="btn btn-white w-100 d-block">
+                                    Pay by Wire/ACH
+                                  </button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div id="dropdown-container"></div>
+                        </div>
+                      </div>
+
+                      <div
                         class="tab-pane fade"
                         id="nav-payg"
                         role="tabpanel"
@@ -2557,7 +2799,8 @@
                                       data-bs-placement="bottom"
                                       title="Only for one-time validation discount"
                                     >
-                                      <strong class="h4 fw-bold">$1.99</strong> <i class="neu neu-info"></i>
+                                      <strong class="h4 fw-bold">$1.99</strong>
+                                      <i class="neu neu-info"></i>
                                     </span>
                                   </span>
                                 </td>
@@ -3224,18 +3467,26 @@
     </div>
     <!-- / .main-content -->
 
+    <script>
+      $(".table-responsive").on("show.bs.dropdown", function () {
+        $(".table-responsive").css("overflow", "inherit");
+      });
+
+      $(".table-responsive").on("hide.bs.dropdown", function () {
+        $(".table-responsive").css("overflow", "auto");
+      });
+    </script>
+
     <!-- JAVASCRIPT -->
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+
     <!-- Map JS -->
     <script src="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
 
     <!-- Vendor JS -->
     <script src="./assets/js/vendor.bundle.js"></script>
 
-    <!-- Theme JS -->
-    <script src="./assets/js/theme.bundle.js"></script>
-
-    <!-- Custom JS-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
     <script src="collapse.js"></script>
   </body>
