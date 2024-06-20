@@ -1,0 +1,52 @@
+/*--- Mixins ---*/
+
+/*--- Animation ---*/
+@mixin animation($name, $property) {
+  -webkit-animation: $name $property;
+  -moz-animation: $name $property;
+  -ms-animation: $name $property;
+  -o-animation: $name $property;
+  animation: $name $property;
+}
+/*--- /Animation ---*/
+
+/*--- Keyframes ---*/
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @-o-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}/*--- /Keyframes ---*/
+
+/*--- Transform ---*/
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}/*--- /Transform ---*/
+
+/*--- Box Shadows ---*/
+@mixin box-shadow($top, $left, $blur, $clear, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow: inset $top $left $blur $clear $color;
+    -moz-box-shadow: inset $top $left $blur $clear $color;
+    box-shadow: inset $top $left $blur $clear $color;
+  }  @else {
+    -webkit-box-shadow: $top $left $blur $clear $color;
+    -moz-box-shadow: $top $left $blur $clear $color;
+    box-shadow: $top $left $blur $clear $color;
+  }
+}/*--- /Box Shadows ---*/
+
+/*--- /Mixin ---*/

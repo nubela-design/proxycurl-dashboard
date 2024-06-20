@@ -1,0 +1,201 @@
+// Width
+.w-auto {
+  &-lg {
+    @media (min-width: $lg) {
+      width: auto !important;
+    }
+  }
+}
+
+// Skeloton Animation
+.skeleton {
+  .ava {
+    border-radius: 50% !important;
+    height: 40px !important;
+    width: 40px;
+    background: rgba(130, 130, 130, 0.2);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(8%, rgba(130, 130, 130, 0.2)),
+      color-stop(18%, rgba(130, 130, 130, 0.3)),
+      color-stop(33%, rgba(130, 130, 130, 0.2))
+    );
+    background: linear-gradient(
+      to right,
+      rgba(130, 130, 130, 0.2) 8%,
+      rgba(130, 130, 130, 0.3) 18%,
+      rgba(130, 130, 130, 0.2) 33%
+    );
+    background-size: 800px 100px;
+    animation: wave-squares 2s infinite ease-out;
+  }
+  .line {
+    height: 12px;
+    margin-bottom: 6px;
+    border-radius: 2px;
+    background: rgba(130, 130, 130, 0.2);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(8%, rgba(130, 130, 130, 0.2)),
+      color-stop(18%, rgba(130, 130, 130, 0.3)),
+      color-stop(33%, rgba(130, 130, 130, 0.2))
+    );
+    background: linear-gradient(
+      to right,
+      rgba(130, 130, 130, 0.2) 8%,
+      rgba(130, 130, 130, 0.3) 18%,
+      rgba(130, 130, 130, 0.2) 33%
+    );
+    background-size: 800px 100px;
+    animation: wave-lines 2s infinite ease-out;
+  }
+  .skeleton .line:last-child {
+    margin-bottom: 0;
+  }
+  .h8 {
+    height: 8px !important;
+  }
+  .h10 {
+    height: 10px !important;
+  }
+  .h12 {
+    height: 12px !important;
+  }
+  .h15 {
+    height: 15px !important;
+  }
+  .h17 {
+    height: 17px !important;
+  }
+  .h20 {
+    height: 20px !important;
+  }
+  .h25 {
+    height: 25px !important;
+  }
+  .w40 {
+    width: 40% !important;
+  }
+}
+
+@keyframes wave-lines {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+@keyframes wave-squares {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+// Rounded
+.rounded-4 {
+  border-radius: 0.25rem !important;
+}
+
+.rounded-8 {
+  border-radius: 0.5rem !important;
+}
+
+// Outline Custom
+.no-outline {
+  outline: none !important;
+
+  &:hover {
+    outline: none !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+
+  &:active {
+    outline: none !important;
+  }
+}
+
+// Subscribe Price Tabs
+#buyCreditsTab {
+  &.nav-pills {
+    .nav-item {
+      &:first-child {
+        border-top-left-radius: 0.25rem !important;
+        border-top-right-radius: 0.25rem !important;
+        border-bottom-left-radius: 0 !important;
+        
+        .nav-link {
+          border-top-left-radius: 0.25rem !important;
+          border-top-right-radius: 0.25rem !important;
+          border-bottom-left-radius: 0 !important;
+        }
+      }
+
+      &:last-child {
+        border-bottom-left-radius: 0.25rem !important;
+        border-bottom-right-radius: 0.25rem !important;
+        border-top-right-radius: 0 !important;
+        
+        .nav-link {
+          border-bottom-left-radius: 0.25rem !important;
+          border-bottom-right-radius: 0.25rem !important;
+          border-top-right-radius: 0 !important;
+        }
+      }
+
+      .nav-link {
+        color: #9b9ba4 !important;
+        background-color: #f7f7f7 !important;
+        border: 1px solid #f1f1f1 !important;
+
+        &.active {
+          background-color: #eff6ff !important;
+          color: $primary !important;
+          border: 1px solid $primary !important;
+        }
+      }
+
+      .show > .nav-link {
+        background-color: #eff6ff !important;
+        color: $primary !important;
+        border: 1px solid $primary !important;
+      }
+
+      @media (min-width: $lg) {
+        &:first-child {
+          border-top-left-radius: 0.25rem !important;
+          border-bottom-left-radius: 0.25rem !important;
+          border-top-right-radius: 0 !important;
+
+          .nav-link {
+            border-top-left-radius: 0.25rem !important;
+            border-bottom-left-radius: 0.25rem !important;
+            border-top-right-radius: 0 !important;
+          }
+        }
+
+        &:last-child {
+          border-top-right-radius: 0.25rem !important;
+          border-bottom-right-radius: 0.25rem !important;
+          border-bottom-left-radius: 0 !important;
+
+          .nav-link {
+            border-top-right-radius: 0.25rem !important;
+            border-bottom-right-radius: 0.25rem !important;
+            border-bottom-left-radius: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}

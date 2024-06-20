@@ -1,0 +1,13 @@
+/*--- Button ---*/
+.btn-sapiengraph-primary {
+  color: $white !important;
+  background-color: $primary !important;
+  border-color: $primary !important;
+
+  &:hover {
+    color: $white !important;
+    background-color: #359479 !important;
+    border-color: #359478 !important;
+  }
+}
+/*--- /Button ---*/

@@ -1,0 +1,38 @@
+/*--- Image ---*/
+.of-cover {
+  object-fit: cover !important;
+}
+.of-contain {
+  object-fit: contain !important;
+}
+
+.op-top {
+  object-position: top;
+  -o-object-position: top;
+}
+.op-right {
+  object-position: right;
+  -o-object-position: right;
+}
+.op-bottom {
+  object-position: bottom;
+  -o-object-position: bottom;
+}
+.op-left {
+  object-position: left;
+  -o-object-position: left;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+.img-zoom {
+  @include transform(scale(1.5));
+}
+.img-rounded-5 {
+  border-radius: 5px;
+}
+.img-rounded-10 {
+  border-radius: 10px;
+}
+/*--- /Image ---*/

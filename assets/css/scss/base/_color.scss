@@ -1,0 +1,334 @@
+/*--- Bg Color ---*/
+.bg-transparent {
+  background-color: $transparent !important;
+
+  &-xsm {
+    @media (min-width: $xsm) {
+      background-color: $transparent !important;
+    }
+  }
+  &-sm {
+    @media (min-width: $sm) {
+      background-color: $transparent !important;
+    }
+  }
+  &-md {
+    @media (min-width: $md) {
+      background-color: $transparent !important;
+    }
+  }
+  &-lg {
+    @media (min-width: $lg) {
+      background-color: $transparent !important;
+    }
+  }
+  &-xl {
+    @media (min-width: $xl) {
+      background-color: $transparent !important;
+    }
+  }
+  &-xxl {
+    @media (min-width: $xxl) {
+      background-color: $transparent !important;
+    }
+  }
+  &-xxxl {
+    @media (min-width: $xxxl) {
+      background-color: $transparent !important;
+    }
+  }
+}
+
+.bg-black {
+  background-color: $black !important;
+
+  &-xsm {
+    @media (min-width: $xsm) {
+      background-color: $black !important;
+    }
+  }
+  &-sm {
+    @media (min-width: $sm) {
+      background-color: $black !important;
+    }
+  }
+  &-md {
+    @media (min-width: $md) {
+      background-color: $black !important;
+    }
+  }
+  &-lg {
+    @media (min-width: $lg) {
+      background-color: $black !important;
+    }
+  }
+  &-xl {
+    @media (min-width: $xl) {
+      background-color: $black !important;
+    }
+  }
+  &-xxl {
+    @media (min-width: $xxl) {
+      background-color: $black !important;
+    }
+  }
+  &-xxxl {
+    @media (min-width: $xxxl) {
+      background-color: $black !important;
+    }
+  }
+}
+
+.bg-white {
+  background-color: $white !important;
+
+  &-xsm {
+    @media (min-width: $xsm) {
+      background-color: $white !important;
+    }
+  }
+  &-sm {
+    @media (min-width: $sm) {
+      background-color: $white !important;
+    }
+  }
+  &-md {
+    @media (min-width: $md) {
+      background-color: $white !important;
+    }
+  }
+  &-lg {
+    @media (min-width: $lg) {
+      background-color: $white !important;
+    }
+  }
+  &-xl {
+    @media (min-width: $xl) {
+      background-color: $white !important;
+    }
+  }
+  &-xxl {
+    @media (min-width: $xxl) {
+      background-color: $white !important;
+    }
+  }
+  &-xxxl {
+    @media (min-width: $xxxl) {
+      background-color: $white !important;
+    }
+  }
+}
+
+.bg-primary {
+  background-color: $primary !important;
+
+  &-xsm {
+    @media (min-width: $xsm) {
+      background-color: $primary !important;
+    }
+  }
+  &-sm {
+    @media (min-width: $sm) {
+      background-color: $primary !important;
+    }
+  }
+  &-md {
+    @media (min-width: $md) {
+      background-color: $primary !important;
+    }
+  }
+  &-lg {
+    @media (min-width: $lg) {
+      background-color: $primary !important;
+    }
+  }
+  &-xl {
+    @media (min-width: $xl) {
+      background-color: $primary !important;
+    }
+  }
+  &-xxl {
+    @media (min-width: $xxl) {
+      background-color: $primary !important;
+    }
+  }
+  &-xxxl {
+    @media (min-width: $xxxl) {
+      background-color: $primary !important;
+    }
+  }
+}
+
+.bg-gray-light {
+  background-color: $gray-light !important;
+
+  &-xsm {
+    @media (min-width: $xsm) {
+      background-color: $gray-light !important;
+    }
+  }
+  &-sm {
+    @media (min-width: $sm) {
+      background-color: $gray-light !important;
+    }
+  }
+  &-md {
+    @media (min-width: $md) {
+      background-color: $gray-light !important;
+    }
+  }
+  &-lg {
+    @media (min-width: $lg) {
+      background-color: $gray-light !important;
+    }
+  }
+  &-xl {
+    @media (min-width: $xl) {
+      background-color: $gray-light !important;
+    }
+  }
+  &-xxl {
+    @media (min-width: $xxl) {
+      background-color: $gray-light !important;
+    }
+  }
+  &-xxxl {
+    @media (min-width: $xxxl) {
+      background-color: $gray-light !important;
+    }
+  }
+}
+
+/*--- /Bg Color ---*/
+
+/*--- Text Color ---*/
+.text-black {
+  color: $black !important;
+
+  &-xsm {
+    @media (min-width: $xsm) {
+      color: $black !important;
+    }
+  }
+  &-sm {
+    @media (min-width: $sm) {
+      color: $black !important;
+    }
+  }
+  &-md {
+    @media (min-width: $md) {
+      color: $black !important;
+    }
+  }
+  &-lg {
+    @media (min-width: $lg) {
+      color: $black !important;
+    }
+  }
+  &-xl {
+    @media (min-width: $xl) {
+      color: $black !important;
+    }
+  }
+  &-xxl {
+    @media (min-width: $xxl) {
+      color: $black !important;
+    }
+  }
+  &-xxxl {
+    @media (min-width: $xxxl) {
+      color: $black !important;
+    }
+  }
+}
+
+.text-white {
+  color: $white !important;
+
+  &-xsm {
+    @media (min-width: $xsm) {
+      color: $white !important;
+    }
+  }
+  &-sm {
+    @media (min-width: $sm) {
+      color: $white !important;
+    }
+  }
+  &-md {
+    @media (min-width: $md) {
+      color: $white !important;
+    }
+  }
+  &-lg {
+    @media (min-width: $lg) {
+      color: $white !important;
+    }
+  }
+  &-xl {
+    @media (min-width: $xl) {
+      color: $white !important;
+    }
+  }
+  &-xxl {
+    @media (min-width: $xxl) {
+      color: $white !important;
+    }
+  }
+  &-xxxl {
+    @media (min-width: $xxxl) {
+      color: $white !important;
+    }
+  }
+}
+
+.text-color-primary {
+  color: $primary !important;
+
+  &-xsm {
+    @media (min-width: $xsm) {
+      color: $primary !important;
+    }
+  }
+  &-sm {
+    @media (min-width: $sm) {
+      color: $primary !important;
+    }
+  }
+  &-md {
+    @media (min-width: $md) {
+      color: $primary !important;
+    }
+  }
+  &-lg {
+    @media (min-width: $lg) {
+      color: $primary !important;
+    }
+  }
+  &-xl {
+    @media (min-width: $xl) {
+      color: $primary !important;
+    }
+  }
+  &-xxl {
+    @media (min-width: $xxl) {
+      color: $primary !important;
+    }
+  }
+  &-xxxl {
+    @media (min-width: $xxxl) {
+      color: $primary !important;
+    }
+  }
+}
+
+/*--- /Text Color ---*/
+
+// Border Color
+.border-primary {
+  border: 1px solid $primary !important;
+}
+.border-danger {
+  border: 1px solid #ff0000 !important;
+}
+// /Border Color

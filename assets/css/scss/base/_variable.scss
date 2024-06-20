@@ -1,0 +1,67 @@
+/*--- Main Base Color ---*/
+$black: rgb(0, 0, 0);
+$transparent: rgba(0,0,0,0);
+$white: rgb(255, 255, 255);
+
+$primary: #335eea;
+
+$muted: #95aac9;
+
+$gray-light: #f9fbfd;
+/*--- /Main Base Color ---*/
+
+// Resolusi
+$xsm: 375px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+$xxxl: 1900px;
+// /Resolusi
+
+// Font Size
+$fs-6: .375rem;
+$fs-7: .438;
+$fs-8: .5;
+$fs-9: .563rem;
+$fs-10: .625rem;
+$fs-11: .688rem;
+$fs-12: .75rem;
+$fs-13: .813rem;
+$fs-14: .875rem;
+$fs-15: .938rem;
+$fs-16: 1rem;
+$fs-17: 1.063rem;
+$fs-18: 1.125rem;
+$fs-19: 1.188rem;
+$fs-20: 1.25rem;
+$fs-21: 1.313rem;
+$fs-22: 1.375rem;
+$fs-23: 1.438rem;
+$fs-24: 1.5rem;
+$fs-25: 1.5625rem;
+$fs-26: 1.625rem;
+$fs-27: 1.6875rem;
+$fs-28: 1.75rem;
+$fs-29: 1.8125rem;
+$fs-30: 1.875rem;
+$fs-31: 1.9375rem;
+$fs-32: 2rem;
+$fs-33: 2.0625rem;
+$fs-34: 2.125rem;
+$fs-35: 2.1875rem;
+$fs-36: 2.25rem;
+$fs-37: 2.3125rem;
+$fs-38: 2.375rem;
+$fs-39: 2.4375rem;
+$fs-40: 2.5rem;
+$fs-41: 2.5625rem;
+$fs-42: 2.625rem;
+$fs-43: 2.6875rem;
+$fs-44: 2.75rem;
+$fs-45: 2.8125rem;
+$fs-46: 2.875rem;
+$fs-47: 2.9375rem;
+$fs-48: 3rem;
+// /Font Size
