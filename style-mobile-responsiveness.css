@@ -152,7 +152,7 @@
     .mobile-tier {
     font-size: 1.5rem !important;
     font-weight: 600 !important;
-    padding-bottom: 2.3rem !important;
+    /* padding-bottom: 2.3rem !important; */
     }    
 
     .mobile-price {
