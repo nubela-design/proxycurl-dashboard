@@ -128,7 +128,7 @@
     tr {
         border: 0;
         display: block;
-        margin-top: 2rem;
+        /* margin-top: 2rem; */
         border-radius: 6px !important;
     }
 

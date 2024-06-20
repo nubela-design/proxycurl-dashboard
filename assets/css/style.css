@@ -327,14 +327,6 @@
 }
 
 /*--- /Text Color ---*/
-.border-primary {
-  border: 1px solid #335eea !important;
-}
-
-.border-danger {
-  border: 1px solid #ff0000 !important;
-}
-
 /*-- Font --*/
 .roboto {
   font-family: "Roboto", sans-serif !important;
