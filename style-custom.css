@@ -47,4 +47,10 @@
     margin-top: -12rem !important;
 }
 
+@media (min-width: 1500px) {
+    .main-content-sandbox {
+        flex: 0 0 auto;
+        width: 100%;
+    }   
+}
 
