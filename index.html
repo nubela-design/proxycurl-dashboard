@@ -37,14 +37,13 @@
 
     <style>
       #alert-box {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 1000;
-    }
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+      }
     </style>
-
   </head>
 
   <body>
@@ -562,8 +561,8 @@
           </div>
 
           <div class="navbar-user py-4 border-top border-bottom mb-4">
-            <a class="btn w-100 btn-outline-primary" id="sandbox-toggle-button">
-              <i class="fe fe-codepen me-2"></i> Sandbox Mode
+            <a class="btn w-100 btn-outline-dark" id="sandbox-toggle-button">
+              Go to Sandbox Mode
             </a>
           </div>
 
@@ -770,6 +769,30 @@
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-12 main-content-dashboard">
+            <!--Sandbox Alert-->
+            <div
+              class="card bg-warning mt-5"
+              id="liveAlertPlaceholder"
+              style="display: none"
+            >
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-12">
+                    <p class="lead text-dark mb-0">
+                      You’re currently in <b>Sandbox mode</b>. To return to
+                      Production mode, please
+                      <a
+                        href="javascript:void(0);"
+                        class="fw-bold text-black text-decoration-underline"
+                        onclick="dismissAlertSandbox()"
+                        >click here</a
+                      >.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!--News Alert-->
             <div class="card bg-dark mt-5">
               <div class="card-body">
@@ -932,13 +955,12 @@
           </div>
         </div>
         <!-- / .row -->
-
       </div>
     </div>
     <!-- / .main-content -->
 
     <!-- Alert placeholder -->
-    <div 
+    <!-- <div 
       id="liveAlertPlaceholder" 
       style="
         position: fixed;
@@ -947,7 +969,7 @@
         display: none;
       "
     >
-    </div>
+    </div> -->
 
     <!-- JAVASCRIPT -->
     <!-- Map JS -->
@@ -962,28 +984,41 @@
     <script>
       const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
 
-      const sandboxToggleButton = document.getElementById("sandbox-toggle-button");
-      let toggleState = false;
+      const sandboxToggleButton = document.getElementById(
+        "sandbox-toggle-button"
+      );
+      let sandboxToggleState = false;
 
       sandboxToggleButton.addEventListener("click", () => {
-        toggleState = !toggleState;
-        if (toggleState) {
-          sandboxToggleButton.style.backgroundColor = "#2c7be5";
+        sandboxToggleState = !sandboxToggleState;
+        if (sandboxToggleState) {
+          sandboxToggleButton.style.backgroundColor = "#12263f";
           sandboxToggleButton.style.color = "#ffffff";
-          alertPlaceholder.innerHTML = 'Sandbox Mode ON!';
-          alertPlaceholder.className = 'alert alert-success';
+          sandboxToggleButton.innerHTML = "Back to Production";
+          alertPlaceholder.style.display = "block";
+          // alertPlaceholder.innerHTML = 'You in Sandbox Mode now!';
+          // alertPlaceholder.className = 'alert alert-warning text-black';
         } else {
           sandboxToggleButton.style.backgroundColor = "#ffffff";
-          sandboxToggleButton.style.color = "#2c7be5";
-          alertPlaceholder.innerHTML = 'Sandbox Mode OFF!';
-          alertPlaceholder.className = 'alert alert-danger';
+          sandboxToggleButton.style.color = "#12263f";
+          sandboxToggleButton.innerHTML = "Go to Sandbox Mode";
+          alertPlaceholder.style.display = "none";
+          // alertPlaceholder.innerHTML = 'You in Production now!';
+          // alertPlaceholder.className = 'alert alert-primary';
         }
-        alertPlaceholder.style.display = 'block';
-        setTimeout(() => {
-          alertPlaceholder.style.display = 'none';
-        }, 5000); // timeout after 2 seconds
+        // alertPlaceholder.style.display = 'block';
+        // setTimeout(() => {
+        //   alertPlaceholder.style.display = 'none';
+        // }, 5000); // timeout after 2 seconds
       });
-    </script>
 
+      function dismissAlertSandbox() {
+        sandboxToggleButton.style.backgroundColor = "#ffffff";
+        sandboxToggleButton.style.color = "#12263f";
+        sandboxToggleButton.innerHTML = "Go to Sandbox Mode";
+        alertPlaceholder.style.display = "none";
+        sandboxToggleState = false;
+      }
+    </script>
   </body>
 </html>
