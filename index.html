@@ -1,342 +1,444 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A fully featured admin theme which can be used to build CRM, CMS, etc."
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc." />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+    <!-- Map CSS -->
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css"
+    />
 
-  <!-- Map CSS -->
-  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
 
-  <!-- Libs CSS -->
-  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+    <link rel="stylesheet" href="style-custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css"
+    />
 
-  <!-- Theme CSS -->
-  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
-  <link rel="stylesheet" href="style-custom.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">
+    <!-- Title -->
+    <title>Proxycurl - Dashboard</title>
 
-  <!-- Title -->
-  <title>Proxycurl - Dashboard</title>
-</head>
+    <style>
+      #alert-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+      }
+    </style>
+  </head>
 
-<body>
-
-<!-- NAVIGATION -->
-<nav class="navbar navbar-vertical fixed-start navbar-expand-md navbar-light" id="sidebar">
-  <div class="container-fluid">
-
-    <!-- Toggler -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarCollapse"
-      aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Brand -->
-    <a class="navbar-brand" href="./index.html">
-      <img src="./assets/img/logo.svg" class="navbar-brand-img mx-auto" alt="...">
-    </a>
-
-    <!-- User (xs) -->
-    <div class="navbar-user d-md-none">
-
-      <div class="btn-group dropdown">
-
-        <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown"
-          aria-expanded="false">
-          example@nubela.co <i class="fe fe-chevron-down ms-3"></i>
+  <body>
+    <!-- NAVIGATION -->
+    <nav
+      class="navbar navbar-vertical fixed-start navbar-expand-md navbar-light"
+      id="sidebar"
+    >
+      <div class="container-fluid">
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#sidebarCollapse"
+          aria-controls="sidebarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="dropdown-menu dropdown-menu-end shadow-lg" aria-labelledby="dropdownMenuButton">
+        <!-- Brand -->
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="./assets/img/logo.svg"
+            class="navbar-brand-img mx-auto"
+            alt="..."
+          />
+        </a>
 
-          <h6 class="header-pretitle border-bottom text-black px-4 py-4 mb-0">
-            Switch team <span class="badge fw-bold px-2 py-2 ms-1 bg-warning">Coming soon</span>
-          </h6>
+        <!-- User (xs) -->
+        <div class="navbar-user d-md-none">
+          <div class="btn-group dropdown">
+            <button
+              type="button"
+              class="btn btn-outline-primary dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              example@nubela.co <i class="fe fe-chevron-down ms-3"></i>
+            </button>
 
-          <div class="pt-3 pb-3 px-4 border-bottom">
-            <a class="btn btn-light w-100 pt-3 pb-1"
-              href="https://nubela.co/proxycurl/affiliate?utm_campaign=affiliate_marketing&utm_source=affiliate_link&utm_medium=affiliate&utm_content=internal_navigator_menu"
-              target="_blank">
-              <h5 class="text-primary"> <i class="fe fe-gift pe-1"></i> Earn 30% for 2 years <i
-                  class="fe fe-arrow-up-right"></i>
-              </h5>
-            </a>
-          </div>
+            <div
+              class="dropdown-menu dropdown-menu-end shadow-lg"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <h6
+                class="header-pretitle border-bottom text-black px-4 py-4 mb-0"
+              >
+                Switch team
+                <span class="badge fw-bold px-2 py-2 ms-1 bg-warning"
+                  >Coming soon</span
+                >
+              </h6>
 
-          <div class="pt-3 pb-3 px-4 border-bottom">
-
-            <form>
-              <div class="form-floating form-group mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Dragon Team">
-                <label for="floatingInput">Team name</label>
+              <div class="pt-3 pb-3 px-4 border-bottom">
+                <a
+                  class="btn btn-light w-100 pt-3 pb-1"
+                  href="https://nubela.co/proxycurl/affiliate?utm_campaign=affiliate_marketing&utm_source=affiliate_link&utm_medium=affiliate&utm_content=internal_navigator_menu"
+                  target="_blank"
+                >
+                  <h5 class="text-primary">
+                    <i class="fe fe-gift pe-1"></i> Earn 30% for 2 years
+                    <i class="fe fe-arrow-up-right"></i>
+                  </h5>
+                </a>
               </div>
 
-              <button class="btn btn-outline-primary w-100" data-bs-toggle="tooltip" data-bs-placement="top"
-                title="We are fleshing out this new dashboard iteratively. We are intending to include a Teams feature and it is coming soon!">
-                Create new team
-              </button>
-            </form>
+              <div class="pt-3 pb-3 px-4 border-bottom">
+                <form>
+                  <div class="form-floating form-group mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="Dragon Team"
+                    />
+                    <label for="floatingInput">Team name</label>
+                  </div>
 
-          </div>
+                  <button
+                    class="btn btn-outline-primary w-100"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="We are fleshing out this new dashboard iteratively. We are intending to include a Teams feature and it is coming soon!"
+                  >
+                    Create new team
+                  </button>
+                </form>
+              </div>
 
-          <div class="border py-3 px-4 bg-lighter">
+              <div class="border py-3 px-4 bg-lighter">
+                <a href="#!" type="button">
+                  <div class="row align-items-center g-0">
+                    <div class="col-2">
+                      <i class="fe fe-check"></i>
+                    </div>
 
-            <a href="#!" type="button">
+                    <div class="col-10">
+                      <span class="text-primary small">
+                        example@nubela.co
+                      </span>
 
-              <div class="row align-items-center g-0">
+                      <p class="text-black mb-0">Nubela</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
 
-                <div class="col-2">
-                  <i class="fe fe-check"></i>
-                </div>
-
-                <div class="col-10">
+              <div class="pt-3 px-4">
+                <a href="#!" type="button">
                   <span class="text-primary small">
-                    example@nubela.co
+                    yowassap@thenounproject.com
                   </span>
 
-                  <p class="text-black mb-0">
-                    Nubela
-                  </p>
+                  <p class="text-black">Black Ireng</p>
+                </a>
+              </div>
+
+              <div class="pt-3 px-4">
+                <a href="#!" type="button">
+                  <span class="text-primary small"> john@welut.com </span>
+
+                  <p class="text-black">Welut</p>
+                </a>
+              </div>
+
+              <div class="row align-items-center border-top">
+                <a
+                  class="text-center text-secondary nav-link mt-3 mb-1"
+                  href="index.html"
+                >
+                  <i class="fe fe-log-out"></i> Log out
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Credits (md)-->
+        <div class="navbar-user d-none d-md-flex border-bottom pb-4 mb-4">
+          <div class="row">
+            <div class="col-12">
+              <label class="mb-2 text-gray-700">
+                Credits
+                <code
+                  class="h2 text-black"
+                  style="font-family: Cerebri Sans, sans-serif"
+                >
+                  480</code
+                ><code
+                  class="small text-gray-700"
+                  style="font-family: Cerebri Sans, sans-serif"
+                  >/1000
+                </code>
+              </label>
+
+              <div class="progress">
+                <div
+                  class="progress-bar bg-secondary"
+                  role="progressbar"
+                  style="width: 48%"
+                  aria-valuenow="48"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  480/1000
+                </div>
+              </div>
+
+              <label class="small text-muted mt-2">
+                Auto-topup
+                <span
+                  class="badge bg-white text-primary border border-primary fw-bold"
+                  >Enabled</span
+                >
+              </label>
+            </div>
+
+            <div class="col-12">
+              <a
+                class="btn btn-outline-primary w-100 mt-3"
+                href="account-buy-credits.html"
+              >
+                Buy credits
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="sidebarCollapse">
+          <!-- Credits (xs)-->
+          <div class="navbar-user d-md-none mb-4">
+            <div class="row text-center text-md-left">
+              <div class="col-12">
+                <label class="mb-2 text-gray-700">
+                  Credits
+                  <code
+                    class="h2 text-black"
+                    style="font-family: Cerebri Sans, sans-serif"
+                  >
+                    480</code
+                  ><code
+                    class="small text-gray-700"
+                    style="font-family: Cerebri Sans, sans-serif"
+                    >/1000
+                  </code>
+                </label>
+
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-secondary"
+                    role="progressbar"
+                    style="width: 48%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    480/1000
+                  </div>
                 </div>
 
+                <label class="small text-muted mt-2">
+                  Auto-topup
+                  <span
+                    class="badge bg-white text-primary border border-primary fw-bold"
+                    >Enabled</span
+                  >
+                </label>
               </div>
 
-            </a>
-
-          </div>
-
-          <div class="pt-3 px-4">
-
-            <a href="#!" type="button">
-
-              <span class="text-primary small">
-                yowassap@thenounproject.com
-              </span>
-
-              <p class="text-black">
-                Black Ireng
-              </p>
-
-            </a>
-
-          </div>
-
-          <div class="pt-3 px-4">
-
-            <a href="#!" type="button">
-
-              <span class="text-primary small">
-                john@welut.com
-              </span>
-
-              <p class="text-black">
-                Welut
-              </p>
-
-            </a>
-
-          </div>
-
-          <div class="row align-items-center border-top">
-            <a class="text-center text-secondary nav-link mt-3 mb-1" href="index.html">
-              <i class="fe fe-log-out"></i> Log out
-            </a>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- Credits (md)-->
-    <div class="navbar-user d-none d-md-flex border-bottom pb-4 mb-4">
-
-      <div class="row">
-
-        <div class="col-12">
-          <label class="mb-2 text-gray-700">
-            Credits
-            <code class="h2 text-black" style="font-family: Cerebri Sans,sans-serif;"> 480</code><code
-              class="small text-gray-700" style="font-family: Cerebri Sans,sans-serif;">/1000 </code>
-          </label>
-
-          <div class="progress">
-            <div class="progress-bar bg-secondary" role="progressbar" style="width: 48%;" aria-valuenow="48"
-              aria-valuemin="0" aria-valuemax="100">
-              480/1000
-            </div>
-          </div>
-
-          <label class="small text-muted mt-2">
-            Auto-topup <span class="badge bg-white text-primary border border-primary fw-bold">Enabled</span>
-          </label>
-
-        </div>
-
-        <div class="col-12">
-
-          <a class="btn btn-outline-primary w-100 mt-3" href="account-buy-credits.html">
-            Buy credits
-          </a>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- Collapse -->
-    <div class="collapse navbar-collapse" id="sidebarCollapse">
-
-      <!-- Credits (xs)-->
-      <div class="navbar-user d-md-none mb-4">
-
-        <div class="row text-center text-md-left">
-
-          <div class="col-12">
-            <label class="mb-2 text-gray-700">
-              Credits
-              <code class="h2 text-black" style="font-family: Cerebri Sans,sans-serif;"> 480</code><code
-                class="small text-gray-700" style="font-family: Cerebri Sans,sans-serif;">/1000 </code>
-            </label>
-
-            <div class="progress">
-              <div class="progress-bar bg-secondary" role="progressbar" style="width: 48%;" aria-valuenow="25"
-                aria-valuemin="0" aria-valuemax="100">
-                480/1000
+              <div class="col-12">
+                <a
+                  class="btn btn-outline-primary w-100 mt-3"
+                  href="account-buy-credits.html"
+                >
+                  Buy credits
+                </a>
               </div>
             </div>
-
-            <label class="small text-muted mt-2">
-              Auto-topup <span class="badge bg-white text-primary border border-primary fw-bold">Enabled</span>
-            </label>
-
           </div>
 
-          <div class="col-12">
-
-            <a class="btn btn-outline-primary w-100 mt-3" href="account-buy-credits.html">
-              Buy credits
-            </a>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <!-- Navigation -->
-      <ul class="navbar-nav">
-
-        <li class="nav-item">
-          <a class="nav-link" href="#sidebarPages" data-bs-toggle="collapse" role="button" aria-expanded="false"
-            aria-controls="sidebarPages">
-            <i class="fe fe-file"></i> Proxycurl API
-          </a>
-          <div class="collapse show" id="sidebarPages">
-            <ul class="nav nav-sm flex-column">
-              <li class="nav-item ">
-                <a href="./account-api.html" class="nav-link">
-                  <span class="border-start border-2 ps-3">API Key</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./account-work.html" class="nav-link">
-                  <span class="border-start border-2 ps-3">Work Email Lookup Logs</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#!" class="nav-link">
-                  <span class="border-start border-2 ps-3">Docs</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#sidebarPages" data-bs-toggle="collapse" role="button" aria-expanded="true"
-            aria-controls="sidebarPages">
-            <i class="fe fe-box"></i> Addons
-          </a>
-          <div class="collapse" id="sidebarPages">
-            <ul class="nav nav-sm flex-column">
-              <li class="nav-item">
-                <a href="https://sapiengraph.com" target="_blank" class="nav-link">
-                  <span class="border-start border-2 ps-3 text-info border-info">Sapiengraph - B2B Enrichment in
-                    Google
-                    Sheets ↗</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="account-request-log.html" role="button">
-            <i class="fe fe-activity"></i> Request Log
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#sidebarBilling" data-bs-toggle="collapse" role="button" aria-expanded="false"
-            aria-controls="sidebarBilling">
-            <i class="fe fe-dollar-sign"></i> Billing
-          </a>
-          <div class="collapse show" id="sidebarBilling">
-            <ul class="nav nav-sm flex-column">
-              <li class="nav-item">
-                <a href="./account-plans-and-payments.html" class="nav-link">
-                  <span class="border-start border-2 ps-3 ">Plan and payments</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./account-buy-credits.html" class="nav-link">
-                  <span class="border-start border-2 ps-3">Buy credits</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./account-invoices.html" class="nav-link">
-                  <span class="border-start border-2 ps-3">Invoices</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#sidebarAccount" data-bs-toggle="collapse" role="button" aria-expanded="true"
-            aria-controls="sidebarAccount">
-            <i class="fe fe-user"></i> Account
-          </a>
-          <div class="collapse show" id="sidebarAccount">
-            <ul class="nav nav-sm flex-column">
-              <li class="nav-item">
-                <a href="index.html" class="nav-link fw-bold">
-                  <span class="border-start border-2 ps-3 text-primary border-primary">Change email</span>
-                      </a>
-                    </li>
-                    <li class=" nav-item">
-                    <a href="account-change-password.html" class="nav-link">
-                      <span class="border-start border-2 ps-3">Change password</span>
+          <!-- Navigation -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#sidebarPages"
+                data-bs-toggle="collapse"
+                role="button"
+                aria-expanded="false"
+                aria-controls="sidebarPages"
+              >
+                <i class="fe fe-file"></i> Proxycurl API
+              </a>
+              <div class="collapse show" id="sidebarPages">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="./account-api.html" class="nav-link">
+                      <span class="border-start border-2 ps-3">API Key</span>
                     </a>
-              </li>
-              <li class="nav-item">
-                <a href="account-2fa.html" class="nav-link">
-                  <span class="border-start border-2 ps-3">Two factor security</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav-item mb-4">
-          <a class="nav-link" href="account-team.html">
-            <i class="fe fe-users"></i> Upgrade to team account
-          </a>
-        </li>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./account-work.html" class="nav-link">
+                      <span class="border-start border-2 ps-3"
+                        >Work Email Lookup Logs</span
+                      >
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#!" class="nav-link">
+                      <span class="border-start border-2 ps-3">Docs</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#sidebarPages"
+                data-bs-toggle="collapse"
+                role="button"
+                aria-expanded="true"
+                aria-controls="sidebarPages"
+              >
+                <i class="fe fe-box"></i> Addons
+              </a>
+              <div class="collapse" id="sidebarPages">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a
+                      href="https://sapiengraph.com"
+                      target="_blank"
+                      class="nav-link"
+                    >
+                      <span
+                        class="border-start border-2 ps-3 text-info border-info"
+                        >Sapiengraph - B2B Enrichment in Google Sheets ↗</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="account-request-log.html" role="button">
+                <i class="fe fe-activity"></i> Request Log
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#sidebarBilling"
+                data-bs-toggle="collapse"
+                role="button"
+                aria-expanded="false"
+                aria-controls="sidebarBilling"
+              >
+                <i class="fe fe-dollar-sign"></i> Billing
+              </a>
+              <div class="collapse show" id="sidebarBilling">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a
+                      href="./account-plans-and-payments.html"
+                      class="nav-link"
+                    >
+                      <span class="border-start border-2 ps-3"
+                        >Plan and payments</span
+                      >
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./account-buy-credits.html" class="nav-link">
+                      <span class="border-start border-2 ps-3"
+                        >Buy credits</span
+                      >
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./account-invoices.html" class="nav-link">
+                      <span class="border-start border-2 ps-3">Invoices</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#sidebarAccount"
+                data-bs-toggle="collapse"
+                role="button"
+                aria-expanded="true"
+                aria-controls="sidebarAccount"
+              >
+                <i class="fe fe-user"></i> Account
+              </a>
+              <div class="collapse show" id="sidebarAccount">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="index.html" class="nav-link fw-bold">
+                      <span
+                        class="border-start border-2 ps-3 text-primary border-primary"
+                        >Change email</span
+                      >
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="account-change-password.html" class="nav-link">
+                      <span class="border-start border-2 ps-3"
+                        >Change password</span
+                      >
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="account-2fa.html" class="nav-link">
+                      <span class="border-start border-2 ps-3"
+                        >Two factor security</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item mb-4">
+              <a class="nav-link" href="account-team.html">
+                <i class="fe fe-users"></i> Upgrade to team account
+              </a>
+            </li>
 
-        <!-- old-logout
+            <!-- old-logout
                 <hr class="my-4">
     
                 <li class="nav-item">
@@ -345,475 +447,578 @@
                   </a>
                 </li>
                 -->
+          </ul>
 
-      </ul>
+          <div class="mt-md-auto"></div>
 
-      <div class="mt-md-auto"></div>
+          <!-- User (md) -->
+          <div class="navbar-user d-none d-md-flex pb-4" id="sidebarUser">
+            <div class="btn-group dropup">
+              <button
+                type="button"
+                class="btn btn-outline-primary dropdown-toggle w-100"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                example@nubela.co <i class="fe fe-chevron-up ms-3"></i>
+              </button>
 
-      <!-- User (md) -->
-      <div class="navbar-user d-none d-md-flex border-bottom pb-4 mb-4" id="sidebarUser">
+              <div
+                class="dropdown-menu dropdown-menu-center shadow-lg"
+                aria-labelledby="dropdownMenuButton"
+              >
+                <h6
+                  class="header-pretitle border-bottom text-black px-4 py-4 mb-0"
+                >
+                  Switch team
+                  <span class="badge fw-bold px-2 py-2 ms-1 bg-warning"
+                    >Coming soon</span
+                  >
+                </h6>
 
-        <div class="btn-group dropup">
-
-          <button type="button" class="btn btn-outline-primary dropdown-toggle w-100" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            example@nubela.co <i class="fe fe-chevron-up ms-3"></i>
-          </button>
-
-          <div class="dropdown-menu dropdown-menu-center shadow-lg" aria-labelledby="dropdownMenuButton">
-
-            <h6 class="header-pretitle border-bottom text-black px-4 py-4 mb-0">
-              Switch team <span class="badge fw-bold px-2 py-2 ms-1 bg-warning">Coming soon</span>
-            </h6>
-
-            <div class="pt-3 pb-3 px-4 border-bottom">
-              <a class="btn btn-light w-100 pt-3 pb-1"
-                href="https://nubela.co/proxycurl/affiliate?utm_campaign=affiliate_marketing&utm_source=affiliate_link&utm_medium=affiliate&utm_content=internal_navigator_menu"
-                target="_blank">
-                <h5 class="text-primary"> <i class="fe fe-gift pe-1"></i> Earn 30% for 2 years <i
-                    class="fe fe-arrow-up-right"></i>
-                </h5>
-              </a>
-            </div>
-
-            <div class="pt-3 pb-3 px-4 border-bottom">
-
-              <form>
-                <div class="form-floating form-group mb-3">
-                  <input type="text" class="form-control" id="floatingInput" placeholder="Dragon Team">
-                  <label for="floatingInput">Team name</label>
+                <div class="pt-3 pb-3 px-4 border-bottom">
+                  <a
+                    class="btn btn-light w-100 pt-3 pb-1"
+                    href="https://nubela.co/proxycurl/affiliate?utm_campaign=affiliate_marketing&utm_source=affiliate_link&utm_medium=affiliate&utm_content=internal_navigator_menu"
+                    target="_blank"
+                  >
+                    <h5 class="text-primary">
+                      <i class="fe fe-gift pe-1"></i> Earn 30% for 2 years
+                      <i class="fe fe-arrow-up-right"></i>
+                    </h5>
+                  </a>
                 </div>
 
-                <button class="btn btn-outline-primary w-100" data-bs-toggle="tooltip" data-bs-placement="top"
-                  title="We are fleshing out this new dashboard iteratively. We are intending to include a Teams feature and it is coming soon!">
-                  Create new team
-                </button>
-              </form>
+                <div class="pt-3 pb-3 px-4 border-bottom">
+                  <form>
+                    <div class="form-floating form-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Dragon Team"
+                      />
+                      <label for="floatingInput">Team name</label>
+                    </div>
 
-            </div>
+                    <button
+                      class="btn btn-outline-primary w-100"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="We are fleshing out this new dashboard iteratively. We are intending to include a Teams feature and it is coming soon!"
+                    >
+                      Create new team
+                    </button>
+                  </form>
+                </div>
 
-            <div class="border pt-3 px-4 bg-lighter">
+                <div class="border pt-3 px-4 bg-lighter">
+                  <a href="#!" type="button">
+                    <div class="row align-items-center g-0">
+                      <div class="col-2">
+                        <i class="fe fe-check"></i>
+                      </div>
 
-              <a href="#!" type="button">
+                      <div class="col-10">
+                        <span class="text-primary small">
+                          example@nubela.co
+                        </span>
 
-                <div class="row align-items-center g-0">
+                        <p class="text-black">Nubela</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
 
-                  <div class="col-2">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <div class="col-10">
+                <div class="pt-3 px-4">
+                  <a href="#!" type="button">
                     <span class="text-primary small">
-                      example@nubela.co
+                      yowassap@blackireng666.com
                     </span>
 
-                    <p class="text-black">
-                      Nubela
+                    <p class="text-black">Black Ireng</p>
+                  </a>
+                </div>
+
+                <div class="pt-3 px-4">
+                  <a href="#!" type="button">
+                    <span class="text-primary small"> john@welut.com </span>
+
+                    <p class="text-black">Welut</p>
+                  </a>
+                </div>
+
+                <div class="row align-items-center border-top">
+                  <a
+                    class="text-center text-secondary nav-link mt-3 mb-1"
+                    href="index.html"
+                  >
+                    <i class="fe fe-log-out"></i> Log out
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="navbar-user py-4 border-top border-bottom mb-4">
+            <a class="btn w-100 btn-outline-dark" id="sandbox-toggle-button">
+              Go to Sandbox Mode
+            </a>
+          </div>
+
+          <!-- Dashboard toggle-->
+          <div class="justify-content-between d-flex mb-3">
+            <div class="col-8">
+              <label
+                class="h3 fw-normal mb-md-1 mb-0 ms-1 text-gray-700"
+                for="dashboardSwitch"
+              >
+                Back to old dashboard
+              </label>
+            </div>
+            <div class="col-auto form-switch form-check mt-0 mt-md-2">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="dashboardSwitch"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- / .navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- MODAL
+------------------>
+    <!--MODAL DELETE-->
+    <div
+      class="modal fade"
+      id="modalDelete"
+      aria-labelledby="modalDeleteLabel"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <a
+            type="button"
+            class="btn-close h1 ps-4 pt-4"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+          </a>
+
+          <div class="modal-body">
+            <div class="row justify-content-center pb-md-5">
+              <div class="col-12 col-md-9 text-center mb-3">
+                <i class="neu-so-minus-circle text-danger display-1"></i>
+
+                <h1 class="fw-bold mb-3 mt-4">Delete your account?</h1>
+
+                <p class="text-gray-700 fs-lg">
+                  Saying goodbye to you is not easy for us. Would you tell us
+                  why?
+                </p>
+              </div>
+
+              <div class="col-12 col-md-8">
+                <!--Radio button-->
+                <div class="mb-5">
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="radioCancel"
+                      id="radioCancel1"
+                    />
+                    <label class="form-check-label" for="radioCancel1">
+                      Too many bugs or technical issue
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="radioCancel"
+                      id="radioCancel2"
+                    />
+                    <label class="form-check-label" for="radioCancel2">
+                      Don't need the tool
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="radioCancel"
+                      id="radioCancel3"
+                    />
+                    <label class="form-check-label" for="radioCancel3">
+                      Financial issue
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="radioCancel"
+                      id="radioCancel4"
+                    />
+                    <label class="form-check-label" for="radioCancel4">
+                      Other
+                    </label>
+                    <textarea
+                      class="form-control mt-2"
+                      placeholder="Tell us why"
+                      id="floatingTextarea2"
+                      style="height: 100px"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="row align-items-center justify-content-center mt-5">
+                  <div class="col-12 col-md-6 text-center">
+                    <div
+                      class="btn btn-primary w-100 lift"
+                      data-bs-dismiss="modal"
+                    >
+                      Don't delete
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-auto">
+                    <button
+                      class="btn btn-link text-secondary"
+                      data-bs-target="#modalDeleteNext"
+                      data-bs-toggle="modal"
+                      data-bs-dismiss="modal"
+                    >
+                      Next
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--MODAL DELETE NEXT-->
+    <div
+      class="modal fade"
+      id="modalDeleteNext"
+      aria-labelledby="modalDeleteNextLabel"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <a
+            type="button"
+            class="btn-close h1 ps-4 pt-4"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+          </a>
+
+          <div class="modal-body">
+            <div class="row justify-content-center pb-md-5">
+              <div class="col-12 col-md-9 text-center mb-4">
+                <i class="neu-so-minus-circle text-danger display-1"></i>
+              </div>
+
+              <div class="col-12 col-md-9 text-center">
+                <h1 class="fw-bold">Delete your account?</h1>
+
+                <p class="mb-5 lead">
+                  Pressing the "Yes, delete account" button will permanently
+                  delete your account. Are you sure want to delete your
+                  Proxycurl account?<br />
+                </p>
+
+                <div class="row justify-content-center">
+                  <div class="col-12 col-md-6 mt-10">
+                    <div
+                      class="btn btn-primary w-100 lift"
+                      data-bs-dismiss="modal"
+                    >
+                      Don't delete
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-auto">
+                    <a
+                      class="btn btn-link text-danger mt-10"
+                      href="account-delete-success.html"
+                    >
+                      Yes, delete account
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 main-content-dashboard">
+            <!--Sandbox Alert-->
+            <div
+              class="card bg-warning mt-5"
+              id="liveAlertPlaceholder"
+              style="display: none"
+            >
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-12">
+                    <p class="lead text-dark mb-0">
+                      You’re currently in <b>Sandbox mode</b>. To return to
+                      Production mode, please
+                      <a
+                        href="javascript:void(0);"
+                        class="fw-bold text-black text-decoration-underline"
+                        onclick="dismissAlertSandbox()"
+                        >click here</a
+                      >.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--News Alert-->
+            <div class="card bg-dark mt-5">
+              <div class="card-body">
+                <div class="row align-items-top">
+                  <div class="col-12 col-md-8">
+                    <p class="lead text-white mb-0">
+                      <span class="me-2">
+                        <?xml version="1.0" encoding="UTF-8"?><svg
+                          id="a"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="m15.6968,12.4905l-2.8295,1.4148c-.8491.4245-1.5375,1.113-1.962,1.962l-1.4148,2.8295c-.2021.4042-.7789.4042-.981,0l-1.4148-2.8295c-.4245-.8491-1.113-1.5375-1.962-1.962l-2.8295-1.4148c-.4042-.2021-.4042-.7789,0-.981l2.8295-1.4148c.8491-.4246,1.5375-1.113,1.962-1.9621l1.4148-2.8295c.2021-.4042.7789-.4042.981,0l1.4148,2.8295c.4245.8491,1.113,1.5375,1.962,1.9621l2.8295,1.4148c.4042.2021.4042.7789,0,.981Zm6.1732,6.2993l-1.2127-.6063c-.3639-.182-.6589-.477-.8409-.8409l-.6063-1.2126c-.0866-.1732-.3338-.1732-.4204,0l-.6063,1.2126c-.1819.3639-.477.6589-.8409.8409l-1.2127.6063c-.1732.0866-.1732.3338,0,.4204l1.2127.6063c.3639.1819.6589.477.8409.8409l.6063,1.2126c.0866.1732.3338.1732.4204,0l.6063-1.2126c.1819-.3639.477-.6589.8409-.8409l1.2127-.6063c.1732-.0866.1732-.3338,0-.4204Zm0-14l-1.2127-.6063c-.3639-.182-.6589-.477-.8409-.8409l-.6063-1.2126c-.0866-.1732-.3338-.1732-.4204,0l-.6063,1.2126c-.1819.3639-.477.6589-.8409.8409l-1.2127.6063c-.1732.0866-.1732.3338,0,.4204l1.2127.6063c.3639.1819.6589.477.8409.8409l.6063,1.2126c.0866.1732.3338.1732.4204,0l.6063-1.2126c.1819-.3639.477-.6589.8409-.8409l1.2127-.6063c.1732-.0866.1732-.3338,0-.4204Z"
+                            fill="#fff"
+                          />
+                        </svg>
+                      </span>
+                      We are currenting experiencing issues with our Person
+                      Profile Endpoint.
                     </p>
                   </div>
 
-                </div>
-
-              </a>
-
-            </div>
-
-            <div class="pt-3 px-4">
-
-              <a href="#!" type="button">
-
-                <span class="text-primary small">
-                  yowassap@blackireng666.com
-                </span>
-
-                <p class="text-black">
-                  Black Ireng
-                </p>
-
-              </a>
-
-            </div>
-
-            <div class="pt-3 px-4">
-
-              <a href="#!" type="button">
-
-                <span class="text-primary small">
-                  john@welut.com
-                </span>
-
-                <p class="text-black">
-                  Welut
-                </p>
-
-              </a>
-
-            </div>
-
-            <div class="row align-items-center border-top">
-              <a class="text-center text-secondary nav-link mt-3 mb-1" href="index.html">
-                <i class="fe fe-log-out"></i> Log out
-              </a>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <!-- Dashboard toggle-->
-      <div class="justify-content-between d-flex mb-3">
-        <div class="col-8">
-          <label class="h3 fw-normal mb-md-1 mb-0 ms-1 text-gray-700" for="dashboardSwitch">
-            Back to old dashboard
-          </label>
-        </div>
-        <div class="col-auto form-switch form-check mt-0 mt-md-2">
-          <input type="checkbox" class="form-check-input" id="dashboardSwitch">
-        </div>
-
-      </div>
-
-    </div> <!-- / .navbar-collapse -->
-
-  </div>
-</nav>
-
-<!-- MODAL
------------------->
-<!--MODAL DELETE-->
-<div class="modal fade" id="modalDelete" aria-labelledby="modalDeleteLabel" aria-hidden="true" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-
-      <a type="button" class="btn-close h1 ps-4 pt-4" data-bs-dismiss="modal" aria-label="Close">
-      </a>
-
-      <div class="modal-body">
-
-        <div class="row justify-content-center pb-md-5">
-
-          <div class="col-12 col-md-9 text-center mb-3">
-            <i class="neu-so-minus-circle text-danger display-1"></i>
-
-            <h1 class="fw-bold mb-3 mt-4">
-              Delete your account?
-            </h1>
-
-            <p class="text-gray-700 fs-lg">
-              Saying goodbye to you is not easy for us. Would you tell us why?
-            </p>
-          </div>
-
-          <div class="col-12 col-md-8">
-
-            <!--Radio button-->
-            <div class="mb-5">
-              <div class="form-check mb-3">
-                <input class="form-check-input" type="radio" name="radioCancel" id="radioCancel1">
-                <label class="form-check-label" for="radioCancel1">
-                  Too many bugs or technical issue
-                </label>
-              </div>
-              <div class="form-check mb-3">
-                <input class="form-check-input" type="radio" name="radioCancel" id="radioCancel2">
-                <label class="form-check-label" for="radioCancel2">
-                  Don't need the tool
-                </label>
-              </div>
-              <div class="form-check mb-3">
-                <input class="form-check-input" type="radio" name="radioCancel" id="radioCancel3">
-                <label class="form-check-label" for="radioCancel3">
-                  Financial issue
-                </label>
-              </div>
-              <div class="form-check mb-3">
-                <input class="form-check-input" type="radio" name="radioCancel" id="radioCancel4">
-                <label class="form-check-label" for="radioCancel4">
-                  Other
-                </label>
-                <textarea class="form-control mt-2" placeholder="Tell us why" id="floatingTextarea2"
-                  style="height: 100px"></textarea>
-              </div>
-            </div>
-
-            <div class="row align-items-center justify-content-center mt-5">
-
-              <div class="col-12 col-md-6 text-center">
-                <div class="btn btn-primary w-100 lift" data-bs-dismiss="modal">
-                  Don't delete
+                  <div class="col-12 col-md-4 text-end">
+                    <a href="#!" class="btn btn-white lift">
+                      Learn more <i class="fe fe-arrow-right ms-1"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
-
-              <div class="col-12 col-md-auto">
-                <button class="btn btn-link text-secondary" data-bs-target="#modalDeleteNext" data-bs-toggle="modal"
-                  data-bs-dismiss="modal">
-                  Next
-                </button>
-              </div>
-
             </div>
 
-          </div>
+            <!-- Header -->
+            <div class="header mt-md-5">
+              <div class="header-body">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <!-- Pretitle -->
+                    <h6 class="header-pretitle">Overview</h6>
 
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!--MODAL DELETE NEXT-->
-<div class="modal fade" id="modalDeleteNext" aria-labelledby="modalDeleteNextLabel" aria-hidden="true" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-
-      <a type="button" class="btn-close h1 ps-4 pt-4" data-bs-dismiss="modal" aria-label="Close">
-      </a>
-
-      <div class="modal-body">
-
-        <div class="row justify-content-center pb-md-5">
-
-          <div class="col-12 col-md-9 text-center mb-4">
-            <i class="neu-so-minus-circle text-danger display-1"></i>
-          </div>
-
-          <div class="col-12 col-md-9 text-center">
-
-            <h1 class="fw-bold">
-              Delete your account?
-            </h1>
-
-            <p class="mb-5 lead">
-              Pressing the "Yes, delete account" button will permanently delete your account. Are you sure want to delete your Proxycurl account?<br>
-            </p>
-
-            <div class="row justify-content-center">
-
-              <div class="col-12 col-md-6 mt-10">
-                <div class="btn btn-primary w-100 lift" data-bs-dismiss="modal">
-                  Don't delete
+                    <!-- Title -->
+                    <h1 class="header-title">Account</h1>
+                  </div>
+                </div>
+                <!-- / .row -->
+                <div class="row align-items-center">
+                  <div class="col">
+                    <!-- Nav -->
+                    <ul class="nav nav-tabs nav-overflow header-tabs">
+                      <li class="nav-item">
+                        <a href="index.html" class="nav-link active">
+                          Change email
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="account-change-password.html" class="nav-link">
+                          Change password
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="account-2fa.html" class="nav-link">
+                          Two factor security
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-
-              <div class="col-12 col-md-auto">
-                <a class="btn btn-link text-danger mt-10" href="account-delete-success.html">
-                  Yes, delete account
-                </a>
-              </div>
-
             </div>
 
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- MAIN CONTENT -->
-<div class="main-content">
-
-  <div class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="col-12 main-content-dashboard">
-
-        <!--News Alert-->
-        <div class="card bg-dark mt-5">
-
-          <div class="card-body">
-
-            <div class="row align-items-top">
-
-              <div class="col-12 col-md-8">
-
-                <p class="lead text-white mb-0">
-                  <span class="me-2">
-                    <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" width="24"
-                      height="24" viewBox="0 0 24 24">
-                      <path
-                        d="m15.6968,12.4905l-2.8295,1.4148c-.8491.4245-1.5375,1.113-1.962,1.962l-1.4148,2.8295c-.2021.4042-.7789.4042-.981,0l-1.4148-2.8295c-.4245-.8491-1.113-1.5375-1.962-1.962l-2.8295-1.4148c-.4042-.2021-.4042-.7789,0-.981l2.8295-1.4148c.8491-.4246,1.5375-1.113,1.962-1.9621l1.4148-2.8295c.2021-.4042.7789-.4042.981,0l1.4148,2.8295c.4245.8491,1.113,1.5375,1.962,1.9621l2.8295,1.4148c.4042.2021.4042.7789,0,.981Zm6.1732,6.2993l-1.2127-.6063c-.3639-.182-.6589-.477-.8409-.8409l-.6063-1.2126c-.0866-.1732-.3338-.1732-.4204,0l-.6063,1.2126c-.1819.3639-.477.6589-.8409.8409l-1.2127.6063c-.1732.0866-.1732.3338,0,.4204l1.2127.6063c.3639.1819.6589.477.8409.8409l.6063,1.2126c.0866.1732.3338.1732.4204,0l.6063-1.2126c.1819-.3639.477-.6589.8409-.8409l1.2127-.6063c.1732-.0866.1732-.3338,0-.4204Zm0-14l-1.2127-.6063c-.3639-.182-.6589-.477-.8409-.8409l-.6063-1.2126c-.0866-.1732-.3338-.1732-.4204,0l-.6063,1.2126c-.1819.3639-.477.6589-.8409.8409l-1.2127.6063c-.1732.0866-.1732.3338,0,.4204l1.2127.6063c.3639.1819.6589.477.8409.8409l.6063,1.2126c.0866.1732.3338.1732.4204,0l.6063-1.2126c.1819-.3639.477-.6589.8409-.8409l1.2127-.6063c.1732-.0866.1732-.3338,0-.4204Z"
-                        fill="#fff" />
-                    </svg>
-                  </span>
-                  We are currenting experiencing issues with our Person Profile Endpoint.
-                </p>
-
-              </div>
-
-              <div class="col-12 col-md-4 text-end">
-
-                <a href="#!" class="btn btn-white lift">
-                  Learn more <i class="fe fe-arrow-right ms-1"></i>
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <!-- Header -->
-        <div class="header mt-md-5">
-          <div class="header-body">
-            <div class="row align-items-center">
-              <div class="col">
-
-                <!-- Pretitle -->
-                <h6 class="header-pretitle">
-                  Overview
-                </h6>
-
-                <!-- Title -->
-                <h1 class="header-title">
-                  Account
-                </h1>
-
-              </div>
-            </div> <!-- / .row -->
-            <div class="row align-items-center">
-              <div class="col">
-
-                <!-- Nav -->
-                <ul class="nav nav-tabs nav-overflow header-tabs">
-                  <li class="nav-item">
-                    <a href="index.html" class="nav-link active">
-                      Change email
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="account-change-password.html" class="nav-link">
-                      Change password
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="account-2fa.html" class="nav-link">
-                      Two factor security
-                    </a>
-                  </li>
-                </ul>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Alert
+            <!-- Alert
             <div class="alert alert-danger">
               <i class="fe fe-info me-1"></i> You are near your API limits.
             </div>
             -->
 
-        <div class="row justify-content-between align-items-center mb-5">
-          <div class="col-12 col-md-9 col-xl-7">
+            <div class="row justify-content-between align-items-center mb-5">
+              <div class="col-12 col-md-9 col-xl-7">
+                <!-- Heading -->
+                <h2 class="mb-2">Change your email</h2>
 
-            <!-- Heading -->
-            <h2 class="mb-2">
-              Change your email
-            </h2>
-
-            <!-- Text -->
-            <p class="text-muted mb-xl-0">
-              We will email you a confirmation when changing your email, so please expect that email after submitting.
-            </p>
-
-          </div>
-
-          <div class="col-12 col-lg-auto">
-
-            <!-- Button -->
-            <button class="btn btn-outline-secondary" type="submit" data-bs-toggle="modal" data-bs-target="#modalDelete">
-              Delete account
-            </button>
-
-          </div>
-        </div> <!-- / .row -->
-
-        <div class="row">
-
-          <div class="col-12">
-
-            <!-- Form -->
-            <form>
-
-              <!-- Password -->
-              <div class="form-group">
-
-                <!-- Label -->
-                <label class="form-label">
-                  Current email
-                </label>
-
-                <!-- Input -->
-                <input type="email" placeholder="Enter current email address" class="form-control">
-
+                <!-- Text -->
+                <p class="text-muted mb-xl-0">
+                  We will email you a confirmation when changing your email, so
+                  please expect that email after submitting.
+                </p>
               </div>
 
-              <!-- New password -->
-              <div class="form-group">
-
-                <!-- Label -->
-                <label class="form-label">
-                  New email
-                </label>
-
-                <!-- Input -->
-                <input type="email" placeholder="Enter new email address" class="form-control">
-
+              <div class="col-12 col-lg-auto">
+                <!-- Button -->
+                <button
+                  class="btn btn-outline-secondary"
+                  type="submit"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalDelete"
+                >
+                  Delete account
+                </button>
               </div>
+            </div>
+            <!-- / .row -->
 
-              <!-- Confirm new password -->
-              <div class="form-group">
+            <div class="row">
+              <div class="col-12">
+                <!-- Form -->
+                <form>
+                  <!-- Password -->
+                  <div class="form-group">
+                    <!-- Label -->
+                    <label class="form-label"> Current email </label>
 
-                <!-- Label -->
-                <label class="form-label">
-                  Current password
-                </label>
+                    <!-- Input -->
+                    <input
+                      type="email"
+                      placeholder="Enter current email address"
+                      class="form-control"
+                    />
+                  </div>
 
-                <!-- Input -->
-                <input type="password" placeholder="Enter your current password" class="form-control">
+                  <!-- New password -->
+                  <div class="form-group">
+                    <!-- Label -->
+                    <label class="form-label"> New email </label>
 
+                    <!-- Input -->
+                    <input
+                      type="email"
+                      placeholder="Enter new email address"
+                      class="form-control"
+                    />
+                  </div>
+
+                  <!-- Confirm new password -->
+                  <div class="form-group">
+                    <!-- Label -->
+                    <label class="form-label"> Current password </label>
+
+                    <!-- Input -->
+                    <input
+                      type="password"
+                      placeholder="Enter your current password"
+                      class="form-control"
+                    />
+                  </div>
+
+                  <!-- Submit -->
+                  <a
+                    href="account-buy-credits-full.html"
+                    class="btn w-100 btn-primary lift"
+                    type="submit"
+                  >
+                    Update email
+                  </a>
+                </form>
               </div>
-
-              <!-- Submit -->
-              <a href="account-buy-credits-full.html" class="btn w-100 btn-primary lift" type="submit">
-                Update email
-              </a>
-
-            </form>
-
+            </div>
+            <!-- / .row -->
           </div>
-
-
-        </div> <!-- / .row -->
-
-
-
+        </div>
+        <!-- / .row -->
       </div>
-    </div> <!-- / .row -->
+    </div>
+    <!-- / .main-content -->
 
-  </div>
+    <!-- Alert placeholder -->
+    <!-- <div 
+      id="liveAlertPlaceholder" 
+      style="
+        position: fixed;
+        top: 50px;
+        right: 20px;
+        display: none;
+      "
+    >
+    </div> -->
 
-</div> <!-- / .main-content -->
+    <!-- JAVASCRIPT -->
+    <!-- Map JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
 
-  <!-- JAVASCRIPT -->
-  <!-- Map JS -->
-  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
 
-  <!-- Vendor JS -->
-  <script src="./assets/js/vendor.bundle.js"></script>
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
 
-  <!-- Theme JS -->
-  <script src="./assets/js/theme.bundle.js"></script>
+    <script>
+      const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
 
-</body>
+      const sandboxToggleButton = document.getElementById(
+        "sandbox-toggle-button"
+      );
+      let sandboxToggleState = false;
 
+      sandboxToggleButton.addEventListener("click", () => {
+        sandboxToggleState = !sandboxToggleState;
+        if (sandboxToggleState) {
+          sandboxToggleButton.style.backgroundColor = "#12263f";
+          sandboxToggleButton.style.color = "#ffffff";
+          sandboxToggleButton.innerHTML = "Back to Production";
+          alertPlaceholder.style.display = "block";
+          // alertPlaceholder.innerHTML = 'You in Sandbox Mode now!';
+          // alertPlaceholder.className = 'alert alert-warning text-black';
+        } else {
+          sandboxToggleButton.style.backgroundColor = "#ffffff";
+          sandboxToggleButton.style.color = "#12263f";
+          sandboxToggleButton.innerHTML = "Go to Sandbox Mode";
+          alertPlaceholder.style.display = "none";
+          // alertPlaceholder.innerHTML = 'You in Production now!';
+          // alertPlaceholder.className = 'alert alert-primary';
+        }
+        // alertPlaceholder.style.display = 'block';
+        // setTimeout(() => {
+        //   alertPlaceholder.style.display = 'none';
+        // }, 5000); // timeout after 2 seconds
+      });
+
+      function dismissAlertSandbox() {
+        sandboxToggleButton.style.backgroundColor = "#ffffff";
+        sandboxToggleButton.style.color = "#12263f";
+        sandboxToggleButton.innerHTML = "Go to Sandbox Mode";
+        alertPlaceholder.style.display = "none";
+        sandboxToggleState = false;
+      }
+    </script>
+  </body>
 </html>
