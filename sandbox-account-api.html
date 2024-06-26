@@ -21,11 +21,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">
 
   <!-- Title -->
-  <title>Proxycurl - API Key</title>
+  <title>Proxycurl - Sandbox API Key</title>
 </head>
   <body>
 
-    <!-- NAVIGATION PRODUCTION -->
+    <!-- NAVIGATION SANDBOX -->
     <nav
       class="navbar navbar-vertical fixed-start navbar-expand-md navbar-light"
       id="sidebar"
@@ -45,7 +45,7 @@
         </button>
 
         <!-- Brand -->
-        <a class="navbar-brand" href="./index.html">
+        <a class="navbar-brand" href="./sandbox-account-change-email.html">
           <img
             src="./assets/img/logo.svg"
             class="navbar-brand-img mx-auto"
@@ -202,24 +202,24 @@
               </label>
             </div>
 
-            <div class="d-block w-100">
+            <!-- <div class="col-12">
               <a
                 class="btn btn-outline-primary w-100 mt-3"
                 href="account-buy-credits.html"
               >
                 Buy credits
               </a>
-            </div>
+            </div> -->
           </div>
         </div>
 
         <div class="navbar-user d-none d-md-flex border-bottom pb-4 mb-4">
           <div class="btn-group w-100">
-            <button type="button" class="btn btn-primary dropdown-toggle d-inline-flex justify-content-between align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
-              Production Mode <i class="fe fe-chevron-down"></i>
+            <button type="button" class="btn btn-dark dropdown-toggle d-inline-flex justify-content-between align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+              Sandbox Mode <i class="fe fe-chevron-down"></i>
             </button>
             <ul class="dropdown-menu w-100">
-              <li><a class="dropdown-item" href="sandbox-account-api.html">Sandbox Mode</a></li>
+              <li><a class="dropdown-item" href="account-api.html">Production Mode</a></li>
             </ul>
           </div>
         </div>
@@ -293,7 +293,7 @@
               <div class="collapse show" id="sidebarPages">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="./account-api.html" class="nav-link fw-bold">
+                    <a href="./sandbox-account-api.html" class="nav-link fw-bold">
                       <span class="border-start border-2 ps-3 text-primary border-primary">API Key</span>
                     </a>
                   </li>
@@ -345,7 +345,7 @@
                 <i class="fe fe-activity"></i> Request Log
               </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a
                 class="nav-link"
                 href="#sidebarBilling"
@@ -382,7 +382,7 @@
                   </li>
                 </ul>
               </div>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a
                 class="nav-link"
@@ -668,6 +668,27 @@
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-12 main-content-dashboard">
+
+            <!--Sandbox Alert-->
+            <div
+              class="card bg-warning mt-5"
+            >
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-12">
+                    <p class="lead text-dark mb-0">
+                      You’re currently in <b>Sandbox mode</b>. To return to Production mode, please
+                      <a
+                        href="account-api.html"
+                        class="fw-bold text-black text-decoration-underline"
+                        onclick="dismissAlertSandbox()"
+                        >click here</a
+                      >.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <!--News Alert-->
             <div class="card bg-dark mt-5">

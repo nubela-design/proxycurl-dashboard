@@ -13,18 +13,18 @@
     
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">
     
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
     <link rel="stylesheet" href="style-custom.css" />
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">
+
     <!-- Title -->
-    <title>Proxycurl - Work Email Lookup Logs</title>
+    <title>Proxycurl - Two Factor Security</title>
   </head>
   <body>
 
-    <!-- NAVIGATION PRODUCTION -->
+    <!-- NAVIGATION SANDBOX -->
     <nav
       class="navbar navbar-vertical fixed-start navbar-expand-md navbar-light"
       id="sidebar"
@@ -44,7 +44,7 @@
         </button>
 
         <!-- Brand -->
-        <a class="navbar-brand" href="./index.html">
+        <a class="navbar-brand" href="./sandbox-account-change-email.html">
           <img
             src="./assets/img/logo.svg"
             class="navbar-brand-img mx-auto"
@@ -201,24 +201,33 @@
               </label>
             </div>
 
-            <div class="d-block w-100">
-              <a
-                class="btn btn-outline-primary w-100 mt-3"
-                href="account-buy-credits.html"
-              >
-                Buy credits
-              </a>
-            </div>
+            <!-- <div class="col-12">
+            <a
+              class="btn btn-outline-primary w-100 mt-3"
+              href="account-buy-credits.html"
+            >
+              Buy credits
+            </a>
+          </div> -->
           </div>
         </div>
 
         <div class="navbar-user d-none d-md-flex border-bottom pb-4 mb-4">
           <div class="btn-group w-100">
-            <button type="button" class="btn btn-primary dropdown-toggle d-inline-flex justify-content-between align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
-              Production Mode <i class="fe fe-chevron-down"></i>
+            <button
+              type="button"
+              class="btn btn-dark dropdown-toggle d-inline-flex justify-content-between align-items-center"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Sandbox Mode <i class="fe fe-chevron-down"></i>
             </button>
             <ul class="dropdown-menu w-100">
-              <li><a class="dropdown-item" href="sandbox-account-work.html">Sandbox Mode</a></li>
+              <li>
+                <a class="dropdown-item" href="account-2fa-active.html"
+                  >Production Mode</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -292,13 +301,14 @@
               <div class="collapse show" id="sidebarPages">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="./account-api.html" class="nav-link">
+                    <a href="./sandbox-account-api.html" class="nav-link">
                       <span class="border-start border-2 ps-3">API Key</span>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./account-work.html" class="nav-link fw-bold">
-                      <span class="border-start border-2 ps-3 text-primary border-primary"
+                    <a href="./account-work.html" class="nav-link">
+                      <span
+                        class="border-start border-2 ps-3"
                         >Work Email Lookup Logs</span
                       >
                     </a>
@@ -340,49 +350,49 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="account-request-log.html" role="button">
+              <a class="nav-link" href="sandbox-account-request-log.html" role="button">
                 <i class="fe fe-activity"></i> Request Log
               </a>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#sidebarBilling"
-                data-bs-toggle="collapse"
-                role="button"
-                aria-expanded="false"
-                aria-controls="sidebarBilling"
-              >
-                <i class="fe fe-dollar-sign"></i> Billing
-              </a>
-              <div class="collapse show" id="sidebarBilling">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a
-                      href="./account-plans-and-payments.html"
-                      class="nav-link"
+            <!-- <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#sidebarBilling"
+              data-bs-toggle="collapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="sidebarBilling"
+            >
+              <i class="fe fe-dollar-sign"></i> Billing
+            </a>
+            <div class="collapse show" id="sidebarBilling">
+              <ul class="nav nav-sm flex-column">
+                <li class="nav-item">
+                  <a
+                    href="./account-plans-and-payments.html"
+                    class="nav-link"
+                  >
+                    <span class="border-start border-2 ps-3"
+                      >Plan and payments</span
                     >
-                      <span class="border-start border-2 ps-3"
-                        >Plan and payments</span
-                      >
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./account-buy-credits.html" class="nav-link">
-                      <span class="border-start border-2 ps-3"
-                        >Buy credits</span
-                      >
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./account-invoices.html" class="nav-link">
-                      <span class="border-start border-2 ps-3">Invoices</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./account-buy-credits.html" class="nav-link">
+                    <span class="border-start border-2 ps-3"
+                      >Buy credits</span
+                    >
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./account-invoices.html" class="nav-link">
+                    <span class="border-start border-2 ps-3">Invoices</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li> -->
+            <li class="nav-item mb-4">
               <a
                 class="nav-link"
                 href="#sidebarAccount"
@@ -396,7 +406,7 @@
               <div class="collapse show" id="sidebarAccount">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="index.html" class="nav-link">
+                    <a href="sandbox-dashboard.html" class="nav-link">
                       <span
                         class="border-start border-2 ps-3"
                         >Change email</span
@@ -404,15 +414,15 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="account-change-password.html" class="nav-link">
+                    <a href="sandbox-account-change-password.html" class="nav-link">
                       <span class="border-start border-2 ps-3"
                         >Change password</span
                       >
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="account-2fa.html" class="nav-link">
-                      <span class="border-start border-2 ps-3"
+                    <a href="sandbox-account-2fa-active.html" class="nav-link fw-bold">
+                      <span class="border-start border-2 ps-3 text-primary border-primary"
                         >Two factor security</span
                       >
                     </a>
@@ -420,27 +430,30 @@
                 </ul>
               </div>
             </li>
-            <li class="nav-item mb-4">
+            <!-- <li class="nav-item mb-4">
               <a class="nav-link" href="account-team.html">
                 <i class="fe fe-users"></i> Upgrade to team account
               </a>
-            </li>
+            </li> -->
 
             <!-- old-logout
-                <hr class="my-4">
-    
-                <li class="nav-item">
-                  <a class="nav-link mb-3" href="index.html">
-                    <i class="fe fe-log-out"></i> Log out 
-                  </a>
-                </li>
-                -->
+              <hr class="my-4">
+  
+              <li class="nav-item">
+                <a class="nav-link mb-3" href="index.html">
+                  <i class="fe fe-log-out"></i> Log out 
+                </a>
+              </li>
+              -->
           </ul>
 
           <div class="mt-md-auto"></div>
 
           <!-- User (md) -->
-          <div class="navbar-user d-none d-md-flex pb-4 border-bottom mb-4" id="sidebarUser">
+          <div
+            class="navbar-user d-none d-md-flex pb-4 border-bottom mb-4"
+            id="sidebarUser"
+          >
             <div class="btn-group dropup">
               <button
                 type="button"
@@ -571,12 +584,121 @@
       </div>
     </nav>
 
+    <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>
+
+    <!-- Modal Remove-->
+    <div class="modal fade" id="authModalRemove" aria-labelledby="authModalRemoveLabel" aria-hidden="true" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <a type="button" class="btn-close h1 ps-4 pt-4" data-dismiss="modal" aria-label="Close">
+          </a>
+
+          <div class="modal-body">
+
+            <div class="row justify-content-center pb-md-5">
+
+              <div class="col-12 col-md-9 text-center mb-4">
+                <i class="neu-so-lock-square text-warning display-1"></i>
+              </div>
+
+              <div class="col-12 col-md-9 text-center">
+
+                <h1 class="fw-bold mb-3">
+                  Enter your password
+                </h1>
+
+                <p class="mb-4 lead">
+                  Please enter your Proxycurl password to continue.
+                </p>
+
+                <input type="password" class="form-control form-control-lg" id="authPassword" placeholder="Enter your password">
+                
+                <button class="btn btn-lg btn-primary w-100 mt-4" data-target="#authModalRemoveConfirm" data-toggle="modal" data-dismiss="modal">
+                  Confirm
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Remove 2 -->
+    <div class="modal fade" id="authModalRemoveConfirm" aria-labelledby="authModalRemoveConfirmLabel" aria-hidden="true" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <a type="button" class="btn-close h1 ps-4 pt-4" data-dismiss="modal" aria-label="Close">
+          </a>
+
+          <div class="modal-body">
+
+            <div class="row justify-content-center pb-md-5">
+
+              <div class="col-12 col-md-9 text-center mb-4">
+                <i class="neu-so-faq text-primary display-1"></i>
+              </div>
+
+              <div class="col-12 col-md-9 text-center">
+
+                <h1 class="fw-bold">
+                  Turn off two factor security?
+                </h1>
+
+                <p class="mb-4 lead">
+                  This will remove an extra security layer on your Proxycurl account.
+                </p>
+
+                <a class="btn btn-lg btn-primary w-100 mt-4" href="account-2fa.html">
+                  Turn off 2FA
+                </a>
+
+                <button class="btn btn-lg btn-outline-primary w-100 mt-3" data-dismiss="modal">
+                  Cancel
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
     <!-- MAIN CONTENT -->
-    <div class="main-content">
+    <div class="main-content">      
 
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-12 main-content-dashboard">
+
+            <!--Sandbox Alert-->
+            <div
+              class="card bg-warning mt-5"
+            >
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-12">
+                    <p class="lead text-dark mb-0">
+                      You’re currently in <b>Sandbox mode</b>. To return to Production mode, please
+                      <a
+                        href="account-2fa-active.html"
+                        class="fw-bold text-black text-decoration-underline"
+                        onclick="dismissAlertSandbox()"
+                        >click here</a
+                      >.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <!--News Alert-->
             <div class="card bg-dark mt-5">
@@ -613,7 +735,6 @@
             <!-- Header -->
             <div class="header mt-md-5">
               <div class="header-body">
-
                 <div class="row align-items-center">
                   <div class="col">
 
@@ -624,25 +745,29 @@
 
                     <!-- Title -->
                     <h1 class="header-title">
-                      Proxycurl API
+                      Account
                     </h1>
 
                   </div>
                 </div> <!-- / .row -->
-
                 <div class="row align-items-center">
                   <div class="col">
 
                     <!-- Nav -->
                     <ul class="nav nav-tabs nav-overflow header-tabs">
                       <li class="nav-item">
-                        <a href="account-api.html" class="nav-link">
-                          API Key
+                        <a href="index.html" class="nav-link">
+                          Change email
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="account-work.html" class="nav-link active">
-                          Work Email Lookup Logs
+                        <a href="account-change-password.html" class="nav-link">
+                          Change password
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="account-2fa.html" class="nav-link active">
+                          Two factor security
                         </a>
                       </li>
                     </ul>
@@ -660,120 +785,40 @@
 
             <!-- Card -->
             <div class="card">
-
-              <div class="card-header">
-                <div class="row align-items-center">
-                  <div class="col">
-
-                    <!-- Title -->
-                    <h4 class="card-header-title">
-                      Work Email Lookup Logs
-                    </h4>
-
-                  </div>
-                  <div class="col-auto">
-
-                    <!-- Button -->
-                    <a class="btn btn-sm btn-outline-primary" href="#!">
-                      Download as CSV
-                    </a>
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="table-responsive">
-                <table class="table table-sm table-nowrap card-table">
-                  <thead>
-                    <tr>
-                      <th>Date/Time requested</th>
-                      <th>LinkedIn Profile URL</th>
-                      <th>Status</th>
-                      <th>Email address</th>
-                    </tr>
-                  </thead>
-                  <tbody class="fs-base">
-                    <tr>
-                      <td>
-                        20 Jan 2022, 14:50
-                      </td>
-                      <td>
-                        linkedin.com/billgates
-                      </td>
-                      <td>
-                        <span class="badge bg-primary-soft">
-                          email_found
-                        </span>
-                      </td>
-                      <td>
-                        gates@microsoft.com
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        20 Jan 2022, 14:42
-                      </td>
-                      <td>
-                        linkedin.com/gomugomuno
-                      </td>
-                      <td>
-                        <span class="badge bg-secondary-soft">
-                          email_not_found
-                        </span>
-                      </td>
-                      <td>
-                        gomu@gomu.no
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        20 Jan 2022, 14:40
-                      </td>
-                      <td>
-                        linkedin.com/kanebohijau
-                      </td>
-                      <td>
-                        <span class="badge bg-secondary-soft">
-                          email_not_found
-                        </span>
-                      </td>
-                      <td>
-                        tokenasix@kanebo.hijau
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        20 Jan 2022, 14:32
-                      </td>
-                      <td>
-                        linkedin.com/anjaymabar
-                      </td>
-                      <td>
-                        <span class="badge bg-primary-soft">
-                          email_found
-                        </span>
-                      </td>
-                      <td>
-                        anjay@mabar.com
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
               <div class="card-body">
-                <nav aria-label="Page navigation">
-                  <ul class="pagination">
-                    <li class="page-item"><a class="page-link bg-light" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link" href="#">5</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                  </ul>
-                </nav>
-              </div>
 
+                <!-- List group -->
+                <div class="list-group list-group-flush my-n3">
+
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col">
+
+                        <!-- Heading -->
+                        <h4 class="mb-1">
+                          Authy
+                        </h4>
+
+                        <!-- Text -->
+                        <small class="text-muted">
+                          You are using Authy as your 2fa method.
+                        </small>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Button -->
+                        <button class="btn btn-sm btn-secondary" type="button" data-toggle="modal" data-target="#authModalRemove">
+                          Disable
+                        </button>
+
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+
+                </div>
+
+              </div>
             </div>
 
             <br>
@@ -793,6 +838,11 @@
     
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   </body>
 </html>
