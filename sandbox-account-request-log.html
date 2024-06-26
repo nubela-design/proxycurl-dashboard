@@ -1,30 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc." />
-    
+    <meta
+      name="description"
+      content="A fully featured admin theme which can be used to build CRM, CMS, etc."
+    />
+
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon"/>
-    
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
     <!-- Map CSS -->
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
-    
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css"
+    />
+
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css"
+    />
+
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
     <link rel="stylesheet" href="style-custom.css" />
-    
+
     <!-- Title -->
-    <title>Proxycurl - Work Email Lookup Logs</title>
+    <title>Proxycurl - Sandbox Request Log</title>
   </head>
   <body>
-
-    <!-- NAVIGATION PRODUCTION -->
+    <!-- NAVIGATION SANDBOX -->
     <nav
       class="navbar navbar-vertical fixed-start navbar-expand-md navbar-light"
       id="sidebar"
@@ -44,7 +56,7 @@
         </button>
 
         <!-- Brand -->
-        <a class="navbar-brand" href="./index.html">
+        <a class="navbar-brand" href="./sandbox-account-change-email.html">
           <img
             src="./assets/img/logo.svg"
             class="navbar-brand-img mx-auto"
@@ -201,24 +213,33 @@
               </label>
             </div>
 
-            <div class="d-block w-100">
-              <a
-                class="btn btn-outline-primary w-100 mt-3"
-                href="account-buy-credits.html"
-              >
-                Buy credits
-              </a>
-            </div>
+            <!-- <div class="col-12">
+            <a
+              class="btn btn-outline-primary w-100 mt-3"
+              href="account-buy-credits.html"
+            >
+              Buy credits
+            </a>
+          </div> -->
           </div>
         </div>
 
         <div class="navbar-user d-none d-md-flex border-bottom pb-4 mb-4">
           <div class="btn-group w-100">
-            <button type="button" class="btn btn-primary dropdown-toggle d-inline-flex justify-content-between align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
-              Production Mode <i class="fe fe-chevron-down"></i>
+            <button
+              type="button"
+              class="btn btn-dark dropdown-toggle d-inline-flex justify-content-between align-items-center"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Sandbox Mode <i class="fe fe-chevron-down"></i>
             </button>
             <ul class="dropdown-menu w-100">
-              <li><a class="dropdown-item" href="sandbox-account-work.html">Sandbox Mode</a></li>
+              <li>
+                <a class="dropdown-item" href="account-work.html"
+                  >Production Mode</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -292,13 +313,14 @@
               <div class="collapse show" id="sidebarPages">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="./account-api.html" class="nav-link">
+                    <a href="./sandbox-account-api.html" class="nav-link">
                       <span class="border-start border-2 ps-3">API Key</span>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./account-work.html" class="nav-link fw-bold">
-                      <span class="border-start border-2 ps-3 text-primary border-primary"
+                    <a href="./account-work.html" class="nav-link">
+                      <span
+                        class="border-start border-2 ps-3"
                         >Work Email Lookup Logs</span
                       >
                     </a>
@@ -340,49 +362,49 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="account-request-log.html" role="button">
+              <a class="nav-link text-primary fw-bold" href="sandbox-account-request-log.html" role="button">
                 <i class="fe fe-activity"></i> Request Log
               </a>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#sidebarBilling"
-                data-bs-toggle="collapse"
-                role="button"
-                aria-expanded="false"
-                aria-controls="sidebarBilling"
-              >
-                <i class="fe fe-dollar-sign"></i> Billing
-              </a>
-              <div class="collapse show" id="sidebarBilling">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a
-                      href="./account-plans-and-payments.html"
-                      class="nav-link"
+            <!-- <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#sidebarBilling"
+              data-bs-toggle="collapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="sidebarBilling"
+            >
+              <i class="fe fe-dollar-sign"></i> Billing
+            </a>
+            <div class="collapse show" id="sidebarBilling">
+              <ul class="nav nav-sm flex-column">
+                <li class="nav-item">
+                  <a
+                    href="./account-plans-and-payments.html"
+                    class="nav-link"
+                  >
+                    <span class="border-start border-2 ps-3"
+                      >Plan and payments</span
                     >
-                      <span class="border-start border-2 ps-3"
-                        >Plan and payments</span
-                      >
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./account-buy-credits.html" class="nav-link">
-                      <span class="border-start border-2 ps-3"
-                        >Buy credits</span
-                      >
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./account-invoices.html" class="nav-link">
-                      <span class="border-start border-2 ps-3">Invoices</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./account-buy-credits.html" class="nav-link">
+                    <span class="border-start border-2 ps-3"
+                      >Buy credits</span
+                    >
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./account-invoices.html" class="nav-link">
+                    <span class="border-start border-2 ps-3">Invoices</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li> -->
+            <li class="nav-item mb-4">
               <a
                 class="nav-link"
                 href="#sidebarAccount"
@@ -396,7 +418,7 @@
               <div class="collapse show" id="sidebarAccount">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="index.html" class="nav-link">
+                    <a href="sandbox-dashboard.html" class="nav-link">
                       <span
                         class="border-start border-2 ps-3"
                         >Change email</span
@@ -404,14 +426,14 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="account-change-password.html" class="nav-link">
+                    <a href="sandbox-account-change-password.html" class="nav-link">
                       <span class="border-start border-2 ps-3"
                         >Change password</span
                       >
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="account-2fa.html" class="nav-link">
+                    <a href="sandbox-account-2fa.html" class="nav-link">
                       <span class="border-start border-2 ps-3"
                         >Two factor security</span
                       >
@@ -420,27 +442,30 @@
                 </ul>
               </div>
             </li>
-            <li class="nav-item mb-4">
+            <!-- <li class="nav-item mb-4">
               <a class="nav-link" href="account-team.html">
                 <i class="fe fe-users"></i> Upgrade to team account
               </a>
-            </li>
+            </li> -->
 
             <!-- old-logout
-                <hr class="my-4">
-    
-                <li class="nav-item">
-                  <a class="nav-link mb-3" href="index.html">
-                    <i class="fe fe-log-out"></i> Log out 
-                  </a>
-                </li>
-                -->
+              <hr class="my-4">
+  
+              <li class="nav-item">
+                <a class="nav-link mb-3" href="index.html">
+                  <i class="fe fe-log-out"></i> Log out 
+                </a>
+              </li>
+              -->
           </ul>
 
           <div class="mt-md-auto"></div>
 
           <!-- User (md) -->
-          <div class="navbar-user d-none d-md-flex pb-4 border-bottom mb-4" id="sidebarUser">
+          <div
+            class="navbar-user d-none d-md-flex pb-4 border-bottom mb-4"
+            id="sidebarUser"
+          >
             <div class="btn-group dropup">
               <button
                 type="button"
@@ -571,113 +596,192 @@
       </div>
     </nav>
 
-    <!-- MAIN CONTENT -->
-    <div class="main-content">
+    <!--MODAL CONFIRM $100-->
+    <div
+      class="modal fade"
+      id="modalhundred"
+      tabindex="-1"
+      aria-labelledby="modalhundredLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalhundredLabel">Upgrade log</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
 
+          <div class="modal-body">
+            <span class="badge text-uppercase bg-info"> 100 rows </span>
+
+            <span class="badge text-uppercase bg-info"> $100/month </span>
+
+            <p class="mt-2">
+              Are you sure want to upgrade to 100 rows of available logs?
+              <br />
+              It will cost you $100/month.
+            </p>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary me-2"
+              data-bs-dismiss="modal"
+            >
+              No, cancel upgrade
+            </button>
+            <button type="button" class="btn btn-primary">
+              Yes, upgrade $100/month
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--MODAL CONFIRM $500/MONTH-->
+    <div
+      class="modal fade"
+      id="modalfivehundred"
+      tabindex="-1"
+      aria-labelledby="modalfivehundredLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalfivehundredLabel">Upgrade log</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <span class="badge text-uppercase bg-info"> 1000 rows </span>
+
+            <span class="badge text-uppercase bg-info"> $500/month </span>
+
+            <p class="mt-2">
+              Are you sure want to upgrade to 1000 rows of available logs?
+              <br />
+              It will cost you $500/month.
+            </p>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary me-2"
+              data-bs-dismiss="modal"
+            >
+              No, cancel upgrade
+            </button>
+            <button type="button" class="btn btn-primary">
+              Yes, upgrade $500/month
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content pb-8">
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-12 main-content-dashboard">
 
+            <!--Sandbox Alert-->
+            <div
+              class="card bg-warning mt-5"
+            >
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-12">
+                    <p class="lead text-dark mb-0">
+                      You’re currently in <b>Sandbox mode</b>. To return to Production mode, please
+                      <a
+                        href="account-request-log.html"
+                        class="fw-bold text-black text-decoration-underline"
+                        onclick="dismissAlertSandbox()"
+                        >click here</a
+                      >.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!--News Alert-->
             <div class="card bg-dark mt-5">
-
               <div class="card-body">
-
                 <div class="row align-items-top">
-
                   <div class="col-12 col-md-8">
-    
                     <p class="lead text-white mb-0">
                       <span class="me-2">
-                        <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m15.6968,12.4905l-2.8295,1.4148c-.8491.4245-1.5375,1.113-1.962,1.962l-1.4148,2.8295c-.2021.4042-.7789.4042-.981,0l-1.4148-2.8295c-.4245-.8491-1.113-1.5375-1.962-1.962l-2.8295-1.4148c-.4042-.2021-.4042-.7789,0-.981l2.8295-1.4148c.8491-.4246,1.5375-1.113,1.962-1.9621l1.4148-2.8295c.2021-.4042.7789-.4042.981,0l1.4148,2.8295c.4245.8491,1.113,1.5375,1.962,1.9621l2.8295,1.4148c.4042.2021.4042.7789,0,.981Zm6.1732,6.2993l-1.2127-.6063c-.3639-.182-.6589-.477-.8409-.8409l-.6063-1.2126c-.0866-.1732-.3338-.1732-.4204,0l-.6063,1.2126c-.1819.3639-.477.6589-.8409.8409l-1.2127.6063c-.1732.0866-.1732.3338,0,.4204l1.2127.6063c.3639.1819.6589.477.8409.8409l.6063,1.2126c.0866.1732.3338.1732.4204,0l.6063-1.2126c.1819-.3639.477-.6589.8409-.8409l1.2127-.6063c.1732-.0866.1732-.3338,0-.4204Zm0-14l-1.2127-.6063c-.3639-.182-.6589-.477-.8409-.8409l-.6063-1.2126c-.0866-.1732-.3338-.1732-.4204,0l-.6063,1.2126c-.1819.3639-.477.6589-.8409.8409l-1.2127.6063c-.1732.0866-.1732.3338,0,.4204l1.2127.6063c.3639.1819.6589.477.8409.8409l.6063,1.2126c.0866.1732.3338.1732.4204,0l.6063-1.2126c.1819-.3639.477-.6589.8409-.8409l1.2127-.6063c.1732-.0866.1732-.3338,0-.4204Z" fill="#fff"/></svg>
+                        <?xml version="1.0" encoding="UTF-8"?><svg
+                          id="a"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="m15.6968,12.4905l-2.8295,1.4148c-.8491.4245-1.5375,1.113-1.962,1.962l-1.4148,2.8295c-.2021.4042-.7789.4042-.981,0l-1.4148-2.8295c-.4245-.8491-1.113-1.5375-1.962-1.962l-2.8295-1.4148c-.4042-.2021-.4042-.7789,0-.981l2.8295-1.4148c.8491-.4246,1.5375-1.113,1.962-1.9621l1.4148-2.8295c.2021-.4042.7789-.4042.981,0l1.4148,2.8295c.4245.8491,1.113,1.5375,1.962,1.9621l2.8295,1.4148c.4042.2021.4042.7789,0,.981Zm6.1732,6.2993l-1.2127-.6063c-.3639-.182-.6589-.477-.8409-.8409l-.6063-1.2126c-.0866-.1732-.3338-.1732-.4204,0l-.6063,1.2126c-.1819.3639-.477.6589-.8409.8409l-1.2127.6063c-.1732.0866-.1732.3338,0,.4204l1.2127.6063c.3639.1819.6589.477.8409.8409l.6063,1.2126c.0866.1732.3338.1732.4204,0l.6063-1.2126c.1819-.3639.477-.6589.8409-.8409l1.2127-.6063c.1732-.0866.1732-.3338,0-.4204Zm0-14l-1.2127-.6063c-.3639-.182-.6589-.477-.8409-.8409l-.6063-1.2126c-.0866-.1732-.3338-.1732-.4204,0l-.6063,1.2126c-.1819.3639-.477.6589-.8409.8409l-1.2127.6063c-.1732.0866-.1732.3338,0,.4204l1.2127.6063c.3639.1819.6589.477.8409.8409l.6063,1.2126c.0866.1732.3338.1732.4204,0l.6063-1.2126c.1819-.3639.477-.6589.8409-.8409l1.2127-.6063c.1732-.0866.1732-.3338,0-.4204Z"
+                            fill="#fff"
+                          />
+                        </svg>
                       </span>
-                      We are currenting experiencing issues with our Person Profile Endpoint.
+                      We are currenting experiencing issues with our Person
+                      Profile Endpoint.
                     </p>
-
                   </div>
 
                   <div class="col-12 col-md-4 text-end">
-
                     <a href="#!" class="btn btn-white lift">
                       Learn more <i class="fe fe-arrow-right ms-1"></i>
                     </a>
-
                   </div>
-
                 </div>
-
               </div>
-
             </div>
 
             <!-- Header -->
             <div class="header mt-md-5">
               <div class="header-body">
-
                 <div class="row align-items-center">
                   <div class="col">
-
                     <!-- Pretitle -->
-                    <h6 class="header-pretitle">
-                      Overview
-                    </h6>
+                    <h6 class="header-pretitle">Overview</h6>
 
                     <!-- Title -->
-                    <h1 class="header-title">
-                      Proxycurl API
-                    </h1>
-
-                  </div>
-                </div> <!-- / .row -->
-
-                <div class="row align-items-center">
-                  <div class="col">
-
-                    <!-- Nav -->
-                    <ul class="nav nav-tabs nav-overflow header-tabs">
-                      <li class="nav-item">
-                        <a href="account-api.html" class="nav-link">
-                          API Key
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="account-work.html" class="nav-link active">
-                          Work Email Lookup Logs
-                        </a>
-                      </li>
-                    </ul>
-
+                    <h1 class="header-title">Request Log</h1>
                   </div>
                 </div>
+                <!-- / .row -->
               </div>
             </div>
 
-            <!-- Alert
-            <div class="alert alert-danger">
-              <i class="fe fe-info me-1"></i> You are near your API limits.
-            </div>
-            -->
-
             <!-- Card -->
             <div class="card">
-
               <div class="card-header">
                 <div class="row align-items-center">
                   <div class="col">
-
                     <!-- Title -->
-                    <h4 class="card-header-title">
-                      Work Email Lookup Logs
-                    </h4>
-
+                    <h4 class="card-header-title">Request Logs</h4>
                   </div>
                   <div class="col-auto">
-
                     <!-- Button -->
                     <a class="btn btn-sm btn-outline-primary" href="#!">
                       Download as CSV
                     </a>
-
                   </div>
                 </div>
               </div>
@@ -694,105 +798,247 @@
                   </thead>
                   <tbody class="fs-base">
                     <tr>
+                      <td>20 Jan 2022, 14:50</td>
+                      <td>linkedin.com/billgates</td>
                       <td>
-                        20 Jan 2022, 14:50
+                        <span class="badge bg-primary-soft"> email_found </span>
                       </td>
-                      <td>
-                        linkedin.com/billgates
-                      </td>
-                      <td>
-                        <span class="badge bg-primary-soft">
-                          email_found
-                        </span>
-                      </td>
-                      <td>
-                        gates@microsoft.com
-                      </td>
+                      <td>gates@microsoft.com</td>
                     </tr>
                     <tr>
-                      <td>
-                        20 Jan 2022, 14:42
-                      </td>
-                      <td>
-                        linkedin.com/gomugomuno
-                      </td>
+                      <td>20 Jan 2022, 14:42</td>
+                      <td>linkedin.com/gomugomuno</td>
                       <td>
                         <span class="badge bg-secondary-soft">
                           email_not_found
                         </span>
                       </td>
-                      <td>
-                        gomu@gomu.no
-                      </td>
+                      <td>gomu@gomu.no</td>
                     </tr>
                     <tr>
-                      <td>
-                        20 Jan 2022, 14:40
-                      </td>
-                      <td>
-                        linkedin.com/kanebohijau
-                      </td>
+                      <td>20 Jan 2022, 14:40</td>
+                      <td>linkedin.com/kanebohijau</td>
                       <td>
                         <span class="badge bg-secondary-soft">
                           email_not_found
                         </span>
                       </td>
-                      <td>
-                        tokenasix@kanebo.hijau
-                      </td>
+                      <td>tokenasix@kanebo.hijau</td>
                     </tr>
                     <tr>
+                      <td>20 Jan 2022, 14:32</td>
+                      <td>linkedin.com/anjaymabar</td>
                       <td>
-                        20 Jan 2022, 14:32
+                        <span class="badge bg-primary-soft"> email_found </span>
                       </td>
+                      <td>anjay@mabar.com</td>
+                    </tr>
+                    <tr>
+                      <td>20 Jan 2022, 14:32</td>
+                      <td>linkedin.com/sapinjepat</td>
                       <td>
-                        linkedin.com/anjaymabar
+                        <span class="badge bg-primary-soft"> email_found </span>
                       </td>
-                      <td>
-                        <span class="badge bg-primary-soft">
-                          email_found
-                        </span>
-                      </td>
-                      <td>
-                        anjay@mabar.com
-                      </td>
+                      <td>sapi@njepat.com</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
 
-              <div class="card-body">
-                <nav aria-label="Page navigation">
-                  <ul class="pagination">
-                    <li class="page-item"><a class="page-link bg-light" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link" href="#">5</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                  </ul>
-                </nav>
+              <div class="table-responsive blur">
+                <table class="table table-sm table-nowrap card-table">
+                  <tbody class="fs-base">
+                    <tr>
+                      <td>20 Jan 2022, 14:50</td>
+                      <td>linkedin.com/billgates</td>
+                      <td>
+                        <span class="badge bg-primary-soft"> email_found </span>
+                      </td>
+                      <td>gates@microsoft.com</td>
+                    </tr>
+                    <tr>
+                      <td>20 Jan 2022, 14:42</td>
+                      <td>linkedin.com/gomugomuno</td>
+                      <td>
+                        <span class="badge bg-secondary-soft">
+                          email_not_found
+                        </span>
+                      </td>
+                      <td>gomu@gomu.no</td>
+                    </tr>
+                    <tr>
+                      <td>20 Jan 2022, 14:40</td>
+                      <td>linkedin.com/kanebohijau</td>
+                      <td>
+                        <span class="badge bg-secondary-soft">
+                          email_not_found
+                        </span>
+                      </td>
+                      <td>tokenasix@kanebo.hijau</td>
+                    </tr>
+                    <tr>
+                      <td>20 Jan 2022, 14:32</td>
+                      <td>linkedin.com/anjaymabar</td>
+                      <td>
+                        <span class="badge bg-primary-soft"> email_found </span>
+                      </td>
+                      <td>anjay@mabar.com</td>
+                    </tr>
+                    <tr>
+                      <td>20 Jan 2022, 14:32</td>
+                      <td>linkedin.com/sapinjepat</td>
+                      <td>
+                        <span class="badge bg-primary-soft"> email_found </span>
+                      </td>
+                      <td>sapi@njepat.com</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
 
+              <!--UPGRADE DROPDOWN-->
+              <div class="card-body mb-0 text-center">
+                <div class="dropdown mt-minus">
+                  <button
+                    class="btn btn-primary lift shadow shadow-light-lg"
+                    type="button"
+                    id="upgradeLogs"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    UPGRADE TO VIEW MORE LOGS
+                  </button>
+
+                  <form
+                    class="dropdown-menu dropdown-center dropdown-menu-card"
+                    aria-labelledby="upgradeLogs"
+                  >
+                    <div class="card card-body">
+                      <div class="table-responsive">
+                        <table class="table table-sm">
+                          <thead>
+                            <tr>
+                              <th>Rows of logs available</th>
+                              <th>Minimum plan</th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody class="fs-base">
+                            <tr>
+                              <td>5</td>
+                              <td>
+                                <span
+                                  class="badge text-uppercase bg-secondary-soft"
+                                >
+                                  Pay as you go
+                                </span>
+                              </td>
+                              <td>
+                                <span class="badge bg-primary-soft">
+                                  Current plan
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>200,000</td>
+                              <td>
+                                <span class="badge text-uppercase bg-secondary">
+                                  $1,899/month
+                                </span>
+                                or
+                                <span class="badge text-uppercase bg-secondary">
+                                  Any annual plan
+                                </span>
+                              </td>
+                              <td>
+                                <button
+                                  type="button"
+                                  class="btn btn-primary btn-sm"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#modalhundred"
+                                >
+                                  Upgrade
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>50,000</td>
+                              <td>
+                                <span class="badge text-uppercase bg-secondary">
+                                  $899/month
+                                </span>
+                              </td>
+                              <td>
+                                <button
+                                  type="button"
+                                  class="btn btn-primary btn-sm"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#modalfivehundred"
+                                >
+                                  Upgrade
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>10,000</td>
+                              <td>
+                                <span class="badge text-uppercase bg-secondary">
+                                  $299/month
+                                </span>
+                              </td>
+                              <td>
+                                <button
+                                  type="button"
+                                  class="btn btn-primary btn-sm"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#modalfivehundred"
+                                >
+                                  Upgrade
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>
+                                <span class="badge text-uppercase bg-secondary">
+                                  $49/month
+                                </span>
+                              </td>
+                              <td>
+                                <button
+                                  type="button"
+                                  class="btn btn-primary btn-sm"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#modalfivehundred"
+                                >
+                                  Upgrade
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
-
-            <br>
-
           </div>
-        </div> <!-- / .row -->
+        </div>
+        <!-- / .row -->
       </div>
-
-    </div> <!-- / .main-content -->
+    </div>
+    <!-- / .main-content -->
 
     <!-- JAVASCRIPT -->
     <!-- Map JS -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-    
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+
     <!-- Vendor JS -->
     <script src="./assets/js/vendor.bundle.js"></script>
-    
+
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
-
   </body>
 </html>

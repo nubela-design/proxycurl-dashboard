@@ -35,19 +35,10 @@
     <!-- Title -->
     <title>Proxycurl - Dashboard</title>
 
-    <style>
-      #alert-box {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1000;
-      }
-    </style>
   </head>
 
   <body>
-    <!-- NAVIGATION -->
+    <!-- NAVIGATION PRODUCTION -->
     <nav
       class="navbar navbar-vertical fixed-start navbar-expand-md navbar-light"
       id="sidebar"
@@ -186,8 +177,8 @@
 
         <!-- Credits (md)-->
         <div class="navbar-user d-none d-md-flex pb-4">
-          <div class="row w-100">
-            <div class="col-12">
+          <div class="d-block w-100">
+            <div class="d-block w-100">
               <label class="mb-2 text-gray-700">
                 Credits
                 <code
@@ -224,7 +215,7 @@
               </label>
             </div>
 
-            <div class="col-12">
+            <div class="d-block w-100">
               <a
                 class="btn btn-outline-primary w-100 mt-3"
                 href="account-buy-credits.html"
@@ -774,29 +765,6 @@
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-12 main-content-dashboard">
-            <!--Sandbox Alert-->
-            <div
-              class="card bg-warning mt-5"
-              id="liveAlertPlaceholder"
-              style="display: none"
-            >
-              <div class="card-body">
-                <div class="row align-items-center">
-                  <div class="col-12">
-                    <p class="lead text-dark mb-0">
-                      You’re currently in <b>Sandbox mode</b>. To return to
-                      Production mode, please
-                      <a
-                        href="javascript:void(0);"
-                        class="fw-bold text-black text-decoration-underline"
-                        onclick="dismissAlertSandbox()"
-                        >click here</a
-                      >.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
 
             <!--News Alert-->
             <div class="card bg-dark mt-5">
