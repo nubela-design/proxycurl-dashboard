@@ -54,3 +54,11 @@
     }   
 }
 
+.small-toggle {
+    height: 20px !important;
+    margin-top: 1px !important;
+  }
+  
+  .small-toggle:checked {
+    background-size: 20px 20px !important;
+  }
