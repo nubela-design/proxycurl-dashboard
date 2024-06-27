@@ -218,7 +218,7 @@
               Sandbox Mode <i class="fe fe-chevron-down"></i>
             </button>
             <ul class="dropdown-menu w-100">
-              <li><a class="dropdown-item" href="account-work.html">Production Mode</a></li>
+              <li><a class="dropdown-item" href="./account-work.html">Production Mode</a></li>
             </ul>
           </div>
         </div>
@@ -226,8 +226,8 @@
         <!-- Collapse -->
         <div class="collapse navbar-collapse" id="sidebarCollapse">
           <!-- Credits (xs)-->
-          <div class="navbar-user d-md-none mb-4">
-            <div class="row text-center text-md-left">
+          <div class="navbar-user d-md-none mb-4 flex-column">
+            <div class="row text-center text-md-left mt-3 mb-4 w-100">
               <div class="col-12">
                 <label class="mb-2 text-gray-700">
                   Credits
@@ -264,14 +264,25 @@
                   >
                 </label>
               </div>
+            </div>
 
-              <div class="col-12">
-                <a
-                  class="btn btn-outline-primary w-100 mt-3"
-                  href="account-buy-credits.html"
+            <div class="py-4 border-top border-bottom w-100">
+              <div class="btn-group w-100">
+                <button
+                  type="button"
+                  class="btn btn-dark dropdown-toggle d-inline-flex justify-content-between align-items-center"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
-                  Buy credits
-                </a>
+                  Sandbox Mode <i class="fe fe-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu w-100">
+                  <li>
+                    <a class="dropdown-item" href="./account-work.html"
+                      >Production Mode</a
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -300,6 +311,13 @@
                     <a href="./account-work.html" class="nav-link fw-bold">
                       <span class="border-start border-2 ps-3 text-primary border-primary"
                         >Work Email Lookup Logs</span
+                      >
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./sandbox-person-sandbox.html" class="nav-link">
+                      <span class="border-start border-2 ps-3"
+                        >Person Sandbox</span
                       >
                     </a>
                   </li>
@@ -340,7 +358,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="sandbox-account-request-log.html" role="button">
+              <a class="nav-link" href="./sandbox-account-request-log.html" role="button">
                 <i class="fe fe-activity"></i> Request Log
               </a>
             </li>
@@ -396,7 +414,7 @@
               <div class="collapse show" id="sidebarAccount">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="sandbox-dashboard.html" class="nav-link">
+                    <a href="./sandbox-account-change-email.html" class="nav-link">
                       <span
                         class="border-start border-2 ps-3"
                         >Change email</span
@@ -404,14 +422,14 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="sandbox-account-change-password.html" class="nav-link">
+                    <a href="./sandbox-account-change-password.html" class="nav-link">
                       <span class="border-start border-2 ps-3"
                         >Change password</span
                       >
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="sandbox-account-2fa.html" class="nav-link">
+                    <a href="./sandbox-account-2fa.html" class="nav-link">
                       <span class="border-start border-2 ps-3"
                         >Two factor security</span
                       >
@@ -657,12 +675,12 @@
                     <!-- Nav -->
                     <ul class="nav nav-tabs nav-overflow header-tabs">
                       <li class="nav-item">
-                        <a href="account-api.html" class="nav-link">
+                        <a href="./sandbox-account-api.html" class="nav-link">
                           API Key
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="account-work.html" class="nav-link active">
+                        <a href="./sandbox-account-work.html" class="nav-link active">
                           Work Email Lookup Logs
                         </a>
                       </li>
