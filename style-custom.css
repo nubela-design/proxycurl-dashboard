@@ -62,3 +62,9 @@
   .small-toggle:checked {
     background-size: 20px 20px !important;
   }
+
+  @media (min-width: 768px) {
+    .btn.w-md-auto {
+      width: auto !important;
+    }
+  }  
