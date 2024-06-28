@@ -226,9 +226,9 @@
       <!-- Collapse -->
       <div class="collapse navbar-collapse" id="sidebarCollapse">
         <!-- Credits (xs)-->
-        <div class="navbar-user d-md-none mb-4">
-          <div class="row text-center text-md-left">
-            <div class="col-12">
+        <div class="navbar-user d-md-none mb-4 flex-column">
+          <div class="d-flex flex-column text-center text-md-left mt-3 mb-4 w-100">
+            <div class="d-flex flex-column">
               <label class="mb-2 text-gray-700">
                 Credits
                 <code
@@ -265,13 +265,24 @@
               </label>
             </div>
 
-            <div class="col-12">
+            <div class="d-flex">
               <a
                 class="btn btn-outline-primary w-100 mt-3"
                 href="account-buy-credits.html"
               >
                 Buy credits
               </a>
+            </div>
+          </div>
+
+          <div class="py-4 border-top border-bottom w-100">
+            <div class="btn-group w-100">
+              <button type="button" class="btn btn-primary dropdown-toggle d-inline-flex justify-content-between align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                Production Mode <i class="fe fe-chevron-down"></i>
+              </button>
+              <ul class="dropdown-menu w-100">
+                <li><a class="dropdown-item" href="./sandbox-account-2fa.html">Sandbox Mode</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -571,7 +582,7 @@
     </div>
   </nav>
 
-    <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>
+    
 
     <!-- Modal 1 -->
     <div class="modal fade" id="authModalFirst" aria-labelledby="authModalFirstLabel" aria-hidden="true" tabindex="-1">
