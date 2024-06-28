@@ -68,3 +68,8 @@
       width: auto !important;
     }
   }  
+
+  .hover-danger:hover {
+    color: #BB2D3B !important;
+    
+  }
