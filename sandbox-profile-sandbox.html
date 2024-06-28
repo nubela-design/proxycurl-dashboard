@@ -479,6 +479,114 @@
       </div>
     </nav>
 
+    <!--MODAL Edit-->
+    <div class="modal fade" id="modalEditProfile" tabindex="-1" aria-labelledby="modalEditLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+    
+          <div class="modal-header">
+            <h3 class="modal-title" id="modalTopupLabel">Edit Profile</h3>
+            <div class="me-3 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+          </div>
+    
+          <div class="modal-body">
+    
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                <input type="email" placeholder="David King" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Followers</label>
+                <input type="email" placeholder="567,891" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Company</label>
+                <input type="email" placeholder="IBM" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Job Title</label>
+                <input type="email" placeholder="Software Engineer" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+                <input type="email" placeholder="+1 555 123 1234" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-4">
+                <label for="exampleInputEmail1" class="form-label">Personal Email</label>
+                <input type="email" placeholder="davidking@ibm.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Own this profile
+                </label>
+              </div>              
+
+            </form>
+    
+          </div>
+    
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">Discard edit</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEditProfileSuccess">Save edit</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>    
+
+    <!--MODAL Edit Success-->
+    <div class="modal fade" id="modalEditProfileSuccess" tabindex="-1" aria-labelledby="modalEditSuccessLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+    
+          <div class="">
+            <h3 class="modal-title" id="modalTopupLabel"></h3>
+            <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+          </div>
+    
+          <div class="modal-body">
+    
+            <div class="row justify-content-center pb-md-5">
+
+              <div class="col-12 col-md-10 text-center mb-3">
+                <i class="neu-so-tick-circle text-success display-1"></i>
+
+                <h1 class="fw-bold mb-3 mt-4">
+                  Profile saved successfully!
+                </h1>
+
+                <p class="text-gray-700 fs-lg">
+                  Your profile edit was saved successfully, You can check it on the profile list or view the profile details for more data.
+                </p>
+              </div>
+
+              <div class="col-12 col-md-10">
+
+
+                <div class="row align-items-center justify-content-center mt-3">
+
+                    <a class="btn btn-lg btn-primary w-100 lift mb-2" href="sandbox-profile-sandbox-person.html">
+                      Go to profile list
+                    </a>
+                    <a class="btn btn-lg btn-link w-100" href="sandbox-profile-sandbox-person-detail.html">
+                      Go to profile details
+                    </a>
+
+                </div>
+
+              </div>
+
+            </div>
+    
+          </div>
+    
+        </div>
+      </div>
+    </div>      
+
     <!-- MAIN CONTENT -->
     <div class="main-content">
 
@@ -925,9 +1033,9 @@
                         <td class="align-middle">+1 555 123 1234</td>
                         <td class="align-middle">davidking@ibm.com</td>
                         <td class="align-middle"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-so-pencil"></i>
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
                             Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-so-copy"></i>
+                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-copy"></i>
                             Copy profile</button>
                         </td>
                       </tr>
@@ -955,9 +1063,9 @@
                         <td class="align-middle">+1 555 123 1234</td>
                         <td class="align-middle">kokorose@netflix.com</td>
                         <td class="align-middle"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-so-pencil"></i>
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
                             Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-so-copy"></i>
+                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-copy"></i>
                             Copy profile</button>
                         </td>
                       </tr>
@@ -985,9 +1093,9 @@
                         <td class="align-middle">+1 555 123 1234</td>
                         <td class="align-middle">karimp@google.com</td>
                         <td class="align-middle"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-so-pencil"></i>
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
                             Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-so-copy"></i>
+                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-copy"></i>
                             Copy profile</button>
                         </td>
                       </tr>
@@ -1014,9 +1122,9 @@
                         <td class="align-middle">+1 555 123 1234</td>
                         <td class="align-middle">jmary@spotify.com</td>
                         <td class="align-middle"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-so-pencil"></i>
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
                             Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-so-copy"></i>
+                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-copy"></i>
                             Copy profile</button>
                         </td>
                       </tr>
@@ -1043,9 +1151,9 @@
                         <td class="align-middle">+1 555 123 1234</td>
                         <td class="align-middle">arofariy@apple.com</td>
                         <td class="align-middle"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-so-pencil"></i>
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
                             Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-so-copy"></i>
+                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-copy"></i>
                             Copy profile</button>
                         </td>
                       </tr>
@@ -1073,9 +1181,9 @@
                         <td class="align-middle">+1 555 123 1234</td>
                         <td class="align-middle">davidking@ibm.com</td>
                         <td class="align-middle"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-so-pencil"></i>
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
                             Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-so-copy"></i>
+                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-copy"></i>
                             Copy profile</button>
                         </td>
                       </tr>
@@ -1103,9 +1211,9 @@
                         <td class="align-middle">+1 555 123 1234</td>
                         <td class="align-middle">kokorose@netflix.com</td>
                         <td class="align-middle"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-so-pencil"></i>
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
                             Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-so-copy"></i>
+                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-copy"></i>
                             Copy profile</button>
                         </td>
                       </tr>
@@ -1133,9 +1241,9 @@
                         <td class="align-middle">+1 555 123 1234</td>
                         <td class="align-middle">karimp@google.com</td>
                         <td class="align-middle"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-so-pencil"></i>
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
                             Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-so-copy"></i>
+                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-copy"></i>
                             Copy profile</button>
                         </td>
                       </tr>
@@ -1162,9 +1270,9 @@
                         <td class="align-middle">+1 555 123 1234</td>
                         <td class="align-middle">jmary@spotify.com</td>
                         <td class="align-middle"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-so-pencil"></i>
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
                             Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-so-copy"></i>
+                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-copy"></i>
                             Copy profile</button>
                         </td>
                       </tr>
@@ -1191,9 +1299,9 @@
                         <td class="align-middle">+1 555 123 1234</td>
                         <td class="align-middle">arofariy@apple.com</td>
                         <td class="align-middle"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-so-pencil"></i>
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
                             Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-so-copy"></i>
+                          <button class="btn btn-sm btn-outline-secondary me-1"><i class="neu neu-copy"></i>
                             Copy profile</button>
                         </td>
                       </tr>
