@@ -1,30 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A fully featured admin theme which can be used to build CRM, CMS, etc."
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc." />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+    <!-- Map CSS -->
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css"
+    />
 
-  <!-- Map CSS -->
-  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
 
-  <!-- Libs CSS -->
-  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+    <link rel="stylesheet" href="style-custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css"
+    />
 
-  <!-- Theme CSS -->
-  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
-  <link rel="stylesheet" href="style-custom.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">
-
-  <!-- Title -->
-  <title>Proxycurl - API Key</title>
-</head>
+    <!-- Title -->
+    <title>Proxycurl - API Key</title>
+  </head>
   <body>
-
     <!-- NAVIGATION PRODUCTION -->
     <nav
       class="navbar navbar-vertical fixed-start navbar-expand-md navbar-light"
@@ -214,13 +225,15 @@
         </div>
 
         <div class="navbar-user d-none d-md-flex border-bottom pb-4 mb-4">
-          <div class="btn-group w-100">
-            <button type="button" class="btn btn-primary dropdown-toggle d-inline-flex justify-content-between align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
-              Production Mode <i class="fe fe-chevron-down"></i>
-            </button>
-            <ul class="dropdown-menu w-100">
-              <li><a class="dropdown-item" href="sandbox-account-api.html">Sandbox Mode</a></li>
-            </ul>
+          <div class="d-flex flex-row align-items-center">
+            <div class="w-75">
+              <label class="form-check-label h3 fw-normal text-gray-700 mb-0" for="toggleSandbox">Sandbox Mode</label>
+            </div>
+            <div class="w-25 text-end">
+              <div class="form-check form-switch d-inline-block ms-auto">
+                <input class="form-check-input" type="checkbox" id="toggleSandbox">
+              </div>
+            </div>
           </div>
         </div>
 
@@ -228,7 +241,9 @@
         <div class="collapse navbar-collapse" id="sidebarCollapse">
           <!-- Credits (xs)-->
           <div class="navbar-user d-md-none mb-4 flex-column">
-            <div class="d-flex flex-column text-center text-md-left mt-3 mb-4 w-100">
+            <div
+              class="d-flex flex-column text-center text-md-left mt-3 mb-4 w-100"
+            >
               <div class="d-flex flex-column">
                 <label class="mb-2 text-gray-700">
                   Credits
@@ -277,13 +292,15 @@
             </div>
 
             <div class="py-4 border-top border-bottom w-100">
-              <div class="btn-group w-100">
-                <button type="button" class="btn btn-primary dropdown-toggle d-inline-flex justify-content-between align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
-                  Production Mode <i class="fe fe-chevron-down"></i>
-                </button>
-                <ul class="dropdown-menu w-100">
-                  <li><a class="dropdown-item" href="./sandbox-account-api.html">Sandbox Mode</a></li>
-                </ul>
+              <div class="d-flex flex-row align-items-center">
+                <div class="w-75">
+                  <label class="form-check-label h3 fw-normal text-gray-700 mb-0" for="toggleSandboxXS">Sandbox Mode</label>
+                </div>
+                <div class="w-25 text-end">
+                  <div class="form-check form-switch d-inline-block ms-auto">
+                    <input class="form-check-input" type="checkbox" id="toggleSandboxXS">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -305,7 +322,10 @@
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
                     <a href="./account-api.html" class="nav-link fw-bold">
-                      <span class="border-start border-2 ps-3 text-primary border-primary">API Key</span>
+                      <span
+                        class="border-start border-2 ps-3 text-primary border-primary"
+                        >API Key</span
+                      >
                     </a>
                   </li>
                   <li class="nav-item">
@@ -409,8 +429,7 @@
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
                     <a href="index.html" class="nav-link">
-                      <span
-                        class="border-start border-2 ps-3"
+                      <span class="border-start border-2 ps-3"
                         >Change email</span
                       >
                     </a>
@@ -452,7 +471,10 @@
           <div class="mt-md-auto"></div>
 
           <!-- User (md) -->
-          <div class="navbar-user d-none d-md-flex pb-4 border-bottom mb-4" id="sidebarUser">
+          <div
+            class="navbar-user d-none d-md-flex pb-4 border-bottom mb-4"
+            id="sidebarUser"
+          >
             <div class="btn-group dropup">
               <button
                 type="button"
@@ -584,17 +606,25 @@
     </nav>
 
     <!--MODAL SURVEY CONFIRM-->
-    <div class="modal fade" id="modalSurveyConfirm" aria-labelledby="modalSurveyConfirm" aria-hidden="true" tabindex="-1">
+    <div
+      class="modal fade"
+      id="modalSurveyConfirm"
+      aria-labelledby="modalSurveyConfirm"
+      aria-hidden="true"
+      tabindex="-1"
+    >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-
-          <a type="button" class="btn-close h1 ps-4 pt-4" data-bs-dismiss="modal" aria-label="Close">
+          <a
+            type="button"
+            class="btn-close h1 ps-4 pt-4"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
           </a>
 
           <div class="modal-body">
-
             <div class="row justify-content-center pb-md-5">
-
               <div class="col-12 col-md-9 text-center mb-3">
                 <i class="neu-so-tick-circle text-success display-1"></i>
 
@@ -603,236 +633,299 @@
                 </h1>
 
                 <p class="text-gray-700 fs-lg">
-                  Thanks for completing our survey! we're excited to reward you with 5 extra credits!
+                  Thanks for completing our survey! we're excited to reward you
+                  with 5 extra credits!
                 </p>
               </div>
 
               <div class="col-12 col-md-9">
-
-
                 <div class="row align-items-center justify-content-center mt-3">
-
-                    <div class="btn btn-lg btn-primary w-100 lift" data-bs-dismiss="modal">
-                      Go to dashboard
-                    </div>
-
-
+                  <div
+                    class="btn btn-lg btn-primary w-100 lift"
+                    data-bs-dismiss="modal"
+                  >
+                    Go to dashboard
+                  </div>
                 </div>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
-      </div>
-    </div>  
-
-    <!--MODAL UPGRADE-->
-    <div class="modal fade" id="modalCTA" tabindex="-1" aria-labelledby="modalCTALabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-
-        <a type="button" class="btn-close h1 ps-4 pt-4" data-dismiss="modal" aria-label="Close">
-        </a>
-
-        <div class="modal-body">
-
-          <div class="row justify-content-center pb-md-5">
-
-            <div class="col-12 col-md-9 text-center mb-4">
-              <i class="neu-list text-success display-1"></i>
-            </div>
-
-            <div class="col-12 col-md-10">
-
-              <h1 class="fw-bold text-center mb-5">
-                Upgrade to generate more API keys
-              </h1>
-
-              <p class="mb-5 text-center lead">
-                Upgrade to at least a <span class="fw-bold">$299</span>/mo or any <span class="fw-bold"> annual plan</span> to unlock this feature.
-              </p>
-
-              <a class="btn btn-lg btn-primary w-100" href="account-plans-and-payments-change-plan.html">
-                Upgrade plan
-              </a>
-
-              <button class="btn btn-lg btn-outline-primary w-100 mt-3" data-dismiss="modal">
-                Cancel
-              </button>
-
-            </div>
-
-          </div>
-
-        </div>
-
       </div>
     </div>
+
+    <!--MODAL UPGRADE-->
+    <div
+      class="modal fade"
+      id="modalCTA"
+      tabindex="-1"
+      aria-labelledby="modalCTALabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <a
+            type="button"
+            class="btn-close h1 ps-4 pt-4"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+          </a>
+
+          <div class="modal-body">
+            <div class="row justify-content-center pb-md-5">
+              <div class="col-12 col-md-9 text-center mb-4">
+                <i class="neu-list text-success display-1"></i>
+              </div>
+
+              <div class="col-12 col-md-10">
+                <h1 class="fw-bold text-center mb-5">
+                  Upgrade to generate more API keys
+                </h1>
+
+                <p class="mb-5 text-center lead">
+                  Upgrade to at least a <span class="fw-bold">$299</span>/mo or
+                  any <span class="fw-bold"> annual plan</span> to unlock this
+                  feature.
+                </p>
+
+                <a
+                  class="btn btn-lg btn-primary w-100"
+                  href="account-plans-and-payments-change-plan.html"
+                >
+                  Upgrade plan
+                </a>
+
+                <button
+                  class="btn btn-lg btn-outline-primary w-100 mt-3"
+                  data-dismiss="modal"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- MAIN CONTENT -->
     <div class="main-content">
-
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-12 main-content-dashboard">
-
             <!--News Alert-->
             <div class="card bg-dark mt-5">
-
               <div class="card-body">
-
                 <div class="row align-items-top">
-
                   <div class="col-12 col-md-8">
-    
                     <p class="lead text-white mb-0">
                       <span class="me-2">
-                        <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m15.6968,12.4905l-2.8295,1.4148c-.8491.4245-1.5375,1.113-1.962,1.962l-1.4148,2.8295c-.2021.4042-.7789.4042-.981,0l-1.4148-2.8295c-.4245-.8491-1.113-1.5375-1.962-1.962l-2.8295-1.4148c-.4042-.2021-.4042-.7789,0-.981l2.8295-1.4148c.8491-.4246,1.5375-1.113,1.962-1.9621l1.4148-2.8295c.2021-.4042.7789-.4042.981,0l1.4148,2.8295c.4245.8491,1.113,1.5375,1.962,1.9621l2.8295,1.4148c.4042.2021.4042.7789,0,.981Zm6.1732,6.2993l-1.2127-.6063c-.3639-.182-.6589-.477-.8409-.8409l-.6063-1.2126c-.0866-.1732-.3338-.1732-.4204,0l-.6063,1.2126c-.1819.3639-.477.6589-.8409.8409l-1.2127.6063c-.1732.0866-.1732.3338,0,.4204l1.2127.6063c.3639.1819.6589.477.8409.8409l.6063,1.2126c.0866.1732.3338.1732.4204,0l.6063-1.2126c.1819-.3639.477-.6589.8409-.8409l1.2127-.6063c.1732-.0866.1732-.3338,0-.4204Zm0-14l-1.2127-.6063c-.3639-.182-.6589-.477-.8409-.8409l-.6063-1.2126c-.0866-.1732-.3338-.1732-.4204,0l-.6063,1.2126c-.1819.3639-.477.6589-.8409.8409l-1.2127.6063c-.1732.0866-.1732.3338,0,.4204l1.2127.6063c.3639.1819.6589.477.8409.8409l.6063,1.2126c.0866.1732.3338.1732.4204,0l.6063-1.2126c.1819-.3639.477-.6589.8409-.8409l1.2127-.6063c.1732-.0866.1732-.3338,0-.4204Z" fill="#fff"/></svg>
+                        <?xml version="1.0" encoding="UTF-8"?><svg
+                          id="a"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="m15.6968,12.4905l-2.8295,1.4148c-.8491.4245-1.5375,1.113-1.962,1.962l-1.4148,2.8295c-.2021.4042-.7789.4042-.981,0l-1.4148-2.8295c-.4245-.8491-1.113-1.5375-1.962-1.962l-2.8295-1.4148c-.4042-.2021-.4042-.7789,0-.981l2.8295-1.4148c.8491-.4246,1.5375-1.113,1.962-1.9621l1.4148-2.8295c.2021-.4042.7789-.4042.981,0l1.4148,2.8295c.4245.8491,1.113,1.5375,1.962,1.9621l2.8295,1.4148c.4042.2021.4042.7789,0,.981Zm6.1732,6.2993l-1.2127-.6063c-.3639-.182-.6589-.477-.8409-.8409l-.6063-1.2126c-.0866-.1732-.3338-.1732-.4204,0l-.6063,1.2126c-.1819.3639-.477.6589-.8409.8409l-1.2127.6063c-.1732.0866-.1732.3338,0,.4204l1.2127.6063c.3639.1819.6589.477.8409.8409l.6063,1.2126c.0866.1732.3338.1732.4204,0l.6063-1.2126c.1819-.3639.477-.6589.8409-.8409l1.2127-.6063c.1732-.0866.1732-.3338,0-.4204Zm0-14l-1.2127-.6063c-.3639-.182-.6589-.477-.8409-.8409l-.6063-1.2126c-.0866-.1732-.3338-.1732-.4204,0l-.6063,1.2126c-.1819.3639-.477.6589-.8409.8409l-1.2127.6063c-.1732.0866-.1732.3338,0,.4204l1.2127.6063c.3639.1819.6589.477.8409.8409l.6063,1.2126c.0866.1732.3338.1732.4204,0l.6063-1.2126c.1819-.3639.477-.6589.8409-.8409l1.2127-.6063c.1732-.0866.1732-.3338,0-.4204Z"
+                            fill="#fff"
+                          />
+                        </svg>
                       </span>
-                      We are currenting experiencing issues with our Person Profile Endpoint.
+                      We are currenting experiencing issues with our Person
+                      Profile Endpoint.
                     </p>
-
                   </div>
 
                   <div class="col-12 col-md-4 text-end">
-
                     <a href="#!" class="btn btn-white lift">
                       Learn more <i class="fe fe-arrow-right ms-1"></i>
                     </a>
-
                   </div>
-
                 </div>
-
               </div>
-
             </div>
 
             <!-- Header -->
             <div class="header mt-md-5">
               <div class="header-body">
-
                 <div class="row justify-content-center">
                   <div class="col-12">
                     <div class="card bg-light border rounded">
-            
                       <div class="card-body">
-
                         <div class="row align-items-top">
-
                           <div class="col-9 col-md-10">
                             <h1 class="h2">
-                              Which segment will you be using Proxycurl for? <span class="badge fw-bold bg-warning ms-0 ms-md-2">+5 credits upon completion</span>
+                              Which segment will you be using Proxycurl for?
+                              <span
+                                class="badge fw-bold bg-warning ms-0 ms-md-2"
+                                >+5 credits upon completion</span
+                              >
                             </h1>
                           </div>
                           <div class="col-3 col-md-1 mt-md-1 ms-md-6">
                             <div class="avatar avatar-lg">
-                              <div class="avatar-title bg-light border border-primary rounded-circle">
-                                <button class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="This onboarding card will be removed when you have completed the survey.">
-                                  <span class="h1 text-primary">
-                                    ?
-                                  </span>
+                              <div
+                                class="avatar-title bg-light border border-primary rounded-circle"
+                              >
+                                <button
+                                  class="btn"
+                                  type="button"
+                                  data-bs-toggle="tooltip"
+                                  data-bs-placement="bottom"
+                                  title="This onboarding card will be removed when you have completed the survey."
+                                >
+                                  <span class="h1 text-primary"> ? </span>
                                 </button>
                               </div>
                             </div>
-                          </div> 
+                          </div>
 
-                          <div class="col-12 col-md-10 mt-md-n5">  
+                          <div class="col-12 col-md-10 mt-md-n5">
                             <p class="lead text-gray-700 mb-4 me-md-6">
-                              Excited to dive into Proxycurl? Just let us know which user segment you'll be working with, and enjoy your 5 extra credits!
+                              Excited to dive into Proxycurl? Just let us know
+                              which user segment you'll be working with, and
+                              enjoy your 5 extra credits!
                             </p>
 
                             <div class="col-12 col-md-6 mt-4">
-
                               <!--Radio button-->
                               <div class="mb-4">
                                 <div class="form-check mb-3">
-                                  <input class="form-check-input" type="radio" name="radioSurvey" id="radioSurvey1">
-                                  <label class="form-check-label" for="radioSurvey1">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radioSurvey"
+                                    id="radioSurvey1"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="radioSurvey1"
+                                  >
                                     Sales/Marketing Automation
                                   </label>
                                 </div>
                                 <div class="form-check mb-3">
-                                  <input class="form-check-input" type="radio" name="radioSurvey" id="radioSurvey2">
-                                  <label class="form-check-label" for="radioSurvey2">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radioSurvey"
+                                    id="radioSurvey2"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="radioSurvey2"
+                                  >
                                     Growth-hacking
                                   </label>
                                 </div>
                                 <div class="form-check mb-3">
-                                  <input class="form-check-input" type="radio" name="radioSurvey" id="radioSurvey3">
-                                  <label class="form-check-label" for="radioSurvey3">
-                                    Venture Capital <span class="text-muted">(due dilligence/sourcing/etc)</span>
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radioSurvey"
+                                    id="radioSurvey3"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="radioSurvey3"
+                                  >
+                                    Venture Capital
+                                    <span class="text-muted"
+                                      >(due dilligence/sourcing/etc)</span
+                                    >
                                   </label>
                                 </div>
                                 <div class="form-check mb-3">
-                                  <input class="form-check-input" type="radio" name="radioSurvey" id="radioSurvey4">
-                                  <label class="form-check-label" for="radioSurvey4">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radioSurvey"
+                                    id="radioSurvey4"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="radioSurvey4"
+                                  >
                                     Hiring automation
                                   </label>
                                 </div>
                                 <div class="form-check mb-3">
-                                  <input class="form-check-input" type="radio" name="radioSurvey" id="radioSurvey5">
-                                  <label class="form-check-label" for="radioSurvey5">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radioSurvey"
+                                    id="radioSurvey5"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="radioSurvey5"
+                                  >
                                     Trying out for learning purposes
                                   </label>
                                 </div>
                                 <div class="form-check mb-3">
-                                  <input class="form-check-input" type="radio" name="radioSurvey" id="radioSurvey6">
-                                  <label class="form-check-label" for="radioSurvey6">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radioSurvey"
+                                    id="radioSurvey6"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="radioSurvey6"
+                                  >
                                     Others
                                   </label>
-                                  <textarea class="form-control mt-2" placeholder="Tell us your segment" id="floatingTextarea2"
-                                    style="height: 40px"></textarea>
+                                  <textarea
+                                    class="form-control mt-2"
+                                    placeholder="Tell us your segment"
+                                    id="floatingTextarea2"
+                                    style="height: 40px"
+                                  ></textarea>
                                 </div>
-              
                               </div>
-            
-              
                             </div>
 
-                            <button class="btn d-none d-md-block btn-lg btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#modalSurveyConfirm">
+                            <button
+                              class="btn d-none d-md-block btn-lg btn-primary"
+                              type="submit"
+                              data-bs-toggle="modal"
+                              data-bs-target="#modalSurveyConfirm"
+                            >
                               Claim 5 credits
                             </button>
 
-                            <button class="btn w-100 d-block d-md-none btn-lg btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#modalSurveyConfirm">
+                            <button
+                              class="btn w-100 d-block d-md-none btn-lg btn-primary"
+                              type="submit"
+                              data-bs-toggle="modal"
+                              data-bs-target="#modalSurveyConfirm"
+                            >
                               Claim 5 credits
                             </button>
-
                           </div>
-
                         </div>
-          
                       </div>
-          
                     </div>
                   </div>
                 </div>
 
                 <div class="row align-items-top">
-
                   <div class="col-12 col-md-4">
-
                     <!-- Pretitle -->
-                    <h6 class="header-pretitle">
-                      Overview
-                    </h6>
+                    <h6 class="header-pretitle">Overview</h6>
 
                     <!-- Title -->
-                    <h1 class="header-title">
-                      Proxycurl API
-                    </h1>
-
+                    <h1 class="header-title">Proxycurl API</h1>
                   </div>
-                  
-                </div> <!-- / .row -->
+                </div>
+                <!-- / .row -->
 
                 <div class="row align-items-center">
                   <div class="col">
-
                     <!-- Nav -->
                     <ul class="nav nav-tabs nav-overflow header-tabs">
                       <li class="nav-item">
@@ -846,7 +939,6 @@
                         </a>
                       </li>
                     </ul>
-
                   </div>
                 </div>
               </div>
@@ -859,15 +951,11 @@
             -->
 
             <!-- Token -->
-            <div class="row pb-6">             
-
+            <div class="row pb-6">
               <div class="col-12 col-xl-9">
-
                 <div class="card">
-
                   <div class="card-header">
                     <div class="row align-items-center">
-
                       <div class="col">
                         <!-- Title -->
                         <h4 class="card-header-title">
@@ -877,8 +965,14 @@
 
                       <div class="col-auto">
                         <div class="col-auto">
-                          <button class="btn btn-sm btn-outline-primary" type="submit" data-bs-toggle="modal" data-bs-target="#modalCTA">
-                            Generate more API keys <i class="neu-so-lock-square"></i>
+                          <button
+                            class="btn btn-sm btn-outline-primary"
+                            type="submit"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalCTA"
+                          >
+                            Generate more API keys
+                            <i class="neu-so-lock-square"></i>
                           </button>
                         </div>
                       </div>
@@ -886,7 +980,6 @@
                   </div>
 
                   <div class="card-body">
-
                     <div class="table-responsive">
                       <table class="table table-sm table-nowrap card-table">
                         <thead>
@@ -897,21 +990,23 @@
                           </tr>
                         </thead>
                         <tbody class="fs-base">
-
                           <tr>
-                            <td>
-                              9786ae61-3797-48df-b59d-0f7b18728d09
-                            </td>
+                            <td>9786ae61-3797-48df-b59d-0f7b18728d09</td>
                             <td>
                               <span class="badge bg-primary-soft">
                                 default
                               </span>
                             </td>
                             <td class="justify-content-end">
-
                               <div class="dropdown">
-
-                                <a class="btn btn-sm btn-rounded-circle btn-white" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a
+                                  class="btn btn-sm btn-rounded-circle btn-white"
+                                  href="#"
+                                  role="button"
+                                  data-bs-toggle="dropdown"
+                                  aria-haspopup="true"
+                                  aria-expanded="false"
+                                >
                                   <i class="fe fe-more-vertical"></i>
                                 </a>
 
@@ -920,26 +1015,27 @@
                                     Regenerate
                                   </a>
                                 </div>
-
                               </div>
-
                             </td>
                           </tr>
 
                           <tr>
-                            <td>
-                              MIXNYaiz35_rgjJ5oOIVBa
-                            </td>
+                            <td>MIXNYaiz35_rgjJ5oOIVBa</td>
                             <td>
                               <span class="badge bg-primary-soft">
                                 wingko
                               </span>
                             </td>
                             <td class="justify-content-end">
-
                               <div class="dropdown">
-
-                                <a class="btn btn-sm btn-rounded-circle btn-white" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a
+                                  class="btn btn-sm btn-rounded-circle btn-white"
+                                  href="#"
+                                  role="button"
+                                  data-bs-toggle="dropdown"
+                                  aria-haspopup="true"
+                                  aria-expanded="false"
+                                >
                                   <i class="fe fe-more-vertical"></i>
                                 </a>
 
@@ -948,26 +1044,25 @@
                                     Remove token
                                   </a>
                                 </div>
-
                               </div>
-
                             </td>
                           </tr>
 
                           <tr>
+                            <td>SJFAU82i0_8s8j2lo</td>
                             <td>
-                              SJFAU82i0_8s8j2lo
-                            </td>
-                            <td>
-                              <span class="badge bg-primary-soft">
-                                nyaho
-                              </span>
+                              <span class="badge bg-primary-soft"> nyaho </span>
                             </td>
                             <td class="justify-content-end">
-
                               <div class="dropdown">
-
-                                <a class="btn btn-sm btn-rounded-circle btn-white" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a
+                                  class="btn btn-sm btn-rounded-circle btn-white"
+                                  href="#"
+                                  role="button"
+                                  data-bs-toggle="dropdown"
+                                  aria-haspopup="true"
+                                  aria-expanded="false"
+                                >
                                   <i class="fe fe-more-vertical"></i>
                                 </a>
 
@@ -976,253 +1071,351 @@
                                     Remove token
                                   </a>
                                 </div>
-
                               </div>
-
                             </td>
                           </tr>
-
                         </tbody>
                       </table>
                     </div>
-
                   </div>
                 </div>
 
                 <div class="card">
-
                   <div class="card-header">
                     <div class="row align-items-center">
                       <div class="col">
-    
                         <!-- Title -->
-                        <h4 class="card-header-title">
-                          Credits
-                        </h4>
-    
+                        <h4 class="card-header-title">Credits</h4>
                       </div>
-    
                     </div>
                   </div>
-    
+
                   <!--Plan info-->
                   <div class="card-body">
-
                     <!--Automatically top up-->
                     <div class="row">
-    
                       <div class="col-12">
-    
                         <div class="row mb-3">
-    
                           <div class="col">
                             <label>
                               <i class="neu-wallet h3"></i> Credits balance
                             </label>
                           </div>
-    
+
                           <div class="col-auto">
                             <label class="text-end">
-                              Auto-topup <span class="badge bg-white text-primary border border-primary fw-bold">Enabled</span>
+                              Auto-topup
+                              <span
+                                class="badge bg-white text-primary border border-primary fw-bold"
+                                >Enabled</span
+                              >
                             </label>
                           </div>
-    
                         </div>
-    
+
                         <div class="row">
-    
                           <div class="col mb-4">
-                            <div class="border bg-lighter" style="border-radius: 8px; height: 56px;">
+                            <div
+                              class="border bg-lighter"
+                              style="border-radius: 8px; height: 56px"
+                            >
                               <div class="pt-3 ps-3 text-gray-700">
-                                <code class="h1 text-black" style="font-family: Cerebri Sans,sans-serif;"> 480</code><code
+                                <code
+                                  class="h1 text-black"
+                                  style="font-family: Cerebri Sans, sans-serif"
+                                >
+                                  480</code
+                                ><code
                                   class="h4 fw-normal text-gray-700"
-                                  style="font-family: Cerebri Sans,sans-serif;">/1000</code>
+                                  style="font-family: Cerebri Sans, sans-serif"
+                                  >/1000</code
+                                >
                               </div>
                             </div>
                           </div>
-                          
                         </div>
-    
-                        <div class="progress" style="height: 24px;">
-                          <div class="progress-bar bg-secondary" role="progressbar" aria-label="Example with label" style="width: 48%;" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100">
+
+                        <div class="progress" style="height: 24px">
+                          <div
+                            class="progress-bar bg-secondary"
+                            role="progressbar"
+                            aria-label="Example with label"
+                            style="width: 48%"
+                            aria-valuenow="48"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          >
                             480/1000
                           </div>
                         </div>
-    
+
                         <div class="col-12">
                           <div class="form-check mt-3">
                             <label class="form-check-label" for="autoTopup">
                               Automatically top up
                               <span class="mx-2">
                                 <div class="dropdown div-inline">
-                                  <button class="btn btn-outline-primary btn-sm dropdown-toggle" type="button" id="topupDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <button
+                                    class="btn btn-outline-primary btn-sm dropdown-toggle"
+                                    type="button"
+                                    id="topupDropdown"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
                                     $100
                                   </button>
-                                  <ul class="dropdown-menu" aria-labelledby="topupDropdown">
-                                    <li><a class="dropdown-item" href="#">$100</a></li>
-                                    <li><a class="dropdown-item" href="#">$500</a></li>
-                                    <li><a class="dropdown-item" href="#">$1000</a></li>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="topupDropdown"
+                                  >
+                                    <li>
+                                      <a class="dropdown-item" href="#">$100</a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#">$500</a>
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >$1000</a
+                                      >
+                                    </li>
                                   </ul>
                                 </div>
-                              </span> worth of credits when credits fall
-                              below 10 credits.
+                              </span>
+                              worth of credits when credits fall below 10
+                              credits.
                             </label>
-                            <input class="form-check-input" type="checkbox" id="autoTopup" checked>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="autoTopup"
+                              checked
+                            />
                           </div>
                         </div>
 
-                        <a class="btn btn-lg btn-primary w-100 mt-5" href="account-buy-credits.html">
+                        <a
+                          class="btn btn-lg btn-primary w-100 mt-5"
+                          href="account-buy-credits.html"
+                        >
                           Buy credits
                         </a>
-    
                       </div>
-    
                     </div>
-    
                   </div>
-    
                 </div>
 
                 <div class="card">
-
                   <div class="card-header">
                     <div class="row align-items-center">
                       <div class="col">
-    
                         <!-- Title -->
-                        <h4 class="card-header-title">
-                          Data Freshness
-                        </h4>
-    
+                        <h4 class="card-header-title">Data Freshness</h4>
                       </div>
-    
                     </div>
                   </div>
-    
+
                   <!--Plan info-->
                   <div class="card-body">
-
                     <div class="row">
-    
                       <!--Person profile endpoint-->
                       <div class="col-12 mt-3">
-    
                         <div class="row">
-    
                           <div class="col me-1 me-md-0">
                             <p class="mb-md-4 fw-bold fw-normal mt-1">
-                              Make pulling fresh data the default for <a class="text-primary" href="https://nubela.co/proxycurl/docs#people-api-person-profile-endpoint">Person Profile Endpoint</a>?
+                              Make pulling fresh data the default for
+                              <a
+                                class="text-primary"
+                                href="https://nubela.co/proxycurl/docs#people-api-person-profile-endpoint"
+                                >Person Profile Endpoint</a
+                              >?
                             </p>
-                            <p class="me-md-5 text-muted">See Proxycurl's freshness guarantee <a class="text-primary" href="https://nubela.co/blog/how-fresh-are-profiles-returned-by-proxycurl-api/">here</a>. Enabling this option will change the default value of <span class="badge bg-light text-muted">use-cache</span> parameter to <span class="badge bg-light text-muted">if-recent</span>, which cost <span class="badge bg-light text-muted">1</span> additional credit.</p>
+                            <p class="me-md-5 text-muted">
+                              See Proxycurl's freshness guarantee
+                              <a
+                                class="text-primary"
+                                href="https://nubela.co/blog/how-fresh-are-profiles-returned-by-proxycurl-api/"
+                                >here</a
+                              >. Enabling this option will change the default
+                              value of
+                              <span class="badge bg-light text-muted"
+                                >use-cache</span
+                              >
+                              parameter to
+                              <span class="badge bg-light text-muted"
+                                >if-recent</span
+                              >, which cost
+                              <span class="badge bg-light text-muted">1</span>
+                              additional credit.
+                            </p>
                           </div>
-    
-                          <div class="col-auto form-check form-switch mt-3 mt-md-0">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                            <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+
+                          <div
+                            class="col-auto form-check form-switch mt-3 mt-md-0"
+                          >
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="flexSwitchCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexSwitchCheckDefault"
+                            ></label>
                           </div>
-    
                         </div>
-    
-                      </div>   
-                      
-                      <div class="">
-                      <hr>
                       </div>
-                      
+
+                      <div class="">
+                        <hr />
+                      </div>
+
                       <!--Company profile endpoint-->
                       <div class="col-12 mt-3">
-    
                         <div class="row">
-    
                           <div class="col me-1 me-md-0">
                             <p class="mb-md-4 fw-bold fw-normal mt-1">
-                              Make pulling fresh data the default for <a class="text-primary" href="https://nubela.co/proxycurl/docs#company-api-company-profile-endpoint">Company Profile Endpoint</a>?
+                              Make pulling fresh data the default for
+                              <a
+                                class="text-primary"
+                                href="https://nubela.co/proxycurl/docs#company-api-company-profile-endpoint"
+                                >Company Profile Endpoint</a
+                              >?
                             </p>
-                            <p class="me-md-5 text-muted">See Proxycurl's freshness guarantee <a class="text-primary" href="https://nubela.co/blog/how-fresh-are-profiles-returned-by-proxycurl-api/">here</a>. Enabling this option will change the default value of <span class="badge bg-light text-muted ">use-cache</span> parameter to <span class="badge bg-light text-muted">if-recent</span>, which cost <span class="badge bg-light text-muted">1</span> additional credit.</p>
+                            <p class="me-md-5 text-muted">
+                              See Proxycurl's freshness guarantee
+                              <a
+                                class="text-primary"
+                                href="https://nubela.co/blog/how-fresh-are-profiles-returned-by-proxycurl-api/"
+                                >here</a
+                              >. Enabling this option will change the default
+                              value of
+                              <span class="badge bg-light text-muted"
+                                >use-cache</span
+                              >
+                              parameter to
+                              <span class="badge bg-light text-muted"
+                                >if-recent</span
+                              >, which cost
+                              <span class="badge bg-light text-muted">1</span>
+                              additional credit.
+                            </p>
                           </div>
-    
-                          <div class="col-auto form-check form-switch mt-3 mt-md-0">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                            <label class="form-check-label" for="flexSwitchCheckDefault"></label>
-                          </div>
-    
-                        </div>
-    
-                      </div>                         
-    
-                    </div>              
-    
-                  </div>
-                  
-                
-    
-                </div>
 
+                          <div
+                            class="col-auto form-check form-switch mt-3 mt-md-0"
+                          >
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="flexSwitchCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexSwitchCheckDefault"
+                            ></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="col-12 col-xl-3 order-md-2">
-
                 <!-- Card -->
                 <div class="card bg-light border ms-xl-2">
                   <div class="card-body">
-
                     <!-- Text -->
-                    <p class="mb-2 lead">
-                      Add new API
-                    </p>
+                    <p class="mb-2 lead">Add new API</p>
 
                     <!-- Text -->
                     <p class="small text-muted mb-4">
-                      You can access the API using different API Tokens which have been labeled
+                      You can access the API using different API Tokens which
+                      have been labeled
                     </p>
 
                     <!-- Form group -->
                     <form>
-    
                       <!-- Label -->
                       <div class="form-group">
-    
                         <!-- Label -->
-                        <label class="form-label">
-                          Label (optional)
-                        </label>
-    
+                        <label class="form-label"> Label (optional) </label>
+
                         <!-- Input -->
-                        <input type="text" placeholder="Enter new label" class="form-control">
-    
+                        <input
+                          type="text"
+                          placeholder="Enter new label"
+                          class="form-control"
+                        />
                       </div>
-    
+
                       <!-- Submit -->
-                      <button class="btn w-100 btn-outline-primary lift" type="submit">
+                      <button
+                        class="btn w-100 btn-outline-primary lift"
+                        type="submit"
+                      >
                         Add new API key
                       </button>
-    
                     </form>
-
                   </div>
                 </div>
-
               </div>
-
             </div>
 
-            <br>
-
+            <br />
           </div>
-        </div> <!-- / .row -->
+        </div>
+        <!-- / .row -->
       </div>
-
-    </div> <!-- / .main-content -->
+    </div>
+    <!-- / .main-content -->
 
     <!-- JAVASCRIPT -->
     <!-- Map JS -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-    
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+
     <!-- Vendor JS -->
     <script src="./assets/js/vendor.bundle.js"></script>
-    
+
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
 
+    <script>
+      const sandboxToggle = document.getElementById("toggleSandbox");
+      const sandboxToggleXS = document.getElementById("toggleSandboxXS");
+      let sandboxToggleState = false;
+      let sandboxToggleXSState = false;
+
+      sandboxToggle.addEventListener("click", () => {
+        sandboxToggleState = !sandboxToggleState;
+        sandboxToggleXSState = !sandboxToggleXSState;
+        if (sandboxToggleState) {
+          location.href = "./sandbox-account-api.html";
+          sandboxToggle.checked = false;
+          sandboxToggleXS.checked = false;
+        } else {
+          location.href = "./account-api.html";
+          sandboxToggle.checked = false;
+          sandboxToggleXS.checked = false;
+        }
+      });
+
+      sandboxToggleXS.addEventListener("click", () => {
+        sandboxToggleXSState = !sandboxToggleXSState;
+        sandboxToggleState = !sandboxToggleState;
+        if (sandboxToggleXSState) {
+          location.href = "./sandbox-account-api.html";
+          sandboxToggleXS.checked = false;
+          sandboxToggle.checked = false;
+        } else {
+          location.href = "./account-api.html";
+          sandboxToggleXS.checked = false;
+          sandboxToggle.checked = false;
+        }
+      });
+    </script>
   </body>
 </html>
