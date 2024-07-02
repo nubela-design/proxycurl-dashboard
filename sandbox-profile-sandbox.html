@@ -596,7 +596,7 @@
         <div class="modal-content">
     
           <div class="modal-header">
-            <h3 class="modal-title" id="modalTopupLabel">Create Profile</h3>
+            <h3 class="modal-title" id="modalTopupLabel">Create Profile <span class="text-danger">*</span></h3>
             <div class="me-3 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
           </div>
     
@@ -605,23 +605,24 @@
             <form>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Full Name</label>
-                <input type="email" placeholder="David King" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="text" placeholder="David King" class="form-control" id="exampleInput" aria-describedby="emailHelp">
               </div>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Followers</label>
-                <input type="email" placeholder="567,891" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="text" placeholder="567,891" class="form-control" id="exampleInputFollowers" aria-describedby="emailHelp">
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Company</label>
-                <input type="email" placeholder="IBM" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputCompanyCreate" class="form-label">Company</label>
+                <input type="text" placeholder="IBM" class="form-control" id="exampleInputCompanyCreate" aria-describedby="emailHelp">
+                <ul class="list-group suggestions" id="companySuggestionsCreate"></ul>
               </div>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Job Title</label>
-                <input type="email" placeholder="Software Engineer" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="text" placeholder="Software Engineer" class="form-control" id="exampleInput" aria-describedby="emailHelp">
               </div>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                <input type="email" placeholder="+1 555 123 1234" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="text" placeholder="+1 555 123 1234" class="form-control" id="exampleInput" aria-describedby="emailHelp">
               </div>
               <div class="mb-4">
                 <label for="exampleInputEmail1" class="form-label">Personal Email</label>
@@ -629,6 +630,8 @@
               </div>     
 
             </form>
+
+            <p class="small text-gray-700"><span class="text-danger">*</span> This profile will be automatically added to the owned profile list.</p>
     
           </div>
     
@@ -656,14 +659,14 @@
             <div class="row justify-content-center pb-md-5">
 
               <div class="col-12 col-md-10 text-center mb-3">
-                <i class="neu-so-tick-circle text-success display-1"></i>
+                <i class="neu-add-profile text-success display-1"></i>
 
                 <h1 class="fw-bold mb-3 mt-4">
-                  Profile saved successfully!
+                  Profile Created!
                 </h1>
 
                 <p class="text-gray-700 fs-lg">
-                  Your profile edit was saved successfully. You can check it on the profile list or view the profile details for more data.
+                  You're successfully created and owned the profile. You can check it on the profile list or view the profile details.
                 </p>
               </div>
 
@@ -764,10 +767,10 @@
             <div class="row justify-content-center pb-md-5">
 
               <div class="col-12 col-md-10 text-center mb-3">
-                <i class="neu-so-tick-circle text-success display-1"></i>
+                <i class="neu-edit-profile text-success display-1"></i>
 
                 <h1 class="fw-bold mb-3 mt-4">
-                  Profile saved successfully!
+                  Profile edited!
                 </h1>
 
                 <p class="text-gray-700 fs-lg">
@@ -814,7 +817,7 @@
             <div class="row justify-content-center pb-md-5">
 
               <div class="col-12 col-md-10 text-center mb-3">
-                <i class="neu-so-tick-circle text-success display-1"></i>
+                <i class="neu-add-group text-success display-1"></i>
 
                 <h1 class="fw-bold mb-3 mt-4">
                   Profile Copied!
@@ -830,7 +833,7 @@
 
                 <div class="row align-items-center justify-content-center mt-3">
 
-                    <a class="btn btn-lg btn-primary w-100 lift mb-2" href="sandbox-profile-sandbox-person.html">
+                    <a class="btn btn-lg btn-primary w-100 lift mb-2" href="sandbox-profile-sandbox.html">
                       Go to profile list
                     </a>
                     <a class="btn btn-lg btn-link w-100" href="sandbox-profile-sandbox-person-detail.html">
@@ -983,7 +986,7 @@
 
                     <!-- Pretitle -->
                     <h6 class="header-pretitle">
-                      Overview
+                      Person
                     </h6>
 
                     <!-- Title -->
@@ -1350,7 +1353,7 @@
 
                 </div>
             
-                <div class="btn btn-outline-primary btn-block lift mt-4"><i class="neu neu-search"></i> Search profile
+                <div class="btn btn-outline-primary btn-block lift mt-4"><i class="neu neu-search"></i> Search person profile
                 </div>
               </div>
             
@@ -1868,6 +1871,9 @@
     <!-- JAVASCRIPT -->
     <!-- Map JS -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+  <!-- Search Autocomplete JS-->
+  <script src="search-autocomplete.js"></script>     
     
     <!-- Vendor JS -->
     <script src="./assets/js/vendor.bundle.js"></script>
