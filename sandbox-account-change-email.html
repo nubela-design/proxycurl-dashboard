@@ -34,7 +34,6 @@
 
     <!-- Title -->
     <title>Proxycurl - Sandbox Change Email</title>
-
   </head>
 
   <body>
@@ -227,13 +226,24 @@
         </div>
 
         <div class="navbar-user d-none d-md-flex border-bottom pb-4 mb-4">
-          <div class="btn-group w-100">
-            <button type="button" class="btn btn-dark dropdown-toggle d-inline-flex justify-content-between align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
-              Sandbox Mode <i class="fe fe-chevron-down"></i>
-            </button>
-            <ul class="dropdown-menu w-100">
-              <li><a class="dropdown-item" href="index.html">Production Mode</a></li>
-            </ul>
+          <div class="d-flex flex-row align-items-center w-100">
+            <div class="w-75">
+              <label
+                class="form-check-label h3 fw-normal text-gray-700 mb-0"
+                for="toggleSandbox"
+                >Sandbox Mode</label
+              >
+            </div>
+            <div class="w-25 text-end">
+              <div class="form-check form-switch d-inline-block ms-auto">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="toggleSandbox"
+                  checked
+                />
+              </div>
+            </div>
           </div>
         </div>
 
@@ -281,22 +291,24 @@
             </div>
 
             <div class="py-4 border-top border-bottom w-100">
-              <div class="btn-group w-100">
-                <button
-                  type="button"
-                  class="btn btn-dark dropdown-toggle d-inline-flex justify-content-between align-items-center"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Sandbox Mode <i class="fe fe-chevron-down"></i>
-                </button>
-                <ul class="dropdown-menu w-100">
-                  <li>
-                    <a class="dropdown-item" href="./index.html"
-                      >Production Mode</a
-                    >
-                  </li>
-                </ul>
+              <div class="d-flex flex-row align-items-center w-100">
+                <div class="w-75">
+                  <label
+                    class="form-check-label h3 fw-normal text-gray-700 mb-0"
+                    for="toggleSandboxXS"
+                    >Sandbox Mode</label
+                  >
+                </div>
+                <div class="w-25 text-end">
+                  <div class="form-check form-switch d-inline-block ms-auto">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="toggleSandboxXS"
+                      checked
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -330,8 +342,7 @@
                   </li>
                   <li class="nav-item">
                     <a href="./sandbox-profile-sandbox.html" class="nav-link">
-                      <span
-                        class="border-start border-2 ps-3"
+                      <span class="border-start border-2 ps-3"
                         >Profile Sandbox</span
                       >
                     </a>
@@ -373,7 +384,11 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./sandbox-account-request-log.html" role="button">
+              <a
+                class="nav-link"
+                href="./sandbox-account-request-log.html"
+                role="button"
+              >
                 <i class="fe fe-activity"></i> Request Log
               </a>
             </li>
@@ -429,7 +444,10 @@
               <div class="collapse show" id="sidebarAccount">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="./sandbox-account-change-email.html" class="nav-link fw-bold">
+                    <a
+                      href="./sandbox-account-change-email.html"
+                      class="nav-link fw-bold"
+                    >
                       <span
                         class="border-start border-2 ps-3 text-primary border-primary"
                         >Change email</span
@@ -437,7 +455,10 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./sandbox-account-change-password.html" class="nav-link">
+                    <a
+                      href="./sandbox-account-change-password.html"
+                      class="nav-link"
+                    >
                       <span class="border-start border-2 ps-3"
                         >Change password</span
                       >
@@ -473,7 +494,10 @@
           <div class="mt-md-auto"></div>
 
           <!-- User (md) -->
-          <div class="navbar-user d-none d-md-flex pb-4 border-bottom mb-4" id="sidebarUser">
+          <div
+            class="navbar-user d-none d-md-flex pb-4 border-bottom mb-4"
+            id="sidebarUser"
+          >
             <div class="btn-group dropup">
               <button
                 type="button"
@@ -784,16 +808,14 @@
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-12 main-content-dashboard">
-
             <!--Sandbox Alert-->
-            <div
-              class="card bg-warning mt-5"
-            >
+            <div class="card bg-warning mt-5">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col-12">
                     <p class="lead text-dark mb-0">
-                      You’re currently in <b>Sandbox mode</b>. To return to Production mode, please
+                      You’re currently in <b>Sandbox mode</b>. To return to
+                      Production mode, please
                       <a
                         href="index.html"
                         class="fw-bold text-black text-decoration-underline"
@@ -858,12 +880,18 @@
                     <!-- Nav -->
                     <ul class="nav nav-tabs nav-overflow header-tabs">
                       <li class="nav-item">
-                        <a href="./sandbox-account-change-email.html" class="nav-link active">
+                        <a
+                          href="./sandbox-account-change-email.html"
+                          class="nav-link active"
+                        >
                           Change email
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="./sandbox-account-change-password.html" class="nav-link">
+                        <a
+                          href="./sandbox-account-change-password.html"
+                          class="nav-link"
+                        >
                           Change password
                         </a>
                       </li>
@@ -995,43 +1023,37 @@
     <script src="./assets/js/theme.bundle.js"></script>
 
     <script>
-      const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
+      const sandboxToggle = document.getElementById("toggleSandbox");
+      const sandboxToggleXS = document.getElementById("toggleSandboxXS");
+      let sandboxToggleState = true;
+      let sandboxToggleXSState = true;
 
-      const sandboxToggleButton = document.getElementById(
-        "sandbox-toggle-button"
-      );
-      let sandboxToggleState = false;
-
-      sandboxToggleButton.addEventListener("click", () => {
+      sandboxToggle.addEventListener("click", () => {
         sandboxToggleState = !sandboxToggleState;
+        sandboxToggleXSState = !sandboxToggleXSState;
         if (sandboxToggleState) {
-          sandboxToggleButton.style.backgroundColor = "#12263f";
-          sandboxToggleButton.style.color = "#ffffff";
-          sandboxToggleButton.innerHTML = "Back to Production";
-          alertPlaceholder.style.display = "block";
-          // alertPlaceholder.innerHTML = 'You in Sandbox Mode now!';
-          // alertPlaceholder.className = 'alert alert-warning text-black';
+          location.href = "./sandbox-account-change-email.html";
+          sandboxToggle.checked = true;
+          sandboxToggleXS.checked = true;
         } else {
-          sandboxToggleButton.style.backgroundColor = "#ffffff";
-          sandboxToggleButton.style.color = "#12263f";
-          sandboxToggleButton.innerHTML = "Go to Sandbox Mode";
-          alertPlaceholder.style.display = "none";
-          // alertPlaceholder.innerHTML = 'You in Production now!';
-          // alertPlaceholder.className = 'alert alert-primary';
+          location.href = "./index.html";
+          sandboxToggle.checked = true;
+          sandboxToggleXS.checked = true;
         }
-        // alertPlaceholder.style.display = 'block';
-        // setTimeout(() => {
-        //   alertPlaceholder.style.display = 'none';
-        // }, 5000); // timeout after 2 seconds
       });
-
-      function dismissAlertSandbox() {
-        sandboxToggleButton.style.backgroundColor = "#ffffff";
-        sandboxToggleButton.style.color = "#12263f";
-        sandboxToggleButton.innerHTML = "Go to Sandbox Mode";
-        alertPlaceholder.style.display = "none";
-        sandboxToggleState = false;
-      }
+      sandboxToggleXS.addEventListener("click", () => {
+        sandboxToggleXSState = !sandboxToggleXSState;
+        sandboxToggleState = !sandboxToggleState;
+        if (sandboxToggleXSState) {
+          location.href = "./sandbox-account-change-email.html";
+          sandboxToggleXS.checked = true;
+          sandboxToggle.checked = true;
+        } else {
+          location.href = "./index.html";
+          sandboxToggleXS.checked = true;
+          sandboxToggle.checked = true;
+        }
+      });
     </script>
   </body>
 </html>

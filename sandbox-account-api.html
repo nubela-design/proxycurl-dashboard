@@ -214,13 +214,24 @@
         </div>
 
         <div class="navbar-user d-none d-md-flex border-bottom pb-4 mb-4">
-          <div class="btn-group w-100">
-            <button type="button" class="btn btn-dark dropdown-toggle d-inline-flex justify-content-between align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
-              Sandbox Mode <i class="fe fe-chevron-down"></i>
-            </button>
-            <ul class="dropdown-menu w-100">
-              <li><a class="dropdown-item" href="account-api.html">Production Mode</a></li>
-            </ul>
+          <div class="d-flex flex-row align-items-center w-100 w-100">
+            <div class="w-75">
+              <label
+                class="form-check-label h3 fw-normal text-gray-700 mb-0"
+                for="toggleSandbox"
+                >Sandbox Mode</label
+              >
+            </div>
+            <div class="w-25 text-end">
+              <div class="form-check form-switch d-inline-block ms-auto">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="toggleSandbox"
+                  checked
+                />
+              </div>
+            </div>
           </div>
         </div>
 
@@ -267,22 +278,24 @@
               </div>
             </div>
             <div class="py-4 border-top border-bottom w-100">
-              <div class="btn-group w-100">
-                <button
-                  type="button"
-                  class="btn btn-dark dropdown-toggle d-inline-flex justify-content-between align-items-center"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Sandbox Mode <i class="fe fe-chevron-down"></i>
-                </button>
-                <ul class="dropdown-menu w-100">
-                  <li>
-                    <a class="dropdown-item" href="./account-api.html"
-                      >Production Mode</a
-                    >
-                  </li>
-                </ul>
+              <div class="d-flex flex-row align-items-center w-100 w-100">
+                <div class="w-75">
+                  <label
+                    class="form-check-label h3 fw-normal text-gray-700 mb-0"
+                    for="toggleSandboxXS"
+                    >Sandbox Mode</label
+                  >
+                </div>
+                <div class="w-25 text-end">
+                  <div class="form-check form-switch d-inline-block ms-auto">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="toggleSandboxXS"
+                      checked
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1251,6 +1264,40 @@
     
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
+
+    <script>
+      const sandboxToggle = document.getElementById("toggleSandbox");
+      const sandboxToggleXS = document.getElementById("toggleSandboxXS");
+      let sandboxToggleState = true;
+      let sandboxToggleXSState = true;
+
+      sandboxToggle.addEventListener("click", () => {
+        sandboxToggleState = !sandboxToggleState;
+        sandboxToggleXSState = !sandboxToggleXSState;
+        if (sandboxToggleState) {
+          location.href = "./sandbox-account-api.html";
+          sandboxToggle.checked = true;
+          sandboxToggleXS.checked = true;
+        } else {
+          location.href = "./account-api.html";
+          sandboxToggle.checked = true;
+          sandboxToggleXS.checked = true;
+        }
+      });
+      sandboxToggleXS.addEventListener("click", () => {
+        sandboxToggleXSState = !sandboxToggleXSState;
+        sandboxToggleState = !sandboxToggleState;
+        if (sandboxToggleXSState) {
+          location.href = "./sandbox-account-api.html";
+          sandboxToggleXS.checked = true;
+          sandboxToggle.checked = true;
+        } else {
+          location.href = "./account-api.html";
+          sandboxToggleXS.checked = true;
+          sandboxToggle.checked = true;
+        }
+      });
+    </script>
 
   </body>
 </html>

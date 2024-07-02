@@ -213,13 +213,23 @@
       </div>
 
       <div class="navbar-user d-none d-md-flex border-bottom pb-4 mb-4">
-        <div class="btn-group w-100">
-          <button type="button" class="btn btn-primary dropdown-toggle d-inline-flex justify-content-between align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
-            Production Mode <i class="fe fe-chevron-down"></i>
-          </button>
-          <ul class="dropdown-menu w-100">
-            <li><a class="dropdown-item" href="sandbox-account-2fa-active.html">Sandbox Mode</a></li>
-          </ul>
+        <div class="d-flex flex-row align-items-center w-100">
+          <div class="w-75">
+            <label
+              class="form-check-label h3 fw-normal text-gray-700 mb-0"
+              for="toggleSandbox"
+              >Sandbox Mode</label
+            >
+          </div>
+          <div class="w-25 text-end">
+            <div class="form-check form-switch d-inline-block ms-auto">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="toggleSandbox"
+              />
+            </div>
+          </div>
         </div>
       </div>
 
@@ -276,13 +286,23 @@
           </div>
 
           <div class="py-4 border-top border-bottom w-100">
-            <div class="btn-group w-100">
-              <button type="button" class="btn btn-primary dropdown-toggle d-inline-flex justify-content-between align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
-                Production Mode <i class="fe fe-chevron-down"></i>
-              </button>
-              <ul class="dropdown-menu w-100">
-                <li><a class="dropdown-item" href="./sandbox-account-2fa-active.html">Sandbox Mode</a></li>
-              </ul>
+            <div class="d-flex flex-row align-items-center w-100">
+              <div class="w-75">
+                <label
+                  class="form-check-label h3 fw-normal text-gray-700 mb-0"
+                  for="toggleSandboxXS"
+                  >Sandbox Mode</label
+                >
+              </div>
+              <div class="w-25 text-end">
+                <div class="form-check form-switch d-inline-block ms-auto">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="toggleSandboxXS"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -821,5 +841,39 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <script>
+      const sandboxToggle = document.getElementById("toggleSandbox");
+      const sandboxToggleXS = document.getElementById("toggleSandboxXS");
+      let sandboxToggleState = false;
+      let sandboxToggleXSState = false;
+
+      sandboxToggle.addEventListener("click", () => {
+        sandboxToggleState = !sandboxToggleState;
+        sandboxToggleXSState = !sandboxToggleXSState;
+        if (sandboxToggleState) {
+          location.href = "./sandbox-account-2fa-active.html";
+          sandboxToggle.checked = false;
+          sandboxToggleXS.checked = false;
+        } else {
+          location.href = "./account-2fa-active.html";
+          sandboxToggle.checked = false;
+          sandboxToggleXS.checked = false;
+        }
+      });
+
+      sandboxToggleXS.addEventListener("click", () => {
+        sandboxToggleXSState = !sandboxToggleXSState;
+        sandboxToggleState = !sandboxToggleState;
+        if (sandboxToggleXSState) {
+          location.href = "./sandbox-account-2fa-active.html";
+          sandboxToggleXS.checked = false;
+          sandboxToggle.checked = false;
+        } else {
+          location.href = "./account-2fa-active.html";
+          sandboxToggleXS.checked = false;
+          sandboxToggle.checked = false;
+        }
+      });
+    </script>
   </body>
 </html>
