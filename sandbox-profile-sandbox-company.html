@@ -618,29 +618,37 @@
     
             <form>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Full Name</label>
-                <input type="text" placeholder="David King" class="form-control" id="exampleInput" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label">Company Name</label>
+                <input type="text" placeholder="Microsoft" class="form-control" id="exampleInput" aria-describedby="emailHelp">
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Followers</label>
-                <input type="text" placeholder="567,891" class="form-control" id="exampleInputFollowers" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label">LinkedIn</label>
+                <input type="text" placeholder="linkedin.com/company/microsoft" class="form-control" id="exampleInputFollowers" aria-describedby="emailHelp">
               </div>
               <div class="mb-3">
-                <label for="exampleInputCompanyCreate" class="form-label">Company</label>
-                <input type="text" placeholder="IBM" class="form-control" id="exampleInputCompanyCreate" aria-describedby="emailHelp">
+                <label for="exampleInputCompanyCreate" class="form-label">Employees</label>
+                <input type="text" placeholder="181,000" class="form-control" id="exampleInputCompanyCreate" aria-describedby="emailHelp">
                 <ul class="list-group suggestions" id="companySuggestionsCreate"></ul>
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Job Title</label>
-                <input type="text" placeholder="Software Engineer" class="form-control" id="exampleInput" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label">Induestries</label>
+                <input type="text" placeholder="Technology, Cloud Computing, Enterprise Software, Gaming" class="form-control" id="exampleInput" aria-describedby="emailHelp">
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                <input type="text" placeholder="+1 555 123 1234" class="form-control" id="exampleInput" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label">Revenue</label>
+                <input type="text" placeholder="$64.5B" class="form-control" id="exampleInput" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Company Type</label>
+                <input type="text" placeholder="Public Company" class="form-control" id="exampleInput" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Company Location</label>
+                <input type="text" placeholder="Redmond, Washington, USA" class="form-control" id="exampleInput" aria-describedby="emailHelp">
               </div>
               <div class="mb-4">
-                <label for="exampleInputEmail1" class="form-label">Personal Email</label>
-                <input type="email" placeholder="davidking@ibm.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label">Company Email</label>
+                <input type="email" placeholder="support@microsoft.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               </div>     
 
             </form>
@@ -673,7 +681,10 @@
             <div class="row justify-content-center pb-md-5">
 
               <div class="col-12 col-md-10 text-center mb-3">
-                <i class="neu-add-profile text-success display-1"></i>
+                <svg id="a" xmlns="http://www.w3.org/2000/svg" width="60" viewBox="0 0 20 20" class="mb-2" fill="#00D97D">
+                  <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                  <path d="m19.85,13.83c0,.42-.34.77-.77.77h-2.3v2.3c0,.42-.34.77-.77.77s-.77-.34-.77-.77v-2.3h-2.3c-.42,0-.77-.34-.77-.77s.34-.77.77-.77h2.3v-2.3c0-.42.34-.77.77-.77s.77.34.77.77v2.3h2.3c.42,0,.77.34.77.77Z" stroke-width="0"/>
+                 </svg>
 
                 <h1 class="fw-bold mb-3 mt-4">
                   Profile Created!
@@ -689,10 +700,10 @@
 
                 <div class="row align-items-center justify-content-center mt-3">
 
-                    <a class="btn btn-lg btn-primary w-100 lift mb-2" href="./sandbox-profile-sandbox.html">
+                    <a class="btn btn-lg btn-primary w-100 lift mb-2" href="./sandbox-profile-sandbox-company.html">
                       Go to profile list
                     </a>
-                    <a class="btn btn-lg btn-link w-100" href="sandbox-profile-sandbox-person-detail.html">
+                    <a class="btn btn-lg btn-link w-100" href="sandbox-profile-sandbox-person-detail-company.html">
                       Go to profile details
                     </a>
 
@@ -1064,12 +1075,12 @@
                               <input type="text" class="form-control form-control-sm"
                                 placeholder="E.g. Technology, Software, Entertainment" id="exampleInputIndustry"
                                 aria-describedby="emailHelp">
-                              <div class="mt-2">
-                                <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3 mt-2"> Software Development <i
-                                    class="neu neu-so-close-circle ms-1"></i></div>
-                                <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3 mt-2"> Technology <i
-                                    class="neu neu-so-close-circle ms-1"></i></div>
-                              </div>
+                                <div class="mt-2">
+                                  <div class="btn btn-sm btn-outline-primary me-1 ps-3 mt-2"> Software Development <i
+                                      class="neu neu-so-close-circle ms-1"></i></div>
+                                  <div class="btn btn-sm btn-outline-primary me-1 ps-3 mt-2"> Technology <i class="neu neu-so-close-circle ms-1"></i>
+                                  </div>
+                                </div>
                             </div>
                             <div class="mb-4">
                               <label for="exampleInputCompany" class="form-label ">Company Name</label>
@@ -1088,10 +1099,10 @@
                               <input type="text" class="form-control form-control-sm"
                                 placeholder="E.g. Public Company, Non Profit, Privately Held" id="exampleInputCompany"
                                 aria-describedby="emailHelp">
-                              <div class="mt-3">
-                                <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3"> Public Company <i
-                                    class="neu neu-so-close-circle ms-1"></i></div>
-                              </div>
+                                <div class="mt-2">
+                                  <div class="btn btn-sm btn-outline-primary me-1 ps-3 mt-2"> Public Company <i
+                                      class="neu neu-so-close-circle ms-1"></i></div>
+                                </div>
                             </div>
                             <div class="mb-2">
                               <label for="exampleInputCompany" class="form-label ">Revenue</label>
@@ -1108,8 +1119,8 @@
                                     placeholder="Max revenue" id="exampleInputCompany" aria-describedby="emailHelp">
                                 </div>
                               </div>
-                              <div class="mt-3">
-                                <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3"> $750M - $2B <i
+                              <div class="mt-2">
+                                <div class="btn btn-sm btn-outline-primary me-1 ps-3 mt-2"> $800M - $2B <i
                                     class="neu neu-so-close-circle ms-1"></i></div>
                               </div>
                             </div>
@@ -1140,6 +1151,10 @@
                                 <hr style="height: 2px; width: 2%; margin-top: 14px;"> <input style="width: 45%;" type="text"
                                   class="form-control form-control-sm" placeholder="Max" id="exampleInputCompany"
                                   aria-describedby="emailHelp">
+                              </div>
+                              <div class="mt-2">
+                                <div class="btn btn-sm btn-outline-primary me-1 ps-3 mt-2"> 5,000 - 2,000,000 <i
+                                    class="neu neu-so-close-circle ms-1"></i></div>
                               </div>
                             </div>
                             <div class="mb-4">
@@ -1243,7 +1258,15 @@
                     </div>
                   </div>
                   <div class="col-12 col-md-4 text-md-end">
-                    <button class="btn w-100 w-md-auto btn-primary" data-bs-toggle="modal" data-bs-target="#modalCreateProfile"> <span data-bs-toggle="tooltip" data-bs-placement="top" title="These profiles created can be queried via the API Sandbox"><i class="neu neu-company"></i> Create Profile</span></button>
+                    <button class="btn w-100 w-md-auto btn-primary" data-bs-toggle="modal" data-bs-target="#modalCreateProfile">
+                      <span data-bs-toggle="tooltip" data-bs-placement="top" title="These profiles created can be queried via the API Sandbox">
+                        <svg id="a" xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 20 20" class="me-1 ms-1" fill="white">
+                          <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                          <path d="m19.85,13.83c0,.42-.34.77-.77.77h-2.3v2.3c0,.42-.34.77-.77.77s-.77-.34-.77-.77v-2.3h-2.3c-.42,0-.77-.34-.77-.77s.34-.77.77-.77h2.3v-2.3c0-.42.34-.77.77-.77s.77.34.77.77v2.3h2.3c.42,0,.77.34.77.77Z" stroke-width="0"/>
+                         </svg>
+                        Create Profile
+                      </span>
+                    </button>
                   </div>
                 </div>
             
@@ -1251,15 +1274,420 @@
                   <table class="table table-sm rounded-table table-hover table-nowrap">
                     <thead style="background-color: #F9FAFB;">
                       <tr class="text-muted small text-uppercase">
-                        <th scope="col">Full Name</th>
-                        <th scope="col">Followers</th>
-                        <th scope="col">Company</th>
-                        <th scope="col">Job Title</th>
-                        <th scope="col">Phone Number</th>
-                        <th scope="col">Personal Email</th>
+                        <th scope="col">Company Name</th>
+                        <th scope="col">LinkedIn</th>
+                        <th scope="col">Employees</th>
+                        <th scope="col">Industries</th>
+                        <th scope="col">Revenue</th>
+                        <th scope="col">Company Type</th>
+                        <th scope="col">Company Location</th>
+                        <th scope="col">Company Email</th>
                         <th scope="col">Action</th>
                       </tr>
                     </thead>
+                    <tbody class="fs-base">
+                      <!-- 1 -->
+                      <tr class="align-middle">
+                        <td class="align-middle">
+                          <a class="d-flex custom-link text-black" href="prospector-companies-detail.html">
+                            <div class="avatar avatar-xs">
+                              <img class="img" width="22" height="auto" src="assets/img/logo/Microsoft.svg" alt="company logo">
+                            </div>
+                            <div class="ms-3 ">Microsoft</div>
+                          </a>
+                        </td>
+                        <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/company/microsoft
+                        </td>
+                        <td class="align-middle">181,000
+                        </td>
+                        <td class="align-middle custom-table-cell">Technology, Cloud Computing, Enterprise Software, Gaming.</td>
+                        <td class="align-middle">$64.5B</td>
+                        <td class="align-middle">Public Company</td>
+                        <td class="align-middle">Redmond, Washington, USA</td>
+                        <td class="align-middle">support@microsoft.com</td>
+                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                            Edit profile</button>
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
+                            Copy profile</button>
+                          <!-- Dropdown -->
+                          <div class="dropdown ms-2">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalDeleteProfile">
+                                <i class="neu neu-delete-profile"></i> Delete Profile
+                              </button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- 2 -->
+                      <tr class="align-middle">
+                        <td class="align-middle">
+                          <a class="d-flex custom-link text-black" href="prospector-companies-detail.html">
+                            <div class="avatar avatar-xs">
+                              <img class="img" width="22" height="auto" src="assets/img/logo/Amazon logo.jpeg" alt="company logo">
+                            </div>
+                            <div class="ms-3 ">Amazon</div>
+                          </a>
+                        </td>
+                        <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/company/amazon
+                        </td>
+                        <td class="align-middle">1,300,000
+                        </td>
+                        <td class="align-middle custom-table-cell">E-commerce, Cloud Computing, Digital Content and Media, Logistics and Transportation, Artificial Intelligence and Machine Learning, Grocery and Food Delivery, Hardware, Advertising.</td>
+                        <td class="align-middle">$386B</td>
+                        <td class="align-middle">Public Company</td>
+                        <td class="align-middle">Seattle, Washington, USA</td>
+                        <td class="align-middle">cs-reply@amazon.com</td>
+                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                            Edit profile</button>
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
+                            Copy profile</button>
+                          <!-- Dropdown -->
+                          <div class="dropdown ms-2">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalDeleteProfile">
+                                <i class="neu neu-delete-profile"></i> Delete Profile
+                              </button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>            
+                      <!-- 3 -->
+                      <tr class="align-middle">
+                        <td class="align-middle">
+                          <a class="d-flex custom-link text-black" href="prospector-companies-detail-locked.html">
+                            <div class="avatar avatar-xs">
+                              <img class="img" width="22" height="auto" src="assets/img/logo/Air.svg" alt="company logo">
+                            </div>
+                            <div class="ms-3 ">Airbnb</div>
+                          </a>
+                        </td>
+                        <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/company/airbnb
+                        </td>
+                        <td class="align-middle">6,907
+                        </td>
+                        <td class="align-middle custom-table-cell">Hospitality and Lodging, Travel and Tourism, Technology and Internet Services, Real Estate and Property Management, and Experience Hosting industries.</td>
+                        <td class="align-middle"> $5.99B </td>
+                        <td class="align-middle">Public Company</td>
+                        <td class="align-middle">San Francisco, California, USA</td>
+                        <td class="align-middle">support@airbnb.com</td>
+                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                            Edit profile</button>
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
+                            Copy profile</button>
+                          <!-- Dropdown -->
+                          <div class="dropdown ms-2">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalDeleteProfile">
+                                <i class="neu neu-delete-profile"></i> Delete Profile
+                              </button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>     
+                      <!-- 4 -->
+                      <tr class="align-middle">
+                        <td class="align-middle">
+                          <a class="d-flex custom-link text-black">
+                            <div class="avatar avatar-xs">
+                              <img class="img" width="22" height="auto" src="assets/img/logo/Spotify logo.svg" alt="company logo">
+                            </div>
+                            <div class="ms-3 ">Spotify</div>
+                          </a>
+                        </td>
+                        <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/company/spotify
+                        </td>
+                        <td class="align-middle">9,123
+                        </td>
+                        <td class="align-middle custom-table-cell">Music Streaming, Technology and Internet Services, and Media and Entertainment industries.</td>
+                        <td class="align-middle"> $14.37B </td>
+                        <td class="align-middle">Public Company</td>
+                        <td class="align-middle"> Stockholm, Sweden</td>
+                        <td class="align-middle">support@spotify.com</td>
+                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                            Edit profile</button>
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
+                            Copy profile</button>
+                          <!-- Dropdown -->
+                          <div class="dropdown ms-2">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalDeleteProfile">
+                                <i class="neu neu-delete-profile"></i> Delete Profile
+                              </button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>     
+                      <!-- 5 -->
+                      <tr class="align-middle">
+                        <td class="align-middle">
+                          <a class="d-flex custom-link text-black" href="prospector-companies-detail.html">
+                            <div class="avatar avatar-xs">
+                              <img class="img" width="22" height="auto" src="assets/img/logo/Google-logoicon.svg" alt="company logo">
+                            </div>
+                            <div class="ms-3 ">Google</div>
+                          </a>
+                        </td>
+                        <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i>  linkedin.com/company/google
+                        </td>
+                        <td class="align-middle">150,000
+                        </td>
+                        <td class="align-middle custom-table-cell">Technology and Internet Services, Advertising and Marketing, Software Development, Hardware Manufacturing, Artificial Intelligence and Machine Learning, Cloud Computing, Mobile Applications, Research and Development.</td>
+                        <td class="align-middle">$182.5B</td>
+                        <td class="align-middle">Public Company</td>
+                        <td class="align-middle">Mountain View, California, USA</td>
+                        <td class="align-middle">support@google.com</td>
+                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                            Edit profile</button>
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
+                            Copy profile</button>
+                          <!-- Dropdown -->
+                          <div class="dropdown ms-2">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalDeleteProfile">
+                                <i class="neu neu-delete-profile"></i> Delete Profile
+                              </button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>   
+                      <!-- 6 -->
+                      <tr class="align-middle">
+                        <td class="align-middle">
+                          <a class="d-flex custom-link text-black" href="prospector-companies-detail-locked.html">
+                            <div class="avatar avatar-xs">
+                              <img class="img" width="23" height="auto" src="assets/img/logo/adobe.svg" alt="company logo">
+                            </div>
+                            <div class="ms-3 ">Adobe</div>
+                          </a>
+                        </td>
+                        <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/company/adobe
+                        </td>
+                        <td class="align-middle">29,945
+                        </td>
+                        <td class="align-middle custom-table-cell">Software Development, Digital Media, Creative Tools, Marketing and Advertising Technology, Content Creation and Publishing, Digital Experience Solutions.</td>
+                        <td class="align-middle"> $19B </td>
+                        <td class="align-middle">Public Company</td>
+                        <td class="align-middle"> San Jose, California, USA</td>
+                        <td class="align-middle">cs-reply@adobe.com</td>
+                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                            Edit profile</button>
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
+                            Copy profile</button>
+                          <!-- Dropdown -->
+                          <div class="dropdown ms-2">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalDeleteProfile">
+                                <i class="neu neu-delete-profile"></i> Delete Profile
+                              </button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>                                
+                      <!-- 7 -->
+                      <tr class="align-middle">
+                        <td class="align-middle">
+                          <a class="d-flex custom-link text-black" href="prospector-companies-detail-locked.html">
+                            <div class="avatar avatar-xs">
+                              <img class="img mt-2" width="22" height="auto" src="assets/img/logo/IBM logo.svg" alt="company logo">
+                            </div>
+                            <div class="ms-3 ">IBM</div>
+                          </a>
+                        </td>
+                        <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/company/ibm
+                        </td>
+                        <td class="align-middle">297,900
+                        </td>
+                        <td class="align-middle custom-table-cell">Technology Solutions and Services, Software Development, Cloud Computing, Artificial Intelligence and Machine Learning, Consulting and Business Services, Hardware Manufacturing.</td>
+                        <td class="align-middle"> $62B </td>
+                        <td class="align-middle">Public Company</td>
+                        <td class="align-middle">Armonk, New York, USA</td>
+                        <td class="align-middle">support@ibm.com</td>
+                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                            Edit profile</button>
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
+                            Copy profile</button>
+                          <!-- Dropdown -->
+                          <div class="dropdown ms-2">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalDeleteProfile">
+                                <i class="neu neu-delete-profile"></i> Delete Profile
+                              </button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>     
+                      <!-- 8 -->
+                      <tr class="align-middle">
+                        <td class="align-middle">
+                          <a class="d-flex custom-link text-black" href="prospector-companies-detail-locked.html">
+                            <div class="avatar avatar-xs">
+                              <img class="img" width="22" height="auto" src="assets/img/logo/netflix.jpeg" alt="company logo">
+                            </div>
+                            <div class="ms-3 ">Netflix</div>
+                          </a>
+                        </td>
+                        <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/company/netflix
+                        </td>
+                        <td class="align-middle">13,000
+                        </td>
+                        <td class="align-middle custom-table-cell">Entertainment Streaming, Media Production and Distribution, Content Creation, Technology and Internet Services, Subscription-based Services, Original Programming.</td>
+                        <td class="align-middle"> $33.7B</td>
+                        <td class="align-middle">Public Company</td>
+                        <td class="align-middle"> Los Gatos, California, USA</td>
+                        <td class="align-middle">support@netflix.com</td>
+                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                            Edit profile</button>
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
+                            Copy profile</button>
+                          <!-- Dropdown -->
+                          <div class="dropdown ms-2">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalDeleteProfile">
+                                <i class="neu neu-delete-profile"></i> Delete Profile
+                              </button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>    
+                      <!-- 9 -->
+                      <tr class="align-middle">
+                        <td class="align-middle">
+                          <a class="d-flex custom-link text-black" href="prospector-companies-detail-locked.html">
+                            <div class="avatar avatar-xs">
+                              <img class="img mt-n1" width="22" height="auto" src="assets/img/logo/Apple 14.svg" alt="company logo">
+                            </div>
+                            <div class="ms-3 ">Apple</div>
+                          </a>
+                        </td>
+                        <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/company/apple
+                        </td>
+                        <td class="align-middle">154,000
+                        </td>
+                        <td class="align-middle custom-table-cell">
+                          Technology Hardware, Software Development, Consumer Electronics, Mobile Devices, Digital Services, Artificial Intelligence.</td>
+                        <td class="align-middle"> $383B </td>
+                        <td class="align-middle">Public Company</td>
+                        <td class="align-middle">Cupertino, California, USA</td>
+                        <td class="align-middle">cs-reply@apple.com</td>
+                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                            Edit profile</button>
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
+                            Copy profile</button>
+                          <!-- Dropdown -->
+                          <div class="dropdown ms-2">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalDeleteProfile">
+                                <i class="neu neu-delete-profile"></i> Delete Profile
+                              </button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>                                    
+                      <!-- 10 -->
+                      <tr class="align-middle">
+                        <td class="align-middle">
+                          <a class="d-flex custom-link text-black" href="prospector-companies-detail-locked.html">
+                            <div class="avatar avatar-xs">
+                              <img class="img mt-2" width="23" height="auto" src="assets/img/logo/Meta 1.svg" alt="company logo">
+                            </div>
+                            <div class="ms-3 ">Meta</div>
+                          </a>
+                        </td>
+                        <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/company/meta
+                        </td>
+                        <td class="align-middle">67,317
+                        </td>
+                        <td class="align-middle custom-table-cell">Technology, Social Media, Virtual Reality, Augmented Reality, Artificial Intelligence, and Digital Advertising industries.</td>
+                        <td class="align-middle"> $134.9B</td>
+                        <td class="align-middle">Public Company</td>
+                        <td class="align-middle"> Menlo Park, California, USA</td>
+                        <td class="align-middle">support@meta.com</td>
+                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                            Edit profile</button>
+                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
+                            Copy profile</button>
+                          <!-- Dropdown -->
+                          <div class="dropdown ms-2">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalDeleteProfile">
+                                <i class="neu neu-delete-profile"></i> Delete Profile
+                              </button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>                                                                                                                                                                                         
+                    </tbody>             
 
                   </table>
                 </div>
@@ -1311,36 +1739,12 @@
     <script src="./assets/js/theme.bundle.js"></script>
 
     <script>
-      const sandboxToggle = document.getElementById("toggleSandbox");
-      const sandboxToggleXS = document.getElementById("toggleSandboxXS");
-      let sandboxToggleState = true;
-      let sandboxToggleXSState = true;
-
-      sandboxToggle.addEventListener("click", () => {
-        sandboxToggleState = !sandboxToggleState;
-        sandboxToggleXSState = !sandboxToggleXSState;
-        if (sandboxToggleState) {
-          location.href = "./sandbox-profile-sandbox-company.html";
-          sandboxToggle.checked = true;
-          sandboxToggleXS.checked = true;
-        } else {
-          history.back();
-          sandboxToggle.checked = true;
-          sandboxToggleXS.checked = true;
-        }
+      document.getElementById("toggleSandbox").addEventListener("click", () => {
+        location.href = "./account-api.html";
       });
-      sandboxToggleXS.addEventListener("click", () => {
-        sandboxToggleXSState = !sandboxToggleXSState;
-        sandboxToggleState = !sandboxToggleState;
-        if (sandboxToggleXSState) {
-          location.href = "./sandbox-profile-sandbox-company.html";
-          sandboxToggleXS.checked = true;
-          sandboxToggle.checked = true;
-        } else {
-          history.back();
-          sandboxToggleXS.checked = true;
-          sandboxToggle.checked = true;
-        }
+    
+      document.getElementById("toggleSandboxXS").addEventListener("click", () => {
+        location.href = "./account-api.html";
       });
     </script>
 
