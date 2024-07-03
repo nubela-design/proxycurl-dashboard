@@ -1118,206 +1118,95 @@
                       </div>
                     </div>
             
-                    <!-- CURRENT EMPLOYMENT FILTER-->
-                    <div class="card-body bg-lighter border rounded mb-3">
-                      <!-- toggle-->
-                      <a class="d-flex align-items-center text-reset text-decoration-none" data-bs-toggle="collapse"
-                        href="#peopleCurrentEmployment" role="button" aria-expanded="false" aria-controls="peopleCurrentEmployment">
-                        <div class="  me-auto"><i class="neu neu-working-bag-4 me-2"></i>Current Employment</div>
-                        <!-- chevron-->
-                        <span class="collapse-chevron text-muted ms-4 mb-n1">
-                          <i class="fe fe-lg fe-chevron-down"></i>
-                        </span>
-                      </a>
-                      <div class="collapse hide" id="peopleCurrentEmployment">
-                        <form class="pt-4 mt-4 border-top">
-                          <div class="mb-4">
-                            <label for="exampleInputCompany" class="form-label ">Company Name</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="E.g. Apple, Amazon, Microsoft"
-                              id="exampleInputCompany" aria-describedby="emailHelp">
-                            <ul class="list-group suggestions" id="companySuggestions"></ul>
-                            <div class="mt-3">
-                              <div class="btn btn-sm btn-outline-primary me-1 ps-3"> Google <i
-                                class="neu neu-so-close-circle ms-1"></i></div>
-                              <div class="btn btn-sm btn-outline-primary me-1 ps-3"> Apple <i
-                                  class="neu neu-so-close-circle ms-1"></i></div>
-                            </div>
-
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputPeople" class="form-label ">Job Title</label>
-                            <input type="text" class="form-control form-control-sm"
-                              placeholder="E.g. CEO, CTO, Senior Software Engineer" id="exampleInputPeople"
-                              aria-describedby="emailHelp">
-                            <div class="mt-3">
-                              <div class="btn btn-sm btn-outline-primary me-1 ps-3"> CTO <i
-                                class="neu neu-so-close-circle ms-1"></i></div>
-                              <div class="btn btn-sm btn-outline-primary me-1 ps-3"> Software Engineer <i
-                                  class="neu neu-so-close-circle ms-1"></i></div>
-                            </div>
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputPeople" class="form-label ">Job Description</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="E.g. Technology, Education"
-                              id="exampleInputPeople" aria-describedby="emailHelp">
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputPeople" class="form-label ">Current Role Date</label>
-                            <div class="d-flex justify-content-between">
-                              <input style="width: 45%;" type="date" class="form-control form-control-sm text-muted"
-                                placeholder="Min" id="exampleInputPeople" aria-describedby="emailHelp">
-                              <hr style="height: 2px; width: 2%; margin-top: 14px;">
-                              <input style="width: 45%;" type="date" class="form-control form-control-sm text-muted"
-                                placeholder="Max" id="exampleInputPeople" aria-describedby="emailHelp">
-                            </div>
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputPeople" class="form-label ">Company Description</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="E.g Technology, Medical Device"
-                              id="exampleInputPeople" aria-describedby="emailHelp">
-                            <ul class="list-group suggestions" id="companySuggestions"></ul>
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputPeople" class="form-label ">Company Industry</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="E.g. Higher and Education"
-                              id="exampleInputPeople" aria-describedby="emailHelp">
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputPeople" class="form-label ">Company Type</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="E.g. Non Profit"
-                              id="exampleInputPeople" aria-describedby="emailHelp">
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputPeople" class="form-label ">Employee Count</label>
-                            <div class="d-flex justify-content-between">
-                              <input style="width: 45%;" type="text" class="form-control form-control-sm" placeholder="Min"
-                                id="exampleInputPeople" aria-describedby="emailHelp">
-                              <hr style="height: 2px; width: 2%; margin-top: 14px;"> <input style="width: 45%;" type="text"
-                                class="form-control form-control-sm" placeholder="Max" id="exampleInputPeople"
-                                aria-describedby="emailHelp">
-                            </div>
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputPeople" class="form-label ">Follower Count</label>
-                            <div class="d-flex justify-content-between">
-                              <input style="width: 45%;" type="text" class="form-control form-control-sm" placeholder="Min"
-                                id="exampleInputPeople" aria-describedby="emailHelp">
-                              <hr style="height: 2px; width: 2%; margin-top: 14px;"> <input style="width: 45%;" type="text"
-                                class="form-control form-control-sm" placeholder="Max" id="exampleInputPeople"
-                                aria-describedby="emailHelp">
-                            </div>
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputPeople" class="form-label ">Year Founded</label>
-                            <div class="d-flex justify-content-between">
-                              <input style="width: 45%;" type="text" class="form-control form-control-sm" placeholder="Min"
-                                id="exampleInputPeople" aria-describedby="emailHelp">
-                              <hr style="height: 2px; width: 2%; margin-top: 14px;"> <input style="width: 45%;" type="text"
-                                class="form-control form-control-sm" placeholder="Max" id="exampleInputPeople"
-                                aria-describedby="emailHelp">
-                            </div>
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputPeople" class="form-label ">Company Country</label>
-                            <input type="text" class="form-control form-control-sm"
-                              placeholder="E.g. United States, Singapore, Japan" id="exampleInputPeople"
-                              aria-describedby="emailHelp">
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputPeople" class="form-label ">Company Region</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="E.g. California"
-                              id="exampleInputPeople" aria-describedby="emailHelp">
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputPeople" class="form-label ">Company City</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="E.g. Seattle, Los Angeles"
-                              id="exampleInputPeople" aria-describedby="emailHelp">
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputPeople" class="form-label ">Funding Amount</label>
-                            <div class="d-flex justify-content-between">
-                              <div class="input-group" style="width: 45%;">
-                                <span class="input-group-text">$</span>
-                                <input type="text" class="form-control form-control-sm" placeholder="Min" id="exampleInputPeople"
+                    <div class="">
+                      <div class="card-body bg-lighter border rounded">
+                        <!-- toggle-->
+                        <a class="d-flex align-items-center text-reset text-decoration-none" data-bs-toggle="collapse"
+                          href="#companyAdvanced" role="button" aria-expanded="false" aria-controls="companyAdvanced">
+                          <div class="  me-auto"><i class="neu neu-company me-2"></i>Advanced filter</div>
+                          <!-- chevron-->
+                          <span class="collapse-chevron text-muted ms-4 mb-n1">
+                            <i class="fe fe-lg fe-chevron-down"></i>
+                          </span>
+                        </a>
+          
+                        <div class="collapse hide" id="companyAdvanced">
+                          <form class="pt-4 mt-4 border-top">
+                            <div class="mb-4">
+                              <label for="exampleInputCompany" class="form-label ">Employee Count</label>
+                              <div class="d-flex justify-content-between">
+                                <input style="width: 45%;" type="text" class="form-control form-control-sm" placeholder="Min"
+                                  id="exampleInputCompany" aria-describedby="emailHelp">
+                                <hr style="height: 2px; width: 2%; margin-top: 14px;"> <input style="width: 45%;" type="text"
+                                  class="form-control form-control-sm" placeholder="Max" id="exampleInputCompany"
                                   aria-describedby="emailHelp">
                               </div>
-                              <hr style="height: 2px; width: 2%; margin-top: 14px;">
-                              <div class="input-group" style="width: 45%;">
-                                <span class="input-group-text">$</span>
-                                <input style="width: 45%;" type="text" class="form-control form-control-sm" placeholder="Max"
-                                  id="exampleInputPeople" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-4">
+                              <label for="exampleInputCompany" class="form-label ">Year Founded</label>
+                              <div class="d-flex justify-content-between">
+                                <input style="width: 45%;" type="text" class="form-control form-control-sm" placeholder="Min"
+                                  id="exampleInputCompany" aria-describedby="emailHelp">
+                                <hr style="height: 2px; width: 2%; margin-top: 14px;"> <input style="width: 45%;" type="text"
+                                  class="form-control form-control-sm" placeholder="Max" id="exampleInputCompany"
+                                  aria-describedby="emailHelp">
                               </div>
                             </div>
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputPeople" class="form-label ">Funding Raised</label>
-                            <div class="d-flex justify-content-between">
-                              <input style="width: 45%;" type="date" class="form-control form-control-sm text-muted"
-                                placeholder="Min" id="exampleInputPeople" aria-describedby="emailHelp">
-                              <hr style="height: 2px; width: 2%; margin-top: 14px;">
-                              <input style="width: 45%;" type="date" class="form-control form-control-sm text-muted"
-                                placeholder="Max" id="exampleInputPeople" aria-describedby="emailHelp">
+                            <div class="mb-4">
+                              <label for="exampleInputCompany" class="form-label ">Description</label>
+                              <input type="text" class="form-control form-control-sm" placeholder="E.g. Medical Device"
+                                id="exampleInputCompany" aria-describedby="emailHelp">
                             </div>
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputPeople" class="form-label ">LinkedIn Groups</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="E.g Haskell"
-                              id="exampleInputPeople" aria-describedby="emailHelp">
-                          </div>
-                          <div class="mb-2">
-                            <label for="exampleInputPeople" class="form-label ">Company LinkedIn URL</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="www.linkedin.com/company/apple"
-                              id="exampleInputPeople" aria-describedby="emailHelp">
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-            
-                    <!-- PAST EMPLOYMENT FILTER-->
-                    <div class="card-body bg-lighter border rounded">
-                      <!-- toggle-->
-                      <a class="d-flex align-items-center text-reset text-decoration-none" data-bs-toggle="collapse"
-                        href="#peoplePastEmployment" role="button" aria-expanded="false" aria-controls="peoplePastEmployment">
-                        <div class="  me-auto"><i class="neu neu-working-bag-3 me-2"></i>Past Employment</div>
-                        <!-- chevron-->
-                        <span class="collapse-chevron text-muted ms-4 mb-n1">
-                          <i class="fe fe-lg fe-chevron-down"></i>
-                        </span>
-                      </a>
-                      <div class="collapse hide" id="peoplePastEmployment">
-                        <form class="pt-4 mt-4 border-top">
-                          <div class="mb-4">
-                            <label for="exampleInputCompany2" class="form-label ">Past Company</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="E.g. Google, IBM, Twitter"
-                              id="exampleInputCompany2" aria-describedby="emailHelp">
-                            <ul class="list-group suggestions" id="companySuggestions2"></ul>
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputPeople" class="form-label ">Past Job Title</label>
-                            <input type="text" class="form-control form-control-sm"
-                              placeholder="E.g. CEO, CTO, Senior Software Engineer" id="exampleInputPeople"
-                              aria-describedby="emailHelp">
-                            <ul class="list-group suggestions" id="companySuggestions"></ul>
-                            <div class="mt-3">
-                              <div class="btn btn-sm btn-outline-primary me-1 ps-3"> Software engineer <i
-                                class="neu neu-so-close-circle ms-1"></i></div>
-                              <div class="btn btn-sm btn-outline-primary me-1 ps-3"> Marketing specialist <i
-                                  class="neu neu-so-close-circle ms-1"></i></div>
+                            <div class="mb-4">
+                              <label for="exampleInputCompany" class="form-label ">Region</label>
+                              <input type="text" class="form-control form-control-sm" placeholder="E.g. California"
+                                id="exampleInputCompany" aria-describedby="emailHelp">
                             </div>
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputPeople" class="form-label ">Past Job Description</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="E.g. Technology, Education"
-                              id="exampleInputPeople" aria-describedby="emailHelp">
-                          </div>
-                          <div class="mb-2">
-                            <label for="exampleInputCompany" class="form-label ">Past Company LinkedIn URL</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="www.linkedin.com/company/apple"
-                              id="exampleInputCompany" aria-describedby="emailHelp">
-                          </div>
-                        </form>
+                            <div class="mb-4">
+                              <label for="exampleInputCompany" class="form-label ">City</label>
+                              <input type="text" class="form-control form-control-sm" placeholder="E.g. Seattle, Los Angeles"
+                                id="exampleInputCompany" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-4">
+                              <label for="exampleInputCompany" class="form-label ">Follower Count</label>
+                              <div class="d-flex justify-content-between">
+                                <input style="width: 45%;" type="text" class="form-control form-control-sm" placeholder="Min"
+                                  id="exampleInputCompany" aria-describedby="emailHelp">
+                                <hr style="height: 2px; width: 2%; margin-top: 14px;"> <input style="width: 45%;" type="text"
+                                  class="form-control form-control-sm" placeholder="Max" id="exampleInputCompany"
+                                  aria-describedby="emailHelp">
+                              </div>
+                            </div>
+                            <div class="mb-4">
+                              <label for="exampleInputCompany" class="form-label ">Funding Amount</label>
+                              <div class="d-flex justify-content-between">
+                                <div class="input-group" style="width: 45%;">
+                                  <span class="input-group-text">$</span>
+                                  <input type="text" class="form-control form-control-sm" placeholder="Min"
+                                    id="exampleInputCompany" aria-describedby="emailHelp">
+                                </div>
+                                <hr style="height: 2px; width: 2%; margin-top: 14px;">
+                                <div class="input-group" style="width: 45%;">
+                                  <span class="input-group-text">$</span>
+                                  <input style="width: 45%;" type="text" class="form-control form-control-sm" placeholder="Max"
+                                    id="exampleInputCompany" aria-describedby="emailHelp">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-2">
+                              <label for="exampleInputCompany" class="form-label ">Funding Raised</label>
+                              <div class="d-flex justify-content-between">
+                                <input style="width: 45%;" type="date" class="form-control form-control-sm text-muted"
+                                  placeholder="Min" id="exampleInputCompany" aria-describedby="emailHelp">
+                                <hr style="height: 2px; width: 2%; margin-top: 14px;">
+                                <input style="width: 45%;" type="date" class="form-control form-control-sm text-muted"
+                                  placeholder="Max" id="exampleInputCompany" aria-describedby="emailHelp">
+                              </div>
+                            </div>
+                          </form>
+                        </div>
                       </div>
-                    </div>                   
+                    </div>                  
             
                   </div>
 
@@ -1371,444 +1260,7 @@
                         <th scope="col">Action</th>
                       </tr>
                     </thead>
-                    <tbody class="fs-base">
-                      <!-- 1 -->
-                      <tr class="align-middle">
-                        <td class="align-middle">
-                          <div class="d-flex">
-                            <div class="avatar avatar-xs">
-                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-2.jpg"
-                                alt="person picture">
-                            </div>
-                            <div class="ms-3">David King</div>
-                          </div>
-                        </td>
-                        <td class="align-middle">567,891</td>
-                        <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="prospector-companies-detail-locked.html">
-                            <div class="avatar avatar-xs">
-                              <img class="img mt-2" width="22" height="auto" src="assets/img/logo/IBM logo.svg" alt="company logo">
-                            </div>
-                            <div class="ms-3">IBM</div>
-                          </a>
-                        </td>
-                        <td class="align-middle">Software Engineer</td>
-                        <td class="align-middle">+1 555 123 1234</td>
-                        <td class="align-middle">davidking@ibm.com</td>
-                        <td class="align-middle d-flex"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
-                            Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
-                            Copy profile</button>
-                          <!-- Dropdown -->
-                          <div class="dropdown ms-2">
-                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                              aria-expanded="false">
-                              <i class="fe fe-more-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
-                              data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
-                              </button>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <!-- 2 -->
-                      <tr class="align-middle">
-                        <td class="align-middle">
-                          <div class="d-flex">
-                            <div class="avatar avatar-xs">
-                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-5.jpg"
-                                alt="person picture">
-                            </div>
-                            <div class="ms-3">Kokoro Rose</div>
-                          </div>
-                        </td>
-                        <td class="align-middle">4,567,891</td>
-                        <td class="align-middle">
-                          <a class="d-flex custom-link text-black" href="#!">
-                            <div class="avatar avatar-xs">
-                              <img class="img" width="22" height="auto" src="assets/img/logo/netflix.jpeg" alt="company logo">
-                            </div>
-                            <div class="ms-3">Netflix</div>
-                          </a>
-                        </td>
-                        <td class="align-middle">Marketing Specialist</td>
-                        <td class="align-middle">+1 555 123 1234</td>
-                        <td class="align-middle">kokorose@netflix.com</td>
-                        <td class="align-middle d-flex"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
-                            Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
-                            Copy profile</button>
-                          <!-- Dropdown -->
-                          <div class="dropdown ms-2">
-                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                              aria-expanded="false">
-                              <i class="fe fe-more-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
-                              data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
-                              </button>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <!-- 3 -->
-                      <tr class="align-middle">
-                        <td class="align-middle">
-                          <div class="d-flex">
-                            <div class="avatar avatar-xs">
-                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-3.jpg"
-                                alt="person picture">
-                            </div>
-                            <div class="ms-3">Karim Paul</div>
-                          </div>
-                        </td>
-                        <td class="align-middle">891,234</td>
-                        <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="prospector-companies-detail-locked.html">
-                            <div class="avatar avatar-xs">
-                              <img class="img" width="22" height="auto" src="assets/img/logo/Google-logoicon.svg"
-                                alt="company logo">
-                            </div>
-                            <div class="ms-3">Google</div>
-                        </td>
-                        <td class="align-middle">CTO</td>
-                        <td class="align-middle">+1 555 123 1234</td>
-                        <td class="align-middle">karimp@google.com</td>
-                        <td class="align-middle d-flex"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
-                            Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
-                            Copy profile</button>
-                          <!-- Dropdown -->
-                          <div class="dropdown ms-2">
-                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                              aria-expanded="false">
-                              <i class="fe fe-more-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
-                              data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
-                              </button>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <!-- 4 -->
-                      <tr class="align-middle">
-                        <td class="align-middle">
-                          <div class="d-flex">
-                            <div class="avatar avatar-xs">
-                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-4.jpg"
-                                alt="person picture">
-                            </div>
-                            <div class="ms-3">Jane Mary</div>
-                          </div>
-                        </td>
-                        <td class="align-middle">2,345,678</td>
-                        <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="prospector-companies-detail-locked.html">
-                            <div class="avatar avatar-xs">
-                              <img class="img" width="22" height="auto" src="assets/img/logo/Spotify logo.svg" alt="company logo">
-                            </div>
-                            <div class="ms-3">Spotify</div>
-                        </td>
-                        <td class="align-middle">CEO</td>
-                        <td class="align-middle">+1 555 123 1234</td>
-                        <td class="align-middle">jmary@spotify.com</td>
-                        <td class="align-middle d-flex"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
-                            Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
-                            Copy profile</button>
-                          <!-- Dropdown -->
-                          <div class="dropdown ms-2">
-                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                              aria-expanded="false">
-                              <i class="fe fe-more-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
-                              data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
-                              </button>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <!-- 5 -->
-                      <tr class="align-middle">
-                        <td class="align-middle">
-                          <div class="d-flex">
-                            <div class="avatar avatar-xs">
-                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-6.jpg"
-                                alt="person picture">
-                            </div>
-                            <div class="ms-3">Ariy Rof</div>
-                          </div>
-                        </td>
-                        <td class="align-middle">912,345</td>
-                        <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="prospector-companies-detail-locked.html">
-                            <div class="avatar avatar-xs">
-                              <img class="img" width="22" height="auto" src="assets/img/logo/Apple 14.svg" alt="company logo">
-                            </div>
-                            <div class="ms-3">Apple</div>
-                        </td>
-                        <td class="align-middle">Senior Designer</td>
-                        <td class="align-middle">+1 555 123 1234</td>
-                        <td class="align-middle">arofariy@apple.com</td>
-                        <td class="align-middle d-flex"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
-                            Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
-                            Copy profile</button>
-                          <!-- Dropdown -->
-                          <div class="dropdown ms-2">
-                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                              aria-expanded="false">
-                              <i class="fe fe-more-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
-                              data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
-                              </button>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <!-- 1 -->
-                      <tr class="align-middle">
-                        <td class="align-middle">
-                          <div class="d-flex">
-                            <div class="avatar avatar-xs">
-                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-2.jpg"
-                                alt="person picture">
-                            </div>
-                            <div class="ms-3">David King</div>
-                          </div>
-                        </td>
-                        <td class="align-middle">567,891</td>
-                        <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="prospector-companies-detail-locked.html">
-                            <div class="avatar avatar-xs">
-                              <img class="img mt-2" width="22" height="auto" src="assets/img/logo/IBM logo.svg" alt="company logo">
-                            </div>
-                            <div class="ms-3">IBM</div>
-                          </a>
-                        </td>
-                        <td class="align-middle">Software Engineer</td>
-                        <td class="align-middle">+1 555 123 1234</td>
-                        <td class="align-middle">davidking@ibm.com</td>
-                        <td class="align-middle d-flex"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
-                            Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
-                            Copy profile</button>
-                          <!-- Dropdown -->
-                          <div class="dropdown ms-2">
-                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                              aria-expanded="false">
-                              <i class="fe fe-more-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
-                              data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
-                              </button>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <!-- 2 -->
-                      <tr class="align-middle">
-                        <td class="align-middle">
-                          <div class="d-flex">
-                            <div class="avatar avatar-xs">
-                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-5.jpg"
-                                alt="person picture">
-                            </div>
-                            <div class="ms-3">Kokoro Rose</div>
-                          </div>
-                        </td>
-                        <td class="align-middle">4,567,891</td>
-                        <td class="align-middle">
-                          <a class="d-flex custom-link text-black" href="#!">
-                            <div class="avatar avatar-xs">
-                              <img class="img" width="22" height="auto" src="assets/img/logo/netflix.jpeg" alt="company logo">
-                            </div>
-                            <div class="ms-3">Netflix</div>
-                          </a>
-                        </td>
-                        <td class="align-middle">Marketing Specialist</td>
-                        <td class="align-middle">+1 555 123 1234</td>
-                        <td class="align-middle">kokorose@netflix.com</td>
-                        <td class="align-middle d-flex"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
-                            Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
-                            Copy profile</button>
-                          <!-- Dropdown -->
-                          <div class="dropdown ms-2">
-                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                              aria-expanded="false">
-                              <i class="fe fe-more-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
-                              data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
-                              </button>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <!-- 3 -->
-                      <tr class="align-middle">
-                        <td class="align-middle">
-                          <div class="d-flex">
-                            <div class="avatar avatar-xs">
-                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-3.jpg"
-                                alt="person picture">
-                            </div>
-                            <div class="ms-3">Karim Paul</div>
-                          </div>
-                        </td>
-                        <td class="align-middle">891,234</td>
-                        <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="prospector-companies-detail-locked.html">
-                            <div class="avatar avatar-xs">
-                              <img class="img" width="22" height="auto" src="assets/img/logo/Google-logoicon.svg"
-                                alt="company logo">
-                            </div>
-                            <div class="ms-3">Google</div>
-                        </td>
-                        <td class="align-middle">CTO</td>
-                        <td class="align-middle">+1 555 123 1234</td>
-                        <td class="align-middle">karimp@google.com</td>
-                        <td class="align-middle d-flex"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
-                            Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
-                            Copy profile</button>
-                          <!-- Dropdown -->
-                          <div class="dropdown ms-2">
-                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                              aria-expanded="false">
-                              <i class="fe fe-more-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
-                              data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
-                              </button>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <!-- 4 -->
-                      <tr class="align-middle">
-                        <td class="align-middle">
-                          <div class="d-flex">
-                            <div class="avatar avatar-xs">
-                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-4.jpg"
-                                alt="person picture">
-                            </div>
-                            <div class="ms-3">Jane Mary</div>
-                          </div>
-                        </td>
-                        <td class="align-middle">2,345,678</td>
-                        <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="prospector-companies-detail-locked.html">
-                            <div class="avatar avatar-xs">
-                              <img class="img" width="22" height="auto" src="assets/img/logo/Spotify logo.svg" alt="company logo">
-                            </div>
-                            <div class="ms-3">Spotify</div>
-                        </td>
-                        <td class="align-middle">CEO</td>
-                        <td class="align-middle">+1 555 123 1234</td>
-                        <td class="align-middle">jmary@spotify.com</td>
-                        <td class="align-middle d-flex"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
-                            Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
-                            Copy profile</button>
-                          <!-- Dropdown -->
-                          <div class="dropdown ms-2">
-                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                              aria-expanded="false">
-                              <i class="fe fe-more-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
-                              data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
-                              </button>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <!-- 5 -->
-                      <tr class="align-middle">
-                        <td class="align-middle">
-                          <div class="d-flex">
-                            <div class="avatar avatar-xs">
-                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-6.jpg"
-                                alt="person picture">
-                            </div>
-                            <div class="ms-3">Ariy Rof</div>
-                          </div>
-                        </td>
-                        <td class="align-middle">912,345</td>
-                        <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="prospector-companies-detail-locked.html">
-                            <div class="avatar avatar-xs">
-                              <img class="img" width="22" height="auto" src="assets/img/logo/Apple 14.svg" alt="company logo">
-                            </div>
-                            <div class="ms-3">Apple</div>
-                        </td>
-                        <td class="align-middle">Senior Designer</td>
-                        <td class="align-middle">+1 555 123 1234</td>
-                        <td class="align-middle">arofariy@apple.com</td>
-                        <td class="align-middle d-flex"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
-                            Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
-                            Copy profile</button>
-                          <!-- Dropdown -->
-                          <div class="dropdown ms-2">
-                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                              aria-expanded="false">
-                              <i class="fe fe-more-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
-                              data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
-                              </button>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
+
                   </table>
                 </div>
             
