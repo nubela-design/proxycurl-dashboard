@@ -1,30 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc." />
-    
+    <meta
+      name="description"
+      content="A fully featured admin theme which can be used to build CRM, CMS, etc."
+    />
+
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon"/>
-    
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
     <!-- Map CSS -->
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
-    
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css"
+    />
+
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.5.0/css/neu.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css"
+    />
+
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
     <link rel="stylesheet" href="style-custom.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">
-    
+
     <!-- Title -->
     <title>Proxycurl - Dashboard</title>
   </head>
   <body>
-
     <!-- NAVIGATION SANDBOX -->
     <nav
       class="navbar navbar-vertical fixed-start navbar-expand-md navbar-light"
@@ -277,7 +288,7 @@
                 </label>
               </div>
             </div>
-            
+
             <div class="py-4 border-top border-bottom w-100">
               <div class="d-flex flex-row align-items-center w-100 w-100">
                 <div class="w-75">
@@ -329,7 +340,10 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./sandbox-profile-sandbox.html" class="nav-link fw-bold">
+                    <a
+                      href="./sandbox-profile-sandbox.html"
+                      class="nav-link fw-bold"
+                    >
                       <span
                         class="border-start border-2 ps-3 text-primary border-primary"
                         >Profile Sandbox</span
@@ -337,7 +351,10 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="https://nubela.co/proxycurl/docs#proxycurl-overview" class="nav-link">
+                    <a
+                      href="https://nubela.co/proxycurl/docs#proxycurl-overview"
+                      class="nav-link"
+                    >
                       <span class="border-start border-2 ps-3">Docs</span>
                     </a>
                   </li>
@@ -373,7 +390,11 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./sandbox-account-request-log.html" role="button">
+              <a
+                class="nav-link"
+                href="./sandbox-account-request-log.html"
+                role="button"
+              >
                 <i class="fe fe-activity"></i> Request Log
               </a>
             </li>
@@ -429,15 +450,20 @@
               <div class="collapse show" id="sidebarAccount">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="./sandbox-account-change-email.html" class="nav-link">
-                      <span
-                        class="border-start border-2 ps-3"
+                    <a
+                      href="./sandbox-account-change-email.html"
+                      class="nav-link"
+                    >
+                      <span class="border-start border-2 ps-3"
                         >Change email</span
                       >
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="./sandbox-account-change-password.html" class="nav-link">
+                    <a
+                      href="./sandbox-account-change-password.html"
+                      class="nav-link"
+                    >
                       <span class="border-start border-2 ps-3"
                         >Change password</span
                       >
@@ -473,7 +499,10 @@
           <div class="mt-md-auto"></div>
 
           <!-- User (md) -->
-          <div class="navbar-user d-none d-md-flex pb-4 border-bottom mb-4" id="sidebarUser">
+          <div
+            class="navbar-user d-none d-md-flex pb-4 border-bottom mb-4"
+            id="sidebarUser"
+          >
             <div class="btn-group dropup">
               <button
                 type="button"
@@ -605,380 +634,563 @@
     </nav>
 
     <!--MODAL Create-->
-    <div class="modal fade" id="modalCreateProfile" tabindex="-1" aria-labelledby="modalCreateLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="modalCreateProfile"
+      tabindex="-1"
+      aria-labelledby="modalCreateLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-    
           <div class="modal-header">
-            <h3 class="modal-title" id="modalTopupLabel">Create Profile <span class="text-danger">*</span></h3>
-            <div class="me-3 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <h3 class="modal-title" id="modalTopupLabel">
+              Create Profile <span class="text-danger">*</span>
+            </h3>
+            <div class="me-3 mt-4">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
           </div>
-    
+
           <div class="modal-body">
-    
             <form>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Full Name</label>
-                <input type="text" placeholder="David King" class="form-control" id="exampleInput" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  placeholder="David King"
+                  class="form-control"
+                  id="exampleInput"
+                  aria-describedby="emailHelp"
+                />
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Followers</label>
-                <input type="text" placeholder="567,891" class="form-control" id="exampleInputFollowers" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Followers</label
+                >
+                <input
+                  type="text"
+                  placeholder="567,891"
+                  class="form-control"
+                  id="exampleInputFollowers"
+                  aria-describedby="emailHelp"
+                />
               </div>
               <div class="mb-3">
-                <label for="exampleInputCompanyCreate" class="form-label">Company</label>
-                <input type="text" placeholder="IBM" class="form-control" id="exampleInputCompanyCreate" aria-describedby="emailHelp">
-                <ul class="list-group suggestions" id="companySuggestionsCreate"></ul>
+                <label for="exampleInputCompanyCreate" class="form-label"
+                  >Company</label
+                >
+                <input
+                  type="text"
+                  placeholder="IBM"
+                  class="form-control"
+                  id="exampleInputCompanyCreate"
+                  aria-describedby="emailHelp"
+                />
+                <ul
+                  class="list-group suggestions"
+                  id="companySuggestionsCreate"
+                ></ul>
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Job Title</label>
-                <input type="text" placeholder="Software Engineer" class="form-control" id="exampleInput" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Job Title</label
+                >
+                <input
+                  type="text"
+                  placeholder="Software Engineer"
+                  class="form-control"
+                  id="exampleInput"
+                  aria-describedby="emailHelp"
+                />
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                <input type="text" placeholder="+1 555 123 1234" class="form-control" id="exampleInput" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Phone Number</label
+                >
+                <input
+                  type="text"
+                  placeholder="+1 555 123 1234"
+                  class="form-control"
+                  id="exampleInput"
+                  aria-describedby="emailHelp"
+                />
               </div>
               <div class="mb-4">
-                <label for="exampleInputEmail1" class="form-label">Personal Email</label>
-                <input type="email" placeholder="davidking@ibm.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>     
-
+                <label for="exampleInputEmail1" class="form-label"
+                  >Personal Email</label
+                >
+                <input
+                  type="email"
+                  placeholder="davidking@ibm.com"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
             </form>
 
-            <p class="small text-gray-700"><span class="text-danger">*</span> This profile will be automatically added to the owned profile list.</p>
-    
+            <p class="small text-gray-700">
+              <span class="text-danger">*</span> This profile will be
+              automatically added to the owned profile list.
+            </p>
           </div>
-    
+
           <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">Cancel create</button>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCreateProfileSuccess">Create profile</button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary me-2"
+              data-bs-dismiss="modal"
+            >
+              Cancel create
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalCreateProfileSuccess"
+            >
+              Create profile
+            </button>
           </div>
-    
         </div>
       </div>
-    </div>    
+    </div>
 
     <!--MODAL Create Success-->
-    <div class="modal fade" id="modalCreateProfileSuccess" tabindex="-1" aria-labelledby="modalCreateSuccessLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="modalCreateProfileSuccess"
+      tabindex="-1"
+      aria-labelledby="modalCreateSuccessLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-    
           <div class="">
             <h3 class="modal-title" id="modalTopupLabel"></h3>
-            <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class="me-4 mt-4">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
           </div>
-    
-          <div class="modal-body">
-    
-            <div class="row justify-content-center pb-md-5">
 
+          <div class="modal-body">
+            <div class="row justify-content-center pb-md-5">
               <div class="col-12 col-md-10 text-center mb-3">
                 <i class="neu-add-profile text-success display-1"></i>
 
-                <h1 class="fw-bold mb-3 mt-4">
-                  Profile Created!
-                </h1>
+                <h1 class="fw-bold mb-3 mt-4">Profile Created!</h1>
 
                 <p class="text-gray-700 fs-lg">
-                  You're successfully created and owned the profile. You can check it on the profile list or view the profile details.
+                  You're successfully created and owned the profile. You can
+                  check it on the profile list or view the profile details.
                 </p>
               </div>
 
               <div class="col-12 col-md-10">
-
-
                 <div class="row align-items-center justify-content-center mt-3">
-
-                    <a class="btn btn-lg btn-primary w-100 lift mb-2" href="./sandbox-profile-sandbox.html">
-                      Go to profile list
-                    </a>
-                    <a class="btn btn-lg btn-link w-100" href="sandbox-profile-sandbox-person-detail.html">
-                      Go to profile details
-                    </a>
-
+                  <a
+                    class="btn btn-lg btn-primary w-100 lift mb-2"
+                    href="./sandbox-profile-sandbox.html"
+                  >
+                    Go to profile list
+                  </a>
+                  <a
+                    class="btn btn-lg btn-link w-100"
+                    href="sandbox-profile-sandbox-person-detail.html"
+                  >
+                    Go to profile details
+                  </a>
                 </div>
-
               </div>
-
             </div>
-    
           </div>
-    
         </div>
       </div>
-    </div>      
+    </div>
 
     <!--MODAL Edit-->
-    <div class="modal fade" id="modalEditProfile" tabindex="-1" aria-labelledby="modalEditLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="modalEditProfile"
+      tabindex="-1"
+      aria-labelledby="modalEditLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-    
           <div class="modal-header">
             <h3 class="modal-title" id="modalTopupLabel">Edit Profile</h3>
-            <div class="me-3 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class="me-3 mt-4">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
           </div>
-    
+
           <div class="modal-body">
-    
             <form>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Full Name</label>
-                <input type="email" placeholder="David King" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Full Name</label
+                >
+                <input
+                  type="email"
+                  placeholder="David King"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Followers</label>
-                <input type="email" placeholder="567,891" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Followers</label
+                >
+                <input
+                  type="email"
+                  placeholder="567,891"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Company</label>
-                <input type="email" placeholder="IBM" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Company</label
+                >
+                <input
+                  type="email"
+                  placeholder="IBM"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Job Title</label>
-                <input type="email" placeholder="Software Engineer" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Job Title</label
+                >
+                <input
+                  type="email"
+                  placeholder="Software Engineer"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                <input type="email" placeholder="+1 555 123 1234" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Phone Number</label
+                >
+                <input
+                  type="email"
+                  placeholder="+1 555 123 1234"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
               </div>
               <div class="mb-4">
-                <label for="exampleInputEmail1" class="form-label">Personal Email</label>
-                <input type="email" placeholder="davidking@ibm.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Personal Email</label
+                >
+                <input
+                  type="email"
+                  placeholder="davidking@ibm.com"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
               </div>
 
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                  checked
+                />
                 <label class="form-check-label" for="flexCheckDefault">
                   Own this profile
                 </label>
-              </div>              
-
+              </div>
             </form>
-    
           </div>
-    
+
           <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">Discard edit</button>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEditProfileSuccess">Save edit</button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary me-2"
+              data-bs-dismiss="modal"
+            >
+              Discard edit
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalEditProfileSuccess"
+            >
+              Save edit
+            </button>
           </div>
-    
         </div>
       </div>
-    </div>    
+    </div>
 
     <!--MODAL Edit Success-->
-    <div class="modal fade" id="modalEditProfileSuccess" tabindex="-1" aria-labelledby="modalEditSuccessLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="modalEditProfileSuccess"
+      tabindex="-1"
+      aria-labelledby="modalEditSuccessLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-    
           <div class="">
             <h3 class="modal-title" id="modalTopupLabel"></h3>
-            <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class="me-4 mt-4">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
           </div>
-    
-          <div class="modal-body">
-    
-            <div class="row justify-content-center pb-md-5">
 
+          <div class="modal-body">
+            <div class="row justify-content-center pb-md-5">
               <div class="col-12 col-md-10 text-center mb-3">
                 <i class="neu-edit-profile text-success display-1"></i>
 
-                <h1 class="fw-bold mb-3 mt-4">
-                  Profile edited!
-                </h1>
+                <h1 class="fw-bold mb-3 mt-4">Profile edited!</h1>
 
                 <p class="text-gray-700 fs-lg">
-                  Your profile edit was saved successfully. You can check it on the profile list or view the profile details for more data.
+                  Your profile edit was saved successfully. You can check it on
+                  the profile list or view the profile details for more data.
                 </p>
               </div>
 
               <div class="col-12 col-md-10">
-
-
                 <div class="row align-items-center justify-content-center mt-3">
-
-                    <a class="btn btn-lg btn-primary w-100 lift mb-2" href="./sandbox-profile-sandbox.html">
-                      Go to profile list
-                    </a>
-                    <a class="btn btn-lg btn-link w-100" href="sandbox-profile-sandbox-person-detail.html">
-                      Go to profile details
-                    </a>
-
+                  <a
+                    class="btn btn-lg btn-primary w-100 lift mb-2"
+                    href="./sandbox-profile-sandbox.html"
+                  >
+                    Go to profile list
+                  </a>
+                  <a
+                    class="btn btn-lg btn-link w-100"
+                    href="sandbox-profile-sandbox-person-detail.html"
+                  >
+                    Go to profile details
+                  </a>
                 </div>
-
               </div>
-
             </div>
-    
           </div>
-    
         </div>
       </div>
-    </div>      
+    </div>
 
     <!--MODAL Copy Success-->
-    <div class="modal fade" id="modalCopyProfileSuccess" tabindex="-1" aria-labelledby="modalCopySuccessLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="modalCopyProfileSuccess"
+      tabindex="-1"
+      aria-labelledby="modalCopySuccessLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-    
           <div class="">
             <h3 class="modal-title" id="modalTopupLabel"></h3>
-            <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class="me-4 mt-4">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
           </div>
-    
-          <div class="modal-body">
-    
-            <div class="row justify-content-center pb-md-5">
 
+          <div class="modal-body">
+            <div class="row justify-content-center pb-md-5">
               <div class="col-12 col-md-10 text-center mb-3">
                 <i class="neu-add-group text-success display-1"></i>
 
-                <h1 class="fw-bold mb-3 mt-4">
-                  Profile Copied!
-                </h1>
+                <h1 class="fw-bold mb-3 mt-4">Profile Copied!</h1>
 
                 <p class="text-gray-700 fs-lg">
-                  David King's profile has been copied and added to your owned list.
+                  David King's profile has been copied and added to your owned
+                  list.
                 </p>
               </div>
 
               <div class="col-12 col-md-10">
-
-
                 <div class="row align-items-center justify-content-center mt-3">
-
-                    <a class="btn btn-lg btn-primary w-100 lift mb-2" href="sandbox-profile-sandbox.html">
-                      Go to profile list
-                    </a>
-                    <a class="btn btn-lg btn-link w-100" href="sandbox-profile-sandbox-person-detail.html">
-                      Go to profile details
-                    </a>
-
+                  <a
+                    class="btn btn-lg btn-primary w-100 lift mb-2"
+                    href="sandbox-profile-sandbox.html"
+                  >
+                    Go to profile list
+                  </a>
+                  <a
+                    class="btn btn-lg btn-link w-100"
+                    href="sandbox-profile-sandbox-person-detail.html"
+                  >
+                    Go to profile details
+                  </a>
                 </div>
-
               </div>
-
             </div>
-    
           </div>
-    
         </div>
       </div>
-    </div>  
-    
+    </div>
+
     <!--MODAL Delete-->
-    <div class="modal fade" id="modalDeleteProfile" tabindex="-1" aria-labelledby="modalDeleteLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="modalDeleteProfile"
+      tabindex="-1"
+      aria-labelledby="modalDeleteLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-    
           <div class="">
             <h3 class="modal-title" id="modalTopupLabel"></h3>
-            <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class="me-4 mt-4">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
           </div>
-    
-          <div class="modal-body">
-    
-            <div class="row justify-content-center pb-md-5">
 
+          <div class="modal-body">
+            <div class="row justify-content-center pb-md-5">
               <div class="col-12 col-md-10 text-center mb-3">
                 <i class="neu-delete-profile text-danger display-1"></i>
 
-                <h1 class="fw-bold mb-3 mt-4">
-                  Delete profile?
-                </h1>
+                <h1 class="fw-bold mb-3 mt-4">Delete profile?</h1>
 
                 <p class="text-gray-700 fs-lg">
-                  David King's profile will be permanently deleted. Are you sure you want to delete this profile?
+                  David King's profile will be permanently deleted. Are you sure
+                  you want to delete this profile?
                 </p>
               </div>
 
               <div class="col-12 col-md-10">
-
-
                 <div class="row align-items-center justify-content-center mt-3">
-
-                    <button class="btn btn-lg btn-primary w-100 lift mb-3" data-bs-dismiss="modal" aria-label="Close">
-                      No, don't delete this profile
-                    </button>
-                    <button class="btn btn-lg btn-outline-danger w-100 lift" data-bs-toggle="modal" data-bs-target="#modalDeleteProfileSuccess">
-                      Yes, delete this profile
-                    </button>
-
+                  <button
+                    class="btn btn-lg btn-primary w-100 lift mb-3"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    No, don't delete this profile
+                  </button>
+                  <button
+                    class="btn btn-lg btn-outline-danger w-100 lift"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteProfileSuccess"
+                  >
+                    Yes, delete this profile
+                  </button>
                 </div>
-
               </div>
-
             </div>
-    
           </div>
-    
         </div>
       </div>
-    </div>      
+    </div>
 
     <!--MODAL Delete Success-->
-    <div class="modal fade" id="modalDeleteProfileSuccess" tabindex="-1" aria-labelledby="modalDeleteLabelSuccess" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="modalDeleteProfileSuccess"
+      tabindex="-1"
+      aria-labelledby="modalDeleteLabelSuccess"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-    
           <div class="">
             <h3 class="modal-title" id="modalTopupLabel"></h3>
-            <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class="me-4 mt-4">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
           </div>
-    
-          <div class="modal-body">
-    
-            <div class="row justify-content-center pb-md-5">
 
+          <div class="modal-body">
+            <div class="row justify-content-center pb-md-5">
               <div class="col-12 col-md-10 text-center mb-3">
                 <i class="neu-delete-profile text-danger display-1"></i>
 
-                <h1 class="fw-bold mb-3 mt-4">
-                  Profile deleted!
-                </h1>
+                <h1 class="fw-bold mb-3 mt-4">Profile deleted!</h1>
 
                 <p class="text-gray-700 fs-lg">
-                  David King's profile deleted successfully. 
+                  David King's profile deleted successfully.
                 </p>
               </div>
 
               <div class="col-12 col-md-10">
-
-
                 <div class="row align-items-center justify-content-center mt-3">
-
-                    <button class="btn btn-lg btn-primary w-100 lift mb-3" data-bs-dismiss="modal" aria-label="Close">
-                      Go to profile list
-                    </button>
-
+                  <button
+                    class="btn btn-lg btn-primary w-100 lift mb-3"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    Go to profile list
+                  </button>
                 </div>
-
               </div>
-
             </div>
-    
           </div>
-    
         </div>
       </div>
-    </div>     
+    </div>
 
     <!-- MAIN CONTENT -->
     <div class="main-content">
-
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-12 main-content-sandbox">
-
             <!--Sandbox Alert-->
-            <div
-              class="card bg-warning mt-5"
-            >
+            <div class="card bg-warning mt-5">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col-12">
                     <p class="lead text-dark mb-0">
-                      You’re currently in <b>Sandbox mode</b>. To return to Production mode, please
+                      You’re currently in <b>Sandbox mode</b>. To return to
+                      Production mode, please
                       <a
                         href="javascript:void(0)"
                         class="fw-bold text-black text-decoration-underline"
@@ -993,204 +1205,726 @@
 
             <!-- Header -->
             <div class="header mt-md-5">
+              <div class="row align-items-center">
+                <div class="col">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle">Person</h6>
 
-
-                <div class="row align-items-center">
-                  <div class="col">
-
-                    <!-- Pretitle -->
-                    <h6 class="header-pretitle">
-                      Person
-                    </h6>
-
-                    <!-- Title -->
-                    <h1 class="header-title">
-                      Detail Profile Sandbox
-                    </h1>
-
-                  </div>
-                </div> <!-- / .row -->
-
+                  <!-- Title -->
+                  <h1 class="header-title">Detail Profile Sandbox</h1>
+                </div>
+              </div>
+              <!-- / .row -->
             </div>
-            
-            <!-- Section-->
-            <div class="col-12 mb-3">
-              <div class="card">
 
-                <!-- Dropdown -->
-                <div class="dropdown card-dropdown">
-                  <a href="#" class="dropdown-ellipses dropdown-toggle text-white" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fe fe-more-vertical"></i>
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-end">
-                    <a href="#!" class="dropdown-item">
-                      Action
+            <div class="row">
+              <!-- Section-->
+              <div class="col-12 mb-3">
+                <div class="card">
+                  <!-- Dropdown -->
+                  <div class="dropdown card-dropdown">
+                    <a
+                      href="#"
+                      class="dropdown-ellipses dropdown-toggle text-white"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <i class="fe fe-more-vertical"></i>
                     </a>
-                    <a href="#!" class="dropdown-item">
-                      Another action
-                    </a>
-                    <a href="#!" class="dropdown-item">
-                      Something else here
-                    </a>
+                    <div class="dropdown-menu dropdown-menu-end">
+                      <a href="#!" class="dropdown-item"> Action </a>
+                      <a href="#!" class="dropdown-item"> Another action </a>
+                      <a href="#!" class="dropdown-item">
+                        Something else here
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- background_cover_image_url -->
+                  <img
+                    src="assets/img/covers/profile-cover-2.jpg"
+                    alt="..."
+                    class="card-img-top"
+                  />
+
+                  <!-- Body -->
+                  <div class="card-body text-center">
+                    <!-- profile_pic_url -->
+                    <div
+                      class="avatar avatar-xxl card-avatar card-avatar-top"
+                    >
+                      <img
+                        src="assets/img/avatars/profiles/avatar-2.jpg"
+                        class="avatar-img rounded-circle border border-4 border-card"
+                        alt="..."
+                      />
+                    </div>
+
+                    <!-- full_name -->
+                    <div class="text-center mb-3">
+                      <!-- full_name key -->
+                      <h6 class="text-uppercase text-muted mb-1">full_name</h6>
+                      <!-- full_name value -->
+                      <h2 class="card-title text-center">
+                        John Marty
+                      </h2>
+                    </div>
+
+                    <!-- occupation -->
+                    <div class="text-center mb-3">
+                      <!-- occupation key -->
+                      <h6 class="text-uppercase text-muted mb-1">occupation</h6>
+                      <!-- occupation value -->
+                      <h3 class="lead text-center text-body-secondary mb-3">
+                        Co-Founder at Freedom Fund Real Estate
+                      </h3>
+                    </div>
+
+                    <!-- headline -->
+                    <div class="text-center mb-3">
+                      <!-- headline key -->
+                      <h6 class="text-uppercase text-muted mb-1">headline</h6>
+                      <!-- headline value -->
+                      <p class="small text-center text-body-secondary mb-3">
+                        Financial Freedom through Real Estate - LinkedIn Top
+                        Voice
+                      </p>
+                    </div>
+
+                    <!-- follower_count -->
+                    <div class="py-3 text-center">
+                      <!-- follower_count key -->
+                      <h6 class="text-uppercase text-muted mb-1">
+                        follower_count
+                      </h6>
+
+                      <!-- follower_count value -->
+                      <h2 class="mb-0">10.200</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- summary -->
+              <div class="col-12 mb-3">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <!-- summary key -->
+                    <h6 class="text-uppercase text-muted mb-1">summary</h6>
+
+                    <!-- summary value -->
+                    <p class="small text-center text-body-secondary mb-3">
+                      Most people go through life lost, disengaged, and unhappy
+                      at work and in their lives - I\u0027m on a mission to
+                      solve that.\n\nI spent 10 years as the founder of Axxis
+                      Audio, an electronics company that grew to multi-million
+                      dollar sales, which I sold in 2012. At that time, I
+                      funneled my earnings into the creation of an Internet of
+                      Things company, but numerous factors lead to its demise
+                      after 2 hard fought years. \n\nAt 31, I was penny-less,
+                      had a baby on the way, and had zero job prospects (despite
+                      applying to 150 companies). My desperate situation led me
+                      to take a job at Best Buy for $12 an hour while
+                      reinventing myself through the completion of an MBA at the
+                      University of Colorado, and a 6-month software development
+                      boot camp. \n\nAfter graduation, I landed at American
+                      Express as a Senior Product Manager and then got poached
+                      by Amazon in 2017 (because of my LinkedIn profile). My
+                      journey has led to a deep sense of perspective, humility,
+                      and purpose that I draw on to help others find clarity,
+                      meaning, and happiness in their careers and lives.
+                      \n\nCheck out my website for details on my Mindset Reset
+                      Podcast, Public Speaking, Consulting, or my free 40 page
+                      LinkedIn
+                      guide\n\nhttp://www.johnraphaelmarty.com/\n\nFAQ\u0027s\n\nQ:
+                      Can you speak at my Company, University, event or
+                      podcast?\nA: I\u0027d love to! I\u0027ve shared my message
+                      on the future of employment, breaking into big tech, and
+                      my personal story of reinventing myself and discovering my
+                      sense of purpose (and how you can too!).\n\n\u2611\ufe0f
+                      YouTube Channel #1 (John Marty) :
+                      http://www.youtube.com/c/JohnMarty-uncommon\n\u2611\ufe0f
+                      YouTube Channel #2 (Tech Careers for non-engineers:
+                      https://www.youtube.com/channel/UC900gMMPLwRGGXSTW1gdZHA\n\nFUN
+                      FACTS:\n\u2611\ufe0f I am an Avid cyclist and runner, and
+                      I just started learning to skateboard a
+                      half-pipe.\n\u2611\ufe0f Into the Enneagram? - I\u0027m a
+                      #3 (The Achiever)\n\nLETS CONNECT:\n\u2611\ufe0f Email:
+                      JohnRmarty@gmail.com (don\u0027t forget that \"R\"....The
+                      other guy gets my emails all the time)
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6 mb-3">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+
+                      <!-- public_identifier -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- public_identifier key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              public_identifier
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- public_identifier value -->
+                            <small class="small text-body-secondary">
+                              johnrmarty
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- first_name -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- first_name key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              first_name
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- first_name value -->
+                            <small class="small text-body-secondary">
+                              John
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- last_name -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- last_name key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              last_name
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- last_name value -->
+                            <small class="small text-body-secondary">
+                              Marty
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- gender -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- gender key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              gender
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- gender value -->
+                            <small class="small text-body-secondary">
+                              male
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                    </div>
                   </div>
                 </div>
 
-                <!-- Image -->
-                <img src="assets/img/covers/profile-cover-2.jpg" alt="..." class="card-img-top">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
 
-                <!-- Body -->
-                <div class="card-body">
+                      <!-- connections -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- connections key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              connections
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- connections value -->
+                            <small class="small text-body-secondary">
+                              500
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
 
-                  <!-- Image -->
-                  <a href="profile-posts.html" class="avatar avatar-xl card-avatar card-avatar-top">
-                    <img src="assets/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle border border-4 border-card" alt="...">
-                  </a>
+                      <!-- languages -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- languages key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              languages
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- languages value -->
+                            <small class="small text-body-secondary">
+                              ["English", "Chinese", "Japanese"]
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
 
-                  <!-- Heading -->
-                  <h2 class="card-title text-center">
-                    <a href="profile-posts.html">Ab Hadley</a>
-                  </h2>
+                      <!-- interests -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- interests key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              interests
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- interests value -->
+                            <small class="small text-body-secondary">
+                              ["education", "health", "human rights"]
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
 
-                  <!-- Text -->
-                  <p class="small text-center text-body-secondary mb-3">
-                    Woprking on the latest API integration.
-                  </p>
+                      <!-- industry -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- industry key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              industry
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- industry value -->
+                            <small class="small text-body-secondary">
+                              government administration
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
 
-                  <!-- Badges -->
-                  <p class="text-center mb-4">
-                    <span class="badge text-bg-secondary-subtle">
-                      UX Team
-                    </span>
-                    <span class="badge text-bg-secondary-subtle">
-                      Research Team
-                    </span>
-                  </p>
+                      <!-- recommendations -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- recommendations key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              recommendations
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- recommendations value -->
+                            <small class="small text-body-secondary">
+                              ["Professional and dedicated approach towards clients and collegues."]
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
 
-                  <!-- Stats -->
-                  <div class="row g-0 border-top border-bottom">
-                    <div class="col-6 py-4 text-center">
+                      <!-- personal_emails -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- personal_emails key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              personal_emails
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- personal_emails value -->
+                            <small class="small text-body-secondary">
+                              ["abc@gmail.com", "bcd@gmail.com", "cde@@outlook.com"]
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
 
-                      <!-- Heading -->
-                      <h6 class="text-uppercase text-body-secondary">
-                        Followers
-                      </h6>
-
-                      <!-- Value -->
-                      <h2 class="mb-0">10.2k</h2>
-
-                    </div>
-                    <div class="col-6 py-4 text-center border-start">
-
-                      <!-- Heading -->
-                      <h6 class="text-uppercase text-body-secondary">
-                        Following
-                      </h6>
-
-                      <!-- Value -->
-                      <h2 class="mb-0">2.7k</h2>
+                      <!-- personal_numbers -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- personal_numbers key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              personal_numbers
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- personal_numbers value -->
+                            <small class="small text-body-secondary">
+                              ["+6512345678", "+6285123450953", "+6502300340"]
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
 
                     </div>
                   </div>
+                </div>
+              </div>
 
-                  <!-- List group -->
-                  <div class="list-group list-group-flush mb-4">
-                    <div class="list-group-item">
-                      <div class="row align-items-center">
-                        <div class="col">
-
-                          <!-- Title -->
-                          <small>Joined</small>
-
+              <div class="col-12 col-lg-6 mb-3">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      
+                      <!-- profile_pic_url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- public_identifier key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              profile_pic_url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- public_identifier value -->
+                            <small class="small text-body-secondary">
+                              https://media.licdn.com/dms/image/C5603AQHaJSx0CBAUIA/profile-displayphoto-shrink_800_800/0/1558325759208?e=2147483647\u0026v=beta\u0026t=BluXpPg88xFnU2wMGLjuCUykSk_wKNdh8x3PI9wm6MI
+                            </small>
+                          </div>
                         </div>
-                        <div class="col-auto">
+                        <!-- / .row -->
+                      </div>
 
-                          <!-- Time -->
-                          <time class="small text-body-secondary" datetime="1988-10-24">
-                            10/24/88
-                          </time>
-
+                      <!-- background_cover_image_url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- public_identifier key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              background_cover_image_url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- public_identifier value -->
+                            <small class="small text-body-secondary">
+                              https://media.licdn.com/dms/image/C5616AQH9tkBTUhHfng/profile-displaybackgroundimage-shrink_200_800/0/1614530499015?e=2147483647\u0026v=beta\u0026t=VEoCyedtZulnAVYWT9BXfKHi5OFp8avElNjiz8kjSTU
+                            </small>
+                          </div>
                         </div>
-                      </div> <!-- / .row -->
-                    </div>
-                    <div class="list-group-item">
-                      <div class="row align-items-center">
-                        <div class="col">
-
-                          <!-- Title -->
-                          <small>Location</small>
-
-                        </div>
-                        <div class="col-auto">
-
-                          <!-- Text -->
-                          <small class="text-body-secondary">
-                            Los Angeles, CA
-                          </small>
-
-                        </div>
-                      </div> <!-- / .row -->
-                    </div>
-                    <div class="list-group-item">
-                      <div class="row align-items-center">
-                        <div class="col">
-
-                          <!-- Title -->
-                          <small>Product</small>
-
-                        </div>
-                        <div class="col-auto">
-
-                          <!-- Link -->
-                          <a class="small text-body-secondary">
-                            Landkit
-                          </a>
-
-                        </div>
-                      </div> <!-- / .row -->
+                        <!-- / .row -->
+                      </div>
                     </div>
                   </div>
+                </div>
 
-                  <!-- Footer -->
-                  <div class="row align-items-center justify-content-between">
-                    <div class="col-auto">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
 
-                      <!-- Status -->
-                      <small>
-                        <span class="text-success">●</span> Online
-                      </small>
+                      <!-- country -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- country key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              country
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- country value -->
+                            <small class="small text-body-secondary">
+                              US
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
 
-                    </div>
-                    <div class="col-auto">
+                      <!-- country_full_name -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- country_full_name key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              country_full_name
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- country_full_name value -->
+                            <small class="small text-body-secondary">
+                              United States of America
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
 
-                      <!-- Link -->
-                      <a href="#!" class="btn btn-sm btn-primary">
-                        Subscribe
-                      </a>
+                      <!-- city -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- city key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              city
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- city value -->
+                            <small class="small text-body-secondary">
+                              Seattle
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- state -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- state key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              state
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- state value -->
+                            <small class="small text-body-secondary">
+                              Washington
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
 
                     </div>
                   </div>
+                </div>
 
+                <!-- Pretitle Experience -->
+                <h6 class="header-pretitle">
+                  Experience
+                </h6>
+
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+
+                      <!-- starts_at -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- starts_at key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              starts_at
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- starts_at value -->
+                            <small class="small text-body-secondary">
+                              {"day": 1, "month": 8, "year": 2021}
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- ends_at -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- ends_at key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              ends_at
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- ends_at value -->
+                            <small class="small text-body-secondary">
+                              null
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- company -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- company key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              company
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- company value -->
+                            <small class="small text-body-secondary">
+                              Freedom Fund Real Estate
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- company_linkedin_profile_url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- company_linkedin_profile_url key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              company_linkedin_profile_url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- company_linkedin_profile_url value -->
+                            <small class="small text-body-secondary">
+                              https://www.linkedin.com/company/freedomfund
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- company_facebook_profile_url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- company_facebook_profile_url key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              company_facebook_profile_url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- company_facebook_profile_url value -->
+                            <small class="small text-body-secondary">
+                              null
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- title -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- title key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              title
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- title value -->
+                            <small class="small text-body-secondary">
+                              Co-Founder
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- location -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- location key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              location
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- location value -->
+                            <small class="small text-body-secondary">
+                              null
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- description -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- description key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              description
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- description value -->
+                            <small class="small text-body-secondary">
+                              Our mission is to provide everyday people seeking financial freedom long before the age of 65 with the ability to invest in high yield, short-term real estate investments that were only accessible in the past for a select few wealthy individuals. Each of our single family rehab projects require a minimum investment contribution of only $10K, we have simple terms, no multi-year hold periods, and no fees. With our unique model investors can log into our easy to use website, select the projects that they want to invest in, and get realtime updates on the status of their investments.\n\nWebsite: https://www.freedomfundinvestments.com/home
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- logo_url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- logo_url key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              logo_url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- logo_url value -->
+                            <small class="small text-body-secondary">
+                              https://media.licdn.com/dms/image/C560BAQEYxazZM_hXgQ/company-logo_100_100/0/1634934418976?e=2147483647\u0026v=beta\u0026t=wI0YdMmxIctkzvnKxRfuAbT8h5eok_DlUqEph68J37s
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                    </div>
+                  </div>
                 </div>
 
               </div>
+              
             </div>
-
           </div>
-        </div> <!-- / .row -->
+        </div>
+        <!-- / .row -->
       </div>
-
-    </div> <!-- / .main-content -->
+    </div>
+    <!-- / .main-content -->
 
     <!-- JAVASCRIPT -->
     <!-- Map JS -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
 
-  <!-- Search Autocomplete JS-->
-  <script src="search-autocomplete.js"></script>     
-    
+    <!-- Search Autocomplete JS-->
+    <script src="search-autocomplete.js"></script>
+
     <!-- Vendor JS -->
     <script src="./assets/js/vendor.bundle.js"></script>
-    
+
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
 
@@ -1227,6 +1961,5 @@
         }
       });
     </script>
-
   </body>
 </html>
