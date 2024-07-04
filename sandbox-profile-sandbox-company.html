@@ -681,10 +681,15 @@
             <div class="row justify-content-center pb-md-5">
 
               <div class="col-12 col-md-10 text-center mb-3">
-                <svg id="a" xmlns="http://www.w3.org/2000/svg" width="60" viewBox="0 0 20 20" class="mb-2" fill="#00D97D">
-                  <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
-                  <path d="m19.85,13.83c0,.42-.34.77-.77.77h-2.3v2.3c0,.42-.34.77-.77.77s-.77-.34-.77-.77v-2.3h-2.3c-.42,0-.77-.34-.77-.77s.34-.77.77-.77h2.3v-2.3c0-.42.34-.77.77-.77s.77.34.77.77v2.3h2.3c.42,0,.77.34.77.77Z" stroke-width="0"/>
-                 </svg>
+                
+                  <div class="avatar avatar-lg mb-2">
+                    <div class="avatar-title fs-lg bg-success rounded-circle text-primary">
+                      <svg id="a" xmlns="http://www.w3.org/2000/svg" width="26" viewBox="0 0 20 17" fill="white">
+                        <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                        <path d="m19.85,13.83c0,.42-.34.77-.77.77h-2.3v2.3c0,.42-.34.77-.77.77s-.77-.34-.77-.77v-2.3h-2.3c-.42,0-.77-.34-.77-.77s.34-.77.77-.77h2.3v-2.3c0-.42.34-.77.77-.77s.77.34.77.77v2.3h2.3c.42,0,.77.34.77.77Z" stroke-width="0"/>
+                       </svg>
+                    </div>
+                  </div>
 
                 <h1 class="fw-bold mb-3 mt-4">
                   Profile Created!
@@ -700,7 +705,7 @@
 
                 <div class="row align-items-center justify-content-center mt-3">
 
-                    <a class="btn btn-lg btn-primary w-100 lift mb-2" href="./sandbox-profile-sandbox-company.html">
+                    <a class="btn btn-lg btn-primary w-100 mb-2" href="./sandbox-profile-sandbox-company.html">
                       Go to profile list
                     </a>
                     <a class="btn btn-lg btn-link w-100" href="sandbox-profile-sandbox-person-detail-company.html">
@@ -733,36 +738,45 @@
     
             <form>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Full Name</label>
-                <input type="email" placeholder="David King" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label">Company Name</label>
+                <input type="text" placeholder="Microsoft" class="form-control" id="exampleInput" aria-describedby="emailHelp">
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Followers</label>
-                <input type="email" placeholder="567,891" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label">LinkedIn</label>
+                <input type="text" placeholder="linkedin.com/company/microsoft" class="form-control" id="exampleInputFollowers" aria-describedby="emailHelp">
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Company</label>
-                <input type="email" placeholder="IBM" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputCompanyCreate" class="form-label">Employees</label>
+                <input type="text" placeholder="181,000" class="form-control" id="exampleInputCompanyCreate" aria-describedby="emailHelp">
+                <ul class="list-group suggestions" id="companySuggestionsCreate"></ul>
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Job Title</label>
-                <input type="email" placeholder="Software Engineer" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label">Induestries</label>
+                <input type="text" placeholder="Technology, Cloud Computing, Enterprise Software, Gaming" class="form-control" id="exampleInput" aria-describedby="emailHelp">
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                <input type="email" placeholder="+1 555 123 1234" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label">Revenue</label>
+                <input type="text" placeholder="$64.5B" class="form-control" id="exampleInput" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Company Type</label>
+                <input type="text" placeholder="Public Company" class="form-control" id="exampleInput" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Company Location</label>
+                <input type="text" placeholder="Redmond, Washington, USA" class="form-control" id="exampleInput" aria-describedby="emailHelp">
               </div>
               <div class="mb-4">
-                <label for="exampleInputEmail1" class="form-label">Personal Email</label>
-                <input type="email" placeholder="davidking@ibm.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
+                <label for="exampleInputEmail1" class="form-label">Company Email</label>
+                <input type="email" placeholder="support@microsoft.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>     
 
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
                 <label class="form-check-label" for="flexCheckDefault">
                   Own this profile
                 </label>
-              </div>              
+              </div>                            
 
             </form>
     
@@ -792,7 +806,14 @@
             <div class="row justify-content-center pb-md-5">
 
               <div class="col-12 col-md-10 text-center mb-3">
-                <i class="neu-edit-profile text-success display-1"></i>
+                <div class="avatar avatar-lg mb-2">
+                  <div class="avatar-title fs-lg bg-success rounded-circle text-primary">
+                    <svg id="a" xmlns="http://www.w3.org/2000/svg" width="26" viewBox="0 0 20 17" fill="white">
+                      <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                      <path d="m19.66,10.92l-1.62-1.62c-.25-.25-.66-.25-.92,0l-4.06,4.06c-.07.07-.12.16-.16.25l-.81,2.44c-.11.34.07.71.41.82.07.02.14.03.2.03.07,0,.14-.01.21-.03l2.44-.81c.1-.03.18-.09.25-.16l4.06-4.06c.25-.25.25-.66,0-.92Zm-4.87,3.95l-1.06.35.35-1.06,3.49-3.49.71.71-3.49,3.49Z" stroke-width="0"/>
+                    </svg>
+                  </div>
+                </div>
 
                 <h1 class="fw-bold mb-3 mt-4">
                   Profile edited!
@@ -808,10 +829,10 @@
 
                 <div class="row align-items-center justify-content-center mt-3">
 
-                    <a class="btn btn-lg btn-primary w-100 lift mb-2" href="./sandbox-profile-sandbox.html">
+                    <a class="btn btn-lg btn-primary w-100 mb-2" href="./sandbox-profile-sandbox-company.html">
                       Go to profile list
                     </a>
-                    <a class="btn btn-lg btn-link w-100" href="sandbox-profile-sandbox-person-detail.html">
+                    <a class="btn btn-lg btn-link w-100" href="sandbox-profile-sandbox-company-detail.html">
                       Go to profile details
                     </a>
 
@@ -842,7 +863,11 @@
             <div class="row justify-content-center pb-md-5">
 
               <div class="col-12 col-md-10 text-center mb-3">
-                <i class="neu-add-group text-success display-1"></i>
+                <div class="avatar avatar-lg mb-2">
+                  <div class="avatar-title fs-lg bg-success rounded-circle text-primary">
+                    <i class="neu-copy text-white display-4 mt-1"></i>
+                  </div>
+                </div>
 
                 <h1 class="fw-bold mb-3 mt-4">
                   Profile Copied!
@@ -858,10 +883,10 @@
 
                 <div class="row align-items-center justify-content-center mt-3">
 
-                    <a class="btn btn-lg btn-primary w-100 lift mb-2" href="sandbox-profile-sandbox.html">
+                    <a class="btn btn-lg btn-primary w-100 mb-2" href="sandbox-profile-sandbox-company.html">
                       Go to profile list
                     </a>
-                    <a class="btn btn-lg btn-link w-100" href="sandbox-profile-sandbox-person-detail.html">
+                    <a class="btn btn-lg btn-link w-100" href="sandbox-profile-sandbox-company-detail.html">
                       Go to profile details
                     </a>
 
@@ -892,7 +917,14 @@
             <div class="row justify-content-center pb-md-5">
 
               <div class="col-12 col-md-10 text-center mb-3">
-                <i class="neu-delete-profile text-danger display-1"></i>
+                <div class="avatar avatar-lg mb-2">
+                  <div class="avatar-title fs-lg bg-danger rounded-circle">
+                    <svg id="a" xmlns="http://www.w3.org/2000/svg" width="26" viewBox="0 0 20 17" fill="white">
+                      <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                      <path d="m18.73,16.55c-.3.3-.78.3-1.09,0l-1.63-1.63-1.63,1.63c-.3.3-.78.3-1.09,0s-.3-.78,0-1.09l1.63-1.63-1.63-1.63c-.3-.3-.3-.78,0-1.09s.78-.3,1.09,0l1.63,1.63,1.63-1.63c.3-.3.78-.3,1.09,0s.3.78,0,1.09l-1.63,1.63,1.63,1.63c.3.3.3.78,0,1.09Z" stroke-width="0"/>
+                    </svg>
+                  </div>
+                </div>
 
                 <h1 class="fw-bold mb-3 mt-4">
                   Delete profile?
@@ -908,10 +940,10 @@
 
                 <div class="row align-items-center justify-content-center mt-3">
 
-                    <button class="btn btn-lg btn-primary w-100 lift mb-3" data-bs-dismiss="modal" aria-label="Close">
+                    <button class="btn btn-lg btn-primary w-100 mb-3" data-bs-dismiss="modal" aria-label="Close">
                       No, don't delete this profile
                     </button>
-                    <button class="btn btn-lg btn-outline-danger w-100 lift" data-bs-toggle="modal" data-bs-target="#modalDeleteProfileSuccess">
+                    <button class="btn btn-lg btn-outline-danger w-100" data-bs-toggle="modal" data-bs-target="#modalDeleteProfileSuccess">
                       Yes, delete this profile
                     </button>
 
@@ -942,7 +974,14 @@
             <div class="row justify-content-center pb-md-5">
 
               <div class="col-12 col-md-10 text-center mb-3">
-                <i class="neu-delete-profile text-danger display-1"></i>
+                <div class="avatar avatar-lg mb-2">
+                  <div class="avatar-title fs-lg bg-danger rounded-circle">
+                    <svg id="a" xmlns="http://www.w3.org/2000/svg" width="26" viewBox="0 0 20 17" fill="white">
+                      <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                      <path d="m18.73,16.55c-.3.3-.78.3-1.09,0l-1.63-1.63-1.63,1.63c-.3.3-.78.3-1.09,0s-.3-.78,0-1.09l1.63-1.63-1.63-1.63c-.3-.3-.3-.78,0-1.09s.78-.3,1.09,0l1.63,1.63,1.63-1.63c.3-.3.78-.3,1.09,0s.3.78,0,1.09l-1.63,1.63,1.63,1.63c.3.3.3.78,0,1.09Z" stroke-width="0"/>
+                    </svg>
+                  </div>
+                </div>
 
                 <h1 class="fw-bold mb-3 mt-4">
                   Profile deleted!
@@ -958,7 +997,7 @@
 
                 <div class="row align-items-center justify-content-center mt-3">
 
-                    <button class="btn btn-lg btn-primary w-100 lift mb-3" data-bs-dismiss="modal" aria-label="Close">
+                    <button class="btn btn-lg btn-primary w-100 mb-3" data-bs-dismiss="modal" aria-label="Close">
                       Go to profile list
                     </button>
 
@@ -1027,7 +1066,7 @@
             <!-- NAVS-->
             <div class="col-12 mb-3">
               <div class="card card-body custom-rounded border py-3 ps-3">
-                <ul class="nav">
+                <ul class="nav ">
                   <li class="nav-item text-left text-md-center">
                     <a class="nav-link text-muted custom-link" href="sandbox-profile-sandbox.html"><i class="neu neu-user-2"></i>
                       Person profile</a>
@@ -1234,7 +1273,7 @@
 
                 </div>
             
-                <div class="btn btn-outline-primary btn-block lift mt-4"><i class="neu neu-search"></i> Search company profile
+                <div class="btn btn-outline-primary btn-block mt-4"><i class="neu neu-search"></i> Search company profile
                 </div>
               </div>
             
@@ -1287,7 +1326,7 @@
                     </thead>
                     <tbody class="fs-base">
                       <!-- 1 -->
-                      <tr class="align-middle">
+                      <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-company-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
                           <a class="d-flex custom-link text-black" href="prospector-companies-detail.html">
                             <div class="avatar avatar-xs">
@@ -1306,7 +1345,11 @@
                         <td class="align-middle">Redmond, Washington, USA</td>
                         <td class="align-middle">support@microsoft.com</td>
                         <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                          <button class="btn btn-sm btn-outline-secondary button-edit me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile">
+                            <svg id="a" xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 20 20" class="me-1 ms-1" fill="#6E84A3">
+                              <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                              <path d="m19.66,10.92l-1.62-1.62c-.25-.25-.66-.25-.92,0l-4.06,4.06c-.07.07-.12.16-.16.25l-.81,2.44c-.11.34.07.71.41.82.07.02.14.03.2.03.07,0,.14-.01.21-.03l2.44-.81c.1-.03.18-.09.25-.16l4.06-4.06c.25-.25.25-.66,0-.92Zm-4.87,3.95l-1.06.35.35-1.06,3.49-3.49.71.71-3.49,3.49Z" stroke-width="0"/>
+                            </svg>
                             Edit profile</button>
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
                             data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
@@ -1318,16 +1361,20 @@
                               <i class="fe fe-more-vertical"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                              <button class="dropdown-item text-danger hover-danger button-delete" type="submit" data-bs-toggle="modal"
                               data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
+                              <svg id="a" xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 20 20" class="me-1 ms-1" fill="#E63757">
+                                <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                                <path d="m18.73,16.55c-.3.3-.78.3-1.09,0l-1.63-1.63-1.63,1.63c-.3.3-.78.3-1.09,0s-.3-.78,0-1.09l1.63-1.63-1.63-1.63c-.3-.3-.3-.78,0-1.09s.78-.3,1.09,0l1.63,1.63,1.63-1.63c.3-.3.78-.3,1.09,0s.3.78,0,1.09l-1.63,1.63,1.63,1.63c.3.3.3.78,0,1.09Z" stroke-width="0"/>
+                               </svg>  
+                               Delete Profile
                               </button>
                             </div>
                           </div>
                         </td>
                       </tr>
                       <!-- 2 -->
-                      <tr class="align-middle">
+                      <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-company-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
                           <a class="d-flex custom-link text-black" href="prospector-companies-detail.html">
                             <div class="avatar avatar-xs">
@@ -1346,7 +1393,11 @@
                         <td class="align-middle">Seattle, Washington, USA</td>
                         <td class="align-middle">cs-reply@amazon.com</td>
                         <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                          <button class="btn btn-sm btn-outline-secondary button-edit me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile">
+                            <svg id="a" xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 20 20" class="me-1 ms-1" fill="#6E84A3">
+                              <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                              <path d="m19.66,10.92l-1.62-1.62c-.25-.25-.66-.25-.92,0l-4.06,4.06c-.07.07-.12.16-.16.25l-.81,2.44c-.11.34.07.71.41.82.07.02.14.03.2.03.07,0,.14-.01.21-.03l2.44-.81c.1-.03.18-.09.25-.16l4.06-4.06c.25-.25.25-.66,0-.92Zm-4.87,3.95l-1.06.35.35-1.06,3.49-3.49.71.71-3.49,3.49Z" stroke-width="0"/>
+                            </svg>
                             Edit profile</button>
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
                             data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
@@ -1358,16 +1409,20 @@
                               <i class="fe fe-more-vertical"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                              <button class="dropdown-item text-danger hover-danger button-delete" type="submit" data-bs-toggle="modal"
                               data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
+                              <svg id="a" xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 20 20" class="me-1 ms-1" fill="#E63757">
+                                <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                                <path d="m18.73,16.55c-.3.3-.78.3-1.09,0l-1.63-1.63-1.63,1.63c-.3.3-.78.3-1.09,0s-.3-.78,0-1.09l1.63-1.63-1.63-1.63c-.3-.3-.3-.78,0-1.09s.78-.3,1.09,0l1.63,1.63,1.63-1.63c.3-.3.78-.3,1.09,0s.3.78,0,1.09l-1.63,1.63,1.63,1.63c.3.3.3.78,0,1.09Z" stroke-width="0"/>
+                               </svg>  
+                               Delete Profile
                               </button>
                             </div>
                           </div>
                         </td>
                       </tr>            
                       <!-- 3 -->
-                      <tr class="align-middle">
+                      <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-company-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
                           <a class="d-flex custom-link text-black" href="prospector-companies-detail-locked.html">
                             <div class="avatar avatar-xs">
@@ -1386,7 +1441,11 @@
                         <td class="align-middle">San Francisco, California, USA</td>
                         <td class="align-middle">support@airbnb.com</td>
                         <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                          <button class="btn btn-sm btn-outline-secondary button-edit me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile">
+                            <svg id="a" xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 20 20" class="me-1 ms-1" fill="#6E84A3">
+                              <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                              <path d="m19.66,10.92l-1.62-1.62c-.25-.25-.66-.25-.92,0l-4.06,4.06c-.07.07-.12.16-.16.25l-.81,2.44c-.11.34.07.71.41.82.07.02.14.03.2.03.07,0,.14-.01.21-.03l2.44-.81c.1-.03.18-.09.25-.16l4.06-4.06c.25-.25.25-.66,0-.92Zm-4.87,3.95l-1.06.35.35-1.06,3.49-3.49.71.71-3.49,3.49Z" stroke-width="0"/>
+                            </svg>
                             Edit profile</button>
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
                             data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
@@ -1398,16 +1457,20 @@
                               <i class="fe fe-more-vertical"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                              <button class="dropdown-item text-danger hover-danger button-delete" type="submit" data-bs-toggle="modal"
                               data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
+                              <svg id="a" xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 20 20" class="me-1 ms-1" fill="#E63757">
+                                <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                                <path d="m18.73,16.55c-.3.3-.78.3-1.09,0l-1.63-1.63-1.63,1.63c-.3.3-.78.3-1.09,0s-.3-.78,0-1.09l1.63-1.63-1.63-1.63c-.3-.3-.3-.78,0-1.09s.78-.3,1.09,0l1.63,1.63,1.63-1.63c.3-.3.78-.3,1.09,0s.3.78,0,1.09l-1.63,1.63,1.63,1.63c.3.3.3.78,0,1.09Z" stroke-width="0"/>
+                               </svg>  
+                               Delete Profile
                               </button>
                             </div>
                           </div>
                         </td>
                       </tr>     
                       <!-- 4 -->
-                      <tr class="align-middle">
+                      <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-company-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
                           <a class="d-flex custom-link text-black">
                             <div class="avatar avatar-xs">
@@ -1426,7 +1489,11 @@
                         <td class="align-middle"> Stockholm, Sweden</td>
                         <td class="align-middle">support@spotify.com</td>
                         <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                          <button class="btn btn-sm btn-outline-secondary button-edit me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile">
+                            <svg id="a" xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 20 20" class="me-1 ms-1" fill="#6E84A3">
+                              <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                              <path d="m19.66,10.92l-1.62-1.62c-.25-.25-.66-.25-.92,0l-4.06,4.06c-.07.07-.12.16-.16.25l-.81,2.44c-.11.34.07.71.41.82.07.02.14.03.2.03.07,0,.14-.01.21-.03l2.44-.81c.1-.03.18-.09.25-.16l4.06-4.06c.25-.25.25-.66,0-.92Zm-4.87,3.95l-1.06.35.35-1.06,3.49-3.49.71.71-3.49,3.49Z" stroke-width="0"/>
+                            </svg>
                             Edit profile</button>
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
                             data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
@@ -1438,16 +1505,20 @@
                               <i class="fe fe-more-vertical"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                              <button class="dropdown-item text-danger hover-danger button-delete" type="submit" data-bs-toggle="modal"
                               data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
+                              <svg id="a" xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 20 20" class="me-1 ms-1" fill="#E63757">
+                                <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                                <path d="m18.73,16.55c-.3.3-.78.3-1.09,0l-1.63-1.63-1.63,1.63c-.3.3-.78.3-1.09,0s-.3-.78,0-1.09l1.63-1.63-1.63-1.63c-.3-.3-.3-.78,0-1.09s.78-.3,1.09,0l1.63,1.63,1.63-1.63c.3-.3.78-.3,1.09,0s.3.78,0,1.09l-1.63,1.63,1.63,1.63c.3.3.3.78,0,1.09Z" stroke-width="0"/>
+                               </svg>  
+                               Delete Profile
                               </button>
                             </div>
                           </div>
                         </td>
                       </tr>     
                       <!-- 5 -->
-                      <tr class="align-middle">
+                      <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-company-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
                           <a class="d-flex custom-link text-black" href="prospector-companies-detail.html">
                             <div class="avatar avatar-xs">
@@ -1466,7 +1537,11 @@
                         <td class="align-middle">Mountain View, California, USA</td>
                         <td class="align-middle">support@google.com</td>
                         <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                          <button class="btn btn-sm btn-outline-secondary button-edit me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile">
+                            <svg id="a" xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 20 20" class="me-1 ms-1" fill="#6E84A3">
+                              <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                              <path d="m19.66,10.92l-1.62-1.62c-.25-.25-.66-.25-.92,0l-4.06,4.06c-.07.07-.12.16-.16.25l-.81,2.44c-.11.34.07.71.41.82.07.02.14.03.2.03.07,0,.14-.01.21-.03l2.44-.81c.1-.03.18-.09.25-.16l4.06-4.06c.25-.25.25-.66,0-.92Zm-4.87,3.95l-1.06.35.35-1.06,3.49-3.49.71.71-3.49,3.49Z" stroke-width="0"/>
+                            </svg>
                             Edit profile</button>
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
                             data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
@@ -1478,16 +1553,20 @@
                               <i class="fe fe-more-vertical"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                              <button class="dropdown-item text-danger hover-danger button-delete" type="submit" data-bs-toggle="modal"
                               data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
+                              <svg id="a" xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 20 20" class="me-1 ms-1" fill="#E63757">
+                                <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                                <path d="m18.73,16.55c-.3.3-.78.3-1.09,0l-1.63-1.63-1.63,1.63c-.3.3-.78.3-1.09,0s-.3-.78,0-1.09l1.63-1.63-1.63-1.63c-.3-.3-.3-.78,0-1.09s.78-.3,1.09,0l1.63,1.63,1.63-1.63c.3-.3.78-.3,1.09,0s.3.78,0,1.09l-1.63,1.63,1.63,1.63c.3.3.3.78,0,1.09Z" stroke-width="0"/>
+                               </svg>  
+                               Delete Profile
                               </button>
                             </div>
                           </div>
                         </td>
                       </tr>   
                       <!-- 6 -->
-                      <tr class="align-middle">
+                      <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-company-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
                           <a class="d-flex custom-link text-black" href="prospector-companies-detail-locked.html">
                             <div class="avatar avatar-xs">
@@ -1506,7 +1585,11 @@
                         <td class="align-middle"> San Jose, California, USA</td>
                         <td class="align-middle">cs-reply@adobe.com</td>
                         <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                          <button class="btn btn-sm btn-outline-secondary button-edit me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile">
+                            <svg id="a" xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 20 20" class="me-1 ms-1" fill="#6E84A3">
+                              <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                              <path d="m19.66,10.92l-1.62-1.62c-.25-.25-.66-.25-.92,0l-4.06,4.06c-.07.07-.12.16-.16.25l-.81,2.44c-.11.34.07.71.41.82.07.02.14.03.2.03.07,0,.14-.01.21-.03l2.44-.81c.1-.03.18-.09.25-.16l4.06-4.06c.25-.25.25-.66,0-.92Zm-4.87,3.95l-1.06.35.35-1.06,3.49-3.49.71.71-3.49,3.49Z" stroke-width="0"/>
+                            </svg>
                             Edit profile</button>
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
                             data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
@@ -1518,16 +1601,20 @@
                               <i class="fe fe-more-vertical"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                              <button class="dropdown-item text-danger hover-danger button-delete" type="submit" data-bs-toggle="modal"
                               data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
+                              <svg id="a" xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 20 20" class="me-1 ms-1" fill="#E63757">
+                                <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                                <path d="m18.73,16.55c-.3.3-.78.3-1.09,0l-1.63-1.63-1.63,1.63c-.3.3-.78.3-1.09,0s-.3-.78,0-1.09l1.63-1.63-1.63-1.63c-.3-.3-.3-.78,0-1.09s.78-.3,1.09,0l1.63,1.63,1.63-1.63c.3-.3.78-.3,1.09,0s.3.78,0,1.09l-1.63,1.63,1.63,1.63c.3.3.3.78,0,1.09Z" stroke-width="0"/>
+                               </svg>  
+                               Delete Profile
                               </button>
                             </div>
                           </div>
                         </td>
                       </tr>                                
                       <!-- 7 -->
-                      <tr class="align-middle">
+                      <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-company-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
                           <a class="d-flex custom-link text-black" href="prospector-companies-detail-locked.html">
                             <div class="avatar avatar-xs">
@@ -1546,7 +1633,11 @@
                         <td class="align-middle">Armonk, New York, USA</td>
                         <td class="align-middle">support@ibm.com</td>
                         <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                          <button class="btn btn-sm btn-outline-secondary button-edit me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile">
+                            <svg id="a" xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 20 20" class="me-1 ms-1" fill="#6E84A3">
+                              <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                              <path d="m19.66,10.92l-1.62-1.62c-.25-.25-.66-.25-.92,0l-4.06,4.06c-.07.07-.12.16-.16.25l-.81,2.44c-.11.34.07.71.41.82.07.02.14.03.2.03.07,0,.14-.01.21-.03l2.44-.81c.1-.03.18-.09.25-.16l4.06-4.06c.25-.25.25-.66,0-.92Zm-4.87,3.95l-1.06.35.35-1.06,3.49-3.49.71.71-3.49,3.49Z" stroke-width="0"/>
+                            </svg>
                             Edit profile</button>
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
                             data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
@@ -1558,16 +1649,20 @@
                               <i class="fe fe-more-vertical"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                              <button class="dropdown-item text-danger hover-danger button-delete" type="submit" data-bs-toggle="modal"
                               data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
+                              <svg id="a" xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 20 20" class="me-1 ms-1" fill="#E63757">
+                                <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                                <path d="m18.73,16.55c-.3.3-.78.3-1.09,0l-1.63-1.63-1.63,1.63c-.3.3-.78.3-1.09,0s-.3-.78,0-1.09l1.63-1.63-1.63-1.63c-.3-.3-.3-.78,0-1.09s.78-.3,1.09,0l1.63,1.63,1.63-1.63c.3-.3.78-.3,1.09,0s.3.78,0,1.09l-1.63,1.63,1.63,1.63c.3.3.3.78,0,1.09Z" stroke-width="0"/>
+                               </svg>  
+                               Delete Profile
                               </button>
                             </div>
                           </div>
                         </td>
                       </tr>     
                       <!-- 8 -->
-                      <tr class="align-middle">
+                      <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-company-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
                           <a class="d-flex custom-link text-black" href="prospector-companies-detail-locked.html">
                             <div class="avatar avatar-xs">
@@ -1586,7 +1681,11 @@
                         <td class="align-middle"> Los Gatos, California, USA</td>
                         <td class="align-middle">support@netflix.com</td>
                         <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                          <button class="btn btn-sm btn-outline-secondary button-edit me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile">
+                            <svg id="a" xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 20 20" class="me-1 ms-1" fill="#6E84A3">
+                              <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                              <path d="m19.66,10.92l-1.62-1.62c-.25-.25-.66-.25-.92,0l-4.06,4.06c-.07.07-.12.16-.16.25l-.81,2.44c-.11.34.07.71.41.82.07.02.14.03.2.03.07,0,.14-.01.21-.03l2.44-.81c.1-.03.18-.09.25-.16l4.06-4.06c.25-.25.25-.66,0-.92Zm-4.87,3.95l-1.06.35.35-1.06,3.49-3.49.71.71-3.49,3.49Z" stroke-width="0"/>
+                            </svg>
                             Edit profile</button>
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
                             data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
@@ -1598,16 +1697,20 @@
                               <i class="fe fe-more-vertical"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                              <button class="dropdown-item text-danger hover-danger button-delete" type="submit" data-bs-toggle="modal"
                               data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
+                              <svg id="a" xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 20 20" class="me-1 ms-1" fill="#E63757">
+                                <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                                <path d="m18.73,16.55c-.3.3-.78.3-1.09,0l-1.63-1.63-1.63,1.63c-.3.3-.78.3-1.09,0s-.3-.78,0-1.09l1.63-1.63-1.63-1.63c-.3-.3-.3-.78,0-1.09s.78-.3,1.09,0l1.63,1.63,1.63-1.63c.3-.3.78-.3,1.09,0s.3.78,0,1.09l-1.63,1.63,1.63,1.63c.3.3.3.78,0,1.09Z" stroke-width="0"/>
+                               </svg>  
+                               Delete Profile
                               </button>
                             </div>
                           </div>
                         </td>
                       </tr>    
                       <!-- 9 -->
-                      <tr class="align-middle">
+                      <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-company-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
                           <a class="d-flex custom-link text-black" href="prospector-companies-detail-locked.html">
                             <div class="avatar avatar-xs">
@@ -1627,7 +1730,11 @@
                         <td class="align-middle">Cupertino, California, USA</td>
                         <td class="align-middle">cs-reply@apple.com</td>
                         <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                          <button class="btn btn-sm btn-outline-secondary button-edit me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile">
+                            <svg id="a" xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 20 20" class="me-1 ms-1" fill="#6E84A3">
+                              <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                              <path d="m19.66,10.92l-1.62-1.62c-.25-.25-.66-.25-.92,0l-4.06,4.06c-.07.07-.12.16-.16.25l-.81,2.44c-.11.34.07.71.41.82.07.02.14.03.2.03.07,0,.14-.01.21-.03l2.44-.81c.1-.03.18-.09.25-.16l4.06-4.06c.25-.25.25-.66,0-.92Zm-4.87,3.95l-1.06.35.35-1.06,3.49-3.49.71.71-3.49,3.49Z" stroke-width="0"/>
+                            </svg>
                             Edit profile</button>
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
                             data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
@@ -1639,16 +1746,20 @@
                               <i class="fe fe-more-vertical"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                              <button class="dropdown-item text-danger hover-danger button-delete" type="submit" data-bs-toggle="modal"
                               data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
+                              <svg id="a" xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 20 20" class="me-1 ms-1" fill="#E63757">
+                                <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                                <path d="m18.73,16.55c-.3.3-.78.3-1.09,0l-1.63-1.63-1.63,1.63c-.3.3-.78.3-1.09,0s-.3-.78,0-1.09l1.63-1.63-1.63-1.63c-.3-.3-.3-.78,0-1.09s.78-.3,1.09,0l1.63,1.63,1.63-1.63c.3-.3.78-.3,1.09,0s.3.78,0,1.09l-1.63,1.63,1.63,1.63c.3.3.3.78,0,1.09Z" stroke-width="0"/>
+                               </svg>  
+                               Delete Profile
                               </button>
                             </div>
                           </div>
                         </td>
                       </tr>                                    
                       <!-- 10 -->
-                      <tr class="align-middle">
+                      <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-company-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
                           <a class="d-flex custom-link text-black" href="prospector-companies-detail-locked.html">
                             <div class="avatar avatar-xs">
@@ -1667,7 +1778,11 @@
                         <td class="align-middle"> Menlo Park, California, USA</td>
                         <td class="align-middle">support@meta.com</td>
                         <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                          <button class="btn btn-sm btn-outline-secondary button-edit me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile">
+                            <svg id="a" xmlns="http://www.w3.org/2000/svg" width="13" viewBox="0 0 20 20" class="me-1 ms-1" fill="#6E84A3">
+                              <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                              <path d="m19.66,10.92l-1.62-1.62c-.25-.25-.66-.25-.92,0l-4.06,4.06c-.07.07-.12.16-.16.25l-.81,2.44c-.11.34.07.71.41.82.07.02.14.03.2.03.07,0,.14-.01.21-.03l2.44-.81c.1-.03.18-.09.25-.16l4.06-4.06c.25-.25.25-.66,0-.92Zm-4.87,3.95l-1.06.35.35-1.06,3.49-3.49.71.71-3.49,3.49Z" stroke-width="0"/>
+                            </svg>
                             Edit profile</button>
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
                             data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
@@ -1679,9 +1794,13 @@
                               <i class="fe fe-more-vertical"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                              <button class="dropdown-item text-danger hover-danger button-delete" type="submit" data-bs-toggle="modal"
                               data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
+                              <svg id="a" xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 20 20" class="me-1 ms-1" fill="#E63757">
+                                <path d="m13.06,6.91v1.54h1.54v-1.54h-1.54Zm-3.07,0v1.54h1.54v-1.54h-1.54Zm0,3.07v1.54h1.54v-1.54h-1.54Zm3.07-3.07v1.54h1.54v-1.54h-1.54Zm-3.07,4.61h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Zm6.14-3.84h-6.91V.77c0-.43-.35-.77-.77-.77H.77c-.42,0-.77.34-.77.77v15.36c0,.42.35.77.77.77h9.99c.42,0,.77-.34.77-.77h0c0-.42-.34-.77-.77-.77h-1.54V6.14h6.14v1.58c0,.42.34.77.77.77h0c.42,0,.77-.34.77-.77v-2.34c0-.43-.35-.77-.77-.77ZM7.68,15.36H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm0-3.07H1.54v-1.54h6.14v1.54Zm5.38,5.38h1.54v-1.54h-1.54v1.54Zm-3.07,3.07h1.54v-1.54h-1.54v1.54Zm0-3.07h1.54v-1.54h-1.54v1.54Z" stroke-width="0"/>
+                                <path d="m18.73,16.55c-.3.3-.78.3-1.09,0l-1.63-1.63-1.63,1.63c-.3.3-.78.3-1.09,0s-.3-.78,0-1.09l1.63-1.63-1.63-1.63c-.3-.3-.3-.78,0-1.09s.78-.3,1.09,0l1.63,1.63,1.63-1.63c.3-.3.78-.3,1.09,0s.3.78,0,1.09l-1.63,1.63,1.63,1.63c.3.3.3.78,0,1.09Z" stroke-width="0"/>
+                               </svg>  
+                               Delete Profile
                               </button>
                             </div>
                           </div>
@@ -1739,14 +1858,38 @@
     <script src="./assets/js/theme.bundle.js"></script>
 
     <script>
-      document.getElementById("toggleSandbox").addEventListener("click", () => {
-        location.href = "./account-api.html";
+      const sandboxToggle = document.getElementById("toggleSandbox");
+      const sandboxToggleXS = document.getElementById("toggleSandboxXS");
+      let sandboxToggleState = true;
+      let sandboxToggleXSState = true;
+
+      sandboxToggle.addEventListener("click", () => {
+        sandboxToggleState = !sandboxToggleState;
+        sandboxToggleXSState = !sandboxToggleXSState;
+        if (sandboxToggleState) {
+          location.href = "./sandbox-profile-sandbox-company.html";
+          sandboxToggle.checked = true;
+          sandboxToggleXS.checked = true;
+        } else {
+          location.href = "./account-api.html";
+          sandboxToggle.checked = true;
+          sandboxToggleXS.checked = true;
+        }
       });
-    
-      document.getElementById("toggleSandboxXS").addEventListener("click", () => {
-        location.href = "./account-api.html";
+      sandboxToggleXS.addEventListener("click", () => {
+        sandboxToggleXSState = !sandboxToggleXSState;
+        sandboxToggleState = !sandboxToggleState;
+        if (sandboxToggleXSState) {
+          location.href = "./sandbox-profile-sandbox-company.html";
+          sandboxToggleXS.checked = true;
+          sandboxToggle.checked = true;
+        } else {
+          location.href = "./account-api.html";
+          sandboxToggleXS.checked = true;
+          sandboxToggle.checked = true;
+        }
       });
-    </script>
+    </script>    
 
   </body>
 </html>
