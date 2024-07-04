@@ -673,7 +673,11 @@
             <div class="row justify-content-center pb-md-5">
 
               <div class="col-12 col-md-10 text-center mb-3">
-                <i class="neu-add-profile text-success display-1"></i>
+                <div class="avatar avatar-lg mb-2">
+                  <div class="avatar-title fs-lg bg-success rounded-circle text-primary">
+                    <i class="neu-add-profile text-white display-4"></i>
+                  </div>
+                </div>
 
                 <h1 class="fw-bold mb-3 mt-4">
                   Profile Created!
@@ -689,7 +693,7 @@
 
                 <div class="row align-items-center justify-content-center mt-3">
 
-                    <a class="btn btn-lg btn-primary w-100 lift mb-2" href="./sandbox-profile-sandbox.html">
+                    <a class="btn btn-lg btn-primary w-100 mb-2" href="./sandbox-profile-sandbox.html">
                       Go to profile list
                     </a>
                     <a class="btn btn-lg btn-link w-100" href="sandbox-profile-sandbox-person-detail.html">
@@ -781,7 +785,11 @@
             <div class="row justify-content-center pb-md-5">
 
               <div class="col-12 col-md-10 text-center mb-3">
-                <i class="neu-edit-profile text-success display-1"></i>
+                <div class="avatar avatar-lg mb-2">
+                  <div class="avatar-title fs-lg bg-success rounded-circle text-primary">
+                    <i class="neu-edit-profile text-white display-4"></i>
+                  </div>
+                </div>
 
                 <h1 class="fw-bold mb-3 mt-4">
                   Profile edited!
@@ -797,7 +805,7 @@
 
                 <div class="row align-items-center justify-content-center mt-3">
 
-                    <a class="btn btn-lg btn-primary w-100 lift mb-2" href="./sandbox-profile-sandbox.html">
+                    <a class="btn btn-lg btn-primary w-100 mb-2" href="./sandbox-profile-sandbox.html">
                       Go to profile list
                     </a>
                     <a class="btn btn-lg btn-link w-100" href="sandbox-profile-sandbox-person-detail.html">
@@ -831,7 +839,11 @@
             <div class="row justify-content-center pb-md-5">
 
               <div class="col-12 col-md-10 text-center mb-3">
-                <i class="neu-add-group text-success display-1"></i>
+                <div class="avatar avatar-lg mb-2">
+                  <div class="avatar-title fs-lg bg-success rounded-circle text-primary">
+                    <i class="neu-copy text-white display-4 mt-1"></i>
+                  </div>
+                </div>
 
                 <h1 class="fw-bold mb-3 mt-4">
                   Profile Copied!
@@ -847,7 +859,7 @@
 
                 <div class="row align-items-center justify-content-center mt-3">
 
-                    <a class="btn btn-lg btn-primary w-100 lift mb-2" href="sandbox-profile-sandbox.html">
+                    <a class="btn btn-lg btn-primary w-100 mb-2" href="sandbox-profile-sandbox.html">
                       Go to profile list
                     </a>
                     <a class="btn btn-lg btn-link w-100" href="sandbox-profile-sandbox-person-detail.html">
@@ -881,7 +893,11 @@
             <div class="row justify-content-center pb-md-5">
 
               <div class="col-12 col-md-10 text-center mb-3">
-                <i class="neu-delete-profile text-danger display-1"></i>
+                <div class="avatar avatar-lg mb-2">
+                  <div class="avatar-title fs-lg bg-danger rounded-circle text-primary">
+                    <i class="neu-delete-profile text-white display-4"></i>
+                  </div>
+                </div>
 
                 <h1 class="fw-bold mb-3 mt-4">
                   Delete profile?
@@ -897,10 +913,10 @@
 
                 <div class="row align-items-center justify-content-center mt-3">
 
-                    <button class="btn btn-lg btn-primary w-100 lift mb-3" data-bs-dismiss="modal" aria-label="Close">
+                    <button class="btn btn-lg btn-primary w-100 mb-3" data-bs-dismiss="modal" aria-label="Close">
                       No, don't delete this profile
                     </button>
-                    <button class="btn btn-lg btn-outline-danger w-100 lift" data-bs-toggle="modal" data-bs-target="#modalDeleteProfileSuccess">
+                    <button class="btn btn-lg btn-outline-danger w-100" data-bs-toggle="modal" data-bs-target="#modalDeleteProfileSuccess">
                       Yes, delete this profile
                     </button>
 
@@ -931,7 +947,11 @@
             <div class="row justify-content-center pb-md-5">
 
               <div class="col-12 col-md-10 text-center mb-3">
-                <i class="neu-delete-profile text-danger display-1"></i>
+                <div class="avatar avatar-lg mb-2">
+                  <div class="avatar-title fs-lg bg-danger rounded-circle text-primary">
+                    <i class="neu-delete-profile text-white display-4"></i>
+                  </div>
+                </div>
 
                 <h1 class="fw-bold mb-3 mt-4">
                   Profile deleted!
@@ -947,7 +967,7 @@
 
                 <div class="row align-items-center justify-content-center mt-3">
 
-                    <button class="btn btn-lg btn-primary w-100 lift mb-3" data-bs-dismiss="modal" aria-label="Close">
+                    <button class="btn btn-lg btn-primary w-100 mb-3" data-bs-dismiss="modal" aria-label="Close">
                       Go to profile list
                     </button>
 
@@ -1367,7 +1387,7 @@
 
                 </div>
             
-                <div class="btn btn-outline-primary btn-block lift mt-4"><i class="neu neu-search"></i> Search person profile
+                <div class="btn btn-outline-primary btn-block mt-4"><i class="neu neu-search"></i> Search person profile
                 </div>
               </div>
             
@@ -1894,16 +1914,40 @@
     
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
-
-    <script>
-      document.getElementById("toggleSandbox").addEventListener("click", () => {
-        location.href = "./account-api.html";
-      });
     
-      document.getElementById("toggleSandboxXS").addEventListener("click", () => {
-        location.href = "./account-api.html";
+    <script>
+      const sandboxToggle = document.getElementById("toggleSandbox");
+      const sandboxToggleXS = document.getElementById("toggleSandboxXS");
+      let sandboxToggleState = true;
+      let sandboxToggleXSState = true;
+
+      sandboxToggle.addEventListener("click", () => {
+        sandboxToggleState = !sandboxToggleState;
+        sandboxToggleXSState = !sandboxToggleXSState;
+        if (sandboxToggleState) {
+          location.href = "./sandbox-profile-sandbox.html";
+          sandboxToggle.checked = true;
+          sandboxToggleXS.checked = true;
+        } else {
+          location.href = "./account-api.html";
+          sandboxToggle.checked = true;
+          sandboxToggleXS.checked = true;
+        }
       });
-    </script>
+      sandboxToggleXS.addEventListener("click", () => {
+        sandboxToggleXSState = !sandboxToggleXSState;
+        sandboxToggleState = !sandboxToggleState;
+        if (sandboxToggleXSState) {
+          location.href = "./sandbox-profile-sandbox.html";
+          sandboxToggleXS.checked = true;
+          sandboxToggle.checked = true;
+        } else {
+          location.href = "./account-api.html";
+          sandboxToggleXS.checked = true;
+          sandboxToggle.checked = true;
+        }
+      });
+    </script>    
 
   </body>
 </html>
