@@ -109,6 +109,28 @@ function renderCompanySuggestionsCreate(suggestions) {
     });
 }
 
+// Second input and suggestions list
+const companyInputCreate2 = document.getElementById('exampleInputCompanyCreate2');
+const suggestionsListCreate2 = document.getElementById('companySuggestionsCreate2');
+
+// Function to render company suggestions for the second input
+function renderCompanySuggestionsCreate2(suggestions) {
+    suggestionsListCreate2.innerHTML = '';
+    suggestions.forEach(suggestion => {
+        const listItem = document.createElement('li');
+        listItem.classList.add('list-group-item', 'd-flex', 'align-items-center');
+        const img = document.createElement('img');
+        img.src = suggestion.logo;
+        img.alt = suggestion.name;
+        img.style.width = '20px'; // Adjust size as needed
+        img.style.marginRight = '10px'; // Adjust margin as needed
+        const textNode = document.createTextNode(suggestion.name);
+        listItem.appendChild(img);
+        listItem.appendChild(textNode);
+        suggestionsListCreate2.appendChild(listItem);
+    });
+}
+
 // Event listener for input focus for the second input
 companyInputCreate.addEventListener('focus', function() {
     const userInput = companyInputCreate.value.toLowerCase();
