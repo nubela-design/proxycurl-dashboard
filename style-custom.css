@@ -109,14 +109,130 @@
   }
   
   .highlight-start {
-    border: 3px solid red !important;
+    position: relative;
+    z-index: 1050; /* Ensures the div is above the overlay */
   }
 
-  .custom-popover {
-    max-width: none !important; /* Allows the width to exceed the default maximum */
-    width: 550px !important; /* Set your desired width */
+  /* POPOVER */
+
+  @media (max-width: 374px) {
+    .custom-popover {
+      max-width: none !important;
+      /* Allows the width to exceed the default maximum */
+      width: 300px !important;
+      /* Set your desired width */
+      margin-bottom: 15px !important;
+    }
+  }
+
+  @media (min-width: 375px) and (max-width: 424px) {
+    .custom-popover {
+      max-width: none !important;
+      /* Allows the width to exceed the default maximum */
+      width: 355px !important;
+      /* Set your desired width */
+      margin-bottom: 15px !important;
+    }
+  }
+
+  @media (min-width: 425px) and (max-width: 767px) {
+    .custom-popover {
+      max-width: none !important;
+      /* Allows the width to exceed the default maximum */
+      width: 405px !important;
+      /* Set your desired width */
+      margin-bottom: 15px !important;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .custom-popover {
+      max-width: none !important;
+      /* Allows the width to exceed the default maximum */
+      width: 450px !important;
+      /* Set your desired width */
+      margin-bottom: 15px !important;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1199px) {
+    .custom-popover {
+      max-width: none !important;
+      /* Allows the width to exceed the default maximum */
+      width: 705px !important;
+      /* Set your desired width */
+      margin-bottom: 15px !important;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .custom-popover {
+      max-width: none !important;
+      /* Allows the width to exceed the default maximum */
+      width: 550px !important;
+      /* Set your desired width */
+    }
   }
 
   .popover-header {
-    line-height: 1.5rem !important;
+    line-height: 1.6rem !important;
+    font-weight: 100;
   }
+
+  /* Dark overlay */
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 24, 50, 0.47);
+    z-index: 1040;
+  }
+
+  .popover-code {
+    font-size: smaller !important;
+    line-height: 0rem !important;
+  }
+
+  .custom-pre {
+    line-height: 0.5rem !important;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1440px) {
+    .popover {
+      top: 310px !important;
+      /* Adjust as per your requirement */
+      left: 25% !important;
+      /* Adjust as per your requirement */
+      transform: translateX(-50%) !important;
+    }
+  }  
+
+  @media (min-width: 1441px) and (max-width: 1680px) {
+    .popover {
+      top: 310px !important;
+      /* Adjust as per your requirement */
+      left: 27% !important;
+      /* Adjust as per your requirement */
+      transform: translateX(-50%) !important;
+    }
+
+    .popover .popover-arrow {
+      position: fixed !important;
+      height: 12rem;
+    }
+  }
+
+  @media (min-width: 1681px) {
+    .popover {
+      top: 310px !important;
+      /* Adjust as per your requirement */
+      left: 29% !important;
+      /* Adjust as per your requirement */
+      transform: translateX(-50%) !important;
+    }
+  }    
+
+  /* POPOVER */
