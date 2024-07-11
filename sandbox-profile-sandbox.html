@@ -7,9 +7,6 @@
     
     <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon"/>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Map CSS -->
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
@@ -1399,18 +1396,7 @@
 
             <!-- RESULT-->
             <div class="col-lg-12 col-xl-8">
-              <div id="highlight-div" class="card card-body custom-rounded bg-white text-left shadow-light border highlight-start"
-              data-bs-toggle="popover"
-              data-bs-placement="top"
-              data-bs-custom-class="custom-popover"
-              title="Popover Title">
-   
-           <!-- Content to display inside popover -->
-           <div id="popover-content">
-             <p>This is the profile sandbox, we have generated profiles shown here that you can test with Proxycurl API in sandbox mode.</p>
-             <!-- Button inside popover content -->
-             <button id="inner-button" class="btn btn-danger">Click Me</button>
-           </div>
+              <div id="highlight-div" class="card card-body custom-rounded bg-white text-left shadow-light border highlight-start" data-bs-toggle="popover" data-bs-custom-class="custom-popover" title="This is the profile sandbox, we have generated profiles shown here that you can test with Proxycurl API in sandbox mode. You can create new profiles, clone existing profiles, modify profiles under your ownership, and test these changes via the Sandbox API.">
             
                 <div class="row align-items-center mb-4">
                   <div class="col-12 col-md-8 mb-4 mb-md-0">
@@ -1899,30 +1885,22 @@
       });
     </script>  
     
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
+        // Initialize the popover for the div
         var div = document.getElementById('highlight-div');
-    
-        // Initialize popover
         var popover = new bootstrap.Popover(div, {
-          trigger: 'manual', // Ensure popover is triggered manually
-          sanitize: false, // Disable sanitization to allow HTML content
-          html: true // Enable HTML in popover content
+          trigger: 'manual'
         });
     
-        // Set the popover content dynamically
-        div.setAttribute('data-bs-content', document.getElementById('popover-content').innerHTML);
+        // Show the popover
+        popover.show();
     
-        // Show the popover after a short delay to ensure it's initialized properly
-        setTimeout(function () {
-          popover.show();
-        }, 100); // Adjust delay as needed
-    
-        // Example event handler for button inside popover content
-        document.querySelector('#inner-button').addEventListener('click', function () {
-          alert('Button inside popover content clicked!');
-        });
+        // Optionally, remove the highlight and hide the popover after some time
+        setTimeout(function() {
+          div.classList.remove('highlight-start');
+          popover.hide();
+        }, 3000); // 3 seconds
       });
     </script>
 
