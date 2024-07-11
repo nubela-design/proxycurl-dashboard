@@ -214,13 +214,24 @@
         </div>
 
         <div class="navbar-user d-none d-md-flex border-bottom pb-4 mb-4">
-          <div class="btn-group w-100">
-            <button type="button" class="btn btn-dark dropdown-toggle d-inline-flex justify-content-between align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
-              Sandbox Mode <i class="fe fe-chevron-down"></i>
-            </button>
-            <ul class="dropdown-menu w-100">
-              <li><a class="dropdown-item" href="index.html">Production Mode</a></li>
-            </ul>
+          <div class="d-flex flex-row align-items-center w-100 w-100">
+            <div class="w-75">
+              <label
+                class="form-check-label h3 fw-normal text-gray-700 mb-0"
+                for="toggleSandbox"
+                >Sandbox Mode</label
+              >
+            </div>
+            <div class="w-25 text-end">
+              <div class="form-check form-switch d-inline-block ms-auto">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="toggleSandbox"
+                  checked
+                />
+              </div>
+            </div>
           </div>
         </div>
 
@@ -266,23 +277,26 @@
                 </label>
               </div>
             </div>
+            
             <div class="py-4 border-top border-bottom w-100">
-              <div class="btn-group w-100">
-                <button
-                  type="button"
-                  class="btn btn-dark dropdown-toggle d-inline-flex justify-content-between align-items-center"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Sandbox Mode <i class="fe fe-chevron-down"></i>
-                </button>
-                <ul class="dropdown-menu w-100">
-                  <li>
-                    <a class="dropdown-item" href="./index.html"
-                      >Production Mode</a
-                    >
-                  </li>
-                </ul>
+              <div class="d-flex flex-row align-items-center w-100 w-100">
+                <div class="w-75">
+                  <label
+                    class="form-check-label h3 fw-normal text-gray-700 mb-0"
+                    for="toggleSandboxXS"
+                    >Sandbox Mode</label
+                  >
+                </div>
+                <div class="w-25 text-end">
+                  <div class="form-check form-switch d-inline-block ms-auto">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="toggleSandboxXS"
+                      checked
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -659,7 +673,11 @@
             <div class="row justify-content-center pb-md-5">
 
               <div class="col-12 col-md-10 text-center mb-3">
-                <i class="neu-add-profile text-success display-1"></i>
+                <div class="avatar avatar-lg mb-2">
+                  <div class="avatar-title fs-lg bg-success rounded-circle text-primary">
+                    <i class="neu-add-profile text-white display-4"></i>
+                  </div>
+                </div>
 
                 <h1 class="fw-bold mb-3 mt-4">
                   Profile Created!
@@ -675,7 +693,7 @@
 
                 <div class="row align-items-center justify-content-center mt-3">
 
-                    <a class="btn btn-lg btn-primary w-100 lift mb-2" href="./sandbox-profile-sandbox.html">
+                    <a class="btn btn-lg btn-primary w-100 mb-2" href="./sandbox-profile-sandbox.html">
                       Go to profile list
                     </a>
                     <a class="btn btn-lg btn-link w-100" href="sandbox-profile-sandbox-person-detail.html">
@@ -716,8 +734,9 @@
                 <input type="email" placeholder="567,891" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Company</label>
-                <input type="email" placeholder="IBM" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputCompanyCreate2" class="form-label">Company</label>
+                <input type="text" placeholder="IBM" class="form-control" id="exampleInputCompanyCreate2" aria-describedby="emailHelp">
+                <ul class="list-group suggestions" id="companySuggestionsCreate2"></ul>
               </div>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Job Title</label>
@@ -767,7 +786,11 @@
             <div class="row justify-content-center pb-md-5">
 
               <div class="col-12 col-md-10 text-center mb-3">
-                <i class="neu-edit-profile text-success display-1"></i>
+                <div class="avatar avatar-lg mb-2">
+                  <div class="avatar-title fs-lg bg-success rounded-circle text-primary">
+                    <i class="neu-edit-profile text-white display-4"></i>
+                  </div>
+                </div>
 
                 <h1 class="fw-bold mb-3 mt-4">
                   Profile edited!
@@ -783,7 +806,7 @@
 
                 <div class="row align-items-center justify-content-center mt-3">
 
-                    <a class="btn btn-lg btn-primary w-100 lift mb-2" href="./sandbox-profile-sandbox.html">
+                    <a class="btn btn-lg btn-primary w-100 mb-2" href="./sandbox-profile-sandbox.html">
                       Go to profile list
                     </a>
                     <a class="btn btn-lg btn-link w-100" href="sandbox-profile-sandbox-person-detail.html">
@@ -817,7 +840,11 @@
             <div class="row justify-content-center pb-md-5">
 
               <div class="col-12 col-md-10 text-center mb-3">
-                <i class="neu-add-group text-success display-1"></i>
+                <div class="avatar avatar-lg mb-2">
+                  <div class="avatar-title fs-lg bg-success rounded-circle text-primary">
+                    <i class="neu-copy text-white display-4 mt-1"></i>
+                  </div>
+                </div>
 
                 <h1 class="fw-bold mb-3 mt-4">
                   Profile Copied!
@@ -833,7 +860,7 @@
 
                 <div class="row align-items-center justify-content-center mt-3">
 
-                    <a class="btn btn-lg btn-primary w-100 lift mb-2" href="sandbox-profile-sandbox.html">
+                    <a class="btn btn-lg btn-primary w-100 mb-2" href="sandbox-profile-sandbox.html">
                       Go to profile list
                     </a>
                     <a class="btn btn-lg btn-link w-100" href="sandbox-profile-sandbox-person-detail.html">
@@ -867,7 +894,11 @@
             <div class="row justify-content-center pb-md-5">
 
               <div class="col-12 col-md-10 text-center mb-3">
-                <i class="neu-delete-profile text-danger display-1"></i>
+                <div class="avatar avatar-lg mb-2">
+                  <div class="avatar-title fs-lg bg-danger rounded-circle text-primary">
+                    <i class="neu-delete-profile text-white display-4"></i>
+                  </div>
+                </div>
 
                 <h1 class="fw-bold mb-3 mt-4">
                   Delete profile?
@@ -883,10 +914,10 @@
 
                 <div class="row align-items-center justify-content-center mt-3">
 
-                    <button class="btn btn-lg btn-primary w-100 lift mb-3" data-bs-dismiss="modal" aria-label="Close">
+                    <button class="btn btn-lg btn-primary w-100 mb-3" data-bs-dismiss="modal" aria-label="Close">
                       No, don't delete this profile
                     </button>
-                    <button class="btn btn-lg btn-outline-danger w-100 lift" data-bs-toggle="modal" data-bs-target="#modalDeleteProfileSuccess">
+                    <button class="btn btn-lg btn-outline-danger w-100" data-bs-toggle="modal" data-bs-target="#modalDeleteProfileSuccess">
                       Yes, delete this profile
                     </button>
 
@@ -917,7 +948,11 @@
             <div class="row justify-content-center pb-md-5">
 
               <div class="col-12 col-md-10 text-center mb-3">
-                <i class="neu-delete-profile text-danger display-1"></i>
+                <div class="avatar avatar-lg mb-2">
+                  <div class="avatar-title fs-lg bg-danger rounded-circle text-primary">
+                    <i class="neu-delete-profile text-white display-4"></i>
+                  </div>
+                </div>
 
                 <h1 class="fw-bold mb-3 mt-4">
                   Profile deleted!
@@ -933,7 +968,7 @@
 
                 <div class="row align-items-center justify-content-center mt-3">
 
-                    <button class="btn btn-lg btn-primary w-100 lift mb-3" data-bs-dismiss="modal" aria-label="Close">
+                    <button class="btn btn-lg btn-primary w-100 mb-3" data-bs-dismiss="modal" aria-label="Close">
                       Go to profile list
                     </button>
 
@@ -966,9 +1001,9 @@
                     <p class="h3 text-dark mb-0">
                       You’re currently in <b>Sandbox mode</b>. To return to Production mode, please
                       <a
-                        href="index.html"
+                        href="javascript:void(0)"
                         class="fw-bold text-black text-decoration-underline"
-                        onclick="dismissAlertSandbox()"
+                        onclick="history.back()"
                         >click here</a
                       >.
                     </p>
@@ -1353,7 +1388,7 @@
 
                 </div>
             
-                <div class="btn btn-outline-primary btn-block lift mt-4"><i class="neu neu-search"></i> Search person profile
+                <div class="btn btn-outline-primary btn-block mt-4"><i class="neu neu-search"></i> Search person profile
                 </div>
               </div>
             
@@ -1396,7 +1431,7 @@
                     </thead>
                     <tbody class="fs-base">
                       <!-- 1 -->
-                      <tr class="align-middle">
+                      <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
                           <div class="d-flex">
                             <div class="avatar avatar-xs">
@@ -1408,7 +1443,7 @@
                         </td>
                         <td class="align-middle">567,891</td>
                         <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="prospector-companies-detail-locked.html">
+                          <a class="d-flex text-black custom-link" href="sandbox-profile-sandbox-company-detail.html">
                             <div class="avatar avatar-xs">
                               <img class="img mt-2" width="22" height="auto" src="assets/img/logo/IBM logo.svg" alt="company logo">
                             </div>
@@ -1418,7 +1453,7 @@
                         <td class="align-middle">Software Engineer</td>
                         <td class="align-middle">+1 555 123 1234</td>
                         <td class="align-middle">davidking@ibm.com</td>
-                        <td class="align-middle d-flex"> <!-- Add your button here -->
+                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
                             Edit profile</button>
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
@@ -1440,7 +1475,7 @@
                         </td>
                       </tr>
                       <!-- 2 -->
-                      <tr class="align-middle">
+                      <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
                           <div class="d-flex">
                             <div class="avatar avatar-xs">
@@ -1452,7 +1487,7 @@
                         </td>
                         <td class="align-middle">4,567,891</td>
                         <td class="align-middle">
-                          <a class="d-flex custom-link text-black" href="#!">
+                          <a class="d-flex text-black custom-link" href="sandbox-profile-sandbox-company-detail.html">
                             <div class="avatar avatar-xs">
                               <img class="img" width="22" height="auto" src="assets/img/logo/netflix.jpeg" alt="company logo">
                             </div>
@@ -1462,7 +1497,7 @@
                         <td class="align-middle">Marketing Specialist</td>
                         <td class="align-middle">+1 555 123 1234</td>
                         <td class="align-middle">kokorose@netflix.com</td>
-                        <td class="align-middle d-flex"> <!-- Add your button here -->
+                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
                             Edit profile</button>
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
@@ -1484,7 +1519,7 @@
                         </td>
                       </tr>
                       <!-- 3 -->
-                      <tr class="align-middle">
+                      <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
                           <div class="d-flex">
                             <div class="avatar avatar-xs">
@@ -1496,7 +1531,7 @@
                         </td>
                         <td class="align-middle">891,234</td>
                         <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="prospector-companies-detail-locked.html">
+                          <a class="d-flex text-black custom-link" href="sandbox-profile-sandbox-company-detail.html">
                             <div class="avatar avatar-xs">
                               <img class="img" width="22" height="auto" src="assets/img/logo/Google-logoicon.svg"
                                 alt="company logo">
@@ -1506,7 +1541,7 @@
                         <td class="align-middle">CTO</td>
                         <td class="align-middle">+1 555 123 1234</td>
                         <td class="align-middle">karimp@google.com</td>
-                        <td class="align-middle d-flex"> <!-- Add your button here -->
+                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
                             Edit profile</button>
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
@@ -1528,7 +1563,7 @@
                         </td>
                       </tr>
                       <!-- 4 -->
-                      <tr class="align-middle">
+                      <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
                           <div class="d-flex">
                             <div class="avatar avatar-xs">
@@ -1540,7 +1575,7 @@
                         </td>
                         <td class="align-middle">2,345,678</td>
                         <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="prospector-companies-detail-locked.html">
+                          <a class="d-flex text-black custom-link" href="sandbox-profile-sandbox-company-detail.html">
                             <div class="avatar avatar-xs">
                               <img class="img" width="22" height="auto" src="assets/img/logo/Spotify logo.svg" alt="company logo">
                             </div>
@@ -1549,7 +1584,7 @@
                         <td class="align-middle">CEO</td>
                         <td class="align-middle">+1 555 123 1234</td>
                         <td class="align-middle">jmary@spotify.com</td>
-                        <td class="align-middle d-flex"> <!-- Add your button here -->
+                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
                             Edit profile</button>
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
@@ -1571,7 +1606,7 @@
                         </td>
                       </tr>
                       <!-- 5 -->
-                      <tr class="align-middle">
+                      <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
                           <div class="d-flex">
                             <div class="avatar avatar-xs">
@@ -1583,7 +1618,7 @@
                         </td>
                         <td class="align-middle">912,345</td>
                         <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="prospector-companies-detail-locked.html">
+                          <a class="d-flex text-black custom-link" href="sandbox-profile-sandbox-company-detail.html">
                             <div class="avatar avatar-xs">
                               <img class="img" width="22" height="auto" src="assets/img/logo/Apple 14.svg" alt="company logo">
                             </div>
@@ -1592,7 +1627,7 @@
                         <td class="align-middle">Senior Designer</td>
                         <td class="align-middle">+1 555 123 1234</td>
                         <td class="align-middle">arofariy@apple.com</td>
-                        <td class="align-middle d-flex"> <!-- Add your button here -->
+                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
                             Edit profile</button>
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
@@ -1614,7 +1649,7 @@
                         </td>
                       </tr>
                       <!-- 1 -->
-                      <tr class="align-middle">
+                      <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
                           <div class="d-flex">
                             <div class="avatar avatar-xs">
@@ -1626,7 +1661,7 @@
                         </td>
                         <td class="align-middle">567,891</td>
                         <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="prospector-companies-detail-locked.html">
+                          <a class="d-flex text-black custom-link" href="sandbox-profile-sandbox-company-detail.html">
                             <div class="avatar avatar-xs">
                               <img class="img mt-2" width="22" height="auto" src="assets/img/logo/IBM logo.svg" alt="company logo">
                             </div>
@@ -1636,7 +1671,7 @@
                         <td class="align-middle">Software Engineer</td>
                         <td class="align-middle">+1 555 123 1234</td>
                         <td class="align-middle">davidking@ibm.com</td>
-                        <td class="align-middle d-flex"> <!-- Add your button here -->
+                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
                             Edit profile</button>
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
@@ -1658,7 +1693,7 @@
                         </td>
                       </tr>
                       <!-- 2 -->
-                      <tr class="align-middle">
+                      <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
                           <div class="d-flex">
                             <div class="avatar avatar-xs">
@@ -1670,7 +1705,7 @@
                         </td>
                         <td class="align-middle">4,567,891</td>
                         <td class="align-middle">
-                          <a class="d-flex custom-link text-black" href="#!">
+                          <a class="d-flex text-black custom-link" href="sandbox-profile-sandbox-company-detail.html">
                             <div class="avatar avatar-xs">
                               <img class="img" width="22" height="auto" src="assets/img/logo/netflix.jpeg" alt="company logo">
                             </div>
@@ -1680,7 +1715,7 @@
                         <td class="align-middle">Marketing Specialist</td>
                         <td class="align-middle">+1 555 123 1234</td>
                         <td class="align-middle">kokorose@netflix.com</td>
-                        <td class="align-middle d-flex"> <!-- Add your button here -->
+                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
                             Edit profile</button>
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
@@ -1702,7 +1737,7 @@
                         </td>
                       </tr>
                       <!-- 3 -->
-                      <tr class="align-middle">
+                      <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
                           <div class="d-flex">
                             <div class="avatar avatar-xs">
@@ -1714,7 +1749,7 @@
                         </td>
                         <td class="align-middle">891,234</td>
                         <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="prospector-companies-detail-locked.html">
+                          <a class="d-flex text-black custom-link" href="sandbox-profile-sandbox-company-detail.html">
                             <div class="avatar avatar-xs">
                               <img class="img" width="22" height="auto" src="assets/img/logo/Google-logoicon.svg"
                                 alt="company logo">
@@ -1724,7 +1759,7 @@
                         <td class="align-middle">CTO</td>
                         <td class="align-middle">+1 555 123 1234</td>
                         <td class="align-middle">karimp@google.com</td>
-                        <td class="align-middle d-flex"> <!-- Add your button here -->
+                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
                             Edit profile</button>
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
@@ -1746,7 +1781,7 @@
                         </td>
                       </tr>
                       <!-- 4 -->
-                      <tr class="align-middle">
+                      <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
                           <div class="d-flex">
                             <div class="avatar avatar-xs">
@@ -1758,7 +1793,7 @@
                         </td>
                         <td class="align-middle">2,345,678</td>
                         <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="prospector-companies-detail-locked.html">
+                          <a class="d-flex text-black custom-link" href="sandbox-profile-sandbox-company-detail.html">
                             <div class="avatar avatar-xs">
                               <img class="img" width="22" height="auto" src="assets/img/logo/Spotify logo.svg" alt="company logo">
                             </div>
@@ -1767,7 +1802,7 @@
                         <td class="align-middle">CEO</td>
                         <td class="align-middle">+1 555 123 1234</td>
                         <td class="align-middle">jmary@spotify.com</td>
-                        <td class="align-middle d-flex"> <!-- Add your button here -->
+                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
                             Edit profile</button>
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
@@ -1789,7 +1824,7 @@
                         </td>
                       </tr>
                       <!-- 5 -->
-                      <tr class="align-middle">
+                      <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
                           <div class="d-flex">
                             <div class="avatar avatar-xs">
@@ -1801,7 +1836,7 @@
                         </td>
                         <td class="align-middle">912,345</td>
                         <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="prospector-companies-detail-locked.html">
+                          <a class="d-flex text-black custom-link" href="sandbox-profile-sandbox-company-detail.html">
                             <div class="avatar avatar-xs">
                               <img class="img" width="22" height="auto" src="assets/img/logo/Apple 14.svg" alt="company logo">
                             </div>
@@ -1810,7 +1845,7 @@
                         <td class="align-middle">Senior Designer</td>
                         <td class="align-middle">+1 555 123 1234</td>
                         <td class="align-middle">arofariy@apple.com</td>
-                        <td class="align-middle d-flex"> <!-- Add your button here -->
+                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
                             Edit profile</button>
                           <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
@@ -1880,6 +1915,40 @@
     
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
+    
+    <script>
+      const sandboxToggle = document.getElementById("toggleSandbox");
+      const sandboxToggleXS = document.getElementById("toggleSandboxXS");
+      let sandboxToggleState = true;
+      let sandboxToggleXSState = true;
+
+      sandboxToggle.addEventListener("click", () => {
+        sandboxToggleState = !sandboxToggleState;
+        sandboxToggleXSState = !sandboxToggleXSState;
+        if (sandboxToggleState) {
+          location.href = "./sandbox-profile-sandbox.html";
+          sandboxToggle.checked = true;
+          sandboxToggleXS.checked = true;
+        } else {
+          location.href = "./account-api.html";
+          sandboxToggle.checked = true;
+          sandboxToggleXS.checked = true;
+        }
+      });
+      sandboxToggleXS.addEventListener("click", () => {
+        sandboxToggleXSState = !sandboxToggleXSState;
+        sandboxToggleState = !sandboxToggleState;
+        if (sandboxToggleXSState) {
+          location.href = "./sandbox-profile-sandbox.html";
+          sandboxToggleXS.checked = true;
+          sandboxToggle.checked = true;
+        } else {
+          location.href = "./account-api.html";
+          sandboxToggleXS.checked = true;
+          sandboxToggle.checked = true;
+        }
+      });
+    </script>    
 
   </body>
 </html>
