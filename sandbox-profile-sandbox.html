@@ -1396,7 +1396,25 @@
 
             <!-- RESULT-->
             <div class="col-lg-12 col-xl-8">
-              <div id="highlight-div" class="card card-body custom-rounded bg-white text-left shadow-light border highlight-start" data-bs-toggle="popover" data-bs-custom-class="custom-popover" title="This is the profile sandbox, we have generated profiles shown here that you can test with Proxycurl API in sandbox mode. You can create new profiles, clone existing profiles, modify profiles under your ownership, and test these changes via the Sandbox API.">
+              <!-- Dark overlay -->
+              <div class="overlay" id="darkOverlay"></div>
+              <div id="highlight-div" class="card card-body custom-rounded bg-white text-left shadow-light border highlight-start" 
+              data-bs-toggle="popover" 
+              data-bs-custom-class="custom-popover" 
+              data-bs-html="true" 
+              title="<p>This is the profile sandbox, we have generated profiles shown here that you can test with Proxycurl API in sandbox mode. You can create new profiles, clone existing profiles, modify profiles under your ownership, and test these changes via the <span class='fw-bold'>Sandbox API</span>.</p>
+              <p>Test out the Sandbox API with this curl command:</p>
+              <pre class='custom-pre bg-light p-2'><code class='popover-code'>                
+  curl \<br>
+   -G \<br>
+   -H 'Authorization: Bearer \${YOUR_API_KEY}' \<br>
+   'https://nubela.co/proxycurl/api/v2/linkedin' \<br>
+   --data-urlencode 'url=https://www.linkedin.com/in/williamhgates/' \<br>
+   --data-urlencode 'twitter_profile_id=include' \<br>
+   --data-urlencode 'facebook_profile_id=include' \<br>
+   --data-urlencode 'extra=include'
+  </code></pre>
+              <a id='sandbox-btn' class='btn btn-primary mt-2'>Try profile sandbox</a>">
             
                 <div class="row align-items-center mb-4">
                   <div class="col-12 col-md-8 mb-4 mb-md-0">
@@ -1847,9 +1865,34 @@
     
     <!-- Vendor JS -->
     <script src="./assets/js/vendor.bundle.js"></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>    
     
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          var highlightDiv = document.getElementById('highlight-div');
+          var popover = new bootstrap.Popover(highlightDiv, {
+              container: 'body',
+              html: true,
+              content: function () {
+                  return highlightDiv.getAttribute('title');
+              }
+          });
+  
+          // Function to close popover and reset highlight effect
+          function closePopoverAndReset() {
+              // Close popover if open
+              popover.hide();
+  
+              // Remove highlight effect
+              highlightDiv.classList.remove('highlight-start');
+          }
+      });
+  </script>
     
     <script>
       const sandboxToggle = document.getElementById("toggleSandbox");
@@ -1883,24 +1926,19 @@
           sandboxToggle.checked = true;
         }
       });
-    </script>  
-    
+    </script>
+
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        // Initialize the popover for the div
-        var div = document.getElementById('highlight-div');
-        var popover = new bootstrap.Popover(div, {
-          trigger: 'manual'
-        });
-    
-        // Show the popover
-        popover.show();
-    
-        // Optionally, remove the highlight and hide the popover after some time
-        setTimeout(function() {
-          div.classList.remove('highlight-start');
-          popover.hide();
-        }, 3000); // 3 seconds
+      // Show overlay and highlight div when the page loads
+      window.addEventListener('load', function () {
+        document.getElementById('darkOverlay').style.display = 'block';
+        document.getElementById('highlight-div').classList.add('highlight-start');
+      });
+
+      // Hide overlay and remove highlight when clicking outside the highlighted div
+      document.getElementById('darkOverlay').addEventListener('click', function () {
+        document.getElementById('darkOverlay').style.display = 'none';
+        document.getElementById('highlight-div').classList.remove('highlight-start');
       });
     </script>
 
