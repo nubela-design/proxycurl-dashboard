@@ -7,6 +7,9 @@
     
     <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon"/>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Map CSS -->
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
@@ -718,7 +721,7 @@
         <div class="modal-content">
     
           <div class="modal-header">
-            <h3 class="modal-title" id="modalTopupLabel">Edit Profile</h3>
+            <h3 class="modal-title" id="modalTopupLabel">Modify Profile</h3>
             <div class="me-3 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
           </div>
     
@@ -793,11 +796,11 @@
                 </div>
 
                 <h1 class="fw-bold mb-3 mt-4">
-                  Profile edited!
+                  Profile modified!
                 </h1>
 
                 <p class="text-gray-700 fs-lg">
-                  Your profile edit was saved successfully. You can check it on the profile list or view the profile details for more data.
+                  Your profile was modified successfully. You can check it on the profile list or view the profile details for more data.
                 </p>
               </div>
 
@@ -847,11 +850,11 @@
                 </div>
 
                 <h1 class="fw-bold mb-3 mt-4">
-                  Profile Copied!
+                  Profile Cloned!
                 </h1>
 
                 <p class="text-gray-700 fs-lg">
-                  David King's profile has been copied and added to your owned list.
+                  David King's profile has been cloned and added to your owned list.
                 </p>
               </div>
 
@@ -1382,7 +1385,7 @@
                   <div class="form-check mt-4 mb-2">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
                     <label class="form-check-label" for="flexCheckDefault">
-                      Owned profile
+                      List only profiles that I own
                     </label>
                   </div>   
 
@@ -1396,18 +1399,24 @@
 
             <!-- RESULT-->
             <div class="col-lg-12 col-xl-8">
-              <div class="card card-body custom-rounded bg-white text-left shadow-light border">
+              <div id="highlight-div" class="card card-body custom-rounded bg-white text-left shadow-light border highlight-start"
+              data-bs-toggle="popover"
+              data-bs-placement="top"
+              data-bs-custom-class="custom-popover"
+              title="Popover Title">
+   
+           <!-- Content to display inside popover -->
+           <div id="popover-content">
+             <p>This is the profile sandbox, we have generated profiles shown here that you can test with Proxycurl API in sandbox mode.</p>
+             <!-- Button inside popover content -->
+             <button id="inner-button" class="btn btn-danger">Click Me</button>
+           </div>
             
                 <div class="row align-items-center mb-4">
                   <div class="col-12 col-md-8 mb-4 mb-md-0">
                     <div class="d-lg-flex align-items-center">
                       <div class="mb-3 mb-lg-0 mt-2 mt-lg-0"><i class="neu neu-so-structure me-1 text-black"></i>234,567 <span
                           class="font-weight-normal text-muted">results found</span>
-                      </div>
-                      <div class="vr mx-3 my-1 bg-light d-none d-lg-block"></div>
-                      <div class="form-check form-switch">
-                        <input class="form-check-input small-toggle" type="checkbox" id="flexSwitchCheckDefault">
-                        <label class="form-check-label" for="flexSwitchCheckDefault">Show owned profile only</label>
                       </div>
                     </div>
                   </div>
@@ -1420,56 +1429,49 @@
                   <table class="table table-sm rounded-table table-hover table-nowrap">
                     <thead style="background-color: #F9FAFB;">
                       <tr class="text-muted small text-uppercase">
-                        <th scope="col">Full Name</th>
-                        <th scope="col">Followers</th>
-                        <th scope="col">Company</th>
-                        <th scope="col">Job Title</th>
-                        <th scope="col">Phone Number</th>
-                        <th scope="col">Personal Email</th>
-                        <th scope="col">Action</th>
+                        <th scope="col">Summary of profile</th>
+                        <th scope="col">LinkedIn Profile URL</th>
+                        <th scope="col">Twitter Profile URL</th>
+                        <th scope="col">Facebook Profile URL</th>
+                        <th scope="col" class="text-end">Action</th>
                       </tr>
                     </thead>
                     <tbody class="fs-base">
                       <!-- 1 -->
                       <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
-                          <div class="d-flex">
-                            <div class="avatar avatar-xs">
-                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-2.jpg"
-                                alt="person picture">
+                          <div class="d-flex align-items-center">
+                            <div class="avatar avatar-sm">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-2.jpg" alt="person picture">
                             </div>
-                            <div class="ms-3">David King</div>
+                            <div class="ms-3 text-gray-700"><span class="h4 text-black">David King</span>
+                              <div>Software Engineer at IBM</div>
+                            </div>
                           </div>
                         </td>
-                        <td class="align-middle">567,891</td>
-                        <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="sandbox-profile-sandbox-company-detail.html">
-                            <div class="avatar avatar-xs">
-                              <img class="img mt-2" width="22" height="auto" src="assets/img/logo/IBM logo.svg" alt="company logo">
-                            </div>
-                            <div class="ms-3">IBM</div>
-                          </a>
-                        </td>
-                        <td class="align-middle">Software Engineer</td>
-                        <td class="align-middle">+1 555 123 1234</td>
-                        <td class="align-middle">davidking@ibm.com</td>
-                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
-                            Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
-                            Copy profile</button>
-                          <!-- Dropdown -->
-                          <div class="dropdown ms-2">
-                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                              aria-expanded="false">
-                              <i class="fe fe-more-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
-                              data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
-                              </button>
+                        <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/in/davidking</td>
+                        <td class="align-middle"><i class="neu neu-br-twitter"></i> x.com/dking</td>
+                        <td class="align-middle"><i class="neu neu-br-fb-sq"></i> facebook.com/dking</td>
+                        <td class="align-middle" onclick="event.stopPropagation();"> <!-- Add your button here -->
+                          <div class="d-flex">
+                            <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                              Modify profile</button>
+                            <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
+                              Clone profile</button>
+                            <!-- Dropdown -->
+                            <div class="dropdown ms-2">
+                              <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="fe fe-more-vertical"></i>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                                  data-bs-target="#modalDeleteProfile">
+                                  <i class="neu neu-delete-profile"></i> Delete Profile
+                                </button>
+                              </div>
                             </div>
                           </div>
                         </td>
@@ -1477,395 +1479,342 @@
                       <!-- 2 -->
                       <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
-                          <div class="d-flex">
-                            <div class="avatar avatar-xs">
+                          <div class="d-flex align-items-center">
+                            <div class="avatar avatar-sm">
                               <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-5.jpg"
                                 alt="person picture">
                             </div>
-                            <div class="ms-3">Kokoro Rose</div>
-                          </div>
-                        </td>
-                        <td class="align-middle">4,567,891</td>
-                        <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="sandbox-profile-sandbox-company-detail.html">
-                            <div class="avatar avatar-xs">
-                              <img class="img" width="22" height="auto" src="assets/img/logo/netflix.jpeg" alt="company logo">
-                            </div>
-                            <div class="ms-3">Netflix</div>
-                          </a>
-                        </td>
-                        <td class="align-middle">Marketing Specialist</td>
-                        <td class="align-middle">+1 555 123 1234</td>
-                        <td class="align-middle">kokorose@netflix.com</td>
-                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
-                            Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
-                            Copy profile</button>
-                          <!-- Dropdown -->
-                          <div class="dropdown ms-2">
-                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                              aria-expanded="false">
-                              <i class="fe fe-more-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
-                              data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
-                              </button>
+                            <div class="ms-3 text-gray-700"><span class="h4 text-black">Kokoro Rose</span>
+                              <div>Marketing Specialist at Netflix</div>
                             </div>
                           </div>
                         </td>
-                      </tr>
+                        <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/in/kokorose</td>
+                        <td class="align-middle"><i class="neu neu-br-twitter"></i> x.com/kokorose</td>
+                        <td class="align-middle"><i class="neu neu-br-fb-sq"></i> facebook.com/kokorose</td>
+                        <td class="align-middle text-end" onclick="event.stopPropagation();">
+                          <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalCopyProfileSuccess">
+                              <i class="neu neu-copy"></i> Clone profile
+                            </button>
+                            <!-- Dropdown -->
+                            <div class="dropdown ms-2">
+                              <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fe fe-more-vertical"></i>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal" data-bs-target="#modalDeleteProfile">
+                                  <i class="neu neu-delete-profile"></i> Delete Profile
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>        
                       <!-- 3 -->
                       <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
-                          <div class="d-flex">
-                            <div class="avatar avatar-xs">
+                          <div class="d-flex align-items-center">
+                            <div class="avatar avatar-sm">
                               <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-3.jpg"
                                 alt="person picture">
                             </div>
-                            <div class="ms-3">Karim Paul</div>
-                          </div>
-                        </td>
-                        <td class="align-middle">891,234</td>
-                        <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="sandbox-profile-sandbox-company-detail.html">
-                            <div class="avatar avatar-xs">
-                              <img class="img" width="22" height="auto" src="assets/img/logo/Google-logoicon.svg"
-                                alt="company logo">
-                            </div>
-                            <div class="ms-3">Google</div>
-                        </td>
-                        <td class="align-middle">CTO</td>
-                        <td class="align-middle">+1 555 123 1234</td>
-                        <td class="align-middle">karimp@google.com</td>
-                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
-                            Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
-                            Copy profile</button>
-                          <!-- Dropdown -->
-                          <div class="dropdown ms-2">
-                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                              aria-expanded="false">
-                              <i class="fe fe-more-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
-                              data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
-                              </button>
+                            <div class="ms-3 text-gray-700"><span class="h4 text-black">Karim Paul</span>
+                              <div>CTO at Google</div>
                             </div>
                           </div>
                         </td>
-                      </tr>
+                        <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/in/kpaul</td>
+                        <td class="align-middle"><i class="neu neu-br-twitter"></i> x.com/kpaul</td>
+                        <td class="align-middle"><i class="neu neu-br-fb-sq"></i> facebook.com/kpaul</td>
+                        <td class="align-middle text-end" onclick="event.stopPropagation();">
+                          <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalCopyProfileSuccess">
+                              <i class="neu neu-copy"></i> Clone profile
+                            </button>
+                            <!-- Dropdown -->
+                            <div class="dropdown ms-2">
+                              <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fe fe-more-vertical"></i>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal" data-bs-target="#modalDeleteProfile">
+                                  <i class="neu neu-delete-profile"></i> Delete Profile
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr> 
                       <!-- 4 -->
                       <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
-                          <div class="d-flex">
-                            <div class="avatar avatar-xs">
+                          <div class="d-flex align-items-center">
+                            <div class="avatar avatar-sm">
                               <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-4.jpg"
                                 alt="person picture">
                             </div>
-                            <div class="ms-3">Jane Mary</div>
-                          </div>
-                        </td>
-                        <td class="align-middle">2,345,678</td>
-                        <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="sandbox-profile-sandbox-company-detail.html">
-                            <div class="avatar avatar-xs">
-                              <img class="img" width="22" height="auto" src="assets/img/logo/Spotify logo.svg" alt="company logo">
-                            </div>
-                            <div class="ms-3">Spotify</div>
-                        </td>
-                        <td class="align-middle">CEO</td>
-                        <td class="align-middle">+1 555 123 1234</td>
-                        <td class="align-middle">jmary@spotify.com</td>
-                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
-                            Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
-                            Copy profile</button>
-                          <!-- Dropdown -->
-                          <div class="dropdown ms-2">
-                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                              aria-expanded="false">
-                              <i class="fe fe-more-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
-                              data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
-                              </button>
+                            <div class="ms-3 text-gray-700"><span class="h4 text-black">Jane Mary</span>
+                              <div>CEO at Spotify</div>
                             </div>
                           </div>
                         </td>
-                      </tr>
+                        <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/in/jmary</td>
+                        <td class="align-middle"><i class="neu neu-br-twitter"></i> x.com/jmary</td>
+                        <td class="align-middle"><i class="neu neu-br-fb-sq"></i> facebook.com/jmary</td>
+                        <td class="align-middle" onclick="event.stopPropagation();"> <!-- Add your button here -->
+                          <div class="d-flex">
+                            <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                              Modify profile</button>
+                            <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
+                              Clone profile</button>
+                            <!-- Dropdown -->
+                            <div class="dropdown ms-2">
+                              <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="fe fe-more-vertical"></i>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                                  data-bs-target="#modalDeleteProfile">
+                                  <i class="neu neu-delete-profile"></i> Delete Profile
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>  
                       <!-- 5 -->
                       <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
-                          <div class="d-flex">
-                            <div class="avatar avatar-xs">
+                          <div class="d-flex align-items-center">
+                            <div class="avatar avatar-sm">
                               <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-6.jpg"
                                 alt="person picture">
                             </div>
-                            <div class="ms-3">Ariy Rof</div>
-                          </div>
-                        </td>
-                        <td class="align-middle">912,345</td>
-                        <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="sandbox-profile-sandbox-company-detail.html">
-                            <div class="avatar avatar-xs">
-                              <img class="img" width="22" height="auto" src="assets/img/logo/Apple 14.svg" alt="company logo">
-                            </div>
-                            <div class="ms-3">Apple</div>
-                        </td>
-                        <td class="align-middle">Senior Designer</td>
-                        <td class="align-middle">+1 555 123 1234</td>
-                        <td class="align-middle">arofariy@apple.com</td>
-                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
-                            Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
-                            Copy profile</button>
-                          <!-- Dropdown -->
-                          <div class="dropdown ms-2">
-                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                              aria-expanded="false">
-                              <i class="fe fe-more-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
-                              data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
-                              </button>
+                            <div class="ms-3 text-gray-700"><span class="h4 text-black">Ariy Rof</span>
+                              <div>Senior Designer at Apple</div>
                             </div>
                           </div>
                         </td>
-                      </tr>
-                      <!-- 1 -->
+                        <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/in/arofariy</td>
+                        <td class="align-middle"><i class="neu neu-br-twitter"></i> x.com/arofariy</td>
+                        <td class="align-middle"><i class="neu neu-br-fb-sq"></i> facebook.com/arofariy</td>
+                        <td class="align-middle" onclick="event.stopPropagation();"> <!-- Add your button here -->
+                          <div class="d-flex">
+                            <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                              Modify profile</button>
+                            <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
+                              Clone profile</button>
+                            <!-- Dropdown -->
+                            <div class="dropdown ms-2">
+                              <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="fe fe-more-vertical"></i>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                                  data-bs-target="#modalDeleteProfile">
+                                  <i class="neu neu-delete-profile"></i> Delete Profile
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>   
+                      <!-- 6 -->
                       <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
+                          <div class="d-flex align-items-center">
+                            <div class="avatar avatar-sm">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-2.jpg" alt="person picture">
+                            </div>
+                            <div class="ms-3 text-gray-700"><span class="h4 text-black">David King</span>
+                              <div>Software Engineer at IBM</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/in/davidking</td>
+                        <td class="align-middle"><i class="neu neu-br-twitter"></i> x.com/dking</td>
+                        <td class="align-middle"><i class="neu neu-br-fb-sq"></i> facebook.com/dking</td>
+                        <td class="align-middle" onclick="event.stopPropagation();"> <!-- Add your button here -->
                           <div class="d-flex">
-                            <div class="avatar avatar-xs">
-                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-2.jpg"
-                                alt="person picture">
-                            </div>
-                            <div class="ms-3">David King</div>
-                          </div>
-                        </td>
-                        <td class="align-middle">567,891</td>
-                        <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="sandbox-profile-sandbox-company-detail.html">
-                            <div class="avatar avatar-xs">
-                              <img class="img mt-2" width="22" height="auto" src="assets/img/logo/IBM logo.svg" alt="company logo">
-                            </div>
-                            <div class="ms-3">IBM</div>
-                          </a>
-                        </td>
-                        <td class="align-middle">Software Engineer</td>
-                        <td class="align-middle">+1 555 123 1234</td>
-                        <td class="align-middle">davidking@ibm.com</td>
-                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
-                            Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
-                            Copy profile</button>
-                          <!-- Dropdown -->
-                          <div class="dropdown ms-2">
-                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                              aria-expanded="false">
-                              <i class="fe fe-more-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
-                              data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
-                              </button>
+                            <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                              Modify profile</button>
+                            <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
+                              Clone profile</button>
+                            <!-- Dropdown -->
+                            <div class="dropdown ms-2">
+                              <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="fe fe-more-vertical"></i>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                                  data-bs-target="#modalDeleteProfile">
+                                  <i class="neu neu-delete-profile"></i> Delete Profile
+                                </button>
+                              </div>
                             </div>
                           </div>
                         </td>
-                      </tr>
-                      <!-- 2 -->
+                      </tr>     
+                      <!-- 7 -->
                       <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
-                          <div class="d-flex">
-                            <div class="avatar avatar-xs">
+                          <div class="d-flex align-items-center">
+                            <div class="avatar avatar-sm">
                               <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-5.jpg"
                                 alt="person picture">
                             </div>
-                            <div class="ms-3">Kokoro Rose</div>
-                          </div>
-                        </td>
-                        <td class="align-middle">4,567,891</td>
-                        <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="sandbox-profile-sandbox-company-detail.html">
-                            <div class="avatar avatar-xs">
-                              <img class="img" width="22" height="auto" src="assets/img/logo/netflix.jpeg" alt="company logo">
-                            </div>
-                            <div class="ms-3">Netflix</div>
-                          </a>
-                        </td>
-                        <td class="align-middle">Marketing Specialist</td>
-                        <td class="align-middle">+1 555 123 1234</td>
-                        <td class="align-middle">kokorose@netflix.com</td>
-                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
-                            Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
-                            Copy profile</button>
-                          <!-- Dropdown -->
-                          <div class="dropdown ms-2">
-                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                              aria-expanded="false">
-                              <i class="fe fe-more-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
-                              data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
-                              </button>
+                            <div class="ms-3 text-gray-700"><span class="h4 text-black">Kokoro Rose</span>
+                              <div>Marketing Specialist at Netflix</div>
                             </div>
                           </div>
                         </td>
-                      </tr>
-                      <!-- 3 -->
+                        <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/in/kokorose</td>
+                        <td class="align-middle"><i class="neu neu-br-twitter"></i> x.com/kokorose</td>
+                        <td class="align-middle"><i class="neu neu-br-fb-sq"></i> facebook.com/kokorose</td>
+                        <td class="align-middle text-end" onclick="event.stopPropagation();">
+                          <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalCopyProfileSuccess">
+                              <i class="neu neu-copy"></i> Clone profile
+                            </button>
+                            <!-- Dropdown -->
+                            <div class="dropdown ms-2">
+                              <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fe fe-more-vertical"></i>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal" data-bs-target="#modalDeleteProfile">
+                                  <i class="neu neu-delete-profile"></i> Delete Profile
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>          
+                      <!-- 8 -->
                       <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
-                          <div class="d-flex">
-                            <div class="avatar avatar-xs">
+                          <div class="d-flex align-items-center">
+                            <div class="avatar avatar-sm">
                               <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-3.jpg"
                                 alt="person picture">
                             </div>
-                            <div class="ms-3">Karim Paul</div>
-                          </div>
-                        </td>
-                        <td class="align-middle">891,234</td>
-                        <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="sandbox-profile-sandbox-company-detail.html">
-                            <div class="avatar avatar-xs">
-                              <img class="img" width="22" height="auto" src="assets/img/logo/Google-logoicon.svg"
-                                alt="company logo">
-                            </div>
-                            <div class="ms-3">Google</div>
-                        </td>
-                        <td class="align-middle">CTO</td>
-                        <td class="align-middle">+1 555 123 1234</td>
-                        <td class="align-middle">karimp@google.com</td>
-                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
-                            Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
-                            Copy profile</button>
-                          <!-- Dropdown -->
-                          <div class="dropdown ms-2">
-                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                              aria-expanded="false">
-                              <i class="fe fe-more-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
-                              data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
-                              </button>
+                            <div class="ms-3 text-gray-700"><span class="h4 text-black">Karim Paul</span>
+                              <div>CTO at Google</div>
                             </div>
                           </div>
                         </td>
-                      </tr>
-                      <!-- 4 -->
+                        <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/in/kpaul</td>
+                        <td class="align-middle"><i class="neu neu-br-twitter"></i> x.com/kpaul</td>
+                        <td class="align-middle"><i class="neu neu-br-fb-sq"></i> facebook.com/kpaul</td>
+                        <td class="align-middle text-end" onclick="event.stopPropagation();">
+                          <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalCopyProfileSuccess">
+                              <i class="neu neu-copy"></i> Clone profile
+                            </button>
+                            <!-- Dropdown -->
+                            <div class="dropdown ms-2">
+                              <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fe fe-more-vertical"></i>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal" data-bs-target="#modalDeleteProfile">
+                                  <i class="neu neu-delete-profile"></i> Delete Profile
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr> 
+                      <!-- 9 -->
                       <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
-                          <div class="d-flex">
-                            <div class="avatar avatar-xs">
+                          <div class="d-flex align-items-center">
+                            <div class="avatar avatar-sm">
                               <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-4.jpg"
                                 alt="person picture">
                             </div>
-                            <div class="ms-3">Jane Mary</div>
-                          </div>
-                        </td>
-                        <td class="align-middle">2,345,678</td>
-                        <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="sandbox-profile-sandbox-company-detail.html">
-                            <div class="avatar avatar-xs">
-                              <img class="img" width="22" height="auto" src="assets/img/logo/Spotify logo.svg" alt="company logo">
-                            </div>
-                            <div class="ms-3">Spotify</div>
-                        </td>
-                        <td class="align-middle">CEO</td>
-                        <td class="align-middle">+1 555 123 1234</td>
-                        <td class="align-middle">jmary@spotify.com</td>
-                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
-                            Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
-                            Copy profile</button>
-                          <!-- Dropdown -->
-                          <div class="dropdown ms-2">
-                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                              aria-expanded="false">
-                              <i class="fe fe-more-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
-                              data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
-                              </button>
+                            <div class="ms-3 text-gray-700"><span class="h4 text-black">Jane Mary</span>
+                              <div>CEO at Spotify</div>
                             </div>
                           </div>
                         </td>
-                      </tr>
-                      <!-- 5 -->
+                        <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/in/jmary</td>
+                        <td class="align-middle"><i class="neu neu-br-twitter"></i> x.com/jmary</td>
+                        <td class="align-middle"><i class="neu neu-br-fb-sq"></i> facebook.com/jmary</td>
+                        <td class="align-middle" onclick="event.stopPropagation();"> <!-- Add your button here -->
+                          <div class="d-flex">
+                            <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                              Modify profile</button>
+                            <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
+                              Clone profile</button>
+                            <!-- Dropdown -->
+                            <div class="dropdown ms-2">
+                              <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="fe fe-more-vertical"></i>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                                  data-bs-target="#modalDeleteProfile">
+                                  <i class="neu neu-delete-profile"></i> Delete Profile
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>   
+                      <!-- 10 -->
                       <tr class="align-middle" onclick="window.location.href='sandbox-profile-sandbox-detail.html'" style="cursor: pointer;">
                         <td class="align-middle">
-                          <div class="d-flex">
-                            <div class="avatar avatar-xs">
+                          <div class="d-flex align-items-center">
+                            <div class="avatar avatar-sm">
                               <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-6.jpg"
                                 alt="person picture">
                             </div>
-                            <div class="ms-3">Ariy Rof</div>
-                          </div>
-                        </td>
-                        <td class="align-middle">912,345</td>
-                        <td class="align-middle">
-                          <a class="d-flex text-black custom-link" href="sandbox-profile-sandbox-company-detail.html">
-                            <div class="avatar avatar-xs">
-                              <img class="img" width="22" height="auto" src="assets/img/logo/Apple 14.svg" alt="company logo">
-                            </div>
-                            <div class="ms-3">Apple</div>
-                        </td>
-                        <td class="align-middle">Senior Designer</td>
-                        <td class="align-middle">+1 555 123 1234</td>
-                        <td class="align-middle">arofariy@apple.com</td>
-                        <td class="align-middle d-flex" onclick="event.stopPropagation();"> <!-- Add your button here -->
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal" data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
-                            Edit profile</button>
-                          <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
-                            data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
-                            Copy profile</button>
-                          <!-- Dropdown -->
-                          <div class="dropdown ms-2">
-                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-                              aria-expanded="false">
-                              <i class="fe fe-more-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
-                              data-bs-target="#modalDeleteProfile">
-                                <i class="neu neu-delete-profile"></i> Delete Profile
-                              </button>
+                            <div class="ms-3 text-gray-700"><span class="h4 text-black">Ariy Rof</span>
+                              <div>Senior Designer at Apple</div>
                             </div>
                           </div>
                         </td>
-                      </tr>
+                        <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/in/arofariy</td>
+                        <td class="align-middle"><i class="neu neu-br-twitter"></i> x.com/arofariy</td>
+                        <td class="align-middle"><i class="neu neu-br-fb-sq"></i> facebook.com/arofariy</td>
+                        <td class="align-middle" onclick="event.stopPropagation();"> <!-- Add your button here -->
+                          <div class="d-flex">
+                            <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalEditProfile"><i class="neu neu-edit-profile"></i>
+                              Modify profile</button>
+                            <button class="btn btn-sm btn-outline-secondary me-1" type="submit" data-bs-toggle="modal"
+                              data-bs-target="#modalCopyProfileSuccess"><i class="neu neu-copy"></i>
+                              Clone profile</button>
+                            <!-- Dropdown -->
+                            <div class="dropdown ms-2">
+                              <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="fe fe-more-vertical"></i>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                                <button class="dropdown-item text-danger hover-danger" type="submit" data-bs-toggle="modal"
+                                  data-bs-target="#modalDeleteProfile">
+                                  <i class="neu neu-delete-profile"></i> Delete Profile
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>                                                                                                                      
                     </tbody>
                   </table>
                 </div>
@@ -1948,7 +1897,34 @@
           sandboxToggle.checked = true;
         }
       });
-    </script>    
+    </script>  
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var div = document.getElementById('highlight-div');
+    
+        // Initialize popover
+        var popover = new bootstrap.Popover(div, {
+          trigger: 'manual', // Ensure popover is triggered manually
+          sanitize: false, // Disable sanitization to allow HTML content
+          html: true // Enable HTML in popover content
+        });
+    
+        // Set the popover content dynamically
+        div.setAttribute('data-bs-content', document.getElementById('popover-content').innerHTML);
+    
+        // Show the popover after a short delay to ensure it's initialized properly
+        setTimeout(function () {
+          popover.show();
+        }, 100); // Adjust delay as needed
+    
+        // Example event handler for button inside popover content
+        document.querySelector('#inner-button').addEventListener('click', function () {
+          alert('Button inside popover content clicked!');
+        });
+      });
+    </script>
 
   </body>
 </html>

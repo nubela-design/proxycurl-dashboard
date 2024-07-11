@@ -107,3 +107,16 @@
   .button-delete:hover svg {
     fill:  #BB2D3B;
   }
+  
+  .highlight-start {
+    border: 3px solid red !important;
+  }
+
+  .custom-popover {
+    max-width: none !important; /* Allows the width to exceed the default maximum */
+    width: 550px !important; /* Set your desired width */
+  }
+
+  .popover-header {
+    line-height: 1.5rem !important;
+  }
