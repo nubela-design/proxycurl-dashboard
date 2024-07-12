@@ -27,6 +27,11 @@
   <!-- Import Jquery-->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -1712,16 +1717,29 @@
                               Clone profile</button>
                             <!-- Dropdown -->
                             <div class="dropdown ms-2">
-                              <a href="#" class="dropdown-ellipses dropdown-toggle" role="button"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <a href="javascript:void(0)" id="dropdownDeleteButton"
+                                class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 <i class="fe fe-more-vertical"></i>
                               </a>
-                              <div class="dropdown-menu dropdown-menu-end">
+                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownDeleteButton">
                                 <button class="dropdown-item text-danger hover-danger" type="submit"
                                   data-bs-toggle="modal" data-bs-target="#modalDeleteProfile">
                                   <i class="neu neu-delete-profile"></i> Delete Profile
                                 </button>
                               </div>
+                            </div>
+                            <div class="dropdown">
+                              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown link
+                              </a>
+
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
                             </div>
                           </div>
                         </td>
@@ -2125,6 +2143,7 @@
   </div> <!-- / .main-content -->
 
   <!-- JAVASCRIPT -->
+
   <!-- Map JS -->
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
@@ -2134,22 +2153,18 @@
   <!-- Vendor JS -->
   <script src="./assets/js/vendor.bundle.js"></script>
 
-  <!-- Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-
   <!-- Theme JS -->
-  <script src="./assets/js/theme.bundle.js"></script>
+  <!-- <script src="./assets/js/theme.bundle.js"></script> -->
 
   <script>
     // A $( document ).ready() block.
     $(document).ready(function () {
-      var popoverContent = $('#highlight-div');
-      var popover = new bootstrap.Popover(popoverContent[0]);
+      let popoverContent = $('#highlight-div');
+      let popover = new bootstrap.Popover(popoverContent[0]);
 
       // Show tooltip programmatically
       popover.show();
+      $('#darkOverlay').css("display", "block");
 
       $("#sandbox-btn").on("click", function () {
         popover.hide();
@@ -2223,16 +2238,16 @@
 
   <script>
     // Show overlay and highlight div when the page loads
-    window.addEventListener('load', function () {
-      document.getElementById('darkOverlay').style.display = 'block';
-      document.getElementById('highlight-div').classList.add('highlight-start');
-    });
+    // window.addEventListener('load', function () {
+    //   document.getElementById('darkOverlay').style.display = 'block';
+    //   document.getElementById('highlight-div').classList.add('highlight-start');
+    // });
 
     // Hide overlay and remove highlight when clicking outside the highlighted div
-    document.getElementById('darkOverlay').addEventListener('click', function () {
-      document.getElementById('darkOverlay').style.display = 'none';
-      document.getElementById('highlight-div').classList.remove('highlight-start');
-    });
+    // document.getElementById('darkOverlay').addEventListener('click', function () {
+    //   document.getElementById('darkOverlay').style.display = 'none';
+    //   document.getElementById('highlight-div').classList.remove('highlight-start');
+    // });
   </script>
 
 </body>
