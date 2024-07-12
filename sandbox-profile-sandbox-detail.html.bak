@@ -1,0 +1,3778 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A fully featured admin theme which can be used to build CRM, CMS, etc."
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Map CSS -->
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css"
+    />
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css"
+    />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+    <link rel="stylesheet" href="style-custom.css" />
+
+    <!-- Title -->
+    <title>Proxycurl - Profile Sandbox Details</title>
+
+    <style>
+      .readmore .readmore-content {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        line-height: 22px;
+        max-height: 66px;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        transition: 0.7s all;
+        -webkit-transition: 0.7s all;
+      }
+      .readmore.show .readmore-content {
+        max-height: max-content !important;
+        -webkit-line-clamp: unset !important;
+        transition: 0.7s all;
+        -webkit-transition: 0.7s all;
+      }
+      .readmore.show .readmore-btn {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVIGATION SANDBOX -->
+    <nav
+      class="navbar navbar-vertical fixed-start navbar-expand-md navbar-light"
+      id="sidebar"
+    >
+      <div class="container-fluid">
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#sidebarCollapse"
+          aria-controls="sidebarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="./sandbox-account-change-email.html">
+          <img
+            src="./assets/img/logo.svg"
+            class="navbar-brand-img mx-auto"
+            alt="..."
+          />
+        </a>
+
+        <!-- User (xs) -->
+        <div class="navbar-user d-md-none">
+          <div class="btn-group dropdown">
+            <button
+              type="button"
+              class="btn btn-outline-primary dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              example@nubela.co <i class="fe fe-chevron-down ms-3"></i>
+            </button>
+
+            <div
+              class="dropdown-menu dropdown-menu-end shadow-lg"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <h6
+                class="header-pretitle border-bottom text-black px-4 py-4 mb-0"
+              >
+                Switch team
+                <span class="badge fw-bold px-2 py-2 ms-1 bg-warning"
+                  >Coming soon</span
+                >
+              </h6>
+
+              <div class="pt-3 pb-3 px-4 border-bottom">
+                <a
+                  class="btn btn-light w-100 pt-3 pb-1"
+                  href="https://nubela.co/proxycurl/affiliate?utm_campaign=affiliate_marketing&utm_source=affiliate_link&utm_medium=affiliate&utm_content=internal_navigator_menu"
+                  target="_blank"
+                >
+                  <h5 class="text-primary">
+                    <i class="fe fe-gift pe-1"></i> Earn 30% for 2 years
+                    <i class="fe fe-arrow-up-right"></i>
+                  </h5>
+                </a>
+              </div>
+
+              <div class="pt-3 pb-3 px-4 border-bottom">
+                <form>
+                  <div class="form-floating form-group mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="Dragon Team"
+                    />
+                    <label for="floatingInput">Team name</label>
+                  </div>
+
+                  <button
+                    class="btn btn-outline-primary w-100"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="We are fleshing out this new dashboard iteratively. We are intending to include a Teams feature and it is coming soon!"
+                  >
+                    Create new team
+                  </button>
+                </form>
+              </div>
+
+              <div class="border py-3 px-4 bg-lighter">
+                <a href="#!" type="button">
+                  <div class="row align-items-center g-0">
+                    <div class="col-2">
+                      <i class="fe fe-check"></i>
+                    </div>
+
+                    <div class="col-10">
+                      <span class="text-primary small">
+                        example@nubela.co
+                      </span>
+
+                      <p class="text-black mb-0">Nubela</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="pt-3 px-4">
+                <a href="#!" type="button">
+                  <span class="text-primary small">
+                    yowassap@thenounproject.com
+                  </span>
+
+                  <p class="text-black">Black Ireng</p>
+                </a>
+              </div>
+
+              <div class="pt-3 px-4">
+                <a href="#!" type="button">
+                  <span class="text-primary small"> john@welut.com </span>
+
+                  <p class="text-black">Welut</p>
+                </a>
+              </div>
+
+              <div class="row align-items-center border-top">
+                <a
+                  class="text-center text-secondary nav-link mt-3 mb-1"
+                  href="index.html"
+                >
+                  <i class="fe fe-log-out"></i> Log out
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Credits (md)-->
+        <div class="navbar-user d-none d-md-flex pb-4">
+          <div class="d-block w-100">
+            <div class="d-block w-100">
+              <label class="mb-2 text-gray-700">
+                Credits
+                <code
+                  class="h2 text-black"
+                  style="font-family: Cerebri Sans, sans-serif"
+                >
+                  480</code
+                ><code
+                  class="small text-gray-700"
+                  style="font-family: Cerebri Sans, sans-serif"
+                  >/1000
+                </code>
+              </label>
+
+              <div class="progress">
+                <div
+                  class="progress-bar bg-secondary"
+                  role="progressbar"
+                  style="width: 48%"
+                  aria-valuenow="48"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  480/1000
+                </div>
+              </div>
+
+              <label class="small text-muted mt-2">
+                Auto-topup
+                <span
+                  class="badge bg-white text-primary border border-primary fw-bold"
+                  >Enabled</span
+                >
+              </label>
+            </div>
+
+            <!-- <div class="col-12">
+              <a
+                class="btn btn-outline-primary w-100 mt-3"
+                href="account-buy-credits.html"
+              >
+                Buy credits
+              </a>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="navbar-user d-none d-md-flex border-bottom pb-4 mb-4">
+          <div class="d-flex flex-row align-items-center w-100 w-100">
+            <div class="w-75">
+              <label
+                class="form-check-label h3 fw-normal text-gray-700 mb-0"
+                for="toggleSandbox"
+                >Sandbox Mode</label
+              >
+            </div>
+            <div class="w-25 text-end">
+              <div class="form-check form-switch d-inline-block ms-auto">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="toggleSandbox"
+                  checked
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="sidebarCollapse">
+          <!-- Credits (xs)-->
+          <div class="navbar-user d-md-none mb-4 flex-column">
+            <div class="row text-center text-md-left mt-3 mb-4 w-100">
+              <div class="col-12">
+                <label class="mb-2 text-gray-700">
+                  Credits
+                  <code
+                    class="h2 text-black"
+                    style="font-family: Cerebri Sans, sans-serif"
+                  >
+                    480</code
+                  ><code
+                    class="small text-gray-700"
+                    style="font-family: Cerebri Sans, sans-serif"
+                    >/1000
+                  </code>
+                </label>
+
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-secondary"
+                    role="progressbar"
+                    style="width: 48%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    480/1000
+                  </div>
+                </div>
+
+                <label class="small text-muted mt-2">
+                  Auto-topup
+                  <span
+                    class="badge bg-white text-primary border border-primary fw-bold"
+                    >Enabled</span
+                  >
+                </label>
+              </div>
+            </div>
+
+            <div class="py-4 border-top border-bottom w-100">
+              <div class="d-flex flex-row align-items-center w-100 w-100">
+                <div class="w-75">
+                  <label
+                    class="form-check-label h3 fw-normal text-gray-700 mb-0"
+                    for="toggleSandboxXS"
+                    >Sandbox Mode</label
+                  >
+                </div>
+                <div class="w-25 text-end">
+                  <div class="form-check form-switch d-inline-block ms-auto">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="toggleSandboxXS"
+                      checked
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#sidebarPages"
+                data-bs-toggle="collapse"
+                role="button"
+                aria-expanded="false"
+                aria-controls="sidebarPages"
+              >
+                <i class="fe fe-file"></i> Proxycurl API
+              </a>
+              <div class="collapse show" id="sidebarPages">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="./sandbox-account-api.html" class="nav-link">
+                      <span class="border-start border-2 ps-3">API Key</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./sandbox-account-work.html" class="nav-link">
+                      <span class="border-start border-2 ps-3"
+                        >Work Email Lookup Logs</span
+                      >
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="./sandbox-profile-sandbox.html"
+                      class="nav-link fw-bold"
+                    >
+                      <span
+                        class="border-start border-2 ps-3 text-primary border-primary"
+                        >Profile Sandbox</span
+                      >
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="https://nubela.co/proxycurl/docs#proxycurl-overview"
+                      class="nav-link"
+                    >
+                      <span class="border-start border-2 ps-3">Docs</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#sidebarPages"
+                data-bs-toggle="collapse"
+                role="button"
+                aria-expanded="true"
+                aria-controls="sidebarPages"
+              >
+                <i class="fe fe-box"></i> Addons
+              </a>
+              <div class="collapse" id="sidebarPages">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a
+                      href="https://sapiengraph.com"
+                      target="_blank"
+                      class="nav-link"
+                    >
+                      <span
+                        class="border-start border-2 ps-3 text-info border-info"
+                        >Sapiengraph - B2B Enrichment in Google Sheets ↗</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./sandbox-account-request-log.html"
+                role="button"
+              >
+                <i class="fe fe-activity"></i> Request Log
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#sidebarBilling"
+                data-bs-toggle="collapse"
+                role="button"
+                aria-expanded="false"
+                aria-controls="sidebarBilling"
+              >
+                <i class="fe fe-dollar-sign"></i> Billing
+              </a>
+              <div class="collapse show" id="sidebarBilling">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a
+                      href="./account-plans-and-payments.html"
+                      class="nav-link"
+                    >
+                      <span class="border-start border-2 ps-3"
+                        >Plan and payments</span
+                      >
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./account-buy-credits.html" class="nav-link">
+                      <span class="border-start border-2 ps-3"
+                        >Buy credits</span
+                      >
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./account-invoices.html" class="nav-link">
+                      <span class="border-start border-2 ps-3">Invoices</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li> -->
+            <li class="nav-item mb-4">
+              <a
+                class="nav-link"
+                href="#sidebarAccount"
+                data-bs-toggle="collapse"
+                role="button"
+                aria-expanded="true"
+                aria-controls="sidebarAccount"
+              >
+                <i class="fe fe-user"></i> Account
+              </a>
+              <div class="collapse show" id="sidebarAccount">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a
+                      href="./sandbox-account-change-email.html"
+                      class="nav-link"
+                    >
+                      <span class="border-start border-2 ps-3"
+                        >Change email</span
+                      >
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="./sandbox-account-change-password.html"
+                      class="nav-link"
+                    >
+                      <span class="border-start border-2 ps-3"
+                        >Change password</span
+                      >
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./sandbox-account-2fa.html" class="nav-link">
+                      <span class="border-start border-2 ps-3"
+                        >Two factor security</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- <li class="nav-item mb-4">
+              <a class="nav-link" href="account-team.html">
+                <i class="fe fe-users"></i> Upgrade to team account
+              </a>
+            </li> -->
+
+            <!-- old-logout
+                <hr class="my-4">
+    
+                <li class="nav-item">
+                  <a class="nav-link mb-3" href="index.html">
+                    <i class="fe fe-log-out"></i> Log out 
+                  </a>
+                </li>
+                -->
+          </ul>
+
+          <div class="mt-md-auto"></div>
+
+          <!-- User (md) -->
+          <div
+            class="navbar-user d-none d-md-flex pb-4 border-bottom mb-4"
+            id="sidebarUser"
+          >
+            <div class="btn-group dropup">
+              <button
+                type="button"
+                class="btn btn-outline-primary dropdown-toggle w-100"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                example@nubela.co <i class="fe fe-chevron-up ms-3"></i>
+              </button>
+
+              <div
+                class="dropdown-menu dropdown-menu-center shadow-lg"
+                aria-labelledby="dropdownMenuButton"
+              >
+                <h6
+                  class="header-pretitle border-bottom text-black px-4 py-4 mb-0"
+                >
+                  Switch team
+                  <span class="badge fw-bold px-2 py-2 ms-1 bg-warning"
+                    >Coming soon</span
+                  >
+                </h6>
+
+                <div class="pt-3 pb-3 px-4 border-bottom">
+                  <a
+                    class="btn btn-light w-100 pt-3 pb-1"
+                    href="https://nubela.co/proxycurl/affiliate?utm_campaign=affiliate_marketing&utm_source=affiliate_link&utm_medium=affiliate&utm_content=internal_navigator_menu"
+                    target="_blank"
+                  >
+                    <h5 class="text-primary">
+                      <i class="fe fe-gift pe-1"></i> Earn 30% for 2 years
+                      <i class="fe fe-arrow-up-right"></i>
+                    </h5>
+                  </a>
+                </div>
+
+                <div class="pt-3 pb-3 px-4 border-bottom">
+                  <form>
+                    <div class="form-floating form-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Dragon Team"
+                      />
+                      <label for="floatingInput">Team name</label>
+                    </div>
+
+                    <button
+                      class="btn btn-outline-primary w-100"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="We are fleshing out this new dashboard iteratively. We are intending to include a Teams feature and it is coming soon!"
+                    >
+                      Create new team
+                    </button>
+                  </form>
+                </div>
+
+                <div class="border pt-3 px-4 bg-lighter">
+                  <a href="#!" type="button">
+                    <div class="row align-items-center g-0">
+                      <div class="col-2">
+                        <i class="fe fe-check"></i>
+                      </div>
+
+                      <div class="col-10">
+                        <span class="text-primary small">
+                          example@nubela.co
+                        </span>
+
+                        <p class="text-black">Nubela</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="pt-3 px-4">
+                  <a href="#!" type="button">
+                    <span class="text-primary small">
+                      yowassap@blackireng666.com
+                    </span>
+
+                    <p class="text-black">Black Ireng</p>
+                  </a>
+                </div>
+
+                <div class="pt-3 px-4">
+                  <a href="#!" type="button">
+                    <span class="text-primary small"> john@welut.com </span>
+
+                    <p class="text-black">Welut</p>
+                  </a>
+                </div>
+
+                <div class="row align-items-center border-top">
+                  <a
+                    class="text-center text-secondary nav-link mt-3 mb-1"
+                    href="index.html"
+                  >
+                    <i class="fe fe-log-out"></i> Log out
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dashboard toggle-->
+          <div class="justify-content-between d-flex mb-3">
+            <div class="col-8">
+              <label
+                class="h3 fw-normal mb-md-1 mb-0 ms-1 text-gray-700"
+                for="dashboardSwitch"
+              >
+                Back to old dashboard
+              </label>
+            </div>
+            <div class="col-auto form-switch form-check mt-0 mt-md-2">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="dashboardSwitch"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- / .navbar-collapse -->
+      </div>
+    </nav>
+
+    <!--MODAL Create-->
+    <div
+      class="modal fade"
+      id="modalCreateProfile"
+      tabindex="-1"
+      aria-labelledby="modalCreateLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="modalTopupLabel">
+              Create Profile <span class="text-danger">*</span>
+            </h3>
+            <div class="me-3 mt-4">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  placeholder="David King"
+                  class="form-control"
+                  id="exampleInput"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Followers</label
+                >
+                <input
+                  type="text"
+                  placeholder="567,891"
+                  class="form-control"
+                  id="exampleInputFollowers"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputCompanyCreate" class="form-label"
+                  >Company</label
+                >
+                <input
+                  type="text"
+                  placeholder="IBM"
+                  class="form-control"
+                  id="exampleInputCompanyCreate"
+                  aria-describedby="emailHelp"
+                />
+                <ul
+                  class="list-group suggestions"
+                  id="companySuggestionsCreate"
+                ></ul>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Job Title</label
+                >
+                <input
+                  type="text"
+                  placeholder="Software Engineer"
+                  class="form-control"
+                  id="exampleInput"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Phone Number</label
+                >
+                <input
+                  type="text"
+                  placeholder="+1 555 123 1234"
+                  class="form-control"
+                  id="exampleInput"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Personal Email</label
+                >
+                <input
+                  type="email"
+                  placeholder="davidking@ibm.com"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            </form>
+
+            <p class="small text-gray-700">
+              <span class="text-danger">*</span> This profile will be
+              automatically added to the owned profile list.
+            </p>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary me-2"
+              data-bs-dismiss="modal"
+            >
+              Cancel create
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalCreateProfileSuccess"
+            >
+              Create profile
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--MODAL Create Success-->
+    <div
+      class="modal fade"
+      id="modalCreateProfileSuccess"
+      tabindex="-1"
+      aria-labelledby="modalCreateSuccessLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="">
+            <h3 class="modal-title" id="modalTopupLabel"></h3>
+            <div class="me-4 mt-4">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+
+          <div class="modal-body">
+            <div class="row justify-content-center pb-md-5">
+              <div class="col-12 col-md-10 text-center mb-3">
+                <i class="neu-add-profile text-success display-1"></i>
+
+                <h1 class="fw-bold mb-3 mt-4">Profile Created!</h1>
+
+                <p class="text-gray-700 fs-lg">
+                  You're successfully created and owned the profile. You can
+                  check it on the profile list or view the profile details.
+                </p>
+              </div>
+
+              <div class="col-12 col-md-10">
+                <div class="row align-items-center justify-content-center mt-3">
+                  <a
+                    class="btn btn-lg btn-primary w-100 lift mb-2"
+                    href="./sandbox-profile-sandbox.html"
+                  >
+                    Go to profile list
+                  </a>
+                  <a
+                    class="btn btn-lg btn-link w-100"
+                    href="sandbox-profile-sandbox-person-detail.html"
+                  >
+                    Go to profile details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--MODAL Edit-->
+    <div
+      class="modal fade"
+      id="modalEditProfile"
+      tabindex="-1"
+      aria-labelledby="modalEditLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="modalTopupLabel">Edit Profile</h3>
+            <div class="me-3 mt-4">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Full Name</label
+                >
+                <input
+                  type="email"
+                  placeholder="David King"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Followers</label
+                >
+                <input
+                  type="email"
+                  placeholder="567,891"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Company</label
+                >
+                <input
+                  type="email"
+                  placeholder="IBM"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Job Title</label
+                >
+                <input
+                  type="email"
+                  placeholder="Software Engineer"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Phone Number</label
+                >
+                <input
+                  type="email"
+                  placeholder="+1 555 123 1234"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Personal Email</label
+                >
+                <input
+                  type="email"
+                  placeholder="davidking@ibm.com"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Own this profile
+                </label>
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary me-2"
+              data-bs-dismiss="modal"
+            >
+              Discard edit
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalEditProfileSuccess"
+            >
+              Save edit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--MODAL Edit Success-->
+    <div
+      class="modal fade"
+      id="modalEditProfileSuccess"
+      tabindex="-1"
+      aria-labelledby="modalEditSuccessLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="">
+            <h3 class="modal-title" id="modalTopupLabel"></h3>
+            <div class="me-4 mt-4">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+
+          <div class="modal-body">
+            <div class="row justify-content-center pb-md-5">
+              <div class="col-12 col-md-10 text-center mb-3">
+                <i class="neu-edit-profile text-success display-1"></i>
+
+                <h1 class="fw-bold mb-3 mt-4">Profile edited!</h1>
+
+                <p class="text-gray-700 fs-lg">
+                  Your profile edit was saved successfully. You can check it on
+                  the profile list or view the profile details for more data.
+                </p>
+              </div>
+
+              <div class="col-12 col-md-10">
+                <div class="row align-items-center justify-content-center mt-3">
+                  <a
+                    class="btn btn-lg btn-primary w-100 lift mb-2"
+                    href="./sandbox-profile-sandbox.html"
+                  >
+                    Go to profile list
+                  </a>
+                  <a
+                    class="btn btn-lg btn-link w-100"
+                    href="sandbox-profile-sandbox-person-detail.html"
+                  >
+                    Go to profile details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--MODAL Copy Success-->
+    <div
+      class="modal fade"
+      id="modalCopyProfileSuccess"
+      tabindex="-1"
+      aria-labelledby="modalCopySuccessLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="">
+            <h3 class="modal-title" id="modalTopupLabel"></h3>
+            <div class="me-4 mt-4">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+
+          <div class="modal-body">
+            <div class="row justify-content-center pb-md-5">
+              <div class="col-12 col-md-10 text-center mb-3">
+                <i class="neu-add-group text-success display-1"></i>
+
+                <h1 class="fw-bold mb-3 mt-4">Profile Copied!</h1>
+
+                <p class="text-gray-700 fs-lg">
+                  David King's profile has been copied and added to your owned
+                  list.
+                </p>
+              </div>
+
+              <div class="col-12 col-md-10">
+                <div class="row align-items-center justify-content-center mt-3">
+                  <a
+                    class="btn btn-lg btn-primary w-100 lift mb-2"
+                    href="sandbox-profile-sandbox.html"
+                  >
+                    Go to profile list
+                  </a>
+                  <a
+                    class="btn btn-lg btn-link w-100"
+                    href="sandbox-profile-sandbox-person-detail.html"
+                  >
+                    Go to profile details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--MODAL Delete-->
+    <div
+      class="modal fade"
+      id="modalDeleteProfile"
+      tabindex="-1"
+      aria-labelledby="modalDeleteLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="">
+            <h3 class="modal-title" id="modalTopupLabel"></h3>
+            <div class="me-4 mt-4">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+
+          <div class="modal-body">
+            <div class="row justify-content-center pb-md-5">
+              <div class="col-12 col-md-10 text-center mb-3">
+                <i class="neu-delete-profile text-danger display-1"></i>
+
+                <h1 class="fw-bold mb-3 mt-4">Delete profile?</h1>
+
+                <p class="text-gray-700 fs-lg">
+                  David King's profile will be permanently deleted. Are you sure
+                  you want to delete this profile?
+                </p>
+              </div>
+
+              <div class="col-12 col-md-10">
+                <div class="row align-items-center justify-content-center mt-3">
+                  <button
+                    class="btn btn-lg btn-primary w-100 lift mb-3"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    No, don't delete this profile
+                  </button>
+                  <button
+                    class="btn btn-lg btn-outline-danger w-100 lift"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteProfileSuccess"
+                  >
+                    Yes, delete this profile
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--MODAL Delete Success-->
+    <div
+      class="modal fade"
+      id="modalDeleteProfileSuccess"
+      tabindex="-1"
+      aria-labelledby="modalDeleteLabelSuccess"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="">
+            <h3 class="modal-title" id="modalTopupLabel"></h3>
+            <div class="me-4 mt-4">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+
+          <div class="modal-body">
+            <div class="row justify-content-center pb-md-5">
+              <div class="col-12 col-md-10 text-center mb-3">
+                <i class="neu-delete-profile text-danger display-1"></i>
+
+                <h1 class="fw-bold mb-3 mt-4">Profile deleted!</h1>
+
+                <p class="text-gray-700 fs-lg">
+                  David King's profile deleted successfully.
+                </p>
+              </div>
+
+              <div class="col-12 col-md-10">
+                <div class="row align-items-center justify-content-center mt-3">
+                  <button
+                    class="btn btn-lg btn-primary w-100 lift mb-3"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    Go to profile list
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 main-content-sandbox">
+            <!--Sandbox Alert-->
+            <div class="card bg-warning mt-5">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-12">
+                    <p class="h3 text-dark mb-0">
+                      You’re currently in <b>Sandbox mode</b>. To return to
+                      Production mode, please
+                      <a
+                        href="javascript:void(0)"
+                        class="fw-bold text-black text-decoration-underline"
+                        onclick="history.back()"
+                        >click here</a
+                      >.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Header -->
+            <div class="header mt-md-5">
+              <div class="row align-items-center">
+                <div class="col">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle">Person</h6>
+
+                  <!-- Title -->
+                  <h1 class="header-title">Profile Sandbox Details</h1>
+                </div>
+              </div>
+              <!-- / .row -->
+            </div>
+
+            <div class="row">
+              <!-- Section-->
+              <div class="col-12 mb-3">
+                <div class="card mb-3">
+                  <!-- Dropdown -->
+                  <div class="dropdown card-dropdown">
+                    <a
+                      href="#"
+                      class="dropdown-ellipses dropdown-toggle text-white"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <i class="fe fe-more-vertical"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end">
+                      <a href="#!" class="dropdown-item text-primary">
+                        <i class="neu neu-edit-profile"></i>
+                        Edit profile
+                      </a>
+                      <a href="#!" class="dropdown-item text-dark">
+                        <i class="neu neu-copy"></i>
+                        Copy profile
+                      </a>
+                      <a href="#!" class="dropdown-item text-danger">
+                        <i class="neu neu-delete-profile"></i>
+                        Delete Profile
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- background_cover_image_url -->
+                  <img
+                    src="assets/img/covers/profile-cover-2.jpg"
+                    alt="..."
+                    class="card-img-top"
+                  />
+
+                  <!-- Body -->
+                  <div class="card-body text-center">
+                    <!-- profile_pic_url -->
+                    <div class="avatar avatar-xxl card-avatar card-avatar-top">
+                      <img
+                        src="assets/img/avatars/profiles/avatar-2.jpg"
+                        class="avatar-img rounded-circle border border-4 border-card"
+                        alt="..."
+                      />
+                    </div>
+
+                    <!-- full_name -->
+                    <div class="text-center mb-3">
+                      <!-- full_name key -->
+                      <h6 class="text-uppercase text-muted mb-1">full_name</h6>
+                      <!-- full_name value -->
+                      <h2 class="card-title text-center">John Marty</h2>
+                    </div>
+
+                    <!-- occupation -->
+                    <div class="text-center mb-3">
+                      <!-- occupation key -->
+                      <h6 class="text-uppercase text-muted mb-1">occupation</h6>
+                      <!-- occupation value -->
+                      <h3 class="lead text-center text-body-secondary mb-3">
+                        Co-Founder at Freedom Fund Real Estate
+                      </h3>
+                    </div>
+
+                    <!-- headline -->
+                    <div class="text-center mb-3">
+                      <!-- headline key -->
+                      <h6 class="text-uppercase text-muted mb-1">headline</h6>
+                      <!-- headline value -->
+                      <p class="small text-center text-body-secondary mb-3">
+                        Financial Freedom through Real Estate - LinkedIn Top
+                        Voice
+                      </p>
+                    </div>
+
+                    <!-- follower_count -->
+                    <div class="py-3 text-center">
+                      <!-- follower_count key -->
+                      <h6 class="text-uppercase text-muted mb-1">
+                        follower_count
+                      </h6>
+
+                      <!-- follower_count value -->
+                      <h2 class="mb-0">10.200</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- summary -->
+              <div class="col-12 mb-3">
+                <div class="card mb-3">
+                  <div class="card-body text-center">
+                    <!-- summary key -->
+                    <h6 class="text-uppercase text-muted mb-1">summary</h6>
+
+                    <div class="readmore readmore-summary">
+                      <!-- summary value -->
+                      <p
+                        class="readmore-content small text-center text-body-secondary mb-3"
+                      >
+                        Most people go through life lost, disengaged, and
+                        unhappy at work and in their lives - I\u0027m on a
+                        mission to solve that.\n\nI spent 10 years as the
+                        founder of Axxis Audio, an electronics company that grew
+                        to multi-million dollar sales, which I sold in 2012. At
+                        that time, I funneled my earnings into the creation of
+                        an Internet of Things company, but numerous factors lead
+                        to its demise after 2 hard fought years. \n\nAt 31, I
+                        was penny-less, had a baby on the way, and had zero job
+                        prospects (despite applying to 150 companies). My
+                        desperate situation led me to take a job at Best Buy for
+                        $12 an hour while reinventing myself through the
+                        completion of an MBA at the University of Colorado, and
+                        a 6-month software development boot camp. \n\nAfter
+                        graduation, I landed at American Express as a Senior
+                        Product Manager and then got poached by Amazon in 2017
+                        (because of my LinkedIn profile). My journey has led to
+                        a deep sense of perspective, humility, and purpose that
+                        I draw on to help others find clarity, meaning, and
+                        happiness in their careers and lives. \n\nCheck out my
+                        website for details on my Mindset Reset Podcast, Public
+                        Speaking, Consulting, or my free 40 page LinkedIn
+                        guide\n\nhttp://www.johnraphaelmarty.com/\n\nFAQ\u0027s\n\nQ:
+                        Can you speak at my Company, University, event or
+                        podcast?\nA: I\u0027d love to! I\u0027ve shared my
+                        message on the future of employment, breaking into big
+                        tech, and my personal story of reinventing myself and
+                        discovering my sense of purpose (and how you can
+                        too!).\n\n\u2611\ufe0f YouTube Channel #1 (John Marty) :
+                        http://www.youtube.com/c/JohnMarty-uncommon\n\u2611\ufe0f
+                        YouTube Channel #2 (Tech Careers for non-engineers:
+                        https://www.youtube.com/channel/UC900gMMPLwRGGXSTW1gdZHA\n\nFUN
+                        FACTS:\n\u2611\ufe0f I am an Avid cyclist and runner,
+                        and I just started learning to skateboard a
+                        half-pipe.\n\u2611\ufe0f Into the Enneagram? - I\u0027m
+                        a #3 (The Achiever)\n\nLETS CONNECT:\n\u2611\ufe0f
+                        Email: JohnRmarty@gmail.com (don\u0027t forget that
+                        \"R\"....The other guy gets my emails all the time)
+                      </p>
+                      <button
+                        class="readmore-btn h5 bg-transparent border-0 text-primary p-0"
+                        onclick="readMore('.readmore-summary')"
+                      >
+                        read more
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6 mb-3">
+                <!-- Pretitle Name & Gender -->
+                <h6 class="header-pretitle">Name & Gender</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- public_identifier -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- public_identifier key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              public_identifier
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- public_identifier value -->
+                            <small class="small text-body-secondary">
+                              johnrmarty
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- first_name -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- first_name key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              first_name
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- first_name value -->
+                            <small class="small text-body-secondary">
+                              John
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- last_name -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- last_name key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              last_name
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- last_name value -->
+                            <small class="small text-body-secondary">
+                              Marty
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- gender -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- gender key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              gender
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- gender value -->
+                            <small class="small text-body-secondary">
+                              male
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pretitle General -->
+                <h6 class="header-pretitle">General</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- connections -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- connections key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              connections
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- connections value -->
+                            <small class="small text-body-secondary">
+                              500
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- languages -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- languages key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              languages
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- languages value -->
+                            <small class="small text-body-secondary">
+                              ["English", "Chinese", "Japanese"]
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- interests -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- interests key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              interests
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- interests value -->
+                            <small class="small text-body-secondary">
+                              ["education", "health", "human rights"]
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- industry -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- industry key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              industry
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- industry value -->
+                            <small class="small text-body-secondary">
+                              government administration
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- recommendations -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- recommendations key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              recommendations
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- recommendations value -->
+                            <small class="small text-body-secondary">
+                              ["Professional and dedicated approach towards
+                              clients and collegues."]
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- personal_emails -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- personal_emails key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              personal_emails
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- personal_emails value -->
+                            <small class="small text-body-secondary">
+                              ["abc@gmail.com", "bcd@gmail.com",
+                              "cde@@outlook.com"]
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- personal_numbers -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- personal_numbers key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              personal_numbers
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- personal_numbers value -->
+                            <small class="small text-body-secondary">
+                              ["+6512345678", "+6285123450953", "+6502300340"]
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pretitle Education -->
+                <h6 class="header-pretitle">Education</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- starts_at -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- starts_at key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              starts_at
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- starts_at value -->
+                            <small class="small text-body-secondary">
+                              {"day": 1, "month": 1, "year": 2013}
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- ends_at -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- ends_at key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              ends_at
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- ends_at value -->
+                            <small class="small text-body-secondary">
+                              {"day": 31, "month": 12, "year": 2015}
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- field_of_study -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- field_of_study key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              field_of_study
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- field_of_study value -->
+                            <small class="small text-body-secondary">
+                              Finance + Economics
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- degree_name -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- degree_name key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              degree_name
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- degree_name value -->
+                            <small class="small text-body-secondary">
+                              Master of Business Administration (MBA)
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- school -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- school key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              school
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- school value -->
+                            <small class="small text-body-secondary">
+                              University of Colorado Denver
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- school_linkedin_profile_url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- school_linkedin_profile_url key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              school_linkedin_profile_url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- school_linkedin_profile_url value -->
+                            <small class="small text-body-secondary">
+                              https://www.linkedin.com/school/university-of-colorado-denver/
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- school_facebook_profile_url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- school_facebook_profile_url key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              school_facebook_profile_url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- school_facebook_profile_url value -->
+                            <small class="small text-body-secondary">
+                              null
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- description -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- description key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              description
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- description value -->
+                            <small class="small text-body-secondary">
+                              null
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- logo_url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- logo_url key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              logo_url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- logo_url value -->
+                            <small class="small text-body-secondary">
+                              https://media.licdn.com/dms/image/C560BAQGVi9eAHgWxFw/company-logo_100_100/0/1673448029676?e=2147483647\u0026v=beta\u0026t=NG6ttckXvnS2DX3abTfVACRY2E9Q1EcryNaJLRbE9OE
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- grade -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- grade key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              grade
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- grade value -->
+                            <small class="small text-body-secondary">
+                              null
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- activities_and_societies -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- activities_and_societies key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              activities_and_societies
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- activities_and_societies value -->
+                            <small class="small text-body-secondary">
+                              null
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pretitle Publication -->
+                <h6 class="header-pretitle">Publication</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- name -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- name key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              name
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- name value -->
+                            <small class="small text-body-secondary">
+                              Nobel Peace Prize
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- publisher -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- publisher key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              publisher
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- publisher value -->
+                            <small class="small text-body-secondary">
+                              Acme Corp
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- published_on -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- published_on key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              published_on
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- published_on value -->
+                            <small class="small text-body-secondary">
+                              {"day": 1, "month": 1, "year": 2023}
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- description -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- description key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              description
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- description value -->
+                            <small class="small text-body-secondary">
+                              \n Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit\n
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- url key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- url value -->
+                            <small class="small text-body-secondary">
+                              https://example.com
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pretitle Patent -->
+                <h6 class="header-pretitle">Patent</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- title -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- title key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              title
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- title value -->
+                            <small class="small text-body-secondary">
+                              The art of war
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- issuer -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- issuer key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              issuer
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- issuer value -->
+                            <small class="small text-body-secondary">
+                              Acme Corp
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- issued_on -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- issued_on key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              issued_on
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- issued_on value -->
+                            <small class="small text-body-secondary">
+                              {"day": 1, "month": 1, "year": 2023}
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- description -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- description key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              description
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- description value -->
+                            <small class="small text-body-secondary">
+                              \n Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit\n
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- application_number -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- application_number key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              application_number
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- application_number value -->
+                            <small class="small text-body-secondary">
+                              123
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- patent_number -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- patent_number key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              patent_number
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- patent_number value -->
+                            <small class="small text-body-secondary">
+                              123
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- url key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- url value -->
+                            <small class="small text-body-secondary">
+                              null
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pretitle Project -->
+                <h6 class="header-pretitle">Project</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- starts_at -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- starts_at key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              starts_at
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- starts_at value -->
+                            <small class="small text-body-secondary">
+                              {"day": 1, "month": 3, "year": 2015}
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- ends_at -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- ends_at key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              ends_at
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- ends_at value -->
+                            <small class="small text-body-secondary">
+                              null
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- title -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- title key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              title
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- title value -->
+                            <small class="small text-body-secondary">
+                              gMessenger
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- description -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- description key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              description
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <div class="readmore readmore-project">
+                              <!-- description value -->
+                              <small
+                                class="readmore-content small text-body-secondary"
+                              >
+                                gMessenger was built using Ruby on Rails, and
+                                the Bootstrap HTML, CSS, and JavaScript
+                                framework. It uses a Websocket-Rails integration
+                                to post a user\u0027s message content to the
+                                page in real time, with no page refresh
+                                required. gMessenger also includes custom
+                                authentication with three different permissions
+                                levels.
+                              </small>
+                              <button
+                                class="readmore-btn h5 bg-transparent border-0 text-primary p-0"
+                                onclick="readMore('.readmore-project')"
+                              >
+                                read more
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- url key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- url value -->
+                            <small class="small text-body-secondary">
+                              http://gmessenger.herokuapp.com/
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pretitle Certification -->
+                <h6 class="header-pretitle">Certification</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- starts_at -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- starts_at key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              starts_at
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- starts_at value -->
+                            <small class="small text-body-secondary">
+                              null
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- ends_at -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- ends_at key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              ends_at
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- ends_at value -->
+                            <small class="small text-body-secondary">
+                              null
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- name -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- name key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              name
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- name value -->
+                            <small class="small text-body-secondary">
+                              SAFe Agile Framework Practitioner - ( Scrum, XP,
+                              and Lean Practices in the SAFe Enterprise)
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- license_number -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- license_number key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              license_number
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- license_number value -->
+                            <small class="small text-body-secondary">
+                              null
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- display_source -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- display_source key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              display_source
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- display_source value -->
+                            <small class="small text-body-secondary">
+                              null
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- authority -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- authority key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              authority
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- authority value -->
+                            <small class="small text-body-secondary">
+                              Scaled Agile, Inc.
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- url key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- url value -->
+                            <small class="small text-body-secondary">
+                              null
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pretitle Activity -->
+                <h6 class="header-pretitle">Activity</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- title -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- title key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              title
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- title value -->
+                            <small class="small text-body-secondary">
+                              I am hiring!
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- link -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- link key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              link
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- link value -->
+                            <small class="small text-body-secondary">
+                              https://www.linkedin.com/feed/update/urn:li:activity:666
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- activity_status -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- activity_status key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              activity_status
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- activity_status value -->
+                            <small class="small text-body-secondary">
+                              posted
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pretitle Article -->
+                <h6 class="header-pretitle">Article</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- title -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- title key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              title
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- title value -->
+                            <small class="small text-body-secondary">
+                              Manufacturing opportunity
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- link -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- link key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              link
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- link value -->
+                            <small class="small text-body-secondary">
+                              https://www.linkedin.com/pulse/manufacturing-opportunity-bill-gates/
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- published_date -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- published_date key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              published_date
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- published_date value -->
+                            <small class="small text-body-secondary">
+                              {"day": 1, "month": 1, "year": 2023}
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- author -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- author key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              author
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- author value -->
+                            <small class="small text-body-secondary">
+                              Bill Gates
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- image_url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- author key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              image_url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- image_url value -->
+                            <small class="small text-body-secondary">
+                              https://media-exp1.licdn.com/dms/image/C4E12AQFftuPi0UiqWA/article-cover_image-shrink_720_1280/0/1574801149114?e=1640822400\u0026v=beta\u0026t=ZAe3ERmQCM8QHGmRPS2LJ-C76GD5PR7FBHMVL4Z6iVg
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pretitle PersonExtra -->
+                <h6 class="header-pretitle">PersonExtra</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- github_profile_id -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- github_profile_id key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              github_profile_id
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- github_profile_id value -->
+                            <small class="small text-body-secondary">
+                              github-username
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- facebook_profile_id -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- facebook_profile_id key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              facebook_profile_id
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- facebook_profile_id value -->
+                            <small class="small text-body-secondary">
+                              facebook-username
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- twitter_profile_id -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- twitter_profile_id key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              twitter_profile_id
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- twitter_profile_id value -->
+                            <small class="small text-body-secondary">
+                              twitter-username
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- website -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- website key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              website
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- website value -->
+                            <small class="small text-body-secondary">
+                              https://proxycurl.com
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6 mb-3">
+                <!-- Pretitle Image URL -->
+                <h6 class="header-pretitle">Image URL</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- profile_pic_url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- public_identifier key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              profile_pic_url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- public_identifier value -->
+                            <small class="small text-body-secondary">
+                              https://media.licdn.com/dms/image/C5603AQHaJSx0CBAUIA/profile-displayphoto-shrink_800_800/0/1558325759208?e=2147483647\u0026v=beta\u0026t=BluXpPg88xFnU2wMGLjuCUykSk_wKNdh8x3PI9wm6MI
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- background_cover_image_url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- public_identifier key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              background_cover_image_url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- public_identifier value -->
+                            <small class="small text-body-secondary">
+                              https://media.licdn.com/dms/image/C5616AQH9tkBTUhHfng/profile-displaybackgroundimage-shrink_200_800/0/1614530499015?e=2147483647\u0026v=beta\u0026t=VEoCyedtZulnAVYWT9BXfKHi5OFp8avElNjiz8kjSTU
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pretitle Address -->
+                <h6 class="header-pretitle">Address</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- country -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- country key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              country
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- country value -->
+                            <small class="small text-body-secondary">
+                              US
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- country_full_name -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- country_full_name key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              country_full_name
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- country_full_name value -->
+                            <small class="small text-body-secondary">
+                              United States of America
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- city -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- city key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              city
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- city value -->
+                            <small class="small text-body-secondary">
+                              Seattle
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- state -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- state key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              state
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- state value -->
+                            <small class="small text-body-secondary">
+                              Washington
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pretitle Experience -->
+                <h6 class="header-pretitle">Experience</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- starts_at -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- starts_at key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              starts_at
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- starts_at value -->
+                            <small class="small text-body-secondary">
+                              {"day": 1, "month": 8, "year": 2021}
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- ends_at -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- ends_at key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              ends_at
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- ends_at value -->
+                            <small class="small text-body-secondary">
+                              null
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- company -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- company key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              company
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- company value -->
+                            <small class="small text-body-secondary">
+                              Freedom Fund Real Estate
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- company_linkedin_profile_url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- company_linkedin_profile_url key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              company_linkedin_profile_url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- company_linkedin_profile_url value -->
+                            <small class="small text-body-secondary">
+                              https://www.linkedin.com/company/freedomfund
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- company_facebook_profile_url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- company_facebook_profile_url key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              company_facebook_profile_url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- company_facebook_profile_url value -->
+                            <small class="small text-body-secondary">
+                              null
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- title -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- title key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              title
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- title value -->
+                            <small class="small text-body-secondary">
+                              Co-Founder
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- location -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- location key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              location
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- location value -->
+                            <small class="small text-body-secondary">
+                              null
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- description -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- description key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              description
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <div class="readmore readmore-experience">
+                              <!-- description value -->
+                              <small
+                                class="readmore-content small text-body-secondary"
+                              >
+                                Our mission is to provide everyday people
+                                seeking financial freedom long before the age of
+                                65 with the ability to invest in high yield,
+                                short-term real estate investments that were
+                                only accessible in the past for a select few
+                                wealthy individuals. Each of our single family
+                                rehab projects require a minimum investment
+                                contribution of only $10K, we have simple terms,
+                                no multi-year hold periods, and no fees. With
+                                our unique model investors can log into our easy
+                                to use website, select the projects that they
+                                want to invest in, and get realtime updates on
+                                the status of their investments.\n\nWebsite:
+                                https://www.freedomfundinvestments.com/home
+                              </small>
+                              <button
+                                class="readmore-btn h5 bg-transparent border-0 text-primary p-0"
+                                onclick="readMore('.readmore-experience')"
+                              >
+                                read more
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- logo_url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- logo_url key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              logo_url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- logo_url value -->
+                            <small class="small text-body-secondary">
+                              https://media.licdn.com/dms/image/C560BAQEYxazZM_hXgQ/company-logo_100_100/0/1634934418976?e=2147483647\u0026v=beta\u0026t=wI0YdMmxIctkzvnKxRfuAbT8h5eok_DlUqEph68J37s
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pretitle AccomplishmentOrg -->
+                <h6 class="header-pretitle">AccomplishmentOrg</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- starts_at -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- starts_at key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              starts_at
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- starts_at value -->
+                            <small class="small text-body-secondary">
+                              {"day": 1, "month": 1, "year": 2012}
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- ends_at -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- ends_at key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              ends_at
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- ends_at value -->
+                            <small class="small text-body-secondary">
+                              {"day": 1, "month": 8, "year": 2016}
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- org_name -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- org_name key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              org_name
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- org_name value -->
+                            <small class="small text-body-secondary">
+                              Microsoft
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- title -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- title key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              title
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- title value -->
+                            <small class="small text-body-secondary">
+                              Software Developer
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- description -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- description key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              description
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- description value -->
+                            <small class="small text-body-secondary">
+                              null
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pretitle HonourAward -->
+                <h6 class="header-pretitle">HonourAward</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- title -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- title key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              title
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- title value -->
+                            <small class="small text-body-secondary">
+                              Nobel Peace Prize
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- issuer -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- issuer key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              issuer
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- issuer value -->
+                            <small class="small text-body-secondary">
+                              Acme Corp
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- issued_on -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- issued_on key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              issued_on
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- issued_on value -->
+                            <small class="small text-body-secondary">
+                              {"day": 1, "month": 1, "year": 2023}
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- description -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- description key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              description
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- description value -->
+                            <small class="small text-body-secondary">
+                              \n Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit\n
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pretitle Course -->
+                <h6 class="header-pretitle">Course</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- name -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- name key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              name
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- name value -->
+                            <small class="small text-body-secondary">
+                              The course about ABCs
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- number -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- number key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              number
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- number value -->
+                            <small class="small text-body-secondary">
+                              123
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pretitle TestScore -->
+                <h6 class="header-pretitle">TestScore</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- name -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- name key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              name
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- name value -->
+                            <small class="small text-body-secondary">
+                              CS1101S
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- score -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- score key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              score
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- score value -->
+                            <small class="small text-body-secondary"> A </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- date_on -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- date_on key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              date_on
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- date_on value -->
+                            <small class="small text-body-secondary">
+                              {"day": 1, "month": 1, "year": 2023}
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- description -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- description key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              description
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- description value -->
+                            <small class="small text-body-secondary">
+                              Nailed it without studying.
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pretitle VolunteeringExperience -->
+                <h6 class="header-pretitle">VolunteeringExperience</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- starts_at -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- starts_at key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              starts_at
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- starts_at value -->
+                            <small class="small text-body-secondary">
+                              {"day": 1, "month": 1, "year": 2012}
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- ends_at -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- ends_at key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              ends_at
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- ends_at value -->
+                            <small class="small text-body-secondary">
+                              {"day": 1, "month": 8, "year": 2016}
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- title -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- title key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              title
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- title value -->
+                            <small class="small text-body-secondary">
+                              Surveyor
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- cause -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- cause key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              cause
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- cause value -->
+                            <small class="small text-body-secondary">
+                              To help the world
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- company -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- company key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              company
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- company value -->
+                            <small class="small text-body-secondary">
+                              Microsoft
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- company_linkedin_profile_url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- company_linkedin_profile_url key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              company_linkedin_profile_url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- company_linkedin_profile_url value -->
+                            <small class="small text-body-secondary">
+                              https://www.linkedin.com/company/microsoft
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- description -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- description key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              description
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- description value -->
+                            <small class="small text-body-secondary">
+                              null
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- logo_url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- logo_url key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              logo_url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- logo_url value -->
+                            <small class="small text-body-secondary">
+                              null
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pretitle PeopleAlsoViewed -->
+                <h6 class="header-pretitle">PeopleAlsoViewed</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- link -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- link key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              link
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- link value -->
+                            <small class="small text-body-secondary">
+                              https://www.linkedin.com/in/johndoe
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- name -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- name key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              name
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- name value -->
+                            <small class="small text-body-secondary">
+                              John Doe
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- summary -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- summary key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              summary
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- summary value -->
+                            <small class="small text-body-secondary">
+                              Software Engineer at Google
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- location -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- location key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              location
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- location value -->
+                            <small class="small text-body-secondary">
+                              Singapore
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pretitle SimilarProfile -->
+                <h6 class="header-pretitle">SimilarProfile</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- name -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- name key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              name
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- name value -->
+                            <small class="small text-body-secondary">
+                              John Martinez
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- link -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- link key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              link
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- link value -->
+                            <small class="small text-body-secondary">
+                              https://www.linkedin.com/in/john-martinez-90384a229
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- summary -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- summary key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              summary
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- summary value -->
+                            <small class="small text-body-secondary">
+                              Owner of Fight or Flight Medical Consultants, LLC
+                              , Owner Marty\u2019s Hardwood Works
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- location -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- location key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              location
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- location value -->
+                            <small class="small text-body-secondary">
+                              San Antonio, TX
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pretitle PersonGroup -->
+                <h6 class="header-pretitle">PersonGroup</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- profile_pic_url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- profile_pic_url key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              profile_pic_url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- profile_pic_url value -->
+                            <small class="small text-body-secondary">
+                              https://media-exp1.licdn.com/dms/image/C4D07AQG9IK9V0pk3mQ/group-logo_image-shrink_92x92/0/1631371531293?e=1642060800\u0026v=beta\u0026t=UK1tfIppWa-Nx7k9whmm5f9XdZoBdJhApf9N3ke3204
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- name -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- name key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              name
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- name value -->
+                            <small class="small text-body-secondary">
+                              Hadoop Users
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- url -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- url key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              url
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- url value -->
+                            <small class="small text-body-secondary">
+                              https://www.linkedin.com/groups/988957
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pretitle InferredSalary -->
+                <h6 class="header-pretitle">InferredSalary</h6>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- List group -->
+                    <div class="list-group list-group-flush">
+                      <!-- min -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- min key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              min
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- min value -->
+                            <small class="small text-body-secondary">
+                              35000
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+
+                      <!-- max -->
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <!-- max key -->
+                            <small class="h6 text-uppercase text-muted mb-0">
+                              max
+                            </small>
+                          </div>
+                          <div class="col-auto">
+                            <!-- max value -->
+                            <small class="small text-body-secondary">
+                              45000
+                            </small>
+                          </div>
+                        </div>
+                        <!-- / .row -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+    </div>
+    <!-- / .main-content -->
+
+    <!-- JAVASCRIPT -->
+    <!-- Map JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+
+    <!-- Search Autocomplete JS-->
+    <script src="search-autocomplete.js"></script>
+
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+
+    <script>
+      const sandboxToggle = document.getElementById("toggleSandbox");
+      const sandboxToggleXS = document.getElementById("toggleSandboxXS");
+      let sandboxToggleState = true;
+      let sandboxToggleXSState = true;
+
+      sandboxToggle.addEventListener("click", () => {
+        sandboxToggleState = !sandboxToggleState;
+        sandboxToggleXSState = !sandboxToggleXSState;
+        if (sandboxToggleState) {
+          location.href = "./sandbox-profile-sandbox.html";
+          sandboxToggle.checked = true;
+          sandboxToggleXS.checked = true;
+        } else {
+          history.back();
+          sandboxToggle.checked = true;
+          sandboxToggleXS.checked = true;
+        }
+      });
+      sandboxToggleXS.addEventListener("click", () => {
+        sandboxToggleXSState = !sandboxToggleXSState;
+        sandboxToggleState = !sandboxToggleState;
+        if (sandboxToggleXSState) {
+          location.href = "./sandbox-profile-sandbox.html";
+          sandboxToggleXS.checked = true;
+          sandboxToggle.checked = true;
+        } else {
+          history.back();
+          sandboxToggleXS.checked = true;
+          sandboxToggle.checked = true;
+        }
+      });
+    </script>
+
+    <script>
+      function readMore(param1) {
+        const readMoreSection = document.querySelector(param1);
+
+        readMoreSection.classList.add("show");
+      }
+    </script>
+  </body>
+</html>
