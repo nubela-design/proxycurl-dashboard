@@ -4,7 +4,7 @@ const suggestionsList = document.getElementById('companySuggestions');
 // Sample data for demonstration (replace with your own)
 const companies = [
     { name: "Microsoft", logo: "assets/img/logo/microsoft.svg" },
-    { name: "Apple", logo: "assets/img/logo/apple 14.svg" },
+    { name: "Apple", logo: "assets/img/logo/Apple.svg" },
     { name: "Google", logo: "assets/img/logo/Google-logoicon.svg" },
     { name: "Amazon", logo: "assets/img/logo/Amazon logo.jpeg" },
     { name: "Netflix", logo: "assets/img/logo/netflix.jpeg" }
