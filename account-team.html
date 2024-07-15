@@ -25,6 +25,7 @@
 </head>
 
 <body>
+
   <!-- NAVIGATION -->
   <nav class="navbar navbar-vertical fixed-start navbar-expand-lg navbar-light" id="sidebar">
     <div class="container-fluid">
@@ -512,16 +513,39 @@
             <div class="header-body">
               <div class="row align-items-center">
                 <div class="col">
-                  <!-- Pretitle -->
-                  <h6 class="header-pretitle">Overview</h6>
+
+                  <!-- Team name -->
+                  <div class="dropdown mb-4">
+
+                    <button class="btn btn-sm bg-primary-subtle text-primary dropdown-toggle" style="background: #dbeafe;"
+                      type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fe fe-user"></i> Personal Account
+                    </button>
+
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item text-white bg-primary" href="#">
+                          <i class="fe fe-user"></i> Personal Account
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="account-team.html">
+                          <i class="fe fe-plus"></i> Create a new team
+                        </a>
+                      </li>
+                    </ul>
+
+                  </div>
 
                   <!-- Title -->
-                  <h1 class="header-title mb-3">Upgrade to Team Account</h1>
+                  <h1 class="header-title mb-3">
+                    Upgrade to Team Account
+                  </h1>
 
                   <p class="h2 fw-normal mb-2">
-                    Invite as many team members as you like and unlock the
-                    full power of Proxycurl API!
+                    Invite as many team members as you like and unlock the full power of Proxycurl API!
                   </p>
+
                 </div>
               </div>
               <!-- / .row -->
