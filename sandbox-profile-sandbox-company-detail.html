@@ -992,7 +992,9 @@
                     <div class="card mb-3">
 
                       <!-- background_cover_image_url -->
-                      <img src="https://media.licdn.com/dms/image/D563DAQFydSPUShE9gQ/image-scale_191_1128/0/1715888854094/google_cover?e=1721638800&v=beta&t=sDIClp0W6P4i5VMe83sJ3RvgfC--VHvQO8RjJlz3Dwo" alt="..." class="card-img-top" />
+                      <img
+                        src="https://media.licdn.com/dms/image/D563DAQFydSPUShE9gQ/image-scale_191_1128/0/1715888854094/google_cover?e=1721638800&v=beta&t=sDIClp0W6P4i5VMe83sJ3RvgfC--VHvQO8RjJlz3Dwo"
+                        alt="..." class="card-img-top" />
 
                       <div class="container-fluid">
 
@@ -1041,7 +1043,7 @@
                         <div class="mb-1">
                           <!-- followers value -->
                           <p class="small text-secondary mb-0 text-secondary">
-                            <i class="fe fe-users me-1"></i> 27M++ followers
+                            <i class="fe fe-users me-1"></i> 27M+ followers
                           </p>
                         </div>
 
@@ -1049,7 +1051,7 @@
                         <div class="mb-3">
                           <!-- connections value -->
                           <p class="small text-secondary mb-0 text-secondary">
-                            <i class="fe fe-users me-1"></i> 31K++ employees
+                            <i class="fe fe-users me-1"></i> 10K+ employees
                           </p>
                         </div>
 
@@ -1087,164 +1089,419 @@
                           </ul>
                         </div>
 
-                        <!-- <div class="d-block py-4">
-                          <ul class="d-flex gap-4 justify-content-center list-unstyled mb-0">
-                            <li class="d-inline-flex">
-                              <a href="javascript:void(0)" class="text-dark">
-                                <i class="fe fe-github h2"></i>
-                              </a>
-                            </li>
-                            <li class="d-inline-flex">
-                              <a href="javascript:void(0)" class="text-dark">
-                                <i class="fe fe-facebook h2"></i>
-                              </a>
-                            </li>
-                            <li class="d-inline-flex">
-                              <a href="javascript:void(0)" class="text-dark">
-                                <i class="fe fe-twitter h2"></i>
-                              </a>
-                            </li>
-                            <li class="d-inline-flex">
-                              <a href="javascript:void(0)" class="text-dark">
-                                <i class="fe fe-globe h2"></i>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-  
-                        <div class="d-block py-4 text-center border-top">
-                          <a href="javascript:void(0)" class="h2 text-primary fw-light mb-0">
-                            I am hiring!
-                          </a>
-                        </div> -->
                       </div>
                     </div>
                   </div>
 
-                  <!-- description -->
+                  <!-- Nav Menu -->
                   <div class="col-12 mb-2">
                     <div class="card mb-3">
                       <div class="card-body">
+                        <ul class="nav nav-pills mb-0 gap-2" id="pills-tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                              aria-selected="true">Home</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-about-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-about" type="button" role="tab" aria-controls="pills-about"
+                              aria-selected="false">About</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-post-tab" data-bs-toggle="pill"
+                              data-bs-target="#pills-post" type="button" role="tab" aria-controls="pills-post"
+                              aria-selected="false">Post</button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
 
-                        <!-- Title -->
-                        <h2 class="h2 card-header-title mb-4">About</h2>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                      aria-labelledby="pills-home-tab">
 
-                        <div class="readmore readmore-description d-flex flex-column">
-                          <!-- description value -->
-                          <p class="readmore-content text-dark mb-3">
-                            "A problem isn\u0027t truly solved until it\u0027s solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone.\n\nCheck out our career opportunities at careers.google.com."
+                      <!-- description -->
+                      <div class="col-12 mb-2">
+                        <div class="card mb-3">
+                          <div class="card-body">
+
+                            <!-- title description -->
+                            <h2 class="h2 card-header-title mb-4">About</h2>
+
+                            <div class="mb-4">
+                              <div class="readmore readmore-description d-flex flex-column">
+                                <!-- description value -->
+                                <p class="readmore-content text-secondary mb-3">
+                                  "A problem isn\u0027t truly solved until it\u0027s solved for all. Googlers build
+                                  products
+                                  that help create opportunities for everyone, whether down the street or across the
+                                  globe.
+                                  Bring your insight, imagination and a healthy disregard for the impossible. Bring
+                                  everything that makes you unique. Together, we can build for everyone.\n\nCheck out
+                                  our
+                                  career opportunities at careers.google.com."
+                                </p>
+                                <button class="readmore-btn h5 bg-transparent border-0 text-primary p-0 ms-auto"
+                                  onclick="readMore('.readmore-description')">
+                                  ...read more
+                                </button>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- General -->
+                      <div class="col-12 mb-2">
+                        <div class="card mb-3">
+                          <div class="card-body">
+
+                            <!-- List group -->
+                            <div class="list-group list-group-flush my-n3">
+
+                              <div class="list-group-item">
+                                <div class="row align-items-center">
+                                  <div class="col-12 col-lg">
+
+                                    <!-- Title -->
+                                    <h5 class="h4 mb-3 mb-lg-0">
+                                      Emails
+                                    </h5>
+
+                                  </div>
+                                  <div class="col-auto">
+
+                                    <!-- Text -->
+                                    <small class="small text-secondary">
+                                      info@nvidia.com
+                                    </small>
+
+                                  </div>
+                                </div> <!-- / .row -->
+                              </div>
+                              <div class="list-group-item">
+                                <div class="row align-items-center">
+                                  <div class="col-12 col-lg">
+
+                                    <!-- Title -->
+                                    <h5 class="h4 mb-3 mb-lg-0">
+                                      Phone
+                                    </h5>
+
+                                  </div>
+                                  <div class="col-auto">
+
+                                    <!-- Text -->
+                                    <small class="small text-secondary">
+                                      (140) 848-6200
+                                    </small>
+
+                                  </div>
+                                </div> <!-- / .row -->
+                              </div>
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Social -->
+                      <div class="col-12 mb-2">
+                        <div class="card mb-3">
+                          <div class="card-body">
+
+                            <!-- Title -->
+                            <h2 class="h2 card-header-title mb-4">Social</h2>
+
+                            <!-- List group -->
+                            <div class="list-group list-group-flush my-n3">
+
+                              <div class="list-group-item">
+                                <div class="row align-items-center">
+                                  <div class="col-12 col-md">
+
+                                    <!-- Title -->
+                                    <h4 class="mb-3 mb-md-0">
+                                      <i class="fe fe-facebook h4 me-1"></i> Facebook
+                                    </h4>
+
+                                  </div>
+                                  <div class="col-auto">
+
+                                    <!-- value -->
+                                    <a href="javascript:void(0)">
+                                      NVIDIA.IN
+                                    </a>
+
+                                  </div>
+                                </div> <!-- / .row -->
+                              </div>
+
+                              <div class="list-group-item">
+                                <div class="row align-items-center">
+                                  <div class="col-12 col-md">
+
+                                    <!-- Title -->
+                                    <h4 class="mb-3 mb-md-0">
+                                      <i class="fe fe-twitter h4 me-1"></i> Twitter/X
+                                    </h4>
+
+                                  </div>
+                                  <div class="col-auto">
+
+                                    <!-- value -->
+                                    <a href="javascript:void(0)">
+                                      nvidia
+                                    </a>
+
+                                  </div>
+                                </div> <!-- / .row -->
+                              </div>
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
+                      <div class="row">
+                        <!-- description -->
+                        <div class="col-12 mb-2">
+                          <div class="card mb-3">
+                            <div class="card-body">
+
+                              <!-- title description -->
+                              <h2 class="h2 card-header-title mb-4">Overview</h2>
+
+                              <div class="mb-4">
+                                <div class="readmore readmore-description d-flex flex-column">
+                                  <!-- description value -->
+                                  <p class="readmore-content text-secondary mb-3">
+                                    "A problem isn\u0027t truly solved until it\u0027s solved for all. Googlers build
+                                    products
+                                    that help create opportunities for everyone, whether down the street or across the
+                                    globe.
+                                    Bring your insight, imagination and a healthy disregard for the impossible. Bring
+                                    everything that makes you unique. Together, we can build for everyone.\n\nCheck out
+                                    our
+                                    career opportunities at careers.google.com."
+                                  </p>
+                                  <button class="readmore-btn h5 bg-transparent border-0 text-primary p-0 ms-auto"
+                                    onclick="readMore('.readmore-description')">
+                                    ...read more
+                                  </button>
+                                </div>
+                              </div>
+
+                              <div class="mb-4">
+                                <!-- pretitle website -->
+                                <h4 class="pretitle mb-1">
+                                  Website
+                                </h4>
+                                <a href="https://goo.gle/3m1IN7m">
+                                  https://goo.gle/3m1IN7m
+                                </a>
+                              </div>
+
+                              <div class="mb-4">
+                                <!-- pretitle Industry -->
+                                <h4 class="pretitle mb-1">
+                                  Industry
+                                </h4>
+                                <p class="text-secondary mb-0">
+                                  Software Development
+                                </p>
+                              </div>
+
+                              <div class="mb-4">
+                                <!-- pretitle Company Size -->
+                                <h4 class="pretitle mb-1">
+                                  Company Size
+                                </h4>
+                                <p class="text-secondary mb-0">
+                                  10,001+ employees
+                                </p>
+                              </div>
+
+                              <div class="mb-4">
+                                <!-- pretitle Headquarters -->
+                                <h4 class="pretitle mb-1">
+                                  Headquarters
+                                </h4>
+                                <p class=text-secondary mb-0">
+                                  Mountain View, CA
+                                </p>
+                              </div>
+
+                              <div class="mb-4">
+                                <!-- pretitle Specialties -->
+                                <h4 class="pretitle mb-1">
+                                  Specialties
+                                </h4>
+                                <p class="text-secondary mb-0">
+                                  search, ads
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- acquisitions -->
+                        <div class="col-12 mb-2">
+                          <div class="card mb-3">
+                            <div class="card-body">
+
+                              <!-- title acquisitions -->
+                              <h2 class="h2 card-header-title mb-4">Acquisitions</h2>
+
+                              <div class="mb-4">
+                                <!-- pretitle website -->
+                                <h4 class="pretitle mb-3">
+                                  Apple
+                                </h4>
+                                <p class="text-secondary mb-0">
+                                  <h4>Acquired by: <a href="javascript:void(0)" class="text-secondary fw-light">nVidia</a></h4> 
+                                </p>
+                                <p class="text-secondary mb-0">
+                                  <h4>Date: <span class="text-secondary fw-light">30 Jan 2023</span></h4>
+                                </p>
+                                <p class="text-secondary mb-0">
+                                  <h4>Transaction Amount: <span class="text-secondary fw-light">$300 Million</span></h4>
+                                </p>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- locations -->
+                        <div class="col-12 mb-2">
+                          <div class="card mb-3">
+                            <div class="card-body">
+
+                              <!-- title description -->
+                              <h2 class="h2 card-header-title mb-4">Locations</h2>
+
+                              <div class="row">
+
+                                <div class="col-auto">
+                                  <div class="card">
+                                    <div class="card-body">
+                                      <h4 class="fw-light text-secondary mb-0">
+                                        1600 Amphitheatre Parkway, Mountain View, CA 94043, US
+                                      </h4>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col-auto">
+                                  <div class="card">
+                                    <div class="card-body">
+                                      <h4 class="fw-light text-secondary mb-0">
+                                        1875 Explorer St, Reston, VA 20190, US
+                                      </h4>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col-auto">
+                                  <div class="card">
+                                    <div class="card-body">
+                                      <h4 class="fw-light text-secondary mb-0">
+                                        25 Massachusetts Ave NW, Washington, DC 20001, US
+                                      </h4>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col-auto">
+                                  <div class="card">
+                                    <div class="card-body">
+                                      <h4 class="fw-light text-secondary mb-0">
+                                        3 Pasir Panjang Rd, Singapore, Singapore 118484, SG
+                                      </h4>
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-post" role="tabpanel" aria-labelledby="pills-post-tab">
+
+                      <div class="card">
+                        <div class="card-body">
+
+                          <!-- Header -->
+                          <div class="mb-3">
+                            <div class="row align-items-center">
+                              <div class="col-auto">
+
+                                <!-- Avatar -->
+                                <a href="javascript:void(0)" class="avatar">
+                                  <img src="assets/img/logo/google.jpg" alt="..." class="avatar-img">
+                                </a>
+
+                              </div>
+                              <div class="col ms-n2">
+
+                                <!-- Title -->
+                                <h4 class="mb-1">
+                                  Google
+                                </h4>
+
+                                <!-- followers -->
+                                <p class="card-text small text-secondary mb-0">
+                                  27,472,792 followers
+                                </p>
+
+                                <!-- Time -->
+                                <p class="card-text small text-secondary mb-0">
+                                  <time datetime="2018-05-24">30 Sep 2023</time>
+                                </p>
+
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <!-- Text -->
+                          <p class="mb-3">
+                            Introducing Personal Email Lookup API <a
+                              href="javascript:void(0)">https://lnkd.in/gr7cb5by</a>
                           </p>
-                          <button class="readmore-btn h5 bg-transparent border-0 text-primary p-0 ms-auto"
-                            onclick="readMore('.readmore-description')">
-                            ...read more
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
 
-                  <!-- General -->
-                  <div class="col-12 mb-2">
-                    <div class="card mb-3">
-                      <div class="card-body">
+                          <!-- Image -->
+                          <p class="text-center mb-3">
+                            <img src="assets/img/posts/post-1.jpg" alt="..." class="img-fluid rounded">
+                          </p>
 
-                        <!-- List group -->
-                        <div class="list-group list-group-flush my-n3">
-                          
-                          <div class="list-group-item">
-                            <div class="row align-items-center">
-                              <div class="col-12 col-lg">
+                          <div class="mb-3">
+                            <div class="row">
+                              <div class="col">
 
-                                <!-- Title -->
-                                <h5 class="h4 mb-3 mb-lg-0">
-                                  Emails
-                                </h5>
-
-                              </div>
-                              <div class="col-auto">
-
-                                <!-- Text -->
-                                <small class="small text-secondary">
-                                  info@nvidia.com
-                                </small>
-
-                              </div>
-                            </div> <!-- / .row -->
-                          </div>
-                          <div class="list-group-item">
-                            <div class="row align-items-center">
-                              <div class="col-12 col-lg">
-
-                                <!-- Title -->
-                                <h5 class="h4 mb-3 mb-lg-0">
-                                  Phone
-                                </h5>
-
-                              </div>
-                              <div class="col-auto">
-
-                                <!-- Text -->
-                                <small class="small text-secondary">
-                                  (140) 848-6200
-                                </small>
-
-                              </div>
-                            </div> <!-- / .row -->
-                          </div>
-
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Social -->
-                  <div class="col-12 mb-2">
-                    <div class="card mb-3">
-                      <div class="card-body">
-
-                        <!-- Title -->
-                        <h2 class="h2 card-header-title mb-4">Social</h2>
-
-                        <!-- List group -->
-                        <div class="list-group list-group-flush my-n3">
-
-                          <div class="list-group-item">
-                            <div class="row align-items-center">
-                              <div class="col-12 col-md">
-
-                                <!-- Title -->
-                                <h4 class="mb-3 mb-md-0">
-                                  <i class="fe fe-facebook h4 me-1"></i> Facebook
-                                </h4>
-
-                              </div>
-                              <div class="col-auto">
-
-                                <!-- value -->
-                                <a href="javascript:void(0)">
-                                  NVIDIA.IN
+                                <!-- Buttons -->
+                                <a href="javascript:void(0)" class="btn btn-sm btn-white">
+                                  👍 3
                                 </a>
 
                               </div>
-                            </div> <!-- / .row -->
-                          </div>
-
-                          <div class="list-group-item">
-                            <div class="row align-items-center">
-                              <div class="col-12 col-md">
-
-                                <!-- Title -->
-                                <h4 class="mb-3 mb-md-0">
-                                  <i class="fe fe-twitter h4 me-1"></i> Twitter/X
-                                </h4>
-
-                              </div>
                               <div class="col-auto">
 
-                                <!-- value -->
-                                <a href="javascript:void(0)">
-                                  nvidia
+                                <!-- Button -->
+                                <a href="https://lnkd.in/gr7cb5by" class="btn btn-sm btn-white">
+                                  Share
                                 </a>
 
                               </div>
@@ -1252,8 +1509,80 @@
                           </div>
 
                         </div>
-
                       </div>
+
+                      <div class="card">
+                        <div class="card-body">
+
+                          <!-- Header -->
+                          <div class="mb-3">
+                            <div class="row align-items-center">
+                              <div class="col-auto">
+
+                                <!-- Avatar -->
+                                <a href="javascript:void(0)" class="avatar">
+                                  <img src="assets/img/logo/google.jpg" alt="..." class="avatar-img">
+                                </a>
+
+                              </div>
+                              <div class="col ms-n2">
+
+                                <!-- Title -->
+                                <h4 class="mb-1">
+                                  Google
+                                </h4>
+
+                                <!-- followers -->
+                                <p class="card-text small text-secondary mb-0">
+                                  27,472,792 followers
+                                </p>
+
+                                <!-- Time -->
+                                <p class="card-text small text-secondary mb-0">
+                                  <time datetime="2018-05-24">1 Jul 2023</time>
+                                </p>
+
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <!-- Text -->
+                          <p class="mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iste amet officiis quas
+                            labore reiciendis, voluptatibus delectus eum sunt aspernatur saepe, perspiciatis beatae
+                            ipsam quo, eius facere veritatis modi pariatur?
+                          </p>
+
+                          <!-- Image -->
+                          <p class="text-center mb-3">
+                            <img src="assets/img/posts/post-1.jpg" alt="..." class="img-fluid rounded">
+                          </p>
+
+                          <div class="mb-3">
+                            <div class="row">
+                              <div class="col">
+
+                                <!-- Buttons -->
+                                <a href="javascript:void(0)" class="btn btn-sm btn-white">
+                                  👍 1000
+                                </a>
+
+                              </div>
+                              <div class="col-auto">
+
+                                <!-- Button -->
+                                <a href="https://lnkd.in/gr7cb5by" class="btn btn-sm btn-white">
+                                  Share
+                                </a>
+
+                              </div>
+                            </div> <!-- / .row -->
+                          </div>
+
+                        </div>
+                      </div>
+
                     </div>
                   </div>
 
