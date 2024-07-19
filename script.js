@@ -36,6 +36,8 @@ document.addEventListener('DOMContentLoaded', function () {
   handleToggleSwitch();
 });
 
+//---------------
+
 // Another block of code
 document.addEventListener('DOMContentLoaded', function () {
   // Get checkbox and button elements 
@@ -72,6 +74,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+//---------------
 
 //double-click dropdown
 document.addEventListener("DOMContentLoaded", function() {
@@ -140,6 +144,8 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+//---------------
+
 // Function to validate team name
 function validateTeamName() {
   const teamNameInput = document.getElementById('teamNameForm');
@@ -164,6 +170,8 @@ function validateTeamName() {
     teamNameExistsError.style.display = 'none';
   }
 }
+
+//---------------
 
 // Event listener for input on team name field
 document.getElementById('teamNameForm').addEventListener('input', validateTeamName);
