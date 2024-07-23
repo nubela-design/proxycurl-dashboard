@@ -37,10 +37,9 @@
 }
 
 @media screen and (min-width: 964px) and (max-width: 1110px) {
-    .main-content-dashboard {
+    .main-content {
         transition: margin-left 0.3s ease, width 0.3s ease; /* Add transition for smooth animation */
-        margin-left: 380px; /* Set initial margin-left when sidebar is expanded */
-        padding-right: 40px;
+        margin-left: 90px !important; /* Set initial margin-left when sidebar is expanded */
         width: 80%;
     }
     
