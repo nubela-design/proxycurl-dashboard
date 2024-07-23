@@ -1,43 +1,50 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc." />
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon"/>
-    
-    <!-- Map CSS -->
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
-    
-    <!-- Libs CSS -->
-    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-    
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
-    <link rel="stylesheet" href="style-custom.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">
-    
-    <!-- Title -->
-    <title>Proxycurl - Dashboard</title>
-  </head>
-  <body>
 
-    <!-- NAVIGATION -->
-    <nav class="navbar navbar-vertical fixed-start navbar-expand-md navbar-light" id="sidebar">
-      <div class="container-fluid">
-    
-        <!-- Toggler -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarCollapse" aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <!-- Brand -->
-        <a class="navbar-brand" href="./index.html">
-          <img src="./assets/img/logo.svg" class="navbar-brand-img mx-auto" alt="...">
-        </a>
-    
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc." />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+
+  <!-- Map CSS -->
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+  <link rel="stylesheet" href="style-custom.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">
+
+  <!-- Title -->
+  <title>Proxycurl - Dashboard</title>
+
+  <!-- Import Jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-vertical fixed-start navbar-expand-md navbar-light" id="sidebar">
+    <div class="container-fluid">
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarCollapse"
+        aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="./index.html">
+        <img src="./assets/img/logo.svg" class="navbar-brand-img mx-auto" alt="...">
+      </a>
+
       <!-- User (xs) -->
       <div class="navbar-user d-md-none">
         <div class="btn-group dropdown">
@@ -63,12 +70,12 @@
 
             </div>
           </button>
-  
+
           <div class="dropdown-menu dropdown-menu-end shadow-lg" aria-labelledby="dropdownMenuButton">
             <h6 class="header-pretitle border-bottom text-black px-4 py-4 mb-0">
               Switch team
             </h6>
-  
+
             <div class="pt-3 pb-3 px-4 border-bottom">
               <a class="btn btn-light w-100 pt-3 pb-1"
                 href="https://nubela.co/proxycurl/affiliate?utm_campaign=affiliate_marketing&utm_source=affiliate_link&utm_medium=affiliate&utm_content=internal_navigator_menu"
@@ -79,14 +86,14 @@
                 </h5>
               </a>
             </div>
-  
+
             <div class="pt-3 pb-3 px-4 border-bottom">
               <form>
                 <div class="form-floating form-group mb-3">
                   <input type="text" class="form-control" id="floatingInput" placeholder="Dragon Team" />
                   <label for="floatingInput">Team name</label>
                 </div>
-  
+
                 <button class="btn btn-outline-primary w-100" data-bs-toggle="tooltip" data-bs-placement="top"
                   title="We are fleshing out this new dashboard iteratively. We are intending to include a Teams feature and it is coming soon!">
                   Create new team
@@ -130,7 +137,7 @@
               </li>
 
             </ul>
-  
+
             <div class="row align-items-center border-top">
               <a class="text-center text-secondary nav-link mt-3 mb-1" href="index.html">
                 <i class="fe fe-log-out"></i> Log out
@@ -148,7 +155,8 @@
           <div class="col-12">
             <label class="mb-2 text-gray-700">
               Credits
-              <code class="h2 text-black" style="font-family: Cerebri Sans,sans-serif;"> 480</code><code class="small text-gray-700" style="font-family: Cerebri Sans,sans-serif;">/1000 </code>
+              <code class="h2 text-black" style="font-family: Cerebri Sans,sans-serif;"> 480</code><code
+                class="small text-gray-700" style="font-family: Cerebri Sans,sans-serif;">/1000 </code>
             </label>
 
             <div class="progress">
@@ -176,9 +184,9 @@
 
       </div>
 
-        <!-- Collapse -->
-        <div class="collapse navbar-collapse" id="sidebarCollapse">
-    
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="sidebarCollapse">
+
         <!-- Credits (xs)-->
         <div class="navbar-user d-md-none mb-4">
 
@@ -187,7 +195,8 @@
             <div class="col-12">
               <label class="mb-2 text-gray-700">
                 Credits
-                <code class="h2 text-black" style="font-family: Cerebri Sans,sans-serif;"> 480</code><code class="small text-gray-700" style="font-family: Cerebri Sans,sans-serif;">/1000 </code>
+                <code class="h2 text-black" style="font-family: Cerebri Sans,sans-serif;"> 480</code><code
+                  class="small text-gray-700" style="font-family: Cerebri Sans,sans-serif;">/1000 </code>
               </label>
 
               <div class="progress">
@@ -252,7 +261,8 @@
               <ul class="nav nav-sm flex-column">
                 <li class="nav-item">
                   <a href="https://sapiengraph.com" target="_blank" class="nav-link">
-                    <span class="border-start border-2 ps-3 text-info border-info">Sapiengraph - B2B Enrichment in Google Sheets ↗</span>
+                    <span class="border-start border-2 ps-3 text-info border-info">Sapiengraph - B2B Enrichment in
+                      Google Sheets ↗</span>
                   </a>
                 </li>
               </ul>
@@ -336,7 +346,8 @@
         <!-- User (md) -->
         <div class="navbar-user d-none d-md-block pb-4 border-bottom mb-4" id="sidebarUser">
           <div class="btn-group w-100 dropup">
-            <button type="button" class="btn btn-outline-primary dropdown-toggle w-100" data-bs-toggle="dropdown" aria-expanded="false">
+            <button type="button" class="btn btn-outline-primary dropdown-toggle w-100" data-bs-toggle="dropdown"
+              aria-expanded="false">
 
               <div class="row align-items-center g-2" style="text-align: start!important;">
 
@@ -359,13 +370,13 @@
               </div>
 
             </button>
-  
+
             <div class="dropdown-menu dropdown-menu-center shadow-lg w-100" aria-labelledby="dropdownMenuButton">
 
               <h6 class="header-pretitle border-bottom text-black px-4 py-4 mb-0">
                 Switch team
               </h6>
-  
+
               <div class="pt-3 pb-3 px-4 border-bottom">
                 <a class="btn btn-light w-100 pt-3 pb-1"
                   href="https://nubela.co/proxycurl/affiliate?utm_campaign=affiliate_marketing&utm_source=affiliate_link&utm_medium=affiliate&utm_content=internal_navigator_menu"
@@ -376,24 +387,25 @@
                   </h5>
                 </a>
               </div>
-  
+
               <div class="pt-3 pb-3 px-4 border-bottom">
                 <form>
                   <div class="form-floating form-group mb-3">
                     <input type="text" class="form-control" id="floatingInput" placeholder="Dragon Team" />
                     <label for="floatingInput">Team name</label>
                   </div>
-  
+
                   <button class="btn btn-outline-primary w-100" data-bs-toggle="tooltip" data-bs-placement="top"
                     title="We are fleshing out this new dashboard iteratively. We are intending to include a Teams feature and it is coming soon!">
                     Create new team
                   </button>
                 </form>
               </div>
-  
+
               <ul class="list-group list-group-flush">
 
-                <li class="list-group-item active" data-bs-toggle="tooltip" data-bs-placement="top" title="Outer Dimension Waralaba Team, ardhannywandicikicaka@outerdimension.com">
+                <li class="list-group-item active" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Outer Dimension Waralaba Team, ardhannywandicikicaka@outerdimension.com">
                   <a class="dropdown-item" href="#!" type="button">
                     <p class="text-white mb-0 text-truncate">
                       Outer Dimension Waralaba Team
@@ -427,7 +439,7 @@
                 </li>
 
               </ul>
-  
+
               <div class="row align-items-center border-top">
                 <a class="text-center text-secondary nav-link mt-3 mb-1" href="index.html">
                   <i class="fe fe-log-out"></i> Log out
@@ -440,97 +452,128 @@
         <!-- Dashboard toggle-->
         <div class="justify-content-between d-flex mb-3">
           <div class="col-8">
-          <label class="h3 fw-normal mb-md-1 mb-0 ms-1 text-gray-700" for="dashboardSwitch">
-            Back to old dashboard
-          </label>
+            <label class="h3 fw-normal mb-md-1 mb-0 ms-1 text-gray-700" for="dashboardSwitch">
+              Back to old dashboard
+            </label>
           </div>
           <div class="col-auto form-switch form-check mt-0 mt-md-2">
             <input type="checkbox" class="form-check-input" id="dashboardSwitch">
           </div>
 
         </div>
-    
-        </div> <!-- / .navbar-collapse -->
-    
-      </div>
-    </nav>
 
-    <!--MODAL EDIT TEAM NAME-->
-    <div class="modal fade" id="teamEditName" tabindex="-1" aria-labelledby="teamEditNameLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-  
-          <a type="button" class="btn-close h1 ps-4 pt-4 mb-0" data-dismiss="modal" aria-label="Close">
-          </a>
-  
-          <div class="modal-body">
-  
-            <div class="row justify-content-center">
-  
-              <div class="col-12">
-  
-                <h1 class="fw-bold mb-4">
-                  Edit team name
-                </h1>
-  
-                <form id="teamForm">
-                  <div class="form-group">
-                    <input type="text" class="form-control form-control-lg" id="teamNameForm" placeholder="Enter team name">
-                    <div class="text-danger mt-2" id="teamNameError" style="display: none;">
-                      Only alphanumeric characters, spaces, -, _, or @ under 64 characters allowed for the team name.
-                    </div>
-                    <div class="text-danger mt-2" id="teamNameExistsError" style="display: none;">
-                      Team name already exists.
-                    </div>
+      </div> <!-- / .navbar-collapse -->
+
+    </div>
+  </nav>
+
+  <!--MODAL EDIT TEAM NAME-->
+  <div class="modal fade" id="teamEditName" tabindex="-1" aria-labelledby="teamEditNameLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <a type="button" class="btn-close h1 ps-4 pt-4 mb-0" data-dismiss="modal" aria-label="Close">
+        </a>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center">
+
+            <div class="col-12">
+
+              <h1 class="fw-bold mb-4">
+                Edit team name
+              </h1>
+
+              <form id="teamForm">
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" id="teamNameForm"
+                    placeholder="Enter team name">
+                  <div class="text-danger mt-2" id="teamNameError" style="display: none;">
+                    Only alphanumeric characters, spaces, -, _, or @ under 64 characters allowed for the team name.
                   </div>
-                </form>
-  
-                <a class="btn btn-lg btn-primary mt-3 w-100" href="account-team-done.html">
-                  Submit
-                </a>
-  
-              </div>
-  
+                  <div class="text-danger mt-2" id="teamNameExistsError" style="display: none;">
+                    Team name already exists.
+                  </div>
+                </div>
+              </form>
+
+              <a class="btn btn-lg btn-primary mt-3 w-100" href="account-team-done.html">
+                Submit
+              </a>
+
             </div>
-  
+
           </div>
-  
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Hint -->
+  <div class="modal fade" id="hintModal" tabindex="-1" aria-labelledby="hintModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-10 text-center">
+              <h2 class="lead mb-4">You have successfully joined Outer Dimension Waralaba Team</h2>
+              <p class="mb-2">
+                You can now switch between accounts to use Proxycurl
+              </p>
+              <img src="./assets/img/switch-team.gif" alt="" srcset="" class="w-100">
+            </div>
+          </div>
+          <div class="row justify-content-center mb-3">
+            <div class="col-12 col-md-8 col-lg-6">
+              <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">Got It!</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- MAIN CONTENT -->
-    <div class="main-content">
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
 
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-12">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12">
 
-            <!--News Alert-->
-            <div class="card bg-dark mt-5">
+          <!--News Alert-->
+          <div class="card bg-dark mt-5">
 
-              <div class="card-body">
+            <div class="card-body">
 
-                <div class="row align-items-top">
+              <div class="row align-items-top">
 
-                  <div class="col-12 col-md-8">
-    
-                    <p class="lead text-white mb-0">
-                      <span class="me-2">
-                        <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m15.6968,12.4905l-2.8295,1.4148c-.8491.4245-1.5375,1.113-1.962,1.962l-1.4148,2.8295c-.2021.4042-.7789.4042-.981,0l-1.4148-2.8295c-.4245-.8491-1.113-1.5375-1.962-1.962l-2.8295-1.4148c-.4042-.2021-.4042-.7789,0-.981l2.8295-1.4148c.8491-.4246,1.5375-1.113,1.962-1.9621l1.4148-2.8295c.2021-.4042.7789-.4042.981,0l1.4148,2.8295c.4245.8491,1.113,1.5375,1.962,1.9621l2.8295,1.4148c.4042.2021.4042.7789,0,.981Zm6.1732,6.2993l-1.2127-.6063c-.3639-.182-.6589-.477-.8409-.8409l-.6063-1.2126c-.0866-.1732-.3338-.1732-.4204,0l-.6063,1.2126c-.1819.3639-.477.6589-.8409.8409l-1.2127.6063c-.1732.0866-.1732.3338,0,.4204l1.2127.6063c.3639.1819.6589.477.8409.8409l.6063,1.2126c.0866.1732.3338.1732.4204,0l.6063-1.2126c.1819-.3639.477-.6589.8409-.8409l1.2127-.6063c.1732-.0866.1732-.3338,0-.4204Zm0-14l-1.2127-.6063c-.3639-.182-.6589-.477-.8409-.8409l-.6063-1.2126c-.0866-.1732-.3338-.1732-.4204,0l-.6063,1.2126c-.1819.3639-.477.6589-.8409.8409l-1.2127.6063c-.1732.0866-.1732.3338,0,.4204l1.2127.6063c.3639.1819.6589.477.8409.8409l.6063,1.2126c.0866.1732.3338.1732.4204,0l.6063-1.2126c.1819-.3639.477-.6589.8409-.8409l1.2127-.6063c.1732-.0866.1732-.3338,0-.4204Z" fill="#fff"/></svg>
-                      </span>
-                      We are currenting experiencing issues with our Person Profile Endpoint.
-                    </p>
+                <div class="col-12 col-md-8">
 
-                  </div>
+                  <p class="lead text-white mb-0">
+                    <span class="me-2">
+                      <?xml version="1.0" encoding="UTF-8"?><svg id="a" xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24">
+                        <path
+                          d="m15.6968,12.4905l-2.8295,1.4148c-.8491.4245-1.5375,1.113-1.962,1.962l-1.4148,2.8295c-.2021.4042-.7789.4042-.981,0l-1.4148-2.8295c-.4245-.8491-1.113-1.5375-1.962-1.962l-2.8295-1.4148c-.4042-.2021-.4042-.7789,0-.981l2.8295-1.4148c.8491-.4246,1.5375-1.113,1.962-1.9621l1.4148-2.8295c.2021-.4042.7789-.4042.981,0l1.4148,2.8295c.4245.8491,1.113,1.5375,1.962,1.9621l2.8295,1.4148c.4042.2021.4042.7789,0,.981Zm6.1732,6.2993l-1.2127-.6063c-.3639-.182-.6589-.477-.8409-.8409l-.6063-1.2126c-.0866-.1732-.3338-.1732-.4204,0l-.6063,1.2126c-.1819.3639-.477.6589-.8409.8409l-1.2127.6063c-.1732.0866-.1732.3338,0,.4204l1.2127.6063c.3639.1819.6589.477.8409.8409l.6063,1.2126c.0866.1732.3338.1732.4204,0l.6063-1.2126c.1819-.3639.477-.6589.8409-.8409l1.2127-.6063c.1732-.0866.1732-.3338,0-.4204Zm0-14l-1.2127-.6063c-.3639-.182-.6589-.477-.8409-.8409l-.6063-1.2126c-.0866-.1732-.3338-.1732-.4204,0l-.6063,1.2126c-.1819.3639-.477.6589-.8409.8409l-1.2127.6063c-.1732.0866-.1732.3338,0,.4204l1.2127.6063c.3639.1819.6589.477.8409.8409l.6063,1.2126c.0866.1732.3338.1732.4204,0l.6063-1.2126c.1819-.3639.477-.6589.8409-.8409l1.2127-.6063c.1732-.0866.1732-.3338,0-.4204Z"
+                          fill="#fff" />
+                      </svg>
+                    </span>
+                    We are currenting experiencing issues with our Person Profile Endpoint.
+                  </p>
 
-                  <div class="col-12 col-md-4 text-end">
+                </div>
 
-                    <a href="#!" class="btn btn-white lift">
-                      Learn more <i class="fe fe-arrow-right ms-1"></i>
-                    </a>
+                <div class="col-12 col-md-4 text-end">
 
-                  </div>
+                  <a href="#!" class="btn btn-white lift">
+                    Learn more <i class="fe fe-arrow-right ms-1"></i>
+                  </a>
 
                 </div>
 
@@ -538,305 +581,326 @@
 
             </div>
 
-            <!-- Header -->
-            <div class="header mt-md-5">
-              <div class="header-body">
+          </div>
 
-                <div class="row align-items-center">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hintModal">
+            Launch hint modal
+          </button>
 
-                  <div class="col">
-
-                    <!-- Team name -->
-                    <div class="dropdown mb-4">
-
-                      <button class="btn btn-sm bg-primary-subtle text-primary dropdown-toggle" style="background: #dbeafe;"
-                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fe fe-users"></i> Outer Dimension Waralaba Team
-                      </button>
-  
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item text-white bg-primary" href="#">
-                            <i class="fe fe-users"></i> Outer Dimension Waralaba Team
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">
-                            <i class="fe fe-user"></i> Personal Account
-                          </a>
-                        </li>
-                        <li class="border-bottom">
-                          <a class="dropdown-item pb-3" href="#">
-                            <i class="fe fe-users"></i> Blackest of The Black Team
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item mt-2" href="account-team.html">
-                            <i class="fe fe-plus"></i> Create a new team
-                          </a>
-                        </li>
-                      </ul>
-  
-                    </div>
-
-                    <!-- Title -->
-                    <h1 class="header-title">
-                      Outer Dimension Team
-                      <a class="btn btn-sm btn-outline-primary ms-2" type="submit" data-bs-toggle="modal" data-bs-target="#teamEditName">
-                        Edit
-                      </a>
-                    </h1>
-
-                  </div>
-
-                </div> <!-- / .row -->
-                
-              </div>
-            </div>
-
-            <div class="alert alert-danger-subtle py-4">
+          <!-- Header -->
+          <div class="header mt-md-5">
+            <div class="header-body">
 
               <div class="row align-items-center">
 
-                <div class="col-12 col-md-8 col-xl-10">
-                  <h2 class="mb-2">
-                    <i class="neu-so-lock-square"></i> Team Access Restricted
-                  </h2>
-                  <p class="mb-0 text-black">
-                    API key access is now restricted to the team owner only. To restore full team functionality, please subscribe to a monthly plan starting from $299 or any annual plan.
-                  </p>
+                <div class="col">
+
+                  <!-- Team name -->
+                  <div class="dropdown mb-4">
+
+                    <button class="btn btn-sm bg-primary-subtle text-primary dropdown-toggle"
+                      style="background: #dbeafe;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fe fe-users"></i> Outer Dimension Waralaba Team
+                    </button>
+
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item text-white bg-primary" href="#">
+                          <i class="fe fe-users"></i> Outer Dimension Waralaba Team
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="fe fe-user"></i> Personal Account
+                        </a>
+                      </li>
+                      <li class="border-bottom">
+                        <a class="dropdown-item pb-3" href="#">
+                          <i class="fe fe-users"></i> Blackest of The Black Team
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item mt-2" href="account-team.html">
+                          <i class="fe fe-plus"></i> Create a new team
+                        </a>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                  <!-- Title -->
+                  <h1 class="header-title">
+                    Outer Dimension Team
+                    <a class="btn btn-sm btn-outline-primary ms-2" type="submit" data-bs-toggle="modal"
+                      data-bs-target="#teamEditName">
+                      Edit
+                    </a>
+                  </h1>
+
                 </div>
 
-                <div class="col-12 col-md-4 col-xl-2 text-end">
-                  <a class="btn btn-primary mt-3 w-100" href="account-buy-credits.html">
-                    Upgrade plan
-                  </a>
-                </div>
+              </div> <!-- / .row -->
 
+            </div>
+          </div>
+
+          <div class="alert alert-danger-subtle py-4">
+
+            <div class="row align-items-center">
+
+              <div class="col-12 col-md-8 col-xl-10">
+                <h2 class="mb-2">
+                  <i class="neu-so-lock-square"></i> Team Access Restricted
+                </h2>
+                <p class="mb-0 text-black">
+                  API key access is now restricted to the team owner only. To restore full team functionality, please
+                  subscribe to a monthly plan starting from $299 or any annual plan.
+                </p>
+              </div>
+
+              <div class="col-12 col-md-4 col-xl-2 text-end">
+                <a class="btn btn-primary mt-3 w-100" href="account-buy-credits.html">
+                  Upgrade plan
+                </a>
               </div>
 
             </div>
 
-            <!-- Card -->
-            <div class="card">
-              <div class="card-header">
+          </div>
 
-                <!-- Title -->
-                <h4 class="card-header-title">
-                  Members
-                </h4>
+          <!-- Card -->
+          <div class="card">
+            <div class="card-header">
 
-                <!-- Dropdown -->
-                <div class="dropdown">
-                  <button class="btn btn-sm btn-outline-primary" type="button" id="inviteMember" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Invite member
-                  </button>
-                  <form class="dropdown-menu dropdown-menu-end dropdown-menu-card" aria-labelledby="inviteMember">
-                    <div class="card-header">
+              <!-- Title -->
+              <h4 class="card-header-title">
+                Members
+              </h4>
+
+              <!-- Dropdown -->
+              <div class="dropdown">
+                <button class="btn btn-sm btn-outline-primary" type="button" id="inviteMember" data-bs-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Invite member
+                </button>
+                <form class="dropdown-menu dropdown-menu-end dropdown-menu-card" aria-labelledby="inviteMember">
+                  <div class="card-header">
+
+                    <!-- Title -->
+                    <h4 class="card-header-title">
+                      Invite a member
+                    </h4>
+
+                  </div>
+                  <div class="card-header">
+                    <div class="row g-0 align-items-center">
+                      <div class="col-3">
+
+                        <!-- Label -->
+                        <label class="mb-0" for="inviteMemberEmail">
+                          Email
+                        </label>
+
+                      </div>
+                      <div class="col">
+
+                        <!-- Input -->
+                        <input class="form-control form-control-flush" id="inviteMemberEmail" type="text"
+                          placeholder="Email address">
+
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+                  <div class="card-footer">
+
+                    <!-- Button -->
+                    <button class="btn w-100 btn-primary" type="submit">
+                      Invite member
+                    </button>
+
+                  </div>
+                </form>
+              </div>
+
+            </div>
+            <div class="card-body">
+
+              <!-- List group -->
+              <div class="list-group list-group-flush my-n3">
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-5">
 
                       <!-- Title -->
-                      <h4 class="card-header-title">
-                        Invite a member
+                      <h4>
+                        example@nubela.co
                       </h4>
 
                     </div>
-                    <div class="card-header">
-                      <div class="row g-0 align-items-center">
-                        <div class="col-3">
+                    <div class="col-auto ms-auto me-n3">
 
-                          <!-- Label -->
-                          <label class="mb-0" for="inviteMemberEmail">
-                            Email
-                          </label>
-
-                        </div>
-                        <div class="col">
-
-                          <!-- Input -->
-                          <input class="form-control form-control-flush" id="inviteMemberEmail" type="text" placeholder="Email address">
-
-                        </div>
-                      </div> <!-- / .row -->
-                    </div>
-                    <div class="card-footer">
-
-                      <!-- Button -->
-                      <button class="btn w-100 btn-primary" type="submit">
-                        Invite member
-                      </button>
+                      <span class="badge bg-secondary">
+                        Admin
+                      </span>
 
                     </div>
-                  </form>
+                    <div class="col-auto">
+
+                      <!-- Dropdown -->
+                      <div class="dropdown">
+                        <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          <i class="fe fe-more-vertical"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="#!">
+                            Remove user
+                          </a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div> <!-- / .row -->
                 </div>
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-5">
 
-              </div>
-              <div class="card-body">
+                      <!-- Title -->
+                      <h4>
+                        slimshady@nubela.co
+                      </h4>
 
-                <!-- List group -->
-                <div class="list-group list-group-flush my-n3">
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-5">
+                    </div>
+                    <div class="col-auto ms-auto me-n3">
 
-                        <!-- Title -->
-                        <h4>
-                          example@nubela.co
-                        </h4>
+                      <span class="badge bg-secondary-soft">
+                        Member
+                      </span>
 
-                      </div>
-                      <div class="col-auto ms-auto me-n3">
+                    </div>
+                    <div class="col-auto">
 
-                        <span class="badge bg-secondary">
-                          Admin
-                        </span>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                          <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fe fe-more-vertical"></i>
+                      <!-- Dropdown -->
+                      <div class="dropdown">
+                        <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          <i class="fe fe-more-vertical"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="#!">
+                            Remove user
                           </a>
-                          <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#!">
-                              Remove user
-                            </a>
-                          </div>
                         </div>
-
                       </div>
-                    </div> <!-- / .row -->
-                  </div>
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-5">
 
-                        <!-- Title -->
-                        <h4>
-                          slimshady@nubela.co
-                        </h4>
-
-                      </div>
-                      <div class="col-auto ms-auto me-n3">
-
-                        <span class="badge bg-secondary-soft">
-                          Member
-                        </span>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                          <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fe fe-more-vertical"></i>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#!">
-                              Remove user
-                            </a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-5">
-
-                        <!-- Title -->
-                        <h4>
-                          ayamsuwir@nubela.co
-                        </h4>
-
-                      </div>
-                      <div class="col-auto ms-auto me-n3">
-
-                        <span class="badge bg-secondary-soft">
-                          Member
-                        </span>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                          <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fe fe-more-vertical"></i>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#!">
-                              Remove user
-                            </a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-5">
-
-                        <!-- Title -->
-                        <h4>
-                          luhut@nubela.co
-                        </h4>
-
-                      </div>
-                      <div class="col-auto ms-auto me-n3">
-
-                        <span class="badge bg-secondary-soft">
-                          Member
-                        </span>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                          <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fe fe-more-vertical"></i>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-end">
-                            <a class="dropdown-item" href="#!">
-                              Remove user
-                            </a>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
+                    </div>
+                  </div> <!-- / .row -->
                 </div>
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-5">
 
+                      <!-- Title -->
+                      <h4>
+                        ayamsuwir@nubela.co
+                      </h4>
+
+                    </div>
+                    <div class="col-auto ms-auto me-n3">
+
+                      <span class="badge bg-secondary-soft">
+                        Member
+                      </span>
+
+                    </div>
+                    <div class="col-auto">
+
+                      <!-- Dropdown -->
+                      <div class="dropdown">
+                        <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          <i class="fe fe-more-vertical"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="#!">
+                            Remove user
+                          </a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div> <!-- / .row -->
+                </div>
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-5">
+
+                      <!-- Title -->
+                      <h4>
+                        luhut@nubela.co
+                      </h4>
+
+                    </div>
+                    <div class="col-auto ms-auto me-n3">
+
+                      <span class="badge bg-secondary-soft">
+                        Member
+                      </span>
+
+                    </div>
+                    <div class="col-auto">
+
+                      <!-- Dropdown -->
+                      <div class="dropdown">
+                        <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          <i class="fe fe-more-vertical"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="#!">
+                            Remove user
+                          </a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div> <!-- / .row -->
+                </div>
               </div>
+
             </div>
-
-            <br>
-
           </div>
-        </div> <!-- / .row -->
-      </div>
 
-    </div> <!-- / .main-content -->
+          <br>
 
-    <!-- JAVASCRIPT -->
-    <!-- Map JS -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-    
-    <!-- Vendor JS -->
-    <script src="./assets/js/vendor.bundle.js"></script>
-    
-    <!-- Theme JS -->
-    <script src="./assets/js/theme.bundle.js"></script>
+        </div>
+      </div> <!-- / .row -->
+    </div>
 
-    <!-- Custom JS-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
-    <script src="collapse.js"></script>
+  </div> <!-- / .main-content -->
 
-  </body>
+  <script>
+    $(document).ready(function () {
+      $('#hintModal').modal('show');
+    });
+  </script>
+
+  <!-- JAVASCRIPT -->
+  <!-- Map JS -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+  <!-- Vendor JS -->
+  <script src="./assets/js/vendor.bundle.js"></script>
+
+  <!-- Theme JS -->
+  <script src="./assets/js/theme.bundle.js"></script>
+
+  <!-- Custom JS-->
+  <script src="script.js"></script>
+  <script src="collapse.js"></script>
+
+</body>
+
 </html>
