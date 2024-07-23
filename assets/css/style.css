@@ -130,41 +130,41 @@
 }
 
 .bg-primary {
-  background-color: #335eea !important;
+  background-color: #2c7be5 !important;
 }
 @media (min-width: 375px) {
   .bg-primary-xsm {
-    background-color: #335eea !important;
+    background-color: #2c7be5 !important;
   }
 }
 @media (min-width: 576px) {
   .bg-primary-sm {
-    background-color: #335eea !important;
+    background-color: #2c7be5 !important;
   }
 }
 @media (min-width: 768px) {
   .bg-primary-md {
-    background-color: #335eea !important;
+    background-color: #2c7be5 !important;
   }
 }
 @media (min-width: 992px) {
   .bg-primary-lg {
-    background-color: #335eea !important;
+    background-color: #2c7be5 !important;
   }
 }
 @media (min-width: 1200px) {
   .bg-primary-xl {
-    background-color: #335eea !important;
+    background-color: #2c7be5 !important;
   }
 }
 @media (min-width: 1400px) {
   .bg-primary-xxl {
-    background-color: #335eea !important;
+    background-color: #2c7be5 !important;
   }
 }
 @media (min-width: 1900px) {
   .bg-primary-xxxl {
-    background-color: #335eea !important;
+    background-color: #2c7be5 !important;
   }
 }
 
@@ -288,41 +288,41 @@
 }
 
 .text-color-primary {
-  color: #335eea !important;
+  color: #2c7be5 !important;
 }
 @media (min-width: 375px) {
   .text-color-primary-xsm {
-    color: #335eea !important;
+    color: #2c7be5 !important;
   }
 }
 @media (min-width: 576px) {
   .text-color-primary-sm {
-    color: #335eea !important;
+    color: #2c7be5 !important;
   }
 }
 @media (min-width: 768px) {
   .text-color-primary-md {
-    color: #335eea !important;
+    color: #2c7be5 !important;
   }
 }
 @media (min-width: 992px) {
   .text-color-primary-lg {
-    color: #335eea !important;
+    color: #2c7be5 !important;
   }
 }
 @media (min-width: 1200px) {
   .text-color-primary-xl {
-    color: #335eea !important;
+    color: #2c7be5 !important;
   }
 }
 @media (min-width: 1400px) {
   .text-color-primary-xxl {
-    color: #335eea !important;
+    color: #2c7be5 !important;
   }
 }
 @media (min-width: 1900px) {
   .text-color-primary-xxxl {
-    color: #335eea !important;
+    color: #2c7be5 !important;
   }
 }
 
@@ -627,8 +627,8 @@
 /*--- Button ---*/
 .btn-sapiengraph-primary {
   color: rgb(255, 255, 255) !important;
-  background-color: #335eea !important;
-  border-color: #335eea !important;
+  background-color: #2c7be5 !important;
+  border-color: #2c7be5 !important;
 }
 .btn-sapiengraph-primary:hover {
   color: rgb(255, 255, 255) !important;
@@ -638,7 +638,7 @@
 
 /*--- /Button ---*/
 .search-1 {
-  border: 1px solid #335eea;
+  border: 1px solid #2c7be5;
   border-radius: 8px;
 }
 .search-1 input {
@@ -791,13 +791,13 @@
 }
 #buyCreditsTab.nav-pills .nav-item .nav-link.active {
   background-color: #eff6ff !important;
-  color: #335eea !important;
-  border: 1px solid #335eea !important;
+  color: #2c7be5 !important;
+  border: 1px solid #2c7be5 !important;
 }
 #buyCreditsTab.nav-pills .nav-item .show > .nav-link {
   background-color: #eff6ff !important;
-  color: #335eea !important;
-  border: 1px solid #335eea !important;
+  color: #2c7be5 !important;
+  border: 1px solid #2c7be5 !important;
 }
 @media (min-width: 992px) {
   #buyCreditsTab.nav-pills .nav-item:first-child {
@@ -820,6 +820,32 @@
     border-bottom-right-radius: 8px !important;
     border-bottom-left-radius: 0 !important;
   }
+}
+
+#team-list-xs li h4 {
+  color: rgb(0, 0, 0);
+}
+#team-list-xs li p {
+  color: #2c7be5;
+}
+#team-list-xs li.active h4 {
+  color: rgb(255, 255, 255);
+}
+#team-list-xs li.active p {
+  color: rgb(255, 255, 255);
+}
+
+#team-list-md li h4 {
+  color: rgb(0, 0, 0);
+}
+#team-list-md li p {
+  color: #2c7be5;
+}
+#team-list-md li.active h4 {
+  color: rgb(255, 255, 255);
+}
+#team-list-md li.active p {
+  color: rgb(255, 255, 255);
 }
 
 /*--- Scroll Horizontal ---*/
@@ -866,7 +892,7 @@
 }
 
 .border-primary {
-  border-color: #335eea !important;
+  border-color: #2c7be5 !important;
 }
 
 /*-- /Add Custom --*/
