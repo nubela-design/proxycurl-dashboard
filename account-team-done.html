@@ -15,17 +15,20 @@
   <!-- Libs CSS -->
   <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
 
+  <!-- Import Neu CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">
+
   <!-- Theme CSS -->
   <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="style-custom.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">
 
   <!-- Title -->
   <title>Proxycurl - Dashboard</title>
 
   <!-- Import Jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  
+
 </head>
 
 <body>
@@ -54,7 +57,7 @@
 
               <div class="col-10">
 
-                <p class="mb-0 fw-bold text-truncate" style="max-width: 138px;">
+                <p class="mb-0 fw-bold text-truncate" style="max-width: 138px;" id="navTeamTitleXs">
                   Outer Dimension Waralaba Team
                 </p>
 
@@ -101,36 +104,36 @@
               </form>
             </div>
 
-            <ul class="list-group list-group-flush">
+            <ul class="list-group list-group-flush" id="team-list-xs">
 
-              <li class="list-group-item active">
-                <a class="dropdown-item" href="#!" type="button">
-                  <p class="text-white mb-0">
+              <li class="list-group-item active" id="navXsLiOuterDimension">
+                <a class="dropdown-item" href="javascript:void(0)" type="button" onclick="switchTeam('Outer Dimension Waralaba Team')">
+                  <h4 class="fw-light mb-0">
                     Outer Dimension Waralaba Team
-                  </p>
-                  <p class="text-white small mb-0">
+                  </h4>
+                  <p class="small mb-0">
                     Team Member
                   </p>
                 </a>
               </li>
 
-              <li class="list-group-item">
-                <a class="dropdown-item" href="#!" type="button">
-                  <p class="text-black mb-0">
+              <li class="list-group-item" id="navXsLiPersonalAccount">
+                <a class="dropdown-item" href="javascript:void(0)" type="button" onclick="switchTeam('Personal Account')">
+                  <h4 class="fw-light mb-0">
                     Personal Account
-                  </p>
-                  <p class="text-primary small mb-0">
+                  </h4>
+                  <p class="small mb-0">
                     Team Owner
                   </p>
                 </a>
               </li>
 
-              <li class="list-group-item">
-                <a class="dropdown-item" href="#!" type="button">
-                  <p class="text-black mb-0">
+              <li class="list-group-item" id="navXsLiBlackest">
+                <a class="dropdown-item" href="javascript:void(0)" type="button" onclick="switchTeam('Blackest of The Black Team')">
+                  <h4 class="fw-light mb-0">
                     Blackest of The Black Team
-                  </p>
-                  <p class="text-primary small mb-0">
+                  </h4>
+                  <p class="small mb-0">
                     Team Admin
                   </p>
                 </a>
@@ -353,7 +356,7 @@
 
                 <div class="col-11">
 
-                  <p class="mb-0 fw-bold text-truncate">
+                  <p class="mb-0 fw-bold text-truncate" id="navTeamTitleMd">
                     Outer Dimension Waralaba Team
                   </p>
 
@@ -402,37 +405,37 @@
                 </form>
               </div>
 
-              <ul class="list-group list-group-flush">
+              <ul class="list-group list-group-flush" id="team-list-md">
 
-                <li class="list-group-item active" data-bs-toggle="tooltip" data-bs-placement="top"
+                <li class="list-group-item active" id="navMdLiOuterDimension" data-bs-toggle="tooltip" data-bs-placement="top"
                   title="Outer Dimension Waralaba Team, ardhannywandicikicaka@outerdimension.com">
-                  <a class="dropdown-item" href="#!" type="button">
-                    <p class="text-white mb-0 text-truncate">
+                  <a class="dropdown-item" href="javascript:void(0)" type="button" onclick="switchTeam('Outer Dimension Waralaba Team')">
+                    <h4 class="fw-light mb-0 text-truncate">
                       Outer Dimension Waralaba Team
-                    </p>
-                    <p class="text-white small mb-0">
+                    </h4>
+                    <p class="small mb-0">
                       Team Member
                     </p>
                   </a>
                 </li>
 
-                <li class="list-group-item">
-                  <a class="dropdown-item" href="#!" type="button">
-                    <p class="text-black mb-0 text-truncate">
+                <li class="list-group-item" id="navMdLiPersonalAccount">
+                  <a class="dropdown-item" href="javascript:void(0)" type="button" onclick="switchTeam('Personal Account')">
+                    <h4 class="fw-light mb-0 text-truncate">
                       Personal Account
-                    </p>
-                    <p class="text-primary small mb-0">
+                    </h4>
+                    <p class="small mb-0">
                       Team Owner
                     </p>
                   </a>
                 </li>
 
-                <li class="list-group-item">
-                  <a class="dropdown-item" href="#!" type="button">
-                    <p class="text-black mb-0 text-truncate">
+                <li class="list-group-item" id="navMdLiBlackest">
+                  <a class="dropdown-item" href="javascript:void(0)" type="button" onclick="switchTeam('Blackest of The Black Team')">
+                    <h4 class="fw-light mb-0 text-truncate">
                       Blackest of The Black Team
-                    </p>
-                    <p class="text-primary small mb-0">
+                    </h4>
+                    <p class="small mb-0">
                       Team Admin
                     </p>
                   </a>
@@ -522,8 +525,8 @@
         <div class="modal-body">
           <div class="row justify-content-center mb-5">
             <div class="col-12 col-md-10 text-center">
-              <h2 class="lead mb-4">You have successfully joined Outer Dimension Waralaba Team</h2>
-              <p class="mb-2">
+              <h2 class="lead mb-3">You have successfully joined Outer Dimension Waralaba Team</h2>
+              <p class="mb-3">
                 You can now switch between accounts to use Proxycurl
               </p>
               <img src="./assets/img/switch-team.gif" alt="" srcset="" class="w-100">
@@ -583,11 +586,6 @@
 
           </div>
 
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hintModal">
-            Launch hint modal
-          </button>
-
           <!-- Header -->
           <div class="header mt-md-5">
             <div class="header-body">
@@ -601,26 +599,26 @@
 
                     <button class="btn btn-sm bg-primary-subtle text-primary dropdown-toggle"
                       style="background: #dbeafe;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="fe fe-users"></i> Outer Dimension Waralaba Team
+                      <i class="fe fe-users"></i> <span id="teamSelect">Outer Dimension Waralaba Team</span>
                     </button>
 
                     <ul class="dropdown-menu">
                       <li>
-                        <a class="dropdown-item text-white bg-primary" href="#">
+                        <a class="dropdown-item text-white bg-primary" href="javascript:void(0)" id="teamSelectOuterDimension" onclick="switchTeam('Outer Dimension Waralaba Team')">
                           <i class="fe fe-users"></i> Outer Dimension Waralaba Team
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="javascript:void(0)" id="teamSelectPersonalAccount" onclick="switchTeam('Personal Account')">
                           <i class="fe fe-user"></i> Personal Account
                         </a>
                       </li>
-                      <li class="border-bottom">
-                        <a class="dropdown-item pb-3" href="#">
+                      <li>
+                        <a class="dropdown-item" href="javascript:void(0)" id="teamSelectBlackest" onclick="switchTeam('Blackest of The Black Team')">
                           <i class="fe fe-users"></i> Blackest of The Black Team
                         </a>
                       </li>
-                      <li>
+                      <li class="border-top mt-2">
                         <a class="dropdown-item mt-2" href="account-team.html">
                           <i class="fe fe-plus"></i> Create a new team
                         </a>
@@ -630,254 +628,258 @@
                   </div>
 
                   <!-- Title -->
-                  <h1 class="header-title">
-                    Outer Dimension Team
-                    <a class="btn btn-sm btn-outline-primary ms-2" type="submit" data-bs-toggle="modal"
+                  <div class="d-flex align-items-center gap-3">
+                    <h1 id="headerTitle" class="header-title d-inline-block">
+                      Outer Dimension Team
+                    </h1>
+                    <a class="btn btn-sm btn-outline-primary" type="submit" data-bs-toggle="modal"
                       data-bs-target="#teamEditName">
                       Edit
                     </a>
-                  </h1>
-
+                  </div>
                 </div>
 
-              </div> <!-- / .row -->
 
-            </div>
-          </div>
-
-          <div class="alert alert-danger-subtle py-4">
-
-            <div class="row align-items-center">
-
-              <div class="col-12 col-md-8 col-xl-10">
-                <h2 class="mb-2">
-                  <i class="neu-so-lock-square"></i> Team Access Restricted
-                </h2>
-                <p class="mb-0 text-black">
-                  API key access is now restricted to the team owner only. To restore full team functionality, please
-                  subscribe to a monthly plan starting from $299 or any annual plan.
-                </p>
               </div>
 
-              <div class="col-12 col-md-4 col-xl-2 text-end">
-                <a class="btn btn-primary mt-3 w-100" href="account-buy-credits.html">
-                  Upgrade plan
-                </a>
-              </div>
+            </div> <!-- / .row -->
 
+          </div>
+        </div>
+
+        <div class="alert alert-danger-subtle py-4">
+
+          <div class="row align-items-center">
+
+            <div class="col-12 col-md-8 col-xl-10">
+              <h2 class="mb-2">
+                <i class="neu-so-lock-square"></i> Team Access Restricted
+              </h2>
+              <p class="mb-0 text-black">
+                API key access is now restricted to the team owner only. To restore full team functionality, please
+                subscribe to a monthly plan starting from $299 or any annual plan.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-4 col-xl-2 text-end">
+              <a class="btn btn-primary mt-3 w-100" href="account-buy-credits.html">
+                Upgrade plan
+              </a>
             </div>
 
           </div>
 
-          <!-- Card -->
-          <div class="card">
-            <div class="card-header">
+        </div>
 
-              <!-- Title -->
-              <h4 class="card-header-title">
-                Members
-              </h4>
+        <!-- Card -->
+        <div class="card">
+          <div class="card-header">
 
-              <!-- Dropdown -->
-              <div class="dropdown">
-                <button class="btn btn-sm btn-outline-primary" type="button" id="inviteMember" data-bs-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  Invite member
-                </button>
-                <form class="dropdown-menu dropdown-menu-end dropdown-menu-card" aria-labelledby="inviteMember">
-                  <div class="card-header">
+            <!-- Title -->
+            <h4 class="card-header-title">
+              Members
+            </h4>
+
+            <!-- Dropdown -->
+            <div class="dropdown">
+              <button class="btn btn-sm btn-outline-primary" type="button" id="inviteMember" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Invite member
+              </button>
+              <form class="dropdown-menu dropdown-menu-end dropdown-menu-card" aria-labelledby="inviteMember">
+                <div class="card-header">
+
+                  <!-- Title -->
+                  <h4 class="card-header-title">
+                    Invite a member
+                  </h4>
+
+                </div>
+                <div class="card-header">
+                  <div class="row g-0 align-items-center">
+                    <div class="col-3">
+
+                      <!-- Label -->
+                      <label class="mb-0" for="inviteMemberEmail">
+                        Email
+                      </label>
+
+                    </div>
+                    <div class="col">
+
+                      <!-- Input -->
+                      <input class="form-control form-control-flush" id="inviteMemberEmail" type="text"
+                        placeholder="Email address">
+
+                    </div>
+                  </div> <!-- / .row -->
+                </div>
+                <div class="card-footer">
+
+                  <!-- Button -->
+                  <button class="btn w-100 btn-primary" type="submit">
+                    Invite member
+                  </button>
+
+                </div>
+              </form>
+            </div>
+
+          </div>
+          <div class="card-body">
+
+            <!-- List group -->
+            <div class="list-group list-group-flush my-n3">
+              <div class="list-group-item">
+                <div class="row align-items-center">
+                  <div class="col-5">
 
                     <!-- Title -->
-                    <h4 class="card-header-title">
-                      Invite a member
+                    <h4>
+                      example@nubela.co
                     </h4>
 
                   </div>
-                  <div class="card-header">
-                    <div class="row g-0 align-items-center">
-                      <div class="col-3">
+                  <div class="col-auto ms-auto me-n3">
 
-                        <!-- Label -->
-                        <label class="mb-0" for="inviteMemberEmail">
-                          Email
-                        </label>
-
-                      </div>
-                      <div class="col">
-
-                        <!-- Input -->
-                        <input class="form-control form-control-flush" id="inviteMemberEmail" type="text"
-                          placeholder="Email address">
-
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-                  <div class="card-footer">
-
-                    <!-- Button -->
-                    <button class="btn w-100 btn-primary" type="submit">
-                      Invite member
-                    </button>
+                    <span class="badge bg-secondary">
+                      Admin
+                    </span>
 
                   </div>
-                </form>
+                  <div class="col-auto">
+
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                      <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fe fe-more-vertical"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-end">
+                        <a class="dropdown-item" href="#!">
+                          Remove user
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div> <!-- / .row -->
               </div>
+              <div class="list-group-item">
+                <div class="row align-items-center">
+                  <div class="col-5">
 
-            </div>
-            <div class="card-body">
+                    <!-- Title -->
+                    <h4>
+                      slimshady@nubela.co
+                    </h4>
 
-              <!-- List group -->
-              <div class="list-group list-group-flush my-n3">
-                <div class="list-group-item">
-                  <div class="row align-items-center">
-                    <div class="col-5">
+                  </div>
+                  <div class="col-auto ms-auto me-n3">
 
-                      <!-- Title -->
-                      <h4>
-                        example@nubela.co
-                      </h4>
+                    <span class="badge bg-secondary-soft">
+                      Member
+                    </span>
 
-                    </div>
-                    <div class="col-auto ms-auto me-n3">
+                  </div>
+                  <div class="col-auto">
 
-                      <span class="badge bg-secondary">
-                        Admin
-                      </span>
-
-                    </div>
-                    <div class="col-auto">
-
-                      <!-- Dropdown -->
-                      <div class="dropdown">
-                        <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                          aria-haspopup="true" aria-expanded="false">
-                          <i class="fe fe-more-vertical"></i>
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                      <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fe fe-more-vertical"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-end">
+                        <a class="dropdown-item" href="#!">
+                          Remove user
                         </a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a class="dropdown-item" href="#!">
-                            Remove user
-                          </a>
-                        </div>
                       </div>
-
                     </div>
-                  </div> <!-- / .row -->
-                </div>
-                <div class="list-group-item">
-                  <div class="row align-items-center">
-                    <div class="col-5">
 
-                      <!-- Title -->
-                      <h4>
-                        slimshady@nubela.co
-                      </h4>
-
-                    </div>
-                    <div class="col-auto ms-auto me-n3">
-
-                      <span class="badge bg-secondary-soft">
-                        Member
-                      </span>
-
-                    </div>
-                    <div class="col-auto">
-
-                      <!-- Dropdown -->
-                      <div class="dropdown">
-                        <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                          aria-haspopup="true" aria-expanded="false">
-                          <i class="fe fe-more-vertical"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a class="dropdown-item" href="#!">
-                            Remove user
-                          </a>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div> <!-- / .row -->
-                </div>
-                <div class="list-group-item">
-                  <div class="row align-items-center">
-                    <div class="col-5">
-
-                      <!-- Title -->
-                      <h4>
-                        ayamsuwir@nubela.co
-                      </h4>
-
-                    </div>
-                    <div class="col-auto ms-auto me-n3">
-
-                      <span class="badge bg-secondary-soft">
-                        Member
-                      </span>
-
-                    </div>
-                    <div class="col-auto">
-
-                      <!-- Dropdown -->
-                      <div class="dropdown">
-                        <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                          aria-haspopup="true" aria-expanded="false">
-                          <i class="fe fe-more-vertical"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a class="dropdown-item" href="#!">
-                            Remove user
-                          </a>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div> <!-- / .row -->
-                </div>
-                <div class="list-group-item">
-                  <div class="row align-items-center">
-                    <div class="col-5">
-
-                      <!-- Title -->
-                      <h4>
-                        luhut@nubela.co
-                      </h4>
-
-                    </div>
-                    <div class="col-auto ms-auto me-n3">
-
-                      <span class="badge bg-secondary-soft">
-                        Member
-                      </span>
-
-                    </div>
-                    <div class="col-auto">
-
-                      <!-- Dropdown -->
-                      <div class="dropdown">
-                        <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                          aria-haspopup="true" aria-expanded="false">
-                          <i class="fe fe-more-vertical"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a class="dropdown-item" href="#!">
-                            Remove user
-                          </a>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div> <!-- / .row -->
-                </div>
+                  </div>
+                </div> <!-- / .row -->
               </div>
+              <div class="list-group-item">
+                <div class="row align-items-center">
+                  <div class="col-5">
 
+                    <!-- Title -->
+                    <h4>
+                      ayamsuwir@nubela.co
+                    </h4>
+
+                  </div>
+                  <div class="col-auto ms-auto me-n3">
+
+                    <span class="badge bg-secondary-soft">
+                      Member
+                    </span>
+
+                  </div>
+                  <div class="col-auto">
+
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                      <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fe fe-more-vertical"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-end">
+                        <a class="dropdown-item" href="#!">
+                          Remove user
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+              <div class="list-group-item">
+                <div class="row align-items-center">
+                  <div class="col-5">
+
+                    <!-- Title -->
+                    <h4>
+                      luhut@nubela.co
+                    </h4>
+
+                  </div>
+                  <div class="col-auto ms-auto me-n3">
+
+                    <span class="badge bg-secondary-soft" id="testClickFunction">
+                      Member
+                    </span>
+
+                  </div>
+                  <div class="col-auto">
+
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                      <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fe fe-more-vertical"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-end">
+                        <a class="dropdown-item" href="#!">
+                          Remove user
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div> <!-- / .row -->
+              </div>
             </div>
+
           </div>
-
-          <br>
-
         </div>
-      </div> <!-- / .row -->
-    </div>
+
+        <br>
+
+      </div>
+    </div> <!-- / .row -->
+  </div>
 
   </div> <!-- / .main-content -->
 
@@ -885,6 +887,85 @@
     $(document).ready(function () {
       $('#hintModal').modal('show');
     });
+
+    $("#testClickFunction").on("click", function () {
+      alert("Hello");
+    });
+  </script>
+
+  <script>
+    // title declar
+    const headerTeamTitle = document.getElementById('headerTitle');
+
+    // nav XS declar
+    const navTeamTitleXs = document.getElementById('navTeamTitleXs');
+    const navXsLiOuterDimension = document.getElementById('navXsLiOuterDimension');
+    const navXsLiPersonalAccount = document.getElementById('navXsLiPersonalAccount');
+    const navXsLiBlackest = document.getElementById('navXsLiBlackest');
+
+    // nav MD declar
+    const navTeamTitleMd = document.getElementById('navTeamTitleMd');
+    const navMdLiOuterDimension = document.getElementById('navMdLiOuterDimension');
+    const navMdLiPersonalAccount = document.getElementById('navMdLiPersonalAccount');
+    const navMdLiBlackest = document.getElementById('navMdLiBlackest');
+
+    // dropdown select declar
+    const teamSelect = document.getElementById('teamSelect');
+    const teamSelectOuterDimension = document.getElementById('teamSelectOuterDimension');
+    const teamSelectPersonalAccount = document.getElementById('teamSelectPersonalAccount');
+    const teamSelectBlackest = document.getElementById('teamSelectBlackest');
+
+    function switchTeam(title) {
+      headerTeamTitle.innerHTML = title;
+      navTeamTitleMd.innerHTML = title;
+      navTeamTitleXs.innerHTML = title;
+      teamSelect.innerHTML = title;
+
+      // Nav Team XS Active Function
+      if (title === "Outer Dimension Waralaba Team") {
+        navXsLiPersonalAccount.classList.remove("active");
+        navXsLiBlackest.classList.remove("active");
+        navXsLiOuterDimension.classList.add("active");
+      } else if (title === "Personal Account") {
+        navXsLiOuterDimension.classList.remove("active");
+        navXsLiBlackest.classList.remove("active");
+        navXsLiPersonalAccount.classList.add("active");
+      } else if (title === "Blackest of The Black Team") {
+        navXsLiOuterDimension.classList.remove("active");
+        navXsLiPersonalAccount.classList.remove("active");
+        navXsLiBlackest.classList.add("active");
+      }
+
+      // Nav Team MD Active Function
+      if (title === "Outer Dimension Waralaba Team") {
+        navMdLiPersonalAccount.classList.remove("active");
+        navMdLiBlackest.classList.remove("active");
+        navMdLiOuterDimension.classList.add("active");
+      } else if (title === "Personal Account") {
+        navMdLiOuterDimension.classList.remove("active");
+        navMdLiBlackest.classList.remove("active");
+        navMdLiPersonalAccount.classList.add("active");
+      } else if (title === "Blackest of The Black Team") {
+        navMdLiOuterDimension.classList.remove("active");
+        navMdLiPersonalAccount.classList.remove("active");
+        navMdLiBlackest.classList.add("active");
+      }
+
+      // Team Select Active Function
+      if (title === "Outer Dimension Waralaba Team") {
+        teamSelectPersonalAccount.classList.remove("text-white","bg-primary");
+        teamSelectBlackest.classList.remove("text-white","bg-primary");
+        teamSelectOuterDimension.classList.add("text-white","bg-primary");
+      } else if (title === "Personal Account") {
+        teamSelectOuterDimension.classList.remove("text-white","bg-primary");
+        teamSelectBlackest.classList.remove("text-white","bg-primary");
+        teamSelectPersonalAccount.classList.add("text-white","bg-primary");
+      } else if (title === "Blackest of The Black Team") {
+        teamSelectOuterDimension.classList.remove("text-white","bg-primary");
+        teamSelectPersonalAccount.classList.remove("text-white","bg-primary");
+        teamSelectBlackest.classList.add("text-white","bg-primary");
+      }
+    }
   </script>
 
   <!-- JAVASCRIPT -->

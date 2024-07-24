@@ -199,3 +199,45 @@
     }
   }
 }
+
+// Nav Team List
+// Nav Team List XS
+#team-list-xs {
+  li {
+    h4 {
+      color: $black;
+    }
+    p {
+      color: $primary;
+    }
+
+    &.active {
+      h4 {
+        color: $white;
+      }
+      p {
+        color: $white;
+      }
+    }
+  }
+}
+// Nav Team List MD
+#team-list-md {
+  li {
+    h4 {
+      color: $black;
+    }
+    p {
+      color: $primary;
+    }
+
+    &.active {
+      h4 {
+        color: $white;
+      }
+      p {
+        color: $white;
+      }
+    }
+  }
+}
