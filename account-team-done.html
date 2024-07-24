@@ -107,7 +107,8 @@
             <ul class="list-group list-group-flush" id="team-list-xs">
 
               <li class="list-group-item active" id="navXsLiOuterDimension">
-                <a class="dropdown-item" href="javascript:void(0)" type="button" onclick="switchTeam('Outer Dimension Waralaba Team')">
+                <a class="dropdown-item" href="javascript:void(0)" type="button"
+                  onclick="switchTeam('Outer Dimension Waralaba Team')">
                   <h4 class="fw-light mb-0">
                     Outer Dimension Waralaba Team
                   </h4>
@@ -118,7 +119,8 @@
               </li>
 
               <li class="list-group-item" id="navXsLiPersonalAccount">
-                <a class="dropdown-item" href="javascript:void(0)" type="button" onclick="switchTeam('Personal Account')">
+                <a class="dropdown-item" href="javascript:void(0)" type="button"
+                  onclick="switchTeam('Personal Account')">
                   <h4 class="fw-light mb-0">
                     Personal Account
                   </h4>
@@ -129,7 +131,8 @@
               </li>
 
               <li class="list-group-item" id="navXsLiBlackest">
-                <a class="dropdown-item" href="javascript:void(0)" type="button" onclick="switchTeam('Blackest of The Black Team')">
+                <a class="dropdown-item" href="javascript:void(0)" type="button"
+                  onclick="switchTeam('Blackest of The Black Team')">
                   <h4 class="fw-light mb-0">
                     Blackest of The Black Team
                   </h4>
@@ -408,7 +411,8 @@
               <ul class="list-group list-group-flush" id="team-list-md">
 
                 <li class="list-group-item active" id="navMdLiOuterDimension">
-                  <a class="dropdown-item" href="javascript:void(0)" type="button" onclick="switchTeam('Outer Dimension Waralaba Team')">
+                  <a class="dropdown-item" href="javascript:void(0)" type="button"
+                    onclick="switchTeam('Outer Dimension Waralaba Team')">
                     <h4 class="fw-light mb-0 text-truncate">
                       Outer Dimension Waralaba Team
                     </h4>
@@ -419,7 +423,8 @@
                 </li>
 
                 <li class="list-group-item" id="navMdLiPersonalAccount">
-                  <a class="dropdown-item" href="javascript:void(0)" type="button" onclick="switchTeam('Personal Account')">
+                  <a class="dropdown-item" href="javascript:void(0)" type="button"
+                    onclick="switchTeam('Personal Account')">
                     <h4 class="fw-light mb-0 text-truncate">
                       Personal Account
                     </h4>
@@ -430,7 +435,8 @@
                 </li>
 
                 <li class="list-group-item" id="navMdLiBlackest">
-                  <a class="dropdown-item" href="javascript:void(0)" type="button" onclick="switchTeam('Blackest of The Black Team')">
+                  <a class="dropdown-item" href="javascript:void(0)" type="button"
+                    onclick="switchTeam('Blackest of The Black Team')">
                     <h4 class="fw-light mb-0 text-truncate">
                       Blackest of The Black Team
                     </h4>
@@ -518,13 +524,11 @@
   <div class="modal fade" id="hintModal" tabindex="-1" aria-labelledby="hintModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header border-bottom-0">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
+        <a type="button" class="btn-close h1 ps-4 pt-4 mb-0" data-dismiss="modal" aria-label="Close"></a>
         <div class="modal-body">
           <div class="row justify-content-center mb-5">
-            <div class="col-12 col-md-10 text-center">
-              <h2 class="lead mb-3">You have successfully joined Outer Dimension Waralaba Team</h2>
+            <div class="col-12 col-md-10">
+              <h1 class="mb-3">You have successfully joined Outer Dimension Waralaba Team</h1>
               <p class="mb-3">
                 You can now switch between accounts to use Proxycurl
               </p>
@@ -532,7 +536,7 @@
             </div>
           </div>
           <div class="row justify-content-center mb-3">
-            <div class="col-12 col-md-8 col-lg-6">
+            <div class="col-12 col-md-10">
               <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">Got It!</button>
             </div>
           </div>
@@ -603,17 +607,20 @@
 
                     <ul class="dropdown-menu">
                       <li>
-                        <a class="dropdown-item text-white bg-primary" href="javascript:void(0)" id="teamSelectOuterDimension" onclick="switchTeam('Outer Dimension Waralaba Team')">
+                        <a class="dropdown-item text-white bg-primary" href="javascript:void(0)"
+                          id="teamSelectOuterDimension" onclick="switchTeam('Outer Dimension Waralaba Team')">
                           <i class="fe fe-users"></i> Outer Dimension Waralaba Team
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="javascript:void(0)" id="teamSelectPersonalAccount" onclick="switchTeam('Personal Account')">
+                        <a class="dropdown-item" href="javascript:void(0)" id="teamSelectPersonalAccount"
+                          onclick="switchTeam('Personal Account')">
                           <i class="fe fe-user"></i> Personal Account
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="javascript:void(0)" id="teamSelectBlackest" onclick="switchTeam('Blackest of The Black Team')">
+                        <a class="dropdown-item" href="javascript:void(0)" id="teamSelectBlackest"
+                          onclick="switchTeam('Blackest of The Black Team')">
                           <i class="fe fe-users"></i> Blackest of The Black Team
                         </a>
                       </li>
@@ -952,17 +959,17 @@
 
       // Team Select Active Function
       if (title === "Outer Dimension Waralaba Team") {
-        teamSelectPersonalAccount.classList.remove("text-white","bg-primary");
-        teamSelectBlackest.classList.remove("text-white","bg-primary");
-        teamSelectOuterDimension.classList.add("text-white","bg-primary");
+        teamSelectPersonalAccount.classList.remove("text-white", "bg-primary");
+        teamSelectBlackest.classList.remove("text-white", "bg-primary");
+        teamSelectOuterDimension.classList.add("text-white", "bg-primary");
       } else if (title === "Personal Account") {
-        teamSelectOuterDimension.classList.remove("text-white","bg-primary");
-        teamSelectBlackest.classList.remove("text-white","bg-primary");
-        teamSelectPersonalAccount.classList.add("text-white","bg-primary");
+        teamSelectOuterDimension.classList.remove("text-white", "bg-primary");
+        teamSelectBlackest.classList.remove("text-white", "bg-primary");
+        teamSelectPersonalAccount.classList.add("text-white", "bg-primary");
       } else if (title === "Blackest of The Black Team") {
-        teamSelectOuterDimension.classList.remove("text-white","bg-primary");
-        teamSelectPersonalAccount.classList.remove("text-white","bg-primary");
-        teamSelectBlackest.classList.add("text-white","bg-primary");
+        teamSelectOuterDimension.classList.remove("text-white", "bg-primary");
+        teamSelectPersonalAccount.classList.remove("text-white", "bg-primary");
+        teamSelectBlackest.classList.add("text-white", "bg-primary");
       }
     }
   </script>
