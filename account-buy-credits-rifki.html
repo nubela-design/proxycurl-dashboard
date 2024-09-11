@@ -14,7 +14,6 @@
 
   <!-- Libs CSS -->
   <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-  <link rel="stylesheet" href="style-custom.css"/>
 
   <!-- Theme CSS -->
   <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
@@ -989,12 +988,9 @@
               </div>
 
               <div class="dropdown mt-3" id="hover-dropdown">
-                <a class="btn btn-lg btn-primary w-100" type="button" id="dropdownMenuButton"
-                  aria-expanded="true" href="account-buy-credits-after-stripe-prompt.html"
-                  data-bs-toggle="tooltip" data-bs-placement="top"
-                  title="Auto-topup will be enabled if your credits fall below a certain threshold. This is different from Auto Renewal, which is automatically enabled unless you manually cancel the plan."
-                  onclick="$('#dropdownMenuButton').tooltip('dispose');">
-                  <p class="mb-0">Buy credits and enable credit auto-topup <i class="fe fe-chevron-down ps-1" style="vertical-align: middle;"></i></p> 
+                <a class="btn btn-lg btn-primary dropdown-toggle w-100" type="button" id="dropdownMenuButton"
+                  aria-expanded="false" href="account-buy-credits-after-stripe-prompt.html">
+                  Buy credits and enable credit auto-topup
                 </a>
                 <div class="dropdown-menu shadow-lg" aria-labelledby="dropdownMenuButton">
                   <form class="px-5 mt-2 mb-0 text-center">
@@ -1009,11 +1005,7 @@
               <div class="dropdown mt-3" id="hover-dropdown-credits-only">
                 <a class="btn btn-lg btn-outline-primary dropdown-toggle w-100" type="button"
                   id="dropdownMenuButtonCreditsOnly" aria-expanded="false"
-                  href="account-buy-credits-after-stripe-prompt.html"
-                  aria-expanded="true" href="account-buy-credits-after-stripe-prompt.html"
-                  data-bs-toggle="tooltip" data-bs-placement="top"
-                  title="Auto-topup will be enabled if your credits fall below a certain threshold. This is different from Auto Renewal, which is automatically enabled unless you manually cancel the plan."
-                  onclick="$('#dropdownMenuButtonCreditsOnly').tooltip('dispose');">
+                  href="account-buy-credits-after-stripe-prompt.html">
                   Buy credits only
                 </a>
                 <div class="dropdown-menu shadow-lg" aria-labelledby="dropdownMenuButtonCreditsOnly">
@@ -1533,37 +1525,28 @@
 
           <!-- Buy credtis -->
           <div class="card mx-n3 mx-md-0">
-
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col">
-
                   <!-- Title -->
-                  <h4 class="card-header-title">
-                    Buy credits
-                  </h4>
-
+                  <h4 class="card-header-title">Buy credits</h4> 
                 </div>
-
               </div>
             </div>
 
             <div class="card-body">
-
               <div class="row align-items-top">
-
                 <div class="col-12">
-
                   <!-- Tabs -->
-                  <ul class="nav nav-fill nav-tabs" id="nav-tab" role="tablist">
-
+                  <ul class="nav nav-fill nav-tabs mb-4" id="nav-tab" role="tablist"
+                    aria-labelby="Tabs Category Buy Credits">
                     <li class="nav-item text-center">
-                      <div class="h3 nav-link active fw-bold" id="nav-subs-tab" data-bs-toggle="tab"
+                      <div class="h3 nav-link fw-bold active" id="nav-subs-tab" data-bs-toggle="tab"
                         data-bs-target="#nav-subs" type="button" role="tab" aria-controls="nav-subs"
                         aria-selected="true">
                         Subscription
                         <div class="small fw-normal mt-3 mb-3">
-                          Credits expire every month/year
+                          Credits expire every billing period
                         </div>
                       </div>
                     </li>
@@ -1577,443 +1560,773 @@
                         </div>
                       </div>
                     </li>
-
                   </ul>
 
                   <!-- Tabs content -->
                   <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-subs" role="tabpanel" aria-labelledby="nav-subs-tab">
+                      <ul class="nav nav-pills justify-content-center mt-3 mt-lg-0 mb-3 mb-lg-1 flex-column flex-lg-row"
+                        id="buyCreditsTab" role="tablist">
+                        <li class="nav-item d-inline-flex flex-fill" role="presentation">
+                          <button class="w-100 nav-link btn btn-secondary-subtle text-center fw-900 rounded-0"
+                            id="monthly-tab" data-bs-toggle="tab" data-bs-target="#monthly" type="button" role="tab"
+                            aria-controls="monthly" aria-selected="true">
+                            Monthly plans <br />
+                            <small class="fs-12 lh-base">Cancel anytime</small>
+                          </button>
+                        </li>
+                        <li class="nav-item d-inline-flex flex-fill" role="presentation">
+                          <button class="w-100 nav-link btn btn-secondary-subtle text-center fw-900 rounded-0"
+                            id="annual-monthly-tab" data-bs-toggle="tab" data-bs-target="#annual-monthly" type="button"
+                            role="tab" aria-controls="annual-monthly" aria-selected="false">
+                            <span class="text-danger">*</span>Annual plans,
+                            billed monthly <br />
+                            <small class="fs-12 lh-base">+20% credits </small>
+                          </button>
+                        </li>
+                        <li class="nav-item d-inline-flex flex-fill" role="presentation">
+                          <button class="w-100 nav-link btn btn-secondary-subtle text-center fw-900 rounded-0 active"
+                            id="annual-tab" data-bs-toggle="tab" data-bs-target="#annual" type="button" role="tab"
+                            aria-controls="annual" aria-selected="false">
+                            <span class="text-danger">*</span>Annual plans,
+                            billed annually <br />
+                            <small class="fs-12 lh-base badge bg-warning text-dark text-uppercase py-0">+ Extra 2 free
+                              months
+                            </small>
+                          </button>
+                        </li>
+                      </ul>
 
-                    <div class="tab-pane fade show active" id="nav-subs" role="tabpanel" aria-labelledby="nav-subs-tab" >
+                      <div class="tab-content" id="buyCreditsContent">
+                        <div class="tab-pane fade py-3" id="monthly" role="tabpanel" aria-labelledby="monthly-tab"
+                          tabindex="0">
+                          <div class="table-responsive">
+                            <table id="pricingTable" class="card-table table table-sm table-nowrap table-hover">
+                              <tbody class="fs-base">
+                                <tr class="solid text-center text-lg-start mb-4 mb-lg-0 rounded-3">
+                                  <td class="mobile-tier fw-bold">Starter</td>
+                                  <td class="mobile-credit">
+                                    <code class="badge bg-light text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        <span class="mobile-credit h4 fw-bold">
+                                          2,500
+                                        </span>
+                                      </code>
+                                    credits
+                                  </td>
+                                  <td class="mobile-percredit">
+                                    <code class="mobile-percredit h4 fw-bold text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        $0.017
+                                      </code>
+                                    /credit
+                                  </td>
+                                  <td class="mobile-bold-text">
+                                    <code class="mobile-price h4 fw-bold text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        $49
+                                      </code>
+                                    /month
+                                  </td>
+                                  <td>
+                                    <div class="dropdown">
+                                      <button
+                                        class="btn btn-primary w-100 btn-block-mobile dropdown-toggle d-block d-lg-none"
+                                        id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Buy
+                                      </button>
+                                      <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                                        <li>
+                                          <h6 class="dropdown-header">
+                                            Select a Payment Method
+                                          </h6>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 1234
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 5678
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 4242
+                                          </button>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </td>
+                                </tr>
 
-                      <div class="row mb-2 mb-md-3 mb-lg-4 mt-4 mt-lg-5 table-responsive-lg">
+                                <tr class="solid text-center text-lg-start mb-4 mb-lg-0 rounded-3">
+                                  <td class="mobile-tier fw-bold">Growth</td>
+                                  <td class="mobile-credit">
+                                    <code class="badge bg-light text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        <span class="mobile-credit h4 fw-bold">
+                                          25,000
+                                        </span>
+                                      </code>
+                                    credits
+                                  </td>
+                                  <td class="mobile-percredit">
+                                    <code class="mobile-percredit h4 fw-bold text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        $0.010
+                                      </code>
+                                    /credit
+                                  </td>
+                                  <td class="mobile-bold-text">
+                                    <code class="mobile-price h4 fw-bold text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        $299
+                                      </code>
+                                    /month
+                                  </td>
+                                  <td>
+                                    <div class="dropdown">
+                                      <button
+                                        class="btn btn-primary w-100 btn-block-mobile dropdown-toggle d-block d-lg-none"
+                                        id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Buy
+                                      </button>
+                                      <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                                        <li>
+                                          <h6 class="dropdown-header">
+                                            Select a Payment Method
+                                          </h6>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 1234
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 5678
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 4242
+                                          </button>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </td>
+                                </tr>
 
-                        <div class="d-flex justify-content-lg-center ms-lg-4 mb-3">
+                                <tr class="solid text-center text-lg-start mb-4 mb-lg-0 rounded-3">
+                                  <td class="mobile-tier fw-bold">Pro</td>
+                                  <td class="mobile-credit">
+                                    <code class="badge bg-light text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        <span class="mobile-credit h4 fw-bold">
+                                          89,900
+                                        </span>
+                                      </code>
+                                    credits
+                                  </td>
+                                  <td class="mobile-percredit">
+                                    <code class="mobile-percredit h4 fw-bold text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        $0.009
+                                      </code>
+                                    /credit
+                                  </td>
+                                  <td class="mobile-bold-text">
+                                    <code class="mobile-price h4 fw-bold text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        $899
+                                      </code>
+                                    /month
+                                  </td>
+                                  <td>
+                                    <div class="dropdown">
+                                      <button
+                                        class="btn btn-primary w-100 btn-block-mobile dropdown-toggle d-block d-lg-none"
+                                        id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Buy
+                                      </button>
+                                      <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                                        <li>
+                                          <h6 class="dropdown-header">
+                                            Select a Payment Method
+                                          </h6>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 1234
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 5678
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 4242
+                                          </button>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </td>
+                                </tr>
 
-                          <!-- Label -->
-                          <span class="text-opacity-80 text-nowrap">
-                            Annual plan, Paid monthly
-                          </span>
+                                <tr class="bg-primary-soft solid text-center text-lg-start">
+                                  <td class="mobile-tier fw-bold">Ultra</td>
+                                  <td class="mobile-credit">
+                                    <code class="badge bg-light text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        <span class="h4 fw-bold">
+                                          211,000
+                                        </span>
+                                      </code>
+                                    credits
+                                  </td>
+                                  <td class="mobile-percredit">
+                                    <code class="h4 fw-bold text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        $0.008
+                                      </code>
+                                    /credit
+                                  </td>
+                                  <td class="mobile-bold-text">
+                                    <code class="mobile-price h4 fw-bold text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        $1,899
+                                      </code>
+                                    /month
+                                  </td>
+                                  <td>
+                                    <div class="dropdown">
+                                      <button class="btn btn-primary w-100 btn-block-mobile dropdown-toggle d-block"
+                                        id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Buy
+                                      </button>
+                                      <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                                        <li>
+                                          <h6 class="dropdown-header">
+                                            Select a Payment Method
+                                          </h6>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 1234
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 5678
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 4242
+                                          </button>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
 
-                          <!-- Switch -->
-                          <div class="form-check form-check-dark form-switch mx-3">
-                            <input class="form-check-input" type="checkbox" id="toggleSwitch" checked>
+                        <div class="tab-pane fade py-3" id="annual-monthly" role="tabpanel"
+                          aria-labelledby="annual-monthly-tab" tabindex="0">
+                          <div id="workEmailAlert">
+                            <div class="alert alert-danger-subtle py-4 mb-0" role="alert">
+                              <p>
+                                To subscribe to our monthly plans, an account
+                                with a work email address is required. This is
+                                necessary to ensure that you are acting in
+                                your official capacity when agreeing to our
+                                sales agreement, as our monthly plans involve
+                                specific contractual obligations.
+                              </p>
+
+                              <a class="btn btn-primary w-100" href="index.html">
+                                Update Email Address
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="tab-pane fade py-3 show active" id="annual" role="tabpanel"
+                          aria-labelledby="annual-tab" tabindex="0">
+                          <div class="table-responsive">
+                            <table id="pricingTable" class="card-table table table-sm table-nowrap table-hover">
+                              <tbody class="fs-base">
+                                <tr class="solid text-center text-lg-start mb-4 mb-lg-0 rounded-3">
+                                  <td class="mobile-tier fw-bold">Starter</td>
+                                  <td class="mobile-credit">
+                                    <code class="badge bg-light text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        <span class="mobile-credit h4 fw-bold">
+                                          35,000
+                                        </span>
+                                      </code>
+                                    credits
+                                    <div class="mt-1 mobile-credit-desc">
+                                      <code class="text-muted" style="
+                                            font-family: Cerebri Sans,
+                                              sans-serif;
+                                          ">
+                                          30,000 + 5,000
+                                        </code>
+                                    </div>
+                                  </td>
+                                  <td class="mobile-percredit">
+                                    <code class="mobile-percredit h4 fw-bold text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        $0.017
+                                      </code>
+                                    /credit
+                                  </td>
+                                  <td class="mobile-bold-text">
+                                    <code class="mobile-price h4 fw-bold text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        $588
+                                      </code>
+                                    /year
+                                  </td>
+                                  <td>
+                                    <div class="dropdown">
+                                      <button
+                                        class="btn btn-primary w-100 btn-block-mobile dropdown-toggle d-block d-lg-none"
+                                        id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Buy
+                                      </button>
+                                      <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                                        <li>
+                                          <h6 class="dropdown-header">
+                                            Select a Payment Method
+                                          </h6>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 1234
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 5678
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 4242
+                                          </button>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <p class="h6 text-muted d-block d-lg-none mb-0">
+                                      <span class="text-danger">*</span>Annual
+                                      plans require you to agree <br />
+                                      to a 12-month service contract with
+                                      Proxycurl.
+                                    </p>
+                                  </td>
+                                </tr>
+
+                                <tr class="solid text-center text-lg-start mb-4 mb-lg-0 rounded-3">
+                                  <td class="mobile-tier fw-bold">Growth</td>
+                                  <td class="mobile-credit">
+                                    <code class="badge bg-light text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        <span class="mobile-credit h4 fw-bold">
+                                          350,000
+                                        </span>
+                                      </code>
+                                    credits
+                                    <div class="mt-1 mobile-credit-desc">
+                                      <code class="text-muted" style="
+                                            font-family: Cerebri Sans,
+                                              sans-serif;
+                                          ">
+                                          300,000 + 50,000
+                                        </code>
+                                    </div>
+                                  </td>
+                                  <td class="mobile-percredit">
+                                    <code class="mobile-percredit h4 fw-bold text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        $0.010
+                                      </code>
+                                    /credit
+                                  </td>
+                                  <td class="mobile-bold-text">
+                                    <code class="mobile-price h4 fw-bold text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        $3,588
+                                      </code>
+                                    /year
+                                  </td>
+                                  <td>
+                                    <div class="dropdown">
+                                      <button
+                                        class="btn btn-primary w-100 btn-block-mobile dropdown-toggle d-block d-lg-none"
+                                        id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Buy
+                                      </button>
+                                      <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                                        <li>
+                                          <h6 class="dropdown-header">
+                                            Select a Payment Method
+                                          </h6>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 1234
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 5678
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 4242
+                                          </button>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <p class="h6 text-muted d-block d-lg-none mb-0">
+                                      <span class="text-danger">*</span>Annual
+                                      plans require you to agree <br />
+                                      to a 12-month service contract with
+                                      Proxycurl.
+                                    </p>
+                                  </td>
+                                </tr>
+
+                                <tr class="solid text-center text-lg-start mb-4 mb-lg-0 rounded-3">
+                                  <td class="mobile-tier fw-bold">Pro</td>
+                                  <td class="mobile-credit">
+                                    <code class="badge bg-light text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        <span class="mobile-credit h4 fw-bold">
+                                          1,258,600
+                                        </span>
+                                      </code>
+                                    credits
+                                    <div class="mt-1 mobile-credit-desc">
+                                      <code class="text-muted" style="
+                                            font-family: Cerebri Sans,
+                                              sans-serif;
+                                          ">
+                                          1,078,000 + 179,800
+                                        </code>
+                                    </div>
+                                  </td>
+                                  <td class="mobile-percredit">
+                                    <code class="mobile-percredit h4 fw-bold text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        $0.009
+                                      </code>
+                                    /credit
+                                  </td>
+                                  <td class="mobile-bold-text">
+                                    <code class="mobile-price h4 fw-bold text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        $10,788
+                                      </code>
+                                    /year
+                                  </td>
+                                  <td>
+                                    <div class="dropdown">
+                                      <button
+                                        class="btn btn-primary w-100 btn-block-mobile dropdown-toggle d-block d-lg-none"
+                                        id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Buy
+                                      </button>
+                                      <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                                        <li>
+                                          <h6 class="dropdown-header">
+                                            Select a Payment Method
+                                          </h6>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 1234
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 5678
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 4242
+                                          </button>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <p class="h6 text-muted d-block d-lg-none mb-0">
+                                      <span class="text-danger">*</span>Annual
+                                      plans require you to agree <br />
+                                      to a 12-month service contract with
+                                      Proxycurl.
+                                    </p>
+                                  </td>
+                                </tr>
+
+                                <tr class="solid text-center text-lg-start mb-4 mb-lg-0 rounded-3">
+                                  <td class="mobile-tier fw-bold">Ultra</td>
+                                  <td class="mobile-credit">
+                                    <code class="badge bg-light text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        <span class="h4 fw-bold">
+                                          2,954,000
+                                        </span>
+                                      </code>
+                                    credits
+                                    <div class="mt-1">
+                                      <code class="text-muted" style="
+                                            font-family: Cerebri Sans,
+                                              sans-serif;
+                                          ">
+                                          2,532,000 + 422,000
+                                        </code>
+                                    </div>
+                                  </td>
+                                  <td class="mobile-percredit">
+                                    <code class="h4 fw-bold text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        $0.008
+                                      </code>
+                                    /credit
+                                  </td>
+                                  <td class="mobile-bold-text">
+                                    <code class="mobile-price h4 fw-bold text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        $22,788
+                                      </code>
+                                    /year
+                                  </td>
+                                  <td>
+                                    <div class="dropdown">
+                                      <button
+                                        class="btn btn-primary w-100 btn-block-mobile dropdown-toggle d-block d-lg-none"
+                                        id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Buy
+                                      </button>
+                                      <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                                        <li>
+                                          <h6 class="dropdown-header">
+                                            Select a Payment Method
+                                          </h6>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 1234
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 5678
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 4242
+                                          </button>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <p class="h6 text-muted d-block d-lg-none mb-0">
+                                      <span class="text-danger">*</span>Annual
+                                      plans require you to agree <br />
+                                      to a 12-month service contract with
+                                      Proxycurl.
+                                    </p>
+                                  </td>
+                                </tr>
+
+                                <tr class="bg-primary-soft solid text-center text-lg-start">
+                                  <td class="mobile-tier fw-bold">
+                                    Enterprise
+                                  </td>
+                                  <td class="mobile-credit">
+                                    <code class="badge bg-light text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        <span class="h4 fw-bold">
+                                          > 2,954,000
+                                        </span>
+                                      </code>
+                                    credits
+                                  </td>
+                                  <td class="mobile-percredit">
+                                    <code class="mobile-percredit h4 fw-bold text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        $0.008
+                                      </code>
+                                    /credit
+                                  </td>
+                                  <td class="mobile-bold-text">
+                                    <code class="mobile-price h4 fw-bold text-black" style="
+                                          font-family: Cerebri Sans, sans-serif;
+                                        ">
+                                        $24,000
+                                      </code>
+                                    /year
+                                  </td>
+                                  <td>
+                                    <div class="dropdown mb-3">
+                                      <button class="btn btn-primary w-100 btn-block-mobile dropdown-toggle"
+                                        id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Buy
+                                      </button>
+                                      <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                                        <li>
+                                          <h6 class="dropdown-header">
+                                            Select a Payment Method
+                                          </h6>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 1234
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 5678
+                                          </button>
+                                        </li>
+                                        <li>
+                                          <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                            data-bs-target="#modalNext">
+                                            Pay with card ending in 4242
+                                          </button>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <button class="btn btn-white w-100 d-block">
+                                      Pay by Wire/ACH
+                                    </button>
+                                  </td>
+                                  <td>
+                                    <p class="h6 text-muted d-block d-lg-none mb-0">
+                                      <span class="text-danger">*</span>Annual
+                                      plans require you to agree <br />
+                                      to a 12-month service contract with
+                                      Proxycurl.
+                                    </p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
                           </div>
 
-                          <!-- Label -->
-                          <span class="text-opacity-80 ms-n2 text-nowrap d-flex">
-                            Annual plan, Paid annually <span class="badge bg-warning  text-uppercase fw-bold ms-3 mb-1 pe-3 py-2" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                            title="All 12+2 months credits issued at one go upon subscription of an Annual Plan">
-                              <i class="neu neu-info"></i> + 2 months free
-                              credits</span>
-                          </span>
-                          
-                        </div>
-                        
-                      </div>
-
-                      <div class="table-responsive" >
-                        <table id="pricingTable" class="card-table table table-sm table-nowrap table-hover">
-
-                          <tbody class="fs-base">
-                            <tr class="solid text-center text-lg-start mb-4 mb-lg-0 rounded-3">
-                              <td class="mobile-tier fw-bold">Starter</td>
-                              <td class="mobile-credit">
-                                <code class="badge bg-light text-black" style="
-                                      font-family: Cerebri Sans, sans-serif;
-                                    ">
-                                    <span class="mobile-credit h4 fw-bold">
-                                      35,000
-                                    </span>
-                                  </code>
-                                credits
-                                <div class="mt-1 mobile-credit-desc">
-                                  <code class="text-muted" style="
-                                        font-family: Cerebri Sans,
-                                          sans-serif;
-                                      ">
-                                      30,000 + 5,000
-                                    </code>
-                                </div>
-                              </td>
-                              <td class="mobile-percredit">
-                                <code class="mobile-percredit h4 fw-bold text-black" style="
-                                      font-family: Cerebri Sans, sans-serif;
-                                    ">
-                                    $0.017
-                                  </code>
-                                /credit
-                              </td>
-                              <td class="mobile-bold-text">
-                                <code class="mobile-price h4 fw-bold text-black" style="
-                                      font-family: Cerebri Sans, sans-serif;
-                                    ">
-                                    $588
-                                  </code>
-                                /year
-                              </td>
-                              <td>
-                                <div class="dropdown">
-                                  <button
-                                    class="btn btn-primary w-100 btn-block-mobile dropdown-toggle d-block d-lg-none"
-                                    id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Buy
-                                  </button>
-                                  <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
-                                    <li>
-                                      <h6 class="dropdown-header">
-                                        Select a Payment Method
-                                      </h6>
-                                    </li>
-                                    <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
-                                        data-bs-target="#modalNext">
-                                        Pay with card ending in 1234
-                                      </button>
-                                    </li>
-                                    <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
-                                        data-bs-target="#modalNext">
-                                        Pay with card ending in 5678
-                                      </button>
-                                    </li>
-                                    <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
-                                        data-bs-target="#modalNext">
-                                        Pay with card ending in 4242
-                                      </button>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </td>
-                            </tr>
-
-                            <tr class="solid text-center text-lg-start mb-4 mb-lg-0 rounded-3">
-                              <td class="mobile-tier fw-bold">Growth</td>
-                              <td class="mobile-credit">
-                                <code class="badge bg-light text-black" style="
-                                      font-family: Cerebri Sans, sans-serif;
-                                    ">
-                                    <span class="mobile-credit h4 fw-bold">
-                                      350,000
-                                    </span>
-                                  </code>
-                                credits
-                                <div class="mt-1 mobile-credit-desc">
-                                  <code class="text-muted" style="
-                                        font-family: Cerebri Sans,
-                                          sans-serif;
-                                      ">
-                                      300,000 + 50,000
-                                    </code>
-                                </div>
-                              </td>
-                              <td class="mobile-percredit">
-                                <code class="mobile-percredit h4 fw-bold text-black" style="
-                                      font-family: Cerebri Sans, sans-serif;
-                                    ">
-                                    $0.010
-                                  </code>
-                                /credit
-                              </td>
-                              <td class="mobile-bold-text">
-                                <code class="mobile-price h4 fw-bold text-black" style="
-                                      font-family: Cerebri Sans, sans-serif;
-                                    ">
-                                    $3,588
-                                  </code>
-                                /year
-                              </td>
-                              <td>
-                                <div class="dropdown">
-                                  <button
-                                    class="btn btn-primary w-100 btn-block-mobile dropdown-toggle d-block d-lg-none"
-                                    id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Buy
-                                  </button>
-                                  <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
-                                    <li>
-                                      <h6 class="dropdown-header">
-                                        Select a Payment Method
-                                      </h6>
-                                    </li>
-                                    <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
-                                        data-bs-target="#modalNext">
-                                        Pay with card ending in 1234
-                                      </button>
-                                    </li>
-                                    <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
-                                        data-bs-target="#modalNext">
-                                        Pay with card ending in 5678
-                                      </button>
-                                    </li>
-                                    <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
-                                        data-bs-target="#modalNext">
-                                        Pay with card ending in 4242
-                                      </button>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </td>
-                            </tr>
-
-                            <tr class="solid text-center text-lg-start mb-4 mb-lg-0 rounded-3">
-                              <td class="mobile-tier fw-bold">Pro</td>
-                              <td class="mobile-credit">
-                                <code class="badge bg-light text-black" style="
-                                      font-family: Cerebri Sans, sans-serif;
-                                    ">
-                                    <span class="mobile-credit h4 fw-bold">
-                                      1,258,600
-                                    </span>
-                                  </code>
-                                credits
-                                <div class="mt-1 mobile-credit-desc">
-                                  <code class="text-muted" style="
-                                        font-family: Cerebri Sans,
-                                          sans-serif;
-                                      ">
-                                      1,078,000 + 179,800
-                                    </code>
-                                </div>
-                              </td>
-                              <td class="mobile-percredit">
-                                <code class="mobile-percredit h4 fw-bold text-black" style="
-                                      font-family: Cerebri Sans, sans-serif;
-                                    ">
-                                    $0.009
-                                  </code>
-                                /credit
-                              </td>
-                              <td class="mobile-bold-text">
-                                <code class="mobile-price h4 fw-bold text-black" style="
-                                      font-family: Cerebri Sans, sans-serif;
-                                    ">
-                                    $10,788
-                                  </code>
-                                /year
-                              </td>
-                              <td>
-                                <div class="dropdown">
-                                  <button
-                                    class="btn btn-primary w-100 btn-block-mobile dropdown-toggle d-block d-lg-none"
-                                    id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Buy
-                                  </button>
-                                  <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
-                                    <li>
-                                      <h6 class="dropdown-header">
-                                        Select a Payment Method
-                                      </h6>
-                                    </li>
-                                    <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
-                                        data-bs-target="#modalNext">
-                                        Pay with card ending in 1234
-                                      </button>
-                                    </li>
-                                    <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
-                                        data-bs-target="#modalNext">
-                                        Pay with card ending in 5678
-                                      </button>
-                                    </li>
-                                    <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
-                                        data-bs-target="#modalNext">
-                                        Pay with card ending in 4242
-                                      </button>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </td>
-                            </tr>
-
-                            <tr class="solid text-center text-lg-start mb-4 mb-lg-0 rounded-3">
-                              <td class="mobile-tier fw-bold">Ultra</td>
-                              <td class="mobile-credit">
-                                <code class="badge bg-light text-black" style="
-                                      font-family: Cerebri Sans, sans-serif;
-                                    ">
-                                    <span class="h4 fw-bold">
-                                      2,954,000
-                                    </span>
-                                  </code>
-                                credits
-                                <div class="mt-1">
-                                  <code class="text-muted" style="
-                                        font-family: Cerebri Sans,
-                                          sans-serif;
-                                      ">
-                                      2,532,000 + 422,000
-                                    </code>
-                                </div>
-                              </td>
-                              <td class="mobile-percredit">
-                                <code class="h4 fw-bold text-black" style="
-                                      font-family: Cerebri Sans, sans-serif;
-                                    ">
-                                    $0.008
-                                  </code>
-                                /credit
-                              </td>
-                              <td class="mobile-bold-text">
-                                <code class="mobile-price h4 fw-bold text-black" style="
-                                      font-family: Cerebri Sans, sans-serif;
-                                    ">
-                                    $22,788
-                                  </code>
-                                /year
-                              </td>
-                              <td>
-                                <div class="dropdown">
-                                  <button
-                                    class="btn btn-primary w-100 btn-block-mobile dropdown-toggle d-block d-lg-none"
-                                    id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Buy
-                                  </button>
-                                  <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
-                                    <li>
-                                      <h6 class="dropdown-header">
-                                        Select a Payment Method
-                                      </h6>
-                                    </li>
-                                    <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
-                                        data-bs-target="#modalNext">
-                                        Pay with card ending in 1234
-                                      </button>
-                                    </li>
-                                    <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
-                                        data-bs-target="#modalNext">
-                                        Pay with card ending in 5678
-                                      </button>
-                                    </li>
-                                    <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
-                                        data-bs-target="#modalNext">
-                                        Pay with card ending in 4242
-                                      </button>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </td>
-                            </tr>
-
-                            <tr class="bg-primary-soft solid text-center text-lg-start">
-                              <td class="mobile-tier fw-bold">
-                                Enterprise
-                              </td>
-                              <td class="mobile-credit">
-                                <code class="badge bg-light text-black" style="
-                                      font-family: Cerebri Sans, sans-serif;
-                                    ">
-                                    <span class="h4 fw-bold">
-                                      > 2,954,000
-                                    </span>
-                                  </code>
-                                credits
-                              </td>
-                              <td class="mobile-percredit">
-                                <code class="mobile-percredit h4 fw-bold text-black" style="
-                                      font-family: Cerebri Sans, sans-serif;
-                                    ">
-                                    $0.008
-                                  </code>
-                                /credit
-                              </td>
-                              <td class="mobile-bold-text">
-                                <code class="mobile-price h4 fw-bold text-black" style="
-                                      font-family: Cerebri Sans, sans-serif;
-                                    ">
-                                    $24,000
-                                  </code>
-                                /year
-                              </td>
-                              <td>
-                                <div class="dropdown mb-3">
-                                  <button class="btn btn-primary w-100 btn-block-mobile dropdown-toggle"
-                                    id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Buy
-                                  </button>
-                                  <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
-                                    <li>
-                                      <h6 class="dropdown-header">
-                                        Select a Payment Method
-                                      </h6>
-                                    </li>
-                                    <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
-                                        data-bs-target="#modalNext">
-                                        Pay with card ending in 1234
-                                      </button>
-                                    </li>
-                                    <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
-                                        data-bs-target="#modalNext">
-                                        Pay with card ending in 5678
-                                      </button>
-                                    </li>
-                                    <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
-                                        data-bs-target="#modalNext">
-                                        Pay with card ending in 4242
-                                      </button>
-                                    </li>
-                                  </ul>
-                                </div>
-                                <button class="btn btn-white w-100 d-block">
-                                  Pay by Wire/ACH
-                                </button>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      
-
-                      <div id="workEmailAlert">
-                        <div class="alert alert-danger-subtle py-4 mt-5 mt-lg-0" role="alert">
-
-                          <p>
-                            To subscribe to our monthly plans, an account with a work email address is required. This is
-                            necessary to ensure that you are acting in your official capacity when agreeing to our sales
-                            agreement, as our monthly plans involve specific contractual obligations.
+                          <p class="h6 text-gray-700 mt-md-5 mt-4 d-none d-lg-block">
+                            <span class="text-danger">*</span>Annual plans
+                            require you to agree to a 12-month service
+                            contract with Proxycurl.
                           </p>
-
-                          <a class="btn btn-primary" href="index.html">
-                            Update Email Address
-                          </a>
-
                         </div>
                       </div>
-
                     </div>
 
                     <div class="tab-pane fade" id="nav-payg" role="tabpanel" aria-labelledby="nav-payg-tab">
-
                       <div class="table-responsive-lg">
-
                         <table class="table table-sm table-nowrap card-table table-hover">
-
                           <tbody class="fs-base">
-
-                            <tr class="solid">
+                            <tr class="solid text-center text-lg-start mb-4 mb-lg-0 rounded-3">
                               <td class="mobile-credit">
-                                <code class="badge bg-light text-black"
-                                  style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-bold">100 </span></code>
+                                <code class="badge bg-light text-black" style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    ">
+                                    <span class="h4 fw-bold">100 </span>
+                                  </code>
                                 credits
                               </td>
                               <td class="mobile-percredit">
                                 <span class="fw-bold">$0.10</span>/credit
                               </td>
                               <td>
-                                <code class="mobile-price h4 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                $10
-                              </code>
+                                <code class="mobile-price h4 fw-bold text-black" style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    ">
+                                    <strike> $10 </strike>
+                                  </code>
+
+                                <!-- Label -->
+                                <span class="text-opacity-80 text-nowrap d-inline-flex ms-2">
+                                  <span class="badge bg-light text-black text-uppercase fw-bold mb-1 pe-3 py-2 fs-4"
+                                    data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    title="Only for one-time validation discount">
+                                    <strong class="h4 fw-bold">$1.99</strong>
+                                    <i class="neu neu-info"></i>
+                                  </span>
+                                </span>
                               </td>
                               <td>
                                 <button type="submit" class="btn btn-light text-dark w-100" data-bs-toggle="tooltip"
@@ -2023,25 +2336,39 @@
                                   <i class="neu-info"></i> Buy
                                 </button>
                               </td>
+                              <td>
+                                <p class="h6 text-muted d-block d-lg-none mb-0">
+                                  <span class="text-danger">*</span>PAYG
+                                  Credits expire when an account is <br />
+                                  made inactive after 18 months of payment
+                                  inactivity.
+                                </p>
+                              </td>
                             </tr>
 
-                            <tr class="solid">
+                            <tr class="solid text-center text-lg-start mb-4 mb-lg-0 rounded-3">
                               <td class="mobile-credit">
-                                <code class="badge bg-light text-black"
-                                  style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-bold">834 </span></code>
+                                <code class="badge bg-light text-black" style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    ">
+                                    <span class="h4 fw-bold">834 </span></code>
                                 credits
                               </td>
                               <td class="mobile-percredit">
                                 <span class="fw-bold">$0.06</span>/credit
                               </td>
                               <td>
-                                <code class="mobile-price h4 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                $50
-                              </code>
+                                <code class="mobile-price h4 fw-bold text-black" style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    ">
+                                    $50
+                                  </code>
                               </td>
                               <td>
                                 <div class="dropdown">
-                                  <button class="btn btn-primary w-100 btn-block-mobile dropdown-toggle" id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <button
+                                    class="btn btn-primary w-100 btn-block-mobile dropdown-toggle d-block d-lg-none"
+                                    id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
                                     Buy
                                   </button>
                                   <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
@@ -2051,43 +2378,62 @@
                                       </h6>
                                     </li>
                                     <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                        data-bs-target="#modalNextPAYG">
                                         Pay with card ending in 1234
                                       </button>
                                     </li>
                                     <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                        data-bs-target="#modalNextPAYG">
                                         Pay with card ending in 5678
                                       </button>
                                     </li>
                                     <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                        data-bs-target="#modalNextPAYG">
                                         Pay with card ending in 4242
                                       </button>
                                     </li>
                                   </ul>
                                 </div>
                               </td>
+                              <td>
+                                <p class="h6 text-muted d-block d-lg-none mb-0">
+                                  <span class="text-danger">*</span>PAYG
+                                  Credits expire when an account is <br />
+                                  made inactive after 18 months of payment
+                                  inactivity.
+                                </p>
+                              </td>
                             </tr>
 
-                            <tr class="solid">
+                            <tr class="solid text-center text-lg-start mb-4 mb-lg-0 rounded-3">
                               <td class="mobile-credit">
-                                <code class="badge bg-light text-black"
-                                  style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-bold">3,788 </span></code>
+                                <code class="badge bg-light text-black" style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    ">
+                                    <span class="h4 fw-bold">3,788 </span></code>
                                 credits
                               </td>
                               <td class="mobile-percredit">
-                                <code class="h4 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                  $0.0264</code>/credit
+                                <code class="h4 fw-bold text-black" style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    ">
+                                    $0.0264</code>/credit
                               </td>
                               <td>
-                                <code class="mobile-price h4 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                $100
-                              </code>
+                                <code class="mobile-price h4 fw-bold text-black" style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    ">
+                                    $100
+                                  </code>
                               </td>
                               <td>
                                 <div class="dropdown">
-                                  <button class="btn btn-primary w-100 btn-block-mobile dropdown-toggle btn-custom-hide d-block d-lg-none" id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <button
+                                    class="btn btn-primary w-100 btn-block-mobile dropdown-toggle d-block d-lg-none"
+                                    id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
                                     Buy
                                   </button>
                                   <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
@@ -2097,87 +2443,63 @@
                                       </h6>
                                     </li>
                                     <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                        data-bs-target="#modalNextPAYG">
                                         Pay with card ending in 1234
                                       </button>
                                     </li>
                                     <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                        data-bs-target="#modalNextPAYG">
                                         Pay with card ending in 5678
                                       </button>
                                     </li>
                                     <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                        data-bs-target="#modalNextPAYG">
                                         Pay with card ending in 4242
                                       </button>
                                     </li>
                                   </ul>
                                 </div>
                               </td>
-                            </tr>
-
-                            <tr class="solid">
-                              <td class="mobile-credit">
-                                <code class="badge bg-light text-black" 
-                                  style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-bold">
-                                  20,834</span></code> credits
-                              </td>
                               <td>
-                                <code class="h4 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                  $0.024</code>/credit
-                              </td>
-                              <td>
-                                <code class="mobile-price h4 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                $500</code>
-                              </td>
-                              <td>
-                                <div class="dropdown">
-                                  <button class="btn btn-primary w-100 btn-block-mobile dropdown-toggle btn-custom-hide d-block d-lg-none" id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Buy
-                                  </button>
-                                  <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
-                                    <li>
-                                      <h6 class="dropdown-header">
-                                        Select a Payment Method
-                                      </h6>
-                                    </li>
-                                    <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
-                                        Pay with card ending in 1234
-                                      </button>
-                                    </li>
-                                    <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
-                                        Pay with card ending in 5678
-                                      </button>
-                                    </li>
-                                    <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
-                                        Pay with card ending in 4242
-                                      </button>
-                                    </li>
-                                  </ul>
-                                </div>
+                                <p class="h6 text-muted d-block d-lg-none mb-0">
+                                  <span class="text-danger">*</span>PAYG
+                                  Credits expire when an account is <br />
+                                  made inactive after 18 months of payment
+                                  inactivity.
+                                </p>
                               </td>
                             </tr>
 
-                            <tr class="solid">
+                            <tr class="solid text-center text-lg-start mb-4 mb-lg-0 rounded-3">
                               <td class="mobile-credit">
-                                <code class="badge bg-light text-black"
-                                  style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-bold">46,297</span></code>
+                                <code class="badge bg-light text-black" style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    ">
+                                    <span class="h4 fw-bold">
+                                      20,834</span
+                                    ></code>
                                 credits
                               </td>
                               <td>
-                                <code class="h4 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                  $0.0216</code>/credit
+                                <code class="h4 fw-bold text-black" style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    ">
+                                    $0.024</code>/credit
                               </td>
                               <td>
-                                <code class="mobile-price h4 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                $1,000</code>
+                                <code class="mobile-price h4 fw-bold text-black" style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    ">
+                                    $500</code>
                               </td>
                               <td>
                                 <div class="dropdown">
-                                  <button class="btn btn-primary w-100 btn-block-mobile dropdown-toggle btn-custom-hide d-block d-lg-none" id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <button
+                                    class="btn btn-primary w-100 btn-block-mobile dropdown-toggle d-block d-lg-none"
+                                    id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
                                     Buy
                                   </button>
                                   <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
@@ -2187,69 +2509,151 @@
                                       </h6>
                                     </li>
                                     <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                        data-bs-target="#modalNextPAYG">
                                         Pay with card ending in 1234
                                       </button>
                                     </li>
                                     <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                        data-bs-target="#modalNextPAYG">
                                         Pay with card ending in 5678
                                       </button>
                                     </li>
                                     <li>
-                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal" data-bs-target="#modalNextPAYG">
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                        data-bs-target="#modalNextPAYG">
                                         Pay with card ending in 4242
                                       </button>
                                     </li>
                                   </ul>
                                 </div>
                               </td>
+                              <td>
+                                <p class="h6 text-muted d-block d-lg-none mb-0">
+                                  <span class="text-danger">*</span>PAYG
+                                  Credits expire when an account is <br />
+                                  made inactive after 18 months of payment
+                                  inactivity.
+                                </p>
+                              </td>
                             </tr>
 
-                            <tr class="bg-primary-soft solid">
+                            <tr class="solid text-center text-lg-start mb-4 mb-lg-0 rounded-3">
                               <td class="mobile-credit">
-                                <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                  <span class="h4 fw-bold">
-                                    N
-                                  </span>
-                                </code>
+                                <code class="badge bg-light text-black" style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    ">
+                                    <span class="h4 fw-bold">46,297</span></code>
                                 credits
                               </td>
-                              <td style="text-wrap: wrap !important;">
-                                <code class="h4 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                                1 credit</code>/5 Twitter followers
+                              <td>
+                                <code class="h4 fw-bold text-black" style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    ">
+                                    $0.0216</code>/credit
                               </td>
-                              <td class="small-padding" style="text-wrap: wrap !important;">
+                              <td>
+                                <code class="mobile-price h4 fw-bold text-black" style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    ">
+                                    $1,000</code>
+                              </td>
+                              <td>
+                                <div class="dropdown">
+                                  <button
+                                    class="btn btn-primary w-100 btn-block-mobile dropdown-toggle d-block d-lg-none"
+                                    id="upgradePlan" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Buy
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-center" aria-labelledby="upgradePlan">
+                                    <li>
+                                      <h6 class="dropdown-header">
+                                        Select a Payment Method
+                                      </h6>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                        data-bs-target="#modalNextPAYG">
+                                        Pay with card ending in 1234
+                                      </button>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                        data-bs-target="#modalNextPAYG">
+                                        Pay with card ending in 5678
+                                      </button>
+                                    </li>
+                                    <li>
+                                      <button class="dropdown-item" type="submit" data-bs-toggle="modal"
+                                        data-bs-target="#modalNextPAYG">
+                                        Pay with card ending in 4242
+                                      </button>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="h6 text-muted d-block d-lg-none mb-0">
+                                  <span class="text-danger">*</span>PAYG
+                                  Credits expire when an account is <br />
+                                  made inactive after 18 months of payment
+                                  inactivity.
+                                </p>
+                              </td>
+                            </tr>
+
+                            <tr class="bg-primary-soft solid text-center text-lg-start">
+                              <td class="mobile-credit">
+                                <code class="badge bg-light text-black" style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    ">
+                                    <span class="h4 fw-bold"> N </span>
+                                  </code>
+                                credits
+                              </td>
+                              <td style="text-wrap: wrap !important">
+                                <code class="h4 fw-bold text-black" style="
+                                      font-family: Cerebri Sans, sans-serif;
+                                    ">
+                                    1 credit</code>/5 Twitter followers
+                              </td>
+                              <td class="small-padding" style="text-wrap: wrap !important">
                                 <p class="h4 fw-bold mb-0">
-                                  Tweet a review about Proxycurl <br>and get credits
+                                  Tweet a review about Proxycurl <br />and get
+                                  credits
                                 </p>
                               </td>
                               <td>
                                 <button type="submit" class="btn btn-primary w-100" data-bs-toggle="modal"
                                   data-bs-target="#modalTwitter">
-                                  <i class="neu-br-twitter"></i> TWEET AND GET FREE CREDITS
+                                  <i class="neu-br-twitter"></i> TWEET AND GET
+                                  FREE CREDITS
                                 </button>
                               </td>
+                              <td>
+                                <p class="h6 text-muted d-block d-lg-none mb-0">
+                                  <span class="text-danger">*</span>PAYG
+                                  Credits expire when an account is <br />
+                                  made inactive after 18 months of payment
+                                  inactivity.
+                                </p>
+                              </td>
                             </tr>
-
                           </tbody>
                         </table>
-
                       </div>
 
-                      <p class="h6 text-gray-700 mt-md-5 mt-4"><span class="text-danger">*</span>PAYG Credits expire
-                        when an account is made inactive after 18 months of payment inactivity.</p>
-
+                      <p class="h6 text-gray-700 mt-md-5 mt-4 d-none d-lg-block">
+                        <span class="text-danger">*</span>PAYG Credits expire
+                        when an account is made inactive after 18 months of
+                        payment inactivity.
+                      </p>
                     </div>
-
                   </div>
-
                 </div>
-
               </div>
-
             </div>
-
           </div>
 
           <!-- FAQ-->
