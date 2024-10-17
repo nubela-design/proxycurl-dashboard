@@ -1027,61 +1027,192 @@
                   <div class="col-12 mb-2">
                     <div class="card mb-3">
                       <div class="card-body">
-                        <form>
-                          <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Full Name</label>
-                            <input type="text" placeholder="David King" class="form-control" id="exampleInput"
-                              aria-describedby="emailHelp">
-                          </div>
-                          <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Followers</label>
-                            <input type="text" placeholder="567,891" class="form-control" id="exampleInputFollowers"
-                              aria-describedby="emailHelp">
-                          </div>
-                          <div class="mb-3">
-                            <label for="exampleInputCompanyCreate" class="form-label">Company</label>
-                            <input type="text" placeholder="IBM" class="form-control" id="exampleInputCompanyCreate"
-                              aria-describedby="emailHelp">
-                            <ul class="list-group suggestions" id="companySuggestionsCreate"></ul>
-                          </div>
-                          <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Job Title</label>
-                            <input type="text" placeholder="Software Engineer" class="form-control" id="exampleInput"
-                              aria-describedby="emailHelp">
-                          </div>
-                          <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                            <input type="text" placeholder="+1 555 123 1234" class="form-control" id="exampleInput"
-                              aria-describedby="emailHelp">
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputEmail1" class="form-label">Personal Email</label>
-                            <input type="email" placeholder="davidking@ibm.com" class="form-control" id="exampleInputEmail1"
-                              aria-describedby="emailHelp">
-                          </div>
-              
-                        </form>
-                      </div>
-                    </div>
-                  </div>
 
-                  <!-- summary -->
-                  <div class="col-12 mb-2">
-                    <div class="card mb-3">
-                      <div class="card-body">
+                        <!-- List group -->
+                        <div class="list-group list-group-flush my-n3">
 
-                        <!-- Title -->
-                        <h2 class="h2 card-header-title mb-4">Summary</h2>
+                          <!-- Public Identifier form -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
 
-                        <div class="readmore readmore-summary d-flex flex-column">
-                          <!-- Form summary -->
-                          <div class="mb-3">
-                            <label for="inputSummaryForm" class="form-label">Add Summary</label>
-                            <textarea class="form-control" id="inputSummaryForm" rows="3"
-                              placeholder="write your summary here..."></textarea>
+                                <div class="mb-3">
+                                  <label for="form-input-public-identifier" class="form-label">Public Identifier</label>
+                                  <input type="text" class="form-control" id="form-input-public-identifier" placeholder="input your public identifier here...">
+                                </div>
+
+                              </div>
+                            </div>
                           </div>
-                          <button class="btn btn-primary w-100">Save</button>
+                          <!-- /Public Identifier form -->
+
+                          <!-- Profile Picture form -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-profile-pic" class="form-label">Profile Picture URL</label>
+                                  <input type="text" class="form-control" id="form-input-profile-pic" placeholder="input your profile picture URL here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Profile Picture form -->
+
+                          <!-- Background Cover Image form -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-background-cover-image" class="form-label">Background Cover Image URL</label>
+                                  <input type="text" class="form-control" id="form-input-background-cover-image" placeholder="input your background cover image URL here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Background Cover Image form -->
+
+                          <!-- First Name form -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-first-name" class="form-label">First Name</label>
+                                  <input type="text" class="form-control" id="form-input-first-name" placeholder="input your first name here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /First Name form -->
+
+                          <!-- Last Name form -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-last-name" class="form-label">Last Name</label>
+                                  <input type="text" class="form-control" id="form-input-last-name" placeholder="input your last name here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Last Name form -->
+
+                          <!-- Gender form -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-gender" class="form-label">Gender</label>
+                                  <input type="text" class="form-control" id="form-input-gender" placeholder="input your gender here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Gender form -->
+
+                          <!-- Headline form -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-headline" class="form-label">Headline</label>
+                                  <input type="text" class="form-control" id="form-input-headline" placeholder="input your headline here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Headline form -->
+
+                          <!-- Country form -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-country" class="form-label">Country</label>
+                                  <input type="text" class="form-control" id="form-input-country" placeholder="input your country here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Country form -->
+
+                          <!-- City form -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-city" class="form-label">City</label>
+                                  <input type="text" class="form-control" id="form-input-city" placeholder="input your city here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /City form -->
+
+                          <!-- State form -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-state" class="form-label">State</label>
+                                  <input type="text" class="form-control" id="form-input-state" placeholder="input your state here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /State form -->
+
+                          <!-- Followers form -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-followers" class="form-label">Followers</label>
+                                  <input type="text" class="form-control" id="form-input-followers" placeholder="input your followers here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Followers form -->
+
+                          <!-- Connections form -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-connections" class="form-label">Connections</label>
+                                  <input type="text" class="form-control" id="form-input-connections" placeholder="input your connections here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Connections form -->
+
                         </div>
+
                       </div>
                     </div>
                   </div>
@@ -1097,19 +1228,19 @@
                           <div class="list-group-item border-bottom-0">
                             <div class="row align-items-center">
                               <div class="col-12">
-                                <label for="formInputLanguages" class="form-label">Add Languages</label>
+                                <label for="formInputLanguages" class="form-label">Languages</label>
                               </div>
                               <div class="col-12">
                                 <div class="input-group mb-3">
                                   <input type="text" class="form-control" id="formInputLanguages"
-                                    placeholder="add your language here..." aria-label="Recipient's username"
+                                    placeholder="input your language here..." aria-label="Form Input Languages"
                                     aria-describedby="form-input-languages-btn">
+                                    <button class="btn btn-primary" type="button" id="form-input-languages-btn"><i class="fe fe-plus me-2"></i>Add</button>
                                 </div>
-                                <button class="btn btn-primary w-100">Add</button>
                               </div>
                             </div>
                           </div>
-                          <div class="list-group-item">
+                          <div class="list-group-item pt-0">
                             <div class="row align-items-center">
                               <div class="col-12 col-lg">
 
@@ -1134,19 +1265,19 @@
                           <div class="list-group-item border-bottom-0">
                             <div class="row align-items-center">
                               <div class="col-12">
-                                <label for="form-input-interests" class="form-label">Add Interests</label>
+                                <label for="form-input-interests" class="form-label">Interests</label>
                               </div>
                               <div class="col-12">
                                 <div class="input-group mb-3">
                                   <input type="text" class="form-control" id="form-input-interests"
-                                    placeholder="add your interest here..." aria-label="Recipient's username"
+                                    placeholder="input your interest here..." aria-label="Form Input Interests"
                                     aria-describedby="form-input-interests-btn">
+                                    <button class="btn btn-primary" type="button" id="form-input-interests-btn"><i class="fe fe-plus me-2"></i>Add</button>
                                 </div>
-                                <button class="btn btn-primary w-100">Add</button>
                               </div>
                             </div>
                           </div>
-                          <div class="list-group-item">
+                          <div class="list-group-item pt-0">
                             <div class="row align-items-center">
                               <div class="col-12 col-lg">
 
@@ -1171,91 +1302,51 @@
                           <div class="list-group-item border-bottom-0">
                             <div class="row align-items-center">
                               <div class="col-12">
-                                <label for="form-input-industry" class="form-label">Add Industry</label>
+                                <label for="form-input-industry" class="form-label">Industry</label>
                               </div>
                               <div class="col-12">
                                 <div class="mb-3">
                                   <input type="text" class="form-control" id="inputRecommendationsForm"
-                                    placeholder="write your recommendations here..." />
+                                    placeholder="input your industry here..." />
                                 </div>
-                                <button class="btn btn-primary w-100">Save</button>
                               </div>
                             </div>
                           </div>
-                          <div class="list-group-item">
-                            <div class="row align-items-center">
-                              <div class="col-12 col-lg">
-
-                                <!-- Title -->
-                                <!-- <h5 class="h4 mb-3 mb-lg-0">
-                                  Industry
-                                </h5> -->
-
-                              </div>
-                              <div class="col-auto">
-
-                                <!-- Text -->
-                                <small class="small text-secondary">
-                                  government administration
-                                </small>
-
-                              </div>
-                            </div> <!-- / .row -->
-                          </div>
+                          
                           <!-- /Industry Form -->
                           <!-- Recommendations Form -->
                           <div class="list-group-item border-bottom-0">
                             <div class="row align-items-center">
                               <div class="col-12">
-                                <label for="form-input-recommendations" class="form-label">Add Recommendations</label>
+                                <label for="form-input-recommendations" class="form-label">Recommendations</label>
                               </div>
                               <div class="col-12">
                                 <div class="mb-3">
                                   <textarea class="form-control" id="inputRecommendationsForm" rows="3"
-                                    placeholder="write your recommendations here..."></textarea>
+                                    placeholder="input your recommendations here..."></textarea>
                                 </div>
-                                <button class="btn btn-primary w-100">Save</button>
                               </div>
                             </div>
                           </div>
-                          <div class="list-group-item">
-                            <div class="row align-items-center">
-                              <div class="col-12 col-lg">
-
-                                <!-- Title -->
-                                <!-- <h5 class="h4 mb-3 mb-lg-0">
-                                  Recommendations
-                                </h5> -->
-
-                              </div>
-                              <div class="col-auto">
-
-                                <!-- Text -->
-                                <small class="small text-secondary">
-                                  Professional and dedicated approach towards clients and collegues.
-                                </small>
-
-                              </div>
-                            </div> <!-- / .row -->
-                          </div>
+                          
                           <!-- /Recommendations Form -->
                           <!-- Emails Form -->
                           <div class="list-group-item border-bottom-0">
                             <div class="row align-items-center">
                               <div class="col-12">
-                                <label for="form-input-emails" class="form-label">Add Emails</label>
+                                <label for="form-input-emails" class="form-label">Personal Emails</label>
                               </div>
                               <div class="col-12">
                                 <div class="input-group mb-3">
                                   <input type="text" class="form-control" id="form-input-emails"
-                                    placeholder="add your emails here..." aria-label="Recipient's username"
+                                    placeholder="input your emails here..." aria-label="Form Input Emails"
                                     aria-describedby="form-input-emails-btn">
+                                    <button class="btn btn-primary" type="button" id="form-input-emails-btn"><i class="fe fe-plus me-2"></i>Add</button>
                                 </div>
-                                <button class="btn btn-primary w-100">Save</button>
                               </div>
                             </div>
                           </div>
-                          <div class="list-group-item">
+                          <div class="list-group-item pt-0">
                             <div class="row align-items-center">
                               <div class="col-12 col-lg">
 
@@ -1280,19 +1371,19 @@
                           <div class="list-group-item border-bottom-0">
                             <div class="row align-items-center">
                               <div class="col-12">
-                                <label for="form-input-phone" class="form-label">Add Phone Number</label>
+                                <label for="form-input-phone" class="form-label">Personal Phone Numbers</label>
                               </div>
                               <div class="col-12">
                                 <div class="input-group mb-3">
                                   <input type="text" class="form-control" id="form-input-phone"
-                                    placeholder="add your phone here..." aria-label="Recipient's username"
+                                    placeholder="input your phone here..." aria-label="Form Input Phone"
                                     aria-describedby="form-input-phone-btn">
+                                    <button class="btn btn-primary" type="button" id="form-input-phone-btn"><i class="fe fe-plus me-2"></i> Add</button>
                                 </div>
-                                <button class="btn btn-primary w-100">Add</button>
                               </div>
                             </div>
                           </div>
-                          <div class="list-group-item">
+                          <div class="list-group-item pt-0">
                             <div class="row align-items-center">
                               <div class="col-12 col-lg">
 
@@ -1317,43 +1408,24 @@
                           <div class="list-group-item border-bottom-0">
                             <div class="row align-items-center">
                               <div class="col-12">
-                                <label for="form-input-inferred-salary" class="form-label">Add Range Salary</label>
+                                <label for="form-input-inferred-salary" class="form-label">Range Salary</label>
                               </div>
                               <div class="col-12">
                                 <div class="input-group mb-3">
                                   <input type="text" class="form-control" id="form-input-inferred-salary"
-                                    placeholder="add min salary here..." aria-label="Recipient's username"
+                                    placeholder="input min salary here..." aria-label="Recipient's username"
                                     aria-describedby="form-input-inferred-salary-btn">
                                     <span class="input-group-text">-</span>
                                   <input type="text" class="form-control" id="form-input-inferred-salary"
-                                    placeholder="add max salary here..." aria-label="Recipient's username"
+                                    placeholder="input max salary here..." aria-label="Recipient's username"
                                     aria-describedby="form-input-inferred-salary-btn">
                                   <span class="input-group-text">$</span>
                                 </div>
-                                <button class="btn btn-primary w-100">Save</button>
+                                <!-- <button class="btn btn-primary w-100">Save</button> -->
                               </div>
                             </div>
                           </div>
-                          <div class="list-group-item">
-                            <div class="row align-items-center">
-                              <div class="col-12 col-lg">
-
-                                <!-- Title -->
-                                <!-- <h5 class="h4 mb-3 mb-lg-0">
-                                  Inferred Salary
-                                </h5> -->
-
-                              </div>
-                              <div class="col-auto">
-
-                                <!-- Text -->
-                                <small class="small text-secondary">
-                                  $35000 - $45000
-                                </small>
-
-                              </div>
-                            </div> <!-- / .row -->
-                          </div>
+                          
                           <!-- /Inferred Salary Form -->
 
                         </div>
@@ -1362,87 +1434,21 @@
                     </div>
                   </div>
 
-                  <!-- Social -->
+                  <!-- summary -->
                   <div class="col-12 mb-2">
                     <div class="card mb-3">
                       <div class="card-body">
 
                         <!-- Title -->
-                        <h2 class="h2 card-header-title mb-4">Social</h2>
+                        <h2 class="h2 card-header-title mb-4">Summary</h2>
 
-                        <!-- List group -->
-                        <div class="list-group list-group-flush my-n3">
-
-                          <!-- Github form -->
-                          <div class="list-group-item">
-                            <div class="row align-items-center">
-                              <div class="col-12">
-
-                                <div class="mb-3">
-                                  <label for="form-input-github" class="form-label"><i class="fe fe-github h4 me-1"></i> GitHub</label>
-                                  <input type="text" class="form-control" id="form-input-github" placeholder="add github account here...">
-                                </div>
-                                <button class="btn btn-primary w-100">Save</button>
-
-                              </div>
-                              
-                            </div> <!-- / .row -->
+                        <div class="readmore readmore-summary d-flex flex-column">
+                          <!-- Form summary -->
+                          <div class="mb-3">
+                            <textarea class="form-control" id="inputSummaryForm" rows="3"
+                              placeholder="input your summary here..."></textarea>
                           </div>
-                          <!-- /Github form -->
-
-                          <!-- Facebook form -->
-                          <div class="list-group-item">
-                            <div class="row align-items-center">
-                              <div class="col-12">
-
-                                <div class="mb-3">
-                                  <label for="form-input-github" class="form-label"><i class="fe fe-facebook h4 me-1"></i> Facebook</label>
-                                  <input type="text" class="form-control" id="form-input-github" placeholder="add github account here...">
-                                </div>
-                                <button class="btn btn-primary w-100">Save</button>
-
-                              </div>
-                              
-                            </div> <!-- / .row -->
-                          </div>
-                          <!-- /Facebook form -->
-
-                          <!-- Twitter form -->
-                          <div class="list-group-item">
-                            <div class="row align-items-center">
-                              <div class="col-12">
-
-                                <div class="mb-3">
-                                  <label for="form-input-x" class="form-label"><i class="fe fe-twitter h4 me-1"></i> Twitter/X</label>
-                                  <input type="text" class="form-control" id="form-input-x" placeholder="add Twitter/X account here...">
-                                </div>
-                                <button class="btn btn-primary w-100">Save</button>
-
-                              </div>
-                              
-                            </div> <!-- / .row -->
-                          </div>
-                          <!-- /Twitter/X form -->
-
-                          <!-- Website form -->
-                          <div class="list-group-item">
-                            <div class="row align-items-center">
-                              <div class="col-12">
-
-                                <div class="mb-3">
-                                  <label for="form-input-website" class="form-label"><i class="fe fe-globe h4 me-1"></i> Website</label>
-                                  <input type="text" class="form-control" id="form-input-website" placeholder="add website account here...">
-                                </div>
-                                <button class="btn btn-primary w-100">Save</button>
-
-                              </div>
-                              
-                            </div> <!-- / .row -->
-                          </div>
-                          <!-- /Website form -->
-
                         </div>
-
                       </div>
                     </div>
                   </div>
@@ -1454,8 +1460,269 @@
 
                         <!-- Title -->
                         <h2 class="h2 card-header-title mb-4">Experience</h2>
-
                         
+                        <!-- List group -->
+                        <div class="list-group list-group-flush mt-n3 mb-4">
+
+                          <!-- Starts Date -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-start-date" class="form-label">Start At</label>
+                                  <input type="date" class="form-control" id="form-input-start-date">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Starts Date -->
+
+                          <!-- Ends Date -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-end-date" class="form-label">End At</label>
+                                  <input type="date" class="form-control" id="form-input-end-date">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Ends Date -->
+
+                          <!-- Company -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-company" class="form-label">Company</label>
+                                  <input type="text" class="form-control" id="form-input-company" placeholder="input your company here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Company -->
+
+                          <!-- Company Linkedin Profile URL -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-company-linkedin-profile-url" class="form-label">Company Linkedin Profile URL</label>
+                                  <input type="text" class="form-control" id="form-input-company-linkedin-profile-url" placeholder="input your company linkedin profile URL here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Company Linkedin Profile URL -->
+
+                          <!-- Company Facebook Profile URL -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-company-facebook-profile-url" class="form-label">Company Facebook Profile URL</label>
+                                  <input type="text" class="form-control" id="form-input-company-facebook-profile-url" placeholder="input your company facebook profile URL here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Company Facebook Profile URL -->
+
+                          <!-- Experience Title -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-experience-title" class="form-label">Title</label>
+                                  <input type="text" class="form-control" id="form-input-experience-title" placeholder="input your title here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Experience Title -->
+
+                          <!-- Experience Description -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-experience-description" class="form-label">Description</label>
+                                  <textarea class="form-control" id="form-input-experience-description" rows="3" placeholder="input your description here..."></textarea>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Experience Description -->
+
+                          <!-- Experience Location -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-experience-location" class="form-label">Location</label>
+                                  <input type="text" class="form-control" id="form-input-experience-location" placeholder="input your location here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Experience Location -->
+
+                          <!-- Experience Logo URL -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-experience-logo-url" class="form-label">Logo URL</label>
+                                  <input type="text" class="form-control" id="form-input-experience-logo-url" placeholder="input your logo URL here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Experience Logo URL -->
+
+                          <!-- Add Experience Button -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+                                <button type="button" class="btn btn-primary w-100" id="add-experience-btn">
+                                  <i class="fe fe-plus me-2"></i> Add Experience
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Add Experience Button -->
+
+                        </div>
+
+                        <!-- List group -->
+                        <div class="list-group list-group-flush list-group-activity my-n3">
+
+                          <div class="list-group-item">
+                            <div class="row">
+                              <div class="col-auto">
+
+                                <!-- Avatar -->
+                                <div class="avatar avatar-sm">
+                                  <div class="avatar-title fs-lg bg-primary-subtle text-primary">
+                                    <i class="fe fe-briefcase"></i>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div class="col ms-n2">
+
+                                <!-- Title -->
+                                <h3 class="h3 text-dark mb-1">
+                                  Co-Founder
+                                </h3>
+
+                                <!-- Company -->
+                                <h4 class="fw-light mb-1">
+                                  <a href="javascript:void(0)">
+                                    Freedom Fund Real Estate
+                                  </a>
+                                </h4>
+
+                                <!-- Location -->
+                                <p class="small fw-light text-secondary mb-2">
+                                  Singapore
+                                </p>
+
+                                <!-- Time -->
+                                <small class="h5 fw-light text-secondary">
+                                  Aug 2021 - Present
+                                </small>
+
+                                <div class="readmore readmore-desc-experience-1 d-flex flex-column mt-2">
+                                  <!-- DESCRIPTION value -->
+                                  <p class="readmore-content text-dark mb-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates velit amet
+                                    dolorum hic cumque ea deserunt reiciendis, minus illo perferendis vel qui illum
+                                    sapiente. Vero veniam voluptate quibusdam obcaecati veritatis!
+                                  </p>
+                                  <!-- <button class="readmore-btn h5 bg-transparent border-0 text-primary p-0 ms-auto"
+                                    onclick="readMore('.readmore-desc-experience-1')">
+                                    ...read more
+                                  </button> -->
+                                </div>
+
+                              </div>
+                            </div> <!-- / .row -->
+                          </div>
+
+                          <div class="list-group-item">
+                            <div class="row">
+                              <div class="col-auto">
+
+                                <!-- Avatar -->
+                                <div class="avatar avatar-sm">
+                                  <div class="avatar-title fs-lg bg-primary-subtle text-primary">
+                                    <i class="fe fe-briefcase"></i>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div class="col ms-n2">
+
+                                <!-- Title -->
+                                <h3 class="h3 text-dark mb-1">
+                                  Software Engineer
+                                </h3>
+
+                                <!-- Company -->
+                                <h4 class="fw-light mb-1">
+                                  <a href="javascript:void(0)">
+                                    Google
+                                  </a>
+                                </h4>
+
+                                <!-- Location -->
+                                <p class="small fw-light text-secondary mb-2">
+                                  New York, US
+                                </p>
+
+                                <!-- Time -->
+                                <small class="h5 fw-light text-secondary">
+                                  Mar 2017 - Aug 2021
+                                </small>
+
+                                <div class="readmore readmore-desc-experience-2 d-flex flex-column mt-2">
+                                  <!-- DESCRIPTION value -->
+                                  <p class="readmore-content text-dark mb-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae,
+                                    dignissimos tempora animi deserunt obcaecati eius. At impedit sequi labore esse
+                                    quisquam aliquam itaque velit ipsa iste deleniti, dolores quod.
+                                  </p>
+                                  <button class="readmore-btn h5 bg-transparent border-0 text-primary p-0 ms-auto"
+                                    onclick="readMore('.readmore-desc-experience-2')">
+                                    ...read more
+                                  </button>
+                                </div>
+
+                              </div>
+                            </div> <!-- / .row -->
+                          </div>
+
+                        </div>
 
                       </div>
                     </div>
@@ -1469,7 +1736,280 @@
                         <!-- Title -->
                         <h2 class="h2 card-header-title mb-4">Education</h2>
 
-                        
+                        <!-- List group -->
+                        <div class="list-group list-group-flush mt-n3 mb-4">
+
+                          <!-- Starts Date -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-start-date" class="form-label">Start At</label>
+                                  <input type="date" class="form-control" id="form-input-start-date">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Starts Date -->
+
+                          <!-- Ends Date -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-end-date" class="form-label">End At</label>
+                                  <input type="date" class="form-control" id="form-input-end-date">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Ends Date -->
+
+                          <!-- Field of Study -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-field-of-study" class="form-label">Field of Study</label>
+                                  <input type="text" class="form-control" id="form-input-field-of-study" placeholder="input your field of study here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Field of Study -->
+
+                          <!-- Degree Name -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-degree-name" class="form-label">Degree Name</label>
+                                  <input type="text" class="form-control" id="form-input-degree-name" placeholder="input your degree name here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Degree Name -->
+
+                          <!-- School -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-school" class="form-label">School</label>
+                                  <input type="text" class="form-control" id="form-input-school" placeholder="input your school here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /School -->
+
+                          <!-- School Linkedin Profile URL -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-school-linkedin-profile-url" class="form-label">School Linkedin Profile URL</label>
+                                  <input type="text" class="form-control" id="form-input-school-linkedin-profile-url" placeholder="input your school linkedin profile URL here...">
+                                </div>
+
+                              </div>
+                            </div>  
+                          </div>
+                          <!-- /School Linkedin Profile URL -->
+
+                          <!-- School Facebook Profile URL -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-school-facebook-profile-url" class="form-label">School Facebook Profile URL</label>
+                                  <input type="text" class="form-control" id="form-input-school-facebook-profile-url" placeholder="input your school facebook profile URL here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /School Facebook Profile URL -->
+
+                          <!-- Education Description -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-education-description" class="form-label">Description</label>
+                                  <textarea class="form-control" id="form-input-education-description" rows="3" placeholder="input your description here..."></textarea>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Education Description -->
+
+                          <!-- Education Logo URL -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-education-logo-url" class="form-label">Logo URL</label>
+                                  <input type="text" class="form-control" id="form-input-education-logo-url" placeholder="input your logo URL here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Education Logo URL -->
+
+                          <!-- Education Grade -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-education-grade" class="form-label">Grade</label>
+                                  <input type="text" class="form-control" id="form-input-education-grade" placeholder="input your grade here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Education Grade -->
+
+                          <!-- Education Activities and Societies -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-education-activities-and-societies" class="form-label">Activities and Societies</label>
+                                  <input type="text" class="form-control" id="form-input-education-activities-and-societies" placeholder="input your activities and societies here...">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Education Activities and Societies -->
+
+                          <!-- Add Education Button -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+                                <button type="button" class="btn btn-primary w-100" id="add-education-btn">
+                                  <i class="fe fe-plus me-2"></i> Add Education
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Add Education Button -->
+
+                        </div>
+
+                        <!-- List group -->
+                        <div class="list-group list-group-flush list-group-activity my-n3">
+                          <div class="list-group-item">
+                            <div class="row">
+                              <div class="col-auto">
+
+                                <!-- Avatar -->
+                                <div class="avatar avatar-sm">
+                                  <div class="avatar-title fs-lg bg-primary-subtle text-primary">
+                                    <i class="fe fe-home"></i>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div class="col ms-n2">
+
+                                <!-- School -->
+                                <h3 class="h3 text-dark mb-1">
+                                  Harvard University
+                                </h3>
+
+                                <!-- Degree -->
+                                <h4 class="h4 fw-light text-dark mb-2">
+                                  Master of Business Administration (MBA)
+                                </h4>
+
+                                <!-- Time -->
+                                <small class="text-secondary">
+                                  Jan 2015 - Dec 2018
+                                </small>
+
+                                <!-- Grade -->
+                                <p class="small text-gray-800 mt-2">
+                                  Grade: 3.90
+                                </p>
+
+                                <!-- Activities and societies -->
+                                <p class="small text-gray-800 mt-2">
+                                  Activities and societies: Business Development
+                                </p>
+
+                                <div class="readmore readmore-desc-harvard d-flex flex-column mt-2">
+                                  <!-- DESCRIPTION value -->
+                                  <p class="readmore-content text-dark mb-3">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam quasi excepturi
+                                    eligendi ipsum temporibus, rem sint nemo praesentium fugit! Harum reiciendis
+                                    consectetur provident nam blanditiis nobis reprehenderit repellat quasi et?
+                                  </p>
+                                  <button class="readmore-btn h5 bg-transparent border-0 text-primary p-0 ms-auto"
+                                    onclick="readMore('.readmore-desc-harvard')">
+                                    ...read more
+                                  </button>
+                                </div>
+
+                              </div>
+                            </div> <!-- / .row -->
+                          </div>
+                          <div class="list-group-item">
+                            <div class="row">
+                              <div class="col-auto">
+
+                                <!-- Avatar -->
+                                <div class="avatar avatar-sm">
+                                  <div class="avatar-title fs-lg bg-primary-subtle text-primary">
+                                    <i class="fe fe-home"></i>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div class="col ms-n2">
+
+                                <!-- School -->
+                                <h3 class="h3 text-dark mb-1">
+                                  University of Colorado Denver
+                                </h3>
+
+                                <!-- Degree -->
+                                <h4 class="h4 fw-light text-dark mb-2">
+                                  Bachelor of Information Technology
+                                </h4>
+
+                                <!-- Time -->
+                                <small class="text-secondary">
+                                  Jan 2013 - Dec 2015
+                                </small>
+
+                              </div>
+                            </div> <!-- / .row -->
+                          </div>
+
+                        </div>
+
 
                       </div>
                     </div>
@@ -1611,7 +2151,6 @@
                       <div class="card-body">
                         <!-- Title -->
                         <h2 class="h2 header-title mb-4">Group</h2>
-
                         
                       </div>
                       <!-- / .card-body -->
@@ -1622,156 +2161,88 @@
               </div>
 
               <div class="col-12 col-xl-4">
-                <!-- Header Section-->
-                <!-- <div class="d-flex mb-2">
-                  <div class="card mb-3">
-                    -- Dropdown --
-                    <div class="dropdown card-dropdown">
-                      <a href="#" class="dropdown-ellipses dropdown-toggle text-white" role="button"
-                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fe fe-more-vertical"></i>
-                      </a>
-                      <div class="dropdown-menu dropdown-menu-end">
-                        <a href="#!" class="dropdown-item text-primary">
-                          <i class="neu neu-edit-profile"></i>
-                          Edit profile
-                        </a>
-                        <a href="#!" class="dropdown-item text-dark">
-                          <i class="neu neu-copy"></i>
-                          Copy profile
-                        </a>
-                        <a href="#!" class="dropdown-item text-danger">
-                          <i class="neu neu-delete-profile"></i>
-                          Delete Profile
-                        </a>
-                      </div>
-                    </div>
 
-                    -- background_cover_image_url --
-                    <img src="assets/img/covers/profile-cover-2.jpg" alt="..." class="card-img-top" />
-
-                    -- Body --
-                    <div class="card-body text-center pb-2">
-                      -- profile_pic_url --
-                      <div class="avatar avatar-xxl card-avatar card-avatar-top">
-                        <img src="assets/img/avatars/profiles/avatar-2.jpg"
-                          class="avatar-img rounded-circle border border-4 border-card" alt="..." />
-                      </div>
-
-                      -- public_identifier --
-                      <div class="text-center mb-3">
-                        -- public_identifier value --
-                        <small class="small text-secondary">
-                          johnrmarty
-                        </small>
-                      </div>
-
-                      -- full_name --
-                      <div class="text-center mb-3">
-                        -- full_name value --
-                        <h2 class="h2 card-title text-center">
-                          John Marty
-                          <small class="small fw-light text-secondary">(male)</small>
-                        </h2>
-                      </div>
-
-                      -- occupation --
-                      <div class="text-center mb-3">
-                        -- occupation value --
-                        <h3 class="h3 text-center text-dark mb-3">
-                          Co-Founder at Freedom Fund Real Estate
-                        </h3>
-                      </div>
-
-                      -- headline --
-                      <div class="text-center mb-4">
-                        -- headline value --
-                        <h4 class="fw-light small text-center text-dark mb-3">
-                          Financial Freedom through Real Estate - LinkedIn Top
-                          Voice
-                        </h4>
-                      </div>
-
-                      -- address --
-                      <div class="text-center mb-4">
-                        -- address value --
-                        <p class="small text-center text-secondary mb-3 text-secondary">
-                          Seattle, Washington, US (United States of America)
-                        </p>
-                      </div>
-
-                      <div class="row g-0 border-top border-bottom">
-                        <div class="col-6 py-4 text-center">
-                          -- Heading --
-                          <h6 class="text-uppercase text-secondary text-muted">
-                            Followers
-                          </h6>
-
-                          -- Value --
-                          <h2 class="mb-0">10.200</h2>
-                        </div>
-                        <div class="col-6 py-4 text-center border-start">
-                          -- Heading --
-                          <h6 class="text-uppercase text-secondary text-muted">
-                            Connections
-                          </h6>
-
-                          -- Value --
-                          <h2 class="mb-0">500</h2>
-                        </div>
-                      </div>
-
-                      <div class="d-block py-4">
-                        <ul class="d-flex gap-4 justify-content-center list-unstyled mb-0">
-                          <li class="d-inline-flex">
-                            <a href="javascript:void(0)" class="text-dark">
-                              <i class="fe fe-github h2"></i>
-                            </a>
-                          </li>
-                          <li class="d-inline-flex">
-                            <a href="javascript:void(0)" class="text-dark">
-                              <i class="fe fe-facebook h2"></i>
-                            </a>
-                          </li>
-                          <li class="d-inline-flex">
-                            <a href="javascript:void(0)" class="text-dark">
-                              <i class="fe fe-twitter h2"></i>
-                            </a>
-                          </li>
-                          <li class="d-inline-flex">
-                            <a href="javascript:void(0)" class="text-dark">
-                              <i class="fe fe-globe h2"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div class="d-block py-4 text-center border-top">
-                        <a href="javascript:void(0)" class="h2 text-primary fw-light mb-0">
-                          I am hiring!
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
-
-                <div class="d-none d-lg-block">
+                <div class="d-none d-lg-block mb-4 sticky-lg-top">
                   <div class="card">
                     <div class="card-body">
+
+                      <!-- Title -->
+                      <h2 class="h2 card-header-title mb-4">Social</h2>
+
+                      <!-- List group -->
+                      <div class="list-group list-group-flush my-n3">
+
+                        <!-- Github form -->
+                        <div class="list-group-item">
+                          <div class="row align-items-center">
+                            <div class="col-12">
+
+                              <div class="mb-3">
+                                <label for="form-input-github" class="form-label"><i class="fe fe-github h4 me-1"></i> GitHub</label>
+                                <input type="text" class="form-control" id="form-input-github" placeholder="add github account here...">
+                              </div>
+
+                            </div>
+                            
+                          </div> <!-- / .row -->
+                        </div>
+                        <!-- /Github form -->
+
+                        <!-- Facebook form -->
+                        <div class="list-group-item">
+                          <div class="row align-items-center">
+                            <div class="col-12">
+
+                              <div class="mb-3">
+                                <label for="form-input-github" class="form-label"><i class="fe fe-facebook h4 me-1"></i> Facebook</label>
+                                <input type="text" class="form-control" id="form-input-github" placeholder="add github account here...">
+                              </div>
+
+                            </div>
+                            
+                          </div> <!-- / .row -->
+                        </div>
+                        <!-- /Facebook form -->
+
+                        <!-- Twitter form -->
+                        <div class="list-group-item">
+                          <div class="row align-items-center">
+                            <div class="col-12">
+
+                              <div class="mb-3">
+                                <label for="form-input-x" class="form-label"><i class="fe fe-twitter h4 me-1"></i> Twitter/X</label>
+                                <input type="text" class="form-control" id="form-input-x" placeholder="add Twitter/X account here...">
+                              </div>
+
+                            </div>
+                            
+                          </div> <!-- / .row -->
+                        </div>
+                        <!-- /Twitter/X form -->
+
+                        <!-- Website form -->
+                        <div class="list-group-item">
+                          <div class="row align-items-center">
+                            <div class="col-12">
+
+                              <div class="mb-3">
+                                <label for="form-input-website" class="form-label"><i class="fe fe-globe h4 me-1"></i> Website</label>
+                                <input type="text" class="form-control" id="form-input-website" placeholder="add website account here...">
+                              </div>
+
+                            </div>
+                            
+                          </div> <!-- / .row -->
+                        </div>
+                        <!-- /Website form -->
+
+                      </div>
                       
                     </div>
                     <!-- / .card-body -->
                   </div>
                 </div>
 
-                <div class="d-none d-lg-block mb-4 sticky-lg-top pt-2">
-                  <div class="card">
-                    <div class="card-body">
-                      
-                    </div>
-                    <!-- / .card-body -->
-                  </div>
-                </div>
               </div>
             </div>
           </section>
