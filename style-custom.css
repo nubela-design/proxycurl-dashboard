@@ -244,3 +244,43 @@
 	min-width: 310px;
 	max-width: 100%; 
 }
+
+/* Start Add By Rifki - 21 Oct 2024 - Sandbox Profile */
+.readmore .readmore-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 22px;
+  max-height: 44px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  transition: 0.7s all;
+  -webkit-transition: 0.7s all;
+}
+
+.readmore.show .readmore-content {
+  max-height: max-content !important;
+  -webkit-line-clamp: unset !important;
+  transition: 0.7s all;
+  -webkit-transition: 0.7s all;
+}
+
+/* .readmore.show .readmore-btn {
+  display: none;
+} */
+
+.text-1-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 22px;
+  max-height: 22px;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.card-img-top {
+  aspect-ratio: 16/5;
+  object-fit: cover;
+}
+/* End Add By Rifki - 21 Oct 2024 - Sandbox Profile */
