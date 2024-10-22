@@ -284,3 +284,23 @@
   object-fit: cover;
 }
 /* End Add By Rifki - 21 Oct 2024 - Sandbox Profile */
+
+/* Start Add By Rifki - 22 Oct 2024 - Sandbox Profile */
+.sticky-bottom-buttons {
+  position: sticky;
+  bottom: 0;
+  background-color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 .75rem 1.5rem rgba(18,38,63,.03);
+  border: 1px solid #edf2f9;
+  z-index: 1000;
+}
+
+@media (max-width: 991.98px) {
+  .sticky-bottom-buttons {
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+}
+/* End Add By Rifki - 22 Oct 2024 - Sandbox Profile */

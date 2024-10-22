@@ -495,6 +495,8 @@
     </div>
   </nav>
 
+  <!-- Modal Code -->
+
   <!--MODAL Create-->
   <div class="modal fade" id="modalCreateProfile" tabindex="-1" aria-labelledby="modalCreateLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -904,31 +906,410 @@
     </div>
   </div>
 
+  <!-- Modal for Modify Experience -->
+  <!-- Modal confirm edit experience -->
+  <div class="modal fade" id="modalEditExperience" tabindex="-1" aria-labelledby="modalEditExperienceLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-lg mb-2">
+                <div class="avatar-title fs-lg bg-primary rounded-circle text-primary">
+                  <i class="fe fe-edit-2 text-white display-4"></i>
+                </div>
+              </div>
+              <h1 class="fw-bold mb-3 mt-4">
+                Edit Experience
+              </h1>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- List group -->
+              <div class="list-group list-group-flush mt-n3">
+                <!-- Starts Date -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-start-date" class="form-label">Start At</label>
+                        <input type="date" class="form-control" id="form-input-start-date">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Starts Date -->
+
+                <!-- Ends Date -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-end-date-experience" class="form-label">End At</label>
+                        <input type="date" class="form-control" id="form-input-end-date-experience">
+                      </div>
+
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="form-check-currently-working-experience">
+                        <label class="form-check-label" for="form-check-currently-working-experience">Currently working
+                          in this role</label>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Ends Date -->
+
+                <!-- Company -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-company" class="form-label">Company</label>
+                        <input type="text" class="form-control" id="form-input-company"
+                          placeholder="input your company here" value="Freedom Fund Real Estate">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Company -->
+
+                <!-- Company Linkedin Profile URL -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-company-linkedin-profile-url" class="form-label">Company
+                          Linkedin Profile URL</label>
+                        <input type="text" class="form-control" id="form-input-company-linkedin-profile-url"
+                          placeholder="input your company linkedin profile URL here">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Company Linkedin Profile URL -->
+
+                <!-- Company Facebook Profile URL -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-company-facebook-profile-url" class="form-label">Company
+                          Facebook Profile URL</label>
+                        <input type="text" class="form-control" id="form-input-company-facebook-profile-url"
+                          placeholder="input your company facebook profile URL here">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Company Facebook Profile URL -->
+
+                <!-- Experience Title -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-experience-title" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="form-input-experience-title"
+                          placeholder="input your title here" value="Co-Founder">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Experience Title -->
+
+                <!-- Experience Description -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-experience-description" class="form-label">Description</label>
+                        <textarea class="form-control" id="form-input-experience-description" rows="3"
+                          placeholder="input your description here">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates velit amet dolorum hic cumque ea deserunt reiciendis, minus illo perferendis vel qui illum sapiente. Vero veniam voluptate quibusdam obcaecati veritatis!</textarea>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Experience Description -->
+
+                <!-- Experience Location -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-experience-location" class="form-label">Location</label>
+                        <input type="text" class="form-control" id="form-input-experience-location"
+                          placeholder="input your location here" value="Singapore">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Experience Location -->
+
+                <!-- Experience Logo URL -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-experience-logo-url" class="form-label">Logo URL</label>
+                        <input type="text" class="form-control" id="form-input-experience-logo-url"
+                          placeholder="input your logo URL here">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Experience Logo URL -->
+
+              </div>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+
+                <div class="col-12">
+                  <button class="btn btn-lg btn-primary w-100 mb-3" data-bs-toggle="modal"
+                    data-bs-target="#modalEditExperienceSuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-lg btn-outline-danger w-100" data-bs-dismiss="modal" aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm edit experience -->
+
+  <!-- Modal edit experience success -->
+  <div class="modal fade" id="modalEditExperienceSuccess" tabindex="-1"
+    aria-labelledby="modalEditExperienceLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-lg mb-2">
+                <div class="avatar-title fs-lg bg-primary rounded-circle text-primary">
+                  <i class="fe fe-edit-2 text-white display-4"></i>
+                </div>
+              </div>
+
+              <h1 class="fw-bold mb-3 mt-4">
+                Experience Edited!
+              </h1>
+
+              <p class="text-gray-700 fs-lg">
+                Experience edited successfully.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+
+              <div class="row align-items-center justify-content-center mt-3">
+
+                <a class="btn btn-lg btn-primary w-100 mb-3" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal edit experience success -->
+
+  <!-- Modal confirm delete experience -->
+  <div class="modal fade" id="modalDeleteExperience" tabindex="-1" aria-labelledby="modalDeleteExperienceLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-lg mb-2">
+                <div class="avatar-title fs-lg bg-danger rounded-circle text-primary">
+                  <i class="fe fe-trash text-white display-4"></i>
+                </div>
+              </div>
+
+              <h1 class="fw-bold mb-3 mt-4">
+                Delete Experience?
+              </h1>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+
+              <div class="row align-items-center justify-content-center mt-3">
+
+                <button class="btn btn-lg btn-primary w-100 mb-3" data-bs-dismiss="modal" aria-label="Close">
+                  No, don't delete this experience
+                </button>
+                <button class="btn btn-lg btn-outline-danger w-100" data-bs-toggle="modal"
+                  data-bs-target="#modalDeleteExperienceSuccess">
+                  Yes, delete this experience
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete experience -->
+
+  <!-- Modal delete experience success -->
+  <div class="modal fade" id="modalDeleteExperienceSuccess" tabindex="-1"
+    aria-labelledby="modalDeleteExperienceLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-lg mb-2">
+                <div class="avatar-title fs-lg bg-danger rounded-circle text-primary">
+                  <i class="fe fe-trash text-white display-4"></i>
+                </div>
+              </div>
+
+              <h1 class="fw-bold mb-3 mt-4">
+                Experience deleted!
+              </h1>
+
+              <p class="text-gray-700 fs-lg">
+                Experience deleted successfully.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+
+              <div class="row align-items-center justify-content-center mt-3">
+
+                <a class="btn btn-lg btn-primary w-100 mb-3" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete experience success -->
+
+  <!-- /Modal for Modify Experience -->
+
+  <!-- /Modal Code -->
+
   <!-- MAIN CONTENT -->
   <div class="main-content">
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-12 main-content-sandbox">
-          <!--Sandbox Alert-->
-          <div class="card bg-warning mt-5">
-            <div class="card-body">
-              <div class="row align-items-center">
-                <div class="col-12">
-                  <p class="h3 text-dark mb-0">
-                    You're currently in <b>Sandbox mode</b>. To return to
-                    Production mode, please
-                    <a href="javascript:void(0)" class="fw-bold text-black text-decoration-underline"
-                      onclick="history.back()">click here</a>.
-                  </p>
+
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-xl-12">
+
+              <!--Sandbox Alert-->
+              <div class="card bg-warning mt-5">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+                      <p class="h3 text-dark mb-0">
+                        You're currently in <b>Sandbox mode</b>. To return to
+                        Production mode, please
+                        <a href="javascript:void(0)" class="fw-bold text-black text-decoration-underline"
+                          onclick="history.back()">click here</a>.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
+
             </div>
           </div>
 
           <!-- Header -->
           <div class="header mt-md-5">
-            <div class="row align-items-center">
-              <div class="col">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-12 col-xl-12">
 
                 <!-- Team name -->
                 <div class="dropdown mb-4">
@@ -974,15 +1355,17 @@
 
                 <!-- Title -->
                 <h1 class="header-title">Modify Profile Sandbox</h1>
+
+                <hr class="mb-0">
               </div>
             </div>
             <!-- / .row -->
           </div>
 
           <section>
-            <div class="row">
+            <div class="row justify-content-center">
               <div class="col-12 col-xl-8">
-                <div class="row">
+                <div class="row justify-content-center">
 
                   <!-- General -->
                   <div class="col-12 mb-2">
@@ -1227,24 +1610,27 @@
                               <div class="col-auto">
 
                                 <!-- value -->
-                                <small class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
+                                <small
+                                  class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
                                   English
                                   <a href="#" class="ms-2 text-decoration-none text-danger" title="Delete">
-                                    <i class="fe fe-trash-2"></i>
+                                    <i class="fe fe-x"></i>
                                   </a>
                                 </small>
                                 <!-- value -->
-                                <small class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
+                                <small
+                                  class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
                                   Chinese
                                   <a href="#" class="ms-2 text-decoration-none text-danger" title="Delete">
-                                    <i class="fe fe-trash-2"></i>
+                                    <i class="fe fe-x"></i>
                                   </a>
                                 </small>
                                 <!-- value -->
-                                <small class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
+                                <small
+                                  class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
                                   Japanese
                                   <a href="#" class="ms-2 text-decoration-none text-danger" title="Delete">
-                                    <i class="fe fe-trash-2"></i>
+                                    <i class="fe fe-x"></i>
                                   </a>
                                 </small>
 
@@ -1274,87 +1660,99 @@
                               <div class="col-auto">
 
                                 <!-- value -->
-                                <small class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
+                                <small
+                                  class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
                                   education
                                   <a href="#" class="ms-2 text-decoration-none text-danger" title="Delete">
-                                    <i class="fe fe-trash-2"></i>
+                                    <i class="fe fe-x"></i>
                                   </a>
                                 </small>
                                 <!-- value -->
-                                <small class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
+                                <small
+                                  class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
                                   health
                                   <a href="#" class="ms-2 text-decoration-none text-danger" title="Delete">
-                                    <i class="fe fe-trash-2"></i>
+                                    <i class="fe fe-x"></i>
                                   </a>
                                 </small>
                                 <!-- value -->
-                                <small class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
+                                <small
+                                  class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
                                   human rights
                                   <a href="#" class="ms-2 text-decoration-none text-danger" title="Delete">
-                                    <i class="fe fe-trash-2"></i>
+                                    <i class="fe fe-x"></i>
                                   </a>
                                 </small>
                                 <!-- value -->
-                                <small class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
+                                <small
+                                  class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
                                   education
                                   <a href="#" class="ms-2 text-decoration-none text-danger" title="Delete">
-                                    <i class="fe fe-trash-2"></i>
+                                    <i class="fe fe-x"></i>
                                   </a>
                                 </small>
                                 <!-- value -->
-                                <small class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
+                                <small
+                                  class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
                                   health
                                   <a href="#" class="ms-2 text-decoration-none text-danger" title="Delete">
-                                    <i class="fe fe-trash-2"></i>
+                                    <i class="fe fe-x"></i>
                                   </a>
                                 </small>
                                 <!-- value -->
-                                <small class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
+                                <small
+                                  class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
                                   human rights
                                   <a href="#" class="ms-2 text-decoration-none text-danger" title="Delete">
-                                    <i class="fe fe-trash-2"></i>
+                                    <i class="fe fe-x"></i>
                                   </a>
                                 </small>
                                 <!-- value -->
-                                <small class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
+                                <small
+                                  class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
                                   education
                                   <a href="#" class="ms-2 text-decoration-none text-danger" title="Delete">
-                                    <i class="fe fe-trash-2"></i>
+                                    <i class="fe fe-x"></i>
                                   </a>
                                 </small>
                                 <!-- value -->
-                                <small class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
+                                <small
+                                  class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
                                   health
                                   <a href="#" class="ms-2 text-decoration-none text-danger" title="Delete">
-                                    <i class="fe fe-trash-2"></i>
+                                    <i class="fe fe-x"></i>
                                   </a>
                                 </small>
                                 <!-- value -->
-                                <small class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
+                                <small
+                                  class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
                                   human rights
                                   <a href="#" class="ms-2 text-decoration-none text-danger" title="Delete">
-                                    <i class="fe fe-trash-2"></i>
+                                    <i class="fe fe-x"></i>
                                   </a>
                                 </small>
                                 <!-- value -->
-                                <small class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
+                                <small
+                                  class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
                                   education
                                   <a href="#" class="ms-2 text-decoration-none text-danger" title="Delete">
-                                    <i class="fe fe-trash-2"></i>
+                                    <i class="fe fe-x"></i>
                                   </a>
                                 </small>
                                 <!-- value -->
-                                <small class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
+                                <small
+                                  class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
                                   health
                                   <a href="#" class="ms-2 text-decoration-none text-danger" title="Delete">
-                                    <i class="fe fe-trash-2"></i>
+                                    <i class="fe fe-x"></i>
                                   </a>
                                 </small>
                                 <!-- value -->
-                                <small class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
+                                <small
+                                  class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
                                   human rights
                                   <a href="#" class="ms-2 text-decoration-none text-danger" title="Delete">
-                                    <i class="fe fe-trash-2"></i>
+                                    <i class="fe fe-x"></i>
                                   </a>
                                 </small>
 
@@ -1416,24 +1814,27 @@
                               <div class="col-auto">
 
                                 <!-- value -->
-                                <small class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
+                                <small
+                                  class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
                                   abc@gmail.com
                                   <a href="#" class="ms-2 text-decoration-none text-danger" title="Delete">
-                                    <i class="fe fe-trash-2"></i>
+                                    <i class="fe fe-x"></i>
                                   </a>
                                 </small>
                                 <!-- value -->
-                                <small class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
+                                <small
+                                  class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
                                   bcd@gmail.com
                                   <a href="#" class="ms-2 text-decoration-none text-danger" title="Delete">
-                                    <i class="fe fe-trash-2"></i>
+                                    <i class="fe fe-x"></i>
                                   </a>
                                 </small>
                                 <!-- value -->
-                                <small class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
+                                <small
+                                  class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
                                   cde@outlook.com
                                   <a href="#" class="ms-2 text-decoration-none text-danger" title="Delete">
-                                    <i class="fe fe-trash-2"></i>
+                                    <i class="fe fe-x"></i>
                                   </a>
                                 </small>
 
@@ -1463,24 +1864,27 @@
                               <div class="col-auto">
 
                                 <!-- value -->
-                                <small class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
+                                <small
+                                  class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
                                   +6512345678
                                   <a href="#" class="ms-2 text-decoration-none text-danger" title="Delete">
-                                    <i class="fe fe-trash-2"></i>
+                                    <i class="fe fe-x"></i>
                                   </a>
                                 </small>
                                 <!-- value -->
-                                <small class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
+                                <small
+                                  class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
                                   +6285123450953
                                   <a href="#" class="ms-2 text-decoration-none text-danger" title="Delete">
-                                    <i class="fe fe-trash-2"></i>
+                                    <i class="fe fe-x"></i>
                                   </a>
                                 </small>
                                 <!-- value -->
-                                <small class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
+                                <small
+                                  class="alert alert-light py-1 px-2 rounded-1 d-inline-flex align-items-center mb-2">
                                   +6502300340
                                   <a href="#" class="ms-2 text-decoration-none text-danger" title="Delete">
-                                    <i class="fe fe-trash-2"></i>
+                                    <i class="fe fe-x"></i>
                                   </a>
                                 </small>
 
@@ -1536,6 +1940,167 @@
                       </div>
                     </div>
                   </div>
+
+                  <!-- Social -->
+                  <div class="col-12 mb-2">
+                    <div class="card mb-3">
+                      <div class="card-body">
+
+                        <!-- Title -->
+                        <h2 class="h2 card-header-title mb-4">Social</h2>
+
+                        <!-- List group -->
+                        <div class="list-group list-group-flush my-n3">
+
+                          <!-- Github form -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-github" class="form-label"><i class="fe fe-github h4 me-1"></i>
+                                    GitHub</label>
+                                  <input type="text" class="form-control" id="form-input-github"
+                                    placeholder="add github account here" value="@johnmarty">
+                                </div>
+
+                              </div>
+
+                            </div> <!-- / .row -->
+                          </div>
+                          <!-- /Github form -->
+
+                          <!-- Facebook form -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-github" class="form-label"><i
+                                      class="fe fe-facebook h4 me-1"></i>
+                                    Facebook</label>
+                                  <input type="text" class="form-control" id="form-input-github"
+                                    placeholder="add github account here" value="@johnmarty">
+                                </div>
+
+                              </div>
+
+                            </div> <!-- / .row -->
+                          </div>
+                          <!-- /Facebook form -->
+
+                          <!-- Twitter form -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-x" class="form-label"><i class="fe fe-twitter h4 me-1"></i>
+                                    Twitter/X</label>
+                                  <input type="text" class="form-control" id="form-input-x"
+                                    placeholder="add Twitter/X account here" value="@johnmarty">
+                                </div>
+
+                              </div>
+
+                            </div> <!-- / .row -->
+                          </div>
+                          <!-- /Twitter/X form -->
+
+                          <!-- Website form -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-website" class="form-label"><i class="fe fe-globe h4 me-1"></i>
+                                    Website</label>
+                                  <input type="text" class="form-control" id="form-input-website"
+                                    placeholder="add website account here" value="www.johnmathy.me">
+                                </div>
+
+                              </div>
+
+                            </div> <!-- / .row -->
+                          </div>
+                          <!-- /Website form -->
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Social -->
+
+                  <!-- Activity -->
+                  <div class="col-12 mb-2">
+                    <div class="card mb-3">
+                      <div class="card-body">
+
+                        <!-- Title -->
+                        <h2 class="h2 header-title mb-4">
+                          Activity
+                        </h2>
+
+                        <!-- List group -->
+                        <div class="list-group list-group-flush mt-n3">
+
+                          <!-- Activity Title -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-activity-title" class="form-label">Title</label>
+                                  <input type="text" class="form-control" id="form-input-activity-title"
+                                    placeholder="input your activity title here" value="I am hiring!">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Activity Title -->
+
+                          <!-- Activity Link -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-activity-link" class="form-label">Link</label>
+                                  <input type="text" class="form-control" id="form-input-activity-link"
+                                    placeholder="input your activity link here"
+                                    value="https://www.linkedin.com/feed/update/urn:li:activity:666">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Activity Link -->
+
+                          <!-- Activity Status -->
+                          <div class="list-group-item pb-0">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-activity-status" class="form-label">Activity Status</label>
+                                  <select class="form-select" aria-label="Default select example">
+                                    <option value="1" selected>Posted</option>
+                                    <option value="2">Draft</option>
+                                  </select>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Activity Status -->
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Activity -->
 
                   <!-- Experience -->
                   <div class="col-12 mb-2">
@@ -1723,7 +2288,7 @@
 
                                 <!-- Avatar -->
                                 <div class="avatar avatar-sm">
-                                  <div class="avatar-title fs-lg bg-primary-subtle text-primary rounded">
+                                  <div class="avatar-title fs-lg bg-light text-primary rounded">
                                     <i class="fe fe-briefcase"></i>
                                   </div>
                                 </div>
@@ -1757,12 +2322,14 @@
                                   </div>
                                   <div class="col-auto">
                                     <!-- Edit button -->
-                                    <button class="btn btn-sm btn-outline-primary" type="button">
+                                    <button class="btn btn-sm btn-outline-primary" type="button" data-bs-toggle="modal"
+                                      data-bs-target="#modalEditExperience">
                                       <i class="fe fe-edit-2"></i>
                                     </button>
 
                                     <!-- Delete button -->
-                                    <button class="btn btn-sm btn-outline-danger" type="button">
+                                    <button class="btn btn-sm btn-outline-danger" type="button" data-bs-toggle="modal"
+                                      data-bs-target="#modalDeleteExperience">
                                       <i class="fe fe-trash"></i>
                                     </button>
                                   </div>
@@ -1791,7 +2358,7 @@
 
                                 <!-- Avatar -->
                                 <div class="avatar avatar-sm">
-                                  <div class="avatar-title fs-lg bg-primary-subtle text-primary rounded">
+                                  <div class="avatar-title fs-lg bg-light text-primary rounded">
                                     <i class="fe fe-briefcase"></i>
                                   </div>
                                 </div>
@@ -1825,12 +2392,14 @@
                                   </div>
                                   <div class="col-auto">
                                     <!-- Edit button -->
-                                    <button class="btn btn-sm btn-outline-primary" type="button">
+                                    <button class="btn btn-sm btn-outline-primary" type="button" data-bs-toggle="modal"
+                                      data-bs-target="#modalEditExperience">
                                       <i class="fe fe-edit-2"></i>
                                     </button>
 
                                     <!-- Delete button -->
-                                    <button class="btn btn-sm btn-outline-danger" type="button">
+                                    <button class="btn btn-sm btn-outline-danger" type="button" data-bs-toggle="modal"
+                                      data-bs-target="#modalDeleteExperience">
                                       <i class="fe fe-trash"></i>
                                     </button>
                                   </div>
@@ -2072,7 +2641,7 @@
 
                                 <!-- Avatar -->
                                 <div class="avatar avatar-sm">
-                                  <div class="avatar-title fs-lg bg-primary-subtle text-primary rounded">
+                                  <div class="avatar-title fs-lg bg-light text-primary rounded">
                                     <i class="fe fe-home"></i>
                                   </div>
                                 </div>
@@ -2144,7 +2713,7 @@
 
                                 <!-- Avatar -->
                                 <div class="avatar avatar-sm">
-                                  <div class="avatar-title fs-lg bg-primary-subtle text-primary rounded">
+                                  <div class="avatar-title fs-lg bg-light text-primary rounded">
                                     <i class="fe fe-home"></i>
                                   </div>
                                 </div>
@@ -2225,8 +2794,16 @@
                               <div class="col-12">
 
                                 <div class="mb-3">
-                                  <label for="form-input-end-date" class="form-label">End At</label>
-                                  <input type="date" class="form-control" id="form-input-end-date">
+                                  <label for="form-input-end-date-accomplishment" class="form-label">End At</label>
+                                  <input type="date" class="form-control" id="form-input-end-date-accomplishment">
+                                </div>
+
+                                <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox"
+                                    id="form-check-currently-working-accomplishment">
+                                  <label class="form-check-label"
+                                    for="form-check-currently-working-accomplishment">Currently working
+                                    in this role</label>
                                 </div>
 
                               </div>
@@ -2305,7 +2882,7 @@
                               <div class="col-auto">
                                 <!-- Avatar -->
                                 <div class="avatar avatar-sm">
-                                  <div class="avatar-title fs-lg bg-primary-subtle text-primary rounded">
+                                  <div class="avatar-title fs-lg bg-light text-primary rounded">
                                     <i class="fe fe-briefcase"></i>
                                   </div>
                                 </div>
@@ -3540,7 +4117,7 @@
 
                                 <!-- Avatar -->
                                 <div class="avatar avatar-sm">
-                                  <div class="avatar-title fs-lg bg-primary-subtle text-primary rounded">
+                                  <div class="avatar-title fs-lg bg-light text-primary rounded">
                                     <i class="fe fe-briefcase"></i>
                                   </div>
                                 </div>
@@ -3944,46 +4521,46 @@
                           </div> <!-- / .card-body -->
                         </div>
                         <!-- /Article Card -->
-                        
+
                         <!-- Article Card -->
                         <div class="card">
                           <div class="card-body">
                             <div class="row align-items-start">
                               <div class="col-12 col-lg-4">
-                                
+
                                 <!-- Avatar -->
                                 <a href="project-overview.html"
-                                class="d-inline-block avatar avatar-4by3 w-100 h-auto mb-3">
-                                <img src="assets/img/avatars/projects/project-1.jpg" alt="..."
-                                class="avatar-img rounded">
-                              </a>
-                              
-                            </div>
-                            <div class="col ms-n2 align-self-center">
-                              
-                              <!-- Title -->
-                              <h3 class="mb-1">
-                                <a href="project-overview.html">Manufacturing opportunity</a>
-                              </h3>
-                              
-                              <!-- Text -->
-                              <p class="small text-secondary mb-0">
-                                Bill Gates, 1 Jan 2023
-                              </p>
-                              
-                            </div>
-                            <div class="col-auto">
-                              <!-- Edit button -->
-                              <button class="btn btn-sm btn-outline-primary" type="button">
-                                <i class="fe fe-edit-2"></i>
-                              </button>
-    
-                              <!-- Delete button -->
-                              <button class="btn btn-sm btn-outline-danger" type="button">
-                                <i class="fe fe-trash"></i>
-                              </button>
-                            </div>
-                          </div> <!-- / .row -->
+                                  class="d-inline-block avatar avatar-4by3 w-100 h-auto mb-3">
+                                  <img src="assets/img/avatars/projects/project-1.jpg" alt="..."
+                                    class="avatar-img rounded">
+                                </a>
+
+                              </div>
+                              <div class="col ms-n2 align-self-center">
+
+                                <!-- Title -->
+                                <h3 class="mb-1">
+                                  <a href="project-overview.html">Manufacturing opportunity</a>
+                                </h3>
+
+                                <!-- Text -->
+                                <p class="small text-secondary mb-0">
+                                  Bill Gates, 1 Jan 2023
+                                </p>
+
+                              </div>
+                              <div class="col-auto">
+                                <!-- Edit button -->
+                                <button class="btn btn-sm btn-outline-primary" type="button">
+                                  <i class="fe fe-edit-2"></i>
+                                </button>
+
+                                <!-- Delete button -->
+                                <button class="btn btn-sm btn-outline-danger" type="button">
+                                  <i class="fe fe-trash"></i>
+                                </button>
+                              </div>
+                            </div> <!-- / .row -->
                           </div> <!-- / .card-body -->
                         </div>
                         <!-- /Article Card -->
@@ -4074,7 +4651,7 @@
                               <div class="col-auto">
                                 <!-- Avatar -->
                                 <div class="avatar avatar-sm">
-                                  <div class="avatar-title fs-lg bg-primary-subtle text-primary rounded">
+                                  <div class="avatar-title fs-lg bg-light text-primary rounded">
                                     <i class="fe fe-users"></i>
                                   </div>
                                 </div>
@@ -4093,7 +4670,7 @@
                                     <button class="btn btn-sm btn-outline-primary" type="button">
                                       <i class="fe fe-edit-2"></i>
                                     </button>
-                                    
+
                                     <!-- Delete button -->
                                     <button class="btn btn-sm btn-outline-danger" type="button">
                                       <i class="fe fe-trash"></i>
@@ -4111,7 +4688,7 @@
                               <div class="col-auto">
                                 <!-- Avatar -->
                                 <div class="avatar avatar-sm">
-                                  <div class="avatar-title fs-lg bg-primary-subtle text-primary rounded">
+                                  <div class="avatar-title fs-lg bg-light text-primary rounded">
                                     <i class="fe fe-users"></i>
                                   </div>
                                 </div>
@@ -4130,7 +4707,7 @@
                                     <button class="btn btn-sm btn-outline-primary" type="button">
                                       <i class="fe fe-edit-2"></i>
                                     </button>
-                                    
+
                                     <!-- Delete button -->
                                     <button class="btn btn-sm btn-outline-danger" type="button">
                                       <i class="fe fe-trash"></i>
@@ -4150,181 +4727,30 @@
                       <!-- / .card-body -->
                     </div>
                   </div>
-
                 </div>
-              </div>
 
-              <div class="col-12 col-xl-4">
-
-                <div class="d-block">
-                  <div class="card">
-                    <div class="card-body">
-                      <!-- Title -->
-                      <h2 class="h2 card-header-title mb-4">Social</h2>
-
-                      <!-- List group -->
-                      <div class="list-group list-group-flush my-n3">
-
-                        <!-- Github form -->
-                        <div class="list-group-item">
-                          <div class="row align-items-center">
-                            <div class="col-12">
-
-                              <div class="mb-3">
-                                <label for="form-input-github" class="form-label"><i class="fe fe-github h4 me-1"></i>
-                                  GitHub</label>
-                                <input type="text" class="form-control" id="form-input-github"
-                                  placeholder="add github account here" value="@johnmarty">
-                              </div>
-
-                            </div>
-
-                          </div> <!-- / .row -->
-                        </div>
-                        <!-- /Github form -->
-
-                        <!-- Facebook form -->
-                        <div class="list-group-item">
-                          <div class="row align-items-center">
-                            <div class="col-12">
-
-                              <div class="mb-3">
-                                <label for="form-input-github" class="form-label"><i class="fe fe-facebook h4 me-1"></i>
-                                  Facebook</label>
-                                <input type="text" class="form-control" id="form-input-github"
-                                  placeholder="add github account here" value="@johnmarty">
-                              </div>
-
-                            </div>
-
-                          </div> <!-- / .row -->
-                        </div>
-                        <!-- /Facebook form -->
-
-                        <!-- Twitter form -->
-                        <div class="list-group-item">
-                          <div class="row align-items-center">
-                            <div class="col-12">
-
-                              <div class="mb-3">
-                                <label for="form-input-x" class="form-label"><i class="fe fe-twitter h4 me-1"></i>
-                                  Twitter/X</label>
-                                <input type="text" class="form-control" id="form-input-x"
-                                  placeholder="add Twitter/X account here" value="@johnmarty">
-                              </div>
-
-                            </div>
-
-                          </div> <!-- / .row -->
-                        </div>
-                        <!-- /Twitter/X form -->
-
-                        <!-- Website form -->
-                        <div class="list-group-item">
-                          <div class="row align-items-center">
-                            <div class="col-12">
-
-                              <div class="mb-3">
-                                <label for="form-input-website" class="form-label"><i class="fe fe-globe h4 me-1"></i>
-                                  Website</label>
-                                <input type="text" class="form-control" id="form-input-website"
-                                  placeholder="add website account here" value="www.johnmathy.me">
-                              </div>
-
-                            </div>
-
-                          </div> <!-- / .row -->
-                        </div>
-                        <!-- /Website form -->
-
+                <!-- Sticky Bottom Buttons -->
+                <div class="sticky-bottom-buttons rounded">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                        <button type="submit" class="btn btn-primary w-100" id="save-profile-btn">
+                          Save Modify Profile
+                        </button>
+                      </div>
+                      <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                        <a href="sandbox-profile-sandbox-detail.html" class="btn btn-outline-secondary w-100"
+                          id="cancel-profile-btn">
+                          Cancel Modify Profile
+                        </a>
                       </div>
                     </div>
-                    <!-- / .card-body -->
                   </div>
+
                 </div>
-
-                <div class="d-block">
-                  <div class="card">
-                    <div class="card-body">
-                      <!-- Title -->
-                      <h2 class="h2 header-title mb-4">
-                        Activity
-                      </h2>
-
-                      <!-- List group -->
-                      <div class="list-group list-group-flush mt-n3">
-
-                        <!-- Activity Title -->
-                        <div class="list-group-item">
-                          <div class="row align-items-center">
-                            <div class="col-12">
-
-                              <div class="mb-3">
-                                <label for="form-input-activity-title" class="form-label">Title</label>
-                                <input type="text" class="form-control" id="form-input-activity-title"
-                                  placeholder="input your activity title here" value="I am hiring!">
-                              </div>
-
-                            </div>
-                          </div>
-                        </div>
-                        <!-- /Activity Title -->
-
-                        <!-- Activity Link -->
-                        <div class="list-group-item">
-                          <div class="row align-items-center">
-                            <div class="col-12">
-
-                              <div class="mb-3">
-                                <label for="form-input-activity-link" class="form-label">Link</label>
-                                <input type="text" class="form-control" id="form-input-activity-link"
-                                  placeholder="input your activity link here" value="https://www.linkedin.com/feed/update/urn:li:activity:666">
-                              </div>
-
-                            </div>
-                          </div>
-                        </div>
-                        <!-- /Activity Link -->
-
-                        <!-- Activity Status -->
-                        <div class="list-group-item pb-0">
-                          <div class="row align-items-center">
-                            <div class="col-12">
-
-                              <div class="mb-3">
-                                <label for="form-input-activity-status" class="form-label">Activity Status</label>
-                                <select class="form-select" aria-label="Default select example">
-                                  <option value="1" selected>Posted</option>
-                                  <option value="2">Draft</option>
-                                </select>
-                              </div>
-
-                            </div>
-                          </div>
-                        </div>
-                        <!-- /Activity Status -->
-
-                      </div>
-
-                    </div>
-                    <!-- / .card-body -->
-                  </div>
-                </div>
-
-                <div class="sticky-lg-top pt-3">
-                  <div class="d-block mb-2">
-                    <button type="submit" class="btn btn-primary w-100" id="add-group-btn">
-                      Save Modify Profile
-                    </button>
-                  </div>
-                  <div class="d-block mb-4">
-                    <a href="sandbox-profile-sandbox-detail.html" type="submit" class="btn btn-outline-secondary w-100" id="add-group-btn">
-                      Cancel Modify Profile
-                    </a>
-                  </div>
-                </div>
-
+                <!-- /Button Save and Cancel -->
               </div>
+
             </div>
           </section>
         </div>
@@ -4403,6 +4829,8 @@
       const currentlyWorkingCheckboxExperience = document.getElementById('form-check-currently-working-experience');
       const endDateInputProject = document.getElementById('form-input-end-date-project');
       const currentlyWorkingCheckboxProject = document.getElementById('form-check-currently-working-project');
+      const endDateInputAccomplishment = document.getElementById('form-input-end-date-accomplishment');
+      const currentlyWorkingCheckboxAccomplishment = document.getElementById('form-check-currently-working-accomplishment');
 
       currentlyWorkingCheckboxExperience.addEventListener('change', function () {
         endDateInputExperience.disabled = this.checked;
@@ -4421,6 +4849,16 @@
           endDateInputProject.classList.add('bg-light');
         } else {
           endDateInputProject.classList.remove('bg-light');
+        }
+      });
+
+      currentlyWorkingCheckboxAccomplishment.addEventListener('change', function () {
+        endDateInputAccomplishment.disabled = this.checked;
+        if (this.checked) {
+          endDateInputAccomplishment.value = ''; // Clear the date when checkbox is checked
+          endDateInputAccomplishment.classList.add('bg-light');
+        } else {
+          endDateInputAccomplishment.classList.remove('bg-light');
         }
       });
     });
