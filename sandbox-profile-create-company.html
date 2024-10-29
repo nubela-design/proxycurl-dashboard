@@ -494,6 +494,7 @@
     </div>
   </nav>
 
+  <!-- Modal Code Start -->
   <!--MODAL Create-->
   <div class="modal fade" id="modalCreateProfile" tabindex="-1" aria-labelledby="modalCreateLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -952,6 +953,1187 @@
     </div>
   </div>
 
+  <!-- Modal for Modify Location -->
+  <!-- Modal confirm edit location -->
+  <div class="modal fade" id="modalEditLocation" tabindex="-1" aria-labelledby="modalEditLocationLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-lg mb-2">
+                <div class="avatar-title fs-lg bg-primary rounded-circle text-primary">
+                  <i class="fe fe-edit-2 text-white display-4"></i>
+                </div>
+              </div>
+              <h1 class="fw-bold mb-3 mt-4">
+                Edit Location
+              </h1>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- List group -->
+              <div class="list-group list-group-flush mt-n3 mb-4">
+
+                <!-- Company Country form -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-company-country" class="form-label">Country</label>
+                        <input type="text" class="form-control" id="form-input-company-country"
+                          placeholder="input company country here" value="US">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Company Country form -->
+
+                <!-- Company City form -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-company-city" class="form-label">City</label>
+                        <input type="text" class="form-control" id="form-input-company-city"
+                          placeholder="input company city here" value="Mountain View">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Company City form -->
+
+                <!-- Company Postal Code form -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-company-postal-code" class="form-label">Postal Code</label>
+                        <input type="text" class="form-control" id="form-input-company-postal-code"
+                          placeholder="input company postal code here" value="94043">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Company Postal Code form -->
+
+                <!-- Company Line 1 form -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-company-line-1" class="form-label">Line 1</label>
+                        <input type="text" class="form-control" id="form-input-company-line-1"
+                          placeholder="input company line 1 here" value="1600 Amphitheatre Parkway">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Company Line 1 form -->
+
+                <!-- Company State form -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-company-state" class="form-label">State</label>
+                        <input type="text" class="form-control" id="form-input-company-state"
+                          placeholder="input company state here" value="CA">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Company State form -->
+
+              </div>
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+
+                <div class="col-12">
+                  <button class="btn btn-lg btn-primary w-100 mb-3" data-bs-toggle="modal"
+                    data-bs-target="#modalEditLocationSuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-lg btn-outline-danger w-100" data-bs-dismiss="modal" aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm edit location -->
+
+  <!-- Modal edit location success -->
+  <div class="modal fade" id="modalEditLocationSuccess" tabindex="-1" aria-labelledby="modalEditLocationLabelSuccess"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-lg mb-2">
+                <div class="avatar-title fs-lg bg-primary rounded-circle text-primary">
+                  <i class="fe fe-edit-2 text-white display-4"></i>
+                </div>
+              </div>
+
+              <h1 class="fw-bold mb-3 mt-4">
+                Location Edited!
+              </h1>
+
+              <p class="text-gray-700 fs-lg">
+                Location edited successfully.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+
+              <div class="row align-items-center justify-content-center mt-3">
+
+                <a class="btn btn-lg btn-primary w-100 mb-3" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal edit location success -->
+
+  <!-- Modal confirm delete location -->
+  <div class="modal fade" id="modalDeleteLocation" tabindex="-1" aria-labelledby="modalDeleteLocationLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-lg mb-2">
+                <div class="avatar-title fs-lg bg-danger rounded-circle text-primary">
+                  <i class="fe fe-trash text-white display-4"></i>
+                </div>
+              </div>
+
+              <h1 class="fw-bold mb-3 mt-4">
+                Delete Location?
+              </h1>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 col-lg-6 px-lg-1 mb-3 mb-lg-0">
+                  <button class="btn btn-lg btn-primary w-100 h-100" data-bs-dismiss="modal" aria-label="Close">
+                    No, don't delete this location
+                  </button>
+                </div>
+                <div class="col-12 col-lg-6 px-lg-1">
+                  <button class="btn btn-lg btn-outline-danger w-100 h-100 py-lg-4" data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteLocationSuccess">
+                    Yes, delete this location
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete location -->
+
+  <!-- Modal delete location success -->
+  <div class="modal fade" id="modalDeleteLocationSuccess" tabindex="-1"
+    aria-labelledby="modalDeleteLocationLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-lg mb-2">
+                <div class="avatar-title fs-lg bg-danger rounded-circle text-primary">
+                  <i class="fe fe-trash text-white display-4"></i>
+                </div>
+              </div>
+
+              <h1 class="fw-bold mb-3 mt-4">
+                Location deleted!
+              </h1>
+
+              <p class="text-gray-700 fs-lg">
+                Location 1600 Amphitheatre Parkway, Mountain View, CA 94043, US has been deleted from the list.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center mt-3">
+
+                <a class="btn btn-lg btn-primary w-100 mb-3" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete location success -->
+  <!-- /Modal for Modify Location -->
+
+  <!-- Modal for Modify Update -->
+  <!-- Modal confirm edit update -->
+  <div class="modal fade" id="modalEditUpdate" tabindex="-1" aria-labelledby="modalEditUpdateLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-lg mb-2">
+                <div class="avatar-title fs-lg bg-primary rounded-circle text-primary">
+                  <i class="fe fe-edit-2 text-white display-4"></i>
+                </div>
+              </div>
+              <h1 class="fw-bold mb-3 mt-4">
+                Edit Update
+              </h1>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- List group -->
+              <div class="list-group list-group-flush mt-n3 mb-4">
+
+                <!-- Company Article Link form -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-company-article-link" class="form-label">Article Link</label>
+                        <input type="text" class="form-control" id="form-input-company-article-link"
+                          placeholder="input company article link here" value="https://proxycurl.com/blog/introducing-personal-email-lookup-api">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Company Article Link form -->
+
+                <!-- Company Image URL form -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-company-image-url" class="form-label">Image URL</label>
+                        <input type="text" class="form-control" id="form-input-company-image-url"
+                          placeholder="input company image url here" value="https://proxycurl-dashboard-three.vercel.app/assets/img/avatars/projects/project-1.jpg">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Company Image URL form -->
+
+                <!-- Post Date -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-post-date" class="form-label">Post Date</label>
+                        <input type="date" class="form-control" id="form-input-post-date" value="01-01-2024">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Post Date -->
+
+                <!-- Update Content -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-content" class="form-label">Update Content</label>
+                        <textarea class="form-control" id="form-input-content" rows="3"
+                          placeholder="input your update content here">Introducing Personal Email Lookup API https://lnkd.in/gr7cb5by</textarea>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Update Content -->
+
+                <!-- Total Likes form -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-total-likes" class="form-label">Total Likes</label>
+                        <input type="text" class="form-control" id="form-input-total-likes"
+                          placeholder="input total likes here" value="100">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Total Likes form -->
+
+              </div>
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+
+                <div class="col-12">
+                  <button class="btn btn-lg btn-primary w-100 mb-3" data-bs-toggle="modal"
+                    data-bs-target="#modalEditUpdateSuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-lg btn-outline-danger w-100" data-bs-dismiss="modal" aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm edit update -->
+
+  <!-- Modal edit update success -->
+  <div class="modal fade" id="modalEditUpdateSuccess" tabindex="-1" aria-labelledby="modalEditUpdateLabelSuccess"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-lg mb-2">
+                <div class="avatar-title fs-lg bg-primary rounded-circle text-primary">
+                  <i class="fe fe-edit-2 text-white display-4"></i>
+                </div>
+              </div>
+
+              <h1 class="fw-bold mb-3 mt-4">
+                Update Edited!
+              </h1>
+
+              <p class="text-gray-700 fs-lg">
+                Update edited successfully.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+
+              <div class="row align-items-center justify-content-center mt-3">
+
+                <a class="btn btn-lg btn-primary w-100 mb-3" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal edit update success -->
+
+  <!-- Modal confirm delete update -->
+  <div class="modal fade" id="modalDeleteUpdate" tabindex="-1" aria-labelledby="modalDeleteUpdateLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-lg mb-2">
+                <div class="avatar-title fs-lg bg-danger rounded-circle text-primary">
+                  <i class="fe fe-trash text-white display-4"></i>
+                </div>
+              </div>
+
+              <h1 class="fw-bold mb-3 mt-4">
+                Delete Update?
+              </h1>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 col-lg-6 px-lg-1 mb-3 mb-lg-0">
+                  <button class="btn btn-lg btn-primary w-100 h-100" data-bs-dismiss="modal" aria-label="Close">
+                    No, don't delete this update
+                  </button>
+                </div>
+                <div class="col-12 col-lg-6 px-lg-1">
+                  <button class="btn btn-lg btn-outline-danger w-100 h-100" data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteUpdateSuccess">
+                    Yes, delete this update
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete update -->
+
+  <!-- Modal delete update success -->
+  <div class="modal fade" id="modalDeleteUpdateSuccess" tabindex="-1"
+    aria-labelledby="modalDeleteUpdateLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-lg mb-2">
+                <div class="avatar-title fs-lg bg-danger rounded-circle text-primary">
+                  <i class="fe fe-trash text-white display-4"></i>
+                </div>
+              </div>
+
+              <h1 class="fw-bold mb-3 mt-4">
+                Update deleted!
+              </h1>
+
+              <p class="text-gray-700 fs-lg">
+                Introducing Personal Email Lookup... has been deleted from the list.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center mt-3">
+
+                <a class="btn btn-lg btn-primary w-100 mb-3" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete update success -->
+  <!-- /Modal for Modify Update -->
+
+  <!-- Modal for Modify Acquired -->
+  <!-- Modal confirm edit acquired -->
+  <div class="modal fade" id="modalEditAcquired" tabindex="-1" aria-labelledby="modalEditAcquiredLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-lg mb-2">
+                <div class="avatar-title fs-lg bg-primary rounded-circle text-primary">
+                  <i class="fe fe-edit-2 text-white display-4"></i>
+                </div>
+              </div>
+              <h1 class="fw-bold mb-3 mt-4">
+                Edit Acquired
+              </h1>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- List group -->
+              <div class="list-group list-group-flush mt-n3 mb-4">
+
+                <!-- Company Linkedin Profile URL form -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-company-linkedin-url" class="form-label">Linkedin Profile
+                          URL</label>
+                        <input type="text" class="form-control" id="form-input-company-linkedin-url"
+                          placeholder="input company linkedin url here" value="https://www.linkedin.com/company/apple">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Company Linkedin Profile URL form -->
+
+                <!-- Company Crunchbase Profile URL form -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-company-crunchbase-url" class="form-label">Crunchbase Profile
+                          URL</label>
+                        <input type="text" class="form-control" id="form-input-company-crunchbase-url"
+                          placeholder="input company crunchbase url here" value="https://www.crunchbase.com/organization/apple">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Company Crunchbase Profile URL form -->
+
+                <!-- Announced Date -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-announced-date" class="form-label">Announced Date</label>
+                        <input type="date" class="form-control" id="form-input-announced-date"
+                          value="2024-01-01">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Announced Date -->
+
+                <!-- Acquired Price -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <label for="form-input-price" class="form-label">Acquired Price</label>
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="form-input-price"
+                          placeholder="input acquired price here" aria-label="Acquired Price"
+                          aria-describedby="form-input-price-btn" value="1000000000" >
+                        <span class="input-group-text">$</span>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Acquired Price -->
+
+              </div>
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+
+                <div class="col-12">
+                  <button class="btn btn-lg btn-primary w-100 mb-3" data-bs-toggle="modal"
+                    data-bs-target="#modalEditAcquiredSuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-lg btn-outline-danger w-100" data-bs-dismiss="modal" aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm edit update -->
+
+  <!-- Modal edit acquired success -->
+  <div class="modal fade" id="modalEditAcquiredSuccess" tabindex="-1" aria-labelledby="modalEditAcquiredLabelSuccess"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-lg mb-2">
+                <div class="avatar-title fs-lg bg-primary rounded-circle text-primary">
+                  <i class="fe fe-edit-2 text-white display-4"></i>
+                </div>
+              </div>
+
+              <h1 class="fw-bold mb-3 mt-4">
+                Acquired Company Edited!
+              </h1>
+
+              <p class="text-gray-700 fs-lg">
+                Acquired company edited successfully.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+
+              <div class="row align-items-center justify-content-center mt-3">
+
+                <a class="btn btn-lg btn-primary w-100 mb-3" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal edit acquired success -->
+
+  <!-- Modal confirm delete acquired -->
+  <div class="modal fade" id="modalDeleteAcquired" tabindex="-1" aria-labelledby="modalDeleteAcquiredLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-lg mb-2">
+                <div class="avatar-title fs-lg bg-danger rounded-circle text-primary">
+                  <i class="fe fe-trash text-white display-4"></i>
+                </div>
+              </div>
+
+              <h1 class="fw-bold mb-3 mt-4">
+                Delete Acquired Company?
+              </h1>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 col-lg-6 px-lg-1 mb-3 mb-lg-0">
+                  <button class="btn btn-lg btn-primary w-100 h-100" data-bs-dismiss="modal" aria-label="Close">
+                    No, don't delete this acquired company
+                  </button>
+                </div>
+                <div class="col-12 col-lg-6 px-lg-1">
+                  <button class="btn btn-lg btn-outline-danger w-100 h-100" data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteAcquiredSuccess">
+                    Yes, delete this acquired company
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete acquired -->
+
+  <!-- Modal delete acquired success -->
+  <div class="modal fade" id="modalDeleteAcquiredSuccess" tabindex="-1"
+    aria-labelledby="modalDeleteAcquiredLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-lg mb-2">
+                <div class="avatar-title fs-lg bg-danger rounded-circle text-primary">
+                  <i class="fe fe-trash text-white display-4"></i>
+                </div>
+              </div>
+
+              <h1 class="fw-bold mb-3 mt-4">
+                Acquired Company deleted!
+              </h1>
+
+              <p class="text-gray-700 fs-lg">
+                Apple has been deleted from the list.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center mt-3">
+
+                <a class="btn btn-lg btn-primary w-100 mb-3" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete acquired success -->
+  <!-- /Modal for Modify Acquired -->
+
+  <!-- Modal for Modify Acquisitor -->
+  <!-- Modal confirm edit acquired -->
+  <div class="modal fade" id="modalEditAcquisitor" tabindex="-1" aria-labelledby="modalEditAcquisitorLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-lg mb-2">
+                <div class="avatar-title fs-lg bg-primary rounded-circle text-primary">
+                  <i class="fe fe-edit-2 text-white display-4"></i>
+                </div>
+              </div>
+              <h1 class="fw-bold mb-3 mt-4">
+                Edit Acquisitor
+              </h1>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- List group -->
+              <div class="list-group list-group-flush mt-n3 mb-4">
+
+                <!-- Company Linkedin Profile URL form -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-acquisitor-linkedin-url" class="form-label">Linkedin Profile
+                          URL</label>
+                        <input type="text" class="form-control" id="form-input-acquisitor-linkedin-url"
+                          placeholder="input company linkedin url here" value="https://www.linkedin.com/company/apple">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Company Linkedin Profile URL form -->
+
+                <!-- Company Crunchbase Profile URL form -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-acquisitor-crunchbase-url" class="form-label">Crunchbase Profile
+                          URL</label>
+                        <input type="text" class="form-control" id="form-input-acquisitor-crunchbase-url"
+                          placeholder="input company crunchbase url here" value="https://www.crunchbase.com/organization/apple">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Company Crunchbase Profile URL form -->
+
+                <!-- Announced Date -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <div class="mb-3">
+                        <label for="form-input-announced-date" class="form-label">Announced Date</label>
+                        <input type="date" class="form-control" id="form-input-announced-date"
+                          value="2024-01-01">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Announced Date -->
+
+                <!-- Acquired Price -->
+                <div class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+
+                      <label for="form-input-price" class="form-label">Acquired Price</label>
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="form-input-price"
+                          placeholder="input acquired price here" aria-label="Acquired Price"
+                          aria-describedby="form-input-price-btn" value="1000000000" >
+                        <span class="input-group-text">$</span>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- /Acquired Price -->
+
+              </div>
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+
+                <div class="col-12">
+                  <button class="btn btn-lg btn-primary w-100 mb-3" data-bs-toggle="modal"
+                    data-bs-target="#modalEditAcquisitorSuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-lg btn-outline-danger w-100" data-bs-dismiss="modal" aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm edit update -->
+
+  <!-- Modal edit acquisitor success -->
+  <div class="modal fade" id="modalEditAcquisitorSuccess" tabindex="-1" aria-labelledby="modalEditAcquisitorLabelSuccess"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-lg mb-2">
+                <div class="avatar-title fs-lg bg-primary rounded-circle text-primary">
+                  <i class="fe fe-edit-2 text-white display-4"></i>
+                </div>
+              </div>
+
+              <h1 class="fw-bold mb-3 mt-4">
+                Acquisitor Edited!
+              </h1>
+
+              <p class="text-gray-700 fs-lg">
+                Acquisitor edited successfully.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+
+              <div class="row align-items-center justify-content-center mt-3">
+
+                <a class="btn btn-lg btn-primary w-100 mb-3" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal edit acquisitor success -->
+
+  <!-- Modal confirm delete acquisitor -->
+  <div class="modal fade" id="modalDeleteAcquisitor" tabindex="-1" aria-labelledby="modalDeleteAcquisitorLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-lg mb-2">
+                <div class="avatar-title fs-lg bg-danger rounded-circle text-primary">
+                  <i class="fe fe-trash text-white display-4"></i>
+                </div>
+              </div>
+
+              <h1 class="fw-bold mb-3 mt-4">
+                Delete Acquisitor?
+              </h1>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 col-lg-6 px-lg-1 mb-3 mb-lg-0">
+                  <button class="btn btn-lg btn-primary w-100 h-100" data-bs-dismiss="modal" aria-label="Close">
+                    No, don't delete this acquisitor
+                  </button>
+                </div>
+                <div class="col-12 col-lg-6 px-lg-1">
+                  <button class="btn btn-lg btn-outline-danger w-100 h-100 py-lg-4" data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteAcquisitorSuccess">
+                    Yes, delete this acquisitor
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete acquired -->
+
+  <!-- Modal delete acquisitor success -->
+  <div class="modal fade" id="modalDeleteAcquisitorSuccess" tabindex="-1"
+    aria-labelledby="modalDeleteAcquisitorLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-lg mb-2">
+                <div class="avatar-title fs-lg bg-danger rounded-circle text-primary">
+                  <i class="fe fe-trash text-white display-4"></i>
+                </div>
+              </div>
+
+              <h1 class="fw-bold mb-3 mt-4">
+                Acquisitor deleted!
+              </h1>
+
+              <p class="text-gray-700 fs-lg">
+                Apple has been deleted from the list.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center mt-3">
+
+                <a class="btn btn-lg btn-primary w-100 mb-3" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete acquired success -->
+  <!-- /Modal for Modify Acquisitor -->
+
+  <!-- Modal Code End -->
+
   <!-- MAIN CONTENT -->
   <div class="main-content">
     <div class="container-fluid">
@@ -1177,8 +2359,8 @@
                               <div class="col-12">
 
                                 <div class="mb-3">
-                                  <label for="form-input-cruchbase-profile-url"
-                                    class="form-label">Crunchbase Profile URL</label>
+                                  <label for="form-input-cruchbase-profile-url" class="form-label">Crunchbase Profile
+                                    URL</label>
                                   <input type="text" class="form-control" id="form-input-cruchbase-profile-url"
                                     placeholder="input company crunchbase profile url here">
                                 </div>
@@ -1212,7 +2394,8 @@
                               <div class="col-12">
 
                                 <div class="mb-3">
-                                  <label for="form-input-company-crunchbase-rank" class="form-label">Crunchbase Rank</label>
+                                  <label for="form-input-company-crunchbase-rank" class="form-label">Crunchbase
+                                    Rank</label>
                                   <input type="text" class="form-control" id="form-input-company-crunchbase-rank"
                                     placeholder="input company crunchbase rank here">
                                 </div>
@@ -1345,7 +2528,8 @@
                               <div class="col-12">
 
                                 <div class="mb-3">
-                                  <label for="form-input-number-of-funding-rounds" class="form-label">Number of Funding Rounds</label>
+                                  <label for="form-input-number-of-funding-rounds" class="form-label">Number of Funding
+                                    Rounds</label>
                                   <input type="text" class="form-control" id="form-input-number-of-funding-rounds"
                                     placeholder="input company number of funding rounds here">
                                 </div>
@@ -1354,13 +2538,14 @@
                             </div>
                           </div>
                           <!-- /Number of Funding Rounds form -->
-                           
+
                           <!-- Total Funding Amount form -->
                           <div class="list-group-item">
                             <div class="row align-items-center">
                               <div class="col-12">
 
-                                <label for="form-input-total-funding-amount" class="form-label">Total Funding Amount</label>
+                                <label for="form-input-total-funding-amount" class="form-label">Total Funding
+                                  Amount</label>
                                 <div class="input-group mb-3">
                                   <input type="text" class="form-control" id="form-input-total-funding-amount"
                                     placeholder="input total funding amount here" aria-label="Total Funding Amount"
@@ -1410,7 +2595,8 @@
                               <div class="col-12">
 
                                 <div class="mb-3">
-                                  <label for="form-input-number-of-lead-investors" class="form-label">Number of Lead Investors</label>
+                                  <label for="form-input-number-of-lead-investors" class="form-label">Number of Lead
+                                    Investors</label>
                                   <input type="text" class="form-control" id="form-input-number-of-lead-investors"
                                     placeholder="input number of lead investors here">
                                 </div>
@@ -1426,7 +2612,8 @@
                               <div class="col-12">
 
                                 <div class="mb-3">
-                                  <label for="form-input-number-of-investors" class="form-label">Number of Investors</label>
+                                  <label for="form-input-number-of-investors" class="form-label">Number of
+                                    Investors</label>
                                   <input type="text" class="form-control" id="form-input-number-of-investors"
                                     placeholder="input number of investors here">
                                 </div>
@@ -1460,7 +2647,8 @@
                               <div class="col-12">
 
                                 <div class="mb-3">
-                                  <label for="form-input-number-of-investments" class="form-label">Number of Investments</label>
+                                  <label for="form-input-number-of-investments" class="form-label">Number of
+                                    Investments</label>
                                   <input type="text" class="form-control" id="form-input-number-of-investments"
                                     placeholder="input number of investments here">
                                 </div>
@@ -1476,7 +2664,8 @@
                               <div class="col-12">
 
                                 <div class="mb-3">
-                                  <label for="form-input-number-of-lead-investments" class="form-label">Number of Lead Investments</label>
+                                  <label for="form-input-number-of-lead-investments" class="form-label">Number of Lead
+                                    Investments</label>
                                   <input type="text" class="form-control" id="form-input-number-of-lead-investments"
                                     placeholder="input number of lead investments here">
                                 </div>
@@ -1508,7 +2697,8 @@
                               <div class="col-12">
 
                                 <div class="mb-3">
-                                  <label for="form-input-number-of-acquistions" class="form-label">Number of Acquisitions</label>
+                                  <label for="form-input-number-of-acquistions" class="form-label">Number of
+                                    Acquisitions</label>
                                   <input type="text" class="form-control" id="form-input-number-of-acquistions"
                                     placeholder="input number of acquistions here">
                                 </div>
@@ -1584,6 +2774,22 @@
                           </div>
                           <!-- /Company Postal Code form -->
 
+                          <!-- Company Line 1 form -->
+                          <div class="list-group-item">
+                            <div class="row align-items-center">
+                              <div class="col-12">
+
+                                <div class="mb-3">
+                                  <label for="form-input-company-line-1" class="form-label">Line 1</label>
+                                  <input type="text" class="form-control" id="form-input-company-line-1"
+                                    placeholder="input company line 1 here">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Company Line 1 form -->
+
                           <!-- Company State form -->
                           <div class="list-group-item">
                             <div class="row align-items-center">
@@ -1624,7 +2830,7 @@
 
                                 <div class="card mb-3">
                                   <div class="card-body">
-                                    <div class="row justify-content-between">
+                                    <div class="row justify-content-between align-items-center">
                                       <div class="col-12 col-lg mb-4 mb-lg-0">
                                         <h4 class="fw-light text-secondary mb-0">
                                           1600 Amphitheatre Parkway, Mountain View, CA 94043, US
@@ -1632,15 +2838,17 @@
                                       </div>
                                       <div class="col-12 col-lg-auto">
                                         <div class="d-flex align-items-center">
-                                          <button class="btn btn-sm btn-outline-primary me-2" type="button">
+                                          <button class="btn btn-sm btn-outline-primary me-2" type="button"
+                                            data-bs-toggle="modal" data-bs-target="#modalEditLocation">
                                             <i class="fe fe-edit-2"></i>
                                           </button>
-                                          <button class="btn btn-sm btn-outline-danger me-2" type="button">
+                                          <button class="btn btn-sm btn-outline-danger me-2" type="button"
+                                            data-bs-toggle="modal" data-bs-target="#modalDeleteLocation">
                                             <i class="fe fe-trash-2"></i>
                                           </button>
-                                          <div class="form-check form-switch ms-auto">
-                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                                            <label class="form-check-label" for="flexSwitchCheckDefault">HQ</label>
+                                          <div class="form-check form-switch ms-auto ms-lg-3">
+                                            <input class="form-check-input hq-checkbox" type="checkbox" id="HQCheck1">
+                                            <label class="form-check-label" for="HQCheck1">HQ</label>
                                           </div>
                                         </div>
                                       </div>
@@ -1651,7 +2859,7 @@
 
                                 <div class="card mb-3">
                                   <div class="card-body">
-                                    <div class="row justify-content-between">
+                                    <div class="row justify-content-between align-items-center">
                                       <div class="col-12 col-lg mb-4 mb-lg-0">
                                         <h4 class="fw-light text-secondary mb-0">
                                           1875 Explorer St, Reston, VA 20190, US
@@ -1659,15 +2867,17 @@
                                       </div>
                                       <div class="col-12 col-lg-auto">
                                         <div class="d-flex align-items-center">
-                                          <button class="btn btn-sm btn-outline-primary me-2" type="button">
+                                          <button class="btn btn-sm btn-outline-primary me-2" type="button"
+                                            data-bs-toggle="modal" data-bs-target="#modalEditLocation">
                                             <i class="fe fe-edit-2"></i>
                                           </button>
-                                          <button class="btn btn-sm btn-outline-danger me-2" type="button">
+                                          <button class="btn btn-sm btn-outline-danger me-2" type="button"
+                                            data-bs-toggle="modal" data-bs-target="#modalDeleteLocation">
                                             <i class="fe fe-trash-2"></i>
                                           </button>
-                                          <div class="form-check form-switch ms-auto">
-                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                                            <label class="form-check-label" for="flexSwitchCheckDefault">HQ</label>
+                                          <div class="form-check form-switch ms-auto ms-lg-3">
+                                            <input class="form-check-input hq-checkbox" type="checkbox" id="HQCheck2">
+                                            <label class="form-check-label" for="HQCheck2">HQ</label>
                                           </div>
                                         </div>
                                       </div>
@@ -1678,7 +2888,7 @@
 
                                 <div class="card mb-3">
                                   <div class="card-body">
-                                    <div class="row justify-content-between">
+                                    <div class="row justify-content-between align-items-center">
                                       <div class="col-12 col-lg mb-4 mb-lg-0">
                                         <h4 class="fw-light text-secondary mb-0">
                                           25 Massachusetts Ave NW, Washington, DC 20001, US
@@ -1686,15 +2896,17 @@
                                       </div>
                                       <div class="col-12 col-lg-auto">
                                         <div class="d-flex align-items-center">
-                                          <button class="btn btn-sm btn-outline-primary me-2" type="button">
+                                          <button class="btn btn-sm btn-outline-primary me-2" type="button"
+                                            data-bs-toggle="modal" data-bs-target="#modalEditLocation">
                                             <i class="fe fe-edit-2"></i>
                                           </button>
-                                          <button class="btn btn-sm btn-outline-danger me-2" type="button">
+                                          <button class="btn btn-sm btn-outline-danger me-2" type="button"
+                                            data-bs-toggle="modal" data-bs-target="#modalDeleteLocation">
                                             <i class="fe fe-trash-2"></i>
                                           </button>
-                                          <div class="form-check form-switch ms-auto">
-                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                                            <label class="form-check-label" for="flexSwitchCheckDefault">HQ</label>
+                                          <div class="form-check form-switch ms-auto ms-lg-3">
+                                            <input class="form-check-input hq-checkbox" type="checkbox" id="HQCheck3">
+                                            <label class="form-check-label" for="HQCheck3">HQ</label>
                                           </div>
                                         </div>
                                       </div>
@@ -1828,7 +3040,7 @@
                             <!-- Company Update Card -->
                             <div class="card mb-3">
                               <div class="card-body">
-                                <div class="row align-items-center">
+                                <div class="row align-items-start">
                                   <div class="col-auto">
 
                                     <!-- Avatar -->
@@ -1840,23 +3052,29 @@
                                   </div>
                                   <div class="col ms-n2">
 
+                                    <!-- Text -->
                                     <p class="small text-secondary mb-1">
+                                      <time datetime="2018-06-21">21 Feb 2024</time> - 100 Likes
+                                    </p>
+
+                                    <p class="small text-secondary mb-3">
                                       Introducing Personal Email Lookup API https://lnkd.in/gr7cb5by
                                     </p>
 
-                                    <!-- Text -->
-                                    <p class="small text-secondary mb-1">
-                                      <time datetime="2018-06-21">21 Feb</time>
-                                    </p>
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-outline-primary" type="button">
+                                      Article Link <i class="fe fe-arrow-up-right ms-2"></i>
+                                    </a>
 
                                   </div>
                                   <div class="col-auto align-self-start">
 
                                     <div class="d-flex align-items-start">
-                                      <button class="btn btn-sm btn-outline-primary me-2" type="button">
+                                      <button class="btn btn-sm btn-outline-primary me-2" type="button"
+                                        data-bs-toggle="modal" data-bs-target="#modalEditUpdate">
                                         <i class="fe fe-edit-2"></i>
                                       </button>
-                                      <button class="btn btn-sm btn-outline-danger me-2" type="button">
+                                      <button class="btn btn-sm btn-outline-danger me-2" type="button"
+                                        data-bs-toggle="modal" data-bs-target="#modalDeleteUpdate">
                                         <i class="fe fe-trash-2"></i>
                                       </button>
                                     </div>
@@ -1870,7 +3088,7 @@
                             <!-- Company Update Card -->
                             <div class="card mb-3">
                               <div class="card-body">
-                                <div class="row align-items-center">
+                                <div class="row align-items-start">
                                   <div class="col-auto">
 
                                     <!-- Avatar -->
@@ -1882,23 +3100,29 @@
                                   </div>
                                   <div class="col ms-n2">
 
-                                    <p class="small text-secondary mb-1">
-                                      Introducing Personal Email Lookup API https://lnkd.in/gr7cb5by
-                                    </p>
-
                                     <!-- Text -->
                                     <p class="small text-secondary mb-1">
-                                      <time datetime="2018-06-21">21 Feb</time>
+                                      <time datetime="2018-06-21">21 Feb 2024</time> - 100 Likes
                                     </p>
+
+                                    <p class="small text-secondary mb-3">
+                                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex officiis quia dicta asperiores, a alias nihil soluta eaque magnam nam, architecto iure, eum deleniti enim aliquam dolor? Omnis, accusamus similique.
+                                    </p>
+
+                                    <a href="javascript:void(0);" class="btn btn-sm btn-outline-primary" type="button">
+                                      Article Link <i class="fe fe-arrow-up-right ms-2"></i>
+                                    </a>
 
                                   </div>
                                   <div class="col-auto align-self-start">
 
                                     <div class="d-flex align-items-start">
-                                      <button class="btn btn-sm btn-outline-primary me-2" type="button">
+                                      <button class="btn btn-sm btn-outline-primary me-2" type="button"
+                                        data-bs-toggle="modal" data-bs-target="#modalEditUpdate">
                                         <i class="fe fe-edit-2"></i>
                                       </button>
-                                      <button class="btn btn-sm btn-outline-danger me-2" type="button">
+                                      <button class="btn btn-sm btn-outline-danger me-2" type="button"
+                                        data-bs-toggle="modal" data-bs-target="#modalDeleteUpdate">
                                         <i class="fe fe-trash-2"></i>
                                       </button>
                                     </div>
@@ -1935,7 +3159,8 @@
                               <div class="col-12">
 
                                 <div class="mb-3">
-                                  <label for="form-input-company-linkedin-url" class="form-label">Linkedin Profile URL</label>
+                                  <label for="form-input-company-linkedin-url" class="form-label">Linkedin Profile
+                                    URL</label>
                                   <input type="text" class="form-control" id="form-input-company-linkedin-url"
                                     placeholder="input company linkedin url here">
                                 </div>
@@ -1951,7 +3176,8 @@
                               <div class="col-12">
 
                                 <div class="mb-3">
-                                  <label for="form-input-company-crunchbase-url" class="form-label">Crunchbase Profile URL</label>
+                                  <label for="form-input-company-crunchbase-url" class="form-label">Crunchbase Profile
+                                    URL</label>
                                   <input type="text" class="form-control" id="form-input-company-crunchbase-url"
                                     placeholder="input company crunchbase url here">
                                 </div>
@@ -2025,10 +3251,12 @@
                                   </div>
                                   <div class="col-12 col-lg-auto">
                                     <div class="d-flex align-items-center">
-                                      <button class="btn btn-sm btn-outline-primary me-2" type="button">
+                                      <button class="btn btn-sm btn-outline-primary me-2" type="button"
+                                        data-bs-toggle="modal" data-bs-target="#modalEditAcquired">
                                         <i class="fe fe-edit-2"></i>
                                       </button>
-                                      <button class="btn btn-sm btn-outline-danger me-2" type="button">
+                                      <button class="btn btn-sm btn-outline-danger me-2" type="button"
+                                        data-bs-toggle="modal" data-bs-target="#modalDeleteAcquired">
                                         <i class="fe fe-trash-2"></i>
                                       </button>
                                     </div>
@@ -2049,10 +3277,12 @@
                                   </div>
                                   <div class="col-12 col-lg-auto">
                                     <div class="d-flex align-items-center">
-                                      <button class="btn btn-sm btn-outline-primary me-2" type="button">
+                                      <button class="btn btn-sm btn-outline-primary me-2" type="button"
+                                        data-bs-toggle="modal" data-bs-target="#modalEditAcquired">
                                         <i class="fe fe-edit-2"></i>
                                       </button>
-                                      <button class="btn btn-sm btn-outline-danger me-2" type="button">
+                                      <button class="btn btn-sm btn-outline-danger me-2" type="button"
+                                        data-bs-toggle="modal" data-bs-target="#modalDeleteAcquired">
                                         <i class="fe fe-trash-2"></i>
                                       </button>
                                     </div>
@@ -2088,7 +3318,8 @@
                               <div class="col-12">
 
                                 <div class="mb-3">
-                                  <label for="form-input-acquisitor-linkedin-url" class="form-label">Linkedin Profile URL</label>
+                                  <label for="form-input-acquisitor-linkedin-url" class="form-label">Linkedin Profile
+                                    URL</label>
                                   <input type="text" class="form-control" id="form-input-acquisitor-linkedin-url"
                                     placeholder="input company linkedin url here">
                                 </div>
@@ -2104,7 +3335,8 @@
                               <div class="col-12">
 
                                 <div class="mb-3">
-                                  <label for="form-input-acquisitor-crunchbase-url" class="form-label">Crunchbase Profile URL</label>
+                                  <label for="form-input-acquisitor-crunchbase-url" class="form-label">Crunchbase
+                                    Profile URL</label>
                                   <input type="text" class="form-control" id="form-input-acquisitor-crunchbase-url"
                                     placeholder="input company crunchbase url here">
                                 </div>
@@ -2120,7 +3352,8 @@
                               <div class="col-12">
 
                                 <div class="mb-3">
-                                  <label for="form-input-acquisitor-announced-date" class="form-label">Announced Date</label>
+                                  <label for="form-input-acquisitor-announced-date" class="form-label">Announced
+                                    Date</label>
                                   <input type="date" class="form-control" id="form-input-acquisitor-announced-date">
                                 </div>
 
@@ -2178,10 +3411,12 @@
                                   </div>
                                   <div class="col-12 col-lg-auto">
                                     <div class="d-flex align-items-center">
-                                      <button class="btn btn-sm btn-outline-primary me-2" type="button">
+                                      <button class="btn btn-sm btn-outline-primary me-2" type="button"
+                                        data-bs-toggle="modal" data-bs-target="#modalEditAcquisitor">
                                         <i class="fe fe-edit-2"></i>
                                       </button>
-                                      <button class="btn btn-sm btn-outline-danger me-2" type="button">
+                                      <button class="btn btn-sm btn-outline-danger me-2" type="button"
+                                        data-bs-toggle="modal" data-bs-target="#modalDeleteAcquisitor">
                                         <i class="fe fe-trash-2"></i>
                                       </button>
                                     </div>
@@ -2202,10 +3437,12 @@
                                   </div>
                                   <div class="col-12 col-lg-auto">
                                     <div class="d-flex align-items-center">
-                                      <button class="btn btn-sm btn-outline-primary me-2" type="button">
+                                      <button class="btn btn-sm btn-outline-primary me-2" type="button"
+                                        data-bs-toggle="modal" data-bs-target="#modalEditAcquisitor">
                                         <i class="fe fe-edit-2"></i>
                                       </button>
-                                      <button class="btn btn-sm btn-outline-danger me-2" type="button">
+                                      <button class="btn btn-sm btn-outline-danger me-2" type="button"
+                                        data-bs-toggle="modal" data-bs-target="#modalDeleteAcquisitor">
                                         <i class="fe fe-trash-2"></i>
                                       </button>
                                     </div>
@@ -2241,7 +3478,8 @@
                               <div class="col-12">
 
                                 <div class="mb-3">
-                                  <label for="form-input-exit-linkedin-url" class="form-label">Linkedin Profile URL</label>
+                                  <label for="form-input-exit-linkedin-url" class="form-label">Linkedin Profile
+                                    URL</label>
                                   <input type="text" class="form-control" id="form-input-exit-linkedin-url"
                                     placeholder="input company linkedin url here">
                                 </div>
@@ -2257,7 +3495,8 @@
                               <div class="col-12">
 
                                 <div class="mb-3">
-                                  <label for="form-input-exit-crunchbase-url" class="form-label">Crunchbase Profile URL</label>
+                                  <label for="form-input-exit-crunchbase-url" class="form-label">Crunchbase Profile
+                                    URL</label>
                                   <input type="text" class="form-control" id="form-input-exit-crunchbase-url"
                                     placeholder="input company crunchbase url here">
                                 </div>
@@ -2377,7 +3616,8 @@
                               <div class="col-12">
 
                                 <div class="mb-3">
-                                  <label for="form-input-investor-linkedin-url" class="form-label">Linkedin Profile URL</label>
+                                  <label for="form-input-investor-linkedin-url" class="form-label">Linkedin Profile
+                                    URL</label>
                                   <input type="text" class="form-control" id="form-input-investor-linkedin-url"
                                     placeholder="input company linkedin url here">
                                 </div>
@@ -2589,7 +3829,8 @@
                               <div class="col-12">
 
                                 <div class="mb-3">
-                                  <label for="form-input-number-of-investors" class="form-label">Number of Investors</label>
+                                  <label for="form-input-number-of-investors" class="form-label">Number of
+                                    Investors</label>
                                   <input type="text" class="form-control" id="form-input-number-of-investors"
                                     placeholder="input number of investors here">
                                 </div>
@@ -2612,7 +3853,7 @@
                                     <option value="apple">Apple</option>
                                   </select>
                                   <button class="btn btn-primary" type="button" id="form-input-investor-list-btn"><i
-                                    class="fe fe-plus me-2"></i>Add</button>
+                                      class="fe fe-plus me-2"></i>Add</button>
                                 </div>
 
                               </div>
@@ -2680,7 +3921,7 @@
                                 <div class="row justify-content-between align-items-center">
                                   <div class="col-12 col-lg mb-4 mb-lg-0">
                                     <h4 class="fw-light text-secondary mb-0">
-                                      Grant - $ 1000 - 3 Investors (DARPA, AMD, Apple) - 01-01-2024
+                                      Grant - $ 5000 - 3 Investors (DARPA, AMD, Apple) - 01 Jan 2024
                                     </h4>
                                   </div>
                                   <div class="col-12 col-lg-auto">
@@ -2704,7 +3945,7 @@
                                 <div class="row justify-content-between align-items-center">
                                   <div class="col-12 col-lg mb-4 mb-lg-0">
                                     <h4 class="fw-light text-secondary mb-0">
-                                      Grant - $ 1000 - 3 Investors (DARPA, AMD, Apple) - 01-01-2024
+                                      Grant - $ 1000 - 3 Investors (DARPA, AMD, Apple) - 01 Jan 2024
                                     </h4>
                                   </div>
                                   <div class="col-12 col-lg-auto">
@@ -2827,6 +4068,27 @@
       }
     }
   </script>
+
+  <!-- Add this JavaScript code at the bottom of the file -->
+  <script>
+    // Get all HQ checkboxes
+    const hqCheckboxes = document.querySelectorAll('.hq-checkbox');
+
+    // Add event listener to each checkbox
+    hqCheckboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', function () {
+        if (this.checked) {
+          // Uncheck all other checkboxes
+          hqCheckboxes.forEach(otherCheckbox => {
+            if (otherCheckbox !== this) {
+              otherCheckbox.checked = false;
+            }
+          });
+        }
+      });
+    });
+  </script>
+
 </body>
 
 </html>
