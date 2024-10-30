@@ -1,248 +1,246 @@
-.alert-success-subtle-bg-only{
-    background-color: #dcfce7;
-    border-color: #22c55e;
+.alert-success-subtle-bg-only {
+  background-color: #dcfce7;
+  border-color: #22c55e;
 }
-.alert-success-subtle{
-    background-color: #dcfce7;
-    border-color: #22c55e;
-    color: #22c55e;
+.alert-success-subtle {
+  background-color: #dcfce7;
+  border-color: #22c55e;
+  color: #22c55e;
 }
-.alert-danger-subtle{
-    background-color: #fee2e2;
-    border-color: #ef4444;
-    color: #ef4444;
+.alert-danger-subtle {
+  background-color: #fee2e2;
+  border-color: #ef4444;
+  color: #ef4444;
 }
-.div-inline{
-    display:inline-block;
+.div-inline {
+  display: inline-block;
 }
-.blur{
-    filter: blur(4px);
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+.blur {
+  filter: blur(4px);
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
-.dropdown-center{
-    top: 120% !important;
-    left: 50% !important;
-    right: auto !important;
-    text-align: center !important;
-    transform: translate(-50%, 0) !important;
-}
-
-@media (min-width: 1500px) {
-    .main-content-dashboard {
-        flex: 0 0 auto;
-        width: 73.33333%;
-    }   
-}
-
-.dropdown-menu-center{
-    right: auto !important;
-    left: 50% !important;
-    -webkit-transform: translate(-50%, 0) !important;
-    -o-transform: translate(-50%, 0) !important;
-    transform: translate(-50%, 0) !important;
-}
-  .mt-minus{
-    margin-top: -12rem !important;
+.dropdown-center {
+  top: 120% !important;
+  left: 50% !important;
+  right: auto !important;
+  text-align: center !important;
+  transform: translate(-50%, 0) !important;
 }
 
 @media (min-width: 1500px) {
-    .main-content-sandbox {
-        flex: 0 0 auto;
-        width: 100%;
-    }   
+  .main-content-dashboard {
+    flex: 0 0 auto;
+    width: 73.33333%;
+  }
+}
+
+.dropdown-menu-center {
+  right: auto !important;
+  left: 50% !important;
+  -webkit-transform: translate(-50%, 0) !important;
+  -o-transform: translate(-50%, 0) !important;
+  transform: translate(-50%, 0) !important;
+}
+.mt-minus {
+  margin-top: -12rem !important;
+}
+
+@media (min-width: 1500px) {
+  .main-content-sandbox {
+    flex: 0 0 auto;
+    width: 100%;
+  }
 }
 
 .small-toggle {
-    height: 20px !important;
-    margin-top: 1px !important;
-  }
-  
-  .small-toggle:checked {
-    background-size: 20px 20px !important;
-  }
+  height: 20px !important;
+  margin-top: 1px !important;
+}
 
-  @media (min-width: 768px) {
-    .btn.w-md-auto {
-      width: auto !important;
-    }
-  }  
+.small-toggle:checked {
+  background-size: 20px 20px !important;
+}
 
-  .hover-danger:hover {
-    color: #BB2D3B !important;
-    
+@media (min-width: 768px) {
+  .btn.w-md-auto {
+    width: auto !important;
   }
+}
+
+.hover-danger:hover {
+  color: #bb2d3b !important;
+}
 
 /* FOR SEARCH AUTOCOMPLETE */
 .suggestions {
-    position: absolute;
-    width: calc(100% - 3rem); /* Adjust width as needed */
-    z-index: 1000;
-    margin-top: 0.1rem;
-    background-color: white; /* Set background color */
-    border-radius: 0.25rem; /* Add border radius for a rounded look */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Add shadow for depth */
+  position: absolute;
+  width: calc(100% - 3rem); /* Adjust width as needed */
+  z-index: 1000;
+  margin-top: 0.1rem;
+  background-color: white; /* Set background color */
+  border-radius: 0.25rem; /* Add border radius for a rounded look */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Add shadow for depth */
+}
+
+.suggestions .list-group-item {
+  cursor: pointer;
+}
+
+.suggestions .list-group-item:hover {
+  background-color: #f9fbfd; /* Change background color on hover */
+  color: #2d7be5 !important;
+}
+/* FOR SEARCH AUTOCOMPLETE */
+
+.custom-link:hover {
+  color: #2d7be5 !important;
+}
+
+.button-edit:hover svg {
+  fill: white;
+}
+
+.button-delete:hover svg {
+  fill: #bb2d3b;
+}
+
+.highlight-start {
+  position: relative;
+  z-index: 1050; /* Ensures the div is above the overlay */
+}
+
+/* POPOVER */
+
+@media (max-width: 374px) {
+  .custom-popover {
+    max-width: none !important;
+    /* Allows the width to exceed the default maximum */
+    width: 300px !important;
+    /* Set your desired width */
+    margin-bottom: 15px !important;
   }
-  
-  .suggestions .list-group-item {
-    cursor: pointer;
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+  .custom-popover {
+    max-width: none !important;
+    /* Allows the width to exceed the default maximum */
+    width: 355px !important;
+    /* Set your desired width */
+    margin-bottom: 15px !important;
   }
-  
-  .suggestions .list-group-item:hover {
-    background-color: #F9FBFD; /* Change background color on hover */
-    color: #2D7BE5 !important;
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .custom-popover {
+    max-width: none !important;
+    /* Allows the width to exceed the default maximum */
+    width: 405px !important;
+    /* Set your desired width */
+    margin-bottom: 15px !important;
   }
-  /* FOR SEARCH AUTOCOMPLETE */  
+}
 
-  .custom-link:hover {
-    color: #2D7BE5 !important;
-    
-  }  
-
-  .button-edit:hover svg {
-    fill: white;
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-popover {
+    max-width: none !important;
+    /* Allows the width to exceed the default maximum */
+    width: 450px !important;
+    /* Set your desired width */
+    margin-bottom: 15px !important;
   }
+}
 
-  .button-delete:hover svg {
-    fill:  #BB2D3B;
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .custom-popover {
+    max-width: none !important;
+    /* Allows the width to exceed the default maximum */
+    width: 705px !important;
+    /* Set your desired width */
+    margin-bottom: 15px !important;
   }
-  
-  .highlight-start {
-    position: relative;
-    z-index: 1050; /* Ensures the div is above the overlay */
+}
+
+@media (min-width: 1200px) {
+  .custom-popover {
+    max-width: none !important;
+    /* Allows the width to exceed the default maximum */
+    width: 550px !important;
+    /* Set your desired width */
   }
+}
 
-  /* POPOVER */
+.popover-header {
+  line-height: 1.6rem !important;
+  font-weight: 100;
+}
 
-  @media (max-width: 374px) {
-    .custom-popover {
-      max-width: none !important;
-      /* Allows the width to exceed the default maximum */
-      width: 300px !important;
-      /* Set your desired width */
-      margin-bottom: 15px !important;
-    }
+/* Dark overlay */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 24, 50, 0.47);
+  z-index: 1040;
+}
+
+.popover-code {
+  font-size: smaller !important;
+  line-height: 0rem !important;
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .popover {
+    top: 310px !important;
+    /* Adjust as per your requirement */
+    left: 25% !important;
+    /* Adjust as per your requirement */
+    transform: translateX(-50%) !important;
   }
+}
 
-  @media (min-width: 375px) and (max-width: 424px) {
-    .custom-popover {
-      max-width: none !important;
-      /* Allows the width to exceed the default maximum */
-      width: 355px !important;
-      /* Set your desired width */
-      margin-bottom: 15px !important;
-    }
-  }
-
-  @media (min-width: 425px) and (max-width: 767px) {
-    .custom-popover {
-      max-width: none !important;
-      /* Allows the width to exceed the default maximum */
-      width: 405px !important;
-      /* Set your desired width */
-      margin-bottom: 15px !important;
-    }
-  }
-
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .custom-popover {
-      max-width: none !important;
-      /* Allows the width to exceed the default maximum */
-      width: 450px !important;
-      /* Set your desired width */
-      margin-bottom: 15px !important;
-    }
-  }
-
-  @media (min-width: 1024px) and (max-width: 1199px) {
-    .custom-popover {
-      max-width: none !important;
-      /* Allows the width to exceed the default maximum */
-      width: 705px !important;
-      /* Set your desired width */
-      margin-bottom: 15px !important;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    .custom-popover {
-      max-width: none !important;
-      /* Allows the width to exceed the default maximum */
-      width: 550px !important;
-      /* Set your desired width */
-    }
-  }
-
-  .popover-header {
-    line-height: 1.6rem !important;
-    font-weight: 100;
-  }
-
-  /* Dark overlay */
-  .overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 24, 50, 0.47);
-    z-index: 1040;
-  }
-
-  .popover-code {
-    font-size: smaller !important;
-    line-height: 0rem !important;
-  }
-
-  @media (min-width: 1200px) and (max-width: 1440px) {
-    .popover {
-      top: 310px !important;
-      /* Adjust as per your requirement */
-      left: 25% !important;
-      /* Adjust as per your requirement */
-      transform: translateX(-50%) !important;
-    }
-  }  
-
-  @media (min-width: 1441px) and (max-width: 1680px) {
-    .popover {
-      top: 310px !important;
-      /* Adjust as per your requirement */
-      left: 27% !important;
-      /* Adjust as per your requirement */
-      transform: translateX(-50%) !important;
-    }
-
-    .popover .popover-arrow {
-      position: fixed !important;
-      height: 12rem;
-    }
+@media (min-width: 1441px) and (max-width: 1680px) {
+  .popover {
+    top: 310px !important;
+    /* Adjust as per your requirement */
+    left: 27% !important;
+    /* Adjust as per your requirement */
+    transform: translateX(-50%) !important;
   }
 
-  @media (min-width: 1681px) {
-    .popover {
-      top: 310px !important;
-      /* Adjust as per your requirement */
-      left: 29% !important;
-      /* Adjust as per your requirement */
-      transform: translateX(-50%) !important;
-    }
-  }    
+  .popover .popover-arrow {
+    position: fixed !important;
+    height: 12rem;
+  }
+}
 
-  /* POPOVER */
+@media (min-width: 1681px) {
+  .popover {
+    top: 310px !important;
+    /* Adjust as per your requirement */
+    left: 29% !important;
+    /* Adjust as per your requirement */
+    transform: translateX(-50%) !important;
+  }
+}
 
-  .highlight-block{
-    background: #1e1e1e;
-    padding: 20px;
-    border-radius: 4px;
-    box-shadow: 0 2px 6px 1px rgba(0,0,0,.25);
+/* POPOVER */
+
+.highlight-block {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.25);
 }
 
 .tooltip-inner {
-	min-width: 310px;
-	max-width: 100%; 
+  min-width: 310px;
+  max-width: 100%;
 }
 
 /* Start Add By Rifki - 21 Oct 2024 - Sandbox Profile */
@@ -286,21 +284,32 @@
 /* End Add By Rifki - 21 Oct 2024 - Sandbox Profile */
 
 /* Start Add By Rifki - 22 Oct 2024 - Sandbox Profile */
+/* Update for responsive By Rifki - 30 Oct 2024 */
 .sticky-bottom-buttons {
-  position: sticky;
+  position: fixed;
+  left: 0;
+  right: 0;
   bottom: 0;
   background-color: #fff;
   padding: 1rem 0;
-  box-shadow: 0 .75rem 1.5rem rgba(18,38,63,.03);
+  box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
   border: 1px solid #edf2f9;
   z-index: 1000;
 }
 
-@media (max-width: 991.98px) {
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
   .sticky-bottom-buttons {
-    position: fixed;
-    left: 0;
-    right: 0;
+    margin-left: 250px;
   }
 }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .sticky-bottom-buttons {
+    position: sticky;
+    margin-left: 0;
+  }
+}
+
 /* End Add By Rifki - 22 Oct 2024 - Sandbox Profile */
