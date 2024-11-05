@@ -285,6 +285,7 @@
 
 /* Start Add By Rifki - 22 Oct 2024 - Sandbox Profile */
 /* Update for responsive By Rifki - 30 Oct 2024 */
+/* Update for responsive By Rifki - 5 Nov 2024 */
 .sticky-bottom-buttons {
   position: fixed;
   left: 0;
@@ -295,12 +296,36 @@
   box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
   border: 1px solid #edf2f9;
   z-index: 1000;
+  width: calc(100% - 6%);
+  margin: 0 auto;
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .sticky-bottom-buttons {
-    margin-left: 250px;
+    margin-left: 286px;
+    width: calc(100% - 42%);
+  }
+}
+
+@media (min-width: 800px) {
+  .sticky-bottom-buttons {
+    margin-left: 286px;
+    width: calc(100% - 40.5%);
+  }
+}
+
+@media (min-width: 820px) {
+  .sticky-bottom-buttons {
+    margin-left: 286px;
+    width: calc(100% - 39.5%);
+  }
+}
+
+@media (min-width: 830px) {
+  .sticky-bottom-buttons {
+    margin-left: 286px;
+    width: calc(100% - 38.9%);
   }
 }
 
@@ -308,7 +333,8 @@
 @media (min-width: 992px) {
   .sticky-bottom-buttons {
     position: sticky;
-    margin-left: 0;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 
