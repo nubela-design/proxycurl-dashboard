@@ -3252,15 +3252,22 @@
                               <div class="col-12">
                                 <label for="form-input-company-size" class="form-label">Company Size</label>
                               </div>
-                              <div class="col-12">
-                                <div class="input-group mb-3">
+                              <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                <div class="input-group">
                                   <input type="text" class="form-control" id="form-input-company-size"
-                                    placeholder="input min company size here" aria-label="Recipient's username"
-                                    aria-describedby="form-input-company-size-btn" value="10001">
-                                  <span class="input-group-text">-</span>
+                                  placeholder="input min company size here" aria-describedby="form-input-company-size-btn" value="100">
+                                  <span class="input-group-text">
+                                    <i class="fe fe-users"></i>
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="col-12 col-lg-6">
+                                <div class="input-group">
                                   <input type="text" class="form-control" id="form-input-company-size"
-                                    placeholder="input max company size here" aria-label="Recipient's username"
-                                    aria-describedby="form-input-company-size-btn">
+                                    placeholder="input max company size here" aria-describedby="form-input-company-size-btn" value="200">
+                                  <span class="input-group-text">
+                                    <i class="fe fe-users"></i>
+                                  </span>
                                 </div>
                               </div>
                             </div>
@@ -4154,9 +4161,16 @@
                                       <time datetime="2018-06-21">21 Feb 2024</time> - 100 Likes
                                     </p>
 
-                                    <p class="small text-secondary mb-3">
-                                      Introducing Personal Email Lookup API https://lnkd.in/gr7cb5by
-                                    </p>
+                                    <div class="readmore readmore-desc-update-1 d-flex flex-column mt-2">
+                                      <!-- DESCRIPTION value -->
+                                      <p class="readmore-content text-dark mb-3">
+                                        Introducing Personal Email Lookup API https://lnkd.in/gr7cb5by
+                                      </p>
+                                      <button class="readmore-btn h5 bg-transparent border-0 text-primary p-0 ms-auto"
+                                        onclick="readMore('.readmore-desc-update-1')">
+                                        ...see more
+                                      </button>
+                                    </div>
 
                                     <a href="javascript:void(0);" class="btn btn-sm btn-outline-info col-12 col-lg-auto"
                                       type="button">
@@ -4209,11 +4223,18 @@
                                       <time datetime="2018-06-21">21 Feb 2024</time> - 100 Likes
                                     </p>
 
-                                    <p class="small text-secondary mb-3">
-                                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex officiis quia dicta
-                                      asperiores, a alias nihil soluta eaque magnam nam, architecto iure, eum deleniti
-                                      enim aliquam dolor? Omnis, accusamus similique.
-                                    </p>
+                                    <div class="readmore readmore-desc-update-2 d-flex flex-column mt-2">
+                                      <!-- DESCRIPTION value -->
+                                      <p class="readmore-content text-dark mb-3">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eos consequuntur
+                                        doloribus sapiente corporis magnam nihil, ipsum quo voluptas obcaecati, autem minus
+                                        nisi! Ipsa sed aliquam id possimus vitae ex?
+                                      </p>
+                                      <button class="readmore-btn h5 bg-transparent border-0 text-primary p-0 ms-auto"
+                                        onclick="readMore('.readmore-desc-update-2')">
+                                        ...see more
+                                      </button>
+                                    </div>
 
                                     <a href="javascript:void(0);" class="btn btn-sm btn-outline-info col-12 col-lg-auto"
                                       type="button">
