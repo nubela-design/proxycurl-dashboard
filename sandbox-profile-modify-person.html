@@ -107,12 +107,12 @@
 
             </div>
           </button>
-  
+
           <div class="dropdown-menu dropdown-menu-end shadow-lg" aria-labelledby="dropdownMenuButton">
             <h6 class="header-pretitle border-bottom text-black px-4 py-4 mb-0">
               Switch team
             </h6>
-  
+
             <div class="pt-3 pb-3 px-4 border-bottom">
               <a class="btn btn-light w-100 pt-3 pb-1"
                 href="https://nubela.co/proxycurl/affiliate?utm_campaign=affiliate_marketing&utm_source=affiliate_link&utm_medium=affiliate&utm_content=internal_navigator_menu"
@@ -123,14 +123,14 @@
                 </h5>
               </a>
             </div>
-  
+
             <div class="pt-3 pb-3 px-4 border-bottom">
               <form>
                 <div class="form-floating form-group mb-3">
                   <input type="text" class="form-control" id="floatingInput" placeholder="Dragon Team" />
                   <label for="floatingInput">Team name</label>
                 </div>
-  
+
                 <button class="btn btn-outline-primary w-100" data-bs-toggle="tooltip" data-bs-placement="top"
                   title="We are fleshing out this new dashboard iteratively. We are intending to include a Teams feature and it is coming soon!">
                   Create new team
@@ -174,7 +174,7 @@
               </li>
 
             </ul>
-  
+
             <div class="row align-items-center border-top">
               <a class="text-center text-secondary nav-link mt-3 mb-1" href="index.html">
                 <i class="fe fe-log-out"></i> Log out
@@ -183,7 +183,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Credits (md)-->
       <div class="navbar-user d-none d-md-flex pb-4">
         <div class="d-block w-100">
@@ -194,20 +194,20 @@
                         480</code><code class="small text-secondary" style="font-family: Cerebri Sans, sans-serif">/1000
                       </code>
             </label>
-      
+
             <div class="progress">
               <div class="progress-bar bg-secondary" role="progressbar" style="width: 48%" aria-valuenow="48"
                 aria-valuemin="0" aria-valuemax="100">
                 480/1000
               </div>
             </div>
-      
+
             <label class="small text-muted mt-2">
               Auto-topup
               <span class="badge bg-white text-primary border border-primary fw-bold">Enabled</span>
             </label>
           </div>
-      
+
           <!-- <div class="col-12">
                     <a
                       class="btn btn-outline-primary w-100 mt-3"
@@ -414,7 +414,8 @@
         <!-- User (md) -->
         <div class="navbar-user d-none d-md-block pb-4 border-bottom mb-4" id="sidebarUser">
           <div class="btn-group w-100 dropup">
-            <button type="button" class="btn btn-outline-primary dropdown-toggle w-100" data-bs-toggle="dropdown" aria-expanded="false">
+            <button type="button" class="btn btn-outline-primary dropdown-toggle w-100" data-bs-toggle="dropdown"
+              aria-expanded="false">
 
               <div class="row align-items-center g-2" style="text-align: start!important;">
 
@@ -437,13 +438,13 @@
               </div>
 
             </button>
-  
+
             <div class="dropdown-menu dropdown-menu-center shadow-lg w-100" aria-labelledby="dropdownMenuButton">
 
               <h6 class="header-pretitle border-bottom text-black px-4 py-4 mb-0">
                 Switch team
               </h6>
-  
+
               <div class="pt-3 pb-3 px-4 border-bottom">
                 <a class="btn btn-light w-100 pt-3 pb-1"
                   href="https://nubela.co/proxycurl/affiliate?utm_campaign=affiliate_marketing&utm_source=affiliate_link&utm_medium=affiliate&utm_content=internal_navigator_menu"
@@ -454,24 +455,25 @@
                   </h5>
                 </a>
               </div>
-  
+
               <div class="pt-3 pb-3 px-4 border-bottom">
                 <form>
                   <div class="form-floating form-group mb-3">
                     <input type="text" class="form-control" id="floatingInput" placeholder="Dragon Team" />
                     <label for="floatingInput">Team name</label>
                   </div>
-  
+
                   <button class="btn btn-outline-primary w-100" data-bs-toggle="tooltip" data-bs-placement="top"
                     title="We are fleshing out this new dashboard iteratively. We are intending to include a Teams feature and it is coming soon!">
                     Create new team
                   </button>
                 </form>
               </div>
-  
+
               <ul class="list-group list-group-flush">
 
-                <li class="list-group-item active" data-bs-toggle="tooltip" data-bs-placement="top" title="Outer Dimension Waralaba Team, ardhannywandicikicaka@outerdimension.com">
+                <li class="list-group-item active" data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Outer Dimension Waralaba Team, ardhannywandicikicaka@outerdimension.com">
                   <a class="dropdown-item" href="#!" type="button">
                     <p class="text-white mb-0 text-truncate">
                       Outer Dimension Waralaba Team
@@ -505,7 +507,7 @@
                 </li>
 
               </ul>
-  
+
               <div class="row align-items-center border-top">
                 <a class="text-center text-secondary nav-link mt-3 mb-1" href="index.html">
                   <i class="fe fe-log-out"></i> Log out
@@ -1027,7 +1029,9 @@
                     <div class="card mb-3">
 
                       <!-- background_cover_image_url -->
-                      <img src="assets/img/covers/profile-cover-2.jpg" alt="..." class="card-img-top" />
+                      <img src="assets/img/covers/profile-cover-2.jpg" alt="..." class="card-img-top"
+                        style="cursor: pointer;" onclick="document.getElementById('cover-upload').click()" />
+                        <input type="file" id="cover-upload" style="display: none" accept="image/*">
 
                       <div class="container-fluid">
 
@@ -1037,8 +1041,7 @@
                           <!-- Avatar -->
                           <div class="avatar avatar-xxl header-avatar-top mb-3">
                             <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..."
-                              class="avatar-img rounded-circle border border-4 border-body" 
-                              style="cursor: pointer;" 
+                              class="avatar-img rounded-circle border border-4 border-body" style="cursor: pointer;"
                               onclick="document.getElementById('avatar-upload').click()">
                             <input type="file" id="avatar-upload" style="display: none" accept="image/*">
                           </div>
@@ -1055,7 +1058,8 @@
                         <div class="mb-3">
                           <!-- public_identifier value -->
                           <div class="form-group mb-0">
-                            <input type="text" class="w-auto small fw-light text-secondary border-0 p-0 bg-transparent" value="johnrmarty">
+                            <input type="text" class="w-auto small fw-light text-secondary border-0 p-0 bg-transparent"
+                              value="johnrmarty">
                           </div>
                         </div>
 
@@ -1063,12 +1067,16 @@
                         <div class="mb-3">
                           <!-- Title -->
                           <h2 class="header-title mb-2">
-                            <input type="text" class="w-auto h2 header-title border-0 p-0 d-inline-flex" value="John Marty ">
-                            <small class="small fw-light text-secondary">(<input type="text" class="w-auto small fw-light text-secondary border-0 p-0 bg-transparent" value="male">)</small>
+                            <input type="text" class="w-100 w-lg-auto h2 header-title border-0 p-0 d-inline-flex"
+                              value="John Marty ">
+                            <small class="small fw-light text-secondary">(<input type="text"
+                                class="w-auto small fw-light text-secondary border-0 p-0 bg-transparent"
+                                value="male">)</small>
                             <!-- activity value -->
                             <a href="javascript:void(0)"
                               class="ms-1 text-white bg-primary small py-1 px-2 rounded fw-light">
-                              <input type="text" class="w-auto small fw-light text-white border-0 p-0 bg-transparent" value="I am hiring!">
+                              <input type="text" class="w-auto small fw-light text-white border-0 p-0 bg-transparent"
+                                value="I am hiring!">
                             </a>
                           </h2>
                         </div>
@@ -1077,7 +1085,8 @@
                         <div class="mb-3">
                           <!-- occupation value -->
                           <h3 class="h3 text-dark mb-3">
-                            <input type="text" class="w-100 h3 text-dark border-0 p-0 bg-transparent mb-0" value="Co-Founder at Freedom Fund Real Estate">
+                            <input type="text" class="w-100 h3 text-dark border-0 p-0 bg-transparent mb-0"
+                              value="Co-Founder at Freedom Fund Real Estate">
                           </h3>
                         </div>
 
@@ -1085,7 +1094,8 @@
                         <div class="mb-3">
                           <!-- headline value -->
                           <h4 class="fw-light small text-dark mb-3">
-                            <input type="text" class="w-100 fw-light small text-dark border-0 p-0 bg-transparent mb-0" value="Financial Freedom through Real Estate - LinkedIn Top Voice">
+                            <input type="text" class="w-100 fw-light small text-dark border-0 p-0 bg-transparent mb-0"
+                              value="Financial Freedom through Real Estate - LinkedIn Top Voice">
                           </h4>
                         </div>
 
@@ -1093,7 +1103,8 @@
                         <div class="mb-3">
                           <!-- address value -->
                           <p class="small text-secondary mb-3">
-                            <input type="text" class="w-100 small text-secondary border-0 p-0 bg-transparent mb-0" value="Seattle, Washington, US (United States of America)">
+                            <input type="text" class="w-100 small text-secondary border-0 p-0 bg-transparent mb-0"
+                              value="Seattle, Washington, US (United States of America)">
                           </p>
                         </div>
 
@@ -1101,7 +1112,9 @@
                         <div class="mb-1">
                           <!-- followers value -->
                           <p class="small text-secondary mb-0">
-                            <i class="fe fe-users me-1"></i> <input type="text" class="w-auto small text-secondary border-0 p-0 bg-transparent mb-0" value="100k"> followers
+                            <i class="fe fe-users me-1"></i> <input type="text"
+                              class="w-auto small text-secondary border-0 p-0 bg-transparent mb-0" value="100k">
+                            followers
                           </p>
                         </div>
 
@@ -1109,27 +1122,32 @@
                         <div class="mb-4">
                           <!-- connections value -->
                           <p class="small text-secondary mb-0">
-                            <i class="fe fe-users me-1"></i> <input type="text" class="w-auto small text-secondary border-0 p-0 bg-transparent mb-0" value="500++"> connections
+                            <i class="fe fe-users me-1"></i> <input type="text"
+                              class="w-auto small text-secondary border-0 p-0 bg-transparent mb-0" value="500++">
+                            connections
                           </p>
                         </div>
 
                         <div class="d-block mb-4">
                           <ul class="d-flex flex-column flex-lg-row gap-3 list-unstyled mb-0">
                             <li class="d-block d-lg-inline-flex">
-                              <a href="sandbox-profile-modify-person.html" class="btn btn-outline-primary btn-sm rounded-pill w-100 py-2 py-lg-1">
+                              <a href="sandbox-profile-modify-person.html"
+                                class="btn btn-outline-primary btn-sm rounded-pill w-100 py-2 py-lg-1">
                                 <i class="neu neu-edit-profile"></i>
                                 Modify profile
                               </a>
                             </li>
                             <li class="d-block d-lg-inline-flex">
-                              <a href="javascript:void(0)" class="btn btn-outline-dark btn-sm rounded-pill w-100 py-2 py-lg-1"
+                              <a href="javascript:void(0)"
+                                class="btn btn-outline-dark btn-sm rounded-pill w-100 py-2 py-lg-1"
                                 data-bs-toggle="modal" data-bs-target="#modalCopyProfileSuccess">
                                 <i class="neu neu-copy"></i>
                                 Clone profile
                               </a>
                             </li>
                             <li class="d-block d-lg-inline-flex">
-                              <a href="javascript:void(0)" class="btn btn-outline-danger btn-sm rounded-pill w-100 py-2 py-lg-1"
+                              <a href="javascript:void(0)"
+                                class="btn btn-outline-danger btn-sm rounded-pill w-100 py-2 py-lg-1"
                                 data-bs-toggle="modal" data-bs-target="#modalDeleteProfile">
                                 <i class="neu neu-delete-profile"></i>
                                 Delete profile
