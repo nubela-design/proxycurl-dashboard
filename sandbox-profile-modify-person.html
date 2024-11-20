@@ -1028,10 +1028,17 @@
                   <div class="col-12 mb-2">
                     <div class="card mb-3">
 
-                      <!-- background_cover_image_url -->
-                      <img src="assets/img/covers/profile-cover-2.jpg" alt="..." class="card-img-top"
-                        style="cursor: pointer;" onclick="document.getElementById('cover-upload').click()" />
+                      <div class="position-relative">
+                        <!-- background_cover_image_url -->
+                        <img src="assets/img/covers/profile-cover-2.jpg" alt="..." class="card-img-top"
+                          style="z-index: -1;" />
                         <input type="file" id="cover-upload" style="display: none" accept="image/*">
+                        <div class="position-absolute top-0 end-0 bg-transparent w-100 h-100 d-flex justify-content-center align-items-center" >
+                          <button class="btn btn-lg btn-primary rounded-circle cursor-pointer shadow lift" style="padding: .25rem .4rem;" type="button" onclick="document.getElementById('cover-upload').click()">
+                            <i class="neu neu-edit-ui" style="font-size: 20px;"></i>
+                          </button>
+                        </div>
+                      </div>
 
                       <div class="container-fluid">
 
@@ -1039,11 +1046,16 @@
                         <div class="mt-n5 mt-md-n6 border-bottom-0">
 
                           <!-- Avatar -->
-                          <div class="avatar avatar-xxl header-avatar-top mb-3">
+                          <div class="avatar avatar-xxl header-avatar-top mb-3 position-relative">
                             <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..."
                               class="avatar-img rounded-circle border border-4 border-body" style="cursor: pointer;"
                               onclick="document.getElementById('avatar-upload').click()">
                             <input type="file" id="avatar-upload" style="display: none" accept="image/*">
+                            <div class="position-absolute top-0 end-0 bg-transparent w-100 h-100 d-flex justify-content-center align-items-center" >
+                              <button class="btn btn-lg btn-primary rounded-circle cursor-pointer shadow lift" style="padding: .25rem .4rem;" type="button" onclick="document.getElementById('cover-upload').click()">
+                                <i class="neu neu-edit-ui" style="font-size: 20px;"></i>
+                              </button>
+                            </div>
                           </div>
 
 
@@ -1200,7 +1212,7 @@
 
                         <div class="readmore readmore-summary d-flex flex-column">
                           <!-- summary value -->
-                          <p class="readmore-content text-dark mb-3">
+                          <!-- <p class="readmore-content text-dark mb-3">
                             Most people go through life lost, disengaged, and
                             unhappy at work and in their lives - I\u0027m on a
                             mission to solve that.\n\nI spent 10 years as the
@@ -1245,11 +1257,12 @@
                             CONNECT:\n\u2611\ufe0f Email: JohnRmarty@gmail.com
                             (don\u0027t forget that \"R\"....The other guy
                             gets my emails all the time)
-                          </p>
-                          <button class="readmore-btn h5 bg-transparent border-0 text-primary p-0 ms-auto"
+                          </p> -->
+                          <textarea class="form-control text-dark" rows="15" id="summary">Most people go through life lost, disengaged, and unhappy at work and in their lives - I\u0027m on a mission to solve that.\n\nI spent 10 years as the founder of Axxis Audio, an electronics company that grew to multi-million dollar sales, which I sold in 2012. At that time, I funneled my earnings into the creation of an Internet of Thing company, but numerous factors lead to its demise after 2 hard fought years. \n\nAt 31, I was penny-less, had a baby on the way, and had zero job prospects (despite applying to 150 companies). My desperate situation led me to take a job at Best Buy for $12 an hour while reinventing myself through the completion of an MBA at the University of Colorado, and a 6-month software development boot camp. \n\nAfter graduation, I landed at American Express as a Senior Product Manager and then got poached by Amazon in 2017 (because of my LinkedIn profile). My journey has led to a deep sense of perspective, humility, and purpose that I draw on to help others find clarity, meaning, and happiness in their careers and lives. \n\nCheck out my website for details on my Mindset Reset Podcast, Public Speaking, Consulting, or my free 40 page LinkedIn guide\n\nhttp://www.johnraphaelmarty.com/\n\nFAQ\u0027s\n\nQ: Can you speak at my Company, University, event or podcast?\nA: I\u0027d love to! I\u0027ve shared my message on the future of employment, breaking into big tech, and my personal story of reinventing myself and discovering my sense of purpose (and how you can too!).\n\n\u2611\ufe0f YouTube Channel #1 (John Marty) : http://www.youtube.com/c/JohnMarty-uncommon\n\u2611\ufe0f YouTube Channel #2 (Tech Careers for non-engineers: https://www.youtube.com/channel/UC900gMMPLwRGGXSTW1gdZHA\n\nFUN FACTS:\n\u2611\ufe0f I am an Avid cyclist and runner, and I just started learning to skateboard a half-pipe.\n\u2611\ufe0f Into the Enneagram? - I\u0027m a #3 (The Achiever)\n\nLETS CONNECT:\n\u2611\ufe0f Email: JohnRmarty@gmail.com (don\u0027t forget that \"R\"....The other guy gets my emails all the time)</textarea>
+                          <!-- <button class="readmore-btn h5 bg-transparent border-0 text-primary p-0 ms-auto"
                             onclick="readMore('.readmore-summary')">
                             ...read more
-                          </button>
+                          </button> -->
                         </div>
                       </div>
                     </div>
