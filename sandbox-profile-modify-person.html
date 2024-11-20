@@ -61,6 +61,33 @@
       aspect-ratio: 16/5;
       object-fit: cover;
     }
+
+    .img-modify-icon {
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.3s all;
+    }
+
+    .img-modify:hover .img-modify-icon {
+      visibility: visible;
+      opacity: 1;
+      transition: 0.3s all;
+    }
+
+    .form-control-modify {
+      border: none;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .form-control-modify:hover,
+    .form-control-modify:focus,
+    .form-control-modify:active {
+      border: 1px solid #d2ddec;
+      border-radius: 0.375rem;
+      outline: .1px solid #d2ddec;
+      padding: .15rem .1rem;
+    }
   </style>
 </head>
 
@@ -1028,13 +1055,16 @@
                   <div class="col-12 mb-2">
                     <div class="card mb-3">
 
-                      <div class="position-relative">
+                      <div class="position-relative img-modify">
                         <!-- background_cover_image_url -->
                         <img src="assets/img/covers/profile-cover-2.jpg" alt="..." class="card-img-top"
                           style="z-index: -1;" />
                         <input type="file" id="cover-upload" style="display: none" accept="image/*">
-                        <div class="position-absolute top-0 end-0 bg-transparent w-100 h-100 d-flex justify-content-center align-items-center" >
-                          <button class="btn btn-lg btn-primary rounded-circle cursor-pointer shadow lift" style="padding: .25rem .4rem;" type="button" onclick="document.getElementById('cover-upload').click()">
+                        <div
+                          class="position-absolute top-0 end-0 bg-transparent w-100 h-100 d-flex justify-content-center align-items-center img-modify-icon">
+                          <button class="btn btn-lg btn-primary rounded-circle cursor-pointer shadow lift"
+                            style="padding: .25rem .4rem;" type="button"
+                            onclick="document.getElementById('cover-upload').click()">
                             <i class="neu neu-edit-ui" style="font-size: 20px;"></i>
                           </button>
                         </div>
@@ -1046,13 +1076,15 @@
                         <div class="mt-n5 mt-md-n6 border-bottom-0">
 
                           <!-- Avatar -->
-                          <div class="avatar avatar-xxl header-avatar-top mb-3 position-relative">
+                          <div class="avatar avatar-xxl header-avatar-top mb-3 position-relative img-modify">
                             <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..."
-                              class="avatar-img rounded-circle border border-4 border-body" style="cursor: pointer;"
-                              onclick="document.getElementById('avatar-upload').click()">
+                              class="avatar-img rounded-circle border border-4 border-body">
                             <input type="file" id="avatar-upload" style="display: none" accept="image/*">
-                            <div class="position-absolute top-0 end-0 bg-transparent w-100 h-100 d-flex justify-content-center align-items-center" >
-                              <button class="btn btn-lg btn-primary rounded-circle cursor-pointer shadow lift" style="padding: .25rem .4rem;" type="button" onclick="document.getElementById('cover-upload').click()">
+                            <div
+                              class="position-absolute top-0 end-0 bg-transparent w-100 h-100 d-flex justify-content-center align-items-center img-modify-icon">
+                              <button class="btn btn-lg btn-primary rounded-circle cursor-pointer shadow lift"
+                                style="padding: .25rem .4rem;" type="button"
+                                onclick="document.getElementById('avatar-upload').click()">
                                 <i class="neu neu-edit-ui" style="font-size: 20px;"></i>
                               </button>
                             </div>
@@ -1070,7 +1102,8 @@
                         <div class="mb-3">
                           <!-- public_identifier value -->
                           <div class="form-group mb-0">
-                            <input type="text" class="w-auto small fw-light text-secondary border-0 p-0 bg-transparent"
+                            <input type="text"
+                              class="w-auto small fw-light text-secondary p-0 bg-transparent form-control-modify"
                               value="johnrmarty">
                           </div>
                         </div>
@@ -1079,15 +1112,16 @@
                         <div class="mb-3">
                           <!-- Title -->
                           <h2 class="header-title mb-2">
-                            <input type="text" class="w-auto h2 header-title border-0 p-0 d-inline-flex"
+                            <input type="text" class="w-auto h2 header-title p-0 d-inline-flex form-control-modify"
                               value="John Marty ">
                             <small class="small fw-light text-secondary">(<input type="text"
-                                class="w-auto small fw-light text-secondary border-0 p-0 bg-transparent"
+                                class="w-auto small fw-light text-secondary p-0 bg-transparent d-inline-flex form-control-modify"
                                 value="male">)</small>
                             <!-- activity value -->
                             <a href="javascript:void(0)"
                               class="ms-1 text-white bg-primary small py-1 px-2 rounded fw-light">
-                              <input type="text" class="w-auto small fw-light text-white border-0 p-0 bg-transparent"
+                              <input type="text"
+                                class="w-auto small fw-light text-white p-0 bg-transparent d-inline-flex form-control-modify"
                                 value="I am hiring!">
                             </a>
                           </h2>
@@ -1097,7 +1131,7 @@
                         <div class="mb-3">
                           <!-- occupation value -->
                           <h3 class="h3 text-dark mb-3">
-                            <input type="text" class="w-100 h3 text-dark border-0 p-0 bg-transparent mb-0"
+                            <input type="text" class="w-100 h3 text-dark p-0 bg-transparent mb-0 form-control-modify"
                               value="Co-Founder at Freedom Fund Real Estate">
                           </h3>
                         </div>
@@ -1106,7 +1140,8 @@
                         <div class="mb-3">
                           <!-- headline value -->
                           <h4 class="fw-light small text-dark mb-3">
-                            <input type="text" class="w-100 fw-light small text-dark border-0 p-0 bg-transparent mb-0"
+                            <input type="text"
+                              class="w-100 fw-light small text-dark p-0 bg-transparent mb-0 form-control-modify"
                               value="Financial Freedom through Real Estate - LinkedIn Top Voice">
                           </h4>
                         </div>
@@ -1115,7 +1150,8 @@
                         <div class="mb-3">
                           <!-- address value -->
                           <p class="small text-secondary mb-3">
-                            <input type="text" class="w-100 small text-secondary border-0 p-0 bg-transparent mb-0"
+                            <input type="text"
+                              class="w-100 small text-secondary p-0 bg-transparent mb-0 form-control-modify"
                               value="Seattle, Washington, US (United States of America)">
                           </p>
                         </div>
@@ -1125,7 +1161,8 @@
                           <!-- followers value -->
                           <p class="small text-secondary mb-0">
                             <i class="fe fe-users me-1"></i> <input type="text"
-                              class="w-auto small text-secondary border-0 p-0 bg-transparent mb-0" value="100k">
+                              class="w-auto small text-secondary p-0 bg-transparent mb-0 d-inline-flex form-control-modify"
+                              value="100k">
                             followers
                           </p>
                         </div>
@@ -1135,7 +1172,8 @@
                           <!-- connections value -->
                           <p class="small text-secondary mb-0">
                             <i class="fe fe-users me-1"></i> <input type="text"
-                              class="w-auto small text-secondary border-0 p-0 bg-transparent mb-0" value="500++">
+                              class="w-auto small text-secondary p-0 bg-transparent mb-0 d-inline-flex form-control-modify"
+                              value="500++">
                             connections
                           </p>
                         </div>
@@ -1143,7 +1181,7 @@
                         <div class="d-block mb-4">
                           <ul class="d-flex flex-column flex-lg-row gap-3 list-unstyled mb-0">
                             <li class="d-block d-lg-inline-flex">
-                              <a href="sandbox-profile-modify-person.html"
+                              <a href="sandbox-profile-sandbox-detail.html"
                                 class="btn btn-outline-primary btn-sm rounded-pill w-100 py-2 py-lg-1">
                                 <i class="neu neu-edit-profile"></i>
                                 Exit & Save Modify profile
@@ -1258,7 +1296,8 @@
                             (don\u0027t forget that \"R\"....The other guy
                             gets my emails all the time)
                           </p> -->
-                          <textarea class="form-control text-dark" rows="15" id="summary">Most people go through life lost, disengaged, and unhappy at work and in their lives - I\u0027m on a mission to solve that.\n\nI spent 10 years as the founder of Axxis Audio, an electronics company that grew to multi-million dollar sales, which I sold in 2012. At that time, I funneled my earnings into the creation of an Internet of Thing company, but numerous factors lead to its demise after 2 hard fought years. \n\nAt 31, I was penny-less, had a baby on the way, and had zero job prospects (despite applying to 150 companies). My desperate situation led me to take a job at Best Buy for $12 an hour while reinventing myself through the completion of an MBA at the University of Colorado, and a 6-month software development boot camp. \n\nAfter graduation, I landed at American Express as a Senior Product Manager and then got poached by Amazon in 2017 (because of my LinkedIn profile). My journey has led to a deep sense of perspective, humility, and purpose that I draw on to help others find clarity, meaning, and happiness in their careers and lives. \n\nCheck out my website for details on my Mindset Reset Podcast, Public Speaking, Consulting, or my free 40 page LinkedIn guide\n\nhttp://www.johnraphaelmarty.com/\n\nFAQ\u0027s\n\nQ: Can you speak at my Company, University, event or podcast?\nA: I\u0027d love to! I\u0027ve shared my message on the future of employment, breaking into big tech, and my personal story of reinventing myself and discovering my sense of purpose (and how you can too!).\n\n\u2611\ufe0f YouTube Channel #1 (John Marty) : http://www.youtube.com/c/JohnMarty-uncommon\n\u2611\ufe0f YouTube Channel #2 (Tech Careers for non-engineers: https://www.youtube.com/channel/UC900gMMPLwRGGXSTW1gdZHA\n\nFUN FACTS:\n\u2611\ufe0f I am an Avid cyclist and runner, and I just started learning to skateboard a half-pipe.\n\u2611\ufe0f Into the Enneagram? - I\u0027m a #3 (The Achiever)\n\nLETS CONNECT:\n\u2611\ufe0f Email: JohnRmarty@gmail.com (don\u0027t forget that \"R\"....The other guy gets my emails all the time)</textarea>
+                          <textarea class="form-control-modify text-dark" rows="10"
+                            id="summary">Most people go through life lost, disengaged, and unhappy at work and in their lives - I\u0027m on a mission to solve that.\n\nI spent 10 years as the founder of Axxis Audio, an electronics company that grew to multi-million dollar sales, which I sold in 2012. At that time, I funneled my earnings into the creation of an Internet of Thing company, but numerous factors lead to its demise after 2 hard fought years. \n\nAt 31, I was penny-less, had a baby on the way, and had zero job prospects (despite applying to 150 companies). My desperate situation led me to take a job at Best Buy for $12 an hour while reinventing myself through the completion of an MBA at the University of Colorado, and a 6-month software development boot camp. \n\nAfter graduation, I landed at American Express as a Senior Product Manager and then got poached by Amazon in 2017 (because of my LinkedIn profile). My journey has led to a deep sense of perspective, humility, and purpose that I draw on to help others find clarity, meaning, and happiness in their careers and lives. \n\nCheck out my website for details on my Mindset Reset Podcast, Public Speaking, Consulting, or my free 40 page LinkedIn guide\n\nhttp://www.johnraphaelmarty.com/\n\nFAQ\u0027s\n\nQ: Can you speak at my Company, University, event or podcast?\nA: I\u0027d love to! I\u0027ve shared my message on the future of employment, breaking into big tech, and my personal story of reinventing myself and discovering my sense of purpose (and how you can too!).\n\n\u2611\ufe0f YouTube Channel #1 (John Marty) : http://www.youtube.com/c/JohnMarty-uncommon\n\u2611\ufe0f YouTube Channel #2 (Tech Careers for non-engineers: https://www.youtube.com/channel/UC900gMMPLwRGGXSTW1gdZHA\n\nFUN FACTS:\n\u2611\ufe0f I am an Avid cyclist and runner, and I just started learning to skateboard a half-pipe.\n\u2611\ufe0f Into the Enneagram? - I\u0027m a #3 (The Achiever)\n\nLETS CONNECT:\n\u2611\ufe0f Email: JohnRmarty@gmail.com (don\u0027t forget that \"R\"....The other guy gets my emails all the time)</textarea>
                           <!-- <button class="readmore-btn h5 bg-transparent border-0 text-primary p-0 ms-auto"
                             onclick="readMore('.readmore-summary')">
                             ...read more
@@ -1285,11 +1324,13 @@
                                 </h5>
 
                               </div>
-                              <div class="col-auto">
+                              <div class="col-12 col-lg-8">
 
                                 <!-- value -->
                                 <small class="small text-secondary">
-                                  English, Chinese, Japanese
+                                  <input type="text"
+                                    class="w-100 small text-secondary p-0 bg-transparent mb-0 d-inline-flex form-control-modify text-lg-end"
+                                    value="English, Chinese, Japanese">
                                 </small>
 
                               </div>
@@ -1305,11 +1346,13 @@
                                 </h5>
 
                               </div>
-                              <div class="col-auto">
+                              <div class="col-12 col-lg-8">
 
                                 <!-- value -->
                                 <small class="small text-secondary">
-                                  education, health, human rights
+                                  <input type="text"
+                                    class="w-100 small text-secondary p-0 bg-transparent mb-0 d-inline-flex form-control-modify text-lg-end"
+                                    value="education, health, human rights">
                                 </small>
 
                               </div>
@@ -1325,11 +1368,13 @@
                                 </h5>
 
                               </div>
-                              <div class="col-auto">
+                              <div class="col-12 col-lg-8">
 
                                 <!-- Text -->
                                 <small class="small text-secondary">
-                                  government administration
+                                  <input type="text"
+                                    class="w-100 small text-secondary p-0 bg-transparent mb-0 d-inline-flex form-control-modify text-lg-end"
+                                    value="government administration">
                                 </small>
 
                               </div>
@@ -1345,11 +1390,13 @@
                                 </h5>
 
                               </div>
-                              <div class="col-auto">
+                              <div class="col-12 col-lg-8">
 
                                 <!-- Text -->
                                 <small class="small text-secondary">
-                                  Professional and dedicated approach towards clients and collegues.
+                                  <input type="text"
+                                    class="w-100 small text-secondary p-0 bg-transparent mb-0 d-inline-flex form-control-modify text-lg-end"
+                                    value="Professional and dedicated approach towards clients and collegues.">
                                 </small>
 
                               </div>
@@ -1365,11 +1412,13 @@
                                 </h5>
 
                               </div>
-                              <div class="col-auto">
+                              <div class="col-12 col-lg-8">
 
                                 <!-- Text -->
                                 <small class="small text-secondary">
-                                  abc@gmail.com, bcd@gmail.com, cde@outlook.com
+                                  <input type="text"
+                                    class="w-100 small text-secondary p-0 bg-transparent mb-0 d-inline-flex form-control-modify text-lg-end"
+                                    value="abc@gmail.com, bcd@gmail.com, cde@outlook.com">
                                 </small>
 
                               </div>
@@ -1385,11 +1434,13 @@
                                 </h5>
 
                               </div>
-                              <div class="col-auto">
+                              <div class="col-12 col-lg-8">
 
                                 <!-- Text -->
                                 <small class="small text-secondary">
-                                  +6512345678, +6285123450953, +6502300340
+                                  <input type="text"
+                                    class="w-100 small text-secondary p-0 bg-transparent mb-0 d-inline-flex form-control-modify text-lg-end"
+                                    value="+6512345678, +6285123450953, +6502300340">
                                 </small>
 
                               </div>
@@ -1405,11 +1456,13 @@
                                 </h5>
 
                               </div>
-                              <div class="col-auto">
+                              <div class="col-12 col-lg-8">
 
                                 <!-- Text -->
                                 <small class="small text-secondary">
-                                  $35000 - $45000
+                                  <input type="text"
+                                    class="w-100 small text-secondary p-0 bg-transparent mb-0 d-inline-flex form-control-modify text-lg-end"
+                                    value="$35000 - $45000">
                                 </small>
 
                               </div>
@@ -1443,12 +1496,12 @@
                                 </h4>
 
                               </div>
-                              <div class="col-auto">
+                              <div class="col-12 col-lg-8">
 
                                 <!-- value -->
-                                <a href="javascript:void(0)">
-                                  @johnmarty
-                                </a>
+                                <input type="text"
+                                  class="w-100 h4 fw-light text-primary p-0 bg-transparent mb-0 d-inline-flex form-control-modify text-lg-end"
+                                  value="@johnmarty">
 
                               </div>
                             </div> <!-- / .row -->
@@ -1464,12 +1517,12 @@
                                 </h4>
 
                               </div>
-                              <div class="col-auto">
+                              <div class="col-12 col-lg-8">
 
                                 <!-- value -->
-                                <a href="javascript:void(0)">
-                                  @johnmarty
-                                </a>
+                                <input type="text"
+                                  class="w-100 h4 fw-light text-primary p-0 bg-transparent mb-0 d-inline-flex form-control-modify text-lg-end"
+                                  value="@johnmarty">
 
                               </div>
                             </div> <!-- / .row -->
@@ -1485,12 +1538,12 @@
                                 </h4>
 
                               </div>
-                              <div class="col-auto">
+                              <div class="col-12 col-lg-8">
 
                                 <!-- value -->
-                                <a href="javascript:void(0)">
-                                  @johnmarty
-                                </a>
+                                <input type="text"
+                                  class="w-100 h4 fw-light text-primary p-0 bg-transparent mb-0 d-inline-flex form-control-modify text-lg-end"
+                                  value="@johnmarty">
 
                               </div>
                             </div> <!-- / .row -->
@@ -1506,12 +1559,12 @@
                                 </h4>
 
                               </div>
-                              <div class="col-auto">
+                              <div class="col-12 col-lg-8">
 
                                 <!-- value -->
-                                <a href="javascript:void(0)">
-                                  www.johnmathy.me
-                                </a>
+                                <input type="text"
+                                  class="w-100 h4 fw-light text-primary p-0 bg-transparent mb-0 d-inline-flex form-control-modify text-lg-end"
+                                  value="www.johnmathy.me">
 
                               </div>
                             </div> <!-- / .row -->
@@ -1539,11 +1592,18 @@
                               <div class="col-auto">
 
                                 <!-- Avatar -->
-                                <div class="avatar avatar-sm">
-                                  <div class="avatar avatar-sm">
-                                    <img class="avatar-img"
-                                      src="https://media.licdn.com/dms/image/C560BAQEYxazZM_hXgQ/company-logo_100_100/0/1634934419277?e=1728518400&v=beta&t=Jesz2g2fPc_-KSebwTWKjyl1by2OcA7aeCR6BUkygjk"
-                                      alt="...">
+                                <div class="avatar avatar-sm position-relative img-modify">
+                                  <img class="avatar-img"
+                                    src="https://media.licdn.com/dms/image/C560BAQEYxazZM_hXgQ/company-logo_100_100/0/1634934419277?e=1728518400&v=beta&t=Jesz2g2fPc_-KSebwTWKjyl1by2OcA7aeCR6BUkygjk"
+                                    alt="...">
+                                  <input type="file" id="avatar-upload" style="display: none" accept="image/*">
+                                  <div
+                                    class="position-absolute top-0 end-0 bg-transparent w-100 h-100 d-flex justify-content-center align-items-center img-modify-icon">
+                                    <button class="btn btn-lg btn-primary rounded-circle cursor-pointer shadow lift"
+                                      style="padding: .25rem .4rem;" type="button"
+                                      onclick="document.getElementById('avatar-upload').click()">
+                                      <i class="neu neu-edit-ui" style="font-size: 14px;"></i>
+                                    </button>
                                   </div>
                                 </div>
 
@@ -1552,33 +1612,36 @@
 
                                 <!-- Title -->
                                 <h3 class="h3 text-dark mb-1">
-                                  Co-Founder
+                                  <input type="text"
+                                    class="w-100 h3 text-dark p-0 bg-transparent mb-0 d-inline-flex form-control-modify"
+                                    value="Co-Founder">
                                 </h3>
 
                                 <!-- Company -->
                                 <h4 class="fw-light mb-1">
-                                  <a href="javascript:void(0)">
-                                    Freedom Fund Real Estate
-                                  </a>
+                                  <input type="text"
+                                    class="w-100 h4 fw-light text-gray-900 p-0 bg-transparent mb-0 d-inline-flex form-control-modify"
+                                    value="Freedom Fund Real Estate">
                                 </h4>
 
                                 <!-- Location -->
                                 <p class="small fw-light text-secondary mb-2">
-                                  Singapore
+                                  <input type="text"
+                                    class="w-100 small fw-light text-secondary p-0 bg-transparent mb-0 d-inline-flex form-control-modify"
+                                    value="Singapore">
                                 </p>
 
                                 <!-- Time -->
                                 <small class="h5 fw-light text-secondary">
-                                  Aug 2021 - Present
+                                  <input type="text"
+                                    class="w-100 h5 fw-light text-secondary p-0 bg-transparent mb-0 d-inline-flex form-control-modify"
+                                    value="Aug 2021 - Present">
                                 </small>
 
                                 <div class="readmore readmore-desc-experience-1 d-flex flex-column mt-2">
                                   <!-- DESCRIPTION value -->
-                                  <p class="readmore-content text-dark mb-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates velit amet
-                                    dolorum hic cumque ea deserunt reiciendis, minus illo perferendis vel qui illum
-                                    sapiente. Vero veniam voluptate quibusdam obcaecati veritatis!
-                                  </p>
+                                  <textarea class="form-control-modify text-dark mb-3"
+                                    rows="3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates velit amet dolorum hic cumque ea deserunt reiciendis, minus illo perferendis vel qui illum sapiente. Vero veniam voluptate quibusdam obcaecati veritatis!</textarea>
                                   <!-- <button class="readmore-btn h5 bg-transparent border-0 text-primary p-0 ms-auto"
                                     onclick="readMore('.readmore-desc-experience-1')">
                                     ...read more
@@ -1594,9 +1657,18 @@
                               <div class="col-auto">
 
                                 <!-- Avatar -->
-                                <div class="avatar avatar-sm">
+                                <div class="avatar avatar-sm position-relative img-modify">
                                   <div class="avatar-title fs-lg bg-primary-subtle text-primary">
                                     <i class="fe fe-briefcase"></i>
+                                  </div>
+                                  <input type="file" id="avatar-upload" style="display: none" accept="image/*">
+                                  <div
+                                    class="position-absolute top-0 end-0 bg-transparent w-100 h-100 d-flex justify-content-center align-items-center img-modify-icon">
+                                    <button class="btn btn-lg btn-primary rounded-circle cursor-pointer shadow lift"
+                                      style="padding: .25rem .4rem;" type="button"
+                                      onclick="document.getElementById('avatar-upload').click()">
+                                      <i class="neu neu-edit-ui" style="font-size: 14px;"></i>
+                                    </button>
                                   </div>
                                 </div>
 
@@ -1605,37 +1677,41 @@
 
                                 <!-- Title -->
                                 <h3 class="h3 text-dark mb-1">
-                                  Software Engineer
+                                  <input type="text"
+                                    class="w-100 h3 text-dark p-0 bg-transparent mb-0 d-inline-flex form-control-modify"
+                                    value="Software Engineer">
                                 </h3>
 
                                 <!-- Company -->
                                 <h4 class="fw-light mb-1">
-                                  <a href="javascript:void(0)">
-                                    Google
-                                  </a>
+                                  <input type="text"
+                                    class="w-100 h4 fw-light text-gray-900 p-0 bg-transparent mb-0 d-inline-flex form-control-modify"
+                                    value="Google">
                                 </h4>
 
                                 <!-- Location -->
                                 <p class="small fw-light text-secondary mb-2">
-                                  New York, US
+                                  <input type="text"
+                                    class="w-100 small fw-light text-secondary p-0 bg-transparent mb-0 d-inline-flex form-control-modify"
+                                    value="New York, US">
                                 </p>
 
                                 <!-- Time -->
                                 <small class="h5 fw-light text-secondary">
-                                  Mar 2017 - Aug 2021
+                                  <input type="text"
+                                    class="w-100 h5 fw-light text-secondary p-0 bg-transparent mb-0 d-inline-flex form-control-modify"
+                                    value="Mar 2017 - Aug 2021">
                                 </small>
 
                                 <div class="readmore readmore-desc-experience-2 d-flex flex-column mt-2">
                                   <!-- DESCRIPTION value -->
-                                  <p class="readmore-content text-dark mb-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae,
-                                    dignissimos tempora animi deserunt obcaecati eius. At impedit sequi labore esse
-                                    quisquam aliquam itaque velit ipsa iste deleniti, dolores quod.
-                                  </p>
-                                  <button class="readmore-btn h5 bg-transparent border-0 text-primary p-0 ms-auto"
+                                  <textarea class="form-control-modify text-dark mb-3"
+                                    rows="3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae, dignissimos tempora animi deserunt obcaecati eius. At impedit sequi labore esse quisquam aliquam itaque velit ipsa iste deleniti, dolores quod.</textarea>
+                                  </textarea>
+                                  <!-- <button class="readmore-btn h5 bg-transparent border-0 text-primary p-0 ms-auto"
                                     onclick="readMore('.readmore-desc-experience-2')">
                                     ...read more
-                                  </button>
+                                  </button> -->
                                 </div>
 
                               </div>
@@ -1663,11 +1739,18 @@
                               <div class="col-auto">
 
                                 <!-- Avatar -->
-                                <div class="avatar avatar-sm">
-                                  <div class="avatar avatar-sm">
-                                    <img class="avatar-img"
-                                      src="https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1631318058235?e=1728518400&v=beta&t=BRZRuyggYgqkE5UQ0HnZQ1Hf7exaL27_aWVQLvrg19M"
-                                      alt="...">
+                                <div class="avatar avatar-sm position-relative img-modify">
+                                  <img class="avatar-img"
+                                    src="https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1631318058235?e=1728518400&v=beta&t=BRZRuyggYgqkE5UQ0HnZQ1Hf7exaL27_aWVQLvrg19M"
+                                    alt="...">
+                                  <input type="file" id="avatar-upload" style="display: none" accept="image/*">
+                                  <div
+                                    class="position-absolute top-0 end-0 bg-transparent w-100 h-100 d-flex justify-content-center align-items-center img-modify-icon">
+                                    <button class="btn btn-lg btn-primary rounded-circle cursor-pointer shadow lift"
+                                      style="padding: .25rem .4rem;" type="button"
+                                      onclick="document.getElementById('avatar-upload').click()">
+                                      <i class="neu neu-edit-ui" style="font-size: 14px;"></i>
+                                    </button>
                                   </div>
                                 </div>
 
@@ -1676,40 +1759,47 @@
 
                                 <!-- School -->
                                 <h3 class="h3 text-dark mb-1">
-                                  Harvard University
+                                  <input type="text"
+                                    class="w-100 h3 text-dark p-0 bg-transparent mb-0 d-inline-flex form-control-modify"
+                                    value="Harvard University">
                                 </h3>
 
                                 <!-- Degree -->
                                 <h4 class="h4 fw-light text-dark mb-2">
-                                  Master of Business Administration (MBA)
+                                  <input type="text"
+                                    class="w-100 h4 fw-light text-dark p-0 bg-transparent mb-0 d-inline-flex form-control-modify"
+                                    value="Master of Business Administration (MBA)">
                                 </h4>
 
                                 <!-- Time -->
                                 <small class="text-secondary">
-                                  Jan 2015 - Dec 2018
+                                  <input type="text"
+                                    class="w-100 h5 fw-light text-secondary p-0 bg-transparent mb-0 d-inline-flex form-control-modify"
+                                    value="Jan 2015 - Dec 2018">
                                 </small>
 
                                 <!-- Grade -->
                                 <p class="small text-gray-800 mt-2">
-                                  Grade: 3.90
+                                  <input type="text"
+                                    class="w-100 small text-gray-800 p-0 bg-transparent mb-0 d-inline-flex form-control-modify"
+                                    value="Grade: 3.90">
                                 </p>
 
                                 <!-- Activities and societies -->
                                 <p class="small text-gray-800 mt-2">
-                                  Activities and societies: Business Development
+                                  <input type="text"
+                                    class="w-100 small text-gray-800 p-0 bg-transparent mb-0 d-inline-flex form-control-modify"
+                                    value="Activities and societies: Business Development">
                                 </p>
 
                                 <div class="readmore readmore-desc-harvard d-flex flex-column mt-2">
                                   <!-- DESCRIPTION value -->
-                                  <p class="readmore-content text-dark mb-3">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam quasi excepturi
-                                    eligendi ipsum temporibus, rem sint nemo praesentium fugit! Harum reiciendis
-                                    consectetur provident nam blanditiis nobis reprehenderit repellat quasi et?
-                                  </p>
-                                  <button class="readmore-btn h5 bg-transparent border-0 text-primary p-0 ms-auto"
+                                  <textarea class="form-control-modify text-dark mb-3"
+                                    rows="3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam quasi excepturi eligendi ipsum temporibus, rem sint nemo praesentium fugit! Harum reiciendis consectetur provident nam blanditiis nobis reprehenderit repellat quasi et?</textarea>
+                                  <!-- <button class="readmore-btn h5 bg-transparent border-0 text-primary p-0 ms-auto"
                                     onclick="readMore('.readmore-desc-harvard')">
                                     ...read more
-                                  </button>
+                                  </button> -->
                                 </div>
 
                               </div>
@@ -1720,9 +1810,18 @@
                               <div class="col-auto">
 
                                 <!-- Avatar -->
-                                <div class="avatar avatar-sm">
+                                <div class="avatar avatar-sm position-relative img-modify">
                                   <div class="avatar-title fs-lg bg-primary-subtle text-primary">
                                     <i class="fe fe-home"></i>
+                                  </div>
+                                  <input type="file" id="avatar-upload" style="display: none" accept="image/*">
+                                  <div
+                                    class="position-absolute top-0 end-0 bg-transparent w-100 h-100 d-flex justify-content-center align-items-center img-modify-icon">
+                                    <button class="btn btn-lg btn-primary rounded-circle cursor-pointer shadow lift"
+                                      style="padding: .25rem .4rem;" type="button"
+                                      onclick="document.getElementById('avatar-upload').click()">
+                                      <i class="neu neu-edit-ui" style="font-size: 14px;"></i>
+                                    </button>
                                   </div>
                                 </div>
 
@@ -1731,17 +1830,23 @@
 
                                 <!-- School -->
                                 <h3 class="h3 text-dark mb-1">
-                                  University of Colorado Denver
+                                  <input type="text"
+                                    class="w-100 h3 text-dark p-0 bg-transparent mb-0 d-inline-flex form-control-modify"
+                                    value="University of Colorado Denver">
                                 </h3>
 
                                 <!-- Degree -->
                                 <h4 class="h4 fw-light text-dark mb-2">
-                                  Bachelor of Information Technology
+                                  <input type="text"
+                                    class="w-100 h4 fw-light text-dark p-0 bg-transparent mb-0 d-inline-flex form-control-modify"
+                                    value="Bachelor of Information Technology">
                                 </h4>
 
                                 <!-- Time -->
                                 <small class="text-secondary">
-                                  Jan 2013 - Dec 2015
+                                  <input type="text"
+                                    class="w-100 h5 fw-light text-secondary p-0 bg-transparent mb-0 d-inline-flex form-control-modify"
+                                    value="Jan 2013 - Dec 2015">
                                 </small>
 
                               </div>
@@ -1768,41 +1873,51 @@
                             <div class="row">
                               <div class="col-auto">
                                 <!-- Avatar -->
-                                <a href="javascript:void(0)" class="avatar">
+                                <div class="avatar avatar-sm position-relative img-modify">
                                   <img
                                     src="https://media.licdn.com/dms/image/C560BAQE88xCsONDULQ/company-logo_100_100/0/1630652622688/microsoft_logo?e=1728518400&v=beta&t=wah0x3AC9bOf6JG6aTb4ca5aKWloneFbRDleDU7bypw"
                                     alt="..." class="avatar-img" />
-                                </a>
+                                  <input type="file" id="avatar-upload" style="display: none" accept="image/*">
+                                  <div
+                                    class="position-absolute top-0 end-0 bg-transparent w-100 h-100 d-flex justify-content-center align-items-center img-modify-icon">
+                                    <button class="btn btn-lg btn-primary rounded-circle cursor-pointer shadow lift"
+                                      style="padding: .25rem .4rem;" type="button"
+                                      onclick="document.getElementById('avatar-upload').click()">
+                                      <i class="neu neu-edit-ui" style="font-size: 14px;"></i>
+                                    </button>
+                                  </div>
+                                </div>
                               </div>
                               <div class="col ms-n2">
                                 <!-- TITLE -->
                                 <h3 class="h3 text-dark mb-1">
-                                  Software Developer
+                                  <input type="text"
+                                    class="w-100 h3 text-dark p-0 bg-transparent mb-0 d-inline-flex form-control-modify"
+                                    value="Software Developer">
                                 </h3>
 
                                 <!-- ORG_NAME -->
                                 <h4 class="fw-light mb-1">
-                                  <a href="javascript:void(0)">
-                                    Acme Corp
-                                  </a>
+                                  <input type="text"
+                                    class="w-100 h4 fw-light text-dark p-0 bg-transparent mb-0 d-inline-flex form-control-modify"
+                                    value="Acme Corp">
                                 </h4>
 
                                 <!-- Time -->
                                 <small class="h5 fw-light text-secondary">
-                                  Jan 2012 - Sep 2016
+                                  <input type="text"
+                                    class="w-100 h5 fw-light text-secondary p-0 bg-transparent mb-0 d-inline-flex form-control-modify"
+                                    value="Jan 2012 - Sep 2016">
                                 </small>
 
                                 <div class="readmore readmore-desc-google d-flex flex-column mt-2">
                                   <!-- DESCRIPTION value -->
-                                  <p class="readmore-content text-dark mb-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates velit amet
-                                    dolorum hic cumque ea deserunt reiciendis, minus illo perferendis vel qui illum
-                                    sapiente. Vero veniam voluptate quibusdam obcaecati veritatis!
-                                  </p>
-                                  <button class="readmore-btn h5 bg-transparent border-0 text-primary p-0 ms-auto"
+                                  <textarea class="form-control-modify text-dark mb-3"
+                                    rows="3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates velit amet dolorum hic cumque ea deserunt reiciendis, minus illo perferendis vel qui illum sapiente. Vero veniam voluptate quibusdam obcaecati veritatis!</textarea>
+                                  <!-- <button class="readmore-btn h5 bg-transparent border-0 text-primary p-0 ms-auto"
                                     onclick="readMore('.readmore-desc-google')">
                                     ...read more
-                                  </button>
+                                  </button> -->
                                 </div>
 
                               </div>
