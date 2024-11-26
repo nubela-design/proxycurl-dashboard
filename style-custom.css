@@ -295,7 +295,7 @@
   padding: 1rem 0;
   box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
   border: 1px solid #edf2f9;
-  z-index: 1000;
+  z-index: 2000;
   width: calc(100% - 6%);
   margin: 0 auto;
 }
