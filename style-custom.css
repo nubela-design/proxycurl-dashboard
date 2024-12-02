@@ -339,3 +339,27 @@
 }
 
 /* End Add By Rifki - 22 Oct 2024 - Sandbox Profile */
+
+/* Start Add By Rifki - 02 Dec 2024 - Sandbox Profile */
+.ar-4by3 {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.ar-1by1 {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: top center;
+}
+
+@media (min-width: 768px) {
+  .ar-4by3 {
+    height: 80px !important;
+  }
+  .ar-4by3 > img {
+    height: 80px !important;
+  }
+}
+
+/* End Add By Rifki - 02 Dec 2024 - Sandbox Profile */
