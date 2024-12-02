@@ -537,6 +537,1500 @@
   <!-- Modal Code -->
 
   <!-- --------------------------------------------------------- -->
+  <!-- Modal add language -->
+  <div class="modal fade" id="modalAddLanguage" tabindex="-1" aria-labelledby="modalAddLanguageLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Add Language
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Add new language to your person profile sandbox
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Language -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-language"
+                        class="form-label small fw-light text-secondary mb-0">Language</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-language"
+                        placeholder="input your language here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Language -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalAddLanguageSuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2" data-bs-dismiss="modal" aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add experience -->
+
+  <!-- Modal add language success -->
+  <div class="modal fade" id="modalAddLanguageSuccess" tabindex="-1" aria-labelledby="modalAddLanguageLabelSuccess"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Language Added!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                english added to language list successfully.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add language success -->
+
+  <!-- Modal confirm delete language -->
+  <div class="modal fade" id="modalDeleteLanguage" tabindex="-1" aria-labelledby="modalDeleteLanguageLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Delete Language?
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Are you sure to delete English from your language list?
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 col-lg-6 px-lg-1 mb-3 mb-lg-0">
+                  <button class="btn btn-sm btn-primary w-100 py-2 h-100" data-bs-dismiss="modal" aria-label="Close">
+                    No, don't delete this language
+                  </button>
+                </div>
+                <div class="col-12 col-lg-6 px-lg-1">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2 h-100" data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteLanguageSuccess">
+                    Yes, delete this language
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete language -->
+
+  <!-- Modal delete language success -->
+  <div class="modal fade" id="modalDeleteLanguageSuccess" tabindex="-1"
+    aria-labelledby="modalDeleteLanguageLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Language deleted!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                English has been deleted from your language list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete language success -->
+  <!-- --------------------------------------------------------- -->
+
+  <!-- --------------------------------------------------------- -->
+  <!-- Modal add interest -->
+  <div class="modal fade" id="modalAddInterest" tabindex="-1" aria-labelledby="modalAddInterestLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Add Interest
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Add new interest to your person profile sandbox
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Interest -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-interest"
+                        class="form-label small fw-light text-secondary mb-0">Interest</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-interest"
+                        placeholder="input your interest here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Interest -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalAddInterestSuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2" data-bs-dismiss="modal" aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add interest -->
+
+  <!-- Modal add interest success -->
+  <div class="modal fade" id="modalAddInterestSuccess" tabindex="-1" aria-labelledby="modalAddInterestLabelSuccess"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Interest Added!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                education added to interest list successfully.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add interest success -->
+
+  <!-- Modal confirm delete interest -->
+  <div class="modal fade" id="modalDeleteInterest" tabindex="-1" aria-labelledby="modalDeleteInterestLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Delete Interest?
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Are you sure to delete education from your interest list?
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 col-lg-6 px-lg-1 mb-3 mb-lg-0">
+                  <button class="btn btn-sm btn-primary w-100 py-2 h-100" data-bs-dismiss="modal" aria-label="Close">
+                    No, don't delete this interest
+                  </button>
+                </div>
+                <div class="col-12 col-lg-6 px-lg-1">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2 h-100" data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteInterestSuccess">
+                    Yes, delete this interest
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete interest -->
+
+  <!-- Modal delete interest success -->
+  <div class="modal fade" id="modalDeleteInterestSuccess" tabindex="-1"
+    aria-labelledby="modalDeleteInterestLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Interest deleted!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                education has been deleted from your interest list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete interest success -->
+  <!-- --------------------------------------------------------- -->
+
+  <!-- --------------------------------------------------------- -->
+  <!-- Modal add email -->
+  <div class="modal fade" id="modalAddEmail" tabindex="-1" aria-labelledby="modalAddEmailLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Add Email
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Add new email to your person profile sandbox
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Email -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-email" class="form-label small fw-light text-secondary mb-0">Email</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-email"
+                        placeholder="input your email here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Email -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalAddEmailSuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2" data-bs-dismiss="modal" aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add email -->
+
+  <!-- Modal add email success -->
+  <div class="modal fade" id="modalAddEmailSuccess" tabindex="-1" aria-labelledby="modalAddEmailLabelSuccess"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Email Added!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                abc@gmail.com added to email list successfully.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add email success -->
+
+  <!-- Modal confirm delete email -->
+  <div class="modal fade" id="modalDeleteEmail" tabindex="-1" aria-labelledby="modalDeleteEmailLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Delete Email?
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Are you sure to delete abc@gmail.com from your email list?
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 col-lg-6 px-lg-1 mb-3 mb-lg-0">
+                  <button class="btn btn-sm btn-primary w-100 py-2 h-100" data-bs-dismiss="modal" aria-label="Close">
+                    No, don't delete this email
+                  </button>
+                </div>
+                <div class="col-12 col-lg-6 px-lg-1">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2 h-100" data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteEmailSuccess">
+                    Yes, delete this email
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete email -->
+
+  <!-- Modal delete email success -->
+  <div class="modal fade" id="modalDeleteEmailSuccess" tabindex="-1" aria-labelledby="modalDeleteEmailLabelSuccess"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Email deleted!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                abc@gmail.com has been deleted from your email list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete email success -->
+  <!-- --------------------------------------------------------- -->
+
+  <!-- --------------------------------------------------------- -->
+  <!-- Modal add phone -->
+  <div class="modal fade" id="modalAddPhone" tabindex="-1" aria-labelledby="modalAddPhoneLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Add Phone
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Add new phone to your person profile sandbox
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Email -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-phone" class="form-label small fw-light text-secondary mb-0">Phone</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-phone"
+                        placeholder="input your phone here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Email -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalAddPhoneSuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2" data-bs-dismiss="modal" aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add phone -->
+
+  <!-- Modal add phone success -->
+  <div class="modal fade" id="modalAddPhoneSuccess" tabindex="-1" aria-labelledby="modalAddPhoneLabelSuccess"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Phone Added!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                +6512345678 added to phone list successfully.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add email success -->
+
+  <!-- Modal confirm delete phone -->
+  <div class="modal fade" id="modalDeletePhone" tabindex="-1" aria-labelledby="modalDeletePhoneLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Delete Phone?
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Are you sure to delete +6512345678 from your phone list?
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 col-lg-6 px-lg-1 mb-3 mb-lg-0">
+                  <button class="btn btn-sm btn-primary w-100 py-2 h-100" data-bs-dismiss="modal" aria-label="Close">
+                    No, don't delete this phone
+                  </button>
+                </div>
+                <div class="col-12 col-lg-6 px-lg-1">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2 h-100" data-bs-toggle="modal"
+                    data-bs-target="#modalDeletePhoneSuccess">
+                    Yes, delete this phone
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete email -->
+
+  <!-- Modal delete phone success -->
+  <div class="modal fade" id="modalDeletePhoneSuccess" tabindex="-1" aria-labelledby="modalDeletePhoneLabelSuccess"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Phone deleted!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                +6512345678 has been deleted from your phone list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete phone success -->
+  <!-- --------------------------------------------------------- -->
+
+  <!-- --------------------------------------------------------- -->
+  <!-- Modal add similar profile -->
+  <div class="modal fade" id="modalAddSimilarProfile" tabindex="-1" aria-labelledby="modalAddSimilarProfileLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Add Similar Profile
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Add new similar profile to your person profile sandbox
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Photo Profile -->
+              <div class="my-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="row mx-0 align-items-center">
+                      <div class="col-4">
+                        <!-- Avatar -->
+                        <div class="avatar avatar-xl header-avatar-top mb-3 position-relative">
+                          <div class="avatar-title fs-lg bg-light text-primary rounded-circle">
+                            <i class="fe fe-user"></i>
+                          </div>
+                          <!-- <button
+                            class="btn btn-sm btn-white text-danger rounded-circle position-absolute top-0 end-0 d-inline-flex align-items-center justify-content-center"
+                            style="padding: .12rem .4rem;" type="button">
+                            <i class="fe fe-x fs-12"></i>
+                          </button> -->
+                        </div>
+                      </div>
+                      <div class="col-8">
+                        <!-- Upload button -->
+                        <div class="d-grid">
+                          <input type="file" id="avatar-upload" style="display: none" accept="image/*">
+                          <button type="button" class="btn btn-sm btn-light border"
+                            onclick="document.getElementById('avatar-upload').click()">
+                            <i class="fe fe-upload me-2"></i> Upload Profile Photo
+                          </button>
+                        </div>
+                        <small class="h6 fw-light text-muted mb-4">
+                          PNG, or JPG (max. 1MB)
+                        </small>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Photo Profile -->
+
+              <!-- Full Name -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-full-name" class="form-label small fw-light text-secondary mb-0">Full
+                        Name</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-full-name"
+                        placeholder="input full name here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Full Name -->
+
+              <!-- Occupation -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-occupation" class="form-label small fw-light text-secondary mb-0">Occupation</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-occupation"
+                        placeholder="input occupation here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Occupation -->
+
+              <!-- Location -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-location" class="form-label small fw-light text-secondary mb-0">Location</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-location"
+                        placeholder="input location here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Location -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalAddSimilarProfileSuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2" data-bs-dismiss="modal" aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add similar profile -->
+
+  <!-- Modal add similar profile success -->
+  <div class="modal fade" id="modalAddSimilarProfileSuccess" tabindex="-1" aria-labelledby="modalAddSimilarProfileLabelSuccess"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Similar Profile Added!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                John Martinez has been added to similar profile list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add similar profile success -->
+
+  <!-- Modal confirm delete similar profile -->
+  <div class="modal fade" id="modalDeleteSimilarProfile" tabindex="-1" aria-labelledby="modalDeleteSimilarProfileLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Delete this similar profile?
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Are you sure to delete John Martinez from your similar profile list?
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 col-lg-6 px-lg-1 mb-3 mb-lg-0">
+                  <button class="btn btn-sm btn-primary w-100 py-2 h-100" data-bs-dismiss="modal" aria-label="Close">
+                    No, don't delete this similar profile
+                  </button>
+                </div>
+                <div class="col-12 col-lg-6 px-lg-1">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2 h-100" data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteSimilarProfileSuccess">
+                    Yes, delete this similar profile
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete similar profile -->
+
+  <!-- Modal delete similar profile success -->
+  <div class="modal fade" id="modalDeleteSimilarProfileSuccess" tabindex="-1" aria-labelledby="modalDeleteSimilarProfileLabelSuccess"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Similar Profile deleted!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                John Martinez has been deleted from your similar profile list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete similar profile success -->
+  <!-- --------------------------------------------------------- -->
+
+  <!-- --------------------------------------------------------- -->
+  <!-- Modal add also viewed -->
+  <div class="modal fade" id="modalAddAlsoViewed" tabindex="-1" aria-labelledby="modalAddAlsoViewedLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Add Also Viewed Profile
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Add new also viewed profile to your person profile sandbox
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Photo Profile -->
+              <div class="my-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="row mx-0 align-items-center">
+                      <div class="col-4">
+                        <!-- Avatar -->
+                        <div class="avatar avatar-xl header-avatar-top mb-3 position-relative">
+                          <div class="avatar-title fs-lg bg-light text-primary rounded-circle">
+                            <i class="fe fe-user"></i>
+                          </div>
+                          <!-- <button
+                            class="btn btn-sm btn-white text-danger rounded-circle position-absolute top-0 end-0 d-inline-flex align-items-center justify-content-center"
+                            style="padding: .12rem .4rem;" type="button">
+                            <i class="fe fe-x fs-12"></i>
+                          </button> -->
+                        </div>
+                      </div>
+                      <div class="col-8">
+                        <!-- Upload button -->
+                        <div class="d-grid">
+                          <input type="file" id="avatar-upload" style="display: none" accept="image/*">
+                          <button type="button" class="btn btn-sm btn-light border"
+                            onclick="document.getElementById('avatar-upload').click()">
+                            <i class="fe fe-upload me-2"></i> Upload Profile Photo
+                          </button>
+                        </div>
+                        <small class="h6 fw-light text-muted mb-4">
+                          PNG, or JPG (max. 1MB)
+                        </small>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Photo Profile -->
+
+              <!-- Full Name -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-full-name" class="form-label small fw-light text-secondary mb-0">Full
+                        Name</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-full-name"
+                        placeholder="input full name here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Full Name -->
+
+              <!-- Occupation -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-occupation" class="form-label small fw-light text-secondary mb-0">Occupation</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-occupation"
+                        placeholder="input occupation here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Occupation -->
+
+              <!-- Location -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-location" class="form-label small fw-light text-secondary mb-0">Location</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-location"
+                        placeholder="input location here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Location -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalAddAlsoViewedSuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2" data-bs-dismiss="modal" aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add also viewed -->
+
+  <!-- Modal add also viewed success -->
+  <div class="modal fade" id="modalAddAlsoViewedSuccess" tabindex="-1" aria-labelledby="modalAddAlsoViewedLabelSuccess"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Also Viewed Profile Added!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                John Martinez has been added to also viewed profile list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add also viewed success -->
+
+  <!-- Modal confirm delete also viewed profile -->
+  <div class="modal fade" id="modalDeleteAlsoViewed" tabindex="-1" aria-labelledby="modalDeleteAlsoViewedLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Delete this also viewed profile?
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Are you sure to delete John Martinez from your also viewed profile list?
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 col-lg-6 px-lg-1 mb-3 mb-lg-0">
+                  <button class="btn btn-sm btn-primary w-100 py-2 h-100" data-bs-dismiss="modal" aria-label="Close">
+                    No, don't delete this also viewed
+                  </button>
+                </div>
+                <div class="col-12 col-lg-6 px-lg-1">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2 h-100" data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteAlsoViewedSuccess">
+                    Yes, delete this also viewed
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete also viewed profile -->
+
+  <!-- Modal delete also viewed profile success -->
+  <div class="modal fade" id="modalDeleteAlsoViewedSuccess" tabindex="-1" aria-labelledby="modalDeleteAlsoViewedSuccessLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Also Viewed Profile deleted!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                John Martinez has been deleted from your also viewed profile list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete also viewed profile success -->
+  <!-- --------------------------------------------------------- -->
+
+  <!-- --------------------------------------------------------- -->
   <!-- Modal Experience -->
   <!-- Modal add experience -->
   <div class="modal fade" id="modalAddExperience" tabindex="-1" aria-labelledby="modalAddExperienceLabel"
@@ -6794,7 +8288,8 @@
             <div class="col-12 col-md-10">
               <div class="row align-items-center justify-content-center mt-3">
                 <div class="col-12 col-lg-6 px-lg-1">
-                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2 mb-lg-0" data-bs-dismiss="modal" aria-label="Close">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2 mb-lg-0" data-bs-dismiss="modal"
+                    aria-label="Close">
                     No, don't delete this article
                   </button>
                 </div>
@@ -7208,7 +8703,8 @@
             <div class="col-12 col-md-10">
               <div class="row align-items-center justify-content-center mt-3">
                 <div class="col-12 col-lg-6 px-lg-1">
-                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2 mb-lg-0" data-bs-dismiss="modal" aria-label="Close">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2 mb-lg-0" data-bs-dismiss="modal"
+                    aria-label="Close">
                     No, don't delete this group
                   </button>
                 </div>
@@ -7766,7 +9262,8 @@
                                   </div>
                                   <div class="col-auto px-0">
                                     <button
-                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2">
+                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2"
+                                      data-bs-toggle="modal" data-bs-target="#modalDeleteLanguage">
                                       <i class="fe fe-x"></i>
                                     </button>
                                   </div>
@@ -7781,7 +9278,8 @@
                                   </div>
                                   <div class="col-auto px-0">
                                     <button
-                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2">
+                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2"
+                                      data-bs-toggle="modal" data-bs-target="#modalDeleteLanguage">
                                       <i class="fe fe-x"></i>
                                     </button>
                                   </div>
@@ -7796,7 +9294,8 @@
                                   </div>
                                   <div class="col-auto px-0">
                                     <button
-                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2">
+                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2"
+                                      data-bs-toggle="modal" data-bs-target="#modalDeleteLanguage">
                                       <i class="fe fe-x"></i>
                                     </button>
                                   </div>
@@ -7804,7 +9303,8 @@
                               </li>
                             </ul>
                             <button
-                              class="btn btn-link border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2">
+                              class="btn btn-link border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2"
+                              data-bs-toggle="modal" data-bs-target="#modalAddLanguage">
                               <i class="fe fe-plus me-2"></i> Add Language
                             </button>
                           </div>
@@ -7832,7 +9332,8 @@
                                   </div>
                                   <div class="col-auto px-0">
                                     <button
-                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2">
+                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2"
+                                      data-bs-toggle="modal" data-bs-target="#modalDeleteInterest">
                                       <i class="fe fe-x"></i>
                                     </button>
                                   </div>
@@ -7847,7 +9348,8 @@
                                   </div>
                                   <div class="col-auto px-0">
                                     <button
-                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2">
+                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2"
+                                      data-bs-toggle="modal" data-bs-target="#modalDeleteInterest">
                                       <i class="fe fe-x"></i>
                                     </button>
                                   </div>
@@ -7862,7 +9364,8 @@
                                   </div>
                                   <div class="col-auto px-0">
                                     <button
-                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2">
+                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2"
+                                      data-bs-toggle="modal" data-bs-target="#modalDeleteInterest">
                                       <i class="fe fe-x"></i>
                                     </button>
                                   </div>
@@ -7870,7 +9373,8 @@
                               </li>
                             </ul>
                             <button
-                              class="btn btn-link border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2">
+                              class="btn btn-link border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2"
+                              data-bs-toggle="modal" data-bs-target="#modalAddInterest">
                               <i class="fe fe-plus me-2"></i> Add Interest
                             </button>
                           </div>
@@ -7898,7 +9402,8 @@
                                   </div>
                                   <div class="col-auto px-0">
                                     <button
-                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2">
+                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2"
+                                      data-bs-toggle="modal" data-bs-target="#modalDeleteEmail">
                                       <i class="fe fe-x"></i>
                                     </button>
                                   </div>
@@ -7913,7 +9418,8 @@
                                   </div>
                                   <div class="col-auto px-0">
                                     <button
-                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2">
+                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2"
+                                      data-bs-toggle="modal" data-bs-target="#modalDeleteEmail">
                                       <i class="fe fe-x"></i>
                                     </button>
                                   </div>
@@ -7928,7 +9434,8 @@
                                   </div>
                                   <div class="col-auto px-0">
                                     <button
-                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2">
+                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2"
+                                      data-bs-toggle="modal" data-bs-target="#modalDeleteEmail">
                                       <i class="fe fe-x"></i>
                                     </button>
                                   </div>
@@ -7936,8 +9443,9 @@
                               </li>
                             </ul>
                             <button
-                              class="btn btn-link border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2">
-                              <i class="fe fe-plus me-2"></i> Add Interest
+                              class="btn btn-link border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2"
+                              data-bs-toggle="modal" data-bs-target="#modalAddEmail">
+                              <i class="fe fe-plus me-2"></i> Add Email
                             </button>
                           </div>
                         </div>
@@ -7964,7 +9472,8 @@
                                   </div>
                                   <div class="col-auto px-0">
                                     <button
-                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2">
+                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2"
+                                      data-bs-toggle="modal" data-bs-target="#modalDeletePhone">
                                       <i class="fe fe-x"></i>
                                     </button>
                                   </div>
@@ -7979,7 +9488,8 @@
                                   </div>
                                   <div class="col-auto px-0">
                                     <button
-                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2">
+                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2"
+                                      data-bs-toggle="modal" data-bs-target="#modalDeletePhone">
                                       <i class="fe fe-x"></i>
                                     </button>
                                   </div>
@@ -7994,7 +9504,8 @@
                                   </div>
                                   <div class="col-auto px-0">
                                     <button
-                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2">
+                                      class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2"
+                                      data-bs-toggle="modal" data-bs-target="#modalDeletePhone">
                                       <i class="fe fe-x"></i>
                                     </button>
                                   </div>
@@ -8002,7 +9513,8 @@
                               </li>
                             </ul>
                             <button
-                              class="btn btn-link border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2">
+                              class="btn btn-link border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2"
+                              data-bs-toggle="modal" data-bs-target="#modalAddPhone">
                               <i class="fe fe-plus me-2"></i> Add Phone
                             </button>
                           </div>
@@ -8255,7 +9767,7 @@
                                       </div>
                                       <div class="col-6 col-lg-auto ps-1 pe-0">
                                         <!-- Delete button -->
-                                        <button class="btn btn-sm btn-outline-danger w-100 py-2" type="button"
+                                        <button class="btn btn-sm btn-outline-danger w-100" type="button"
                                           data-bs-toggle="modal" data-bs-target="#modalDeleteExperience">
                                           <i class="fe fe-trash"></i>
                                         </button>
@@ -8333,7 +9845,7 @@
                                       </div>
                                       <div class="col-6 col-lg-auto ps-1 pe-0">
                                         <!-- Delete button -->
-                                        <button class="btn btn-sm btn-outline-danger w-100 py-2" type="button"
+                                        <button class="btn btn-sm btn-outline-danger w-100" type="button"
                                           data-bs-toggle="modal" data-bs-target="#modalDeleteExperience">
                                           <i class="fe fe-trash"></i>
                                         </button>
@@ -9453,8 +10965,7 @@
                           <div class="col-12 col-lg-auto text-center text-lg-end px-0">
                             <button
                               class="btn btn-link border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2"
-                              data-bs-toggle="modal" 
-                              data-bs-target="#modalAddCertification">
+                              data-bs-toggle="modal" data-bs-target="#modalAddCertification">
                               <i class="fe fe-plus me-2"></i> Add Certification
                             </button>
                           </div>
@@ -9681,8 +11192,7 @@
                           <div class="col-12 col-lg-auto text-center text-lg-end px-0">
                             <button
                               class="btn btn-link border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2"
-                              data-bs-toggle="modal" 
-                              data-bs-target="#modalAddGroup">
+                              data-bs-toggle="modal" data-bs-target="#modalAddGroup">
                               <i class="fe fe-plus me-2"></i> Add Group
                             </button>
                           </div>
@@ -9853,7 +11363,8 @@
                             </div>
                             <div class="col-auto px-0">
                               <button
-                                class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2">
+                                class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2"
+                                data-bs-toggle="modal" data-bs-target="#modalDeleteSimilarProfile">
                                 <i class="fe fe-x"></i>
                               </button>
                             </div>
@@ -9893,7 +11404,8 @@
                             </div>
                             <div class="col-auto px-0">
                               <button
-                                class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2">
+                                class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2"
+                                data-bs-toggle="modal" data-bs-target="#modalDeleteSimilarProfile">
                                 <i class="fe fe-x"></i>
                               </button>
                             </div>
@@ -9933,7 +11445,8 @@
                             </div>
                             <div class="col-auto px-0">
                               <button
-                                class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2">
+                                class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2"
+                                data-bs-toggle="modal" data-bs-target="#modalDeleteSimilarProfile">
                                 <i class="fe fe-x"></i>
                               </button>
                             </div>
@@ -9942,7 +11455,8 @@
 
                       </ul>
                       <button
-                        class="btn btn-link border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2">
+                        class="btn btn-link border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2"
+                        data-bs-toggle="modal" data-bs-target="#modalAddSimilarProfile">
                         <i class="fe fe-plus me-2"></i> Add Other Similar Profile
                       </button>
 
@@ -10001,7 +11515,8 @@
                             </div>
                             <div class="col-auto px-0">
                               <button
-                                class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2">
+                                class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2"
+                                data-bs-toggle="modal" data-bs-target="#modalDeleteAlsoViewed">
                                 <i class="fe fe-x"></i>
                               </button>
                             </div>
@@ -10041,7 +11556,8 @@
                             </div>
                             <div class="col-auto px-0">
                               <button
-                                class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2">
+                                class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2"
+                                data-bs-toggle="modal" data-bs-target="#modalDeleteAlsoViewed">
                                 <i class="fe fe-x"></i>
                               </button>
                             </div>
@@ -10081,7 +11597,8 @@
                             </div>
                             <div class="col-auto px-0">
                               <button
-                                class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2">
+                                class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2"
+                                data-bs-toggle="modal" data-bs-target="#modalDeleteAlsoViewed">
                                 <i class="fe fe-x"></i>
                               </button>
                             </div>
@@ -10090,7 +11607,8 @@
 
                       </ul>
                       <button
-                        class="btn btn-link border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2">
+                        class="btn btn-link border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2"
+                        data-bs-toggle="modal" data-bs-target="#modalAddAlsoViewed">
                         <i class="fe fe-plus me-2"></i> Add People Also Viewed
                       </button>
 
