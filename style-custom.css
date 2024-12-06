@@ -353,12 +353,12 @@
   object-position: top center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .ar-4by3 {
-    height: 80px !important;
+    height: 72px !important;
   }
   .ar-4by3 > img {
-    height: 80px !important;
+    height: 72px !important;
   }
 }
 

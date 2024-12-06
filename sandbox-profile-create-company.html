@@ -536,6 +536,4551 @@
 
   <!-- Modal Code -->
 
+  <!-- --------------------------------------------------------- -->
+  <!-- Modal add categories -->
+  <div class="modal fade" id="modalAddCategories" tabindex="-1" aria-labelledby="modalAddCategoriesLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Add Categories
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Add new categories to your company profile sandbox
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Categories -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-categories"
+                        class="form-label small fw-light text-secondary mb-0">Categories</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-categories"
+                        placeholder="input your company categories here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Categories -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalAddCategoriesSuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-secondary w-100 py-2" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add categories -->
+
+  <!-- Modal add categories success -->
+  <div class="modal fade" id="modalAddCategoriesSuccess" tabindex="-1" aria-labelledby="modalAddCategoriesLabelSuccess"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Categories Added!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                artificial-intelligence added to categories list successfully.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add categories success -->
+
+  <!-- Modal confirm delete categories -->
+  <div class="modal fade" id="modalDeleteCategories" tabindex="-1" aria-labelledby="modalDeleteCategoriesLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Delete Categories?
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Are you sure to delete artificial-intelligence from your categories list?
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 mb-2">
+                  <button class="btn btn-sm btn-primary w-100 py-2 h-100" data-bs-dismiss="modal" aria-label="Close">
+                    No, don't delete this categories
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2 h-100" data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteCategoriesSuccess">
+                    Yes, delete this categories
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete categories -->
+
+  <!-- Modal delete categories success -->
+  <div class="modal fade" id="modalDeleteCategoriesSuccess" tabindex="-1"
+    aria-labelledby="modalDeleteCategoriesLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Categories deleted!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                artificial-intelligence has been deleted from your categories list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete categories success -->
+  <!-- --------------------------------------------------------- -->
+
+  <!-- --------------------------------------------------------- -->
+  <!-- Modal add Specialities -->
+  <div class="modal fade" id="modalAddSpecialities" tabindex="-1" aria-labelledby="modalAddSpecialitiesLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Add Specialities
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Add new specialities of your company to your company profile sandbox
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Specialities -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-specialities"
+                        class="form-label small fw-light text-secondary mb-0">Specialities</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-specialities"
+                        placeholder="input your company specialities here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Specialities -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalAddSpecialitiesSuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-secondary w-100 py-2" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add specialities -->
+
+  <!-- Modal add specialities success -->
+  <div class="modal fade" id="modalAddSpecialitiesSuccess" tabindex="-1"
+    aria-labelledby="modalAddSpecialitiesLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Specialities Added!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                search added to company specialities list successfully.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add specialities success -->
+
+  <!-- Modal confirm delete specialities -->
+  <div class="modal fade" id="modalDeleteSpecialities" tabindex="-1" aria-labelledby="modalDeleteSpecialitiesLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Delete Specialities?
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Are you sure to delete search from your company specialities list?
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 mb-2">
+                  <button class="btn btn-sm btn-primary w-100 py-2 h-100" data-bs-dismiss="modal" aria-label="Close">
+                    No, don't delete this specialities
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2 h-100" data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteSpecialitiesSuccess">
+                    Yes, delete this specialities
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete specialities -->
+
+  <!-- Modal delete specialities success -->
+  <div class="modal fade" id="modalDeleteSpecialitiesSuccess" tabindex="-1"
+    aria-labelledby="modalDeleteSpecialitiesLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Specialities deleted!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                search has been deleted from your company specialities list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete specialities success -->
+  <!-- --------------------------------------------------------- -->
+
+  <!-- --------------------------------------------------------- -->
+  <!-- Modal add email -->
+  <div class="modal fade" id="modalAddEmail" tabindex="-1" aria-labelledby="modalAddEmailLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Add Email
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Add new email to your company profile sandbox
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Email -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-email" class="form-label small fw-light text-secondary mb-0">Email</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-email"
+                        placeholder="input your email here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Email -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalAddEmailSuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-secondary w-100 py-2" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add email -->
+
+  <!-- Modal add email success -->
+  <div class="modal fade" id="modalAddEmailSuccess" tabindex="-1" aria-labelledby="modalAddEmailLabelSuccess"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Email Added!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                abc@gmail.com added to company email list successfully.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add email success -->
+
+  <!-- Modal confirm delete email -->
+  <div class="modal fade" id="modalDeleteEmail" tabindex="-1" aria-labelledby="modalDeleteEmailLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Delete Email?
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Are you sure to delete abc@gmail.com from your company email list?
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 mb-2">
+                  <button class="btn btn-sm btn-primary w-100 py-2 h-100" data-bs-dismiss="modal" aria-label="Close">
+                    No, don't delete this email
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2 h-100" data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteEmailSuccess">
+                    Yes, delete this email
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete email -->
+
+  <!-- Modal delete email success -->
+  <div class="modal fade" id="modalDeleteEmailSuccess" tabindex="-1" aria-labelledby="modalDeleteEmailLabelSuccess"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Email deleted!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                abc@gmail.com has been deleted from your company email list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete email success -->
+  <!-- --------------------------------------------------------- -->
+
+  <!-- --------------------------------------------------------- -->
+  <!-- Modal add phone -->
+  <div class="modal fade" id="modalAddPhone" tabindex="-1" aria-labelledby="modalAddPhoneLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Add Phone
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Add new phone to your person profile sandbox
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Email -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-phone" class="form-label small fw-light text-secondary mb-0">Phone</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-phone"
+                        placeholder="input your phone here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Email -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalAddPhoneSuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-secondary w-100 py-2" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add phone -->
+
+  <!-- Modal add phone success -->
+  <div class="modal fade" id="modalAddPhoneSuccess" tabindex="-1" aria-labelledby="modalAddPhoneLabelSuccess"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Phone Added!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                (140) 848-6200 added to phone list successfully.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add phone success -->
+
+  <!-- Modal confirm delete phone -->
+  <div class="modal fade" id="modalDeletePhone" tabindex="-1" aria-labelledby="modalDeletePhoneLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Delete Phone?
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Are you sure to delete (140) 848-6200 from your phone list?
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 mb-2">
+                  <button class="btn btn-sm btn-primary w-100 py-2 h-100" data-bs-dismiss="modal" aria-label="Close">
+                    No, don't delete this phone
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2 h-100" data-bs-toggle="modal"
+                    data-bs-target="#modalDeletePhoneSuccess">
+                    Yes, delete this phone
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete phone -->
+
+  <!-- Modal delete phone success -->
+  <div class="modal fade" id="modalDeletePhoneSuccess" tabindex="-1" aria-labelledby="modalDeletePhoneLabelSuccess"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Phone deleted!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                (140) 848-6200 has been deleted from your phone list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete phone success -->
+  <!-- --------------------------------------------------------- -->
+
+  <!-- --------------------------------------------------------- -->
+  <!-- Modal add location -->
+  <div class="modal fade" id="modalAddLocation" tabindex="-1" aria-labelledby="modalAddLocationLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Add Location
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Add new location of your company to your company profile sandbox
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Company Country form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-company-country"
+                        class="form-label small fw-light text-secondary mb-0">Country</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-company-country"
+                        placeholder="input your company country location here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Country form -->
+
+              <!-- Company City form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-company-city"
+                        class="form-label small fw-light text-secondary mb-0">City</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-company-city"
+                        placeholder="input your company city location here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company City form -->
+
+              <!-- Company Postal Code form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-company-postal-code"
+                        class="form-label small fw-light text-secondary mb-0">Postal Code</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-company-postal-code"
+                        placeholder="input your company postal code location here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Postal Code form -->
+
+              <!-- Company Line 1 form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-company-line-1" class="form-label small fw-light text-secondary mb-0">Line
+                        1</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-company-line-1"
+                        placeholder="input your company line 1 location here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Line 1 form -->
+
+              <!-- Company State form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-company-state"
+                        class="form-label small fw-light text-secondary mb-0">State</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-company-state"
+                        placeholder="input your company state location here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company State form -->
+
+              <!-- Company HQ form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <label class="form-label small fw-light text-secondary mb-0">is this your company HQ?</label>
+                    <div class="form-check form-switch mb-3">
+                      <input class="form-check-input hq-checkbox" type="checkbox" id="HQCheck1">
+                      <!-- <label class="form-check-label" for="HQCheck1">is this your company HQ?</label> -->
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company HQ form -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalAddLocationSuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-secondary w-100 py-2" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add location -->
+
+  <!-- Modal add location success -->
+  <div class="modal fade" id="modalAddLocationSuccess" tabindex="-1" aria-labelledby="modalAddLocationLabelSuccess"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Location Added!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Mountain View, CA, US (United States of America) added to your company location list successfully.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add location success -->
+
+  <!-- Modal confirm delete location -->
+  <div class="modal fade" id="modalDeleteLocation" tabindex="-1" aria-labelledby="modalDeleteLocationLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Delete Location?
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Are you sure to delete Mountain View, CA, US (United States of America) from your company location list?
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 mb-2">
+                  <button class="btn btn-sm btn-primary w-100 py-2 h-100" data-bs-dismiss="modal" aria-label="Close">
+                    No, don't delete this location
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2 h-100" data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteLocationSuccess">
+                    Yes, delete this location
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete location -->
+
+  <!-- Modal delete location success -->
+  <div class="modal fade" id="modalDeleteLocationSuccess" tabindex="-1"
+    aria-labelledby="modalDeleteLocationLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Location deleted!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Mountain View, CA, US (United States of America) has been deleted from your company location list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete location success -->
+  <!-- --------------------------------------------------------- -->
+
+  <!-- --------------------------------------------------------- -->
+  <!-- Modal add acquired company -->
+  <div class="modal fade" id="modalAddAcquiredCompany" tabindex="-1" aria-labelledby="modalAddAcquiredCompanyLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Add Acquired Company
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Add new acquired company to your company profile sandbox
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Company Linkedin Profile URL form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-acquired-company-linkedin-url"
+                        class="form-label small fw-light text-secondary mb-0">Linkedin Profile
+                        URL</label>
+                      <input type="text" class="form-control form-control-sm"
+                        id="form-input-acquired-company-linkedin-url" placeholder="input company linkedin url here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Linkedin Profile URL form -->
+
+              <!-- Company Crunchbase Profile URL form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-acquired-company-crunchbase-url"
+                        class="form-label small fw-light text-secondary mb-0">Crunchbase Profile
+                        URL</label>
+                      <input type="text" class="form-control form-control-sm"
+                        id="form-input-acquired-company-crunchbase-url" placeholder="input company crunchbase url here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Crunchbase Profile URL form -->
+
+              <!-- Announced Date -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-announced-date"
+                        class="form-label small fw-light text-secondary mb-0">Announced Date</label>
+                      <input type="date" class="form-control form-control-sm" id="form-input-announced-date">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Announced Date -->
+
+              <!-- Acquired Price -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <label for="form-input-price" class="form-label small fw-light text-secondary mb-0">Acquired
+                      Price</label>
+                    <div class="input-group input-group-sm mb-3">
+                      <span class="input-group-text">$</span>
+                      <input type="text" class="form-control form-control-sm" id="form-input-price"
+                        placeholder="input acquired price here" aria-label="Acquired Price"
+                        aria-describedby="form-input-price-btn">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Acquired Price -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalAddAcquiredCompanySuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-secondary w-100 py-2" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add acquired company -->
+
+  <!-- Modal add acquired company success -->
+  <div class="modal fade" id="modalAddAcquiredCompanySuccess" tabindex="-1"
+    aria-labelledby="modalAddAcquiredCompanyLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Acquired Company Added!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Acquired company added successfully.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add acquired company success -->
+
+  <!-- Modal confirm edit acquired company -->
+  <div class="modal fade" id="modalEditAcquiredCompany" tabindex="-1" aria-labelledby="modalEditAcquiredCompanyLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-primary rounded-circle text-white">
+                  <i class="fe fe-edit-2 fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Edit Acquired Company
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Edit acquired company
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Company Linkedin Profile URL form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-acquired-company-linkedin-url"
+                        class="form-label small fw-light text-secondary mb-0">Linkedin Profile
+                        URL</label>
+                      <input type="text" class="form-control form-control-sm"
+                        id="form-input-acquired-company-linkedin-url" placeholder="input company linkedin url here"
+                        value="https://www.linkedin.com/company/meta">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Linkedin Profile URL form -->
+
+              <!-- Company Crunchbase Profile URL form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-acquired-company-crunchbase-url"
+                        class="form-label small fw-light text-secondary mb-0">Crunchbase Profile
+                        URL</label>
+                      <input type="text" class="form-control form-control-sm"
+                        id="form-input-acquired-company-crunchbase-url" placeholder="input company crunchbase url here"
+                        value="https://www.crunchbase.com/organization/meta">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Crunchbase Profile URL form -->
+
+              <!-- Announced Date -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-announced-date"
+                        class="form-label small fw-light text-secondary mb-0">Announced Date</label>
+                      <input type="date" class="form-control form-control-sm" id="form-input-announced-date"
+                        value="2024-01-01">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Announced Date -->
+
+              <!-- Acquired Price -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <label for="form-input-price" class="form-label small fw-light text-secondary mb-0">Acquired
+                      Price</label>
+                    <div class="input-group input-group-sm mb-3">
+                      <span class="input-group-text">$</span>
+                      <input type="text" class="form-control form-control-sm" id="form-input-price"
+                        placeholder="input acquired price here" aria-label="Acquired Price"
+                        aria-describedby="form-input-price-btn" value="300">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Acquired Price -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalEditAcquiredCompanySuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-secondary w-100 py-2" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm edit acquired company -->
+
+  <!-- Modal edit acquired company success -->
+  <div class="modal fade" id="modalEditAcquiredCompanySuccess" tabindex="-1"
+    aria-labelledby="modalEditAcquiredCompanyLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-primary rounded-circle text-white">
+                  <i class="fe fe-edit-2 fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Acquired Company Edited!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                This acquired company has been edited successfully.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal edit acquired company success -->
+
+  <!-- Modal confirm delete acquired company -->
+  <div class="modal fade" id="modalDeleteAcquiredCompany" tabindex="-1"
+    aria-labelledby="modalDeleteAcquiredCompanyLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Delete Acquired Company?
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Are you sure to delete this acquired company?
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 mb-2">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2 mb-lg-0" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    No, don't delete this acquired company
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteAcquiredCompanySuccess">
+                    Yes, delete this acquired company
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete acquired company -->
+
+  <!-- Modal delete acquired company success -->
+  <div class="modal fade" id="modalDeleteAcquiredCompanySuccess" tabindex="-1"
+    aria-labelledby="modalDeleteAcquiredCompanyLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Acquired Company deleted!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                This acquired company has been deleted from acquired company list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete acquired company success -->
+  <!-- --------------------------------------------------------- -->
+
+  <!-- --------------------------------------------------------- -->
+  <!-- Modal add acquisitor company -->
+  <div class="modal fade" id="modalAddAcquisitorCompany" tabindex="-1" aria-labelledby="modalAddAcquisitorCompanyLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Add Acquisitor Company
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Add new acquisitor company to your company profile sandbox
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Company Linkedin Profile URL form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-acquisitor-company-linkedin-url"
+                        class="form-label small fw-light text-secondary mb-0">Linkedin Profile
+                        URL</label>
+                      <input type="text" class="form-control form-control-sm"
+                        id="form-input-acquisitor-company-linkedin-url" placeholder="input company linkedin url here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Linkedin Profile URL form -->
+
+              <!-- Company Crunchbase Profile URL form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-acquisitor-company-crunchbase-url"
+                        class="form-label small fw-light text-secondary mb-0">Crunchbase Profile
+                        URL</label>
+                      <input type="text" class="form-control form-control-sm"
+                        id="form-input-acquisitor-company-crunchbase-url"
+                        placeholder="input company crunchbase url here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Crunchbase Profile URL form -->
+
+              <!-- Announced Date -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-announced-date"
+                        class="form-label small fw-light text-secondary mb-0">Announced Date</label>
+                      <input type="date" class="form-control form-control-sm" id="form-input-announced-date">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Announced Date -->
+
+              <!-- Acquired Price -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <label for="form-input-price" class="form-label small fw-light text-secondary mb-0">Acquisitor
+                      Price</label>
+                    <div class="input-group input-group-sm mb-3">
+                      <span class="input-group-text">$</span>
+                      <input type="text" class="form-control form-control-sm" id="form-input-price"
+                        placeholder="input acquisitor price here" aria-label="Acquisitor Price"
+                        aria-describedby="form-input-price-btn">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Acquired Price -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalAddAcquisitorCompanySuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-secondary w-100 py-2" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add acquisitor company -->
+
+  <!-- Modal add acquisitor company success -->
+  <div class="modal fade" id="modalAddAcquisitorCompanySuccess" tabindex="-1"
+    aria-labelledby="modalAddAcquisitorCompanyLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Acquisitor Company Added!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Acquisitor company added successfully.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add acquisitor company success -->
+
+  <!-- Modal confirm edit acquisitor company -->
+  <div class="modal fade" id="modalEditAcquisitorCompany" tabindex="-1"
+    aria-labelledby="modalEditAcquisitorCompanyLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-primary rounded-circle text-white">
+                  <i class="fe fe-edit-2 fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Edit Acquisitor Company
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Edit acquisitor company
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Company Linkedin Profile URL form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-acquisitor-company-linkedin-url"
+                        class="form-label small fw-light text-secondary mb-0">Linkedin Profile
+                        URL</label>
+                      <input type="text" class="form-control form-control-sm"
+                        id="form-input-acquisitor-company-linkedin-url" placeholder="input company linkedin url here"
+                        value="https://www.linkedin.com/company/meta">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Linkedin Profile URL form -->
+
+              <!-- Company Crunchbase Profile URL form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-acquisitor-company-crunchbase-url"
+                        class="form-label small fw-light text-secondary mb-0">Crunchbase Profile
+                        URL</label>
+                      <input type="text" class="form-control form-control-sm"
+                        id="form-input-acquisitor-company-crunchbase-url"
+                        placeholder="input company crunchbase url here"
+                        value="https://www.crunchbase.com/organization/meta">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Crunchbase Profile URL form -->
+
+              <!-- Announced Date -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-announced-date"
+                        class="form-label small fw-light text-secondary mb-0">Announced Date</label>
+                      <input type="date" class="form-control form-control-sm" id="form-input-announced-date"
+                        value="2024-01-01">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Announced Date -->
+
+              <!-- Acquired Price -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <label for="form-input-price" class="form-label small fw-light text-secondary mb-0">Acquisitor
+                      Price</label>
+                    <div class="input-group input-group-sm mb-3">
+                      <span class="input-group-text">$</span>
+                      <input type="text" class="form-control form-control-sm" id="form-input-price"
+                        placeholder="input acquisitor price here" aria-label="Acquisitor Price"
+                        aria-describedby="form-input-price-btn" value="300">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Acquired Price -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalEditAcquisitorCompanySuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-secondary w-100 py-2" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm edit acquired company -->
+
+  <!-- Modal edit acquired company success -->
+  <div class="modal fade" id="modalEditAcquisitorCompanySuccess" tabindex="-1"
+    aria-labelledby="modalEditAcquisitorCompanyLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-primary rounded-circle text-white">
+                  <i class="fe fe-edit-2 fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Acquisitor Company Edited!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                This acquisitor company has been edited successfully.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal edit acquired company success -->
+
+  <!-- Modal confirm delete acquisitor company -->
+  <div class="modal fade" id="modalDeleteAcquisitorCompany" tabindex="-1"
+    aria-labelledby="modalDeleteAcquisitorCompanyLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Delete Acquisitor Company?
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Are you sure to delete this acquisitor company?
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 mb-2">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2 mb-lg-0" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    No, don't delete this acquisitor company
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteAcquisitorCompanySuccess">
+                    Yes, delete this acquisitor company
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete acquisitor company -->
+
+  <!-- Modal delete acquisitor company success -->
+  <div class="modal fade" id="modalDeleteAcquisitorCompanySuccess" tabindex="-1"
+    aria-labelledby="modalDeleteAcquisitorCompanyLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Acquisitor Company deleted!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                This acquisitor company has been deleted from acquisitor company list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete acquisitor company success -->
+  <!-- --------------------------------------------------------- -->
+
+  <!-- --------------------------------------------------------- -->
+  <!-- Modal add exit company -->
+  <div class="modal fade" id="modalAddExitCompany" tabindex="-1" aria-labelledby="modalAddExitCompanyLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Add Exit Company
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Add new exit company to your company profile sandbox
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Company Linkedin Profile URL form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-exit-linkedin-url"
+                        class="form-label small fw-light text-secondary mb-0">Linkedin Profile
+                        URL</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-exit-linkedin-url"
+                        placeholder="input company linkedin url here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Linkedin Profile URL form -->
+
+              <!-- Company Crunchbase Profile URL form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-exit-crunchbase-url"
+                        class="form-label small fw-light text-secondary mb-0">Crunchbase Profile
+                        URL</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-exit-crunchbase-url"
+                        placeholder="input company crunchbase url here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Crunchbase Profile URL form -->
+
+              <!-- Company Exit Name -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-exit-name"
+                        class="form-label small fw-light text-secondary mb-0">Name</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-exit-name"
+                        placeholder="input company exit name here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Exit Name -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalAddExitCompanySuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-secondary w-100 py-2" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add exit company -->
+
+  <!-- Modal add exit company success -->
+  <div class="modal fade" id="modalAddExitCompanySuccess" tabindex="-1"
+    aria-labelledby="modalAddExitCompanyLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Exit Company Added!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                MotionDSP added successfully.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add exit company success -->
+
+  <!-- Modal confirm edit exit company -->
+  <div class="modal fade" id="modalEditExitCompany" tabindex="-1" aria-labelledby="modalEditExitCompanyLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-primary rounded-circle text-white">
+                  <i class="fe fe-edit-2 fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Edit Exit Company
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Edit exit company
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Company Linkedin Profile URL form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-exit-linkedin-url"
+                        class="form-label small fw-light text-secondary mb-0">Linkedin Profile
+                        URL</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-exit-linkedin-url"
+                        placeholder="input company linkedin url here"
+                        value="https://www.linkedin.com/company/motiondsp">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Linkedin Profile URL form -->
+
+              <!-- Company Crunchbase Profile URL form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-exit-crunchbase-url"
+                        class="form-label small fw-light text-secondary mb-0">Crunchbase Profile
+                        URL</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-exit-crunchbase-url"
+                        placeholder="input company crunchbase url here"
+                        value="https://www.crunchbase.com/organization/motions">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Crunchbase Profile URL form -->
+
+              <!-- Company Exit Name -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-exit-name"
+                        class="form-label small fw-light text-secondary mb-0">Name</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-exit-name"
+                        placeholder="input company exit name here" value="MotionDSP">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Exit Name -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalEditExitCompanySuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-secondary w-100 py-2" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm edit exit company -->
+
+  <!-- Modal edit exit company success -->
+  <div class="modal fade" id="modalEditExitCompanySuccess" tabindex="-1"
+    aria-labelledby="modalEditExitCompanyLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-primary rounded-circle text-white">
+                  <i class="fe fe-edit-2 fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Exit Company Edited!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                MotionDSP has been edited successfully.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal edit exit company success -->
+
+  <!-- Modal confirm delete exit company -->
+  <div class="modal fade" id="modalDeleteExitCompany" tabindex="-1" aria-labelledby="modalDeleteExitCompanyLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Delete Exit Company?
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Are you sure to delete MotionDSP from your exit company list?
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 mb-2">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2 mb-lg-0" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    No, don't delete this exit company
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteExitCompanySuccess">
+                    Yes, delete this exit company
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete exit company -->
+
+  <!-- Modal delete exit company success -->
+  <div class="modal fade" id="modalDeleteExitCompanySuccess" tabindex="-1"
+    aria-labelledby="modalDeleteExitCompanyLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Exit Company deleted!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                MotionDSP has been deleted from exit company list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete exit company success -->
+  <!-- --------------------------------------------------------- -->
+
+  <!-- --------------------------------------------------------- -->
+  <!-- Modal add investor company -->
+  <div class="modal fade" id="modalAddInvestorCompany" tabindex="-1" aria-labelledby="modalAddInvestorCompanyLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Add Investor Company
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Add new investor company to your company profile sandbox
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Company Linkedin Profile URL form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-investor-linkedin-url"
+                        class="form-label small fw-light text-secondary mb-0">Linkedin Profile
+                        URL</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-investor-linkedin-url"
+                        placeholder="input company linkedin url here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Linkedin Profile URL form -->
+
+              <!-- Company Investor Name form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-investor-name"
+                        class="form-label small fw-light text-secondary mb-0">Name</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-investor-name"
+                        placeholder="input investor name here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Investor Name form -->
+
+              <!-- Company Investor Type form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-investor-type"
+                        class="form-label small fw-light text-secondary mb-0">Investor Type</label>
+                      <select class="form-select form-select-sm" aria-label="Default select example">
+                        <option value="organization" selected>Organization</option>
+                        <option value="individual">Individual</option>
+                      </select>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Investor Type form -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalAddInvestorCompanySuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-secondary w-100 py-2" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add investor company -->
+
+  <!-- Modal add investor company success -->
+  <div class="modal fade" id="modalAddInvestorCompanySuccess" tabindex="-1"
+    aria-labelledby="modalAddInvestorCompanyLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Investor Company Added!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                DARPA - Organization added to investor company list successfully.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add investor company success -->
+
+  <!-- Modal confirm edit investor company -->
+  <div class="modal fade" id="modalEditInvestorCompany" tabindex="-1" aria-labelledby="modalEditInvestorCompanyLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-primary rounded-circle text-white">
+                  <i class="fe fe-edit-2 fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Edit Investor Company
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Edit DARPA - Organization
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Company Linkedin Profile URL form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-investor-linkedin-url"
+                        class="form-label small fw-light text-secondary mb-0">Linkedin Profile
+                        URL</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-investor-linkedin-url"
+                        placeholder="input company linkedin url here" value="https://www.linkedin.com/company/darpa">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Linkedin Profile URL form -->
+
+              <!-- Company Investor Name form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-investor-name"
+                        class="form-label small fw-light text-secondary mb-0">Name</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-investor-name"
+                        placeholder="input investor name here" value="DARPA">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Investor Name form -->
+
+              <!-- Company Investor Type form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-investor-type"
+                        class="form-label small fw-light text-secondary mb-0">Investor Type</label>
+                      <select class="form-select form-select-sm" aria-label="Default select example">
+                        <option value="organization" selected>Organization</option>
+                        <option value="individual">Individual</option>
+                      </select>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Investor Type form -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalEditInvestorCompanySuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-secondary w-100 py-2" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm edit investor company -->
+
+  <!-- Modal edit investor company success -->
+  <div class="modal fade" id="modalEditInvestorCompanySuccess" tabindex="-1"
+    aria-labelledby="modalEditInvestorCompanyLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-primary rounded-circle text-white">
+                  <i class="fe fe-edit-2 fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Investor Company Edited!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                DARPA - Organization has been edited successfully.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal edit investor company success -->
+
+  <!-- Modal confirm delete investor company -->
+  <div class="modal fade" id="modalDeleteInvestorCompany" tabindex="-1"
+    aria-labelledby="modalDeleteInvestorCompanyLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Delete Investor Company?
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Are you sure to delete DARPA - Organization from your investor company list?
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 mb-2">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2 mb-lg-0" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    No, don't delete this investor company
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteInvestorCompanySuccess">
+                    Yes, delete this investor company
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete investor company -->
+
+  <!-- Modal delete investor company success -->
+  <div class="modal fade" id="modalDeleteInvestorCompanySuccess" tabindex="-1"
+    aria-labelledby="modalDeleteInvestorCompanyLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Investor Company deleted!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                DARPA - Organization has been deleted from investor company list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete investor company success -->
+  <!-- --------------------------------------------------------- -->
+
+  <!-- --------------------------------------------------------- -->
+  <!-- Modal add funding company -->
+  <div class="modal fade" id="modalAddFundingCompany" tabindex="-1" aria-labelledby="modalAddFundingCompanyLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Add Funding Company
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Add new funding company to your company profile sandbox
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Company Funding Type form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-funding-type" class="form-label small fw-light text-secondary mb-0">Funding Type</label>
+                      <select class="form-select form-select-sm" aria-label="Default select example">
+                        <option value="grant" selected>Grant</option>
+                      </select>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Funding Type form -->
+
+              <!-- Funding Money -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <label for="form-input-funding-money" class="form-label small fw-light text-secondary mb-0">Money Raised</label>
+                    <div class="input-group input-group-sm mb-3">
+                      <input type="text" class="form-control" id="form-input-funding-money"
+                        placeholder="input funding money here" aria-label="Funding Money"
+                        aria-describedby="form-input-funding-money-btn">
+                      <span class="input-group-text">$</span>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Funding Money -->
+
+              <!-- Announced Date -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-announced-date" class="form-label small fw-light text-secondary mb-0">Announced Date</label>
+                      <input type="date" class="form-control form-control-sm" id="form-input-announced-date">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Announced Date -->
+
+              <!-- Number of Investors -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-number-of-investors" class="form-label small fw-light text-secondary mb-0">Number of
+                        Investors</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-number-of-investors"
+                        placeholder="input number of investors here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Number of Investors -->
+
+              <!-- Company Funding Type form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <label for="form-input-funding-type" class="form-label small fw-light text-secondary mb-0">Investor List</label>
+                    <div class="input-group input-group-sm mb-3">
+                      <select class="form-select form-select-sm" aria-label="Default select example">
+                        <option value="darpa" selected>DARPA</option>
+                        <option value="amd">AMD</option>
+                        <option value="apple">Apple</option>
+                      </select>
+                      <button class="btn btn-primary" type="button" id="form-input-investor-list-btn"><i
+                          class="fe fe-plus me-2"></i>Add</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Funding Type form -->
+
+              <!-- Investor List -->
+              <div class="mb-3">
+                <ul class="list-unstyled mb-0">
+                  
+                </ul>
+              </div>
+              <!-- /Investor List -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalAddFundingCompanySuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-secondary w-100 py-2" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add funding company -->
+
+  <!-- Modal add funding company success -->
+  <div class="modal fade" id="modalAddFundingCompanySuccess" tabindex="-1"
+    aria-labelledby="modalAddFundingCompanyLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Funding Company Added!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Funding type Grant with total funsing $ 5000 from 3 Investors (DARPA, AMD, Apple) added to funding company list successfully.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add funding company success -->
+
+  <!-- Modal confirm edit funding company -->
+  <div class="modal fade" id="modalEditFundingCompany" tabindex="-1" aria-labelledby="modalEditFundingCompanyLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-primary rounded-circle text-white">
+                  <i class="fe fe-edit-2 fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Edit Funding Company
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Edit funding type Grant with total funsing $ 5000 from 3 Investors (DARPA, AMD, Apple)
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Company Funding Type form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-funding-type" class="form-label small fw-light text-secondary mb-0">Funding Type</label>
+                      <select class="form-select form-select-sm" aria-label="Default select example">
+                        <option value="grant" selected>Grant</option>
+                      </select>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Funding Type form -->
+
+              <!-- Funding Money -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <label for="form-input-funding-money" class="form-label small fw-light text-secondary mb-0">Money Raised</label>
+                    <div class="input-group input-group-sm mb-3">
+                      <span class="input-group-text">$</span>
+                      <input type="text" class="form-control" id="form-input-funding-money"
+                        placeholder="input funding money here" aria-label="Funding Money"
+                        aria-describedby="form-input-funding-money-btn" value="5000">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Funding Money -->
+
+              <!-- Announced Date -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-announced-date" class="form-label small fw-light text-secondary mb-0">Announced Date</label>
+                      <input type="date" class="form-control form-control-sm" id="form-input-announced-date" value="2024-01-01">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Announced Date -->
+
+              <!-- Number of Investors -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-number-of-investors" class="form-label small fw-light text-secondary mb-0">Number of
+                        Investors</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-number-of-investors"
+                        placeholder="input number of investors here" value="3">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Number of Investors -->
+
+              <!-- Company Funding Type form -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <label for="form-input-funding-type" class="form-label small fw-light text-secondary mb-0">Investor List</label>
+                    <div class="input-group input-group-sm mb-3">
+                      <select class="form-select form-select-sm" aria-label="Default select example">
+                        <option value="darpa" selected>DARPA</option>
+                        <option value="amd">AMD</option>
+                        <option value="apple">Apple</option>
+                      </select>
+                      <button class="btn btn-primary" type="button" id="form-input-investor-list-btn"><i
+                          class="fe fe-plus me-2"></i>Add</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Company Funding Type form -->
+
+              <!-- Investor List -->
+              <div class="mb-4 mt-n2">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <div class="row mb-3 align-items-center mx-0">
+                      <div class="col px-0">
+                        <div class="alert alert-light small mb-0 py-2 px-3" role="alert">
+                          DARPA
+                        </div>
+                      </div>
+                      <div class="col-auto px-0">
+                        <button
+                          class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2"
+                          data-bs-toggle="modal" data-bs-target="#modalDeleteEmail">
+                          <i class="fe fe-x"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row mb-3 align-items-center mx-0">
+                      <div class="col px-0">
+                        <div class="alert alert-light small mb-0 py-2 px-3" role="alert">
+                          AMD
+                        </div>
+                      </div>
+                      <div class="col-auto px-0">
+                        <button
+                          class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2"
+                          data-bs-toggle="modal" data-bs-target="#modalDeleteEmail">
+                          <i class="fe fe-x"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row mb-3 align-items-center mx-0">
+                      <div class="col px-0">
+                        <div class="alert alert-light small mb-0 py-2 px-3" role="alert">
+                          Apple
+                        </div>
+                      </div>
+                      <div class="col-auto px-0">
+                        <button
+                          class="btn btn-outline-danger border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2 ms-2"
+                          data-bs-toggle="modal" data-bs-target="#modalDeleteEmail">
+                          <i class="fe fe-x"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- /Investor List -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalEditInvestorCompanySuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-secondary w-100 py-2" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm edit funding company -->
+
+  <!-- Modal edit funding company success -->
+  <div class="modal fade" id="modalEditInvestorCompanySuccess" tabindex="-1"
+    aria-labelledby="modalEditInvestorCompanyLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-primary rounded-circle text-white">
+                  <i class="fe fe-edit-2 fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Funding Company Edited!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Funding type Grant with total funsing $ 5000 from 3 Investors (DARPA, AMD, Apple) has been edited successfully.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal edit funding company success -->
+
+  <!-- Modal confirm delete funding company -->
+  <div class="modal fade" id="modalDeleteFundingCompany" tabindex="-1"
+    aria-labelledby="modalDeleteFundingCompanyLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Delete Funding Company?
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Are you sure to delete funding type Grant with total funsing $ 5000 from 3 Investors (DARPA, AMD, Apple) from your funding company list?
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 mb-2">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2 mb-lg-0" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    No, don't delete this funding company
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteFundingCompanySuccess">
+                    Yes, delete this funding company
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete funding company -->
+
+  <!-- Modal delete funding company success -->
+  <div class="modal fade" id="modalDeleteFundingCompanySuccess" tabindex="-1"
+    aria-labelledby="modalDeleteFundingCompanyLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Funding Company deleted!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Funding type Grant with total funsing $ 5000 from 3 Investors (DARPA, AMD, Apple) has been deleted from funding company list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete funding company success -->
+  <!-- --------------------------------------------------------- -->
+
+  <!-- --------------------------------------------------------- -->
+  <!-- Modal add company update -->
+  <div class="modal fade" id="modalAddCompanyUpdate" tabindex="-1" aria-labelledby="modalAddCompanyUpdateLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Add Company Update
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Add new company update to your company profile sandbox
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Article Link -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-article-link" class="form-label small fw-light text-secondary mb-0">Article
+                        Link</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-article-link"
+                        placeholder="input your article link here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Article Link -->
+
+              <!-- Article Image URL -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-article-image-url"
+                        class="form-label small fw-light text-secondary mb-0">Image URL</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-article-image-url"
+                        placeholder="input your image URL here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Article Image URL -->
+
+              <!-- Article Posted On -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-article-posted-on"
+                        class="form-label small fw-light text-secondary mb-0">Posted On</label>
+                      <input type="date" class="form-control form-control-sm" id="form-input-article-posted-on">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Article Posted On -->
+
+              <!-- Article Text -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-article-text"
+                        class="form-label small fw-light text-secondary mb-0">Text</label>
+                      <div data-quill='{"placeholder": "write your company update text here..."}'>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Article Text -->
+
+              <!-- Article Total Likes -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-article-total-likes"
+                        class="form-label small fw-light text-secondary mb-0">Total Likes</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-article-total-likes"
+                        placeholder="input your total likes here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Article Total Likes -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalAddCompanyUpdateSuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-secondary w-100 py-2" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add company update -->
+
+  <!-- Modal add company update success -->
+  <div class="modal fade" id="modalAddCompanyUpdateSuccess" tabindex="-1"
+    aria-labelledby="modalAddCompanyUpdateLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Company Update Added!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Company update added successfully.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add company update success -->
+
+  <!-- Modal confirm edit company update -->
+  <div class="modal fade" id="modalEditCompanyUpdate" tabindex="-1" aria-labelledby="modalEditCompanyUpdateLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-primary rounded-circle text-white">
+                  <i class="fe fe-edit-2 fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Edit Company Update
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Edit company update
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Article Link -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-article-link" class="form-label small fw-light text-secondary mb-0">Article
+                        Link</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-article-link"
+                        placeholder="input your article link here" value="https://example.com/article">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Article Link -->
+
+              <!-- Article Image URL -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-article-image-url"
+                        class="form-label small fw-light text-secondary mb-0">Image URL</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-article-image-url"
+                        placeholder="input your image URL here" value="https://example.com/image.jpg">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Article Image URL -->
+
+              <!-- Article Posted On -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-article-posted-on"
+                        class="form-label small fw-light text-secondary mb-0">Posted On</label>
+                      <input type="date" class="form-control form-control-sm" id="form-input-article-posted-on"
+                        value="2024-01-01">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Article Posted On -->
+
+              <!-- Article Text -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-article-text"
+                        class="form-label small fw-light text-secondary mb-0">Text</label>
+                      <div data-quill='{"placeholder": "write your description here..."}'>
+                        <p>A problem isn't truly solved until it's solved for all. Googlers build products that help
+                          create opportunities for everyone, whether down the street or across the globe. Bring your
+                          insight, imagination and a healthy disregard for the impossible. Bring everything that makes
+                          you unique. Together, we can build for everyone.</p>
+
+                        <p>Check out our career opportunities at <a href="https://careers.google.com"
+                            target="_blank">careers.google.com</a>.</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Article Text -->
+
+              <!-- Article Total Likes -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-article-total-likes"
+                        class="form-label small fw-light text-secondary mb-0">Total Likes</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-article-total-likes"
+                        placeholder="input your total likes here" value="100">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Article Total Likes -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalEditArticleSuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-secondary w-100 py-2" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm edit company update -->
+
+  <!-- Modal edit company update success -->
+  <div class="modal fade" id="modalEditArticleSuccess" tabindex="-1" aria-labelledby="modalEditArticleLabelSuccess"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-primary rounded-circle text-white">
+                  <i class="fe fe-edit-2 fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Company Update Edited!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                This company update has been edited successfully.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal edit company update success -->
+
+  <!-- Modal confirm delete company update -->
+  <div class="modal fade" id="modalDeleteCompanyUpdate" tabindex="-1" aria-labelledby="modalDeleteCompanyUpdateLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Delete Company Update?
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Are you sure to delete this company update?
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 mb-2">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2 mb-lg-0" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    No, don't delete this company update
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteCompanyUpdateSuccess">
+                    Yes, delete this company update
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete company update -->
+
+  <!-- Modal delete company update success -->
+  <div class="modal fade" id="modalDeleteCompanyUpdateSuccess" tabindex="-1"
+    aria-labelledby="modalDeleteCompanyUpdateLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Company Update deleted!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                This company update has been deleted from company update list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete company update success -->
+  <!-- --------------------------------------------------------- -->
+
+  <!-- --------------------------------------------------------- -->
+  <!-- Modal add Affiliated companies -->
+  <div class="modal fade" id="modalAddAffiliatedCompany" tabindex="-1" aria-labelledby="modalAddAffiliatedCompanyLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Add Affiliated Company
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Add new affilited company to your company profile sandbox
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Full Name -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-company-name" class="form-label small fw-light text-secondary mb-0">Company
+                        Name</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-company-name"
+                        placeholder="input full name here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Full Name -->
+
+              <!-- Industry -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-industry" class="form-label small fw-light text-secondary mb-0">Company
+                        Industry</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-industry"
+                        placeholder="input industry here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Industry -->
+
+              <!-- Location -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-location" class="form-label small fw-light text-secondary mb-0">Company
+                        Location</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-location"
+                        placeholder="input location here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Location -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalAddAffiliatedCompanySuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-secondary w-100 py-2" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add Affiliated companies -->
+
+  <!-- Modal add Affiliated companies success -->
+  <div class="modal fade" id="modalAddAffiliatedCompanySuccess" tabindex="-1"
+    aria-labelledby="modalAddAffiliatedCompanyLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Affiliated Company Added!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Meta has been added to affilited companies list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add Affiliated companies success -->
+
+  <!-- Modal confirm delete Affiliated companies -->
+  <div class="modal fade" id="modalDeleteAffiliatedCompany" tabindex="-1"
+    aria-labelledby="modalDeleteAffiliatedCompanyLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Delete this Affiliated company?
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Are you sure to delete Meta from your affilited companies list?
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 mb-2">
+                  <button class="btn btn-sm btn-primary w-100 py-2 h-100" data-bs-dismiss="modal" aria-label="Close">
+                    No, don't delete this affilited company
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2 h-100" data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteAffiliatedCompanySuccess">
+                    Yes, delete this affilited company
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete Affiliated companies -->
+
+  <!-- Modal delete Affiliated companies success -->
+  <div class="modal fade" id="modalDeleteAffiliatedCompanySuccess" tabindex="-1"
+    aria-labelledby="modalDeleteAffiliatedCompanyLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Affiliated Company deleted!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Meta has been deleted from your affilited companies list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete Affiliated companies success -->
+  <!-- --------------------------------------------------------- -->
+
+  <!-- --------------------------------------------------------- -->
+  <!-- Modal add similar companies -->
+  <div class="modal fade" id="modalAddSimilarCompany" tabindex="-1" aria-labelledby="modalAddSimilarCompanyLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Add Similar Company
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Add new similar company to your company profile sandbox
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <!-- Full Name -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-company-name" class="form-label small fw-light text-secondary mb-0">Company
+                        Name</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-company-name"
+                        placeholder="input full name here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Full Name -->
+
+              <!-- Industry -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-industry" class="form-label small fw-light text-secondary mb-0">Company
+                        Industry</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-industry"
+                        placeholder="input industry here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Industry -->
+
+              <!-- Location -->
+              <div class="mb-2">
+                <div class="row align-items-center">
+                  <div class="col-12">
+
+                    <div class="mb-3">
+                      <label for="form-input-location" class="form-label small fw-light text-secondary mb-0">Company
+                        Location</label>
+                      <input type="text" class="form-control form-control-sm" id="form-input-location"
+                        placeholder="input location here">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Location -->
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center">
+
+                <div class="col-12">
+                  <button class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-toggle="modal"
+                    data-bs-target="#modalAddSimilarCompanySuccess">
+                    Save
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-secondary w-100 py-2" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    Cancel
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add similar companies -->
+
+  <!-- Modal add similar companies success -->
+  <div class="modal fade" id="modalAddSimilarCompanySuccess" tabindex="-1"
+    aria-labelledby="modalAddSimilarCompanyLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-success rounded-circle text-white">
+                  <i class="fe fe-plus fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Similar Company Added!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Meta has been added to similar companies list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal add similar companies success -->
+
+  <!-- Modal confirm delete similar companies -->
+  <div class="modal fade" id="modalDeleteSimilarCompany" tabindex="-1" aria-labelledby="modalDeleteSimilarCompanyLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Delete this similar company?
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Are you sure to delete Meta from your similar companies list?
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+
+              <div class="row align-items-center justify-content-center mt-3">
+                <div class="col-12 mb-2">
+                  <button class="btn btn-sm btn-primary w-100 py-2 h-100" data-bs-dismiss="modal" aria-label="Close">
+                    No, don't delete this similar company
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-sm btn-outline-danger w-100 py-2 h-100" data-bs-toggle="modal"
+                    data-bs-target="#modalDeleteSimilarCompanySuccess">
+                    Yes, delete this similar company
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal confirm delete similar companies -->
+
+  <!-- Modal delete similar companies success -->
+  <div class="modal fade" id="modalDeleteSimilarCompanySuccess" tabindex="-1"
+    aria-labelledby="modalDeleteSimilarCompanyLabelSuccess" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <h3 class="modal-title" id="modalTopupLabel"></h3>
+          <div class="me-4 mt-4"><button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button></div>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-10 text-center mb-3">
+              <div class="avatar avatar-sm mb-3">
+                <div class="avatar-title bg-danger rounded-circle text-white">
+                  <i class="fe fe-trash fs-lg"></i>
+                </div>
+              </div>
+              <h3 class="h3 text-dark mb-1">
+                Similar Company deleted!
+              </h3>
+              <small class="small fw-light text-secondary mb-3">
+                Meta has been deleted from your similar companies list.
+              </small>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="row align-items-center justify-content-center mt-3">
+                <a class="btn btn-sm btn-primary w-100 mb-2 py-2" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal delete similar companies success -->
+  <!-- --------------------------------------------------------- -->
+
   <!-- /Modal Code -->
 
   <!-- MAIN CONTENT -->
@@ -927,7 +5472,7 @@
                             <div class="text-center text-lg-start">
                               <button
                                 class="btn btn-link border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2"
-                                data-bs-toggle="modal" data-bs-target="#modalAddLanguage">
+                                data-bs-toggle="modal" data-bs-target="#modalAddCategories">
                                 <i class="fe fe-plus me-2"></i> Add Categories
                               </button>
                             </div>
@@ -1296,7 +5841,7 @@
                             <div class="text-center text-lg-start">
                               <button
                                 class="btn btn-link border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2"
-                                data-bs-toggle="modal" data-bs-target="#modalAddLanguage">
+                                data-bs-toggle="modal" data-bs-target="#modalAddSpecialities">
                                 <i class="fe fe-plus me-2"></i> Add Specialities
                               </button>
                             </div>
@@ -1617,7 +6162,7 @@
                     </div>
                   </div>
 
-                  <!-- Post -->
+                  <!-- Company Update -->
                   <div class="col-12 mb-2">
                     <div class="card mb-3">
                       <div class="card-body">
@@ -1627,10 +6172,10 @@
                             <!-- Title -->
                             <div class="mb-0">
                               <h3 class="h3 text-dark mb-1">
-                                Post
+                                Company Update
                               </h3>
                               <small class="small fw-light text-secondary mb-3">
-                                This is to display posting of your company on your company profile sandbox
+                                This is to display company update on your company profile sandbox
                               </small>
                             </div>
                           </div>
@@ -1638,8 +6183,8 @@
                           <div class="col-12 col-lg-auto text-center text-lg-end px-0">
                             <button
                               class="btn btn-link border-0 btn-sm mb-0 d-inline-flex align-items-center justify-content-center lh-base py-2"
-                              data-bs-toggle="modal" data-bs-target="#modalAddPost">
-                              <i class="fe fe-plus me-2"></i> Add Post
+                              data-bs-toggle="modal" data-bs-target="#modalAddCompanyUpdate">
+                              <i class="fe fe-plus me-2"></i> Add Company Update
                             </button>
                           </div>
                         </div>
